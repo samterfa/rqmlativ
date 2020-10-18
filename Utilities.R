@@ -312,10 +312,13 @@ loadSkyObjects <- function(){
   
   objects <- results %>% toJSON(auto_unbox = T) %>% fromJSON(flatten = T)
   
+  # Fix non-unique CurrentNames
   nonUniqueObjectNames <- objects %>% group_by(CurrentName) %>% count() %>% filter(n > 1) %>% pull(CurrentName)
+  objects <- objects %>% mutate(ObjectName = ifelse(CurrentName %in% nonUniqueObjectNames, str_replace_all(FormattedObjectPath, fixed('/'), ''), CurrentName))
   
-  # Fix objects with non-unique names.
-  objects %>% mutate(ObjectName = ifelse(CurrentName %in% nonUniqueObjectNames, str_replace_all(FormattedObjectPath, fixed('/'), ''), CurrentName))
+  # Fix non-unique ObjectNames caused by the CurrentNames fix.
+  nonUniqueObjectNames <- objects %>% group_by(ObjectName) %>% count() %>% filter(n > 1) %>% pull(ObjectName)
+  objects %>% mutate(ObjectName = ifelse(ObjectName %in% nonUniqueObjectNames, str_replace_all(FormattedObjectPath, fixed('/'), ''), ObjectName))
 }
 
 
@@ -360,9 +363,9 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
   require(tidyverse)
   require(glue)
   
-  if(!exists('skyFields', inherits = T)) fields <- getFieldsInfo()
-  if(!exists('skyObjects', inherits = T)) objects <- getObjectsInfo()
-  if(!exists('skyRelationships', inherits = T)) relationships <- getRelationshipsInfo()
+  if(!exists('skyFields', inherits = T)) skyFields <- getFieldsInfo()
+  if(!exists('skyObjects', inherits = T)) skyObjects <- getObjectsInfo()
+  if(!exists('skyRelationships', inherits = T)) skyRelationships <- getRelationshipsInfo()
   
   objTreeObjects <- objTrees %>% filter(Type == 'object')
   if(nrow(objTreeObjects) > 0){
@@ -380,25 +383,25 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
       
       allObjectsList <- append(allObjectsList, objName)
       
-      objID <- objects %>% filter(ObjectName == objName) %>% pull(ObjectID)
+      objID <- skyObjects %>% filter(ObjectName == objName) %>% pull(ObjectID)
       
       # Add fields...
-      fieldsToAdd <- fields %>% filter(ObjectID == objID) %>% pull(FieldName)
+      fieldsToAdd <- skyFields %>% filter(ObjectID == objID) %>% pull(FieldName)
       
       fieldsToAdd <- tibble(Name = paste(objTree %>% pluck('Name'), fieldsToAdd, sep = '.'), Type = 'field')
       
       objTrees <- bind_rows(objTrees, fieldsToAdd)
       
       # Add Objects
-      rels <- relationships %>% filter(ObjectIDPrimary == objID, RelationshipType %in% c('ManyToOne', 'OneToOne'))
+      rels <- skyRelationships %>% filter(ObjectIDPrimary == objID, RelationshipType %in% c('ManyToOne', 'OneToOne'))
       
-      rels <- rels %>% select(ObjectIDForeignCurrent) %>% distinct() %>% left_join(objects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% filter(!str_detect(objTree$Name, glue('{ObjectName}.')), ObjectName != objName)
+      rels <- rels %>% select(ObjectIDForeignCurrent) %>% distinct() %>% left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% filter(!str_detect(objTree$Name, glue('{ObjectName}.')), ObjectName != objName)
       
       if(nrow(rels) > 0){
         
         objectsToAdd <- apply(rels, 1, function(rel){
           
-          toAdd <- objects %>% filter(ObjectID == (rel %>% pluck('ObjectIDForeignCurrent') %>% trimws())) %>% pull(ObjectName)
+          toAdd <- skyObjects %>% filter(ObjectID == (rel %>% pluck('ObjectIDForeignCurrent') %>% trimws())) %>% pull(ObjectName)
           
           tibble(Name = paste(objTree %>% pluck('Name'), toAdd, sep = '.'), Type = 'object')
           
@@ -406,7 +409,8 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
         
         objTrees <- bind_rows(objTrees, objectsToAdd)
       }
-      
+      backup <- objTrees
+  
       objTrees <- objTrees %>% slice(-which(objTrees$Name == (objTree %>% pluck('Name'))))
     }}
   
@@ -415,20 +419,20 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
 
 
 # This function returns a list representation of object and field relationships.
-getSchemaForObjects <- function(seedObjectName, maxDepth = 4){
+getSchemaForObjects <- function(seedObjectName, maxDepth = 1){
   
   objTrees <- tibble(Name = seedObjectName, Type = 'object')
   depth <- 1
   
   allObjectsList <- seedObjectName %>% str_split(fixed('.')) %>% pluck(1)
   allObjectsList <- ifelse(length(allObjectsList) > 1, allObjectsList[1:(length(allObjectsList) - 1)], list())
-  
+ 
   while((nrow(objTrees %>% filter(Type == 'object')) > 0) & depth <= maxDepth){
     
     objTrees <- generateObjectTree(objTrees, allObjectsList)
     depth <- depth + 1
   }
-  
+ 
   textToList <- function(myTextTreeDF){
     
     allTexts <- c('')

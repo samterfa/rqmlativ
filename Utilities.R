@@ -213,9 +213,10 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
 
 
 
-getAllSkyObjects <- function(module, objectName, schoolYearID = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', flatten = T){
+listSkyObjects <- function(module, objectName, schoolYearID = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', flatten = T){
   
   endpoint <- glue('/Generic/{entityId}/{module}/{objectName}')
+  
   method <- ifelse(is.null(SearchConditionsList) & is.null(SearchSortFieldNamesList), 'GET', 'POST')
   
   if(all(searchFields == 'all')){
@@ -235,7 +236,7 @@ getAllSkyObjects <- function(module, objectName, schoolYearID = NULL, searchFiel
   
   searchObject <- createSearchObject(SearchConditionsList = SearchConditionsList, SearchConditionsGroupType = SearchConditionsGroupType, SearchSortFieldNamesList = SearchSortFieldNamesList, SearchSortFieldNamesDescendingList = SearchSortFieldNamesDescendingList)
   
-  requestText <- glue('{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}/{page}/{pageSize}", body = searchObject %>% toJSON(auto_unbox = T), content_type("application/json"), query = queryParams, config = config(token = getSkywardToken()))') 
+  requestText <- glue('{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}/{page}/{format(pageSize, scientific = F)}", body = searchObject %>% toJSON(auto_unbox = T), content_type("application/json"), query = queryParams, config = config(token = getSkywardToken()))') 
   
   response <- eval(parse(text = requestText))
   
@@ -263,7 +264,7 @@ loadSkyRelationships <- function(){
   results <- list()
   for(page in 1:100000){
     
-    newResults <- getAllSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
+    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
     
     if(length(newResults$Objects) == 0){
       break()
@@ -274,7 +275,7 @@ loadSkyRelationships <- function(){
   
   relationships <- results %>% toJSON(auto_unbox = T) %>% fromJSON(flatten = T)
   
-  relationships %>% mutate(RelationshipName = CurrentName) %>% rename(RelationshipType = CurrentType)
+  relationships %>% mutate(RelationshipName = CurrentName) %>% rename(RelationshipType = CurrentType) %>% filter(!RelationshipName %in% c('UserCreatedBy', 'UserModifiedBy'))
 }
 
 
@@ -285,7 +286,7 @@ loadSkyModules <- function(){
   require(jsonlite)
   require(glue)
   
-  results <- getAllSkyObjects(module = 'SkySys', objectName = 'Module', SearchConditionsList = 'Status Contains Complete', searchFields = c('ModuleID', 'CurrentName', 'DisplayName', 'IsSkywardModule'), pageSize = 500, flatten = F) %>% pluck('Objects')
+  results <- listSkyObjects(module = 'SkySys', objectName = 'Module', SearchConditionsList = 'Status Contains Complete', searchFields = c('ModuleID', 'CurrentName', 'DisplayName', 'IsSkywardModule'), pageSize = 500, flatten = F) %>% pluck('Objects')
    
   results %>% toJSON(auto_unbox = T) %>% fromJSON(flatten = T) %>% rename(ModuleShortName = CurrentName)
 }
@@ -301,7 +302,7 @@ loadSkyObjects <- function(){
   results <- list()
   for(page in 1:100000){
     
-    newResults <- getAllSkyObjects(module = 'SkySys', objectName = 'Object', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'FormattedObjectPath', 'IsSkywardObject', 'ObjectID', 'ModuleID'), flatten = F, page = page, pageSize = 10000)
+    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Object', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'FormattedObjectPath', 'IsSkywardObject', 'ObjectID', 'ModuleID'), flatten = F, page = page, pageSize = 10000)
     
     if(length(newResults$Objects) == 0){
       break()
@@ -332,7 +333,7 @@ loadSkyFields <- function(){
   results <- list()
   for(pg in 1:100000){
     
-    newResults <- getAllSkyObjects(module = 'SkySys', objectName = 'Field', SearchConditionsList = 'Status Contains Complete', searchFields = c('FieldID', 'IsPrimaryKey', 'CurrentIsRequired', 'IsDeniable', 'UserCanEdit', 'CurrentName', 'CurrentType', 'IsSkywardField', 'ObjectID'), flatten = F, page = pg, pageSize = 10000)
+    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Field', SearchConditionsList = 'Status Contains Complete', searchFields = c('FieldID', 'IsPrimaryKey', 'CurrentIsRequired', 'IsDeniable', 'UserCanEdit', 'CurrentName', 'CurrentType', 'IsSkywardField', 'ObjectID'), flatten = F, page = pg, pageSize = 10000)
     
     if(length(newResults$Objects) == 0){
       break()
@@ -394,7 +395,7 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
       
       # Add Objects
       rels <- skyRelationships %>% filter(ObjectIDPrimary == objID, RelationshipType %in% c('ManyToOne', 'OneToOne'))
-      
+     
       rels <- rels %>% select(ObjectIDForeignCurrent) %>% distinct() %>% left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% filter(!str_detect(objTree$Name, glue('{ObjectName}.')), ObjectName != objName)
       
       if(nrow(rels) > 0){
@@ -437,7 +438,6 @@ getSchemaForObjects <- function(seedObjectName, maxDepth = 1){
     
     allTexts <- c('')
     
-    #   for(myText in myTexts){
     for(i in 1:nrow(myTextTreeDF)){
       
       myText <- myTextTreeDF$Name[[i]]
@@ -471,7 +471,7 @@ getSchemaForObjects <- function(seedObjectName, maxDepth = 1){
     returnObj
   }
   
-  objTrees %>% textToList()
+  objTrees %>% mutate(Name = Name %>% str_replace(glue('{seedObjectName}.'), '')) %>% textToList()
 }
 
 #' Get all Search Conditions Types for use in Filtering
@@ -492,14 +492,15 @@ getAllSearchConditionTypes <- function(){
 }
 
 
-generateObjectFunctions <- function(modules = loadSkyModules() %>% arrange(ModuleShortName)){
+generateObjectFunctions <- function(modules = loadSkyModules() %>% arrange(ModuleShortName), deleteAllFiles = T){
   
   require(tidyverse)
   require(httr)
   require(jsonlite)
   require(glue)
+  require(pluralize)
   
-  for(file in list.files('R')) file.remove(glue('R/{file}'))
+  if(deleteAllFiles) for(file in list.files('R')) file.remove(glue('R/{file}'))
   
   for(i in 1:nrow(modules)){
     
@@ -508,26 +509,43 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% arrange(Modul
     print(glue('Module {i} of {nrow(modules)}: {module$DisplayName}'))
     
     # Create {module}.R file
+    filepath <- glue('R/{module$DisplayName}.R')
     if(!dir.exists('R')) dir.create('R')
-    write_lines(NULL, path = glue('R/{module$DisplayName}.R'), append = F)
     
-    next()
     objects <- skyObjects %>% filter(ModuleID == module$ModuleID)
-    for(object in objects){
+    if(nrow(objects) == 0) next()
+    write_lines(NULL, path = filepath, append = F)
+    
+    for(j in 1:nrow(objects)){
+      
+      object <- objects %>% slice(j)
+      
+      fields <- skyFields %>% filter(ObjectID == object$ObjectID) %>% pull(FieldName)
       
       #### Generate LIST functions
+      functionName <- glue('list{pluralize::pluralize(object$ObjectName)}')
       
+      functionText <- glue('\n\n\t{functionName} <- function(searchConditionsList = NULL, {fields %>% paste(collapse = " = F, ")} = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){{', .trim = F)
+      functionText <- paste0(functionText, '\n\n\t\tparams <- as.list(environment()) %>% append(list(...))')
+      functionText <- paste0(functionText, glue('\n\n\t\tsearchFields <- params %>% keep(names(params) %>% str_sub(1,1) == names(params) %>% str_sub(1,1) %>% str_to_upper())', .trim = F))
+      functionText <- paste0(functionText, '\n\n\t\tifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% keep(~.x) %>% names())')
+      functionText <- paste0(functionText, glue('\n\n\t\tlistSkyObjects(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)', .trim = F))
+      functionText <- paste0(functionText, '\n\t}')
+    
+      write_lines(functionText, filepath, append = T)
       
+      next()
       #### Generate GET functions
-      
+      functionName <- glue('get{object$ObjectName}')
       
       #### Generate CREATE functions
-      
+      functionName <- glue('create{object$ObjectName}')
       
       #### Generate MODIFY functions
-      
+      functionName <- glue('modify{object$ObjectName}')
       
       #### Generate DELETE functions
+      functionName <- glue('delete{object$ObjectName}')
       
     }
   }

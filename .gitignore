@@ -1,0 +1,4 @@
+.R*
+*.Rproj
+.Rproj.user
+.httr-oauth

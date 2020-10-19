@@ -1,0 +1,24 @@
+Package: rqmlativ
+Type: Package
+Title: Creates R Functions for Skyward Qmlativ's Generic API
+Version: 0.0.9
+Author: Sam Terfa
+Maintainer: Sam Terfa <samterfa@gmail.com>
+Description: See {yourDistrictAPI}/swagger/ui/index for more details.
+    This package creates an R SDK for the Skyward Qmlativ Generic API.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+URL: http://github.com/samterfa/rqmlativ
+BugReports: http://github.com/samterfa/rqmlativ/issues
+Imports:
+    jsonlite,
+    httr,
+    usethis,
+    magrittr,
+    dplyr,
+    glue,
+    stringr,
+    readr,
+    pluralize
+RoxygenNote: 7.0.2

@@ -1,408 +1,986 @@
 
+	#' List StaffContacts
+	#'
+	#' This function returns a dataframe or json object of StaffContacts
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('StaffContact') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of StaffContacts
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listStaffContacts <- function(searchConditionsList = NULL, StaffContactID = F, OnlineFormID = F, StaffID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listStaffContacts <- function(searchConditionsList = NULL, StaffContactID = F, OnlineFormID = F, StaffID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "StaffContact", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "StaffContact", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormTypes
+	#'
+	#' This function returns a dataframe or json object of OnlineFormTypes
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormType') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormTypes
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormTypes <- function(searchConditionsList = NULL, OnlineFormTypeID = F, Code = F, Description = F, LimitUsersToOneFormOfThisTypePerYear = F, DistrictID = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormTypes <- function(searchConditionsList = NULL, OnlineFormTypeID = F, Code = F, Description = F, LimitUsersToOneFormOfThisTypePerYear = F, DistrictID = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormType", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormType", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormTempCertifications
+	#'
+	#' This function returns a dataframe or json object of OnlineFormTempCertifications
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormTempCertification') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormTempCertifications
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormTempCertifications <- function(searchConditionsList = NULL, TempCertificationID = F, CertificationID = F, EmployeeID = F, CertificationTypeID = F, InstitutionID = F, StateID = F, CertificationNumber = F, IssueDate = F, ExpirationDate = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormTempCertifications <- function(searchConditionsList = NULL, TempCertificationID = F, CertificationID = F, EmployeeID = F, CertificationTypeID = F, InstitutionID = F, StateID = F, CertificationNumber = F, IssueDate = F, ExpirationDate = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempCertification", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempCertification", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormTempDegrees
+	#'
+	#' This function returns a dataframe or json object of OnlineFormTempDegrees
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormTempDegree') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormTempDegrees
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormTempDegrees <- function(searchConditionsList = NULL, TempDegreeID = F, DegreeID = F, EmployeeID = F, DegreeTypeID = F, InstitutionID = F, ReceivedDate = F, ApprovedDate = F, Credits = F, GPA = F, AdditionalCredits = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormTempDegrees <- function(searchConditionsList = NULL, TempDegreeID = F, DegreeID = F, EmployeeID = F, DegreeTypeID = F, InstitutionID = F, ReceivedDate = F, ApprovedDate = F, Credits = F, GPA = F, AdditionalCredits = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempDegree", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempDegree", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List ElementStatuses
+	#'
+	#' This function returns a dataframe or json object of ElementStatuses
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ElementStatus') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of ElementStatuses
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listElementStatuses <- function(searchConditionsList = NULL, ElementStatusID = F, StepStatusID = F, ElementID = F, UserSubmitted = F, IsReadOnly = F, StatusType = F, DenialMessage = F, ValidationMessage = F, OriginalValue = F, RequestedValue = F, UserIDApprover = F, MediaIDAttachment = F, SharedElementStatusID = F, NeedsAdminReviewSave = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listElementStatuses <- function(searchConditionsList = NULL, ElementStatusID = F, StepStatusID = F, ElementID = F, UserSubmitted = F, IsReadOnly = F, StatusType = F, DenialMessage = F, ValidationMessage = F, OriginalValue = F, RequestedValue = F, UserIDApprover = F, MediaIDAttachment = F, SharedElementStatusID = F, NeedsAdminReviewSave = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "ElementStatus", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "ElementStatus", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List NewStudentEnrollmentGuardianData
+	#'
+	#' This function returns a dataframe or json object of NewStudentEnrollmentGuardianData
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('NewStudentEnrollmentGuardianData') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of NewStudentEnrollmentGuardianData
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listNewStudentEnrollmentGuardianData <- function(searchConditionsList = NULL, NewStudentEnrollmentGuardianDataID = F, FamilyGuardianID = F, NameID = F, LastName = F, FirstName = F, MiddleName = F, NameSuffixID = F, GenderCode = F, RelationshipID = F, AllowStudentPickup = F, DriversLicenseNumber = F, DeleteGuardian = F, OnScreenID = F, Rank = F, CreateNewGuardian = F, AddGuardian = F, NameVehicleID = F, VehicleID = F, Year = F, MakeModel = F, Color = F, LicensePlateNumber = F, VIN = F, IsCustodialGuardian = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listNewStudentEnrollmentGuardianData <- function(searchConditionsList = NULL, NewStudentEnrollmentGuardianDataID = F, FamilyGuardianID = F, NameID = F, LastName = F, FirstName = F, MiddleName = F, NameSuffixID = F, GenderCode = F, RelationshipID = F, AllowStudentPickup = F, DriversLicenseNumber = F, DeleteGuardian = F, OnScreenID = F, Rank = F, CreateNewGuardian = F, AddGuardian = F, NameVehicleID = F, VehicleID = F, Year = F, MakeModel = F, Color = F, LicensePlateNumber = F, VIN = F, IsCustodialGuardian = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "NewStudentEnrollmentGuardianData", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "NewStudentEnrollmentGuardianData", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List NewStudentEnrollmentUserData
+	#'
+	#' This function returns a dataframe or json object of NewStudentEnrollmentUserData
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('NewStudentEnrollmentUserData') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of NewStudentEnrollmentUserData
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listNewStudentEnrollmentUserData <- function(searchConditionsList = NULL, NewStudentEnrollmentUserDataID = F, UserIDSubmittedBy = F, PhysicalStreetNumber = F, PhysicalStreetName = F, UnitNumber = F, Unit = F, ZipCode = F, City = F, State = F, EmailAddress = F, PhoneNumber = F, PreviouslyInDistrict = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listNewStudentEnrollmentUserData <- function(searchConditionsList = NULL, NewStudentEnrollmentUserDataID = F, UserIDSubmittedBy = F, PhysicalStreetNumber = F, PhysicalStreetName = F, UnitNumber = F, Unit = F, ZipCode = F, City = F, State = F, EmailAddress = F, PhoneNumber = F, PreviouslyInDistrict = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "NewStudentEnrollmentUserData", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "NewStudentEnrollmentUserData", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormStatuses
+	#'
+	#' This function returns a dataframe or json object of OnlineFormStatuses
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormStatus') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormStatuses
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormStatuses <- function(searchConditionsList = NULL, OnlineFormStatusID = F, NameID = F, SecondaryID = F, StatusType = F, SubmittedDateTime = F, DenialMessage = F, DenialDateTime = F, CompletedByAdmin = F, UserIDApprover = F, UserIDSubmittedBy = F, ApprovalRevoked = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, OnlineFormEntityID = F, IsOutsideAddressRanges = F, WithinCutoffTime = F, FullNameLFMSubmittedForOverride = F, FullNameLFMSubmittedFor = F, IsOutsideAddressRangeSchoolPaths = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormStatuses <- function(searchConditionsList = NULL, OnlineFormStatusID = F, NameID = F, SecondaryID = F, StatusType = F, SubmittedDateTime = F, DenialMessage = F, DenialDateTime = F, CompletedByAdmin = F, UserIDApprover = F, UserIDSubmittedBy = F, ApprovalRevoked = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, OnlineFormEntityID = F, IsOutsideAddressRanges = F, WithinCutoffTime = F, FullNameLFMSubmittedForOverride = F, FullNameLFMSubmittedFor = F, IsOutsideAddressRangeSchoolPaths = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormStatus", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormStatus", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List SharedElementStatuses
+	#'
+	#' This function returns a dataframe or json object of SharedElementStatuses
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('SharedElementStatus') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of SharedElementStatuses
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listSharedElementStatuses <- function(searchConditionsList = NULL, SharedElementStatusID = F, SchoolYearID = F, SecondaryID = F, NameID = F, MediaIDAttachment = F, ElementType = F, FieldGroupType = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listSharedElementStatuses <- function(searchConditionsList = NULL, SharedElementStatusID = F, SchoolYearID = F, SecondaryID = F, NameID = F, MediaIDAttachment = F, ElementType = F, FieldGroupType = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "SharedElementStatus", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "SharedElementStatus", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List StepStatuses
+	#'
+	#' This function returns a dataframe or json object of StepStatuses
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('StepStatus') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of StepStatuses
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listStepStatuses <- function(searchConditionsList = NULL, StepStatusID = F, OnlineFormStatusID = F, StepID = F, StatusType = F, DenialMessage = F, ValidationMessage = F, PreviousStepStatusID = F, NextStepStatusID = F, HasPreviousStepStatus = F, HasNextStepStatus = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listStepStatuses <- function(searchConditionsList = NULL, StepStatusID = F, OnlineFormStatusID = F, StepID = F, StatusType = F, DenialMessage = F, ValidationMessage = F, PreviousStepStatusID = F, NextStepStatusID = F, HasPreviousStepStatus = F, HasNextStepStatus = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "StepStatus", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "StepStatus", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormTempEmergencyContacts
+	#'
+	#' This function returns a dataframe or json object of OnlineFormTempEmergencyContacts
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormTempEmergencyContact') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormTempEmergencyContacts
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormTempEmergencyContacts <- function(searchConditionsList = NULL, TempEmergencyContactID = F, EmergencyContactID = F, Rank = F, NameID = F, FirstName = F, MiddleName = F, LastName = F, RelationshipID = F, AllowStudentPickup = F, DriversLicenseNumber = F, Comment = F, PrimaryPhoneNamePhoneID = F, PrimaryPhonePhoneTypeID = F, PrimaryPhonePhoneNumber = F, PrimaryPhoneExtension = F, PrimaryPhonePreventFamilyStudentAccessUpdates = F, SecondPhoneNamePhoneID = F, SecondPhonePhoneTypeID = F, SecondPhonePhoneNumber = F, SecondPhoneExtension = F, SecondPhonePreventFamilyStudentAccessUpdates = F, ThirdPhoneNamePhoneID = F, ThirdPhonePhoneTypeID = F, ThirdPhonePhoneNumber = F, ThirdPhoneExtension = F, ThirdPhonePreventFamilyStudentAccessUpdates = F, PrimaryEmailNameEmailID = F, PrimaryEmailEmailTypeID = F, PrimaryEmailEmailAddress = F, PrimaryEmailPreventFamilyStudentAccessUpdates = F, SecondEmailNameEmailID = F, SecondEmailEmailTypeID = F, SecondEmailEmailAddress = F, SecondEmailPreventFamilyStudentAccessUpdates = F, ThirdEmailNameEmailID = F, ThirdEmailEmailTypeID = F, ThirdEmailEmailAddress = F, ThirdEmailPreventFamilyStudentAccessUpdates = F, OnScreenID = F, CreateNewEmergencyContactName = F, DeleteEmergencyContact = F, AddEmergencyContact = F, IsAlsoGuardian = F, ForSecondFamily = F, IsBusiness = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsHealthProfessionalName = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormTempEmergencyContacts <- function(searchConditionsList = NULL, TempEmergencyContactID = F, EmergencyContactID = F, Rank = F, NameID = F, FirstName = F, MiddleName = F, LastName = F, RelationshipID = F, AllowStudentPickup = F, DriversLicenseNumber = F, Comment = F, PrimaryPhoneNamePhoneID = F, PrimaryPhonePhoneTypeID = F, PrimaryPhonePhoneNumber = F, PrimaryPhoneExtension = F, PrimaryPhonePreventFamilyStudentAccessUpdates = F, SecondPhoneNamePhoneID = F, SecondPhonePhoneTypeID = F, SecondPhonePhoneNumber = F, SecondPhoneExtension = F, SecondPhonePreventFamilyStudentAccessUpdates = F, ThirdPhoneNamePhoneID = F, ThirdPhonePhoneTypeID = F, ThirdPhonePhoneNumber = F, ThirdPhoneExtension = F, ThirdPhonePreventFamilyStudentAccessUpdates = F, PrimaryEmailNameEmailID = F, PrimaryEmailEmailTypeID = F, PrimaryEmailEmailAddress = F, PrimaryEmailPreventFamilyStudentAccessUpdates = F, SecondEmailNameEmailID = F, SecondEmailEmailTypeID = F, SecondEmailEmailAddress = F, SecondEmailPreventFamilyStudentAccessUpdates = F, ThirdEmailNameEmailID = F, ThirdEmailEmailTypeID = F, ThirdEmailEmailAddress = F, ThirdEmailPreventFamilyStudentAccessUpdates = F, OnScreenID = F, CreateNewEmergencyContactName = F, DeleteEmergencyContact = F, AddEmergencyContact = F, IsAlsoGuardian = F, ForSecondFamily = F, IsBusiness = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsHealthProfessionalName = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempEmergencyContact", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempEmergencyContact", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempNewStudentEnrollmentGuardianPhones
+	#'
+	#' This function returns a dataframe or json object of TempNewStudentEnrollmentGuardianPhones
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempNewStudentEnrollmentGuardianPhone') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempNewStudentEnrollmentGuardianPhones
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempNewStudentEnrollmentGuardianPhones <- function(searchConditionsList = NULL, TempNewStudentEnrollmentGuardianPhoneID = F, NamePhoneID = F, PhoneTypeID = F, PhoneNumber = F, Extension = F, PhonePreventFamilyStudentAccessUpdates = F, Rank = F, OnScreenID = F, ParentOnScreenID = F, CreateNewPhone = F, DeletePhone = F, AddPhone = F, IsConfidential = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempNewStudentEnrollmentGuardianPhones <- function(searchConditionsList = NULL, TempNewStudentEnrollmentGuardianPhoneID = F, NamePhoneID = F, PhoneTypeID = F, PhoneNumber = F, Extension = F, PhonePreventFamilyStudentAccessUpdates = F, Rank = F, OnScreenID = F, ParentOnScreenID = F, CreateNewPhone = F, DeletePhone = F, AddPhone = F, IsConfidential = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempNewStudentEnrollmentGuardianPhone", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempNewStudentEnrollmentGuardianPhone", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempNewStudentEnrollmentGuardianEmails
+	#'
+	#' This function returns a dataframe or json object of TempNewStudentEnrollmentGuardianEmails
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempNewStudentEnrollmentGuardianEmail') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempNewStudentEnrollmentGuardianEmails
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempNewStudentEnrollmentGuardianEmails <- function(searchConditionsList = NULL, TempNewStudentEnrollmentGuardianEmailID = F, NameEmailID = F, EmailTypeID = F, EmailAddress = F, EmailPreventFamilyStudentAccessUpdates = F, OnScreenID = F, ParentOnScreenID = F, CreateNewEmail = F, DeleteEmail = F, AddEmail = F, Rank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempNewStudentEnrollmentGuardianEmails <- function(searchConditionsList = NULL, TempNewStudentEnrollmentGuardianEmailID = F, NameEmailID = F, EmailTypeID = F, EmailAddress = F, EmailPreventFamilyStudentAccessUpdates = F, OnScreenID = F, ParentOnScreenID = F, CreateNewEmail = F, DeleteEmail = F, AddEmail = F, Rank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempNewStudentEnrollmentGuardianEmail", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempNewStudentEnrollmentGuardianEmail", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempSteps
+	#'
+	#' This function returns a dataframe or json object of TempSteps
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempStep') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempSteps
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempSteps <- function(searchConditionsList = NULL, TempStepID = F, EntityGroupKey = F, StepID = F, OnlineFormID = F, Name = F, Message = F, IsRequired = F, IsActive = F, Order = F, IsReadOnlyForNonPrimaryFamily = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ErrorCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempSteps <- function(searchConditionsList = NULL, TempStepID = F, EntityGroupKey = F, StepID = F, OnlineFormID = F, Name = F, Message = F, IsRequired = F, IsActive = F, Order = F, IsReadOnlyForNonPrimaryFamily = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ErrorCount = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempStep", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempStep", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List Elements
+	#'
+	#' This function returns a dataframe or json object of Elements
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Element') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of Elements
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listElements <- function(searchConditionsList = NULL, ElementID = F, StepID = F, MediaID = F, FieldID = F, Type = F, ParameterData = F, Description = F, Order = F, AllowsUserInteraction = F, HasBackingObject = F, AdminCanEdit = F, HasSharedValue = F, SharedValueUsesNotShared = F, IsNewStudentEnrollmentElement = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RenderWeight = F, FieldRelationship = F, SupportsLabelOverrides = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listElements <- function(searchConditionsList = NULL, ElementID = F, StepID = F, MediaID = F, FieldID = F, Type = F, ParameterData = F, Description = F, Order = F, AllowsUserInteraction = F, HasBackingObject = F, AdminCanEdit = F, HasSharedValue = F, SharedValueUsesNotShared = F, IsNewStudentEnrollmentElement = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RenderWeight = F, FieldRelationship = F, SupportsLabelOverrides = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "Element", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "Element", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormSteps
+	#'
+	#' This function returns a dataframe or json object of OnlineFormSteps
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormStep') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormSteps
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormSteps <- function(searchConditionsList = NULL, StepID = F, OnlineFormID = F, Name = F, Message = F, IsRequired = F, IsActive = F, Order = F, IsReadOnlyForNonPrimaryFamily = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormSteps <- function(searchConditionsList = NULL, StepID = F, OnlineFormID = F, Name = F, Message = F, IsRequired = F, IsActive = F, Order = F, IsReadOnlyForNonPrimaryFamily = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "Step", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "Step", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormDateExceptions
+	#'
+	#' This function returns a dataframe or json object of OnlineFormDateExceptions
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormDateException') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormDateExceptions
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormDateExceptions <- function(searchConditionsList = NULL, OnlineFormDateExceptionID = F, OnlineFormID = F, ObjectID = F, ObjectPrimaryKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormDateExceptions <- function(searchConditionsList = NULL, OnlineFormDateExceptionID = F, OnlineFormID = F, ObjectID = F, ObjectPrimaryKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormDateException", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormDateException", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineForms
+	#'
+	#' This function returns a dataframe or json object of OnlineForms
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineForm') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineForms
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineForms <- function(searchConditionsList = NULL, OnlineFormID = F, Name = F, SchoolYearID = F, OnlineFormTypeID = F, Description = F, ShowDescriptionOnTile = F, Filter = F, Module = F, Object = F, IncludeInStudentPortal = F, IncludeInFamilyPortal = F, IncludeInAdministrativePortal = F, IncludeInEmployeePortal = F, IncludeInTeacherPortal = F, IncludeInActivitiesPortal = F, IncludeInNewStudentEnrollmentPortal = F, IsPublished = F, StartDate = F, EndDate = F, Message = F, ReviewStepMessage = F, MessageAfterSubmission = F, DisplayForNonPrimaryFamily = F, IncludeAdobeAcrobatLink = F, IconCode = F, OnlineFormIDClonedFrom = F, MessageForNonPrimaryFamily = F, PortalsIncludedIn = F, MainPageEmbeddedLinkProtocol = F, MainPageEmbeddedLinkUrl = F, InUseByUsers = F, ContactHash = F, AllowContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AllowMultipleFormsPerUser = F, Portals = F, NoApprovalNeeded = F, SendFamilyAccessEmail = F, HideCurrentValueOnApproval = F, SkipInstructionsPage = F, SkipThankYouPage = F, YearType = F, FilterSubType = F, PortalType = F, IsUserInitiated = F, CutoffTime = F, WithinCutoffTime = F, LimitToOnePerDay = F, OnlineFormStatusExistsToday = F, SkipReviewPage = F, ThankYouPageLinkProtocol = F, ThankYouPageLinkUrl = F, ThankYouPageLinkUrlDisplayName = F, IncludeInReporting = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineForms <- function(searchConditionsList = NULL, OnlineFormID = F, Name = F, SchoolYearID = F, OnlineFormTypeID = F, Description = F, ShowDescriptionOnTile = F, Filter = F, Module = F, Object = F, IncludeInStudentPortal = F, IncludeInFamilyPortal = F, IncludeInAdministrativePortal = F, IncludeInEmployeePortal = F, IncludeInTeacherPortal = F, IncludeInActivitiesPortal = F, IncludeInNewStudentEnrollmentPortal = F, IsPublished = F, StartDate = F, EndDate = F, Message = F, ReviewStepMessage = F, MessageAfterSubmission = F, DisplayForNonPrimaryFamily = F, IncludeAdobeAcrobatLink = F, IconCode = F, OnlineFormIDClonedFrom = F, MessageForNonPrimaryFamily = F, PortalsIncludedIn = F, MainPageEmbeddedLinkProtocol = F, MainPageEmbeddedLinkUrl = F, InUseByUsers = F, ContactHash = F, AllowContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AllowMultipleFormsPerUser = F, Portals = F, NoApprovalNeeded = F, SendFamilyAccessEmail = F, HideCurrentValueOnApproval = F, SkipInstructionsPage = F, SkipThankYouPage = F, YearType = F, FilterSubType = F, PortalType = F, IsUserInitiated = F, CutoffTime = F, WithinCutoffTime = F, LimitToOnePerDay = F, OnlineFormStatusExistsToday = F, SkipReviewPage = F, ThankYouPageLinkProtocol = F, ThankYouPageLinkUrl = F, ThankYouPageLinkUrlDisplayName = F, IncludeInReporting = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineForm", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineForm", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List ElementGroups
+	#'
+	#' This function returns a dataframe or json object of ElementGroups
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ElementGroup') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of ElementGroups
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listElementGroups <- function(searchConditionsList = NULL, ElementGroupID = F, SkywardID = F, Name = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listElementGroups <- function(searchConditionsList = NULL, ElementGroupID = F, SkywardID = F, Name = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "ElementGroup", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "ElementGroup", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List ElementGroupTemplates
+	#'
+	#' This function returns a dataframe or json object of ElementGroupTemplates
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ElementGroupTemplate') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of ElementGroupTemplates
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listElementGroupTemplates <- function(searchConditionsList = NULL, ElementGroupTemplateID = F, SkywardID = F, ElementGroupID = F, Type = F, ParameterData = F, Order = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listElementGroupTemplates <- function(searchConditionsList = NULL, ElementGroupTemplateID = F, SkywardID = F, ElementGroupID = F, Type = F, ParameterData = F, Order = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "ElementGroupTemplate", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "ElementGroupTemplate", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormEntities
+	#'
+	#' This function returns a dataframe or json object of OnlineFormEntities
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormEntity') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormEntities
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormEntities <- function(searchConditionsList = NULL, OnlineFormEntityID = F, OnlineFormID = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormEntities <- function(searchConditionsList = NULL, OnlineFormEntityID = F, OnlineFormID = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormEntity", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormEntity", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormStatusNames
+	#'
+	#' This function returns a dataframe or json object of OnlineFormStatusNames
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormStatusName') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormStatusNames
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormStatusNames <- function(searchConditionsList = NULL, OnlineFormStatusNameID = F, OnlineFormStatusID = F, NameID = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormStatusNames <- function(searchConditionsList = NULL, OnlineFormStatusNameID = F, OnlineFormStatusID = F, NameID = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormStatusName", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormStatusName", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List MassPrintHistories
+	#'
+	#' This function returns a dataframe or json object of MassPrintHistories
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('MassPrintHistory') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of MassPrintHistories
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listMassPrintHistories <- function(searchConditionsList = NULL, MassPrintHistoryID = F, OnlineFormID = F, MediaID = F, WorkflowInstanceID = F, RequestIdentifier = F, SendMessageOnComplete = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listMassPrintHistories <- function(searchConditionsList = NULL, MassPrintHistoryID = F, OnlineFormID = F, MediaID = F, WorkflowInstanceID = F, RequestIdentifier = F, SendMessageOnComplete = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "MassPrintHistory", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "MassPrintHistory", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List ElementStatusSurveyAnswers
+	#'
+	#' This function returns a dataframe or json object of ElementStatusSurveyAnswers
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ElementStatusSurveyAnswer') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of ElementStatusSurveyAnswers
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listElementStatusSurveyAnswers <- function(searchConditionsList = NULL, ElementStatusSurveyAnswerID = F, ElementStatusID = F, OnlineFormID = F, NameID = F, ColumnName = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listElementStatusSurveyAnswers <- function(searchConditionsList = NULL, ElementStatusSurveyAnswerID = F, ElementStatusID = F, OnlineFormID = F, NameID = F, ColumnName = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "ElementStatusSurveyAnswer", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "ElementStatusSurveyAnswer", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempDependents
+	#'
+	#' This function returns a dataframe or json object of TempDependents
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempDependent') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempDependents
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempDependents <- function(searchConditionsList = NULL, TempDependentID = F, LastName = F, FirstName = F, MiddleName = F, BirthDate = F, IsExistingRecord = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DependentID = F, RelationshipID = F, SocialSecurityNumber = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempDependents <- function(searchConditionsList = NULL, TempDependentID = F, LastName = F, FirstName = F, MiddleName = F, BirthDate = F, IsExistingRecord = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DependentID = F, RelationshipID = F, SocialSecurityNumber = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempDependent", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempDependent", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormClearances
+	#'
+	#' This function returns a dataframe or json object of OnlineFormClearances
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormClearance') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormClearances
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormClearances <- function(searchConditionsList = NULL, OnlineFormClearanceID = F, OnlineFormID = F, GroupIDSecurity = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormClearances <- function(searchConditionsList = NULL, OnlineFormClearanceID = F, OnlineFormID = F, GroupIDSecurity = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormClearance", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormClearance", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempDataGridRows
+	#'
+	#' This function returns a dataframe or json object of TempDataGridRows
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempDataGridRow') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempDataGridRows
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempDataGridRows <- function(searchConditionsList = NULL, TempDataGridRowID = F, ColumnHeader = F, ControlType = F, DefaultValue = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Options = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempDataGridRows <- function(searchConditionsList = NULL, TempDataGridRowID = F, ColumnHeader = F, ControlType = F, DefaultValue = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Options = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempDataGridRow", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempDataGridRow", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TeacherOnlineForms
+	#'
+	#' This function returns a dataframe or json object of TeacherOnlineForms
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TeacherOnlineForm') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TeacherOnlineForms
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTeacherOnlineForms <- function(searchConditionsList = NULL, OnlineFormEntityID = F, OnlineFormID = F, OnlineFormStatusID = F, OnlineFormTypeID = F, EntityID = F, SchoolYearID = F, NameID = F, SectionID = F, DisplayPeriodID = F, StatusType = F, SecondaryID = F, FilterInformation = F, NoStartedFormsExist = F, NoFormsExistOfSameType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StatusTypeSortable = F, OnlineFormStatusExistsToday = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTeacherOnlineForms <- function(searchConditionsList = NULL, OnlineFormEntityID = F, OnlineFormID = F, OnlineFormStatusID = F, OnlineFormTypeID = F, EntityID = F, SchoolYearID = F, NameID = F, SectionID = F, DisplayPeriodID = F, StatusType = F, SecondaryID = F, FilterInformation = F, NoStartedFormsExist = F, NoFormsExistOfSameType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StatusTypeSortable = F, OnlineFormStatusExistsToday = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TeacherOnlineForm", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TeacherOnlineForm", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempStudentHealthConditions
+	#'
+	#' This function returns a dataframe or json object of TempStudentHealthConditions
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempStudentHealthCondition') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempStudentHealthConditions
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempStudentHealthConditions <- function(searchConditionsList = NULL, TempStudentHealthConditionID = F, HealthConditionID = F, StudentHealthConditionID = F, StartDate = F, IsExistingStudentHealthCondition = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentHealthConditionNoteID = F, Note = F, IsExistingStudentHealthConditionNote = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempStudentHealthConditions <- function(searchConditionsList = NULL, TempStudentHealthConditionID = F, HealthConditionID = F, StudentHealthConditionID = F, StartDate = F, IsExistingStudentHealthCondition = F, IsDelete = F, OnScreenCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentHealthConditionNoteID = F, Note = F, IsExistingStudentHealthConditionNote = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempStudentHealthCondition", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempStudentHealthCondition", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormTempErrors
+	#'
+	#' This function returns a dataframe or json object of OnlineFormTempErrors
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormTempError') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormTempErrors
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormTempErrors <- function(searchConditionsList = NULL, TempErrorID = F, Description = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormTempErrors <- function(searchConditionsList = NULL, TempErrorID = F, Description = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempError", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List TempStepErrors
+	#'
+	#' This function returns a dataframe or json object of TempStepErrors
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempStepError') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of TempStepErrors
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempStepErrors <- function(searchConditionsList = NULL, TempStepErrorID = F, TempStepID = F, ErrorMessage = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listTempStepErrors <- function(searchConditionsList = NULL, TempStepErrorID = F, TempStepID = F, ErrorMessage = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "TempStepError", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "TempStepError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormReportableReports
+	#'
+	#' This function returns a dataframe or json object of OnlineFormReportableReports
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormReportableReport') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormReportableReports
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormReportableReports <- function(searchConditionsList = NULL, OnlineFormReportableReportID = F, ReportID = F, OnlineFormID = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormReportableReports <- function(searchConditionsList = NULL, OnlineFormReportableReportID = F, ReportID = F, OnlineFormID = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormReportableReport", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormReportableReport", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List OnlineFormReportableObjects
+	#'
+	#' This function returns a dataframe or json object of OnlineFormReportableObjects
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OnlineFormReportableObject') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of OnlineFormReportableObjects
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listOnlineFormReportableObjects <- function(searchConditionsList = NULL, OnlineFormReportableObjectID = F, ObjectID = F, OnlineFormID = F, DeleteOrder = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listOnlineFormReportableObjects <- function(searchConditionsList = NULL, OnlineFormReportableObjectID = F, ObjectID = F, OnlineFormID = F, DeleteOrder = F, ElementID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormReportableObject", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "OnlineFormReportableObject", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}
 
+	#' List Preschool1perStudents
+	#'
+	#' This function returns a dataframe or json object of Preschool1perStudents
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Preschool1perStudent') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @concept Online Form
+	#' @return A list of Preschool1perStudents
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listPreschool1perStudents <- function(searchConditionsList = NULL, Preschool1perStudentID = F, OnlineFormStatusID = F, OnlineFormID = F, Step1Element1 = F, Step1Element2 = F, Step2Element3 = F, Step2Element4 = F, Step2Element5 = F, Step2Element7 = F, Step2Element8 = F, Step2Element9 = F, Step3Element4 = F, Step3Element8 = F, Step3Element12 = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
 
-	listPreschool1perStudents <- function(searchConditionsList = NULL, Preschool1perStudentID = F, OnlineFormStatusID = F, OnlineFormID = F, Step1Element1 = F, Step1Element2 = F, Step2Element3 = F, Step2Element4 = F, Step2Element5 = F, Step2Element7 = F, Step2Element8 = F, Step2Element9 = F, Step3Element4 = F, Step3Element8 = F, Step3Element12 = F, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityID = 1, schoolYearID = NULL, page = 1, pageSize = 100000, flatten = T, ...){
-
-		params <- as.list(environment()) %>% append(list(...))
+		params <- as.list(environment())
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
-		ifelse(!any(searchFields %>% unlist()), searchFields <- "all", searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "OnlineForm", objectName = "Preschool1perStudent", schoolYearID = schoolYearID, searchFields = searchFields, page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityID, flatten = flatten)
+		listSkyObjects(module = "OnlineForm", objectName = "Preschool1perStudent", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
 	}

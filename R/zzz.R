@@ -1,5 +1,3 @@
-usethis::use_pipe()
-
 ### This function checks obtains a oauth 2.0 token for making Skyward requests. GET(url = requestUrl, config = config(token = checkSkywardAuthentication()))
 getSkywardToken <- function(){
   
@@ -388,7 +386,7 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
     print(glue::glue('Module {i} of {nrow(modules)}: {module$DisplayName}'))
   
     # Create {module}.R file
-    filepath <- glue::glue('R/{module$DisplayName}.R')
+    filepath <- glue::glue('R/{module$ModuleShortName}.R')
     if(!dir.exists('R')) dir.create('R')
     
     objects <- skyObjects %>% dplyr::filter(ModuleID == module$ModuleID)

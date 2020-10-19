@@ -90,14 +90,14 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
   method <- 'GET'
  
-  object <- skyObjects %>% filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
-  allSearchFields <- skyFields %>% filter(ObjectID == object$ObjectID) %>% pull(CurrentName)
+  object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
+  allSearchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   ifelse(searchFields == 'all', searchFields <- allSearchFields, searchFields <- searchFields)
   
-  searchFields <- searchFields %>% keep(~!.x %in% c("Relationships", "ValidationRules"))
-  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% str_flatten(', '), ')')))
+  searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
   
-  requestText <- glue::glue('{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, config = config(token = getSkywardToken()))') 
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, config = httr::config(token = getSkywardToken()))') 
   
   response <- eval(parse(text = requestText))
   
@@ -109,9 +109,9 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   
   if(response$status_code > 300) return(response)
   
-  if(!flatten) return(content(response))
+  if(!flatten) return(httr::content(response))
   
-  content(response) %>% map(~ifelse(length(.x) == 0, NA, .x)) %>% as.data.frame()
+  httr::content(response) %>% purrr::map(~ifelse(length(.x) == 0, NA, .x)) %>% as.data.frame()
 }
 
 listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', flatten = T){
@@ -154,13 +154,12 @@ listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields
   httr::content(response) %>% purrr::pluck('Objects') %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T)
 }
 
-
 loadSkyRelationships <- function(){
   
   results <- list()
   for(page in 1:100000){
     
-    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
+    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'FieldIDForeignKeyCurrent', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
     
     if(length(newResults$Objects) == 0){
       break()
@@ -170,8 +169,10 @@ loadSkyRelationships <- function(){
   }
   
   relationships <- results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T)
-  
-  relationships %>% dplyr::mutate(RelationshipName = CurrentName) %>% dplyr::rename(RelationshipType = CurrentType) %>% dplyr::filter(!RelationshipName %in% c('UserCreatedBy', 'UserModifiedBy'))
+
+  relationships <- relationships %>% dplyr::mutate(RelationshipName = CurrentName) %>% dplyr::rename(RelationshipType = CurrentType) %>% dplyr::filter(!RelationshipName %in% c('UserCreatedBy', 'UserModifiedBy')) %>% filter(!unlist(lapply(FieldIDForeignKeyCurrent, function(x) length(x) == 0))) 
+  # Remove relationships with no foreign key field since these are some odd kind of relationship I'm unfamiliar with...
+  relationships %>% mutate(FieldIDForeignKeyCurrent = unlist(FieldIDForeignKeyCurrent))
 }
 
 
@@ -259,6 +260,8 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
       
       objID <- skyObjects %>% dplyr::filter(ObjectName == objName) %>% dplyr::pull(ObjectID)
       
+      if(length(objID) == 0) stop(glue::glue('No ObjectID for {objName}'))
+      
       # Add fields...
       fieldsToAdd <- skyFields %>% dplyr::filter(ObjectID == objID) %>% dplyr::pull(FieldName)
       
@@ -268,7 +271,6 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
       
       # Add Objects
       rels <- skyRelationships %>% dplyr::filter(ObjectIDPrimary == objID, RelationshipType %in% c('ManyToOne', 'OneToOne'))
-     
       rels <- rels %>% dplyr::select(ObjectIDForeignCurrent) %>% dplyr::distinct() %>% dplyr::left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% dplyr::filter(!stringr::str_detect(objTree$Name, glue::glue('{ObjectName}.')), ObjectName != objName)
       
       if(nrow(rels) > 0){
@@ -290,10 +292,21 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
   objTrees
 }
 
-
-# This function returns a list representation of object and field relationships.
-getSchemaForObjects <- function(seedObjectName, maxDepth = 2){
+#' Get Schema for Objects
+#'
+#' This function returns fields and objects directly related to the given objects.
+#'
+#' @param seedObjectNames A list of object names to find fields and relationships for.
+#' @param maxDepth The number of layers of relationships to trace along before stopping. Default is 2.
+#' @concept General
+#' @return A nested list of fields and relationships for the given seedObjectNames.
+#' @section References:
+#' \{yourApiUrl\}/swagger\cr\cr
+#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+#' @export
+getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
   
+  lapply(seedObjectNames, function(seedObjectName){
   objTrees <- dplyr::tibble(Name = seedObjectName, Type = 'object')
   depth <- 1
   
@@ -306,7 +319,7 @@ getSchemaForObjects <- function(seedObjectName, maxDepth = 2){
     depth <- depth + 1
   }
  
-  textToList <- function(myTextTreeDF){
+  textToList <- function(myTextTreeDF, seedName){
     
     allTexts <- c('')
     
@@ -331,9 +344,9 @@ getSchemaForObjects <- function(seedObjectName, maxDepth = 2){
           }}else{
             
             if(myTextType == 'field'){
-              toEval <- glue::glue("returnObj${myText %>% stringr::str_replace_all(stringr::fixed('.'), '$')} <- myText")
+              toEval <- glue::glue("returnObj${myText %>% stringr::str_replace_all(stringr::fixed('.'), '$')} <- myText %>% stringr::str_sub((myText %>% stringr::str_locate(paste0(seedName, stringr::fixed('.'))))[,'end'] + 1)")
             }else{
-              toEval <- glue::glue("returnObj${myText %>% stringr::str_replace_all(stringr::fixed('.'), '$')} <- list(ObjectPath = myText, NextDepth = depth)")
+              toEval <- glue::glue("returnObj${myText %>% stringr::str_replace_all(stringr::fixed('.'), '$')} <- list(ObjectPath = myText %>% stringr::str_sub((myText %>% stringr::str_locate(paste0(seedName, stringr::fixed('.'))))[,'end'] + 1), NextDepth = depth)")
             }
             
             eval(parse(text = toEval))
@@ -343,7 +356,9 @@ getSchemaForObjects <- function(seedObjectName, maxDepth = 2){
     returnObj
   }
   
-  objTrees %>% dplyr::mutate(Name = Name %>% stringr::str_replace(glue::glue('{seedObjectName}.'), '')) %>% textToList()
+  # Remove initial object from path before creating list objects.
+  objTrees %>% textToList(seedObjectName)
+  }) %>% unlist(recursive = F)
 }
 
 #' Get all Search Conditions Types for use in Filtering

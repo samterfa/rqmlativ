@@ -2,6 +2,7 @@
 
 export("%>%")
 export(getAllSearchConditionTypes)
+export(getSchemaForObjects)
 export(listACACoveredIndividualExceptions)
 export(listACACoveredIndividualV2s)
 export(listACADelimitedFileFormats)

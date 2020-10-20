@@ -2,7 +2,7 @@
 % Please edit documentation in R/Position.R
 \name{getTempOrganizationChart}
 \alias{getTempOrganizationChart}
-\title{Get TempOrganizationChart}
+\title{Get a TempOrganizationChart}
 \usage{
 getTempOrganizationChart(
   TempOrganizationChartID,
@@ -22,20 +22,20 @@ getTempOrganizationChart(
 \arguments{
 \item{TempOrganizationChartID}{The ID of the TempOrganizationChart to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempOrganizationChart') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempOrganizationChart') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given TempOrganizationChart. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempOrganizationChart.}
 }
 \value{
-A dataframe or of getTempOrganizationChart
+A dataframe or of TempOrganizationChart
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

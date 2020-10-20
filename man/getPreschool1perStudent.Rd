@@ -2,7 +2,7 @@
 % Please edit documentation in R/OnlineForm.R
 \name{getPreschool1perStudent}
 \alias{getPreschool1perStudent}
-\title{Get Preschool1perStudent}
+\title{Get a Preschool1perStudent}
 \usage{
 getPreschool1perStudent(
   Preschool1perStudentID,
@@ -29,20 +29,20 @@ getPreschool1perStudent(
 \arguments{
 \item{Preschool1perStudentID}{The ID of the Preschool1perStudent to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Preschool1perStudent') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Preschool1perStudent') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given Preschool1perStudent. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Preschool1perStudent.}
 }
 \value{
-A dataframe or of getPreschool1perStudent
+A dataframe or of Preschool1perStudent
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

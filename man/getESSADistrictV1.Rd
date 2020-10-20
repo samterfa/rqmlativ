@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReporting.R
 \name{getESSADistrictV1}
 \alias{getESSADistrictV1}
-\title{Get ESSADistrictV1}
+\title{Get an ESSADistrictV1}
 \usage{
 getESSADistrictV1(
   ESSADistrictV1ID,
@@ -31,20 +31,20 @@ getESSADistrictV1(
 \arguments{
 \item{ESSADistrictV1ID}{The ID of the ESSADistrictV1 to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ESSADistrictV1') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ESSADistrictV1') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given ESSADistrictV1. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ESSADistrictV1.}
 }
 \value{
-A dataframe or of getESSADistrictV1
+A dataframe or of ESSADistrictV1
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

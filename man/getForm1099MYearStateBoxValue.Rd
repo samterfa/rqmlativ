@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingFederal.R
 \name{getForm1099MYearStateBoxValue}
 \alias{getForm1099MYearStateBoxValue}
-\title{Get Form1099MYearStateBoxValue}
+\title{Get a Form1099MYearStateBoxValue}
 \usage{
 getForm1099MYearStateBoxValue(
   Form1099MYearStateBoxValueID,
@@ -21,20 +21,20 @@ getForm1099MYearStateBoxValue(
 \arguments{
 \item{Form1099MYearStateBoxValueID}{The ID of the Form1099MYearStateBoxValue to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Form1099MYearStateBoxValue') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Form1099MYearStateBoxValue') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given Form1099MYearStateBoxValue. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Form1099MYearStateBoxValue.}
 }
 \value{
-A dataframe or of getForm1099MYearStateBoxValue
+A dataframe or of Form1099MYearStateBoxValue
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

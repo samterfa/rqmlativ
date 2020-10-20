@@ -101,8 +101,7 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   method <- 'GET'
  
   object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
-  allSearchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
-  ifelse(searchFields == 'all', searchFields <- allSearchFields, searchFields <- searchFields)
+  if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
   queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
@@ -111,13 +110,13 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   
   response <- eval(parse(text = requestText))
   
-  if(returnResponse) return(response)
-  
   if(response$status_code == 403){
     print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
+  
+  if(returnResponse) return(response)
   
   if(response$status_code == 503) stop('Service Unavailable')
   
@@ -125,25 +124,110 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   
   if(!flatten) return(httr::content(response))
   
- # httr::content(response) %>% purrr::map(~ifelse(length(.x) == 0, NA, .x)) %>% as.data.frame()
+  httr::content(response) %>% unlistItems() %>% as.data.frame()
+}
+
+deleteSkyObject <- function(module, objectName, objectId, ignoreWarnings = F, entityId = 1, api = 'Generic', flatten = T, returnResponse = F){
+  
+  baseUrl <- Sys.getenv('skyward_base_url')
+  endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
+  method <- 'DELETE'
+  
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = list(ignoreWarnings = ignoreWarnings), config = httr::config(token = getSkywardToken()))') 
+  
+  response <- eval(parse(text = requestText))
+  
+  if(response$status_code == 403){
+    print('Refreshing auth token')
+    file.remove(response$request$auth_token$cache_path)
+    response <- eval(parse(text = requestText))
+  }
+  
+  if(returnResponse) return(response)
+  
+  if(response$status_code == 503) stop('Service Unavailable')
+  
+  if(response$status_code > 300) stop(httr::content(response))
+  
+  if(!flatten) return(httr::content(response))
+  
+  httr::content(response) %>% unlistItems() %>% as.data.frame()
+}
+
+createSkyObject <- function(module, objectName, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', flatten = T, returnResponse = F){
+  
+  baseUrl <- Sys.getenv('skyward_base_url')
+  endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}')
+  method <- 'PUT'
+  
+  object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
+  if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
+  
+  searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
+  
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, body = body, encode = "json", config = httr::config(token = getSkywardToken()))') 
+  
+  response <- eval(parse(text = requestText))
+  
+  if(response$status_code == 403){
+    print('Refreshing auth token')
+    file.remove(response$request$auth_token$cache_path)
+    response <- eval(parse(text = requestText))
+  }
+  
+  if(returnResponse) return(response)
+  
+  if(response$status_code == 503) stop('Service Unavailable')
+  
+  if(response$status_code > 300) stop(httr::content(response))
+  
+  if(!flatten) return(httr::content(response))
+  
+  httr::content(response) %>% unlistItems() %>% as.data.frame()
+}
+
+modifySkyObject <- function(module, objectName, objectId, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', flatten = T, returnResponse = F){
+  
+  baseUrl <- Sys.getenv('skyward_base_url')
+  endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
+  method <- 'POST'
+  
+  object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
+  if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
+  
+  searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
+  
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, body = body, encode = "json", config = httr::config(token = getSkywardToken()))') 
+  
+  response <- eval(parse(text = requestText))
+  
+  if(response$status_code == 403){
+    print('Refreshing auth token')
+    file.remove(response$request$auth_token$cache_path)
+    response <- eval(parse(text = requestText))
+  }
+  
+  if(returnResponse) return(response)
+  
+  if(response$status_code == 503) stop('Service Unavailable')
+  
+  if(response$status_code > 300) stop(httr::content(response))
+  
+  if(!flatten) return(httr::content(response))
+  
   httr::content(response) %>% unlistItems() %>% as.data.frame()
 }
 
 listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', flatten = T, returnResponse = F){
   
-  endpoint <- glue::glue('/{api}/{entityId}/{module}/{objectName}')
+  endpoint <- glue::glue('/{api}/{entityId}/{module}/{objectName}/{page}/{format(pageSize, scientific = F)}')
   
-  method <- ifelse(is.null(SearchConditionsList) & is.null(SearchSortFieldNamesList), 'GET', 'POST')
+  ifelse(is.null(SearchConditionsList) & is.null(SearchSortFieldNamesList), method <- 'GET', method <- 'POST')
   
-  if(all(searchFields == 'all')){
-    if(exists('skyObjects') & exists('skyFields')){
-      object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
-      allSearchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
-      searchFields <- allSearchFields
-    }else{
-      stop('Must either load skyObjects and skyFields, or specificy searchFields.')
-    }
-  }
+  object <- skyObjects %>% dplyr::filter(FormattedObjectPath == glue::glue('{module}/{objectName}'))
+  if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
   queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
@@ -152,17 +236,17 @@ listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields
   
   searchObject <- createSearchObject(SearchConditionsList = SearchConditionsList, SearchConditionsGroupType = SearchConditionsGroupType, SearchSortFieldNamesList = SearchSortFieldNamesList, SearchSortFieldNamesDescendingList = SearchSortFieldNamesDescendingList)
   
-  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}/{page}/{format(pageSize, scientific = F)}", body = searchObject %>% jsonlite::toJSON(auto_unbox = T), httr::content_type("application/json"), query = queryParams, config = httr::config(token = getSkywardToken()))') 
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}}", body = searchObject %>% jsonlite::toJSON(auto_unbox = T), httr::content_type("application/json"), query = queryParams, config = httr::config(token = getSkywardToken()))') 
   
   response <- eval(parse(text = requestText))
-  
-  if(returnResponse) return(response)
   
   if(response$status_code == 403){
     print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
+  
+  if(returnResponse) return(response)
   
   if(response$status_code == 503) stop('Service Unavailable')
   
@@ -380,9 +464,9 @@ getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
   }) %>% unlist(recursive = F)
 }
 
-#' Get all Search Conditions Types for use in Filtering
+#' List Search Conditions Types for use in Filtering
 #'
-#' This function returns the Search Conditions that can be used to filter API GET requests.
+#' This function returns the Search Conditions that can be used to filter API list requests.
 #'
 #' @concept General
 #' @return All search condition types for filtering.
@@ -390,7 +474,7 @@ getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
 #' \{yourApiUrl\}/swagger\cr\cr
 #' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 #' @export
-getAllSearchConditionTypes <- function(){
+listSearchConditionTypes <- function(){
   
   c('Less', 'LessEqual', 'Equal', 'NotEqual', 'GreaterEqual', 'Greater', 'BetweenInclusive', 'BetweenExclusive', 'Null', 'NotNull', 'List', 'NotList', 'Like', 'NotLike', 'Begins', 'NotBegins', 'Contains', 'NotContains', 'Ends', 'NotEnds')
 }
@@ -419,6 +503,7 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
       object <- objects %>% dplyr::slice(j)
       
       fields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(FieldName) %>% unique()
+      editableFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID, UserCanEdit == T) %>% dplyr::pull(FieldName) %>% unique()
       
       #### Generate LIST functions
       functionName <- glue::glue('list{pluralize::pluralize(object$ObjectName)}')
@@ -427,14 +512,14 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
       docText <- glue::glue("\n\t#' List {functionName %>% stringr::str_replace('^list', '')}", .trim = F)
       docText <- paste0(docText, "\n\t#'")
       docText <- paste0(docText, glue::glue("\n\t#' This function returns a dataframe or json object of {functionName %>% stringr::str_replace('^list', '')}", .trim = F))
-      docText <- paste0(docText, "\n\t#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.")
-      docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('{object$ObjectName}') to get more field paths.", .trim = F))
-      docText <- paste0(docText, "\n\t#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\\%'). Run \\code{\\link{getAllSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).")
+      docText <- paste0(docText, glue::glue("\n\t#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given {functionName %>% stringr::str_replace('^list', '')}. Defaults to FALSE for all return fields which, for convenience, returns all fields for the {functionName %>% stringr::str_replace('^list', '')}.", .trim = F))
+      docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \\code{{\\link{{getSchemaForObjects}}}}('{object$ObjectName}') to get more field paths.", .trim = F))
+      docText <- paste0(docText, "\n\t#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\\%'). Run \\code{\\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).")
       docText <- paste0(docText, "\n\t#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.")
       docText <- paste0(docText, "\n\t#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).")
       docText <- paste0(docText, "\n\t#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.")
-      docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{getAllEntities}} for a list of entities. Defaults to 1 (district).")
-      docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
+      docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{listEntities}} for a list of entities. Defaults to 1 (district).")
+      docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
       docText <- paste0(docText, "\n\t#' @param page Results are paginated. The page of results to return. Default is 1.")
       docText <- paste0(docText, "\n\t#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).")
       docText <- paste0(docText, "\n\t#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).")
@@ -460,18 +545,18 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
       aORan <- ifelse(stringr::str_sub(functionName %>% stringr::str_replace('^get', ''), 1, 1) %in% c('A', 'E', 'I', 'O', 'U'), 'an', 'a')
       
       # Create documentation text
-      docText <- glue::glue("\n\t#' Get {functionName %>% stringr::str_replace('^get', '')}", .trim = F)
+      docText <- glue::glue("\n\t#' Get {aORan} {object$ObjectName}", .trim = F)
       docText <- paste0(docText, "\n\t#'")
       docText <- paste0(docText, glue::glue("\n\t#' This function returns a dataframe or json object of {aORan} {functionName %>% stringr::str_replace('^get', '')}", .trim = F))
       docText <- paste0(docText, glue::glue("\n\t#' @param {object$ObjectName}ID The ID of the {object$ObjectName} to return.", .trim = F))
-      docText <- paste0(docText, "\n\t#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.")
-      docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('{object$ObjectName}') to get more field paths.", .trim = F))
-      docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{getAllEntities}} for a list of entities. Defaults to 1 (district).")
-      docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
+      docText <- paste0(docText, glue::glue("\n\t#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given {object$ObjectName}. Defaults to FALSE for all return fields which, for convenience, returns all fields for the {object$ObjectName}.", .trim = F))
+      docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \\code{{\\link{{getSchemaForObjects}}}}('{object$ObjectName}') to get more field paths.", .trim = F))
+      docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{listEntities}} for a list of entities. Defaults to 1 (district).")
+      docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
       docText <- paste0(docText, "\n\t#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).")
       docText <- paste0(docText, "\n\t#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.")
       docText <- paste0(docText, glue::glue("\n\t#' @concept {module$DisplayName}", .trim = F))
-      docText <- paste0(docText, glue::glue("\n\t#' @return A dataframe or of {functionName %>% stringr::str_replace('^list', '')}", .trim = F))
+      docText <- paste0(docText, glue::glue("\n\t#' @return A dataframe or of {functionName %>% stringr::str_replace('^get', '')}", .trim = F))
       docText <- paste0(docText, "\n\t#' \\href{https://help.skyward.com/}{Skyward's Knowledge Hub}")
       docText <- paste0(docText, "\n\t#' @export")
       
@@ -481,22 +566,97 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
       functionText <- paste0(functionText, glue::glue('\n\n\t\tparams <- as.list(environment()) %>% purrr::keep(names(.) != "{object$ObjectName}ID")', .trim = F))
       functionText <- paste0(functionText, glue::glue('\n\n\t\tsearchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())', .trim = F))
       functionText <- paste0(functionText, '\n\n\t\tifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())')
-      functionText <- paste0(functionText, glue::glue('\n\n\t\tgetSkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", objectId = {object$ObjectName}ID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
+      functionText <- paste0(functionText, glue::glue('\n\n\t\tgetSkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", objectId = {object$ObjectName}ID, searchFields = searchFields, entityId = entityId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
       functionText <- paste0(functionText, '\n\t}')
       
       readr::write_lines(functionText, filepath, append = T)
       
-      next()
-      
-      #### Generate CREATE functions
-      functionName <- glue::glue('create{object$ObjectName}')
-      
-      #### Generate MODIFY functions
-      functionName <- glue::glue('modify{object$ObjectName}')
-      
       #### Generate DELETE functions
       functionName <- glue::glue('delete{object$ObjectName}')
       
+      # Create documentation text
+      docText <- glue::glue("\n\t#' Delete {aORan} {object$ObjectName}", .trim = F)
+      docText <- paste0(docText, "\n\t#'")
+      docText <- paste0(docText, glue::glue("\n\t#' This function deletes {aORan} {object$ObjectName}", .trim = F))
+      docText <- paste0(docText, glue::glue("\n\t#' @param {object$ObjectName}ID The ID of the {object$ObjectName} to delete", .trim = F))
+ ###     docText <- paste0(docText, "\n\t#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.")
+      docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{listEntities}} for a list of entities. Defaults to 1 (district).")
+      docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
+      docText <- paste0(docText, "\n\t#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).")
+      docText <- paste0(docText, "\n\t#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.")
+      docText <- paste0(docText, glue::glue("\n\t#' @concept {module$DisplayName}", .trim = F))
+      docText <- paste0(docText, glue::glue("\n\t#' @return The {object$ObjectName}ID of the deleted {object$ObjectName}.", .trim = F))
+      docText <- paste0(docText, "\n\t#' \\href{https://help.skyward.com/}{Skyward's Knowledge Hub}")
+      docText <- paste0(docText, "\n\t#' @export")
+      
+      readr::write_lines(docText, filepath, append = T)
+      
+      functionText <- glue::glue('\t{functionName} <- function({object$ObjectName}ID, ignoreWarnings = F, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){{', .trim = F)
+      functionText <- paste0(functionText, glue::glue('\n\n\t\tdeleteSkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", objectId = {object$ObjectName}ID, ignoreWarnings = ignoreWarnings, entityId = entityId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
+      functionText <- paste0(functionText, '\n\t}')
+      
+      readr::write_lines(functionText, filepath, append = T)
+      
+      # Create and Modify only work if there are editable fields for the object.
+      if(length(editableFields) > 0){
+        
+        #### Generate CREATE functions
+        functionName <- glue::glue('create{object$ObjectName}')
+        
+        # Create documentation text
+        docText <- glue::glue("\n\t#' Create {aORan} {object$ObjectName}", .trim = F)
+        docText <- paste0(docText, "\n\t#'")
+        docText <- paste0(docText, glue::glue("\n\t#' This function creates {aORan} {object$ObjectName}", .trim = F))
+        docText <- paste0(docText, glue::glue("\n\t#' @param fieldNames The field values to give the created {object$ObjectName}. Each defaults to NULL.", .trim = F))
+        ####    docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \\code{{\\link{{getSchemaForObjects}}}}('{object$ObjectName}') to get more field paths.", .trim = F))
+        docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{listEntities}} for a list of entities. Defaults to 1 (district).")
+        docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
+        docText <- paste0(docText, "\n\t#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).")
+        docText <- paste0(docText, "\n\t#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.")
+        docText <- paste0(docText, glue::glue("\n\t#' @concept {module$DisplayName}", .trim = F))
+        docText <- paste0(docText, glue::glue("\n\t#' @return A newly created {object$ObjectName}", .trim = F))
+        docText <- paste0(docText, "\n\t#' \\href{https://help.skyward.com/}{Skyward's Knowledge Hub}")
+        docText <- paste0(docText, "\n\t#' @export")
+        
+        readr::write_lines(docText, filepath, append = T)
+        
+        functionText <- glue::glue('\t{functionName} <- function({editableFields %>% paste(collapse = " = NULL, ")} = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){{', .trim = F)
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tparams <- as.list(environment())', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tcreateSkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", body = list(DataObject = body), searchFields = append("{object$CurrentName}ID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
+        functionText <- paste0(functionText, '\n\t}')
+        
+        readr::write_lines(functionText, filepath, append = T)
+        
+        
+        #### Generate MODIFY functions
+        functionName <- glue::glue('modify{object$ObjectName}')
+        
+        # Create documentation text
+        docText <- glue::glue("\n\t#' Modify {aORan} {object$ObjectName}", .trim = F)
+        docText <- paste0(docText, "\n\t#'")
+        docText <- paste0(docText, glue::glue("\n\t#' This function modifies {aORan} {object$ObjectName}", .trim = F))
+        docText <- paste0(docText, glue::glue("\n\t#' @param fieldNames The field values to give the modified {object$ObjectName}. Each defaults to NULL.", .trim = F))
+        ####    docText <- paste0(docText, glue::glue("\n\t#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \\code{{\\link{{getSchemaForObjects}}}}('{object$ObjectName}') to get more field paths.", .trim = F))
+        docText <- paste0(docText, "\n\t#' @param entityId The id of the entity (school). Run \\code{\\link{listEntities}} for a list of entities. Defaults to 1 (district).")
+        docText <- paste0(docText, "\n\t#' @param schoolYearId The id of the schoolYear. Run \\code{\\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).")
+        docText <- paste0(docText, "\n\t#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).")
+        docText <- paste0(docText, "\n\t#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.")
+        docText <- paste0(docText, glue::glue("\n\t#' @concept {module$DisplayName}", .trim = F))
+        docText <- paste0(docText, glue::glue("\n\t#' @return The modified {object$ObjectName}", .trim = F))
+        docText <- paste0(docText, "\n\t#' \\href{https://help.skyward.com/}{Skyward's Knowledge Hub}")
+        docText <- paste0(docText, "\n\t#' @export")
+        
+        readr::write_lines(docText, filepath, append = T)
+        
+        functionText <- glue::glue('\t{functionName} <- function({object$CurrentName}ID, {editableFields %>% paste(collapse = " = NULL, ")} = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){{', .trim = F)
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tparams <- as.list(environment())', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tmodifySkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", objectId = {object$CurrentName}ID, body = list(DataObject = body), searchFields = append("{object$CurrentName}ID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
+        functionText <- paste0(functionText, '\n\t}')
+        
+        readr::write_lines(functionText, filepath, append = T)
+      }
     }
   }
 }

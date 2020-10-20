@@ -2,7 +2,7 @@
 % Please edit documentation in R/Warehouse.R
 \name{getPhysicalInventory}
 \alias{getPhysicalInventory}
-\title{Get PhysicalInventory}
+\title{Get a PhysicalInventory}
 \usage{
 getPhysicalInventory(
   PhysicalInventoryID,
@@ -23,20 +23,20 @@ getPhysicalInventory(
 \arguments{
 \item{PhysicalInventoryID}{The ID of the PhysicalInventory to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('PhysicalInventory') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('PhysicalInventory') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given PhysicalInventory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the PhysicalInventory.}
 }
 \value{
-A dataframe or of getPhysicalInventory
+A dataframe or of PhysicalInventory
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

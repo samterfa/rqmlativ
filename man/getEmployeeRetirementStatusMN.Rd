@@ -2,7 +2,7 @@
 % Please edit documentation in R/Employee.R
 \name{getEmployeeRetirementStatusMN}
 \alias{getEmployeeRetirementStatusMN}
-\title{Get EmployeeRetirementStatusMN}
+\title{Get an EmployeeRetirementStatusMN}
 \usage{
 getEmployeeRetirementStatusMN(
   EmployeeRetirementStatusMNID,
@@ -28,20 +28,20 @@ getEmployeeRetirementStatusMN(
 \arguments{
 \item{EmployeeRetirementStatusMNID}{The ID of the EmployeeRetirementStatusMN to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('EmployeeRetirementStatusMN') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('EmployeeRetirementStatusMN') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given EmployeeRetirementStatusMN. Defaults to FALSE for all return fields which, for convenience, returns all fields for the EmployeeRetirementStatusMN.}
 }
 \value{
-A dataframe or of getEmployeeRetirementStatusMN
+A dataframe or of EmployeeRetirementStatusMN
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

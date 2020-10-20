@@ -2,7 +2,7 @@
 % Please edit documentation in R/Employee.R
 \name{getEmployeeCalendar}
 \alias{getEmployeeCalendar}
-\title{Get EmployeeCalendar}
+\title{Get an EmployeeCalendar}
 \usage{
 getEmployeeCalendar(
   EmployeeCalendarID,
@@ -40,20 +40,20 @@ getEmployeeCalendar(
 \arguments{
 \item{EmployeeCalendarID}{The ID of the EmployeeCalendar to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('EmployeeCalendar') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('EmployeeCalendar') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given EmployeeCalendar. Defaults to FALSE for all return fields which, for convenience, returns all fields for the EmployeeCalendar.}
 }
 \value{
-A dataframe or of getEmployeeCalendar
+A dataframe or of EmployeeCalendar
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/Employee.R
 \name{getDegree}
 \alias{getDegree}
-\title{Get Degree}
+\title{Get a Degree}
 \usage{
 getDegree(
   DegreeID,
@@ -29,20 +29,20 @@ getDegree(
 \arguments{
 \item{DegreeID}{The ID of the Degree to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Degree') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Degree') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given Degree. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Degree.}
 }
 \value{
-A dataframe or of getDegree
+A dataframe or of Degree
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

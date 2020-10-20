@@ -2,7 +2,7 @@
 % Please edit documentation in R/OnlineForm.R
 \name{getTempNewStudentEnrollmentGuardianPhone}
 \alias{getTempNewStudentEnrollmentGuardianPhone}
-\title{Get TempNewStudentEnrollmentGuardianPhone}
+\title{Get a TempNewStudentEnrollmentGuardianPhone}
 \usage{
 getTempNewStudentEnrollmentGuardianPhone(
   TempNewStudentEnrollmentGuardianPhoneID,
@@ -32,20 +32,20 @@ getTempNewStudentEnrollmentGuardianPhone(
 \arguments{
 \item{TempNewStudentEnrollmentGuardianPhoneID}{The ID of the TempNewStudentEnrollmentGuardianPhone to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempNewStudentEnrollmentGuardianPhone') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempNewStudentEnrollmentGuardianPhone') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given TempNewStudentEnrollmentGuardianPhone. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempNewStudentEnrollmentGuardianPhone.}
 }
 \value{
-A dataframe or of getTempNewStudentEnrollmentGuardianPhone
+A dataframe or of TempNewStudentEnrollmentGuardianPhone
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

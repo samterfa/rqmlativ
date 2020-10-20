@@ -2,7 +2,7 @@
 % Please edit documentation in R/Account.R
 \name{getCashReceiptGroupClearance}
 \alias{getCashReceiptGroupClearance}
-\title{Get CashReceiptGroupClearance}
+\title{Get a CashReceiptGroupClearance}
 \usage{
 getCashReceiptGroupClearance(
   CashReceiptGroupClearanceID,
@@ -22,20 +22,20 @@ getCashReceiptGroupClearance(
 \arguments{
 \item{CashReceiptGroupClearanceID}{The ID of the CashReceiptGroupClearance to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('CashReceiptGroupClearance') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CashReceiptGroupClearance') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given CashReceiptGroupClearance. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CashReceiptGroupClearance.}
 }
 \value{
-A dataframe or of getCashReceiptGroupClearance
+A dataframe or of CashReceiptGroupClearance
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

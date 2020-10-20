@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingMN.R
 \name{getDIRSOffenderV1Exception}
 \alias{getDIRSOffenderV1Exception}
-\title{Get DIRSOffenderV1Exception}
+\title{Get a DIRSOffenderV1Exception}
 \usage{
 getDIRSOffenderV1Exception(
   DIRSOffenderV1ExceptionID,
@@ -31,20 +31,20 @@ getDIRSOffenderV1Exception(
 \arguments{
 \item{DIRSOffenderV1ExceptionID}{The ID of the DIRSOffenderV1Exception to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('DIRSOffenderV1Exception') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DIRSOffenderV1Exception') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given DIRSOffenderV1Exception. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DIRSOffenderV1Exception.}
 }
 \value{
-A dataframe or of getDIRSOffenderV1Exception
+A dataframe or of DIRSOffenderV1Exception
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

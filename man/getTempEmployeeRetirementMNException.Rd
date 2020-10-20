@@ -2,7 +2,7 @@
 % Please edit documentation in R/Employee.R
 \name{getTempEmployeeRetirementMNException}
 \alias{getTempEmployeeRetirementMNException}
-\title{Get TempEmployeeRetirementMNException}
+\title{Get a TempEmployeeRetirementMNException}
 \usage{
 getTempEmployeeRetirementMNException(
   TempEmployeeRetirementMNExceptionID,
@@ -23,20 +23,20 @@ getTempEmployeeRetirementMNException(
 \arguments{
 \item{TempEmployeeRetirementMNExceptionID}{The ID of the TempEmployeeRetirementMNException to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempEmployeeRetirementMNException') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempEmployeeRetirementMNException') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given TempEmployeeRetirementMNException. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempEmployeeRetirementMNException.}
 }
 \value{
-A dataframe or of getTempEmployeeRetirementMNException
+A dataframe or of TempEmployeeRetirementMNException
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

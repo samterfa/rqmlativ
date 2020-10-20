@@ -2,7 +2,7 @@
 % Please edit documentation in R/Health.R
 \name{getHealthConditionTreatment}
 \alias{getHealthConditionTreatment}
-\title{Get HealthConditionTreatment}
+\title{Get a HealthConditionTreatment}
 \usage{
 getHealthConditionTreatment(
   HealthConditionTreatmentID,
@@ -26,20 +26,20 @@ getHealthConditionTreatment(
 \arguments{
 \item{HealthConditionTreatmentID}{The ID of the HealthConditionTreatment to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('HealthConditionTreatment') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('HealthConditionTreatment') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given HealthConditionTreatment. Defaults to FALSE for all return fields which, for convenience, returns all fields for the HealthConditionTreatment.}
 }
 \value{
-A dataframe or of getHealthConditionTreatment
+A dataframe or of HealthConditionTreatment
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/Payroll.R
 \name{getFederalW2Box}
 \alias{getFederalW2Box}
-\title{Get FederalW2Box}
+\title{Get a FederalW2Box}
 \usage{
 getFederalW2Box(
   FederalW2BoxID,
@@ -32,20 +32,20 @@ getFederalW2Box(
 \arguments{
 \item{FederalW2BoxID}{The ID of the FederalW2Box to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('FederalW2Box') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FederalW2Box') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given FederalW2Box. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FederalW2Box.}
 }
 \value{
-A dataframe or of getFederalW2Box
+A dataframe or of FederalW2Box
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

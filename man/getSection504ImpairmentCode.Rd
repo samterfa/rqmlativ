@@ -2,7 +2,7 @@
 % Please edit documentation in R/SpecialPrograms.R
 \name{getSection504ImpairmentCode}
 \alias{getSection504ImpairmentCode}
-\title{Get Section504ImpairmentCode}
+\title{Get a Section504ImpairmentCode}
 \usage{
 getSection504ImpairmentCode(
   Section504ImpairmentCodeID,
@@ -26,20 +26,20 @@ getSection504ImpairmentCode(
 \arguments{
 \item{Section504ImpairmentCodeID}{The ID of the Section504ImpairmentCode to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Section504ImpairmentCode') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Section504ImpairmentCode') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given Section504ImpairmentCode. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Section504ImpairmentCode.}
 }
 \value{
-A dataframe or of getSection504ImpairmentCode
+A dataframe or of Section504ImpairmentCode
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

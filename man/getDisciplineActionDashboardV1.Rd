@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReporting.R
 \name{getDisciplineActionDashboardV1}
 \alias{getDisciplineActionDashboardV1}
-\title{Get DisciplineActionDashboardV1}
+\title{Get a DisciplineActionDashboardV1}
 \usage{
 getDisciplineActionDashboardV1(
   DisciplineActionDashboardV1ID,
@@ -40,20 +40,20 @@ getDisciplineActionDashboardV1(
 \arguments{
 \item{DisciplineActionDashboardV1ID}{The ID of the DisciplineActionDashboardV1 to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('DisciplineActionDashboardV1') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DisciplineActionDashboardV1') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given DisciplineActionDashboardV1. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DisciplineActionDashboardV1.}
 }
 \value{
-A dataframe or of getDisciplineActionDashboardV1
+A dataframe or of DisciplineActionDashboardV1
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

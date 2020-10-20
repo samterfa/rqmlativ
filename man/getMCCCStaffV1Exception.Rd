@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingMN.R
 \name{getMCCCStaffV1Exception}
 \alias{getMCCCStaffV1Exception}
-\title{Get MCCCStaffV1Exception}
+\title{Get a MCCCStaffV1Exception}
 \usage{
 getMCCCStaffV1Exception(
   MCCCStaffV1ExceptionID,
@@ -32,20 +32,20 @@ getMCCCStaffV1Exception(
 \arguments{
 \item{MCCCStaffV1ExceptionID}{The ID of the MCCCStaffV1Exception to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('MCCCStaffV1Exception') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MCCCStaffV1Exception') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given MCCCStaffV1Exception. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MCCCStaffV1Exception.}
 }
 \value{
-A dataframe or of getMCCCStaffV1Exception
+A dataframe or of MCCCStaffV1Exception
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

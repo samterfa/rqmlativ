@@ -2,7 +2,7 @@
 % Please edit documentation in R/StaffPlanning.R
 \name{getTempPlanPositionPayAccountCalculation}
 \alias{getTempPlanPositionPayAccountCalculation}
-\title{Get TempPlanPositionPayAccountCalculation}
+\title{Get a TempPlanPositionPayAccountCalculation}
 \usage{
 getTempPlanPositionPayAccountCalculation(
   TempPlanPositionPayAccountCalculationID,
@@ -22,20 +22,20 @@ getTempPlanPositionPayAccountCalculation(
 \arguments{
 \item{TempPlanPositionPayAccountCalculationID}{The ID of the TempPlanPositionPayAccountCalculation to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempPlanPositionPayAccountCalculation') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempPlanPositionPayAccountCalculation') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given TempPlanPositionPayAccountCalculation. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempPlanPositionPayAccountCalculation.}
 }
 \value{
-A dataframe or of getTempPlanPositionPayAccountCalculation
+A dataframe or of TempPlanPositionPayAccountCalculation
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingFederal.R
 \name{getForm1099MYear}
 \alias{getForm1099MYear}
-\title{Get Form1099MYear}
+\title{Get a Form1099MYear}
 \usage{
 getForm1099MYear(
   Form1099MYearID,
@@ -83,20 +83,20 @@ getForm1099MYear(
 \arguments{
 \item{Form1099MYearID}{The ID of the Form1099MYear to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Form1099MYear') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Form1099MYear') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given Form1099MYear. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Form1099MYear.}
 }
 \value{
-A dataframe or of getForm1099MYear
+A dataframe or of Form1099MYear
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

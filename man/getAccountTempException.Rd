@@ -2,7 +2,7 @@
 % Please edit documentation in R/Account.R
 \name{getAccountTempException}
 \alias{getAccountTempException}
-\title{Get AccountTempException}
+\title{Get an AccountTempException}
 \usage{
 getAccountTempException(
   AccountTempExceptionID,
@@ -30,20 +30,20 @@ getAccountTempException(
 \arguments{
 \item{AccountTempExceptionID}{The ID of the AccountTempException to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('AccountTempException') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('AccountTempException') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given AccountTempException. Defaults to FALSE for all return fields which, for convenience, returns all fields for the AccountTempException.}
 }
 \value{
-A dataframe or of getAccountTempException
+A dataframe or of AccountTempException
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

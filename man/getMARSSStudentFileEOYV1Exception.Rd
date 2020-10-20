@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingMN.R
 \name{getMARSSStudentFileEOYV1Exception}
 \alias{getMARSSStudentFileEOYV1Exception}
-\title{Get MARSSStudentFileEOYV1Exception}
+\title{Get a MARSSStudentFileEOYV1Exception}
 \usage{
 getMARSSStudentFileEOYV1Exception(
   MARSSStudentFileEOYV1ExceptionID,
@@ -30,20 +30,20 @@ getMARSSStudentFileEOYV1Exception(
 \arguments{
 \item{MARSSStudentFileEOYV1ExceptionID}{The ID of the MARSSStudentFileEOYV1Exception to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('MARSSStudentFileEOYV1Exception') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MARSSStudentFileEOYV1Exception') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given MARSSStudentFileEOYV1Exception. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MARSSStudentFileEOYV1Exception.}
 }
 \value{
-A dataframe or of getMARSSStudentFileEOYV1Exception
+A dataframe or of MARSSStudentFileEOYV1Exception
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

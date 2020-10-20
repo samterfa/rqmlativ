@@ -2,7 +2,7 @@
 % Please edit documentation in R/StaffPlanning.R
 \name{getTempPlanPositionEmployee}
 \alias{getTempPlanPositionEmployee}
-\title{Get TempPlanPositionEmployee}
+\title{Get a TempPlanPositionEmployee}
 \usage{
 getTempPlanPositionEmployee(
   TempPlanPositionEmployeeID,
@@ -87,20 +87,20 @@ getTempPlanPositionEmployee(
 \arguments{
 \item{TempPlanPositionEmployeeID}{The ID of the TempPlanPositionEmployee to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempPlanPositionEmployee') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempPlanPositionEmployee') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given TempPlanPositionEmployee. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempPlanPositionEmployee.}
 }
 \value{
-A dataframe or of getTempPlanPositionEmployee
+A dataframe or of TempPlanPositionEmployee
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/Grading.R
 \name{getEarnedCreditsBucketGroupGradeBucket}
 \alias{getEarnedCreditsBucketGroupGradeBucket}
-\title{Get EarnedCreditsBucketGroupGradeBucket}
+\title{Get an EarnedCreditsBucketGroupGradeBucket}
 \usage{
 getEarnedCreditsBucketGroupGradeBucket(
   EarnedCreditsBucketGroupGradeBucketID,
@@ -25,20 +25,20 @@ getEarnedCreditsBucketGroupGradeBucket(
 \arguments{
 \item{EarnedCreditsBucketGroupGradeBucketID}{The ID of the EarnedCreditsBucketGroupGradeBucket to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('EarnedCreditsBucketGroupGradeBucket') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('EarnedCreditsBucketGroupGradeBucket') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given EarnedCreditsBucketGroupGradeBucket. Defaults to FALSE for all return fields which, for convenience, returns all fields for the EarnedCreditsBucketGroupGradeBucket.}
 }
 \value{
-A dataframe or of getEarnedCreditsBucketGroupGradeBucket
+A dataframe or of EarnedCreditsBucketGroupGradeBucket
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/StateReportingFederal.R
 \name{getCRDCSchoolIDEARestraintV1}
 \alias{getCRDCSchoolIDEARestraintV1}
-\title{Get CRDCSchoolIDEARestraintV1}
+\title{Get a CRDCSchoolIDEARestraintV1}
 \usage{
 getCRDCSchoolIDEARestraintV1(
   CRDCSchoolIDEARestraintV1ID,
@@ -77,20 +77,20 @@ getCRDCSchoolIDEARestraintV1(
 \arguments{
 \item{CRDCSchoolIDEARestraintV1ID}{The ID of the CRDCSchoolIDEARestraintV1 to return.}
 
-\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('CRDCSchoolIDEARestraintV1') to get more field paths.}
+\item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CRDCSchoolIDEARestraintV1') to get more field paths.}
 
-\item{entityId}{The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).}
+\item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
+\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
 \item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
-\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
+\item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given CRDCSchoolIDEARestraintV1. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CRDCSchoolIDEARestraintV1.}
 }
 \value{
-A dataframe or of getCRDCSchoolIDEARestraintV1
+A dataframe or of CRDCSchoolIDEARestraintV1
 \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 }
 \description{

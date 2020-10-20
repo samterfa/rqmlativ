@@ -25,7 +25,7 @@ unlistItems <- function(x){
 # Creates filtering searches for API list requests.
 createSearchObject <- function(SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList))){
   
-  if(is.null(SearchConditionsList)  & is.null(SearchSortFieldNamesList)) return(NULL)
+  if(is.null(SearchConditionsList) & is.null(SearchSortFieldNamesList)) return(list(SearchCondition = NULL))
   
   # Initialize search object.
   searchObject <- list()
@@ -235,8 +235,8 @@ listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields
   if(!is.null(schoolYearId)) queryParams <- queryParams %>% purrr::list_merge(SchoolYearID = schoolYearId)
   
   searchObject <- createSearchObject(SearchConditionsList = SearchConditionsList, SearchConditionsGroupType = SearchConditionsGroupType, SearchSortFieldNamesList = SearchSortFieldNamesList, SearchSortFieldNamesDescendingList = SearchSortFieldNamesDescendingList)
-  
-  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}}", body = searchObject %>% jsonlite::toJSON(auto_unbox = T), httr::content_type("application/json"), query = queryParams, config = httr::config(token = getSkywardToken()))') 
+ 
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", body = searchObject, encode = "json", query = queryParams, config = httr::config(token = getSkywardToken()))') 
   
   response <- eval(parse(text = requestText))
   
@@ -262,11 +262,11 @@ loadSkyRelationships <- function(){
   results <- list()
   for(page in 1:100000){
     
-    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = 'Status Contains Complete', searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'FieldIDForeignKeyCurrent', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
+    newResults <- listSkyObjects(module = 'SkySys', objectName = 'Relationship', SearchConditionsList = c('Status Contains Complete', 'CurrentName NotList UserCreatedBy,UserModifiedBy', 'FieldIDForeignKeyCurrent NotNull'), searchFields = c('CurrentName', 'CurrentType', 'IsSkywardRelationship', 'FieldIDForeignKeyCurrent', 'ObjectIDPrimary', 'ObjectIDForeignCurrent'), flatten = F, page = page, pageSize = 10000)
     
     if(length(newResults$Objects) == 0){
       break()
-    } 
+    }
     
     results <- append(results, newResults$Objects)
   }
@@ -461,6 +461,7 @@ getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
   
   # Remove initial object from path before creating list objects.
   objTrees %>% textToList(seedObjectName)
+  
   }) %>% unlist(recursive = F)
 }
 

@@ -13,11 +13,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Performance Acknowledgment
 	#' @return A list of TempCertificationLicensures
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempCertificationLicensures <- function(searchConditionsList = NULL, TempCertificationLicensureID = F, CertificationLicensureID = F, DistrictID = F, StudentID = F, StudentNameLFMS = F, CertificationLicensureDescriptionID = F, CertificationLicensureDescription = F, MetDate = F, WillUpdateExistingRecord = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempCertificationLicensures <- function(searchConditionsList = NULL, TempCertificationLicensureID = F, CertificationLicensureID = F, DistrictID = F, StudentID = F, StudentNameLFMS = F, CertificationLicensureDescriptionID = F, CertificationLicensureDescription = F, MetDate = F, WillUpdateExistingRecord = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -25,5 +26,30 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "PerformanceAcknowledgment", objectName = "TempCertificationLicensure", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "PerformanceAcknowledgment", objectName = "TempCertificationLicensure", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempCertificationLicensure
+	#'
+	#' This function returns a dataframe or json object of a TempCertificationLicensure
+	#' @param TempCertificationLicensureID The ID of the TempCertificationLicensure to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempCertificationLicensure') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Performance Acknowledgment
+	#' @return A dataframe or of getTempCertificationLicensure
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempCertificationLicensure <- function(TempCertificationLicensureID, CertificationLicensureID = F, DistrictID = F, StudentID = F, StudentNameLFMS = F, CertificationLicensureDescriptionID = F, CertificationLicensureDescription = F, MetDate = F, WillUpdateExistingRecord = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempCertificationLicensureID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "PerformanceAcknowledgment", objectName = "TempCertificationLicensure", objectId = TempCertificationLicensureID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}

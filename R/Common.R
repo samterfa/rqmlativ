@@ -13,11 +13,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Common
 	#' @return A list of TempIDListItems
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempIDListItems <- function(searchConditionsList = NULL, TempIDListItemID = F, ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempIDListItems <- function(searchConditionsList = NULL, TempIDListItemID = F, ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -25,7 +26,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "Common", objectName = "TempIDListItem", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "Common", objectName = "TempIDListItem", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempIDListItem
+	#'
+	#' This function returns a dataframe or json object of a TempIDListItem
+	#' @param TempIDListItemID The ID of the TempIDListItem to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempIDListItem') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Common
+	#' @return A dataframe or of getTempIDListItem
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempIDListItem <- function(TempIDListItemID, ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempIDListItemID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Common", objectName = "TempIDListItem", objectId = TempIDListItemID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List CommonTempErrors
@@ -42,11 +68,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Common
 	#' @return A list of CommonTempErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCommonTempErrors <- function(searchConditionsList = NULL, TempErrorID = F, ParentObjectID = F, ErrorNumber = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listCommonTempErrors <- function(searchConditionsList = NULL, TempErrorID = F, ParentObjectID = F, ErrorNumber = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -54,5 +81,30 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "Common", objectName = "TempError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "Common", objectName = "TempError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get CommonTempError
+	#'
+	#' This function returns a dataframe or json object of a CommonTempError
+	#' @param CommonTempErrorID The ID of the CommonTempError to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('CommonTempError') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Common
+	#' @return A dataframe or of getCommonTempError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getCommonTempError <- function(CommonTempErrorID, TempErrorID = F, ParentObjectID = F, ErrorNumber = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "CommonTempErrorID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Common", objectName = "TempError", objectId = CommonTempErrorID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}

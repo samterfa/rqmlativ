@@ -16,7 +16,8 @@ listCourseGradeReferenceSummaries(
   schoolYearId = NULL,
   page = 1,
   pageSize = 1e+05,
-  flatten = T
+  flatten = T,
+  returnResponse = F
 )
 }
 \arguments{
@@ -39,6 +40,8 @@ listCourseGradeReferenceSummaries(
 \item{pageSize}{Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).}
 
 \item{flatten}{Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
+
+\item{returnResponse}{Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.}
 
 \item{fieldNames}{A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.}
 }

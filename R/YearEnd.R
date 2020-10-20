@@ -13,11 +13,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempRollUnpaidCustomerFees
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempRollUnpaidCustomerFees <- function(searchConditionsList = NULL, TempRollUnpaidCustomerFeeID = F, UnappliedAmount = F, AmountDue = F, IsExceptionRecord = F, ExceptionReason = F, EffectiveDate = F, DueDate = F, Description = F, SourceCustomerFeeID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CustomerID = F, CustomerName = F, CreateCustomerEntityYear = F, RollType = F, Comment = F, SourceFeeID = F, FeeIDTransferFrom = F, SourceFeeCode = F, SourceFeeAmount = F, TargetEntityID = F, TargetEntityCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempRollUnpaidCustomerFees <- function(searchConditionsList = NULL, TempRollUnpaidCustomerFeeID = F, UnappliedAmount = F, AmountDue = F, IsExceptionRecord = F, ExceptionReason = F, EffectiveDate = F, DueDate = F, Description = F, SourceCustomerFeeID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CustomerID = F, CustomerName = F, CreateCustomerEntityYear = F, RollType = F, Comment = F, SourceFeeID = F, FeeIDTransferFrom = F, SourceFeeCode = F, SourceFeeAmount = F, TargetEntityID = F, TargetEntityCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -25,7 +26,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempRollUnpaidCustomerFee", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempRollUnpaidCustomerFee", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempRollUnpaidCustomerFee
+	#'
+	#' This function returns a dataframe or json object of a TempRollUnpaidCustomerFee
+	#' @param TempRollUnpaidCustomerFeeID The ID of the TempRollUnpaidCustomerFee to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempRollUnpaidCustomerFee') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempRollUnpaidCustomerFee
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempRollUnpaidCustomerFee <- function(TempRollUnpaidCustomerFeeID, UnappliedAmount = F, AmountDue = F, IsExceptionRecord = F, ExceptionReason = F, EffectiveDate = F, DueDate = F, Description = F, SourceCustomerFeeID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CustomerID = F, CustomerName = F, CreateCustomerEntityYear = F, RollType = F, Comment = F, SourceFeeID = F, FeeIDTransferFrom = F, SourceFeeCode = F, SourceFeeAmount = F, TargetEntityID = F, TargetEntityCode = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempRollUnpaidCustomerFeeID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempRollUnpaidCustomerFee", objectId = TempRollUnpaidCustomerFeeID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempRollUnappliedPayments
@@ -42,11 +68,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempRollUnappliedPayments
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempRollUnappliedPayments <- function(searchConditionsList = NULL, TempRollUnappliedPaymentID = F, CustomerID = F, CustomerName = F, UnappliedAmount = F, IsExceptionRecord = F, ExceptionReason = F, RollType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PayorID = F, CreateCustomerEntityYear = F, ErrorCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempRollUnappliedPayments <- function(searchConditionsList = NULL, TempRollUnappliedPaymentID = F, CustomerID = F, CustomerName = F, UnappliedAmount = F, IsExceptionRecord = F, ExceptionReason = F, RollType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PayorID = F, CreateCustomerEntityYear = F, ErrorCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -54,7 +81,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempRollUnappliedPayment", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempRollUnappliedPayment", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempRollUnappliedPayment
+	#'
+	#' This function returns a dataframe or json object of a TempRollUnappliedPayment
+	#' @param TempRollUnappliedPaymentID The ID of the TempRollUnappliedPayment to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempRollUnappliedPayment') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempRollUnappliedPayment
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempRollUnappliedPayment <- function(TempRollUnappliedPaymentID, CustomerID = F, CustomerName = F, UnappliedAmount = F, IsExceptionRecord = F, ExceptionReason = F, RollType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PayorID = F, CreateCustomerEntityYear = F, ErrorCount = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempRollUnappliedPaymentID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempRollUnappliedPayment", objectId = TempRollUnappliedPaymentID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempOpenPurchaseOrderExceptions
@@ -71,11 +123,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempOpenPurchaseOrderExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempOpenPurchaseOrderExceptions <- function(searchConditionsList = NULL, TempOpenPurchaseOrderExceptionID = F, PurchaseOrderNumber = F, VendorName = F, Description = F, OriginalPurchaseOrderAmount = F, RemainingEncumbrance = F, ExceptionReason = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempOpenPurchaseOrderExceptions <- function(searchConditionsList = NULL, TempOpenPurchaseOrderExceptionID = F, PurchaseOrderNumber = F, VendorName = F, Description = F, OriginalPurchaseOrderAmount = F, RemainingEncumbrance = F, ExceptionReason = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -83,7 +136,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempOpenPurchaseOrderException", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempOpenPurchaseOrderException", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempOpenPurchaseOrderException
+	#'
+	#' This function returns a dataframe or json object of a TempOpenPurchaseOrderException
+	#' @param TempOpenPurchaseOrderExceptionID The ID of the TempOpenPurchaseOrderException to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempOpenPurchaseOrderException') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempOpenPurchaseOrderException
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempOpenPurchaseOrderException <- function(TempOpenPurchaseOrderExceptionID, PurchaseOrderNumber = F, VendorName = F, Description = F, OriginalPurchaseOrderAmount = F, RemainingEncumbrance = F, ExceptionReason = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempOpenPurchaseOrderExceptionID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderException", objectId = TempOpenPurchaseOrderExceptionID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempOpenPurchaseOrderMissingAccounts
@@ -100,11 +178,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempOpenPurchaseOrderMissingAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempOpenPurchaseOrderMissingAccounts <- function(searchConditionsList = NULL, TempOpenPurchaseOrderMissingAccountID = F, DisplayAccount = F, ErrorMessage = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempOpenPurchaseOrderMissingAccounts <- function(searchConditionsList = NULL, TempOpenPurchaseOrderMissingAccountID = F, DisplayAccount = F, ErrorMessage = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -112,7 +191,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempOpenPurchaseOrderMissingAccount", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempOpenPurchaseOrderMissingAccount", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempOpenPurchaseOrderMissingAccount
+	#'
+	#' This function returns a dataframe or json object of a TempOpenPurchaseOrderMissingAccount
+	#' @param TempOpenPurchaseOrderMissingAccountID The ID of the TempOpenPurchaseOrderMissingAccount to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempOpenPurchaseOrderMissingAccount') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempOpenPurchaseOrderMissingAccount
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempOpenPurchaseOrderMissingAccount <- function(TempOpenPurchaseOrderMissingAccountID, DisplayAccount = F, ErrorMessage = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempOpenPurchaseOrderMissingAccountID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderMissingAccount", objectId = TempOpenPurchaseOrderMissingAccountID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempYearEndDateClones
@@ -129,11 +233,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempYearEndDateClones
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempYearEndDateClones <- function(searchConditionsList = NULL, TempYearEndDateCloneID = F, SourceDate = F, TargetDate = F, SourceDateUsedBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempYearEndDateClones <- function(searchConditionsList = NULL, TempYearEndDateCloneID = F, SourceDate = F, TargetDate = F, SourceDateUsedBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -141,7 +246,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempYearEndDateClone", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempYearEndDateClone", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempYearEndDateClone
+	#'
+	#' This function returns a dataframe or json object of a TempYearEndDateClone
+	#' @param TempYearEndDateCloneID The ID of the TempYearEndDateClone to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempYearEndDateClone') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempYearEndDateClone
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempYearEndDateClone <- function(TempYearEndDateCloneID, SourceDate = F, TargetDate = F, SourceDateUsedBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempYearEndDateCloneID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempYearEndDateClone", objectId = TempYearEndDateCloneID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempYearEndTypeSummaries
@@ -158,11 +288,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempYearEndTypeSummaries
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempYearEndTypeSummaries <- function(searchConditionsList = NULL, TempYearEndTypeSummaryID = F, DisplayName = F, SourceRecordsFound = F, TargetRecordsFound = F, EstimatedRecordsToProcess = F, RecordsProcessedCount = F, SuccessCount = F, FailureCount = F, CloneUnsuccessful = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardIDObject = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempYearEndTypeSummaries <- function(searchConditionsList = NULL, TempYearEndTypeSummaryID = F, DisplayName = F, SourceRecordsFound = F, TargetRecordsFound = F, EstimatedRecordsToProcess = F, RecordsProcessedCount = F, SuccessCount = F, FailureCount = F, CloneUnsuccessful = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardIDObject = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -170,7 +301,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempYearEndTypeSummary", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempYearEndTypeSummary", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempYearEndTypeSummary
+	#'
+	#' This function returns a dataframe or json object of a TempYearEndTypeSummary
+	#' @param TempYearEndTypeSummaryID The ID of the TempYearEndTypeSummary to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempYearEndTypeSummary') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempYearEndTypeSummary
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempYearEndTypeSummary <- function(TempYearEndTypeSummaryID, DisplayName = F, SourceRecordsFound = F, TargetRecordsFound = F, EstimatedRecordsToProcess = F, RecordsProcessedCount = F, SuccessCount = F, FailureCount = F, CloneUnsuccessful = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardIDObject = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempYearEndTypeSummaryID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempYearEndTypeSummary", objectId = TempYearEndTypeSummaryID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempYearEndSaveFailures
@@ -187,11 +343,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempYearEndSaveFailures
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempYearEndSaveFailures <- function(searchConditionsList = NULL, TempYearEndSaveFailureID = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CodeDescription = F, SkywardIDObject = F, Description = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempYearEndSaveFailures <- function(searchConditionsList = NULL, TempYearEndSaveFailureID = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CodeDescription = F, SkywardIDObject = F, Description = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -199,7 +356,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempYearEndSaveFailure", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempYearEndSaveFailure", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempYearEndSaveFailure
+	#'
+	#' This function returns a dataframe or json object of a TempYearEndSaveFailure
+	#' @param TempYearEndSaveFailureID The ID of the TempYearEndSaveFailure to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempYearEndSaveFailure') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempYearEndSaveFailure
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempYearEndSaveFailure <- function(TempYearEndSaveFailureID, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CodeDescription = F, SkywardIDObject = F, Description = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempYearEndSaveFailureID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempYearEndSaveFailure", objectId = TempYearEndSaveFailureID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List TempHRCodes
@@ -216,11 +398,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of TempHRCodes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempHRCodes <- function(searchConditionsList = NULL, TempHRCodeID = F, ModuleName = F, ObjectName = F, Code = F, HRCodePrimaryKey = F, HasException = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listTempHRCodes <- function(searchConditionsList = NULL, TempHRCodeID = F, ModuleName = F, ObjectName = F, Code = F, HRCodePrimaryKey = F, HasException = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -228,7 +411,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "TempHRCode", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "TempHRCode", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get TempHRCode
+	#'
+	#' This function returns a dataframe or json object of a TempHRCode
+	#' @param TempHRCodeID The ID of the TempHRCode to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('TempHRCode') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getTempHRCode
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempHRCode <- function(TempHRCodeID, ModuleName = F, ObjectName = F, Code = F, HRCodePrimaryKey = F, HasException = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempHRCodeID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "TempHRCode", objectId = TempHRCodeID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List StudentYearEnds
@@ -245,11 +453,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Year End
 	#' @return A list of StudentYearEnds
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentYearEnds <- function(searchConditionsList = NULL, StudentYearEndID = F, SchoolYearID = F, EntityID = F, CloneDistrictCodesComplete = F, CloneAddressRangeDefaultsComplete = F, CloneEnrollmentCodesComplete = F, CloneCurriculumYearsComplete = F, CloneStaffCodesComplete = F, CloneCourseMasterComplete = F, CloneAttendanceCodesComplete = F, CloneGradingCodesComplete = F, CloneGradebookCodesComplete = F, CloneDemographicCodesComplete = F, CloneFamilyCodesComplete = F, CloneDisciplineCodesComplete = F, CloneActivityCodesComplete = F, CloneFoodServiceCodesComplete = F, CloneFeeManagementCodesComplete = F, CloneHealthCodesComplete = F, RollUnappliedPaymentsComplete = F, RollUnpaidCustomerFeesComplete = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CloneBusRoutesComplete = F, CloneTransportationCodesComplete = F, CloneStudentCodesComplete = F, CloneCourseEntityOfferedToSetupComplete = F, CloneMTSSCodesComplete = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listStudentYearEnds <- function(searchConditionsList = NULL, StudentYearEndID = F, SchoolYearID = F, EntityID = F, CloneDistrictCodesComplete = F, CloneAddressRangeDefaultsComplete = F, CloneEnrollmentCodesComplete = F, CloneCurriculumYearsComplete = F, CloneStaffCodesComplete = F, CloneCourseMasterComplete = F, CloneAttendanceCodesComplete = F, CloneGradingCodesComplete = F, CloneGradebookCodesComplete = F, CloneDemographicCodesComplete = F, CloneFamilyCodesComplete = F, CloneDisciplineCodesComplete = F, CloneActivityCodesComplete = F, CloneFoodServiceCodesComplete = F, CloneFeeManagementCodesComplete = F, CloneHealthCodesComplete = F, RollUnappliedPaymentsComplete = F, RollUnpaidCustomerFeesComplete = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CloneBusRoutesComplete = F, CloneTransportationCodesComplete = F, CloneStudentCodesComplete = F, CloneCourseEntityOfferedToSetupComplete = F, CloneMTSSCodesComplete = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -257,5 +466,30 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "YearEnd", objectName = "StudentYearEnd", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "YearEnd", objectName = "StudentYearEnd", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get StudentYearEnd
+	#'
+	#' This function returns a dataframe or json object of a StudentYearEnd
+	#' @param StudentYearEndID The ID of the StudentYearEnd to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('StudentYearEnd') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Year End
+	#' @return A dataframe or of getStudentYearEnd
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getStudentYearEnd <- function(StudentYearEndID, SchoolYearID = F, EntityID = F, CloneDistrictCodesComplete = F, CloneAddressRangeDefaultsComplete = F, CloneEnrollmentCodesComplete = F, CloneCurriculumYearsComplete = F, CloneStaffCodesComplete = F, CloneCourseMasterComplete = F, CloneAttendanceCodesComplete = F, CloneGradingCodesComplete = F, CloneGradebookCodesComplete = F, CloneDemographicCodesComplete = F, CloneFamilyCodesComplete = F, CloneDisciplineCodesComplete = F, CloneActivityCodesComplete = F, CloneFoodServiceCodesComplete = F, CloneFeeManagementCodesComplete = F, CloneHealthCodesComplete = F, RollUnappliedPaymentsComplete = F, RollUnpaidCustomerFeesComplete = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CloneBusRoutesComplete = F, CloneTransportationCodesComplete = F, CloneStudentCodesComplete = F, CloneCourseEntityOfferedToSetupComplete = F, CloneMTSSCodesComplete = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentYearEndID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "YearEnd", objectName = "StudentYearEnd", objectId = StudentYearEndID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}

@@ -13,11 +13,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of ResponseTables
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listResponseTables <- function(searchConditionsList = NULL, ResponseTableID = F, Code = F, Description = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listResponseTables <- function(searchConditionsList = NULL, ResponseTableID = F, Code = F, Description = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -25,7 +26,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "ResponseTable", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "ResponseTable", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get ResponseTable
+	#'
+	#' This function returns a dataframe or json object of a ResponseTable
+	#' @param ResponseTableID The ID of the ResponseTable to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ResponseTable') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getResponseTable
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getResponseTable <- function(ResponseTableID, Code = F, Description = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "ResponseTableID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "ResponseTable", objectId = ResponseTableID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List HealthConditionResponses
@@ -42,11 +68,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of HealthConditionResponses
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listHealthConditionResponses <- function(searchConditionsList = NULL, HealthConditionResponsesID = F, SevereLifeThreateningAllergicReactionID = F, EpiPenNeededatSchoolID = F, AllergicTo = F, OtherTreatments = F, ADHDADDID = F, MedicationatHomeID = F, MedicationandDosage = F, AsthmaID = F, AsthmaMDID = F, InhaleratSchoolID = F, NubulizeratSchool = F, InhalerforSportsID = F, BladderBowelProblemsID = F, BladderProblemandTreatment = F, DiabetesID = F, DiabetesNotesandInstructions = F, HeartProblemsID = F, HeartProblemandTreatment = F, SeizuresID = F, SeizureProblemandTreatment = F, DateofLastSeizure = F, LearningHealthConcernsID = F, LearningHealthConcernsandTreatment = F, VisionorHearingProblemsID = F, GlassesNecessaryID = F, HearingAidsNecessaryID = F, VisionorHearingProblemorAccomodation = F, ActivityRestrictionsID = F, Restrictions = F, RecentSignificantHealthProblemsID = F, DateofOccurrence = F, DescribeProblemandTreatment = F, DailyMedicationsID = F, Medication1Name = F, Medication1Dose = F, Medication1Time = F, Medication1Purpose = F, Medication2Name = F, Medication2Dose = F, Medication2Time = F, Medication2Purpose = F, Medication3Name = F, Medication3Dose = F, Medication3Time = F, Medication3Purpose = F, Medication4Name = F, Medication4Dose = F, Medication4Time = F, OtherHealthProblemsID = F, OtherHeathProblemsandTreatments = F, StudentID = F, MedicationatSchoolID = F, RecentSignificantHealthCondition = F, Medication4Purpose = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listHealthConditionResponses <- function(searchConditionsList = NULL, HealthConditionResponsesID = F, SevereLifeThreateningAllergicReactionID = F, EpiPenNeededatSchoolID = F, AllergicTo = F, OtherTreatments = F, ADHDADDID = F, MedicationatHomeID = F, MedicationandDosage = F, AsthmaID = F, AsthmaMDID = F, InhaleratSchoolID = F, NubulizeratSchool = F, InhalerforSportsID = F, BladderBowelProblemsID = F, BladderProblemandTreatment = F, DiabetesID = F, DiabetesNotesandInstructions = F, HeartProblemsID = F, HeartProblemandTreatment = F, SeizuresID = F, SeizureProblemandTreatment = F, DateofLastSeizure = F, LearningHealthConcernsID = F, LearningHealthConcernsandTreatment = F, VisionorHearingProblemsID = F, GlassesNecessaryID = F, HearingAidsNecessaryID = F, VisionorHearingProblemorAccomodation = F, ActivityRestrictionsID = F, Restrictions = F, RecentSignificantHealthProblemsID = F, DateofOccurrence = F, DescribeProblemandTreatment = F, DailyMedicationsID = F, Medication1Name = F, Medication1Dose = F, Medication1Time = F, Medication1Purpose = F, Medication2Name = F, Medication2Dose = F, Medication2Time = F, Medication2Purpose = F, Medication3Name = F, Medication3Dose = F, Medication3Time = F, Medication3Purpose = F, Medication4Name = F, Medication4Dose = F, Medication4Time = F, OtherHealthProblemsID = F, OtherHeathProblemsandTreatments = F, StudentID = F, MedicationatSchoolID = F, RecentSignificantHealthCondition = F, Medication4Purpose = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -54,7 +81,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "HealthConditionResponses", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "HealthConditionResponses", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get HealthConditionResponses
+	#'
+	#' This function returns a dataframe or json object of a HealthConditionResponses
+	#' @param HealthConditionResponsesID The ID of the HealthConditionResponses to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('HealthConditionResponses') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getHealthConditionResponses
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getHealthConditionResponses <- function(HealthConditionResponsesID, SevereLifeThreateningAllergicReactionID = F, EpiPenNeededatSchoolID = F, AllergicTo = F, OtherTreatments = F, ADHDADDID = F, MedicationatHomeID = F, MedicationandDosage = F, AsthmaID = F, AsthmaMDID = F, InhaleratSchoolID = F, NubulizeratSchool = F, InhalerforSportsID = F, BladderBowelProblemsID = F, BladderProblemandTreatment = F, DiabetesID = F, DiabetesNotesandInstructions = F, HeartProblemsID = F, HeartProblemandTreatment = F, SeizuresID = F, SeizureProblemandTreatment = F, DateofLastSeizure = F, LearningHealthConcernsID = F, LearningHealthConcernsandTreatment = F, VisionorHearingProblemsID = F, GlassesNecessaryID = F, HearingAidsNecessaryID = F, VisionorHearingProblemorAccomodation = F, ActivityRestrictionsID = F, Restrictions = F, RecentSignificantHealthProblemsID = F, DateofOccurrence = F, DescribeProblemandTreatment = F, DailyMedicationsID = F, Medication1Name = F, Medication1Dose = F, Medication1Time = F, Medication1Purpose = F, Medication2Name = F, Medication2Dose = F, Medication2Time = F, Medication2Purpose = F, Medication3Name = F, Medication3Dose = F, Medication3Time = F, Medication3Purpose = F, Medication4Name = F, Medication4Dose = F, Medication4Time = F, OtherHealthProblemsID = F, OtherHeathProblemsandTreatments = F, StudentID = F, MedicationatSchoolID = F, RecentSignificantHealthCondition = F, Medication4Purpose = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "HealthConditionResponsesID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "HealthConditionResponses", objectId = HealthConditionResponsesID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List OTCMedications
@@ -71,11 +123,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of OTCMedications
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listOTCMedications <- function(searchConditionsList = NULL, OTCMedicationID = F, IpubrofenorAdvilID = F, CoughDropsID = F, AntiItchCremeID = F, SelfCarryIbuprofenID = F, StudentID = F, SubTylenolForIbuprofenID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listOTCMedications <- function(searchConditionsList = NULL, OTCMedicationID = F, IpubrofenorAdvilID = F, CoughDropsID = F, AntiItchCremeID = F, SelfCarryIbuprofenID = F, StudentID = F, SubTylenolForIbuprofenID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -83,7 +136,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "OTCMedication", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "OTCMedication", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get OTCMedication
+	#'
+	#' This function returns a dataframe or json object of an OTCMedication
+	#' @param OTCMedicationID The ID of the OTCMedication to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('OTCMedication') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getOTCMedication
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getOTCMedication <- function(OTCMedicationID, IpubrofenorAdvilID = F, CoughDropsID = F, AntiItchCremeID = F, SelfCarryIbuprofenID = F, StudentID = F, SubTylenolForIbuprofenID = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "OTCMedicationID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "OTCMedication", objectId = OTCMedicationID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List GrandPersonMAS
@@ -100,11 +178,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of GrandPersonMAS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listGrandPersonMAS <- function(searchConditionsList = NULL, GrandPersonMAID = F, FamilyID = F, NameID = F, RelationshipID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listGrandPersonMAS <- function(searchConditionsList = NULL, GrandPersonMAID = F, FamilyID = F, NameID = F, RelationshipID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -112,7 +191,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "GrandPersonMA", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "GrandPersonMA", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get GrandPersonMA
+	#'
+	#' This function returns a dataframe or json object of a GrandPersonMA
+	#' @param GrandPersonMAID The ID of the GrandPersonMA to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('GrandPersonMA') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getGrandPersonMA
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getGrandPersonMA <- function(GrandPersonMAID, FamilyID = F, NameID = F, RelationshipID = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "GrandPersonMAID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "GrandPersonMA", objectId = GrandPersonMAID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List ParentalConsents
@@ -129,11 +233,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of ParentalConsents
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listParentalConsents <- function(searchConditionsList = NULL, ParentalConsentID = F, InstructionalMaterialsEducationalAids = F, HealthServicesEducationalAids = F, CounselingServicesEducationalAids = F, FamilyID = F, COPPAConsent = F, ContactInfoInDirectory = F, WalkingFieldTrip = F, TechnologyAgreement = F, TechnologyAgreement2 = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listParentalConsents <- function(searchConditionsList = NULL, ParentalConsentID = F, InstructionalMaterialsEducationalAids = F, HealthServicesEducationalAids = F, CounselingServicesEducationalAids = F, FamilyID = F, COPPAConsent = F, ContactInfoInDirectory = F, WalkingFieldTrip = F, TechnologyAgreement = F, TechnologyAgreement2 = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -141,7 +246,32 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "ParentalConsent", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "ParentalConsent", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get ParentalConsent
+	#'
+	#' This function returns a dataframe or json object of a ParentalConsent
+	#' @param ParentalConsentID The ID of the ParentalConsent to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('ParentalConsent') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getParentalConsent
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getParentalConsent <- function(ParentalConsentID, InstructionalMaterialsEducationalAids = F, HealthServicesEducationalAids = F, CounselingServicesEducationalAids = F, FamilyID = F, COPPAConsent = F, ContactInfoInDirectory = F, WalkingFieldTrip = F, TechnologyAgreement = F, TechnologyAgreement2 = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "ParentalConsentID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "ParentalConsent", objectId = ParentalConsentID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List Preschools
@@ -158,11 +288,12 @@
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Minnehaha Customization
 	#' @return A list of Preschools
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPreschools <- function(searchConditionsList = NULL, PreschoolID = F, EmergencyContact1Address = F, EmergencyContact2Address = F, ActInAnEmergency = F, EarlyChildhoodScreening = F, FoodPolicy = F, ProvidedLotions = F, Toileting = F, StudentID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T){
+	listPreschools <- function(searchConditionsList = NULL, PreschoolID = F, EmergencyContact1Address = F, EmergencyContact2Address = F, ActInAnEmergency = F, EarlyChildhoodScreening = F, FoodPolicy = F, ProvidedLotions = F, Toileting = F, StudentID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, schoolYearId = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -170,5 +301,30 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "MinnehahaCustomization", objectName = "Preschool", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten)
+		listSkyObjects(module = "MinnehahaCustomization", objectName = "Preschool", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get Preschool
+	#'
+	#' This function returns a dataframe or json object of a Preschool
+	#' @param PreschoolID The ID of the Preschool to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the object.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object set to TRUE or FALSE. Run getSchemaForObject('Preschool') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{getAllEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param schoolYearId The id of the schoolYear. Run \code{\link{getAllSchoolYears}} for a list of school years. Defaults to NULL (all school years).
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Minnehaha Customization
+	#' @return A dataframe or of getPreschool
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getPreschool <- function(PreschoolID, EmergencyContact1Address = F, EmergencyContact2Address = F, ActInAnEmergency = F, EarlyChildhoodScreening = F, FoodPolicy = F, ProvidedLotions = F, Toileting = F, StudentID = F, fieldPaths = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "PreschoolID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "MinnehahaCustomization", objectName = "Preschool", objectId = PreschoolID, entityId = entityId, flatten = flatten, returnResponse = returnResponse)
 	}

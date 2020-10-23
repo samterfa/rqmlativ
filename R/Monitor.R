@@ -87,7 +87,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "DatabaseTableSize", body = list(DataObject = body), searchFields = append("DatabaseTableSizeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -108,7 +108,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "DatabaseTableSize", objectId = DatabaseTableSizeID, body = list(DataObject = body), searchFields = append("DatabaseTableSizeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -201,7 +201,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "DatabaseTable", body = list(DataObject = body), searchFields = append("DatabaseTableID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -222,7 +222,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "DatabaseTable", objectId = DatabaseTableID, body = list(DataObject = body), searchFields = append("DatabaseTableID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -315,7 +315,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "DatabaseFileSize", body = list(DataObject = body), searchFields = append("DatabaseFileSizeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -336,7 +336,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "DatabaseFileSize", objectId = DatabaseFileSizeID, body = list(DataObject = body), searchFields = append("DatabaseFileSizeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -429,7 +429,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "DatabaseFile", body = list(DataObject = body), searchFields = append("DatabaseFileID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -450,7 +450,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "DatabaseFile", objectId = DatabaseFileID, body = list(DataObject = body), searchFields = append("DatabaseFileID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -543,7 +543,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "MonitorThreshold", body = list(DataObject = body), searchFields = append("MonitorThresholdID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -564,7 +564,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "MonitorThreshold", objectId = MonitorThresholdID, body = list(DataObject = body), searchFields = append("MonitorThresholdID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -657,7 +657,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "Monitor", objectName = "MonitorThresholdHistory", body = list(DataObject = body), searchFields = append("MonitorThresholdHistoryID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -678,7 +678,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Monitor", objectName = "MonitorThresholdHistory", objectId = MonitorThresholdHistoryID, body = list(DataObject = body), searchFields = append("MonitorThresholdHistoryID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}

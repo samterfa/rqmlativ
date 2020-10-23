@@ -87,7 +87,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempRollUnpaidCustomerFee", body = list(DataObject = body), searchFields = append("TempRollUnpaidCustomerFeeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -108,7 +108,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempRollUnpaidCustomerFee", objectId = TempRollUnpaidCustomerFeeID, body = list(DataObject = body), searchFields = append("TempRollUnpaidCustomerFeeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -201,7 +201,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempRollUnappliedPayment", body = list(DataObject = body), searchFields = append("TempRollUnappliedPaymentID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -222,7 +222,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempRollUnappliedPayment", objectId = TempRollUnappliedPaymentID, body = list(DataObject = body), searchFields = append("TempRollUnappliedPaymentID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -315,7 +315,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderException", body = list(DataObject = body), searchFields = append("TempOpenPurchaseOrderExceptionID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -336,7 +336,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderException", objectId = TempOpenPurchaseOrderExceptionID, body = list(DataObject = body), searchFields = append("TempOpenPurchaseOrderExceptionID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -429,7 +429,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderMissingAccount", body = list(DataObject = body), searchFields = append("TempOpenPurchaseOrderMissingAccountID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -450,7 +450,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempOpenPurchaseOrderMissingAccount", objectId = TempOpenPurchaseOrderMissingAccountID, body = list(DataObject = body), searchFields = append("TempOpenPurchaseOrderMissingAccountID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -543,7 +543,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempYearEndDateClone", body = list(DataObject = body), searchFields = append("TempYearEndDateCloneID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -564,7 +564,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempYearEndDateClone", objectId = TempYearEndDateCloneID, body = list(DataObject = body), searchFields = append("TempYearEndDateCloneID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -657,7 +657,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempYearEndTypeSummary", body = list(DataObject = body), searchFields = append("TempYearEndTypeSummaryID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -678,7 +678,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempYearEndTypeSummary", objectId = TempYearEndTypeSummaryID, body = list(DataObject = body), searchFields = append("TempYearEndTypeSummaryID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -771,7 +771,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempYearEndSaveFailure", body = list(DataObject = body), searchFields = append("TempYearEndSaveFailureID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -792,7 +792,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempYearEndSaveFailure", objectId = TempYearEndSaveFailureID, body = list(DataObject = body), searchFields = append("TempYearEndSaveFailureID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -885,7 +885,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "TempHRCode", body = list(DataObject = body), searchFields = append("TempHRCodeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -906,7 +906,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "TempHRCode", objectId = TempHRCodeID, body = list(DataObject = body), searchFields = append("TempHRCodeID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -999,7 +999,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		createSkyObject(module = "YearEnd", objectName = "StudentYearEnd", body = list(DataObject = body), searchFields = append("StudentYearEndID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}
@@ -1020,7 +1020,7 @@
 
 		params <- as.list(environment())
 
-		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "YearEnd", objectName = "StudentYearEnd", objectId = StudentYearEndID, body = list(DataObject = body), searchFields = append("StudentYearEndID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)
 	}

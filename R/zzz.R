@@ -51,13 +51,14 @@ createSearchObject <- function(SearchConditionsList = NULL, SearchConditionsGrou
         
         # Add new search condition.
         list(
+        list(
           StringSearchCondition = 
             list(
               FieldName = condition[[1]],
               Conditiontype = condition[[2]],
               Value = paste(condition[3:length(condition)], collapse = ' ')
             )
-        ))}else{
+        )))}else{
           if(condition[[2]] %>% stringr::str_detect('List')){
             
             searchObject$SearchCondition$SearchConditionGroup$Conditions <- append(
@@ -66,13 +67,14 @@ createSearchObject <- function(SearchConditionsList = NULL, SearchConditionsGrou
               
               # Add new search condition.
               list(
+              list(
                 StringSearchCondition = 
                   list(
                     FieldName = condition[[1]],
                     Conditiontype = condition[[2]],
                     List = paste(condition[3:length(condition)], collapse = ' ') %>% stringr::str_split(',') %>% unlist() %>% stringr::str_trim() %>% as.list()
                   )
-              ))}
+              )))}
         }}
   
   # Add search conditions each with fieldName, condition, and value/list.
@@ -623,7 +625,7 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
         
         functionText <- glue::glue('\t{functionName} <- function({editableFields %>% paste(collapse = " = NULL, ")} = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){{', .trim = F)
         functionText <- paste0(functionText, glue::glue('\n\n\t\tparams <- as.list(environment())', .trim = F))
-        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()', .trim = F))
         functionText <- paste0(functionText, glue::glue('\n\n\t\tcreateSkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", body = list(DataObject = body), searchFields = append("{object$CurrentName}ID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
         functionText <- paste0(functionText, '\n\t}')
         
@@ -652,7 +654,7 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
         
         functionText <- glue::glue('\t{functionName} <- function({object$CurrentName}ID, {editableFields %>% paste(collapse = " = NULL, ")} = NULL, entityId = 1, schoolYearId = NULL, flatten = T, returnResponse = F){{', .trim = F)
         functionText <- paste0(functionText, glue::glue('\n\n\t\tparams <- as.list(environment())', .trim = F))
-        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% compact()', .trim = F))
+        functionText <- paste0(functionText, glue::glue('\n\n\t\tbody <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()', .trim = F))
         functionText <- paste0(functionText, glue::glue('\n\n\t\tmodifySkyObject(module = "{module$ModuleShortName}", objectName = "{object$CurrentName}", objectId = {object$CurrentName}ID, body = list(DataObject = body), searchFields = append("{object$CurrentName}ID", body %>% names()), entityId = entityId, schoolYearId = schoolYearId, flatten = flatten, returnResponse = returnResponse)', .trim = F))
         functionText <- paste0(functionText, '\n\t}')
         

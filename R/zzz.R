@@ -96,7 +96,7 @@ createSearchObject <- function(SearchConditionsList = NULL, SearchConditionsGrou
   searchObject
 }
 
-getSkyObject <- function(module, objectName, objectId, searchFields = 'all', entityId = 1, api = 'Generic', flatten = T, returnResponse = F){
+getSkyObject <- function(module, objectName, objectId, searchFields = 'all', entityId = 1, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
   baseUrl <- Sys.getenv('skyward_base_url')
   endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
@@ -106,7 +106,7 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
-  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')'))) %>% append(query %>% purrr::compact())
   
   requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, config = httr::config(token = getSkywardToken()))') 
   
@@ -129,13 +129,13 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   httr::content(response) %>% unlistItems() %>% as.data.frame()
 }
 
-deleteSkyObject <- function(module, objectName, objectId, ignoreWarnings = F, entityId = 1, api = 'Generic', flatten = T, returnResponse = F){
+deleteSkyObject <- function(module, objectName, objectId, ignoreWarnings = F, entityId = 1, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
   baseUrl <- Sys.getenv('skyward_base_url')
   endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
   method <- 'DELETE'
   
-  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = list(ignoreWarnings = ignoreWarnings), config = httr::config(token = getSkywardToken()))') 
+  requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = list(ignoreWarnings = ignoreWarnings) %>% append(query %>% purrr::compact()), config = httr::config(token = getSkywardToken()))') 
   
   response <- eval(parse(text = requestText))
   
@@ -156,7 +156,7 @@ deleteSkyObject <- function(module, objectName, objectId, ignoreWarnings = F, en
   httr::content(response) %>% unlistItems() %>% as.data.frame()
 }
 
-createSkyObject <- function(module, objectName, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', flatten = T, returnResponse = F){
+createSkyObject <- function(module, objectName, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
   baseUrl <- Sys.getenv('skyward_base_url')
   endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}')
@@ -166,7 +166,7 @@ createSkyObject <- function(module, objectName, body, searchFields = 'all', enti
   if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
-  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')'))) %>% append(query %>% purrr::compact())
   
   requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, body = body, encode = "json", config = httr::config(token = getSkywardToken()))') 
   
@@ -189,7 +189,7 @@ createSkyObject <- function(module, objectName, body, searchFields = 'all', enti
   httr::content(response) %>% unlistItems() %>% as.data.frame()
 }
 
-modifySkyObject <- function(module, objectName, objectId, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', flatten = T, returnResponse = F){
+modifySkyObject <- function(module, objectName, objectId, body, searchFields = 'all', entityId = 1, schoolYearId = NULL, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
   baseUrl <- Sys.getenv('skyward_base_url')
   endpoint <- glue::glue('/Generic/{entityId}/{module}/{objectName}/{objectId}')
@@ -199,7 +199,7 @@ modifySkyObject <- function(module, objectName, objectId, body, searchFields = '
   if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
-  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')'))) %>% append(query %>% purrr::compact())
   
   requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", query = queryParams, body = body, encode = "json", config = httr::config(token = getSkywardToken()))') 
   
@@ -222,7 +222,7 @@ modifySkyObject <- function(module, objectName, objectId, body, searchFields = '
   httr::content(response) %>% unlistItems() %>% as.data.frame()
 }
 
-listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', flatten = T, returnResponse = F){
+listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields = 'all', page = 1, pageSize = 100, SearchConditionsList = NULL, SearchConditionsGroupType = 'And', SearchSortFieldNamesList = NULL, SearchSortFieldNamesDescendingList = rep(F, length(SearchSortFieldNamesList)), entityId = 1, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
   endpoint <- glue::glue('/{api}/{entityId}/{module}/{objectName}/{page}/{format(pageSize, scientific = F)}')
   
@@ -232,9 +232,7 @@ listSkyObjects <- function(module, objectName, schoolYearId = NULL, searchFields
   if(all(searchFields == 'all')) searchFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(CurrentName)
   
   searchFields <- searchFields %>% purrr::keep(~!.x %in% c("Relationships", "ValidationRules"))
-  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')')))
-  
-  if(!is.null(schoolYearId)) queryParams <- queryParams %>% purrr::list_merge(SchoolYearID = schoolYearId)
+  queryParams <- eval(parse(text = paste0('list(', paste0('searchFields = "', searchFields, '"') %>% stringr::str_flatten(', '), ')'))) %>% append(query %>% purrr::compact())
   
   searchObject <- createSearchObject(SearchConditionsList = SearchConditionsList, SearchConditionsGroupType = SearchConditionsGroupType, SearchSortFieldNamesList = SearchSortFieldNamesList, SearchSortFieldNamesDescendingList = SearchSortFieldNamesDescendingList)
  
@@ -275,6 +273,10 @@ loadSkyRelationships <- function(){
   
   relationships <- results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T)
 
+  objectIDs <- loadSkyObjects() %>% pull(ObjectID) %>% unique()
+  
+  relationships <- relationships %>% filter(ObjectIDPrimary %in% objectIDs, ObjectIDForeignCurrent %in% objectIDs)
+  
   relationships <- relationships %>% dplyr::mutate(RelationshipName = CurrentName) %>% dplyr::rename(RelationshipType = CurrentType) %>% dplyr::filter(!RelationshipName %in% c('UserCreatedBy', 'UserModifiedBy')) %>% filter(!unlist(lapply(FieldIDForeignKeyCurrent, function(x) length(x) == 0))) 
   # Remove relationships with no foreign key field since these are some odd kind of relationship I'm unfamiliar with...
   relationships %>% mutate(FieldIDForeignKeyCurrent = unlist(FieldIDForeignKeyCurrent))
@@ -283,9 +285,11 @@ loadSkyRelationships <- function(){
 
 loadSkyModules <- function(){
   
+  productsOwned <- listSkyObjects(module = "Security", objectName = "ProductModulePath", SearchConditionsList = 'Module NotNull', searchFields = 'Module', pageSize = 10000) %>% pull(Module) %>% unique() %>% sort()
+  
   results <- listSkyObjects(module = 'SkySys', objectName = 'Module', SearchConditionsList = 'Status Contains Complete', searchFields = c('ModuleID', 'CurrentName', 'DisplayName', 'IsSkywardModule'), pageSize = 500, flatten = F) %>% purrr::pluck('Objects')
    
-  results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T) %>% dplyr::rename(ModuleShortName = CurrentName)
+  results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T) %>% dplyr::filter(CurrentName %in% productsOwned) %>% dplyr::rename(ModuleShortName = CurrentName) %>% dplyr::arrange(DisplayName)
 }
 
 
@@ -304,6 +308,8 @@ loadSkyObjects <- function(){
   }
   
   objects <- results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T)
+  
+  objects <- objects %>% filter(ModuleID %in% (loadSkyModules() %>% dplyr::pull(ModuleID)))
   
   # Fix non-unique CurrentNames
   nonUniqueObjectNames <- objects %>% dplyr::group_by(CurrentName) %>% dplyr::count() %>% dplyr::filter(n > 1) %>% dplyr::pull(CurrentName)
@@ -329,6 +335,8 @@ loadSkyFields <- function(){
   }
   
   fields <- results %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T)
+  
+  fields <- fields %>% filter(ObjectID %in% (loadSkyObjects() %>% pull(ObjectID) %>% unique))
   
   fields %>% dplyr::mutate(FieldName = CurrentName)
 }
@@ -483,7 +491,7 @@ listSearchConditionTypes <- function(){
 }
 
 
-generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrange(ModuleShortName), deleteAllFiles = T){
+generateObjectFunctions <- function(modules = loadSkyModules(), deleteAllFiles = T){
   
   if(deleteAllFiles) for(file in list.files('R') %>% purrr::discard(~.x %in% c('data.R', 'zzz.R', 'utils-pipe.R'))) file.remove(glue::glue('R/{file}'))
   
@@ -695,5 +703,5 @@ reference:"
   if(!dir.exists('pkgdown')) dir.create('pkgdown')
   file.remove('pkgdown/_pkgdown.yml')
   readr::write_lines(pkgdownYaml, 'pkgdown/_pkgdown.yml')
-  pkgdown::build_site(lazy = T)
+  pkgdown::build_site(lazy = F)
 }

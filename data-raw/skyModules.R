@@ -1,5 +1,5 @@
 
 source('R/zzz.R')
-skyNodules <- loadSkyModules()
+skyModules <- loadSkyModules()
 
 usethis::use_data(skyModules, overwrite = TRUE)

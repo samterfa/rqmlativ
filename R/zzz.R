@@ -665,3 +665,35 @@ generateObjectFunctions <- function(modules = loadSkyModules() %>% dplyr::arrang
 }
 
 
+generatePackageDownSite <- function(){
+  
+  functionCategories <- rqmlativ::skyModules$DisplayName %>% sort()
+  
+  pkgdownYaml <- 
+    "url: https://samterfa.github.io/rqmlativ/
+                    
+author: Sam Terfa
+
+reference:"
+  
+  for(functionCategory in functionCategories){
+    
+    pkgdownYaml <- paste0(
+      
+      pkgdownYaml,
+      
+      glue::glue(
+        
+        '\n- title: {functionCategory}
+  desc:  Functions involving {functionCategory}.
+  contents:
+  - has_concept("{functionCategory}")', .trim = F)
+      
+    )
+  }
+  
+  if(!dir.exists('pkgdown')) dir.create('pkgdown')
+  file.remove('pkgdown/_pkgdown.yml')
+  readr::write_lines(pkgdownYaml, 'pkgdown/_pkgdown.yml')
+  pkgdown::build_site(lazy = T)
+}

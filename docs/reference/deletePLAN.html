@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Delete a PLAN — deletePLAN • rqmlativ</title>
+<title>Delete a Plan — deletePlan • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Delete a PLAN — deletePLAN" />
-<meta property="og:description" content="This function deletes a PLAN" />
+<meta property="og:title" content="Delete a Plan — deletePlan" />
+<meta property="og:description" content="This function deletes a Plan" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,20 +105,20 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Delete a PLAN</h1>
-    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/Assessment.R'><code>R/Assessment.R</code></a></small>
+    <h1>Delete a Plan</h1>
+    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/GraduationRequirements.R'><code>R/GraduationRequirements.R</code></a></small>
     <div class="hidden name"><code>deletePLAN.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This function deletes a PLAN</p>
+    <p>This function deletes a Plan</p>
     </div>
 
-    <pre class="usage"><span class='fu'>deletePLAN</span>(
-  <span class='no'>PLANID</span>,
+    <pre class="usage"><span class='fu'>deletePlan</span>(
+  <span class='no'>PlanID</span>,
   <span class='kw'>ignoreWarnings</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -127,16 +127,12 @@
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>PLANID</th>
-      <td><p>The ID of the PLAN to delete</p></td>
+      <th>PlanID</th>
+      <td><p>The ID of the Plan to delete</p></td>
     </tr>
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
-    </tr>
-    <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
     </tr>
     <tr>
       <th>flatten</th>
@@ -150,7 +146,7 @@
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>The PLANID of the deleted PLAN.
+    <p>The PlanID of the deleted Plan.
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

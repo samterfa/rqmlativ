@@ -7,15 +7,13 @@
 createElementGroup(
   Name = NULL,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
 }
 \arguments{
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -30,4 +28,4 @@ A newly created ElementGroup
 \description{
 This function creates an ElementGroup
 }
-\concept{Online Form}
+\concept{OnlineForm}

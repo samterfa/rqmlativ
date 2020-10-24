@@ -8,7 +8,7 @@ deleteForm941V1Day(
   Form941V1DayID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteForm941V1Day(
 \item{Form941V1DayID}{The ID of the Form941V1Day to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The Form941V1DayID of the deleted Form941V1Day.
 \description{
 This function deletes a Form941V1Day
 }
-\concept{State Reporting Federal}
+\concept{StateReportingFederal}

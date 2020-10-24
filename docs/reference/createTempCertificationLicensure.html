@@ -36,7 +36,8 @@
 
 
 <meta property="og:title" content="Create a TempCertificationLicensure — createTempCertificationLicensure" />
-<meta property="og:description" content="This function creates a TempCertificationLicensure" />
+<meta property="og:description" content="This function creates a TempCertificationLicensure
+This function creates a TempCertificationLicensure" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -112,6 +113,7 @@
 
     <div class="ref-description">
     <p>This function creates a TempCertificationLicensure</p>
+<p>This function creates a TempCertificationLicensure</p>
     </div>
 
     <pre class="usage"><span class='fu'>createTempCertificationLicensure</span>(
@@ -123,7 +125,21 @@
   <span class='kw'>CertificationLicensureDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MetDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
+  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
+)
+
+<span class='fu'>createTempCertificationLicensure</span>(
+  <span class='kw'>CertificationLicensureID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNameLFMS</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationLicensureDescriptionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationLicensureDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MetDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -134,10 +150,6 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
-    </tr>
-    <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
     </tr>
     <tr>
       <th>flatten</th>
@@ -156,6 +168,8 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A newly created TempCertificationLicensure
+<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
+<p>A newly created TempCertificationLicensure
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get EntityGroupSetupEntity — getEntityGroupSetupEntity • rqmlativ</title>
+<title>Get an EntityGroupSetupEntity — getEntityGroupSetupEntity • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,9 +35,8 @@
 
 
 
-<meta property="og:title" content="Get EntityGroupSetupEntity — getEntityGroupSetupEntity" />
-<meta property="og:description" content="This function returns a dataframe or json object of an EntityGroupSetupEntity
-This function returns a dataframe or json object of an EntityGroupSetupEntity" />
+<meta property="og:title" content="Get an EntityGroupSetupEntity — getEntityGroupSetupEntity" />
+<meta property="og:description" content="This function returns a dataframe or json object of an EntityGroupSetupEntity" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,14 +105,13 @@ This function returns a dataframe or json object of an EntityGroupSetupEntity" /
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get EntityGroupSetupEntity</h1>
+    <h1>Get an EntityGroupSetupEntity</h1>
     <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/District.R'><code>R/District.R</code></a></small>
     <div class="hidden name"><code>getEntityGroupSetupEntity.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of an EntityGroupSetupEntity</p>
-<p>This function returns a dataframe or json object of an EntityGroupSetupEntity</p>
     </div>
 
     <pre class="usage"><span class='fu'>getEntityGroupSetupEntity</span>(
@@ -126,22 +124,7 @@ This function returns a dataframe or json object of an EntityGroupSetupEntity" /
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>getEntityGroupSetupEntity</span>(
-  <span class='no'>EntityGroupSetupEntityID</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityGroupSetupID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -162,10 +145,6 @@ This function returns a dataframe or json object of an EntityGroupSetupEntity" /
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -182,8 +161,6 @@ This function returns a dataframe or json object of an EntityGroupSetupEntity" /
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of EntityGroupSetupEntity
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A dataframe or of EntityGroupSetupEntity
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

@@ -36,8 +36,7 @@
 
 
 <meta property="og:title" content="List SchoolYears — listSchoolYears" />
-<meta property="og:description" content="This function returns a dataframe or json object of SchoolYears
-This function returns a dataframe or json object of SchoolYears" />
+<meta property="og:description" content="This function returns a dataframe or json object of SchoolYears" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -113,7 +112,6 @@ This function returns a dataframe or json object of SchoolYears" />
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of SchoolYears</p>
-<p>This function returns a dataframe or json object of SchoolYears</p>
     </div>
 
     <pre class="usage"><span class='fu'>listSchoolYears</span>(
@@ -134,32 +132,7 @@ This function returns a dataframe or json object of SchoolYears" />
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>listSchoolYears</span>(
-  <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCurrentYearForProvidedEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsUpcomingYearForProvidedEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NextNumericYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentAwardID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
-  <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -194,10 +167,6 @@ This function returns a dataframe or json object of SchoolYears" />
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code>listSchoolYears</code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>page</th>
       <td><p>Results are paginated. The page of results to return. Default is 1.</p></td>
     </tr>
@@ -222,8 +191,6 @@ This function returns a dataframe or json object of SchoolYears" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A list of SchoolYears
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A list of SchoolYears
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

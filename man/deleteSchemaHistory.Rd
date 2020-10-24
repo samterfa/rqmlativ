@@ -8,7 +8,7 @@ deleteSchemaHistory(
   SchemaHistoryID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteSchemaHistory(
 \item{SchemaHistoryID}{The ID of the SchemaHistory to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The SchemaHistoryID of the deleted SchemaHistory.
 \description{
 This function deletes a SchemaHistory
 }
-\concept{Sky Sys}
+\concept{SkySys}

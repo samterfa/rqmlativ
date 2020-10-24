@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get a PLAN — getPLAN • rqmlativ</title>
+<title>Get a Plan — getPlan • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Get a PLAN — getPLAN" />
-<meta property="og:description" content="This function returns a dataframe or json object of a PLAN" />
+<meta property="og:title" content="Get a Plan — getPlan" />
+<meta property="og:description" content="This function returns a dataframe or json object of a Plan" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,30 +105,40 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get a PLAN</h1>
-    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/Assessment.R'><code>R/Assessment.R</code></a></small>
+    <h1>Get a Plan</h1>
+    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/GraduationRequirements.R'><code>R/GraduationRequirements.R</code></a></small>
     <div class="hidden name"><code>getPLAN.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This function returns a dataframe or json object of a PLAN</p>
+    <p>This function returns a dataframe or json object of a Plan</p>
     </div>
 
-    <pre class="usage"><span class='fu'>getPLAN</span>(
-  <span class='no'>PLANID</span>,
-  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EnglishScaleScore</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MathScaleScore</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReadingScaleScore</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScienceScaleScore</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CompositeScore</span> <span class='kw'>=</span> <span class='no'>F</span>,
+    <pre class="usage"><span class='fu'>getPlan</span>(
+  <span class='no'>PlanID</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradYearLow</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradYearHigh</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalYears</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SkywardID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EdFiGraduationPlanID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GeneralElectiveSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSystemPlan</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsNotSystemPlan</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfSubAreasForCurriculum</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NonElectiveCreditTotal</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SkywardHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCreditsMethodIDDefaultOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EdFiGraduationPlanTypeDescriptorID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -137,20 +147,16 @@
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>PLANID</th>
-      <td><p>The ID of the PLAN to return.</p></td>
+      <th>PlanID</th>
+      <td><p>The ID of the Plan to return.</p></td>
     </tr>
     <tr>
       <th>fieldPaths</th>
-      <td><p>Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run <code><a href='getSchemaForObjects.html'>getSchemaForObjects</a></code>('PLAN') to get more field paths.</p></td>
+      <td><p>Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run <code><a href='getSchemaForObjects.html'>getSchemaForObjects</a></code>('Plan') to get more field paths.</p></td>
     </tr>
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
-    </tr>
-    <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
     </tr>
     <tr>
       <th>flatten</th>
@@ -162,13 +168,13 @@
     </tr>
     <tr>
       <th>fieldNames</th>
-      <td><p>A TRUE or FALSE value determining whether or not to return the field for the given PLAN. Defaults to FALSE for all return fields which, for convenience, returns all fields for the PLAN.</p></td>
+      <td><p>A TRUE or FALSE value determining whether or not to return the field for the given Plan. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Plan.</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A dataframe or of PLAN
+    <p>A dataframe or of Plan
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

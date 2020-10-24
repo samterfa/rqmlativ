@@ -51,7 +51,7 @@ listTempNameMedications(
   searchSortFieldNamesList = NULL,
   searchSortFieldNamesDescendingList = NULL,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   page = 1,
   pageSize = 1e+05,
   flatten = T,
@@ -70,8 +70,6 @@ listTempNameMedications(
 \item{searchSortFieldNamesDescendingList}{A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{page}{Results are paginated. The page of results to return. Default is 1.}
 

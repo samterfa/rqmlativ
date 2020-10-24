@@ -8,7 +8,7 @@ deleteCRDCSchoolIDEASection504V1(
   CRDCSchoolIDEASection504V1ID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteCRDCSchoolIDEASection504V1(
 \item{CRDCSchoolIDEASection504V1ID}{The ID of the CRDCSchoolIDEASection504V1 to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The CRDCSchoolIDEASection504V1ID of the deleted CRDCSchoolIDEASection504V1.
 \description{
 This function deletes a CRDCSchoolIDEASection504V1
 }
-\concept{State Reporting Federal}
+\concept{StateReportingFederal}

@@ -8,7 +8,7 @@ deleteW2YearTaxState(
   W2YearTaxStateID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteW2YearTaxState(
 \item{W2YearTaxStateID}{The ID of the W2YearTaxState to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The W2YearTaxStateID of the deleted W2YearTaxState.
 \description{
 This function deletes a W2YearTaxState
 }
-\concept{State Reporting Federal}
+\concept{StateReportingFederal}

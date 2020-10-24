@@ -8,7 +8,7 @@ deleteSection504Disability(
   Section504DisabilityID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteSection504Disability(
 \item{Section504DisabilityID}{The ID of the Section504Disability to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The Section504DisabilityID of the deleted Section504Disability.
 \description{
 This function deletes a Section504Disability
 }
-\concept{Special Programs}
+\concept{SpecialPrograms}

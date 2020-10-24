@@ -8,7 +8,7 @@ deleteOnlineFormTempError(
   OnlineFormTempErrorID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteOnlineFormTempError(
 \item{OnlineFormTempErrorID}{The ID of the OnlineFormTempError to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The OnlineFormTempErrorID of the deleted OnlineFormTempError.
 \description{
 This function deletes an OnlineFormTempError
 }
-\concept{Online Form}
+\concept{OnlineForm}

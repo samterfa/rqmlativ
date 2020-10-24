@@ -6,23 +6,17 @@
 \usage{
 getStaffDepartment(
   StaffDepartmentID,
+  StaffID = F,
   DepartmentID = F,
-  SchoolYearID = F,
-  EntityID = F,
-  EntityGroupKey = F,
-  Code = F,
-  Description = F,
-  StaffIDDepartmentHead = F,
-  DepartmentIDClonedFrom = F,
-  CodeDescription = F,
-  DepartmentIDClonedTo = F,
+  IsDefaultDepartment = F,
+  StaffDepartmentIDClonedFrom = F,
   UserIDCreatedBy = F,
   CreatedTime = F,
   UserIDModifiedBy = F,
   ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -33,8 +27,6 @@ getStaffDepartment(
 \item{fieldPaths}{Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StaffDepartment') to get more field paths.}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 

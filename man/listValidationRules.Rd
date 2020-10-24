@@ -34,7 +34,7 @@ listValidationRules(
   searchSortFieldNamesList = NULL,
   searchSortFieldNamesDescendingList = NULL,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   page = 1,
   pageSize = 1e+05,
   flatten = T,
@@ -54,8 +54,6 @@ listValidationRules(
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
-
 \item{page}{Results are paginated. The page of results to return. Default is 1.}
 
 \item{pageSize}{Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).}
@@ -73,4 +71,4 @@ A list of ValidationRules
 \description{
 This function returns a dataframe or json object of ValidationRules
 }
-\concept{Sky Sys}
+\concept{SkySys}

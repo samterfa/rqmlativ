@@ -36,7 +36,8 @@
 
 
 <meta property="og:title" content="Get a CommonTempError — getCommonTempError" />
-<meta property="og:description" content="This function returns a dataframe or json object of a CommonTempError" />
+<meta property="og:description" content="This function returns a dataframe or json object of a CommonTempError
+This function returns a dataframe or json object of a CommonTempError" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -112,6 +113,7 @@
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of a CommonTempError</p>
+<p>This function returns a dataframe or json object of a CommonTempError</p>
     </div>
 
     <pre class="usage"><span class='fu'>getCommonTempError</span>(
@@ -126,7 +128,24 @@
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
+  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
+)
+
+<span class='fu'>getCommonTempError</span>(
+  <span class='no'>CommonTempErrorID</span>,
+  <span class='kw'>TempErrorID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ParentObjectID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ErrorNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Message</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -147,10 +166,6 @@
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -167,6 +182,8 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of CommonTempError
+<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
+<p>A dataframe or of CommonTempError
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

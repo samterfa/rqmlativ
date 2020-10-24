@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get FiscalYear — getFiscalYear • rqmlativ</title>
+<title>Get a FiscalYear — getFiscalYear • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,9 +35,8 @@
 
 
 
-<meta property="og:title" content="Get FiscalYear — getFiscalYear" />
-<meta property="og:description" content="This function returns a dataframe or json object of a FiscalYear
-This function returns a dataframe or json object of a FiscalYear" />
+<meta property="og:title" content="Get a FiscalYear — getFiscalYear" />
+<meta property="og:description" content="This function returns a dataframe or json object of a FiscalYear" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,14 +105,13 @@ This function returns a dataframe or json object of a FiscalYear" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get FiscalYear</h1>
+    <h1>Get a FiscalYear</h1>
     <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/District.R'><code>R/District.R</code></a></small>
     <div class="hidden name"><code>getFiscalYear.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of a FiscalYear</p>
-<p>This function returns a dataframe or json object of a FiscalYear</p>
     </div>
 
     <pre class="usage"><span class='fu'>getFiscalYear</span>(
@@ -143,39 +141,7 @@ This function returns a dataframe or json object of a FiscalYear" />
   <span class='kw'>DynamicRelationshipID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>getFiscalYear</span>(
-  <span class='no'>FiscalYearID</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsLockedByHR</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictCashReceiptDeposits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictJournalEntries</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictAccountsPayableRuns</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictBudgetAmendments</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictPayrollRuns</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictInvoices</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictPurchaseOrders</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictAccountingUpdates</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictDepreciations</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictAdditionDisposals</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictWarehouseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsClosed</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DynamicRelationshipID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -196,10 +162,6 @@ This function returns a dataframe or json object of a FiscalYear" />
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -216,8 +178,6 @@ This function returns a dataframe or json object of a FiscalYear" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of FiscalYear
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A dataframe or of FiscalYear
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

@@ -8,7 +8,7 @@ deleteForm1099MExportElectronicFileMedia(
   Form1099MExportElectronicFileMediaID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteForm1099MExportElectronicFileMedia(
 \item{Form1099MExportElectronicFileMediaID}{The ID of the Form1099MExportElectronicFileMedia to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The Form1099MExportElectronicFileMediaID of the deleted Form1099MExportElectroni
 \description{
 This function deletes a Form1099MExportElectronicFileMedia
 }
-\concept{State Reporting Federal}
+\concept{StateReportingFederal}

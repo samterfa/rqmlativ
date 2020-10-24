@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get District — getDistrict • rqmlativ</title>
+<title>Get a District — getDistrict • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,9 +35,8 @@
 
 
 
-<meta property="og:title" content="Get District — getDistrict" />
-<meta property="og:description" content="This function returns a dataframe or json object of a District
-This function returns a dataframe or json object of a District" />
+<meta property="og:title" content="Get a District — getDistrict" />
+<meta property="og:description" content="This function returns a dataframe or json object of a District" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,14 +105,13 @@ This function returns a dataframe or json object of a District" />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get District</h1>
+    <h1>Get a District</h1>
     <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/District.R'><code>R/District.R</code></a></small>
     <div class="hidden name"><code>getDistrict.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of a District</p>
-<p>This function returns a dataframe or json object of a District</p>
     </div>
 
     <pre class="usage"><span class='fu'>getDistrict</span>(
@@ -144,40 +142,7 @@ This function returns a dataframe or json object of a District" />
   <span class='kw'>HasOrganizationChartTimeOffApprovalTask</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>getDistrict</span>(
-  <span class='no'>DistrictID</span>,
-  <span class='kw'>DistrictMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateDistrictMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictGroupID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffIDSuperintendent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BuildingID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PhoneNumberIsInternational</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PhoneNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FaxNumberIsInternational</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FaxNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CodeName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateDistrictCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RCDTCodeBySchoolYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictCodeBySchoolYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateDistrictTypeCodeMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FormattedPhoneNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NCESIDCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCurrentlySelected</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasOrganizationChartTimeOffApprovalTask</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -198,10 +163,6 @@ This function returns a dataframe or json object of a District" />
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -218,8 +179,6 @@ This function returns a dataframe or json object of a District" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of District
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A dataframe or of District
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get DistrictConfigEntityYear — getDistrictConfigEntityYear • rqmlativ</title>
+<title>Get a DistrictConfigEntityYear — getDistrictConfigEntityYear • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,9 +35,8 @@
 
 
 
-<meta property="og:title" content="Get DistrictConfigEntityYear — getDistrictConfigEntityYear" />
-<meta property="og:description" content="This function returns a dataframe or json object of a DistrictConfigEntityYear
-This function returns a dataframe or json object of a DistrictConfigEntityYear" />
+<meta property="og:title" content="Get a DistrictConfigEntityYear — getDistrictConfigEntityYear" />
+<meta property="og:description" content="This function returns a dataframe or json object of a DistrictConfigEntityYear" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -106,14 +105,13 @@ This function returns a dataframe or json object of a DistrictConfigEntityYear" 
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get DistrictConfigEntityYear</h1>
+    <h1>Get a DistrictConfigEntityYear</h1>
     <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/District.R'><code>R/District.R</code></a></small>
     <div class="hidden name"><code>getDistrictConfigEntityYear.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of a DistrictConfigEntityYear</p>
-<p>This function returns a dataframe or json object of a DistrictConfigEntityYear</p>
     </div>
 
     <pre class="usage"><span class='fu'>getDistrictConfigEntityYear</span>(
@@ -128,24 +126,7 @@ This function returns a dataframe or json object of a DistrictConfigEntityYear" 
   <span class='kw'>ConfigEntityYearIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>getDistrictConfigEntityYear</span>(
-  <span class='no'>DistrictConfigEntityYearID</span>,
-  <span class='kw'>ConfigEntityYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConfigEntityYearIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -166,10 +147,6 @@ This function returns a dataframe or json object of a DistrictConfigEntityYear" 
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -186,8 +163,6 @@ This function returns a dataframe or json object of a DistrictConfigEntityYear" 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of DistrictConfigEntityYear
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A dataframe or of DistrictConfigEntityYear
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

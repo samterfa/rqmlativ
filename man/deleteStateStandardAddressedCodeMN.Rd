@@ -8,7 +8,7 @@ deleteStateStandardAddressedCodeMN(
   StateStandardAddressedCodeMNID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteStateStandardAddressedCodeMN(
 \item{StateStandardAddressedCodeMNID}{The ID of the StateStandardAddressedCodeMN to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The StateStandardAddressedCodeMNID of the deleted StateStandardAddressedCodeMN.
 \description{
 This function deletes a StateStandardAddressedCodeMN
 }
-\concept{State Reporting MN}
+\concept{StateReportingMN}

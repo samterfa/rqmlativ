@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Create a PLAN — createPLAN • rqmlativ</title>
+<title>Create a Plan — createPlan • rqmlativ</title>
 
 
 <!-- jquery -->
@@ -35,8 +35,8 @@
 
 
 
-<meta property="og:title" content="Create a PLAN — createPLAN" />
-<meta property="og:description" content="This function creates a PLAN" />
+<meta property="og:title" content="Create a Plan — createPlan" />
+<meta property="og:description" content="This function creates a Plan" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -105,24 +105,26 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Create a PLAN</h1>
-    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/Assessment.R'><code>R/Assessment.R</code></a></small>
+    <h1>Create a Plan</h1>
+    <small class="dont-index">Source: <a href='https://github.com/samterfa/rqmlativ/blob/master/R/GraduationRequirements.R'><code>R/GraduationRequirements.R</code></a></small>
     <div class="hidden name"><code>createPLAN.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>This function creates a PLAN</p>
+    <p>This function creates a Plan</p>
     </div>
 
-    <pre class="usage"><span class='fu'>createPLAN</span>(
-  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EnglishScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MathScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReadingScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ScienceScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompositeScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+    <pre class="usage"><span class='fu'>createPlan</span>(
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradYearLow</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradYearHigh</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EdFiGraduationPlanID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EarnedCreditsMethodIDDefaultOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EdFiGraduationPlanTypeDescriptorID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -135,10 +137,6 @@
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -148,13 +146,13 @@
     </tr>
     <tr>
       <th>fieldNames</th>
-      <td><p>The field values to give the created PLAN. Each defaults to NULL.</p></td>
+      <td><p>The field values to give the created Plan. Each defaults to NULL.</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A newly created PLAN
+    <p>A newly created Plan
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

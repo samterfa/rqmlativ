@@ -11,15 +11,13 @@ modifyClassPeriodDashboardV1(
   ClassPeriodName = NULL,
   DashboardRunHistoryID = NULL,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
 }
 \arguments{
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -34,4 +32,4 @@ The modified ClassPeriodDashboardV1
 \description{
 This function modifies a ClassPeriodDashboardV1
 }
-\concept{State Reporting}
+\concept{StateReporting}

@@ -8,7 +8,7 @@ deleteMARSSStudentFileFallV1Exception(
   MARSSStudentFileFallV1ExceptionID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteMARSSStudentFileFallV1Exception(
 \item{MARSSStudentFileFallV1ExceptionID}{The ID of the MARSSStudentFileFallV1Exception to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The MARSSStudentFileFallV1ExceptionID of the deleted MARSSStudentFileFallV1Excep
 \description{
 This function deletes a MARSSStudentFileFallV1Exception
 }
-\concept{State Reporting MN}
+\concept{StateReportingMN}

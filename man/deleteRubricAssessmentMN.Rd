@@ -8,7 +8,7 @@ deleteRubricAssessmentMN(
   RubricAssessmentMNID,
   ignoreWarnings = F,
   entityId = 1,
-  schoolYearId = NULL,
+  query = NULL,
   flatten = T,
   returnResponse = F
 )
@@ -17,8 +17,6 @@ deleteRubricAssessmentMN(
 \item{RubricAssessmentMNID}{The ID of the RubricAssessmentMN to delete}
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
-
-\item{schoolYearId}{The id of the schoolYear. Run \code{\link{listSchoolYears}} for a list of school years. Defaults to NULL (all school years).}
 
 \item{flatten}{Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).}
 
@@ -31,4 +29,4 @@ The RubricAssessmentMNID of the deleted RubricAssessmentMN.
 \description{
 This function deletes a RubricAssessmentMN
 }
-\concept{Special Programs}
+\concept{SpecialPrograms}

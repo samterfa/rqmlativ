@@ -36,7 +36,8 @@
 
 
 <meta property="og:title" content="List DataMigrationManagers — listDataMigrationManagers" />
-<meta property="og:description" content="This function returns a dataframe or json object of DataMigrationManagers" />
+<meta property="og:description" content="This function returns a dataframe or json object of DataMigrationManagers
+This function returns a dataframe or json object of DataMigrationManagers" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -112,6 +113,7 @@
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of DataMigrationManagers</p>
+<p>This function returns a dataframe or json object of DataMigrationManagers</p>
     </div>
 
     <pre class="usage"><span class='fu'>listDataMigrationManagers</span>(
@@ -132,7 +134,32 @@
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
+  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
+  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
+)
+
+<span class='fu'>listDataMigrationManagers</span>(
+  <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DataMigrationManagerID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcessedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MigrationType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcessType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Label</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SecondaryType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MediaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
+  <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -167,10 +194,6 @@
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>page</th>
       <td><p>Results are paginated. The page of results to return. Default is 1.</p></td>
     </tr>
@@ -195,6 +218,8 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A list of DataMigrationManagers
+<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
+<p>A list of DataMigrationManagers
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

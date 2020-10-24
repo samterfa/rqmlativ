@@ -36,7 +36,8 @@
 
 
 <meta property="og:title" content="Delete a TempIDListItem — deleteTempIDListItem" />
-<meta property="og:description" content="This function deletes a TempIDListItem" />
+<meta property="og:description" content="This function deletes a TempIDListItem
+This function deletes a TempIDListItem" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -112,13 +113,23 @@
 
     <div class="ref-description">
     <p>This function deletes a TempIDListItem</p>
+<p>This function deletes a TempIDListItem</p>
     </div>
 
     <pre class="usage"><span class='fu'>deleteTempIDListItem</span>(
   <span class='no'>TempIDListItemID</span>,
   <span class='kw'>ignoreWarnings</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
+  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
+)
+
+<span class='fu'>deleteTempIDListItem</span>(
+  <span class='no'>TempIDListItemID</span>,
+  <span class='kw'>ignoreWarnings</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
   <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
 )</pre>
@@ -135,10 +146,6 @@
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -151,6 +158,8 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>The TempIDListItemID of the deleted TempIDListItem.
+<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
+<p>The TempIDListItemID of the deleted TempIDListItem.
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

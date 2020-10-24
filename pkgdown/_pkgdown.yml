@@ -3,22 +3,6 @@ url: https://samterfa.github.io/rqmlativ/
 author: Sam Terfa
 
 reference:
-- title: Account
-  desc:  Functions involving Account.
-  contents:
-  - has_concept("Account")
-- title: Account Structure
-  desc:  Functions involving Account Structure.
-  contents:
-  - has_concept("Account Structure")
-- title: Accounts Payable
-  desc:  Functions involving Accounts Payable.
-  contents:
-  - has_concept("Accounts Payable")
-- title: Accounts Receivable
-  desc:  Functions involving Accounts Receivable.
-  contents:
-  - has_concept("Accounts Receivable")
 - title: Activity
   desc:  Functions involving Activity.
   contents:
@@ -31,10 +15,6 @@ reference:
   desc:  Functions involving Assessment.
   contents:
   - has_concept("Assessment")
-- title: Asset
-  desc:  Functions involving Asset.
-  contents:
-  - has_concept("Asset")
 - title: Attendance
   desc:  Functions involving Attendance.
   contents:
@@ -43,18 +23,6 @@ reference:
   desc:  Functions involving Base.
   contents:
   - has_concept("Base")
-- title: Benefit Management
-  desc:  Functions involving Benefit Management.
-  contents:
-  - has_concept("Benefit Management")
-- title: Budgeting
-  desc:  Functions involving Budgeting.
-  contents:
-  - has_concept("Budgeting")
-- title: Business Data Migration
-  desc:  Functions involving Business Data Migration.
-  contents:
-  - has_concept("Business Data Migration")
 - title: Calendar
   desc:  Functions involving Calendar.
   contents:
@@ -63,18 +31,14 @@ reference:
   desc:  Functions involving Common.
   contents:
   - has_concept("Common")
-- title: Conversion
-  desc:  Functions involving Conversion.
-  contents:
-  - has_concept("Conversion")
 - title: Curriculum
   desc:  Functions involving Curriculum.
   contents:
   - has_concept("Curriculum")
-- title: Data Migration Manager
-  desc:  Functions involving Data Migration Manager.
+- title: DataMigrationManager
+  desc:  Functions involving DataMigrationManager.
   contents:
-  - has_concept("Data Migration Manager")
+  - has_concept("DataMigrationManager")
 - title: Demographics
   desc:  Functions involving Demographics.
   contents:
@@ -87,34 +51,22 @@ reference:
   desc:  Functions involving District.
   contents:
   - has_concept("District")
-- title: Ed Fi
-  desc:  Functions involving Ed Fi.
-  contents:
-  - has_concept("Ed Fi")
-- title: Employee
-  desc:  Functions involving Employee.
-  contents:
-  - has_concept("Employee")
 - title: Enrollment
   desc:  Functions involving Enrollment.
   contents:
   - has_concept("Enrollment")
-- title: Event Queue
-  desc:  Functions involving Event Queue.
+- title: EventQueue
+  desc:  Functions involving EventQueue.
   contents:
-  - has_concept("Event Queue")
+  - has_concept("EventQueue")
 - title: Family
   desc:  Functions involving Family.
   contents:
   - has_concept("Family")
-- title: Fee Management
-  desc:  Functions involving Fee Management.
+- title: FoodService
+  desc:  Functions involving FoodService.
   contents:
-  - has_concept("Fee Management")
-- title: Food Service
-  desc:  Functions involving Food Service.
-  contents:
-  - has_concept("Food Service")
+  - has_concept("FoodService")
 - title: Gradebook
   desc:  Functions involving Gradebook.
   contents:
@@ -123,10 +75,10 @@ reference:
   desc:  Functions involving Grading.
   contents:
   - has_concept("Grading")
-- title: Graduation Requirements
-  desc:  Functions involving Graduation Requirements.
+- title: GraduationRequirements
+  desc:  Functions involving GraduationRequirements.
   contents:
-  - has_concept("Graduation Requirements")
+  - has_concept("GraduationRequirements")
 - title: Guidance
   desc:  Functions involving Guidance.
   contents:
@@ -139,14 +91,10 @@ reference:
   desc:  Functions involving Home.
   contents:
   - has_concept("Home")
-- title: Message Center
-  desc:  Functions involving Message Center.
+- title: MessageCenter
+  desc:  Functions involving MessageCenter.
   contents:
-  - has_concept("Message Center")
-- title: Minnehaha Customization
-  desc:  Functions involving Minnehaha Customization.
-  contents:
-  - has_concept("Minnehaha Customization")
+  - has_concept("MessageCenter")
 - title: Monitor
   desc:  Functions involving Monitor.
   contents:
@@ -155,34 +103,18 @@ reference:
   desc:  Functions involving MTSS.
   contents:
   - has_concept("MTSS")
-- title: One Roster
-  desc:  Functions involving One Roster.
+- title: OneRoster
+  desc:  Functions involving OneRoster.
   contents:
-  - has_concept("One Roster")
-- title: Online Form
-  desc:  Functions involving Online Form.
+  - has_concept("OneRoster")
+- title: OnlineForm
+  desc:  Functions involving OnlineForm.
   contents:
-  - has_concept("Online Form")
-- title: Payroll
-  desc:  Functions involving Payroll.
+  - has_concept("OnlineForm")
+- title: PerformanceAcknowledgment
+  desc:  Functions involving PerformanceAcknowledgment.
   contents:
-  - has_concept("Payroll")
-- title: Payroll Tax Table
-  desc:  Functions involving Payroll Tax Table.
-  contents:
-  - has_concept("Payroll Tax Table")
-- title: Performance Acknowledgment
-  desc:  Functions involving Performance Acknowledgment.
-  contents:
-  - has_concept("Performance Acknowledgment")
-- title: Position
-  desc:  Functions involving Position.
-  contents:
-  - has_concept("Position")
-- title: Purchasing
-  desc:  Functions involving Purchasing.
-  contents:
-  - has_concept("Purchasing")
+  - has_concept("PerformanceAcknowledgment")
 - title: Reporting
   desc:  Functions involving Reporting.
   contents:
@@ -195,79 +127,55 @@ reference:
   desc:  Functions involving Security.
   contents:
   - has_concept("Security")
-- title: Sky Sys
-  desc:  Functions involving Sky Sys.
+- title: SkySys
+  desc:  Functions involving SkySys.
   contents:
-  - has_concept("Sky Sys")
-- title: Special Education
-  desc:  Functions involving Special Education.
+  - has_concept("SkySys")
+- title: SpecialEducation
+  desc:  Functions involving SpecialEducation.
   contents:
-  - has_concept("Special Education")
-- title: Special Programs
-  desc:  Functions involving Special Programs.
+  - has_concept("SpecialEducation")
+- title: SpecialPrograms
+  desc:  Functions involving SpecialPrograms.
   contents:
-  - has_concept("Special Programs")
+  - has_concept("SpecialPrograms")
 - title: Staff
   desc:  Functions involving Staff.
   contents:
   - has_concept("Staff")
-- title: Staff Planning
-  desc:  Functions involving Staff Planning.
+- title: StateReporting
+  desc:  Functions involving StateReporting.
   contents:
-  - has_concept("Staff Planning")
-- title: State Reporting
-  desc:  Functions involving State Reporting.
+  - has_concept("StateReporting")
+- title: StateReportingFederal
+  desc:  Functions involving StateReportingFederal.
   contents:
-  - has_concept("State Reporting")
-- title: State Reporting Federal
-  desc:  Functions involving State Reporting Federal.
+  - has_concept("StateReportingFederal")
+- title: StateReportingMN
+  desc:  Functions involving StateReportingMN.
   contents:
-  - has_concept("State Reporting Federal")
-- title: State Reporting MN
-  desc:  Functions involving State Reporting MN.
-  contents:
-  - has_concept("State Reporting MN")
+  - has_concept("StateReportingMN")
 - title: Student
   desc:  Functions involving Student.
   contents:
   - has_concept("Student")
-- title: Student Data Migration
-  desc:  Functions involving Student Data Migration.
+- title: StudentDataMigration
+  desc:  Functions involving StudentDataMigration.
   contents:
-  - has_concept("Student Data Migration")
-- title: Substitute Tracking
-  desc:  Functions involving Substitute Tracking.
+  - has_concept("StudentDataMigration")
+- title: SupportCenter
+  desc:  Functions involving SupportCenter.
   contents:
-  - has_concept("Substitute Tracking")
-- title: Support Center
-  desc:  Functions involving Support Center.
-  contents:
-  - has_concept("Support Center")
-- title: Time Off
-  desc:  Functions involving Time Off.
-  contents:
-  - has_concept("Time Off")
-- title: Time Tracking
-  desc:  Functions involving Time Tracking.
-  contents:
-  - has_concept("Time Tracking")
+  - has_concept("SupportCenter")
 - title: Transportation
   desc:  Functions involving Transportation.
   contents:
   - has_concept("Transportation")
-- title: Vendor
-  desc:  Functions involving Vendor.
-  contents:
-  - has_concept("Vendor")
-- title: Warehouse
-  desc:  Functions involving Warehouse.
-  contents:
-  - has_concept("Warehouse")
 - title: Workflow
   desc:  Functions involving Workflow.
   contents:
   - has_concept("Workflow")
-- title: Year End
-  desc:  Functions involving Year End.
+- title: YearEnd
+  desc:  Functions involving YearEnd.
   contents:
-  - has_concept("Year End")
+  - has_concept("YearEnd")

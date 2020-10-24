@@ -36,8 +36,7 @@
 
 
 <meta property="og:title" content="List Entities — listEntities" />
-<meta property="og:description" content="This function returns a dataframe or json object of Entities
-This function returns a dataframe or json object of Entities" />
+<meta property="og:description" content="This function returns a dataframe or json object of Entities" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -113,7 +112,6 @@ This function returns a dataframe or json object of Entities" />
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of Entities</p>
-<p>This function returns a dataframe or json object of Entities</p>
     </div>
 
     <pre class="usage"><span class='fu'>listEntities</span>(
@@ -148,46 +146,7 @@ This function returns a dataframe or json object of Entities" />
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>listEntities</span>(
-  <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearIDCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsDistrictWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSystemWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Code</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CodeName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CampusID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ExternalLinkEntityCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalPlanEntityYears</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityGroupCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReportToState</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityCodeOrCombinedCodesFollettExport</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictCodeEntityCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EnforceAddressRangeDefaults</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCurrentlySelected</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IlluminateSiteTypeOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EdFiSchoolID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowDualEnrollment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
-  <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>searchSortFieldNamesDescendingList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>schoolYearId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>page</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>pageSize</span> <span class='kw'>=</span> <span class='fl'>1e+05</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -222,10 +181,6 @@ This function returns a dataframe or json object of Entities" />
       <td><p>The id of the entity (school). Run <code>listEntities</code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
-      <th>schoolYearId</th>
-      <td><p>The id of the schoolYear. Run <code><a href='listSchoolYears.html'>listSchoolYears</a></code> for a list of school years. Defaults to NULL (all school years).</p></td>
-    </tr>
-    <tr>
       <th>page</th>
       <td><p>Results are paginated. The page of results to return. Default is 1.</p></td>
     </tr>
@@ -250,8 +205,6 @@ This function returns a dataframe or json object of Entities" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A list of Entities
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A list of Entities
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

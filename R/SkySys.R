@@ -9,6 +9,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -35,6 +36,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportResultRow. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportResultRow.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportResultRow') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -57,6 +59,7 @@
 	#' This function deletes an ImportResultRow
 	#' @param ImportResultRowID The ID of the ImportResultRow to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -73,6 +76,7 @@
 	#' This function creates an ImportResultRow
 	#' @param fieldNames The field values to give the created ImportResultRow. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -93,6 +97,7 @@
 	#' This function modifies an ImportResultRow
 	#' @param fieldNames The field values to give the modified ImportResultRow. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -118,6 +123,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -144,6 +150,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Profile. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Profile.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Profile') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -166,6 +173,7 @@
 	#' This function deletes a Profile
 	#' @param ProfileID The ID of the Profile to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -182,6 +190,7 @@
 	#' This function creates a Profile
 	#' @param fieldNames The field values to give the created Profile. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -202,6 +211,7 @@
 	#' This function modifies a Profile
 	#' @param fieldNames The field values to give the modified Profile. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -227,6 +237,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -253,6 +264,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given CustomScreen. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CustomScreen.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CustomScreen') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -275,6 +287,7 @@
 	#' This function deletes a CustomScreen
 	#' @param CustomScreenID The ID of the CustomScreen to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -291,6 +304,7 @@
 	#' This function creates a CustomScreen
 	#' @param fieldNames The field values to give the created CustomScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -311,6 +325,7 @@
 	#' This function modifies a CustomScreen
 	#' @param fieldNames The field values to give the modified CustomScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -336,6 +351,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -362,6 +378,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given CustomScreenElement. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CustomScreenElement.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CustomScreenElement') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -384,6 +401,7 @@
 	#' This function deletes a CustomScreenElement
 	#' @param CustomScreenElementID The ID of the CustomScreenElement to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -400,6 +418,7 @@
 	#' This function creates a CustomScreenElement
 	#' @param fieldNames The field values to give the created CustomScreenElement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -420,6 +439,7 @@
 	#' This function modifies a CustomScreenElement
 	#' @param fieldNames The field values to give the modified CustomScreenElement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -445,6 +465,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -471,6 +492,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportResult. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportResult.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportResult') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -493,6 +515,7 @@
 	#' This function deletes an ImportResult
 	#' @param ImportResultID The ID of the ImportResult to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -509,6 +532,7 @@
 	#' This function creates an ImportResult
 	#' @param fieldNames The field values to give the created ImportResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -529,6 +553,7 @@
 	#' This function modifies an ImportResult
 	#' @param fieldNames The field values to give the modified ImportResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -554,6 +579,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -580,6 +606,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportModulePath. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportModulePath.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportModulePath') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -602,6 +629,7 @@
 	#' This function deletes an ImportModulePath
 	#' @param ImportModulePathID The ID of the ImportModulePath to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -618,6 +646,7 @@
 	#' This function creates an ImportModulePath
 	#' @param fieldNames The field values to give the created ImportModulePath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -638,6 +667,7 @@
 	#' This function modifies an ImportModulePath
 	#' @param fieldNames The field values to give the modified ImportModulePath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -663,6 +693,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -689,6 +720,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ApplySchemaChangeAllChangesConfirmation. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ApplySchemaChangeAllChangesConfirmation.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ApplySchemaChangeAllChangesConfirmation') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -711,6 +743,7 @@
 	#' This function deletes an ApplySchemaChangeAllChangesConfirmation
 	#' @param ApplySchemaChangeAllChangesConfirmationID The ID of the ApplySchemaChangeAllChangesConfirmation to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -727,6 +760,7 @@
 	#' This function creates an ApplySchemaChangeAllChangesConfirmation
 	#' @param fieldNames The field values to give the created ApplySchemaChangeAllChangesConfirmation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -747,6 +781,7 @@
 	#' This function modifies an ApplySchemaChangeAllChangesConfirmation
 	#' @param fieldNames The field values to give the modified ApplySchemaChangeAllChangesConfirmation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -772,6 +807,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -798,6 +834,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ApplySchemaChangeRelationshipSelection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ApplySchemaChangeRelationshipSelection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ApplySchemaChangeRelationshipSelection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -820,6 +857,7 @@
 	#' This function deletes an ApplySchemaChangeRelationshipSelection
 	#' @param ApplySchemaChangeRelationshipSelectionID The ID of the ApplySchemaChangeRelationshipSelection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -836,6 +874,7 @@
 	#' This function creates an ApplySchemaChangeRelationshipSelection
 	#' @param fieldNames The field values to give the created ApplySchemaChangeRelationshipSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -856,6 +895,7 @@
 	#' This function modifies an ApplySchemaChangeRelationshipSelection
 	#' @param fieldNames The field values to give the modified ApplySchemaChangeRelationshipSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -881,6 +921,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -907,6 +948,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ApplySchemaChangeFieldSelection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ApplySchemaChangeFieldSelection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ApplySchemaChangeFieldSelection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -929,6 +971,7 @@
 	#' This function deletes an ApplySchemaChangeFieldSelection
 	#' @param ApplySchemaChangeFieldSelectionID The ID of the ApplySchemaChangeFieldSelection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -945,6 +988,7 @@
 	#' This function creates an ApplySchemaChangeFieldSelection
 	#' @param fieldNames The field values to give the created ApplySchemaChangeFieldSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -965,6 +1009,7 @@
 	#' This function modifies an ApplySchemaChangeFieldSelection
 	#' @param fieldNames The field values to give the modified ApplySchemaChangeFieldSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -990,6 +1035,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1016,6 +1062,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ApplySchemaChangeObjectSelection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ApplySchemaChangeObjectSelection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ApplySchemaChangeObjectSelection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1038,6 +1085,7 @@
 	#' This function deletes an ApplySchemaChangeObjectSelection
 	#' @param ApplySchemaChangeObjectSelectionID The ID of the ApplySchemaChangeObjectSelection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1054,6 +1102,7 @@
 	#' This function creates an ApplySchemaChangeObjectSelection
 	#' @param fieldNames The field values to give the created ApplySchemaChangeObjectSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1074,6 +1123,7 @@
 	#' This function modifies an ApplySchemaChangeObjectSelection
 	#' @param fieldNames The field values to give the modified ApplySchemaChangeObjectSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1099,6 +1149,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1125,6 +1176,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BulkLoad. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BulkLoad.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BulkLoad') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1147,6 +1199,7 @@
 	#' This function deletes a BulkLoad
 	#' @param BulkLoadID The ID of the BulkLoad to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1163,6 +1216,7 @@
 	#' This function creates a BulkLoad
 	#' @param fieldNames The field values to give the created BulkLoad. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1183,6 +1237,7 @@
 	#' This function modifies a BulkLoad
 	#' @param fieldNames The field values to give the modified BulkLoad. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1208,6 +1263,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1234,6 +1290,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Import. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Import.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Import') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1256,6 +1313,7 @@
 	#' This function deletes an Import
 	#' @param ImportID The ID of the Import to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1272,6 +1330,7 @@
 	#' This function creates an Import
 	#' @param fieldNames The field values to give the created Import. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1292,6 +1351,7 @@
 	#' This function modifies an Import
 	#' @param fieldNames The field values to give the modified Import. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1317,6 +1377,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1343,6 +1404,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Kiosk. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Kiosk.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Kiosk') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1365,6 +1427,7 @@
 	#' This function deletes a Kiosk
 	#' @param KioskID The ID of the Kiosk to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1381,6 +1444,7 @@
 	#' This function creates a Kiosk
 	#' @param fieldNames The field values to give the created Kiosk. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1401,6 +1465,7 @@
 	#' This function modifies a Kiosk
 	#' @param fieldNames The field values to give the modified Kiosk. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1426,6 +1491,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1452,6 +1518,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given MediaType. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MediaType.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MediaType') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1474,6 +1541,7 @@
 	#' This function deletes a MediaType
 	#' @param MediaTypeID The ID of the MediaType to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1490,6 +1558,7 @@
 	#' This function creates a MediaType
 	#' @param fieldNames The field values to give the created MediaType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1510,6 +1579,7 @@
 	#' This function modifies a MediaType
 	#' @param fieldNames The field values to give the modified MediaType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1535,6 +1605,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1561,6 +1632,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given QuickEntryText. Defaults to FALSE for all return fields which, for convenience, returns all fields for the QuickEntryText.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('QuickEntryText') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1583,6 +1655,7 @@
 	#' This function deletes a QuickEntryText
 	#' @param QuickEntryTextID The ID of the QuickEntryText to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1599,6 +1672,7 @@
 	#' This function creates a QuickEntryText
 	#' @param fieldNames The field values to give the created QuickEntryText. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1619,6 +1693,7 @@
 	#' This function modifies a QuickEntryText
 	#' @param fieldNames The field values to give the modified QuickEntryText. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1644,6 +1719,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1670,6 +1746,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UpdateTracker. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UpdateTracker.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UpdateTracker') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1692,6 +1769,7 @@
 	#' This function deletes an UpdateTracker
 	#' @param UpdateTrackerID The ID of the UpdateTracker to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1708,6 +1786,7 @@
 	#' This function creates an UpdateTracker
 	#' @param fieldNames The field values to give the created UpdateTracker. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1728,6 +1807,7 @@
 	#' This function modifies an UpdateTracker
 	#' @param fieldNames The field values to give the modified UpdateTracker. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1753,6 +1833,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1779,6 +1860,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SkySysAttachment. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SkySysAttachment.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SkySysAttachment') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1801,6 +1883,7 @@
 	#' This function deletes a SkySysAttachment
 	#' @param SkySysAttachmentID The ID of the SkySysAttachment to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1817,6 +1900,7 @@
 	#' This function creates a SkySysAttachment
 	#' @param fieldNames The field values to give the created SkySysAttachment. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1837,6 +1921,7 @@
 	#' This function modifies a SkySysAttachment
 	#' @param fieldNames The field values to give the modified SkySysAttachment. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1862,6 +1947,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1888,6 +1974,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given AttachmentType. Defaults to FALSE for all return fields which, for convenience, returns all fields for the AttachmentType.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('AttachmentType') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1910,6 +1997,7 @@
 	#' This function deletes an AttachmentType
 	#' @param AttachmentTypeID The ID of the AttachmentType to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1926,6 +2014,7 @@
 	#' This function creates an AttachmentType
 	#' @param fieldNames The field values to give the created AttachmentType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1946,6 +2035,7 @@
 	#' This function modifies an AttachmentType
 	#' @param fieldNames The field values to give the modified AttachmentType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -1971,6 +2061,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1997,6 +2088,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempMedia. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempMedia.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempMedia') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2019,6 +2111,7 @@
 	#' This function deletes a TempMedia
 	#' @param TempMediaID The ID of the TempMedia to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2035,6 +2128,7 @@
 	#' This function creates a TempMedia
 	#' @param fieldNames The field values to give the created TempMedia. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2055,6 +2149,7 @@
 	#' This function modifies a TempMedia
 	#' @param fieldNames The field values to give the modified TempMedia. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2080,6 +2175,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2106,6 +2202,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempMassChangeResult. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempMassChangeResult.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempMassChangeResult') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2128,6 +2225,7 @@
 	#' This function deletes a TempMassChangeResult
 	#' @param TempMassChangeResultID The ID of the TempMassChangeResult to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2144,6 +2242,7 @@
 	#' This function creates a TempMassChangeResult
 	#' @param fieldNames The field values to give the created TempMassChangeResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2164,6 +2263,7 @@
 	#' This function modifies a TempMassChangeResult
 	#' @param fieldNames The field values to give the modified TempMassChangeResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2189,6 +2289,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2215,6 +2316,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Theme. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Theme.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Theme') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2237,6 +2339,7 @@
 	#' This function deletes a Theme
 	#' @param ThemeID The ID of the Theme to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2253,6 +2356,7 @@
 	#' This function creates a Theme
 	#' @param fieldNames The field values to give the created Theme. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2273,6 +2377,7 @@
 	#' This function modifies a Theme
 	#' @param fieldNames The field values to give the modified Theme. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2298,6 +2403,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2324,6 +2430,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given CharacterLimitGroup. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CharacterLimitGroup.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CharacterLimitGroup') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2346,6 +2453,7 @@
 	#' This function deletes a CharacterLimitGroup
 	#' @param CharacterLimitGroupID The ID of the CharacterLimitGroup to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2362,6 +2470,7 @@
 	#' This function creates a CharacterLimitGroup
 	#' @param fieldNames The field values to give the created CharacterLimitGroup. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2382,6 +2491,7 @@
 	#' This function modifies a CharacterLimitGroup
 	#' @param fieldNames The field values to give the modified CharacterLimitGroup. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2407,6 +2517,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2433,6 +2544,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ExternalLinkEntity. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ExternalLinkEntity.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ExternalLinkEntity') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2455,6 +2567,7 @@
 	#' This function deletes an ExternalLinkEntity
 	#' @param ExternalLinkEntityID The ID of the ExternalLinkEntity to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2471,6 +2584,7 @@
 	#' This function creates an ExternalLinkEntity
 	#' @param fieldNames The field values to give the created ExternalLinkEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2491,6 +2605,7 @@
 	#' This function modifies an ExternalLinkEntity
 	#' @param fieldNames The field values to give the modified ExternalLinkEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2516,6 +2631,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2542,6 +2658,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ExternalLink. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ExternalLink.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ExternalLink') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2564,6 +2681,7 @@
 	#' This function deletes an ExternalLink
 	#' @param ExternalLinkID The ID of the ExternalLink to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2580,6 +2698,7 @@
 	#' This function creates an ExternalLink
 	#' @param fieldNames The field values to give the created ExternalLink. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2600,6 +2719,7 @@
 	#' This function modifies an ExternalLink
 	#' @param fieldNames The field values to give the modified ExternalLink. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2625,6 +2745,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2651,6 +2772,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Prompt. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Prompt.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Prompt') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2673,6 +2795,7 @@
 	#' This function deletes a Prompt
 	#' @param PromptID The ID of the Prompt to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2689,6 +2812,7 @@
 	#' This function creates a Prompt
 	#' @param fieldNames The field values to give the created Prompt. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2709,6 +2833,7 @@
 	#' This function modifies a Prompt
 	#' @param fieldNames The field values to give the modified Prompt. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2734,6 +2859,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2760,6 +2886,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StandardFilter. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StandardFilter.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StandardFilter') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2782,6 +2909,7 @@
 	#' This function deletes a StandardFilter
 	#' @param StandardFilterID The ID of the StandardFilter to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2798,6 +2926,7 @@
 	#' This function creates a StandardFilter
 	#' @param fieldNames The field values to give the created StandardFilter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2818,6 +2947,7 @@
 	#' This function modifies a StandardFilter
 	#' @param fieldNames The field values to give the modified StandardFilter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2843,6 +2973,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2869,6 +3000,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StandardFilterPrompt. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StandardFilterPrompt.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StandardFilterPrompt') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2891,6 +3023,7 @@
 	#' This function deletes a StandardFilterPrompt
 	#' @param StandardFilterPromptID The ID of the StandardFilterPrompt to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2907,6 +3040,7 @@
 	#' This function creates a StandardFilterPrompt
 	#' @param fieldNames The field values to give the created StandardFilterPrompt. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2927,6 +3061,7 @@
 	#' This function modifies a StandardFilterPrompt
 	#' @param fieldNames The field values to give the modified StandardFilterPrompt. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -2952,6 +3087,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2978,6 +3114,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ModulePath. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ModulePath.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ModulePath') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3000,6 +3137,7 @@
 	#' This function deletes a ModulePath
 	#' @param ModulePathID The ID of the ModulePath to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3016,6 +3154,7 @@
 	#' This function creates a ModulePath
 	#' @param fieldNames The field values to give the created ModulePath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3036,6 +3175,7 @@
 	#' This function modifies a ModulePath
 	#' @param fieldNames The field values to give the modified ModulePath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3061,6 +3201,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3087,6 +3228,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ScheduledTaskInstance. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ScheduledTaskInstance.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ScheduledTaskInstance') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3109,6 +3251,7 @@
 	#' This function deletes a ScheduledTaskInstance
 	#' @param ScheduledTaskInstanceID The ID of the ScheduledTaskInstance to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3125,6 +3268,7 @@
 	#' This function creates a ScheduledTaskInstance
 	#' @param fieldNames The field values to give the created ScheduledTaskInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3145,6 +3289,7 @@
 	#' This function modifies a ScheduledTaskInstance
 	#' @param fieldNames The field values to give the modified ScheduledTaskInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3170,6 +3315,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3196,6 +3342,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ScheduledTask. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ScheduledTask.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ScheduledTask') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3218,6 +3365,7 @@
 	#' This function deletes a ScheduledTask
 	#' @param ScheduledTaskID The ID of the ScheduledTask to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3234,6 +3382,7 @@
 	#' This function creates a ScheduledTask
 	#' @param fieldNames The field values to give the created ScheduledTask. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3254,6 +3403,7 @@
 	#' This function modifies a ScheduledTask
 	#' @param fieldNames The field values to give the modified ScheduledTask. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3279,6 +3429,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3305,6 +3456,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SurveyAnswer. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SurveyAnswer.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SurveyAnswer') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3327,6 +3479,7 @@
 	#' This function deletes a SurveyAnswer
 	#' @param SurveyAnswerID The ID of the SurveyAnswer to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3343,6 +3496,7 @@
 	#' This function creates a SurveyAnswer
 	#' @param fieldNames The field values to give the created SurveyAnswer. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3363,6 +3517,7 @@
 	#' This function modifies a SurveyAnswer
 	#' @param fieldNames The field values to give the modified SurveyAnswer. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3388,6 +3543,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3414,6 +3570,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Feedback. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Feedback.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Feedback') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3436,6 +3593,7 @@
 	#' This function deletes a Feedback
 	#' @param FeedbackID The ID of the Feedback to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3452,6 +3610,7 @@
 	#' This function creates a Feedback
 	#' @param fieldNames The field values to give the created Feedback. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3472,6 +3631,7 @@
 	#' This function modifies a Feedback
 	#' @param fieldNames The field values to give the modified Feedback. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3497,6 +3657,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3523,6 +3684,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SurveyQuestion. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SurveyQuestion.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SurveyQuestion') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3545,6 +3707,7 @@
 	#' This function deletes a SurveyQuestion
 	#' @param SurveyQuestionID The ID of the SurveyQuestion to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3561,6 +3724,7 @@
 	#' This function creates a SurveyQuestion
 	#' @param fieldNames The field values to give the created SurveyQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3581,6 +3745,7 @@
 	#' This function modifies a SurveyQuestion
 	#' @param fieldNames The field values to give the modified SurveyQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3606,6 +3771,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3632,6 +3798,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Survey. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Survey.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Survey') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3654,6 +3821,7 @@
 	#' This function deletes a Survey
 	#' @param SurveyID The ID of the Survey to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3670,6 +3838,7 @@
 	#' This function creates a Survey
 	#' @param fieldNames The field values to give the created Survey. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3690,6 +3859,7 @@
 	#' This function modifies a Survey
 	#' @param fieldNames The field values to give the modified Survey. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3715,6 +3885,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3741,6 +3912,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SurveyInstance. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SurveyInstance.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SurveyInstance') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3763,6 +3935,7 @@
 	#' This function deletes a SurveyInstance
 	#' @param SurveyInstanceID The ID of the SurveyInstance to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3779,6 +3952,7 @@
 	#' This function creates a SurveyInstance
 	#' @param fieldNames The field values to give the created SurveyInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3799,6 +3973,7 @@
 	#' This function modifies a SurveyInstance
 	#' @param fieldNames The field values to give the modified SurveyInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3824,6 +3999,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3850,6 +4026,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Tile. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Tile.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Tile') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3872,6 +4049,7 @@
 	#' This function deletes a Tile
 	#' @param TileID The ID of the Tile to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3888,6 +4066,7 @@
 	#' This function creates a Tile
 	#' @param fieldNames The field values to give the created Tile. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3908,6 +4087,7 @@
 	#' This function modifies a Tile
 	#' @param fieldNames The field values to give the modified Tile. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3933,6 +4113,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3959,6 +4140,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Dashboard. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Dashboard.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Dashboard') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3981,6 +4163,7 @@
 	#' This function deletes a Dashboard
 	#' @param DashboardID The ID of the Dashboard to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -3997,6 +4180,7 @@
 	#' This function creates a Dashboard
 	#' @param fieldNames The field values to give the created Dashboard. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4017,6 +4201,7 @@
 	#' This function modifies a Dashboard
 	#' @param fieldNames The field values to give the modified Dashboard. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4042,6 +4227,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4068,6 +4254,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Email. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Email.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Email') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4090,6 +4277,7 @@
 	#' This function deletes an Email
 	#' @param EmailID The ID of the Email to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4106,6 +4294,7 @@
 	#' This function creates an Email
 	#' @param fieldNames The field values to give the created Email. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4126,6 +4315,7 @@
 	#' This function modifies an Email
 	#' @param fieldNames The field values to give the modified Email. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4151,6 +4341,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4177,6 +4368,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ThreadActivity. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ThreadActivity.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ThreadActivity') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4199,6 +4391,7 @@
 	#' This function deletes a ThreadActivity
 	#' @param ThreadActivityID The ID of the ThreadActivity to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4215,6 +4408,7 @@
 	#' This function creates a ThreadActivity
 	#' @param fieldNames The field values to give the created ThreadActivity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4235,6 +4429,7 @@
 	#' This function modifies a ThreadActivity
 	#' @param fieldNames The field values to give the modified ThreadActivity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4260,6 +4455,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4286,6 +4482,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UsernameStructure. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UsernameStructure.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UsernameStructure') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4308,6 +4505,7 @@
 	#' This function deletes an UsernameStructure
 	#' @param UsernameStructureID The ID of the UsernameStructure to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4324,6 +4522,7 @@
 	#' This function creates an UsernameStructure
 	#' @param fieldNames The field values to give the created UsernameStructure. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4344,6 +4543,7 @@
 	#' This function modifies an UsernameStructure
 	#' @param fieldNames The field values to give the modified UsernameStructure. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4369,6 +4569,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4395,6 +4596,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempLoginHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempLoginHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempLoginHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4417,6 +4619,7 @@
 	#' This function deletes a TempLoginHistory
 	#' @param TempLoginHistoryID The ID of the TempLoginHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4433,6 +4636,7 @@
 	#' This function creates a TempLoginHistory
 	#' @param fieldNames The field values to give the created TempLoginHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4453,6 +4657,7 @@
 	#' This function modifies a TempLoginHistory
 	#' @param fieldNames The field values to give the modified TempLoginHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4478,6 +4683,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4504,6 +4710,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given DatabaseRequest. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DatabaseRequest.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DatabaseRequest') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4526,6 +4733,7 @@
 	#' This function deletes a DatabaseRequest
 	#' @param DatabaseRequestID The ID of the DatabaseRequest to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4547,6 +4755,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4573,6 +4782,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given DatabaseTransaction. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DatabaseTransaction.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DatabaseTransaction') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4595,6 +4805,7 @@
 	#' This function deletes a DatabaseTransaction
 	#' @param DatabaseTransactionID The ID of the DatabaseTransaction to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4616,6 +4827,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4642,6 +4854,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given DatabaseSession. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DatabaseSession.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DatabaseSession') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4664,6 +4877,7 @@
 	#' This function deletes a DatabaseSession
 	#' @param DatabaseSessionID The ID of the DatabaseSession to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4685,6 +4899,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4711,6 +4926,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given DatabaseConnection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DatabaseConnection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DatabaseConnection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4733,6 +4949,7 @@
 	#' This function deletes a DatabaseConnection
 	#' @param DatabaseConnectionID The ID of the DatabaseConnection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4754,6 +4971,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4780,6 +4998,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given DataMigrationHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the DataMigrationHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('DataMigrationHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4802,6 +5021,7 @@
 	#' This function deletes a DataMigrationHistory
 	#' @param DataMigrationHistoryID The ID of the DataMigrationHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4818,6 +5038,7 @@
 	#' This function creates a DataMigrationHistory
 	#' @param fieldNames The field values to give the created DataMigrationHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4838,6 +5059,7 @@
 	#' This function modifies a DataMigrationHistory
 	#' @param fieldNames The field values to give the modified DataMigrationHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4863,6 +5085,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4889,6 +5112,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Media. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Media.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Media') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4911,6 +5135,7 @@
 	#' This function deletes a Media
 	#' @param MediaID The ID of the Media to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4927,6 +5152,7 @@
 	#' This function creates a Media
 	#' @param fieldNames The field values to give the created Media. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4947,6 +5173,7 @@
 	#' This function modifies a Media
 	#' @param fieldNames The field values to give the modified Media. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -4972,6 +5199,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4998,6 +5226,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given LoginHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the LoginHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('LoginHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5020,6 +5249,7 @@
 	#' This function deletes a LoginHistory
 	#' @param LoginHistoryID The ID of the LoginHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5036,6 +5266,7 @@
 	#' This function creates a LoginHistory
 	#' @param fieldNames The field values to give the created LoginHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5056,6 +5287,7 @@
 	#' This function modifies a LoginHistory
 	#' @param fieldNames The field values to give the modified LoginHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5081,6 +5313,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5107,6 +5340,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempUsageHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempUsageHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempUsageHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5129,6 +5363,7 @@
 	#' This function deletes a TempUsageHistory
 	#' @param TempUsageHistoryID The ID of the TempUsageHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5145,6 +5380,7 @@
 	#' This function creates a TempUsageHistory
 	#' @param fieldNames The field values to give the created TempUsageHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5165,6 +5401,7 @@
 	#' This function modifies a TempUsageHistory
 	#' @param fieldNames The field values to give the modified TempUsageHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5190,6 +5427,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5216,6 +5454,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Filter. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Filter.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Filter') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5238,6 +5477,7 @@
 	#' This function deletes a Filter
 	#' @param FilterID The ID of the Filter to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5254,6 +5494,7 @@
 	#' This function creates a Filter
 	#' @param fieldNames The field values to give the created Filter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5274,6 +5515,7 @@
 	#' This function modifies a Filter
 	#' @param fieldNames The field values to give the modified Filter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5299,6 +5541,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5325,6 +5568,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BrowseFilterLastUsed. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BrowseFilterLastUsed.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BrowseFilterLastUsed') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5347,6 +5591,7 @@
 	#' This function deletes a BrowseFilterLastUsed
 	#' @param BrowseFilterLastUsedID The ID of the BrowseFilterLastUsed to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5363,6 +5608,7 @@
 	#' This function creates a BrowseFilterLastUsed
 	#' @param fieldNames The field values to give the created BrowseFilterLastUsed. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5383,6 +5629,7 @@
 	#' This function modifies a BrowseFilterLastUsed
 	#' @param fieldNames The field values to give the modified BrowseFilterLastUsed. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5408,6 +5655,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5434,6 +5682,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UserFavorite. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UserFavorite.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UserFavorite') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5456,6 +5705,7 @@
 	#' This function deletes an UserFavorite
 	#' @param UserFavoriteID The ID of the UserFavorite to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5472,6 +5722,7 @@
 	#' This function creates an UserFavorite
 	#' @param fieldNames The field values to give the created UserFavorite. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5492,6 +5743,7 @@
 	#' This function modifies an UserFavorite
 	#' @param fieldNames The field values to give the modified UserFavorite. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5517,6 +5769,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5543,6 +5796,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BrowseViewLastUsed. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BrowseViewLastUsed.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BrowseViewLastUsed') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5565,6 +5819,7 @@
 	#' This function deletes a BrowseViewLastUsed
 	#' @param BrowseViewLastUsedID The ID of the BrowseViewLastUsed to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5581,6 +5836,7 @@
 	#' This function creates a BrowseViewLastUsed
 	#' @param fieldNames The field values to give the created BrowseViewLastUsed. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5601,6 +5857,7 @@
 	#' This function modifies a BrowseViewLastUsed
 	#' @param fieldNames The field values to give the modified BrowseViewLastUsed. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5626,6 +5883,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5652,6 +5910,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SkySysUsageHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SkySysUsageHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SkySysUsageHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5674,6 +5933,7 @@
 	#' This function deletes a SkySysUsageHistory
 	#' @param SkySysUsageHistoryID The ID of the SkySysUsageHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5690,6 +5950,7 @@
 	#' This function creates a SkySysUsageHistory
 	#' @param fieldNames The field values to give the created SkySysUsageHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5710,6 +5971,7 @@
 	#' This function modifies a SkySysUsageHistory
 	#' @param fieldNames The field values to give the modified SkySysUsageHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5735,6 +5997,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5761,6 +6024,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UserDock. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UserDock.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UserDock') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5783,6 +6047,7 @@
 	#' This function deletes an UserDock
 	#' @param UserDockID The ID of the UserDock to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5799,6 +6064,7 @@
 	#' This function creates an UserDock
 	#' @param fieldNames The field values to give the created UserDock. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5819,6 +6085,7 @@
 	#' This function modifies an UserDock
 	#' @param fieldNames The field values to give the modified UserDock. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5844,6 +6111,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5870,6 +6138,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Field. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Field.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Field') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5892,6 +6161,7 @@
 	#' This function deletes a Field
 	#' @param FieldID The ID of the Field to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5908,6 +6178,7 @@
 	#' This function creates a Field
 	#' @param fieldNames The field values to give the created Field. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5928,6 +6199,7 @@
 	#' This function modifies a Field
 	#' @param fieldNames The field values to give the modified Field. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -5953,6 +6225,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -5979,6 +6252,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Module. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Module.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Module') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6001,6 +6275,7 @@
 	#' This function deletes a Module
 	#' @param ModuleID The ID of the Module to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6017,6 +6292,7 @@
 	#' This function creates a Module
 	#' @param fieldNames The field values to give the created Module. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6037,6 +6313,7 @@
 	#' This function modifies a Module
 	#' @param fieldNames The field values to give the modified Module. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6062,6 +6339,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6088,6 +6366,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Object. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Object.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Object') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6110,6 +6389,7 @@
 	#' This function deletes an Object
 	#' @param ObjectID The ID of the Object to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6126,6 +6406,7 @@
 	#' This function creates an Object
 	#' @param fieldNames The field values to give the created Object. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6146,6 +6427,7 @@
 	#' This function modifies an Object
 	#' @param fieldNames The field values to give the modified Object. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6171,6 +6453,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6197,6 +6480,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SkySysRelationship. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SkySysRelationship.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SkySysRelationship') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6219,6 +6503,7 @@
 	#' This function deletes a SkySysRelationship
 	#' @param SkySysRelationshipID The ID of the SkySysRelationship to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6235,6 +6520,7 @@
 	#' This function creates a SkySysRelationship
 	#' @param fieldNames The field values to give the created SkySysRelationship. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6255,6 +6541,7 @@
 	#' This function modifies a SkySysRelationship
 	#' @param fieldNames The field values to give the modified SkySysRelationship. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6280,6 +6567,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6306,6 +6594,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ProfileModule. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ProfileModule.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ProfileModule') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6328,6 +6617,7 @@
 	#' This function deletes a ProfileModule
 	#' @param ProfileModuleID The ID of the ProfileModule to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6344,6 +6634,7 @@
 	#' This function creates a ProfileModule
 	#' @param fieldNames The field values to give the created ProfileModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6364,6 +6655,7 @@
 	#' This function modifies a ProfileModule
 	#' @param fieldNames The field values to give the modified ProfileModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6389,6 +6681,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6415,6 +6708,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ProfileScreen. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ProfileScreen.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ProfileScreen') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6437,6 +6731,7 @@
 	#' This function deletes a ProfileScreen
 	#' @param ProfileScreenID The ID of the ProfileScreen to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6453,6 +6748,7 @@
 	#' This function creates a ProfileScreen
 	#' @param fieldNames The field values to give the created ProfileScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6473,6 +6769,7 @@
 	#' This function modifies a ProfileScreen
 	#' @param fieldNames The field values to give the modified ProfileScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6498,6 +6795,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6524,6 +6822,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Browse. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Browse.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Browse') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6546,6 +6845,7 @@
 	#' This function deletes a Browse
 	#' @param BrowseID The ID of the Browse to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6562,6 +6862,7 @@
 	#' This function creates a Browse
 	#' @param fieldNames The field values to give the created Browse. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6582,6 +6883,7 @@
 	#' This function modifies a Browse
 	#' @param fieldNames The field values to give the modified Browse. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6607,6 +6909,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6633,6 +6936,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BrowseView. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BrowseView.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BrowseView') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6655,6 +6959,7 @@
 	#' This function deletes a BrowseView
 	#' @param BrowseViewID The ID of the BrowseView to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6671,6 +6976,7 @@
 	#' This function creates a BrowseView
 	#' @param fieldNames The field values to give the created BrowseView. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6691,6 +6997,7 @@
 	#' This function modifies a BrowseView
 	#' @param fieldNames The field values to give the modified BrowseView. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6716,6 +7023,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6742,6 +7050,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BrowseFilter. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BrowseFilter.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BrowseFilter') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6764,6 +7073,7 @@
 	#' This function deletes a BrowseFilter
 	#' @param BrowseFilterID The ID of the BrowseFilter to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6780,6 +7090,7 @@
 	#' This function creates a BrowseFilter
 	#' @param fieldNames The field values to give the created BrowseFilter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6800,6 +7111,7 @@
 	#' This function modifies a BrowseFilter
 	#' @param fieldNames The field values to give the modified BrowseFilter. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6825,6 +7137,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6851,6 +7164,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BrowseMenu. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BrowseMenu.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BrowseMenu') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6873,6 +7187,7 @@
 	#' This function deletes a BrowseMenu
 	#' @param BrowseMenuID The ID of the BrowseMenu to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6889,6 +7204,7 @@
 	#' This function creates a BrowseMenu
 	#' @param fieldNames The field values to give the created BrowseMenu. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6909,6 +7225,7 @@
 	#' This function modifies a BrowseMenu
 	#' @param fieldNames The field values to give the modified BrowseMenu. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6934,6 +7251,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -6960,6 +7278,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SkySysConfigSystem. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SkySysConfigSystem.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SkySysConfigSystem') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6982,6 +7301,7 @@
 	#' This function deletes a SkySysConfigSystem
 	#' @param SkySysConfigSystemID The ID of the SkySysConfigSystem to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -6998,6 +7318,7 @@
 	#' This function creates a SkySysConfigSystem
 	#' @param fieldNames The field values to give the created SkySysConfigSystem. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7018,6 +7339,7 @@
 	#' This function modifies a SkySysConfigSystem
 	#' @param fieldNames The field values to give the modified SkySysConfigSystem. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7043,6 +7365,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7069,6 +7392,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Log. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Log.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Log') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7091,6 +7415,7 @@
 	#' This function deletes a Log
 	#' @param LogID The ID of the Log to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7107,6 +7432,7 @@
 	#' This function creates a Log
 	#' @param fieldNames The field values to give the created Log. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7127,6 +7453,7 @@
 	#' This function modifies a Log
 	#' @param fieldNames The field values to give the modified Log. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7152,6 +7479,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7178,6 +7506,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given MenuCategory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MenuCategory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MenuCategory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7200,6 +7529,7 @@
 	#' This function deletes a MenuCategory
 	#' @param MenuCategoryID The ID of the MenuCategory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7216,6 +7546,7 @@
 	#' This function creates a MenuCategory
 	#' @param fieldNames The field values to give the created MenuCategory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7236,6 +7567,7 @@
 	#' This function modifies a MenuCategory
 	#' @param fieldNames The field values to give the modified MenuCategory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7261,6 +7593,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7287,6 +7620,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given MenuModule. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MenuModule.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MenuModule') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7309,6 +7643,7 @@
 	#' This function deletes a MenuModule
 	#' @param MenuModuleID The ID of the MenuModule to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7325,6 +7660,7 @@
 	#' This function creates a MenuModule
 	#' @param fieldNames The field values to give the created MenuModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7345,6 +7681,7 @@
 	#' This function modifies a MenuModule
 	#' @param fieldNames The field values to give the modified MenuModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7370,6 +7707,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7396,6 +7734,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given MenuScreen. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MenuScreen.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MenuScreen') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7418,6 +7757,7 @@
 	#' This function deletes a MenuScreen
 	#' @param MenuScreenID The ID of the MenuScreen to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7434,6 +7774,7 @@
 	#' This function creates a MenuScreen
 	#' @param fieldNames The field values to give the created MenuScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7454,6 +7795,7 @@
 	#' This function modifies a MenuScreen
 	#' @param fieldNames The field values to give the modified MenuScreen. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7479,6 +7821,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7505,6 +7848,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given State. Defaults to FALSE for all return fields which, for convenience, returns all fields for the State.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('State') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7527,6 +7871,7 @@
 	#' This function deletes a State
 	#' @param StateID The ID of the State to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7543,6 +7888,7 @@
 	#' This function creates a State
 	#' @param fieldNames The field values to give the created State. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7563,6 +7909,7 @@
 	#' This function modifies a State
 	#' @param fieldNames The field values to give the modified State. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7588,6 +7935,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7614,6 +7962,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UserMenuModule. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UserMenuModule.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UserMenuModule') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7636,6 +7985,7 @@
 	#' This function deletes an UserMenuModule
 	#' @param UserMenuModuleID The ID of the UserMenuModule to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7652,6 +8002,7 @@
 	#' This function creates an UserMenuModule
 	#' @param fieldNames The field values to give the created UserMenuModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7672,6 +8023,7 @@
 	#' This function modifies an UserMenuModule
 	#' @param fieldNames The field values to give the modified UserMenuModule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7697,6 +8049,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7723,6 +8076,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ValidationRule. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ValidationRule.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ValidationRule') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7745,6 +8099,7 @@
 	#' This function deletes a ValidationRule
 	#' @param ValidationRuleID The ID of the ValidationRule to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7761,6 +8116,7 @@
 	#' This function creates a ValidationRule
 	#' @param fieldNames The field values to give the created ValidationRule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7781,6 +8137,7 @@
 	#' This function modifies a ValidationRule
 	#' @param fieldNames The field values to give the modified ValidationRule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7806,6 +8163,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7832,6 +8190,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given OnlinePaymentVendor. Defaults to FALSE for all return fields which, for convenience, returns all fields for the OnlinePaymentVendor.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('OnlinePaymentVendor') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7854,6 +8213,7 @@
 	#' This function deletes an OnlinePaymentVendor
 	#' @param OnlinePaymentVendorID The ID of the OnlinePaymentVendor to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7870,6 +8230,7 @@
 	#' This function creates an OnlinePaymentVendor
 	#' @param fieldNames The field values to give the created OnlinePaymentVendor. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7890,6 +8251,7 @@
 	#' This function modifies an OnlinePaymentVendor
 	#' @param fieldNames The field values to give the modified OnlinePaymentVendor. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7915,6 +8277,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -7941,6 +8304,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given OnlinePaymentVendorEntity. Defaults to FALSE for all return fields which, for convenience, returns all fields for the OnlinePaymentVendorEntity.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('OnlinePaymentVendorEntity') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7963,6 +8327,7 @@
 	#' This function deletes an OnlinePaymentVendorEntity
 	#' @param OnlinePaymentVendorEntityID The ID of the OnlinePaymentVendorEntity to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7979,6 +8344,7 @@
 	#' This function creates an OnlinePaymentVendorEntity
 	#' @param fieldNames The field values to give the created OnlinePaymentVendorEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -7999,6 +8365,7 @@
 	#' This function modifies an OnlinePaymentVendorEntity
 	#' @param fieldNames The field values to give the modified OnlinePaymentVendorEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8024,6 +8391,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8050,6 +8418,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given OnlinePaymentLog. Defaults to FALSE for all return fields which, for convenience, returns all fields for the OnlinePaymentLog.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('OnlinePaymentLog') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8072,6 +8441,7 @@
 	#' This function deletes an OnlinePaymentLog
 	#' @param OnlinePaymentLogID The ID of the OnlinePaymentLog to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8088,6 +8458,7 @@
 	#' This function creates an OnlinePaymentLog
 	#' @param fieldNames The field values to give the created OnlinePaymentLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8108,6 +8479,7 @@
 	#' This function modifies an OnlinePaymentLog
 	#' @param fieldNames The field values to give the modified OnlinePaymentLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8133,6 +8505,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8159,6 +8532,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given PaymentNoticeLog. Defaults to FALSE for all return fields which, for convenience, returns all fields for the PaymentNoticeLog.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('PaymentNoticeLog') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8181,6 +8555,7 @@
 	#' This function deletes a PaymentNoticeLog
 	#' @param PaymentNoticeLogID The ID of the PaymentNoticeLog to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8197,6 +8572,7 @@
 	#' This function creates a PaymentNoticeLog
 	#' @param fieldNames The field values to give the created PaymentNoticeLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8217,6 +8593,7 @@
 	#' This function modifies a PaymentNoticeLog
 	#' @param fieldNames The field values to give the modified PaymentNoticeLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8242,6 +8619,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8268,6 +8646,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ApplySchemaChangeRun. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ApplySchemaChangeRun.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ApplySchemaChangeRun') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8290,6 +8669,7 @@
 	#' This function deletes an ApplySchemaChangeRun
 	#' @param ApplySchemaChangeRunID The ID of the ApplySchemaChangeRun to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8306,6 +8686,7 @@
 	#' This function creates an ApplySchemaChangeRun
 	#' @param fieldNames The field values to give the created ApplySchemaChangeRun. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8326,6 +8707,7 @@
 	#' This function modifies an ApplySchemaChangeRun
 	#' @param fieldNames The field values to give the modified ApplySchemaChangeRun. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8351,6 +8733,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8377,6 +8760,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BusinessMigrationHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BusinessMigrationHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BusinessMigrationHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8399,6 +8783,7 @@
 	#' This function deletes a BusinessMigrationHistory
 	#' @param BusinessMigrationHistoryID The ID of the BusinessMigrationHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8415,6 +8800,7 @@
 	#' This function creates a BusinessMigrationHistory
 	#' @param fieldNames The field values to give the created BusinessMigrationHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8435,6 +8821,7 @@
 	#' This function modifies a BusinessMigrationHistory
 	#' @param fieldNames The field values to give the modified BusinessMigrationHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8460,6 +8847,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8486,6 +8874,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StandardNormalDistribution. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StandardNormalDistribution.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StandardNormalDistribution') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8508,6 +8897,7 @@
 	#' This function deletes a StandardNormalDistribution
 	#' @param StandardNormalDistributionID The ID of the StandardNormalDistribution to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8524,6 +8914,7 @@
 	#' This function creates a StandardNormalDistribution
 	#' @param fieldNames The field values to give the created StandardNormalDistribution. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8544,6 +8935,7 @@
 	#' This function modifies a StandardNormalDistribution
 	#' @param fieldNames The field values to give the modified StandardNormalDistribution. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8569,6 +8961,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8595,6 +8988,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempValidateBusinessObject. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempValidateBusinessObject.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempValidateBusinessObject') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8617,6 +9011,7 @@
 	#' This function deletes a TempValidateBusinessObject
 	#' @param TempValidateBusinessObjectID The ID of the TempValidateBusinessObject to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8633,6 +9028,7 @@
 	#' This function creates a TempValidateBusinessObject
 	#' @param fieldNames The field values to give the created TempValidateBusinessObject. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8653,6 +9049,7 @@
 	#' This function modifies a TempValidateBusinessObject
 	#' @param fieldNames The field values to give the modified TempValidateBusinessObject. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8678,6 +9075,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8704,6 +9102,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SchemaHistory. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SchemaHistory.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SchemaHistory') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8726,6 +9125,7 @@
 	#' This function deletes a SchemaHistory
 	#' @param SchemaHistoryID The ID of the SchemaHistory to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8742,6 +9142,7 @@
 	#' This function creates a SchemaHistory
 	#' @param fieldNames The field values to give the created SchemaHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8762,6 +9163,7 @@
 	#' This function modifies a SchemaHistory
 	#' @param fieldNames The field values to give the modified SchemaHistory. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8787,6 +9189,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8813,6 +9216,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempBrowseViewColumn. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempBrowseViewColumn.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempBrowseViewColumn') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8835,6 +9239,7 @@
 	#' This function deletes a TempBrowseViewColumn
 	#' @param TempBrowseViewColumnID The ID of the TempBrowseViewColumn to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8851,6 +9256,7 @@
 	#' This function creates a TempBrowseViewColumn
 	#' @param fieldNames The field values to give the created TempBrowseViewColumn. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8871,6 +9277,7 @@
 	#' This function modifies a TempBrowseViewColumn
 	#' @param fieldNames The field values to give the modified TempBrowseViewColumn. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8896,6 +9303,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -8922,6 +9330,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given EmailAttachment. Defaults to FALSE for all return fields which, for convenience, returns all fields for the EmailAttachment.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('EmailAttachment') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8944,6 +9353,7 @@
 	#' This function deletes an EmailAttachment
 	#' @param EmailAttachmentID The ID of the EmailAttachment to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8960,6 +9370,7 @@
 	#' This function creates an EmailAttachment
 	#' @param fieldNames The field values to give the created EmailAttachment. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -8980,6 +9391,7 @@
 	#' This function modifies an EmailAttachment
 	#' @param fieldNames The field values to give the modified EmailAttachment. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9005,6 +9417,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9031,6 +9444,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FTPConnection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FTPConnection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FTPConnection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9053,6 +9467,7 @@
 	#' This function deletes a FTPConnection
 	#' @param FTPConnectionID The ID of the FTPConnection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9069,6 +9484,7 @@
 	#' This function creates a FTPConnection
 	#' @param fieldNames The field values to give the created FTPConnection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9089,6 +9505,7 @@
 	#' This function modifies a FTPConnection
 	#' @param fieldNames The field values to give the modified FTPConnection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9114,6 +9531,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9140,6 +9558,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FTPResult. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FTPResult.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FTPResult') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9162,6 +9581,7 @@
 	#' This function deletes a FTPResult
 	#' @param FTPResultID The ID of the FTPResult to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9178,6 +9598,7 @@
 	#' This function creates a FTPResult
 	#' @param fieldNames The field values to give the created FTPResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9198,6 +9619,7 @@
 	#' This function modifies a FTPResult
 	#' @param fieldNames The field values to give the modified FTPResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9223,6 +9645,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9249,6 +9672,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FTPProcessType. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FTPProcessType.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FTPProcessType') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9271,6 +9695,7 @@
 	#' This function deletes a FTPProcessType
 	#' @param FTPProcessTypeID The ID of the FTPProcessType to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9287,6 +9712,7 @@
 	#' This function creates a FTPProcessType
 	#' @param fieldNames The field values to give the created FTPProcessType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9307,6 +9733,7 @@
 	#' This function modifies a FTPProcessType
 	#' @param fieldNames The field values to give the modified FTPProcessType. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9332,6 +9759,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9358,6 +9786,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FTPProcessTypeConnection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FTPProcessTypeConnection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FTPProcessTypeConnection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9380,6 +9809,7 @@
 	#' This function deletes a FTPProcessTypeConnection
 	#' @param FTPProcessTypeConnectionID The ID of the FTPProcessTypeConnection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9396,6 +9826,7 @@
 	#' This function creates a FTPProcessTypeConnection
 	#' @param fieldNames The field values to give the created FTPProcessTypeConnection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9416,6 +9847,7 @@
 	#' This function modifies a FTPProcessTypeConnection
 	#' @param fieldNames The field values to give the modified FTPProcessTypeConnection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9441,6 +9873,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9467,6 +9900,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SkywardConfiguration. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SkywardConfiguration.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SkywardConfiguration') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9489,6 +9923,7 @@
 	#' This function deletes a SkywardConfiguration
 	#' @param SkywardConfigurationID The ID of the SkywardConfiguration to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9505,6 +9940,7 @@
 	#' This function creates a SkywardConfiguration
 	#' @param fieldNames The field values to give the created SkywardConfiguration. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9525,6 +9961,7 @@
 	#' This function modifies a SkywardConfiguration
 	#' @param fieldNames The field values to give the modified SkywardConfiguration. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9550,6 +9987,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9576,6 +10014,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ScheduledImport. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ScheduledImport.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ScheduledImport') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9598,6 +10037,7 @@
 	#' This function deletes a ScheduledImport
 	#' @param ScheduledImportID The ID of the ScheduledImport to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9614,6 +10054,7 @@
 	#' This function creates a ScheduledImport
 	#' @param fieldNames The field values to give the created ScheduledImport. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9634,6 +10075,7 @@
 	#' This function modifies a ScheduledImport
 	#' @param fieldNames The field values to give the modified ScheduledImport. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9659,6 +10101,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9685,6 +10128,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempAttachmentError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempAttachmentError.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempAttachmentError') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9707,6 +10151,7 @@
 	#' This function deletes a TempAttachmentError
 	#' @param TempAttachmentErrorID The ID of the TempAttachmentError to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9723,6 +10168,7 @@
 	#' This function creates a TempAttachmentError
 	#' @param fieldNames The field values to give the created TempAttachmentError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9743,6 +10189,7 @@
 	#' This function modifies a TempAttachmentError
 	#' @param fieldNames The field values to give the modified TempAttachmentError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9768,6 +10215,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9794,6 +10242,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempDiagnostic. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempDiagnostic.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempDiagnostic') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9816,6 +10265,7 @@
 	#' This function deletes a TempDiagnostic
 	#' @param TempDiagnosticID The ID of the TempDiagnostic to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9832,6 +10282,7 @@
 	#' This function creates a TempDiagnostic
 	#' @param fieldNames The field values to give the created TempDiagnostic. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9852,6 +10303,7 @@
 	#' This function modifies a TempDiagnostic
 	#' @param fieldNames The field values to give the modified TempDiagnostic. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9877,6 +10329,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -9903,6 +10356,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FieldMapping. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FieldMapping.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FieldMapping') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9925,6 +10379,7 @@
 	#' This function deletes a FieldMapping
 	#' @param FieldMappingID The ID of the FieldMapping to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9941,6 +10396,7 @@
 	#' This function creates a FieldMapping
 	#' @param fieldNames The field values to give the created FieldMapping. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9961,6 +10417,7 @@
 	#' This function modifies a FieldMapping
 	#' @param fieldNames The field values to give the modified FieldMapping. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -9986,6 +10443,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10012,6 +10470,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ValueSource. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ValueSource.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ValueSource') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10034,6 +10493,7 @@
 	#' This function deletes a ValueSource
 	#' @param ValueSourceID The ID of the ValueSource to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10050,6 +10510,7 @@
 	#' This function creates a ValueSource
 	#' @param fieldNames The field values to give the created ValueSource. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10070,6 +10531,7 @@
 	#' This function modifies a ValueSource
 	#' @param fieldNames The field values to give the modified ValueSource. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10095,6 +10557,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10121,6 +10584,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportDataObjectSource. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportDataObjectSource.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportDataObjectSource') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10143,6 +10607,7 @@
 	#' This function deletes an ImportDataObjectSource
 	#' @param ImportDataObjectSourceID The ID of the ImportDataObjectSource to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10159,6 +10624,7 @@
 	#' This function creates an ImportDataObjectSource
 	#' @param fieldNames The field values to give the created ImportDataObjectSource. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10179,6 +10645,7 @@
 	#' This function modifies an ImportDataObjectSource
 	#' @param fieldNames The field values to give the modified ImportDataObjectSource. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10204,6 +10671,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10230,6 +10698,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportResultRowDetail. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportResultRowDetail.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportResultRowDetail') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10252,6 +10721,7 @@
 	#' This function deletes an ImportResultRowDetail
 	#' @param ImportResultRowDetailID The ID of the ImportResultRowDetail to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10268,6 +10738,7 @@
 	#' This function creates an ImportResultRowDetail
 	#' @param fieldNames The field values to give the created ImportResultRowDetail. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10288,6 +10759,7 @@
 	#' This function modifies an ImportResultRowDetail
 	#' @param fieldNames The field values to give the modified ImportResultRowDetail. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10313,6 +10785,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10339,6 +10812,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UserImportApproval. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UserImportApproval.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UserImportApproval') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10361,6 +10835,7 @@
 	#' This function deletes an UserImportApproval
 	#' @param UserImportApprovalID The ID of the UserImportApproval to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10377,6 +10852,7 @@
 	#' This function creates an UserImportApproval
 	#' @param fieldNames The field values to give the created UserImportApproval. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10397,6 +10873,7 @@
 	#' This function modifies an UserImportApproval
 	#' @param fieldNames The field values to give the modified UserImportApproval. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10422,6 +10899,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10448,6 +10926,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempImportPreviewResultRow. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempImportPreviewResultRow.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempImportPreviewResultRow') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10470,6 +10949,7 @@
 	#' This function deletes a TempImportPreviewResultRow
 	#' @param TempImportPreviewResultRowID The ID of the TempImportPreviewResultRow to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10486,6 +10966,7 @@
 	#' This function creates a TempImportPreviewResultRow
 	#' @param fieldNames The field values to give the created TempImportPreviewResultRow. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10506,6 +10987,7 @@
 	#' This function modifies a TempImportPreviewResultRow
 	#' @param fieldNames The field values to give the modified TempImportPreviewResultRow. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10531,6 +11013,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10557,6 +11040,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempFailedTileYearUpdate. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempFailedTileYearUpdate.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempFailedTileYearUpdate') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10579,6 +11063,7 @@
 	#' This function deletes a TempFailedTileYearUpdate
 	#' @param TempFailedTileYearUpdateID The ID of the TempFailedTileYearUpdate to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10595,6 +11080,7 @@
 	#' This function creates a TempFailedTileYearUpdate
 	#' @param fieldNames The field values to give the created TempFailedTileYearUpdate. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10615,6 +11101,7 @@
 	#' This function modifies a TempFailedTileYearUpdate
 	#' @param fieldNames The field values to give the modified TempFailedTileYearUpdate. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10640,6 +11127,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10666,6 +11154,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given CrossReference. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CrossReference.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CrossReference') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10688,6 +11177,7 @@
 	#' This function deletes a CrossReference
 	#' @param CrossReferenceID The ID of the CrossReference to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10704,6 +11194,7 @@
 	#' This function creates a CrossReference
 	#' @param fieldNames The field values to give the created CrossReference. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10724,6 +11215,7 @@
 	#' This function modifies a CrossReference
 	#' @param fieldNames The field values to give the modified CrossReference. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10749,6 +11241,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10775,6 +11268,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempFieldSelection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempFieldSelection.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempFieldSelection') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10797,6 +11291,7 @@
 	#' This function deletes a TempFieldSelection
 	#' @param TempFieldSelectionID The ID of the TempFieldSelection to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10813,6 +11308,7 @@
 	#' This function creates a TempFieldSelection
 	#' @param fieldNames The field values to give the created TempFieldSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10833,6 +11329,7 @@
 	#' This function modifies a TempFieldSelection
 	#' @param fieldNames The field values to give the modified TempFieldSelection. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10858,6 +11355,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10884,6 +11382,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given IndexStatisticsAlwaysUpdate. Defaults to FALSE for all return fields which, for convenience, returns all fields for the IndexStatisticsAlwaysUpdate.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('IndexStatisticsAlwaysUpdate') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10906,6 +11405,7 @@
 	#' This function deletes an IndexStatisticsAlwaysUpdate
 	#' @param IndexStatisticsAlwaysUpdateID The ID of the IndexStatisticsAlwaysUpdate to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10922,6 +11422,7 @@
 	#' This function creates an IndexStatisticsAlwaysUpdate
 	#' @param fieldNames The field values to give the created IndexStatisticsAlwaysUpdate. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10942,6 +11443,7 @@
 	#' This function modifies an IndexStatisticsAlwaysUpdate
 	#' @param fieldNames The field values to give the modified IndexStatisticsAlwaysUpdate. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -10967,6 +11469,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -10993,6 +11496,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempUploadImportLog. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempUploadImportLog.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempUploadImportLog') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11015,6 +11519,7 @@
 	#' This function deletes a TempUploadImportLog
 	#' @param TempUploadImportLogID The ID of the TempUploadImportLog to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11031,6 +11536,7 @@
 	#' This function creates a TempUploadImportLog
 	#' @param fieldNames The field values to give the created TempUploadImportLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11051,6 +11557,7 @@
 	#' This function modifies a TempUploadImportLog
 	#' @param fieldNames The field values to give the modified TempUploadImportLog. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11076,6 +11583,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11102,6 +11610,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingQuestion. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingQuestion.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingQuestion') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11124,6 +11633,7 @@
 	#' This function deletes a BenchmarkingQuestion
 	#' @param BenchmarkingQuestionID The ID of the BenchmarkingQuestion to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11140,6 +11650,7 @@
 	#' This function creates a BenchmarkingQuestion
 	#' @param fieldNames The field values to give the created BenchmarkingQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11160,6 +11671,7 @@
 	#' This function modifies a BenchmarkingQuestion
 	#' @param fieldNames The field values to give the modified BenchmarkingQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11185,6 +11697,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11211,6 +11724,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingQuestionAnswer. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingQuestionAnswer.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingQuestionAnswer') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11233,6 +11747,7 @@
 	#' This function deletes a BenchmarkingQuestionAnswer
 	#' @param BenchmarkingQuestionAnswerID The ID of the BenchmarkingQuestionAnswer to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11249,6 +11764,7 @@
 	#' This function creates a BenchmarkingQuestionAnswer
 	#' @param fieldNames The field values to give the created BenchmarkingQuestionAnswer. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11269,6 +11785,7 @@
 	#' This function modifies a BenchmarkingQuestionAnswer
 	#' @param fieldNames The field values to give the modified BenchmarkingQuestionAnswer. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11294,6 +11811,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11320,6 +11838,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingSurvey. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingSurvey.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingSurvey') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11342,6 +11861,7 @@
 	#' This function deletes a BenchmarkingSurvey
 	#' @param BenchmarkingSurveyID The ID of the BenchmarkingSurvey to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11358,6 +11878,7 @@
 	#' This function creates a BenchmarkingSurvey
 	#' @param fieldNames The field values to give the created BenchmarkingSurvey. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11378,6 +11899,7 @@
 	#' This function modifies a BenchmarkingSurvey
 	#' @param fieldNames The field values to give the modified BenchmarkingSurvey. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11403,6 +11925,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11429,6 +11952,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingSurveyDelay. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingSurveyDelay.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingSurveyDelay') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11451,6 +11975,7 @@
 	#' This function deletes a BenchmarkingSurveyDelay
 	#' @param BenchmarkingSurveyDelayID The ID of the BenchmarkingSurveyDelay to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11467,6 +11992,7 @@
 	#' This function creates a BenchmarkingSurveyDelay
 	#' @param fieldNames The field values to give the created BenchmarkingSurveyDelay. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11487,6 +12013,7 @@
 	#' This function modifies a BenchmarkingSurveyDelay
 	#' @param fieldNames The field values to give the modified BenchmarkingSurveyDelay. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11512,6 +12039,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11538,6 +12066,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingSurveyInstance. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingSurveyInstance.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingSurveyInstance') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11560,6 +12089,7 @@
 	#' This function deletes a BenchmarkingSurveyInstance
 	#' @param BenchmarkingSurveyInstanceID The ID of the BenchmarkingSurveyInstance to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11576,6 +12106,7 @@
 	#' This function creates a BenchmarkingSurveyInstance
 	#' @param fieldNames The field values to give the created BenchmarkingSurveyInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11596,6 +12127,7 @@
 	#' This function modifies a BenchmarkingSurveyInstance
 	#' @param fieldNames The field values to give the modified BenchmarkingSurveyInstance. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11621,6 +12153,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11647,6 +12180,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given BenchmarkingSurveyQuestion. Defaults to FALSE for all return fields which, for convenience, returns all fields for the BenchmarkingSurveyQuestion.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('BenchmarkingSurveyQuestion') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11669,6 +12203,7 @@
 	#' This function deletes a BenchmarkingSurveyQuestion
 	#' @param BenchmarkingSurveyQuestionID The ID of the BenchmarkingSurveyQuestion to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11685,6 +12220,7 @@
 	#' This function creates a BenchmarkingSurveyQuestion
 	#' @param fieldNames The field values to give the created BenchmarkingSurveyQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11705,6 +12241,7 @@
 	#' This function modifies a BenchmarkingSurveyQuestion
 	#' @param fieldNames The field values to give the modified BenchmarkingSurveyQuestion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11730,6 +12267,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11756,6 +12294,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ScheduledTaskParameterData. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ScheduledTaskParameterData.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ScheduledTaskParameterData') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11778,6 +12317,7 @@
 	#' This function deletes a ScheduledTaskParameterData
 	#' @param ScheduledTaskParameterDataID The ID of the ScheduledTaskParameterData to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11794,6 +12334,7 @@
 	#' This function creates a ScheduledTaskParameterData
 	#' @param fieldNames The field values to give the created ScheduledTaskParameterData. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11814,6 +12355,7 @@
 	#' This function modifies a ScheduledTaskParameterData
 	#' @param fieldNames The field values to give the modified ScheduledTaskParameterData. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11839,6 +12381,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11865,6 +12408,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given CacheInitialization. Defaults to FALSE for all return fields which, for convenience, returns all fields for the CacheInitialization.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('CacheInitialization') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11887,6 +12431,7 @@
 	#' This function deletes a CacheInitialization
 	#' @param CacheInitializationID The ID of the CacheInitialization to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11903,6 +12448,7 @@
 	#' This function creates a CacheInitialization
 	#' @param fieldNames The field values to give the created CacheInitialization. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11923,6 +12469,7 @@
 	#' This function modifies a CacheInitialization
 	#' @param fieldNames The field values to give the modified CacheInitialization. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11948,6 +12495,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -11974,6 +12522,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FileDestinationResult. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FileDestinationResult.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FileDestinationResult') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -11996,6 +12545,7 @@
 	#' This function deletes a FileDestinationResult
 	#' @param FileDestinationResultID The ID of the FileDestinationResult to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12012,6 +12562,7 @@
 	#' This function creates a FileDestinationResult
 	#' @param fieldNames The field values to give the created FileDestinationResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12032,6 +12583,7 @@
 	#' This function modifies a FileDestinationResult
 	#' @param fieldNames The field values to give the modified FileDestinationResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12057,6 +12609,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -12083,6 +12636,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given UNCPath. Defaults to FALSE for all return fields which, for convenience, returns all fields for the UNCPath.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('UNCPath') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12105,6 +12659,7 @@
 	#' This function deletes an UNCPath
 	#' @param UNCPathID The ID of the UNCPath to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12121,6 +12676,7 @@
 	#' This function creates an UNCPath
 	#' @param fieldNames The field values to give the created UNCPath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12141,6 +12697,7 @@
 	#' This function modifies an UNCPath
 	#' @param fieldNames The field values to give the modified UNCPath. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12166,6 +12723,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -12192,6 +12750,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given FileDestination. Defaults to FALSE for all return fields which, for convenience, returns all fields for the FileDestination.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('FileDestination') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12214,6 +12773,7 @@
 	#' This function deletes a FileDestination
 	#' @param FileDestinationID The ID of the FileDestination to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12230,6 +12790,7 @@
 	#' This function creates a FileDestination
 	#' @param fieldNames The field values to give the created FileDestination. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12250,6 +12811,7 @@
 	#' This function modifies a FileDestination
 	#' @param fieldNames The field values to give the modified FileDestination. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12275,6 +12837,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -12301,6 +12864,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given SystemVersion. Defaults to FALSE for all return fields which, for convenience, returns all fields for the SystemVersion.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('SystemVersion') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12323,6 +12887,7 @@
 	#' This function deletes a SystemVersion
 	#' @param SystemVersionID The ID of the SystemVersion to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12339,6 +12904,7 @@
 	#' This function creates a SystemVersion
 	#' @param fieldNames The field values to give the created SystemVersion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12359,6 +12925,7 @@
 	#' This function modifies a SystemVersion
 	#' @param fieldNames The field values to give the modified SystemVersion. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12384,6 +12951,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -12410,6 +12978,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempFileDestinationResult. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempFileDestinationResult.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempFileDestinationResult') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12432,6 +13001,7 @@
 	#' This function deletes a TempFileDestinationResult
 	#' @param TempFileDestinationResultID The ID of the TempFileDestinationResult to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12448,6 +13018,7 @@
 	#' This function creates a TempFileDestinationResult
 	#' @param fieldNames The field values to give the created TempFileDestinationResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys
@@ -12468,6 +13039,7 @@
 	#' This function modifies a TempFileDestinationResult
 	#' @param fieldNames The field values to give the modified TempFileDestinationResult. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept SkySys

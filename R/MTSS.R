@@ -9,6 +9,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -35,6 +36,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given AreaOfConcern. Defaults to FALSE for all return fields which, for convenience, returns all fields for the AreaOfConcern.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('AreaOfConcern') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -57,6 +59,7 @@
 	#' This function deletes an AreaOfConcern
 	#' @param AreaOfConcernID The ID of the AreaOfConcern to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -73,6 +76,7 @@
 	#' This function creates an AreaOfConcern
 	#' @param fieldNames The field values to give the created AreaOfConcern. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -93,6 +97,7 @@
 	#' This function modifies an AreaOfConcern
 	#' @param fieldNames The field values to give the modified AreaOfConcern. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -118,6 +123,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -144,6 +150,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Outcome. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Outcome.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Outcome') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -166,6 +173,7 @@
 	#' This function deletes an Outcome
 	#' @param OutcomeID The ID of the Outcome to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -182,6 +190,7 @@
 	#' This function creates an Outcome
 	#' @param fieldNames The field values to give the created Outcome. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -202,6 +211,7 @@
 	#' This function modifies an Outcome
 	#' @param fieldNames The field values to give the modified Outcome. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -227,6 +237,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -253,6 +264,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Observation. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Observation.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Observation') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -275,6 +287,7 @@
 	#' This function deletes an Observation
 	#' @param ObservationID The ID of the Observation to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -291,6 +304,7 @@
 	#' This function creates an Observation
 	#' @param fieldNames The field values to give the created Observation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -311,6 +325,7 @@
 	#' This function modifies an Observation
 	#' @param fieldNames The field values to give the modified Observation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -336,6 +351,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -362,6 +378,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ObservationAction. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ObservationAction.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ObservationAction') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -384,6 +401,7 @@
 	#' This function deletes an ObservationAction
 	#' @param ObservationActionID The ID of the ObservationAction to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -400,6 +418,7 @@
 	#' This function creates an ObservationAction
 	#' @param fieldNames The field values to give the created ObservationAction. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -420,6 +439,7 @@
 	#' This function modifies an ObservationAction
 	#' @param fieldNames The field values to give the modified ObservationAction. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -445,6 +465,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -471,6 +492,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Tier. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Tier.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Tier') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -493,6 +515,7 @@
 	#' This function deletes a Tier
 	#' @param TierID The ID of the Tier to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -509,6 +532,7 @@
 	#' This function creates a Tier
 	#' @param fieldNames The field values to give the created Tier. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -529,6 +553,7 @@
 	#' This function modifies a Tier
 	#' @param fieldNames The field values to give the modified Tier. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -554,6 +579,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -580,6 +606,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StudentInterventionReferral. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StudentInterventionReferral.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StudentInterventionReferral') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -602,6 +629,7 @@
 	#' This function deletes a StudentInterventionReferral
 	#' @param StudentInterventionReferralID The ID of the StudentInterventionReferral to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -618,6 +646,7 @@
 	#' This function creates a StudentInterventionReferral
 	#' @param fieldNames The field values to give the created StudentInterventionReferral. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -638,6 +667,7 @@
 	#' This function modifies a StudentInterventionReferral
 	#' @param fieldNames The field values to give the modified StudentInterventionReferral. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -663,6 +693,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -689,6 +720,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StudentInterventionReferralObservation. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StudentInterventionReferralObservation.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StudentInterventionReferralObservation') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -711,6 +743,7 @@
 	#' This function deletes a StudentInterventionReferralObservation
 	#' @param StudentInterventionReferralObservationID The ID of the StudentInterventionReferralObservation to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -727,6 +760,7 @@
 	#' This function creates a StudentInterventionReferralObservation
 	#' @param fieldNames The field values to give the created StudentInterventionReferralObservation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -747,6 +781,7 @@
 	#' This function modifies a StudentInterventionReferralObservation
 	#' @param fieldNames The field values to give the modified StudentInterventionReferralObservation. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -772,6 +807,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -798,6 +834,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StudentInterventionReferralStatus. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StudentInterventionReferralStatus.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StudentInterventionReferralStatus') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -820,6 +857,7 @@
 	#' This function deletes a StudentInterventionReferralStatus
 	#' @param StudentInterventionReferralStatusID The ID of the StudentInterventionReferralStatus to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -836,6 +874,7 @@
 	#' This function creates a StudentInterventionReferralStatus
 	#' @param fieldNames The field values to give the created StudentInterventionReferralStatus. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -856,6 +895,7 @@
 	#' This function modifies a StudentInterventionReferralStatus
 	#' @param fieldNames The field values to give the modified StudentInterventionReferralStatus. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -881,6 +921,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -907,6 +948,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionTeam. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionTeam.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionTeam') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -929,6 +971,7 @@
 	#' This function deletes an InterventionTeam
 	#' @param InterventionTeamID The ID of the InterventionTeam to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -945,6 +988,7 @@
 	#' This function creates an InterventionTeam
 	#' @param fieldNames The field values to give the created InterventionTeam. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -965,6 +1009,7 @@
 	#' This function modifies an InterventionTeam
 	#' @param fieldNames The field values to give the modified InterventionTeam. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -990,6 +1035,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1016,6 +1062,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionTeamStaff. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionTeamStaff.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionTeamStaff') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1038,6 +1085,7 @@
 	#' This function deletes an InterventionTeamStaff
 	#' @param InterventionTeamStaffID The ID of the InterventionTeamStaff to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1054,6 +1102,7 @@
 	#' This function creates an InterventionTeamStaff
 	#' @param fieldNames The field values to give the created InterventionTeamStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1074,6 +1123,7 @@
 	#' This function modifies an InterventionTeamStaff
 	#' @param fieldNames The field values to give the modified InterventionTeamStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1099,6 +1149,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1125,6 +1176,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlan. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlan.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlan') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1147,6 +1199,7 @@
 	#' This function deletes an InterventionPlan
 	#' @param InterventionPlanID The ID of the InterventionPlan to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1163,6 +1216,7 @@
 	#' This function creates an InterventionPlan
 	#' @param fieldNames The field values to give the created InterventionPlan. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1183,6 +1237,7 @@
 	#' This function modifies an InterventionPlan
 	#' @param fieldNames The field values to give the modified InterventionPlan. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1208,6 +1263,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1234,6 +1290,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlanStaff. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlanStaff.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlanStaff') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1256,6 +1313,7 @@
 	#' This function deletes an InterventionPlanStaff
 	#' @param InterventionPlanStaffID The ID of the InterventionPlanStaff to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1272,6 +1330,7 @@
 	#' This function creates an InterventionPlanStaff
 	#' @param fieldNames The field values to give the created InterventionPlanStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1292,6 +1351,7 @@
 	#' This function modifies an InterventionPlanStaff
 	#' @param fieldNames The field values to give the modified InterventionPlanStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1317,6 +1377,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1343,6 +1404,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlanStrategy. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlanStrategy.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlanStrategy') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1365,6 +1427,7 @@
 	#' This function deletes an InterventionPlanStrategy
 	#' @param InterventionPlanStrategyID The ID of the InterventionPlanStrategy to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1381,6 +1444,7 @@
 	#' This function creates an InterventionPlanStrategy
 	#' @param fieldNames The field values to give the created InterventionPlanStrategy. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1401,6 +1465,7 @@
 	#' This function modifies an InterventionPlanStrategy
 	#' @param fieldNames The field values to give the modified InterventionPlanStrategy. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1426,6 +1491,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1452,6 +1518,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StrategyTier. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StrategyTier.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StrategyTier') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1474,6 +1541,7 @@
 	#' This function deletes a StrategyTier
 	#' @param StrategyTierID The ID of the StrategyTier to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1490,6 +1558,7 @@
 	#' This function creates a StrategyTier
 	#' @param fieldNames The field values to give the created StrategyTier. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1510,6 +1579,7 @@
 	#' This function modifies a StrategyTier
 	#' @param fieldNames The field values to give the modified StrategyTier. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1535,6 +1605,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1561,6 +1632,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Strategy. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Strategy.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Strategy') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1583,6 +1655,7 @@
 	#' This function deletes a Strategy
 	#' @param StrategyID The ID of the Strategy to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1599,6 +1672,7 @@
 	#' This function creates a Strategy
 	#' @param fieldNames The field values to give the created Strategy. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1619,6 +1693,7 @@
 	#' This function modifies a Strategy
 	#' @param fieldNames The field values to give the modified Strategy. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1644,6 +1719,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1670,6 +1746,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ObjectiveMeasurement. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ObjectiveMeasurement.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ObjectiveMeasurement') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1692,6 +1769,7 @@
 	#' This function deletes an ObjectiveMeasurement
 	#' @param ObjectiveMeasurementID The ID of the ObjectiveMeasurement to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1708,6 +1786,7 @@
 	#' This function creates an ObjectiveMeasurement
 	#' @param fieldNames The field values to give the created ObjectiveMeasurement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1728,6 +1807,7 @@
 	#' This function modifies an ObjectiveMeasurement
 	#' @param fieldNames The field values to give the modified ObjectiveMeasurement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1753,6 +1833,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1779,6 +1860,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Measurement. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Measurement.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Measurement') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1801,6 +1883,7 @@
 	#' This function deletes a Measurement
 	#' @param MeasurementID The ID of the Measurement to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1817,6 +1900,7 @@
 	#' This function creates a Measurement
 	#' @param fieldNames The field values to give the created Measurement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1837,6 +1921,7 @@
 	#' This function modifies a Measurement
 	#' @param fieldNames The field values to give the modified Measurement. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1862,6 +1947,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1888,6 +1974,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Objective. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Objective.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Objective') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1910,6 +1997,7 @@
 	#' This function deletes an Objective
 	#' @param ObjectiveID The ID of the Objective to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1926,6 +2014,7 @@
 	#' This function creates an Objective
 	#' @param fieldNames The field values to give the created Objective. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1946,6 +2035,7 @@
 	#' This function modifies an Objective
 	#' @param fieldNames The field values to give the modified Objective. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -1971,6 +2061,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -1997,6 +2088,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlanMeeting. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlanMeeting.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlanMeeting') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2019,6 +2111,7 @@
 	#' This function deletes an InterventionPlanMeeting
 	#' @param InterventionPlanMeetingID The ID of the InterventionPlanMeeting to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2035,6 +2128,7 @@
 	#' This function creates an InterventionPlanMeeting
 	#' @param fieldNames The field values to give the created InterventionPlanMeeting. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2055,6 +2149,7 @@
 	#' This function modifies an InterventionPlanMeeting
 	#' @param fieldNames The field values to give the modified InterventionPlanMeeting. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2080,6 +2175,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2106,6 +2202,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlanNote. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlanNote.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlanNote') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2128,6 +2225,7 @@
 	#' This function deletes an InterventionPlanNote
 	#' @param InterventionPlanNoteID The ID of the InterventionPlanNote to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2144,6 +2242,7 @@
 	#' This function creates an InterventionPlanNote
 	#' @param fieldNames The field values to give the created InterventionPlanNote. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2164,6 +2263,7 @@
 	#' This function modifies an InterventionPlanNote
 	#' @param fieldNames The field values to give the modified InterventionPlanNote. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2189,6 +2289,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2215,6 +2316,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given QualitativeScale. Defaults to FALSE for all return fields which, for convenience, returns all fields for the QualitativeScale.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('QualitativeScale') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2237,6 +2339,7 @@
 	#' This function deletes a QualitativeScale
 	#' @param QualitativeScaleID The ID of the QualitativeScale to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2253,6 +2356,7 @@
 	#' This function creates a QualitativeScale
 	#' @param fieldNames The field values to give the created QualitativeScale. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2273,6 +2377,7 @@
 	#' This function modifies a QualitativeScale
 	#' @param fieldNames The field values to give the modified QualitativeScale. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2298,6 +2403,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2324,6 +2430,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given QualitativeScaleMapping. Defaults to FALSE for all return fields which, for convenience, returns all fields for the QualitativeScaleMapping.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('QualitativeScaleMapping') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2346,6 +2453,7 @@
 	#' This function deletes a QualitativeScaleMapping
 	#' @param QualitativeScaleMappingID The ID of the QualitativeScaleMapping to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2362,6 +2470,7 @@
 	#' This function creates a QualitativeScaleMapping
 	#' @param fieldNames The field values to give the created QualitativeScaleMapping. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2382,6 +2491,7 @@
 	#' This function modifies a QualitativeScaleMapping
 	#' @param fieldNames The field values to give the modified QualitativeScaleMapping. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2407,6 +2517,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2433,6 +2544,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given WatchlistCondition. Defaults to FALSE for all return fields which, for convenience, returns all fields for the WatchlistCondition.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('WatchlistCondition') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2455,6 +2567,7 @@
 	#' This function deletes a WatchlistCondition
 	#' @param WatchlistConditionID The ID of the WatchlistCondition to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2471,6 +2584,7 @@
 	#' This function creates a WatchlistCondition
 	#' @param fieldNames The field values to give the created WatchlistCondition. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2491,6 +2605,7 @@
 	#' This function modifies a WatchlistCondition
 	#' @param fieldNames The field values to give the modified WatchlistCondition. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2516,6 +2631,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2542,6 +2658,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given WatchlistThreshold. Defaults to FALSE for all return fields which, for convenience, returns all fields for the WatchlistThreshold.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('WatchlistThreshold') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2564,6 +2681,7 @@
 	#' This function deletes a WatchlistThreshold
 	#' @param WatchlistThresholdID The ID of the WatchlistThreshold to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2580,6 +2698,7 @@
 	#' This function creates a WatchlistThreshold
 	#' @param fieldNames The field values to give the created WatchlistThreshold. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2600,6 +2719,7 @@
 	#' This function modifies a WatchlistThreshold
 	#' @param fieldNames The field values to give the modified WatchlistThreshold. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2625,6 +2745,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2651,6 +2772,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ThresholdRule. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ThresholdRule.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ThresholdRule') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2673,6 +2795,7 @@
 	#' This function deletes a ThresholdRule
 	#' @param ThresholdRuleID The ID of the ThresholdRule to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2689,6 +2812,7 @@
 	#' This function creates a ThresholdRule
 	#' @param fieldNames The field values to give the created ThresholdRule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2709,6 +2833,7 @@
 	#' This function modifies a ThresholdRule
 	#' @param fieldNames The field values to give the modified ThresholdRule. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2734,6 +2859,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2760,6 +2886,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given RuleCondition. Defaults to FALSE for all return fields which, for convenience, returns all fields for the RuleCondition.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('RuleCondition') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2782,6 +2909,7 @@
 	#' This function deletes a RuleCondition
 	#' @param RuleConditionID The ID of the RuleCondition to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2798,6 +2926,7 @@
 	#' This function creates a RuleCondition
 	#' @param fieldNames The field values to give the created RuleCondition. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2818,6 +2947,7 @@
 	#' This function modifies a RuleCondition
 	#' @param fieldNames The field values to give the modified RuleCondition. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2843,6 +2973,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2869,6 +3000,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ThresholdRuleGroup. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ThresholdRuleGroup.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ThresholdRuleGroup') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2891,6 +3023,7 @@
 	#' This function deletes a ThresholdRuleGroup
 	#' @param ThresholdRuleGroupID The ID of the ThresholdRuleGroup to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2907,6 +3040,7 @@
 	#' This function creates a ThresholdRuleGroup
 	#' @param fieldNames The field values to give the created ThresholdRuleGroup. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2927,6 +3061,7 @@
 	#' This function modifies a ThresholdRuleGroup
 	#' @param fieldNames The field values to give the modified ThresholdRuleGroup. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -2952,6 +3087,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -2978,6 +3114,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Threshold. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Threshold.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Threshold') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3000,6 +3137,7 @@
 	#' This function deletes a Threshold
 	#' @param ThresholdID The ID of the Threshold to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3016,6 +3154,7 @@
 	#' This function creates a Threshold
 	#' @param fieldNames The field values to give the created Threshold. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3036,6 +3175,7 @@
 	#' This function modifies a Threshold
 	#' @param fieldNames The field values to give the modified Threshold. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3061,6 +3201,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3087,6 +3228,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Watchlist. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Watchlist.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Watchlist') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3109,6 +3251,7 @@
 	#' This function deletes a Watchlist
 	#' @param WatchlistID The ID of the Watchlist to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3125,6 +3268,7 @@
 	#' This function creates a Watchlist
 	#' @param fieldNames The field values to give the created Watchlist. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3145,6 +3289,7 @@
 	#' This function modifies a Watchlist
 	#' @param fieldNames The field values to give the modified Watchlist. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3170,6 +3315,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3196,6 +3342,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempInterventionPlan. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempInterventionPlan.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempInterventionPlan') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3218,6 +3365,7 @@
 	#' This function deletes a TempInterventionPlan
 	#' @param TempInterventionPlanID The ID of the TempInterventionPlan to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3234,6 +3382,7 @@
 	#' This function creates a TempInterventionPlan
 	#' @param fieldNames The field values to give the created TempInterventionPlan. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3254,6 +3403,7 @@
 	#' This function modifies a TempInterventionPlan
 	#' @param fieldNames The field values to give the modified TempInterventionPlan. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3279,6 +3429,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3305,6 +3456,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempInterventionTeamStaffError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempInterventionTeamStaffError.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempInterventionTeamStaffError') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3327,6 +3479,7 @@
 	#' This function deletes a TempInterventionTeamStaffError
 	#' @param TempInterventionTeamStaffErrorID The ID of the TempInterventionTeamStaffError to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3343,6 +3496,7 @@
 	#' This function creates a TempInterventionTeamStaffError
 	#' @param fieldNames The field values to give the created TempInterventionTeamStaffError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3363,6 +3517,7 @@
 	#' This function modifies a TempInterventionTeamStaffError
 	#' @param fieldNames The field values to give the modified TempInterventionTeamStaffError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3388,6 +3543,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3414,6 +3570,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempInterventionPlanStaff. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempInterventionPlanStaff.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempInterventionPlanStaff') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3436,6 +3593,7 @@
 	#' This function deletes a TempInterventionPlanStaff
 	#' @param TempInterventionPlanStaffID The ID of the TempInterventionPlanStaff to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3452,6 +3610,7 @@
 	#' This function creates a TempInterventionPlanStaff
 	#' @param fieldNames The field values to give the created TempInterventionPlanStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3472,6 +3631,7 @@
 	#' This function modifies a TempInterventionPlanStaff
 	#' @param fieldNames The field values to give the modified TempInterventionPlanStaff. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3497,6 +3657,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3523,6 +3684,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StrategyEntity. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StrategyEntity.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StrategyEntity') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3545,6 +3707,7 @@
 	#' This function deletes a StrategyEntity
 	#' @param StrategyEntityID The ID of the StrategyEntity to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3561,6 +3724,7 @@
 	#' This function creates a StrategyEntity
 	#' @param fieldNames The field values to give the created StrategyEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3581,6 +3745,7 @@
 	#' This function modifies a StrategyEntity
 	#' @param fieldNames The field values to give the modified StrategyEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3606,6 +3771,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3632,6 +3798,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given MTSSConfigEntity. Defaults to FALSE for all return fields which, for convenience, returns all fields for the MTSSConfigEntity.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('MTSSConfigEntity') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3654,6 +3821,7 @@
 	#' This function deletes a MTSSConfigEntity
 	#' @param MTSSConfigEntityID The ID of the MTSSConfigEntity to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3670,6 +3838,7 @@
 	#' This function creates a MTSSConfigEntity
 	#' @param fieldNames The field values to give the created MTSSConfigEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3690,6 +3859,7 @@
 	#' This function modifies a MTSSConfigEntity
 	#' @param fieldNames The field values to give the modified MTSSConfigEntity. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3715,6 +3885,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3741,6 +3912,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempStudentInterventionReferralError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempStudentInterventionReferralError.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempStudentInterventionReferralError') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3763,6 +3935,7 @@
 	#' This function deletes a TempStudentInterventionReferralError
 	#' @param TempStudentInterventionReferralErrorID The ID of the TempStudentInterventionReferralError to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3779,6 +3952,7 @@
 	#' This function creates a TempStudentInterventionReferralError
 	#' @param fieldNames The field values to give the created TempStudentInterventionReferralError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3799,6 +3973,7 @@
 	#' This function modifies a TempStudentInterventionReferralError
 	#' @param fieldNames The field values to give the modified TempStudentInterventionReferralError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3824,6 +3999,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3850,6 +4026,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempStudentInterventionReferral. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempStudentInterventionReferral.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempStudentInterventionReferral') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3872,6 +4049,7 @@
 	#' This function deletes a TempStudentInterventionReferral
 	#' @param TempStudentInterventionReferralID The ID of the TempStudentInterventionReferral to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3888,6 +4066,7 @@
 	#' This function creates a TempStudentInterventionReferral
 	#' @param fieldNames The field values to give the created TempStudentInterventionReferral. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3908,6 +4087,7 @@
 	#' This function modifies a TempStudentInterventionReferral
 	#' @param fieldNames The field values to give the modified TempStudentInterventionReferral. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3933,6 +4113,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -3959,6 +4140,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given WatchlistThresholdGradeLevel. Defaults to FALSE for all return fields which, for convenience, returns all fields for the WatchlistThresholdGradeLevel.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('WatchlistThresholdGradeLevel') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3981,6 +4163,7 @@
 	#' This function deletes a WatchlistThresholdGradeLevel
 	#' @param WatchlistThresholdGradeLevelID The ID of the WatchlistThresholdGradeLevel to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -3997,6 +4180,7 @@
 	#' This function creates a WatchlistThresholdGradeLevel
 	#' @param fieldNames The field values to give the created WatchlistThresholdGradeLevel. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4017,6 +4201,7 @@
 	#' This function modifies a WatchlistThresholdGradeLevel
 	#' @param fieldNames The field values to give the modified WatchlistThresholdGradeLevel. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4042,6 +4227,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4068,6 +4254,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempMTSSYearEndTypeSummary. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempMTSSYearEndTypeSummary.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempMTSSYearEndTypeSummary') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4090,6 +4277,7 @@
 	#' This function deletes a TempMTSSYearEndTypeSummary
 	#' @param TempMTSSYearEndTypeSummaryID The ID of the TempMTSSYearEndTypeSummary to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4106,6 +4294,7 @@
 	#' This function creates a TempMTSSYearEndTypeSummary
 	#' @param fieldNames The field values to give the created TempMTSSYearEndTypeSummary. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4126,6 +4315,7 @@
 	#' This function modifies a TempMTSSYearEndTypeSummary
 	#' @param fieldNames The field values to give the modified TempMTSSYearEndTypeSummary. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4151,6 +4341,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4177,6 +4368,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given InterventionPlanMeetingAttendee. Defaults to FALSE for all return fields which, for convenience, returns all fields for the InterventionPlanMeetingAttendee.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('InterventionPlanMeetingAttendee') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4199,6 +4391,7 @@
 	#' This function deletes an InterventionPlanMeetingAttendee
 	#' @param InterventionPlanMeetingAttendeeID The ID of the InterventionPlanMeetingAttendee to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4215,6 +4408,7 @@
 	#' This function creates an InterventionPlanMeetingAttendee
 	#' @param fieldNames The field values to give the created InterventionPlanMeetingAttendee. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4235,6 +4429,7 @@
 	#' This function modifies an InterventionPlanMeetingAttendee
 	#' @param fieldNames The field values to give the modified InterventionPlanMeetingAttendee. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4260,6 +4455,7 @@
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
 	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param page Results are paginated. The page of results to return. Default is 1.
 	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
@@ -4286,6 +4482,7 @@
 	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempInterventionPlanError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempInterventionPlanError.
 	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempInterventionPlanError') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4308,6 +4505,7 @@
 	#' This function deletes a TempInterventionPlanError
 	#' @param TempInterventionPlanErrorID The ID of the TempInterventionPlanError to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4324,6 +4522,7 @@
 	#' This function creates a TempInterventionPlanError
 	#' @param fieldNames The field values to give the created TempInterventionPlanError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS
@@ -4344,6 +4543,7 @@
 	#' This function modifies a TempInterventionPlanError
 	#' @param fieldNames The field values to give the modified TempInterventionPlanError. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept MTSS

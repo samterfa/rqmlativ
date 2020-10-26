@@ -360,7 +360,6 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
     for(i in 1:nrow(objTreeObjects)){
       
       objTree <- objTreeObjects %>% dplyr::slice(i)
-      
       objName <- objTree %>% purrr::pluck('Name') %>% pluckLastName()
       
       if(objName %in% allObjectsList){
@@ -384,8 +383,9 @@ generateObjectTree <- function(objTrees, allObjectsList, maxDepth){
       
       # Add Objects
       rels <- skyRelationships %>% dplyr::filter(ObjectIDPrimary == objID, RelationshipType %in% c('ManyToOne', 'OneToOne'))
-      rels <- rels %>% dplyr::select(ObjectIDForeignCurrent) %>% dplyr::distinct() %>% dplyr::left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% dplyr::filter(!stringr::str_detect(objTree$Name, glue::glue('{ObjectName}.')), ObjectName != objName)
-      
+  ###    rels <- rels %>% dplyr::select(ObjectIDForeignCurrent) %>% dplyr::distinct() %>% dplyr::left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID'))# %>% dplyr::filter(!stringr::str_detect(objTree$Name, glue::glue(stringr::fixed('{ObjectName}.'))))#, ObjectName != objName)
+      rels <- rels %>% dplyr::select(ObjectIDForeignCurrent) %>% dplyr::distinct() %>% dplyr::left_join(skyObjects, by = c('ObjectIDForeignCurrent' = 'ObjectID')) %>% dplyr::filter(!stringr::str_detect(objTree$Name, stringr::fixed(paste0(glue::glue('{ObjectName}.')))), ObjectName != objName)
+     
       if(nrow(rels) > 0){
         
         objectsToAdd <- apply(rels, 1, function(rel){
@@ -427,7 +427,6 @@ getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
   allObjectsList <- ifelse(length(allObjectsList) > 1, allObjectsList[1:(length(allObjectsList) - 1)], list())
  
   while((nrow(objTrees %>% dplyr::filter(Type == 'object')) > 0) & depth <= maxDepth){
-    
     objTrees <- generateObjectTree(objTrees, allObjectsList)
     depth <- depth + 1
   }

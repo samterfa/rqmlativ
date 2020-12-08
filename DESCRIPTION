@@ -19,8 +19,7 @@ Imports:
     dplyr,
     glue,
     stringr,
-    readr,
-    pluralize
+    readr
 RoxygenNote: 7.0.2
 Depends: 
     R (>= 2.10)

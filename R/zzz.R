@@ -2,6 +2,11 @@ tokenDir <- ".tokenCache"
 tokenFile <- glue::glue("rqmlativToken")
 tokenCacheFile <- glue::glue("{tokenDir}/{tokenFile}")
 
+if(!exists('skyModules')) data('skyModules')
+if(!exists('skyObjects')) data('skyObjects')
+if(!exists('skyFields')) data('skyFields')
+if(!exists('skyRelationships')) data('skyRelationships')
+
 ### This function checks obtains a oauth 2.0 token for making Skyward requests. GET(url = requestUrl, config = config(token = checkSkywardAuthentication()))
 getSkywardToken <- function(){
   
@@ -171,7 +176,7 @@ loadSkyModules <- function(){
   modules %>% dplyr::filter(CurrentName %in% productsOwned) %>% dplyr::rename(ModuleShortName = CurrentName) %>% dplyr::arrange(ModuleShortName)
 }
 
-skyModules <- loadSkyModules()
+###skyModules <- loadSkyModules()
 
 loadSkyObjects <- function(){
   
@@ -216,7 +221,7 @@ loadSkyObjects <- function(){
   objects %>% dplyr::mutate(ObjectName = ifelse(ObjectName %in% nonUniqueObjectNames, stringr::str_replace_all(FormattedObjectPath, stringr::fixed('/'), ''), ObjectName))
 }
 
-skyObjects <- loadSkyObjects()
+### skyObjects <- loadSkyObjects()
 
 getSkyObject <- function(module, objectName, objectId, searchFields = 'all', entityId = 1, api = 'Generic', query = NULL, flatten = T, returnResponse = F){
   
@@ -396,7 +401,7 @@ loadSkyFields <- function(){
   fields %>% dplyr::mutate(FieldName = CurrentName)
 }
 
-skyFields <- loadSkyFields()
+### skyFields <- loadSkyFields()
 
 loadSkyRelationships <- function(){
   
@@ -424,7 +429,7 @@ loadSkyRelationships <- function(){
   relationships %>% dplyr::mutate(FieldIDForeignKeyCurrent = unlist(FieldIDForeignKeyCurrent))
 }
 
-skyRelationships <- loadSkyRelationships()
+### skyRelationships <- loadSkyRelationships()
 
 
 # Function to get last object name in string with object paths separated by .

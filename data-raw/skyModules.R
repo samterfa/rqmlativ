@@ -1,5 +1,7 @@
 
 source('R/zzz.R')
+
 skyModules <- loadSkyModules()
 
-usethis::use_data(skyModules, overwrite = TRUE)
+# Loading in code instead
+### usethis::use_data(skyModules, overwrite = TRUE, internal = T)

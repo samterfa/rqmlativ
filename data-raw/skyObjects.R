@@ -1,5 +1,7 @@
 
 source('R/zzz.R')
+
 skyObjects <- loadSkyObjects()
 
-usethis::use_data(skyObjects, overwrite = TRUE)
+# Loading in code instead
+### usethis::use_data(skyObjects, overwrite = TRUE, internal = T)

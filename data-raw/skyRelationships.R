@@ -1,5 +1,7 @@
 
 source('R/zzz.R')
+
 skyRelationships <- loadSkyRelationships()
 
-usethis::use_data(skyRelationships, overwrite = TRUE)
+# Loading in code instead
+### usethis::use_data(skyRelationships, overwrite = TRUE, internal = T)

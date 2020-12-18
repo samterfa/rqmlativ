@@ -2,10 +2,9 @@ tokenDir <- ".tokenCache"
 tokenFile <- glue::glue("rqmlativToken")
 tokenCacheFile <- glue::glue("{tokenDir}/{tokenFile}")
 
-if(!exists('skyModules')) data('skyModules')
-if(!exists('skyObjects')) data('skyObjects')
-if(!exists('skyFields')) data('skyFields')
-if(!exists('skyRelationships')) data('skyRelationships')
+if(!require('rqmlativ')){
+  load('R/sysdata.rda')
+}
 
 ### This function checks obtains a oauth 2.0 token for making Skyward requests. GET(url = requestUrl, config = config(token = checkSkywardAuthentication()))
 getSkywardToken <- function(){

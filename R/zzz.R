@@ -2,10 +2,9 @@ tokenDir <- ".tokenCache"
 tokenFile <- glue::glue("rqmlativToken")
 tokenCacheFile <- glue::glue("{tokenDir}/{tokenFile}")
 
-#if(!'rqmlativ' %in% names(installed.packages()[,1])){
-#if(!require('rqmlativ')){
+# Load necessary variables during installation.
 try({  
-load('R/sysdata.rda')
+  load('R/sysdata.rda')
 }, silent = T)
 
 ### This function checks obtains a oauth 2.0 token for making Skyward requests. GET(url = requestUrl, config = config(token = checkSkywardAuthentication()))

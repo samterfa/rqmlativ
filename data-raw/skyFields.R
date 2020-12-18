@@ -3,5 +3,4 @@ source('R/zzz.R')
 
 skyFields <- loadSkyFields()
 
-# Loading in code instead
-usethis::use_data(skyFields, overwrite = T, internal = F)
+# Then run usethis::use_data(skyModules, skyObjects, skyFields, skyRelationships, overwrite = T, internal = T)

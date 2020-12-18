@@ -1,3 +1,7 @@
+tokenDir <- ".tokenCache"
+tokenFile <- glue::glue("rqmlativToken")
+tokenCacheFile <- glue::glue("{tokenDir}/{tokenFile}")
+
 ### This function checks obtains a oauth 2.0 token for making Skyward requests. GET(url = requestUrl, config = config(token = checkSkywardAuthentication()))
 getSkywardToken <- function(){
   
@@ -7,7 +11,10 @@ getSkywardToken <- function(){
   
   app <- httr::oauth_app(appname = 'Nightly Scripts', key = Sys.getenv('SkywardConsumerKey'), secret = Sys.getenv('SkywardConsumerSecret'))
   
-  httr::oauth2.0_token(endpoint = httr::oauth_endpoint(authorize = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/authorize"), refresh = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/token"), access = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/token"), validate = glue::glue("{Sys.getenv('SkywardBaseUrl')}/Generic")), app = app, scope = NULL, client_credentials = T, cache = T)
+  if (!dir.exists(tokenDir)) 
+    dir.create(tokenDir)
+  
+  httr::oauth2.0_token(endpoint = httr::oauth_endpoint(authorize = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/authorize"), refresh = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/token"), access = glue::glue("{Sys.getenv('SkywardBaseUrl')}/oauth/token"), validate = glue::glue("{Sys.getenv('SkywardBaseUrl')}/Generic")), app = app, scope = NULL, client_credentials = T, use_oob = F, cache = tokenCacheFile)
 }
 
 unlistItems <- function(x){
@@ -228,7 +235,6 @@ getSkyObject <- function(module, objectName, objectId, searchFields = 'all', ent
   response <- eval(parse(text = requestText))
   
   if(response$status_code == 403){
-    print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
@@ -255,7 +261,6 @@ deleteSkyObject <- function(module, objectName, objectId, ignoreWarnings = F, en
   response <- eval(parse(text = requestText))
   
   if(response$status_code == 403){
-    print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
@@ -288,7 +293,6 @@ createSkyObject <- function(module, objectName, body, searchFields = 'all', enti
   response <- eval(parse(text = requestText))
   
   if(response$status_code == 403){
-    print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
@@ -321,7 +325,6 @@ modifySkyObject <- function(module, objectName, objectId, body, searchFields = '
   response <- eval(parse(text = requestText))
   
   if(response$status_code == 403){
-    print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }
@@ -356,7 +359,6 @@ listSkyObjects <- function(module, objectName, searchFields = 'all', page = 1, p
   response <- eval(parse(text = requestText))
   
   if(response$status_code == 403){
-    print('Refreshing auth token')
     file.remove(response$request$auth_token$cache_path)
     response <- eval(parse(text = requestText))
   }

@@ -28,25 +28,25 @@ Your base url is likely your Skyward URL but ending in API instead of STS.
 Then make a call!
 
 ```r
-umbrella::listOrganizations()
+library(rqmlativ)
+#> 
+#> Attaching package: 'rqmlativ'
+#> The following objects are masked from 'package:methods':
+#> 
+#>     getClass, getGroup
+#> The following object is masked from 'package:base':
+#> 
+#>     getElement
 
-#>[[1]]
-#>[[1]]$organizationId
-#> [1] "1234567"
-#>
-#>[[1]]$name
-#> [1] "ACME Inc."
-
-umbrella::listIdentities() %>% purrr::pluck('data') %>% purrr::map(~.x$type$type) %>% unlist() %>% table()
-
-#> ad_connector directory_computer   directory_domain    directory_group     directory_user  domain_controller 
-#>       1              1210                1                  258                1105              6 
-#>  internal_network      mobile_device            network            roaming               site 
-#>        15                  1427                    2                  72                   1 
+listEntities(Name = T)
+#> Adding .tokenCache/rqmlativToken to .gitignore
+#>                              Name
+#> 1               Minnehaha Academy
+#> 2  Minnehaha Academy Upper School
+#> 3  Minnehaha Academy Lower School
+#> 4 Minnehaha Academy Middle School
 ```
 
 ## Resources
 
-Function documentation for this package is available at https://samterfa.github.io/umbrella/reference/index.html.
-
-See [Cisco Umbrella API Documentation](https://docs.umbrella.com/umbrella-api/reference) for details on the various APIs available.
+Function documentation for this package is available at https://samterfa.github.io/rqmlativ/reference/index.html.

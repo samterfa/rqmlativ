@@ -39,6 +39,8 @@ listBenchmarkingSurveyDelays(
 
 \item{entityId}{The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).}
 
+\item{query}{Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.}
+
 \item{page}{Results are paginated. The page of results to return. Default is 1.}
 
 \item{pageSize}{Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).}

@@ -6,13 +6,13 @@
 \usage{
 getNextStudentNumber(
   NextStudentNumberID,
+  CreatedTime = F,
+  IsForStateID = F,
   MaskPrefix = F,
+  ModifiedTime = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  IsForStateID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

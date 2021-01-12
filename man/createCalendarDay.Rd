@@ -5,12 +5,12 @@
 \title{Create a CalendarDay}
 \usage{
 createCalendarDay(
+  BellScheduleID = NULL,
   CalendarID = NULL,
-  Date = NULL,
-  DayRotationID = NULL,
   Comment = NULL,
   CountAs = NULL,
-  BellScheduleID = NULL,
+  Date = NULL,
+  DayRotationID = NULL,
   DoNotSendAttendanceToEdFi = NULL,
   ShowCommentOnCalendar = NULL,
   entityId = 1,

@@ -6,12 +6,12 @@
 \usage{
 getTempItemPurchaseSummary(
   TempItemPurchaseSummaryID,
+  CreatedTime = F,
   ItemDescription = F,
+  ModifiedTime = F,
   PurchaseTotal = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

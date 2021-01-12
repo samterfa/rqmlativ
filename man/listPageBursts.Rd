@@ -6,14 +6,14 @@
 \usage{
 listPageBursts(
   searchConditionsList = NULL,
-  PageBurstID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectID = F,
   ObjectPrimaryKey = F,
+  PageBurstID = F,
   PageID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,13 +5,13 @@
 \title{Create a TempGradingPeriodGradeBucket}
 \usage{
 createTempGradingPeriodGradeBucket(
-  GradingPeriodGradeBucketID = NULL,
-  GradeBucketLabelWithDates = NULL,
-  StartDate = NULL,
   EndDate = NULL,
-  StatusDisplayWithExtensionDate = NULL,
-  SectionLengthCodeDescription = NULL,
   ErrorCount = NULL,
+  GradeBucketLabelWithDates = NULL,
+  GradingPeriodGradeBucketID = NULL,
+  SectionLengthCodeDescription = NULL,
+  StartDate = NULL,
+  StatusDisplayWithExtensionDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

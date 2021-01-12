@@ -7,10 +7,10 @@
 createHealthAttachment(
   Description = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  NameID = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
-  NameID = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

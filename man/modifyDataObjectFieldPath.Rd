@@ -6,11 +6,11 @@
 \usage{
 modifyDataObjectFieldPath(
   DataObjectFieldPathID,
-  ObjectID = NULL,
-  FieldPath = NULL,
-  RoleID = NULL,
-  GuidFieldPath = NULL,
   FieldIDSkySys = NULL,
+  FieldPath = NULL,
+  GuidFieldPath = NULL,
+  ObjectID = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

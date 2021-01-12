@@ -5,9 +5,9 @@
 \title{Create a StudentPlan}
 \usage{
 createStudentPlan(
-  StudentID = NULL,
-  PlanID = NULL,
   IsCurrent = NULL,
+  PlanID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

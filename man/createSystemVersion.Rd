@@ -5,11 +5,11 @@
 \title{Create a SystemVersion}
 \usage{
 createSystemVersion(
-  Version = NULL,
+  Build = NULL,
   Major = NULL,
   Minor = NULL,
-  Build = NULL,
   Revision = NULL,
+  Version = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

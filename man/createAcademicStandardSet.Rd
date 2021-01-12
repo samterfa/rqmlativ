@@ -5,15 +5,15 @@
 \title{Create an AcademicStandardSet}
 \usage{
 createAcademicStandardSet(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
+  AcademicStandardSetDefaultID = NULL,
   Code = NULL,
   Description = NULL,
-  IsActive = NULL,
-  StateCode = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   EnteredByDistrict = NULL,
+  IsActive = NULL,
   Key = NULL,
-  AcademicStandardSetDefaultID = NULL,
+  StateCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

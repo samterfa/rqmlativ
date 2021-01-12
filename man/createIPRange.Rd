@@ -5,9 +5,9 @@
 \title{Create an IPRange}
 \usage{
 createIPRange(
-  Low = NULL,
-  High = NULL,
   Description = NULL,
+  High = NULL,
+  Low = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

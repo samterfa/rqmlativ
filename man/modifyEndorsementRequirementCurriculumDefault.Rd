@@ -6,10 +6,10 @@
 \usage{
 modifyEndorsementRequirementCurriculumDefault(
   EndorsementRequirementCurriculumDefaultID,
-  EndorsementRequirementDefaultID = NULL,
-  CurriculumClusterDefaultID = NULL,
-  CreditsRequired = NULL,
   AdvancedCreditsRequired = NULL,
+  CreditsRequired = NULL,
+  CurriculumClusterDefaultID = NULL,
+  EndorsementRequirementDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

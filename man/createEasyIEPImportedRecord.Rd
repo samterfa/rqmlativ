@@ -6,12 +6,12 @@
 \usage{
 createEasyIEPImportedRecord(
   EasyIEPRunHistoryID = NULL,
-  StudentID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
-  RecordType = NULL,
-  UpdateType = NULL,
   Message = NULL,
+  RecordType = NULL,
+  StartDate = NULL,
+  StudentID = NULL,
+  UpdateType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

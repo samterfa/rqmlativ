@@ -5,11 +5,11 @@
 \title{Create a HierarchyDepth}
 \usage{
 createHierarchyDepth(
-  DistrictGroupKey = NULL,
   AcademicStandardSetID = NULL,
   Code = NULL,
-  Description = NULL,
   DepthLevel = NULL,
+  Description = NULL,
+  DistrictGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

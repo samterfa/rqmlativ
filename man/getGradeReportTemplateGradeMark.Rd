@@ -6,14 +6,14 @@
 \usage{
 getGradeReportTemplateGradeMark(
   GradeReportTemplateGradeMarkID,
-  GradeReportTemplateID = F,
+  CreatedTime = F,
   GradeMarkID = F,
+  GradeReportTemplateGradeMarkIDClonedFrom = F,
+  GradeReportTemplateID = F,
+  ModifiedTime = F,
   Type = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  GradeReportTemplateGradeMarkIDClonedFrom = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

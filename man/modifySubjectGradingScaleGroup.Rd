@@ -6,10 +6,10 @@
 \usage{
 modifySubjectGradingScaleGroup(
   SubjectGradingScaleGroupID,
-  GradingScaleGroupID = NULL,
   CalculationGroupID = NULL,
   Description = NULL,
   EntityGroupKey = NULL,
+  GradingScaleGroupID = NULL,
   IsDefaultGroup = NULL,
   SubjectGradingScaleGroupIDClonedFrom = NULL,
   entityId = 1,

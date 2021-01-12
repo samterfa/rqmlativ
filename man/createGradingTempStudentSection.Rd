@@ -5,10 +5,10 @@
 \title{Create a GradingTempStudentSection}
 \usage{
 createGradingTempStudentSection(
-  StudentNameLFM = NULL,
-  StudentNumber = NULL,
   Course = NULL,
   SectionCode = NULL,
+  StudentNameLFM = NULL,
+  StudentNumber = NULL,
   StudentSectionID = NULL,
   entityId = 1,
   query = NULL,

@@ -5,15 +5,15 @@
 \title{Create a Certification}
 \usage{
 createCertification(
-  CertificationTypeID = NULL,
-  InstitutionID = NULL,
-  StateID = NULL,
   CertificationNumber = NULL,
-  IssueDate = NULL,
-  ExpirationDate = NULL,
-  NameID = NULL,
   CertificationThirdPartyImportID = NULL,
+  CertificationTypeID = NULL,
   Comment = NULL,
+  ExpirationDate = NULL,
+  InstitutionID = NULL,
+  IssueDate = NULL,
+  NameID = NULL,
+  StateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

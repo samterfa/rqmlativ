@@ -6,9 +6,9 @@
 \usage{
 modifyGASBStatementOfActivityColumnIncludedAccount(
   GASBStatementOfActivityColumnIncludedAccountID,
-  GASBStatementOfActivityIncludedAccountID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBStatementOfActivityIncludedAccountID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

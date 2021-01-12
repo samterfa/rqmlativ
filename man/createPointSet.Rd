@@ -5,10 +5,10 @@
 \title{Create a PointSet}
 \usage{
 createPointSet(
+  Description = NULL,
   DistrictGroupKey = NULL,
   DistrictID = NULL,
   Name = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

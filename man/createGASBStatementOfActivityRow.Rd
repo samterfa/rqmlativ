@@ -5,15 +5,15 @@
 \title{Create a GASBStatementOfActivityRow}
 \usage{
 createGASBStatementOfActivityRow(
-  GovernmentalNetAmount = NULL,
-  ProprietaryNetAmount = NULL,
-  TotalNetAmount = NULL,
-  GASBExtractRunID = NULL,
-  RowDescription = NULL,
-  GASBStatementOfActivityReportID = NULL,
   Expenses = NULL,
+  GASBExtractRunID = NULL,
+  GASBStatementOfActivityReportID = NULL,
+  GovernmentalNetAmount = NULL,
   IsGovernmental = NULL,
   IsProprietary = NULL,
+  ProprietaryNetAmount = NULL,
+  RowDescription = NULL,
+  TotalNetAmount = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

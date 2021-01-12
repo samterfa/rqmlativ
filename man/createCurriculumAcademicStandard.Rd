@@ -5,9 +5,9 @@
 \title{Create a CurriculumAcademicStandard}
 \usage{
 createCurriculumAcademicStandard(
-  DistrictGroupKey = NULL,
   AcademicStandardID = NULL,
   CurriculumID = NULL,
+  DistrictGroupKey = NULL,
   IsGraded = NULL,
   entityId = 1,
   query = NULL,

@@ -6,12 +6,12 @@
 \usage{
 modifyForm941EmployeeV1(
   Form941EmployeeV1ID,
-  Form941ExtractRunID = NULL,
-  EmployeeID = NULL,
   AdditionalTaxableMedicareWages = NULL,
+  EmployeeID = NULL,
   FirstName = NULL,
-  LastName = NULL,
+  Form941ExtractRunID = NULL,
   IsPaidOn12th = NULL,
+  LastName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

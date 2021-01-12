@@ -6,13 +6,13 @@
 \usage{
 getStudentAutoSchedulerStudentCourseRequestSectionDetail(
   StudentAutoSchedulerStudentCourseRequestSectionDetailID,
-  StudentAutoSchedulerStudentCourseRequestSectionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SectionConflictReason = F,
   SectionConflictReasonText = F,
+  StudentAutoSchedulerStudentCourseRequestSectionID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

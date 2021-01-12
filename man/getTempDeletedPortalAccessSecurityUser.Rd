@@ -6,12 +6,12 @@
 \usage{
 getTempDeletedPortalAccessSecurityUser(
   TempDeletedPortalAccessSecurityUserID,
-  UserName = F,
-  FullNameLFM = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FullNameLFM = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserName = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

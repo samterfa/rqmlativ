@@ -6,15 +6,11 @@
 \usage{
 getPSAE(
   PSAEID,
-  StudentTestID = F,
-  ReadingScaleScore = F,
   MathScaleScore = F,
+  ReadingScaleScore = F,
   ScienceScaleScore = F,
+  StudentTestID = F,
   WritingScaleScore = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

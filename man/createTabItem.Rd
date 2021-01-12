@@ -5,10 +5,10 @@
 \title{Create a TabItem}
 \usage{
 createTabItem(
-  TabID = NULL,
-  ItemID = NULL,
   Column = NULL,
+  ItemID = NULL,
   Row = NULL,
+  TabID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

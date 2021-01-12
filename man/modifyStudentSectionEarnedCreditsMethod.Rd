@@ -6,10 +6,10 @@
 \usage{
 modifyStudentSectionEarnedCreditsMethod(
   StudentSectionEarnedCreditsMethodID,
-  StudentSectionID = NULL,
   EarnedCreditsMethodEntityID = NULL,
-  UseOverride = NULL,
   EarnedCreditsOverride = NULL,
+  StudentSectionID = NULL,
+  UseOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

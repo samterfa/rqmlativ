@@ -6,14 +6,14 @@
 \usage{
 listPluginMaps(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  MapID = F,
+  ModifiedTime = F,
+  PluginID = F,
   PluginMapID = F,
   ReportEvents = F,
-  PluginID = F,
-  MapID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

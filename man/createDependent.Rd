@@ -5,8 +5,8 @@
 \title{Create a Dependent}
 \usage{
 createDependent(
-  NameIDOwner = NULL,
   NameIDDependent = NULL,
+  NameIDOwner = NULL,
   RelationshipID = NULL,
   entityId = 1,
   query = NULL,

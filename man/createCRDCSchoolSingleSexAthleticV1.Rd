@@ -5,16 +5,16 @@
 \title{Create a CRDCSchoolSingleSexAthleticV1}
 \usage{
 createCRDCSchoolSingleSexAthleticV1(
-  HasStudents = NULL,
-  MaleOnlySportsCount = NULL,
-  FemaleOnlySportsCount = NULL,
-  MaleOnlyTeamsCount = NULL,
-  FemaleOnlyTeamsCount = NULL,
-  MaleOnlyParticipantCount = NULL,
-  FemaleOnlyParticipantCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  FemaleOnlyParticipantCount = NULL,
+  FemaleOnlySportsCount = NULL,
+  FemaleOnlyTeamsCount = NULL,
+  HasStudents = NULL,
+  MaleOnlyParticipantCount = NULL,
+  MaleOnlySportsCount = NULL,
+  MaleOnlyTeamsCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

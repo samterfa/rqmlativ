@@ -6,13 +6,13 @@
 \usage{
 getStudentLocker(
   StudentLockerID,
+  CreatedTime = F,
   IsPrimaryLocker = F,
   LockerID = F,
+  ModifiedTime = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

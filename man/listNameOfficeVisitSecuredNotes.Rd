@@ -6,13 +6,13 @@
 \usage{
 listNameOfficeVisitSecuredNotes(
   searchConditionsList = NULL,
-  NameOfficeVisitSecuredNoteID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NameOfficeVisitID = F,
+  NameOfficeVisitSecuredNoteID = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

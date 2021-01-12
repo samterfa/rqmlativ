@@ -5,8 +5,8 @@
 \title{Create a ReportError}
 \usage{
 createReportError(
-  ReportID = NULL,
   ErrorMessage = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

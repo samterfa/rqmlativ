@@ -6,11 +6,11 @@
 \usage{
 modifyCustomRequirement(
   CustomRequirementID,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
-  StudentCondition = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
+  StudentCondition = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

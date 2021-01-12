@@ -5,8 +5,8 @@
 \title{Create a StateReportingTempException}
 \usage{
 createStateReportingTempException(
-  RecordIdentifier = NULL,
   Message = NULL,
+  RecordIdentifier = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

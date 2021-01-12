@@ -6,11 +6,11 @@
 \usage{
 modifyVaccinationYearComplianceScheduleRule(
   VaccinationYearComplianceScheduleRuleID,
-  VaccinationYearComplianceScheduleID = NULL,
   ComplianceScheduleRuleID = NULL,
-  VaccinationYearComplianceScheduleRuleIDClonedFrom = NULL,
   DoseIntervalID = NULL,
   RuleType = NULL,
+  VaccinationYearComplianceScheduleID = NULL,
+  VaccinationYearComplianceScheduleRuleIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

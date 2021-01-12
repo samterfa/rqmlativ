@@ -5,14 +5,14 @@
 \title{Create a DayRotation}
 \usage{
 createDayRotation(
-  SortNumber = NULL,
   Code = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  EntityGroupKey = NULL,
   ConsecutiveTeachingHourLimit = NULL,
-  MaximumTeachingHourLimit = NULL,
   DayRotationIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  MaximumTeachingHourLimit = NULL,
+  SchoolYearID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

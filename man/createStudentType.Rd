@@ -5,10 +5,10 @@
 \title{Create a StudentType}
 \usage{
 createStudentType(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

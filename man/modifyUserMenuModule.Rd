@@ -6,9 +6,9 @@
 \usage{
 modifyUserMenuModule(
   UserMenuModuleID,
-  UserID = NULL,
-  MenuModuleID = NULL,
   DisplayOrder = NULL,
+  MenuModuleID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

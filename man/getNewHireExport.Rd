@@ -6,13 +6,13 @@
 \usage{
 getNewHireExport(
   NewHireExportID,
-  NewHireExtractRunID = F,
+  CreatedTime = F,
   MediaID = F,
+  ModifiedTime = F,
+  NewHireExtractRunID = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

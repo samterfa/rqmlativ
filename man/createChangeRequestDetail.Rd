@@ -6,14 +6,14 @@
 \usage{
 createChangeRequestDetail(
   ChangeRequestID = NULL,
-  RequestedTime = NULL,
   FieldName = NULL,
   OriginalValue = NULL,
+  RequestedTime = NULL,
   RequestedValue = NULL,
+  SourceID = NULL,
   Status = NULL,
   UserIDApprover = NULL,
   UserIDRequestedBy = NULL,
-  SourceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

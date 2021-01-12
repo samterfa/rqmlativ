@@ -6,14 +6,14 @@
 \usage{
 getPayorCustomer(
   PayorCustomerID,
-  PayorID = F,
+  CreatedTime = F,
   CustomerID = F,
   DistributionPercent = F,
   IsPrimaryPayor = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PayorID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

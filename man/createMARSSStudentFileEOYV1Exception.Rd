@@ -5,16 +5,16 @@
 \title{Create a MARSSStudentFileEOYV1Exception}
 \usage{
 createMARSSStudentFileEOYV1Exception(
-  SchoolYearID = NULL,
   EntityID = NULL,
-  StudentID = NULL,
   MARSSStudentFileEOYV1ID = NULL,
   MARSSSubmissionID = NULL,
   MARSSSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
+  SchoolYearID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

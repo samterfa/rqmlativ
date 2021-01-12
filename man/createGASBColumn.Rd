@@ -7,9 +7,9 @@
 createGASBColumn(
   Description = NULL,
   DistrictID = NULL,
-  GASBFundClassification = NULL,
   FiscalYearID = NULL,
   GASBColumnType = NULL,
+  GASBFundClassification = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

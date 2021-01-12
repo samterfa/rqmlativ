@@ -6,8 +6,8 @@
 \usage{
 modifySkylertAttendanceExportSettingScheduledTask(
   SkylertAttendanceExportSettingScheduledTaskID,
-  SkylertAttendanceExportSettingID = NULL,
   ScheduledTaskID = NULL,
+  SkylertAttendanceExportSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

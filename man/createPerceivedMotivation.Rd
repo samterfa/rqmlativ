@@ -5,11 +5,11 @@
 \title{Create a PerceivedMotivation}
 \usage{
 createPerceivedMotivation(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   PerceivedMotivationIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

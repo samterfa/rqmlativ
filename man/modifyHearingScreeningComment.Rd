@@ -6,8 +6,8 @@
 \usage{
 modifyHearingScreeningComment(
   HearingScreeningCommentID,
-  HearingScreeningID = NULL,
   HearingCommentID = NULL,
+  HearingScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

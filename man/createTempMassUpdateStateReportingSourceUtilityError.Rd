@@ -5,8 +5,8 @@
 \title{Create a TempMassUpdateStateReportingSourceUtilityError}
 \usage{
 createTempMassUpdateStateReportingSourceUtilityError(
-  RecordIdentifier = NULL,
   FailureReason = NULL,
+  RecordIdentifier = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

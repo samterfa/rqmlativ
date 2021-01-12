@@ -5,10 +5,10 @@
 \title{Create an EarnedCreditsBucketGroup}
 \usage{
 createEarnedCreditsBucketGroup(
+  EarnedCreditsBucketGroupIDClonedFrom = NULL,
   EntityGroupKey = NULL,
   GradingPeriodSetID = NULL,
   SectionLengthID = NULL,
-  EarnedCreditsBucketGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

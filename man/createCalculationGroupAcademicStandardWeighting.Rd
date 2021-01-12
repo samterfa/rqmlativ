@@ -5,12 +5,12 @@
 \title{Create a CalculationGroupAcademicStandardWeighting}
 \usage{
 createCalculationGroupAcademicStandardWeighting(
-  CalculationGroupAcademicStandardGradeBucketID = NULL,
-  CategoryIDToWeight = NULL,
-  WeightPercent = NULL,
-  EntityGroupKey = NULL,
-  CalculationGroupAcademicStandardWeightingIDClonedFrom = NULL,
   AcademicStandardIDToWeight = NULL,
+  CalculationGroupAcademicStandardGradeBucketID = NULL,
+  CalculationGroupAcademicStandardWeightingIDClonedFrom = NULL,
+  CategoryIDToWeight = NULL,
+  EntityGroupKey = NULL,
+  WeightPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

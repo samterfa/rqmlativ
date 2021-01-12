@@ -6,10 +6,10 @@
 \usage{
 modifyCourseCustomRequirement(
   CourseCustomRequirementID,
+  CourseCustomRequirementIDClonedFrom = NULL,
   CourseID = NULL,
   CustomRequirementID = NULL,
   EntityGroupKey = NULL,
-  CourseCustomRequirementIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

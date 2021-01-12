@@ -6,11 +6,11 @@
 \usage{
 modifyRoleField(
   RoleFieldID,
-  RoleID = NULL,
+  AllowRead = NULL,
+  Field = NULL,
   Module = NULL,
   Object = NULL,
-  Field = NULL,
-  AllowRead = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

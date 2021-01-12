@@ -6,9 +6,9 @@
 \usage{
 modifySortGroup(
   SortGroupID,
-  ObjectID = NULL,
   IsDefault = NULL,
   Name = NULL,
+  ObjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 getNotificationOnlineForm(
   NotificationOnlineFormID,
+  CreatedTime = F,
+  ModifiedTime = F,
   NotificationID = F,
   OnlineFormID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

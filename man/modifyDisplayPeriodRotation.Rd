@@ -6,12 +6,12 @@
 \usage{
 modifyDisplayPeriodRotation(
   DisplayPeriodRotationID,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
-  DisplayPeriodSummary = NULL,
   DisplayPeriodRotationIDClonedFrom = NULL,
+  DisplayPeriodSummary = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

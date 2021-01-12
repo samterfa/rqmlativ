@@ -6,12 +6,12 @@
 \usage{
 getMenuSecurityItem(
   MenuSecurityItemID,
+  CreatedTime = F,
   MenuScreenID = F,
+  ModifiedTime = F,
   ProfileScreenID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

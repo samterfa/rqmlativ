@@ -6,14 +6,14 @@
 \usage{
 getBenchmarkingQuestionAnswer(
   BenchmarkingQuestionAnswerID,
-  BenchmarkingSurveyInstanceID = F,
   BenchmarkingQuestionID = F,
-  NumericValue = F,
+  BenchmarkingSurveyInstanceID = F,
   Comment = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  NumericValue = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

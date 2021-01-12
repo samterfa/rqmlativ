@@ -7,10 +7,10 @@
 createStateSchoolMN(
   Code = NULL,
   Description = NULL,
-  SchoolClassificationCode = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  SchoolClassificationCode = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,11 +5,11 @@
 \title{Create a TempHonorRollMethodRange}
 \usage{
 createTempHonorRollMethodRange(
+  GPAHigh = NULL,
+  GPALow = NULL,
   HonorRollMethodRangeID = NULL,
   IsUsed = NULL,
   Name = NULL,
-  GPALow = NULL,
-  GPAHigh = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

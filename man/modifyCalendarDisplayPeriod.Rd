@@ -6,12 +6,12 @@
 \usage{
 modifyCalendarDisplayPeriod(
   CalendarDisplayPeriodID,
+  CalendarDisplayPeriodIDClonedFrom = NULL,
   CalendarID = NULL,
   DisplayPeriodID = NULL,
-  TakeAttendance = NULL,
   IncludeInClassCounts = NULL,
   IncludeInTotalCounts = NULL,
-  CalendarDisplayPeriodIDClonedFrom = NULL,
+  TakeAttendance = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

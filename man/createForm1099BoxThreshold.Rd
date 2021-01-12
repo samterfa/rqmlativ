@@ -5,9 +5,9 @@
 \title{Create a Form1099BoxThreshold}
 \usage{
 createForm1099BoxThreshold(
+  Amount = NULL,
   ConfigCalendarYearID = NULL,
   Form1099TypeID = NULL,
-  Amount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

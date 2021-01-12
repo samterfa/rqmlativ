@@ -6,9 +6,9 @@
 \usage{
 modifyObjectWorkflowTrigger(
   ObjectWorkflowTriggerID,
-  WorkflowID = NULL,
   ObjectID = NULL,
   ObjectSaveMode = NULL,
+  WorkflowID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

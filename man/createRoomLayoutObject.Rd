@@ -7,9 +7,9 @@
 createRoomLayoutObject(
   RoomLayoutID = NULL,
   RoomObjectID = NULL,
+  Rotation = NULL,
   XLocation = NULL,
   YLocation = NULL,
-  Rotation = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

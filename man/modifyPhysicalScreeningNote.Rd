@@ -6,8 +6,8 @@
 \usage{
 modifyPhysicalScreeningNote(
   PhysicalScreeningNoteID,
-  PhysicalScreeningID = NULL,
   Note = NULL,
+  PhysicalScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

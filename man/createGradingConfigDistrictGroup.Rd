@@ -5,14 +5,14 @@
 \title{Create a GradingConfigDistrictGroup}
 \usage{
 createGradingConfigDistrictGroup(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
-  GPACalculationRoundingDecimals = NULL,
-  FinalGPARoundingDecimals = NULL,
-  EarnedCreditsRoundingDecimals = NULL,
-  GPACalculationDecimalSetting = NULL,
-  FinalGPADecimalSetting = NULL,
   AllowAlternativeCreditCourses = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
+  EarnedCreditsRoundingDecimals = NULL,
+  FinalGPADecimalSetting = NULL,
+  FinalGPARoundingDecimals = NULL,
+  GPACalculationDecimalSetting = NULL,
+  GPACalculationRoundingDecimals = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

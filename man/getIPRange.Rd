@@ -6,13 +6,13 @@
 \usage{
 getIPRange(
   IPRangeID,
-  Low = F,
-  High = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  High = F,
+  Low = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,14 +5,14 @@
 \title{Create a MCCCCourseOfferingCollegeCourseV1}
 \usage{
 createMCCCCourseOfferingCollegeCourseV1(
-  MCCCCourseOfferingV1ID = NULL,
-  CourseLevelMNID = NULL,
-  CollegeCourseCode = NULL,
-  StateCollegeCourseLevelMNID = NULL,
-  CollegeCourseLevel = NULL,
   CollegeCode = NULL,
+  CollegeCourseCode = NULL,
   CollegeCourseCredit = NULL,
+  CollegeCourseLevel = NULL,
+  CourseLevelMNID = NULL,
   InstitutionID = NULL,
+  MCCCCourseOfferingV1ID = NULL,
+  StateCollegeCourseLevelMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create a TempEntityForClone}
 \usage{
 createTempEntityForClone(
-  Selected = NULL,
-  EntityName = NULL,
   EntityCode = NULL,
+  EntityName = NULL,
+  Selected = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

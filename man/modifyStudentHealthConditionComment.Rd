@@ -6,8 +6,8 @@
 \usage{
 modifyStudentHealthConditionComment(
   StudentHealthConditionCommentID,
-  StudentHealthConditionID = NULL,
   HealthConditionCommentID = NULL,
+  StudentHealthConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

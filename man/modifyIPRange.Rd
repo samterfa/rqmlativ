@@ -6,9 +6,9 @@
 \usage{
 modifyIPRange(
   IPRangeID,
-  Low = NULL,
-  High = NULL,
   Description = NULL,
+  High = NULL,
+  Low = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

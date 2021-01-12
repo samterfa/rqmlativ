@@ -5,10 +5,10 @@
 \title{Create a GASBColumnDimensionFilterRange}
 \usage{
 createGASBColumnDimensionFilterRange(
+  FilterHigh = NULL,
+  FilterLow = NULL,
   GASBColumnID = NULL,
   StructureDimensionID = NULL,
-  FilterLow = NULL,
-  FilterHigh = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

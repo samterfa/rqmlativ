@@ -6,16 +6,12 @@
 \usage{
 getExplore(
   ExploreID,
-  StudentTestID = F,
+  CompositeScore = F,
   EnglishScaleScore = F,
   MathScaleScore = F,
   ReadingScaleScore = F,
   ScienceScaleScore = F,
-  CompositeScore = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  StudentTestID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

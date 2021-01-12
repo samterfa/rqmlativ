@@ -5,8 +5,8 @@
 \title{Create a RaisersEdgeObjectMA}
 \usage{
 createRaisersEdgeObjectMA(
-  RaisersEdgeID = NULL,
   NameID = NULL,
+  RaisersEdgeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

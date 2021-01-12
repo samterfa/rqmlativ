@@ -5,10 +5,10 @@
 \title{Create a GradebookConfigDistrictYear}
 \usage{
 createGradebookConfigDistrictYear(
+  ConfigDistrictYearIDClonedFrom = NULL,
   DistrictID = NULL,
   SchoolYearID = NULL,
   UseCurriculumSubjectsInGradebook = NULL,
-  ConfigDistrictYearIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

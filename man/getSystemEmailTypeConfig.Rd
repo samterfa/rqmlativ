@@ -6,13 +6,13 @@
 \usage{
 getSystemEmailTypeConfig(
   SystemEmailTypeConfigID,
-  EmailTypeID = F,
-  Rank = F,
-  EmailRecipientType = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EmailRecipientType = F,
+  EmailTypeID = F,
   ModifiedTime = F,
+  Rank = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

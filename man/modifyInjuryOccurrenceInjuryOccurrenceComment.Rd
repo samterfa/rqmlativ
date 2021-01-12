@@ -6,8 +6,8 @@
 \usage{
 modifyInjuryOccurrenceInjuryOccurrenceComment(
   InjuryOccurrenceInjuryOccurrenceCommentID,
-  InjuryOccurrenceID = NULL,
   InjuryOccurrenceCommentID = NULL,
+  InjuryOccurrenceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

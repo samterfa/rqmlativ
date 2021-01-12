@@ -6,15 +6,15 @@
 \usage{
 modifyMassAddSpecialProgramsRunHistory(
   MassAddSpecialProgramsRunHistoryID,
-  SchoolYearID = NULL,
   DistrictID = NULL,
-  StartTime = NULL,
   EndTime = NULL,
   FilterParameters = NULL,
   RunReason = NULL,
-  ValueParameters = NULL,
+  SchoolYearID = NULL,
+  StartTime = NULL,
   Status = NULL,
   UserIDCanceledBy = NULL,
+  ValueParameters = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

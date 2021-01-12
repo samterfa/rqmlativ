@@ -6,10 +6,13 @@
 \usage{
 createTempActivityRecord(
   ActivityID = NULL,
+  ActivityIDClonedFrom = NULL,
+  ActivityTypeID = NULL,
   Code = NULL,
+  CreateRecord = NULL,
   Description = NULL,
-  NewStartDate = NULL,
   NewEndDate = NULL,
+  NewStartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

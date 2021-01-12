@@ -6,10 +6,10 @@
 \usage{
 modifyStudentGuardianRestrictedAccess(
   StudentGuardianRestrictedAccessID,
-  StudentGuardianID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
   Reason = NULL,
+  StartDate = NULL,
+  StudentGuardianID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

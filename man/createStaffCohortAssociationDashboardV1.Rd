@@ -5,15 +5,15 @@
 \title{Create a StaffCohortAssociationDashboardV1}
 \usage{
 createStaffCohortAssociationDashboardV1(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  StaffID = NULL,
-  StaffUniqueID = NULL,
   BeginDate = NULL,
-  EndDate = NULL,
-  HasStudentRecordAccess = NULL,
   CohortIdentifier = NULL,
   DashboardRunHistoryID = NULL,
+  EndDate = NULL,
+  EntityID = NULL,
+  HasStudentRecordAccess = NULL,
+  SchoolYearID = NULL,
+  StaffID = NULL,
+  StaffUniqueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

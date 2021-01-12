@@ -5,16 +5,16 @@
 \title{Create a CalculationGroupWeighting}
 \usage{
 createCalculationGroupWeighting(
-  CalculationGroupGradeBucketID = NULL,
-  CategoryIDToWeight = NULL,
-  GradingPeriodGradeBucketIDToWeight = NULL,
-  SubjectIDToWeight = NULL,
   AcademicStandardIDToWeight = NULL,
-  WeightPercent = NULL,
-  RoundBucketPercent = NULL,
-  RequiredGrade = NULL,
+  CalculationGroupGradeBucketID = NULL,
   CalculationGroupWeightingIDClonedFrom = NULL,
+  CategoryIDToWeight = NULL,
   EntityGroupKey = NULL,
+  GradingPeriodGradeBucketIDToWeight = NULL,
+  RequiredGrade = NULL,
+  RoundBucketPercent = NULL,
+  SubjectIDToWeight = NULL,
+  WeightPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 getStudentAttendancePeriodGroup(
   StudentAttendancePeriodGroupID,
-  StudentAttendanceID = F,
-  StudentAttendancePeriodID = F,
   AttendancePeriodID = F,
-  StudentID = F,
   EntityID = F,
   SchoolYearID = F,
+  StudentAttendanceID = F,
+  StudentAttendancePeriodID = F,
+  StudentID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

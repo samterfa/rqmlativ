@@ -7,8 +7,8 @@
 modifySchoolPathStudent(
   SchoolPathStudentID,
   DistrictID = NULL,
-  SchoolYearID = NULL,
   SchoolPathID = NULL,
+  SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

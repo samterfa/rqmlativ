@@ -6,13 +6,13 @@
 \usage{
 getGASBBalanceSheetColumnIncludedAccount(
   GASBBalanceSheetColumnIncludedAccountID,
+  CreatedTime = F,
+  Description = F,
   GASBBalanceSheetIncludedAccountID = F,
   GASBColumnID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
-  Description = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,10 +5,10 @@
 \title{Create a Watchlist}
 \usage{
 createWatchlist(
+  IsActive = NULL,
+  LastActiveDate = NULL,
   StudentID = NULL,
   ThresholdID = NULL,
-  LastActiveDate = NULL,
-  IsActive = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

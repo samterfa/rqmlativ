@@ -5,13 +5,13 @@
 \title{Create a VaccinationYear}
 \usage{
 createVaccinationYear(
-  VaccinationID = NULL,
-  SchoolYearID = NULL,
-  RequiredAgeLow = NULL,
-  RequiredAgeHigh = NULL,
-  RequiredAgeLowUnitType = NULL,
-  RequiredAgeHighUnitType = NULL,
   ProcessByType = NULL,
+  RequiredAgeHigh = NULL,
+  RequiredAgeHighUnitType = NULL,
+  RequiredAgeLow = NULL,
+  RequiredAgeLowUnitType = NULL,
+  SchoolYearID = NULL,
+  VaccinationID = NULL,
   VaccinationYearIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

@@ -5,9 +5,9 @@
 \title{Create a TempHonorRollGradeMarkMethodRangeGradingPeriodGradeBucket}
 \usage{
 createTempHonorRollGradeMarkMethodRangeGradingPeriodGradeBucket(
+  GradingPeriodGradeBucketID = NULL,
   HonorRollGradeMarkMethodRangeGradingPeriodGradeBucketID = NULL,
   TempHonorRollGradeMarkMethodRangeID = NULL,
-  GradingPeriodGradeBucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

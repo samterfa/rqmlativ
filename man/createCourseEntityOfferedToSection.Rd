@@ -6,13 +6,13 @@
 \usage{
 createCourseEntityOfferedToSection(
   CourseEntityOfferedToID = NULL,
-  SectionID = NULL,
-  MaximumStudentCount = NULL,
-  IsActive = NULL,
   CourseEntityOfferedToSectionIDClonedFrom = NULL,
   CourseID = NULL,
   EntityIDOfferedTo = NULL,
+  IsActive = NULL,
+  MaximumStudentCount = NULL,
   SchoolYearID = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

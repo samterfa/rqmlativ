@@ -6,8 +6,8 @@
 \usage{
 createUserAuthenticationMethod(
   AuthenticationMethodID = NULL,
-  UserID = NULL,
   ProviderUserIdentity = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

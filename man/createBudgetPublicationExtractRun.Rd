@@ -5,17 +5,17 @@
 \title{Create a BudgetPublicationExtractRun}
 \usage{
 createBudgetPublicationExtractRun(
-  FiscalYearID = NULL,
+  ADMTotalOperatingExpenditure = NULL,
+  ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL,
   DistrictName = NULL,
   DistrictNumber = NULL,
+  FiscalYearID = NULL,
+  GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL,
   LongTermDebtAtStartOfPriorYear = NULL,
   LongTermDebtNewIssues = NULL,
   LongTermDebtRedeemedIssues = NULL,
   ShortTermCertificateOfIndebtedness = NULL,
   ShortTermOtherIndebtedness = NULL,
-  GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL,
-  ADMTotalOperatingExpenditure = NULL,
-  ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL,
   Version = NULL,
   entityId = 1,
   query = NULL,

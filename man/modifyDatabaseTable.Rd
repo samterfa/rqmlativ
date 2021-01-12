@@ -6,8 +6,8 @@
 \usage{
 modifyDatabaseTable(
   DatabaseTableID,
-  Schema = NULL,
   Name = NULL,
+  Schema = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

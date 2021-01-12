@@ -6,12 +6,12 @@
 \usage{
 createGPABucketGroupGradeBucket(
   EntityGroupKey = NULL,
+  GPABucketGroupGradeBucketIDClonedFrom = NULL,
   GPABucketGroupID = NULL,
   GradeBucketID = NULL,
-  Percent = NULL,
   GradeRequiredForGPABucket = NULL,
-  GPABucketGroupGradeBucketIDClonedFrom = NULL,
   IsUpToDate = NULL,
+  Percent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

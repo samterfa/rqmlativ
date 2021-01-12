@@ -7,9 +7,9 @@
 modifyGradeReportStudentCTE(
   GradeReportStudentCTEID,
   GradeReportStudentID = NULL,
-  ProgramType = NULL,
   ProgramName = NULL,
   ProgramStatus = NULL,
+  ProgramType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

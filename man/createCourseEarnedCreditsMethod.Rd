@@ -5,12 +5,12 @@
 \title{Create a CourseEarnedCreditsMethod}
 \usage{
 createCourseEarnedCreditsMethod(
-  EntityGroupKey = NULL,
-  EarnedCreditsMethodEntityID = NULL,
-  CourseID = NULL,
-  UseOverride = NULL,
-  EarnedCreditsOverride = NULL,
   CourseEarnedCreditsMethodIDClonedFrom = NULL,
+  CourseID = NULL,
+  EarnedCreditsMethodEntityID = NULL,
+  EarnedCreditsOverride = NULL,
+  EntityGroupKey = NULL,
+  UseOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

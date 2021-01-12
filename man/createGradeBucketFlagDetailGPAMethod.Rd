@@ -5,14 +5,14 @@
 \title{Create a GradeBucketFlagDetailGPAMethod}
 \usage{
 createGradeBucketFlagDetailGPAMethod(
-  GradeBucketFlagDetailID = NULL,
+  EntityGroupKey = NULL,
   GPAMethodEntityID = NULL,
-  PointSetEntityID = NULL,
-  UseOverride = NULL,
   GPAPoints = NULL,
   GPAPointsOverrideOption = NULL,
-  EntityGroupKey = NULL,
   GradeBucketFlagDetailGPAMethodIDClonedFrom = NULL,
+  GradeBucketFlagDetailID = NULL,
+  PointSetEntityID = NULL,
+  UseOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,16 +5,16 @@
 \title{Create an ElectronicTranscriptAddressV1}
 \usage{
 createElectronicTranscriptAddressV1(
+  AddressID = NULL,
   AddressLine1 = NULL,
   AddressLine2 = NULL,
   AddressLine3 = NULL,
   City = NULL,
-  StateProvinceCode = NULL,
-  PostalCode = NULL,
-  AddressID = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  PostalCode = NULL,
   SchoolYearID = NULL,
+  StateProvinceCode = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

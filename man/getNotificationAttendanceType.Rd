@@ -6,12 +6,12 @@
 \usage{
 getNotificationAttendanceType(
   NotificationAttendanceTypeID,
-  NotificationID = F,
   AttendanceTypeID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  NotificationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

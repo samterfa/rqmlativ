@@ -18,7 +18,7 @@
 	#' @return A list of ChangeRequestDetails
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listChangeRequestDetails <- function(searchConditionsList = NULL, ChangeRequestDetailID = F, ChangeRequestID = F, RequestedTime = F, FieldName = F, OriginalValue = F, RequestedValue = F, Status = F, UserIDApprover = F, UserIDRequestedBy = F, SourceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listChangeRequestDetails <- function(searchConditionsList = NULL, ChangeRequestDetailID = F, ChangeRequestID = F, CreatedTime = F, FieldName = F, ModifiedTime = F, OriginalValue = F, RequestedTime = F, RequestedValue = F, SourceID = F, Status = F, UserIDApprover = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UserIDRequestedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of ChangeRequestDetail
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getChangeRequestDetail <- function(ChangeRequestDetailID, ChangeRequestID = F, RequestedTime = F, FieldName = F, OriginalValue = F, RequestedValue = F, Status = F, UserIDApprover = F, UserIDRequestedBy = F, SourceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getChangeRequestDetail <- function(ChangeRequestDetailID, ChangeRequestID = F, CreatedTime = F, FieldName = F, ModifiedTime = F, OriginalValue = F, RequestedTime = F, RequestedValue = F, SourceID = F, Status = F, UserIDApprover = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UserIDRequestedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ChangeRequestDetailID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created ChangeRequestDetail
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createChangeRequestDetail <- function(ChangeRequestID = NULL, RequestedTime = NULL, FieldName = NULL, OriginalValue = NULL, RequestedValue = NULL, Status = NULL, UserIDApprover = NULL, UserIDRequestedBy = NULL, SourceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createChangeRequestDetail <- function(ChangeRequestID = NULL, FieldName = NULL, OriginalValue = NULL, RequestedTime = NULL, RequestedValue = NULL, SourceID = NULL, Status = NULL, UserIDApprover = NULL, UserIDRequestedBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified ChangeRequestDetail
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyChangeRequestDetail <- function(ChangeRequestDetailID, ChangeRequestID = NULL, RequestedTime = NULL, FieldName = NULL, OriginalValue = NULL, RequestedValue = NULL, Status = NULL, UserIDApprover = NULL, UserIDRequestedBy = NULL, SourceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyChangeRequestDetail <- function(ChangeRequestDetailID, ChangeRequestID = NULL, FieldName = NULL, OriginalValue = NULL, RequestedTime = NULL, RequestedValue = NULL, SourceID = NULL, Status = NULL, UserIDApprover = NULL, UserIDRequestedBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of ChangeRequests
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listChangeRequests <- function(searchConditionsList = NULL, ChangeRequestID = F, EntityID = F, SchoolYearID = F, NameID = F, Area = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StatusCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listChangeRequests <- function(searchConditionsList = NULL, Area = F, ChangeRequestID = F, CreatedTime = F, EntityID = F, ModifiedTime = F, NameID = F, SchoolYearID = F, Status = F, StatusCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of ChangeRequest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getChangeRequest <- function(ChangeRequestID, EntityID = F, SchoolYearID = F, NameID = F, Area = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StatusCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getChangeRequest <- function(ChangeRequestID, Area = F, CreatedTime = F, EntityID = F, ModifiedTime = F, NameID = F, SchoolYearID = F, Status = F, StatusCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ChangeRequestID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created ChangeRequest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createChangeRequest <- function(EntityID = NULL, SchoolYearID = NULL, NameID = NULL, Area = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createChangeRequest <- function(Area = NULL, EntityID = NULL, NameID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified ChangeRequest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyChangeRequest <- function(ChangeRequestID, EntityID = NULL, SchoolYearID = NULL, NameID = NULL, Area = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyChangeRequest <- function(ChangeRequestID, Area = NULL, EntityID = NULL, NameID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of ChangeRequestDetailApprovals
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listChangeRequestDetailApprovals <- function(searchConditionsList = NULL, ChangeRequestDetailApprovalID = F, ChangeRequestDetailID = F, UserIDApprover = F, Comment = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listChangeRequestDetailApprovals <- function(searchConditionsList = NULL, ChangeRequestDetailApprovalID = F, ChangeRequestDetailID = F, Comment = F, CreatedTime = F, ModifiedTime = F, Status = F, UserIDApprover = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of ChangeRequestDetailApproval
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getChangeRequestDetailApproval <- function(ChangeRequestDetailApprovalID, ChangeRequestDetailID = F, UserIDApprover = F, Comment = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getChangeRequestDetailApproval <- function(ChangeRequestDetailApprovalID, ChangeRequestDetailID = F, Comment = F, CreatedTime = F, ModifiedTime = F, Status = F, UserIDApprover = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ChangeRequestDetailApprovalID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created ChangeRequestDetailApproval
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createChangeRequestDetailApproval <- function(ChangeRequestDetailID = NULL, UserIDApprover = NULL, Comment = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createChangeRequestDetailApproval <- function(ChangeRequestDetailID = NULL, Comment = NULL, Status = NULL, UserIDApprover = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified ChangeRequestDetailApproval
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyChangeRequestDetailApproval <- function(ChangeRequestDetailApprovalID, ChangeRequestDetailID = NULL, UserIDApprover = NULL, Comment = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyChangeRequestDetailApproval <- function(ChangeRequestDetailApprovalID, ChangeRequestDetailID = NULL, Comment = NULL, Status = NULL, UserIDApprover = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of FamilyConfigEntityGroupYears
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyConfigEntityGroupYears <- function(searchConditionsList = NULL, ConfigEntityGroupYearID = F, EntityID = F, SchoolYearID = F, EntityGroupKey = F, FamilyAccessDisplayStudentRank = F, FamilyAccessDisplayHonorRoll = F, FamilyAccessDisplayGradeBucketsAfterEndDate = F, HideSchedulePriorToCalendarDays = F, HideScheduleMessage = F, ConfigEntityGroupYearIDClonedFrom = F, ChangeRequestFamilyEmail = F, ChangeRequestFamilyPhone = F, ChangeRequestStudentEmail = F, IsStudentInformationApprovalWorkflowUpdated = F, IsFamilyInformationApprovalWorkflowUpdated = F, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = F, FamilyAccessDisplayOnlyCurrentMissingAssignments = F, DisplayStudentActivityEvents = F, DisplayDistrictActivityEvents = F, DisplayCalendarEvents = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EndorsementSignatureOption = F, EndorsementSignatureStatement = F, FamilyStudentAccessDisplayTeacherEmail = F, EmailTypeIDToDisplayFamilyStudentAccess = F, FamilyStudentAccessDisplayTeacherPhoneNumber = F, PhoneTypeIDToDisplayFamilyStudentAccess = F, DefaultFeeManagementOnlinePaymentAccess = F, DefaultFoodServiceOnlinePaymentAccess = F, FamilyAccessAccountInfoEmailSubject = F, FamilyAccessAccountInfoEmailBody = F, FamilyAccessAccountInfoEmailIncludeResetPasswordText = F, DisplayAssignments = F, FamilyAccessCareerPlanDisplayShowDroppedCourses = F, RankMethodIDFamilyAccessReportCardStudent = F, ReportCardStudentRankDisplay = F, FamilyAccessDisplayLockerCombination = F, FamilyAccessDisplayLockerNumber = F, StaffNameDisplayType = F, CareerPlanSignatureOption = F, CareerPlanSignatureStatement = F, FamilyAccessDisplayStaffDirectory = F, TrackFamilyAccessUsageHistory = F, FamilyAccessDisplayAssignmentAverages = F, FamilyAccessDisplayGPA = F, TrackStudentAccessUsageHistory = F, DisplayAbsencesAndTardies = F, DisplayCalendarComments = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyConfigEntityGroupYears <- function(searchConditionsList = NULL, CareerPlanSignatureOption = F, CareerPlanSignatureStatement = F, ChangeRequestFamilyEmail = F, ChangeRequestFamilyPhone = F, ChangeRequestStudentEmail = F, ConfigEntityGroupYearID = F, ConfigEntityGroupYearIDClonedFrom = F, CreatedTime = F, DefaultFeeManagementOnlinePaymentAccess = F, DefaultFoodServiceOnlinePaymentAccess = F, DisplayAbsencesAndTardies = F, DisplayAssignments = F, DisplayCalendarComments = F, DisplayCalendarEvents = F, DisplayDistrictActivityEvents = F, DisplayStudentActivityEvents = F, EmailTypeIDToDisplayFamilyStudentAccess = F, EndorsementSignatureOption = F, EndorsementSignatureStatement = F, EntityGroupKey = F, EntityID = F, FamilyAccessAccountInfoEmailBody = F, FamilyAccessAccountInfoEmailIncludeResetPasswordText = F, FamilyAccessAccountInfoEmailSubject = F, FamilyAccessCareerPlanDisplayShowDroppedCourses = F, FamilyAccessDisplayAssignmentAverages = F, FamilyAccessDisplayGPA = F, FamilyAccessDisplayGradeBucketsAfterEndDate = F, FamilyAccessDisplayHonorRoll = F, FamilyAccessDisplayLockerCombination = F, FamilyAccessDisplayLockerNumber = F, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = F, FamilyAccessDisplayOnlyCurrentMissingAssignments = F, FamilyAccessDisplayStudentRank = F, FamilyStudentAccessDisplayTeacherEmail = F, FamilyStudentAccessDisplayTeacherPhoneNumber = F, HideScheduleMessage = F, HideSchedulePriorToCalendarDays = F, IsFamilyInformationApprovalWorkflowUpdated = F, IsStudentInformationApprovalWorkflowUpdated = F, ModifiedTime = F, PhoneTypeIDToDisplayFamilyStudentAccess = F, RankMethodIDFamilyAccessReportCardStudent = F, ReportCardStudentRankDisplay = F, SchoolYearID = F, StaffNameDisplayType = F, TrackFamilyAccessUsageHistory = F, TrackStudentAccessUsageHistory = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of FamilyConfigEntityGroupYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyConfigEntityGroupYear <- function(FamilyConfigEntityGroupYearID, ConfigEntityGroupYearID = F, EntityID = F, SchoolYearID = F, EntityGroupKey = F, FamilyAccessDisplayStudentRank = F, FamilyAccessDisplayHonorRoll = F, FamilyAccessDisplayGradeBucketsAfterEndDate = F, HideSchedulePriorToCalendarDays = F, HideScheduleMessage = F, ConfigEntityGroupYearIDClonedFrom = F, ChangeRequestFamilyEmail = F, ChangeRequestFamilyPhone = F, ChangeRequestStudentEmail = F, IsStudentInformationApprovalWorkflowUpdated = F, IsFamilyInformationApprovalWorkflowUpdated = F, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = F, FamilyAccessDisplayOnlyCurrentMissingAssignments = F, DisplayStudentActivityEvents = F, DisplayDistrictActivityEvents = F, DisplayCalendarEvents = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EndorsementSignatureOption = F, EndorsementSignatureStatement = F, FamilyStudentAccessDisplayTeacherEmail = F, EmailTypeIDToDisplayFamilyStudentAccess = F, FamilyStudentAccessDisplayTeacherPhoneNumber = F, PhoneTypeIDToDisplayFamilyStudentAccess = F, DefaultFeeManagementOnlinePaymentAccess = F, DefaultFoodServiceOnlinePaymentAccess = F, FamilyAccessAccountInfoEmailSubject = F, FamilyAccessAccountInfoEmailBody = F, FamilyAccessAccountInfoEmailIncludeResetPasswordText = F, DisplayAssignments = F, FamilyAccessCareerPlanDisplayShowDroppedCourses = F, RankMethodIDFamilyAccessReportCardStudent = F, ReportCardStudentRankDisplay = F, FamilyAccessDisplayLockerCombination = F, FamilyAccessDisplayLockerNumber = F, StaffNameDisplayType = F, CareerPlanSignatureOption = F, CareerPlanSignatureStatement = F, FamilyAccessDisplayStaffDirectory = F, TrackFamilyAccessUsageHistory = F, FamilyAccessDisplayAssignmentAverages = F, FamilyAccessDisplayGPA = F, TrackStudentAccessUsageHistory = F, DisplayAbsencesAndTardies = F, DisplayCalendarComments = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyConfigEntityGroupYear <- function(FamilyConfigEntityGroupYearID, CareerPlanSignatureOption = F, CareerPlanSignatureStatement = F, ChangeRequestFamilyEmail = F, ChangeRequestFamilyPhone = F, ChangeRequestStudentEmail = F, ConfigEntityGroupYearID = F, ConfigEntityGroupYearIDClonedFrom = F, CreatedTime = F, DefaultFeeManagementOnlinePaymentAccess = F, DefaultFoodServiceOnlinePaymentAccess = F, DisplayAbsencesAndTardies = F, DisplayAssignments = F, DisplayCalendarComments = F, DisplayCalendarEvents = F, DisplayDistrictActivityEvents = F, DisplayStudentActivityEvents = F, EmailTypeIDToDisplayFamilyStudentAccess = F, EndorsementSignatureOption = F, EndorsementSignatureStatement = F, EntityGroupKey = F, EntityID = F, FamilyAccessAccountInfoEmailBody = F, FamilyAccessAccountInfoEmailIncludeResetPasswordText = F, FamilyAccessAccountInfoEmailSubject = F, FamilyAccessCareerPlanDisplayShowDroppedCourses = F, FamilyAccessDisplayAssignmentAverages = F, FamilyAccessDisplayGPA = F, FamilyAccessDisplayGradeBucketsAfterEndDate = F, FamilyAccessDisplayHonorRoll = F, FamilyAccessDisplayLockerCombination = F, FamilyAccessDisplayLockerNumber = F, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = F, FamilyAccessDisplayOnlyCurrentMissingAssignments = F, FamilyAccessDisplayStudentRank = F, FamilyStudentAccessDisplayTeacherEmail = F, FamilyStudentAccessDisplayTeacherPhoneNumber = F, HideScheduleMessage = F, HideSchedulePriorToCalendarDays = F, IsFamilyInformationApprovalWorkflowUpdated = F, IsStudentInformationApprovalWorkflowUpdated = F, ModifiedTime = F, PhoneTypeIDToDisplayFamilyStudentAccess = F, RankMethodIDFamilyAccessReportCardStudent = F, ReportCardStudentRankDisplay = F, SchoolYearID = F, StaffNameDisplayType = F, TrackFamilyAccessUsageHistory = F, TrackStudentAccessUsageHistory = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyConfigEntityGroupYearID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created FamilyConfigEntityGroupYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createFamilyConfigEntityGroupYear <- function(EntityID = NULL, SchoolYearID = NULL, EntityGroupKey = NULL, FamilyAccessDisplayStudentRank = NULL, FamilyAccessDisplayHonorRoll = NULL, FamilyAccessDisplayGradeBucketsAfterEndDate = NULL, HideSchedulePriorToCalendarDays = NULL, HideScheduleMessage = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, ChangeRequestFamilyEmail = NULL, ChangeRequestFamilyPhone = NULL, ChangeRequestStudentEmail = NULL, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = NULL, FamilyAccessDisplayOnlyCurrentMissingAssignments = NULL, DisplayStudentActivityEvents = NULL, DisplayDistrictActivityEvents = NULL, DisplayCalendarEvents = NULL, EndorsementSignatureOption = NULL, EndorsementSignatureStatement = NULL, FamilyStudentAccessDisplayTeacherEmail = NULL, EmailTypeIDToDisplayFamilyStudentAccess = NULL, FamilyStudentAccessDisplayTeacherPhoneNumber = NULL, PhoneTypeIDToDisplayFamilyStudentAccess = NULL, DefaultFeeManagementOnlinePaymentAccess = NULL, DefaultFoodServiceOnlinePaymentAccess = NULL, FamilyAccessAccountInfoEmailSubject = NULL, FamilyAccessAccountInfoEmailBody = NULL, FamilyAccessAccountInfoEmailIncludeResetPasswordText = NULL, DisplayAssignments = NULL, FamilyAccessCareerPlanDisplayShowDroppedCourses = NULL, RankMethodIDFamilyAccessReportCardStudent = NULL, ReportCardStudentRankDisplay = NULL, FamilyAccessDisplayLockerCombination = NULL, FamilyAccessDisplayLockerNumber = NULL, StaffNameDisplayType = NULL, CareerPlanSignatureOption = NULL, CareerPlanSignatureStatement = NULL, FamilyAccessDisplayStaffDirectory = NULL, TrackFamilyAccessUsageHistory = NULL, FamilyAccessDisplayAssignmentAverages = NULL, FamilyAccessDisplayGPA = NULL, TrackStudentAccessUsageHistory = NULL, DisplayAbsencesAndTardies = NULL, DisplayCalendarComments = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createFamilyConfigEntityGroupYear <- function(CareerPlanSignatureOption = NULL, CareerPlanSignatureStatement = NULL, ChangeRequestFamilyEmail = NULL, ChangeRequestFamilyPhone = NULL, ChangeRequestStudentEmail = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, DefaultFeeManagementOnlinePaymentAccess = NULL, DefaultFoodServiceOnlinePaymentAccess = NULL, DisplayAbsencesAndTardies = NULL, DisplayAssignments = NULL, DisplayCalendarComments = NULL, DisplayCalendarEvents = NULL, DisplayDistrictActivityEvents = NULL, DisplayStudentActivityEvents = NULL, EmailTypeIDToDisplayFamilyStudentAccess = NULL, EndorsementSignatureOption = NULL, EndorsementSignatureStatement = NULL, EntityGroupKey = NULL, EntityID = NULL, FamilyAccessAccountInfoEmailBody = NULL, FamilyAccessAccountInfoEmailIncludeResetPasswordText = NULL, FamilyAccessAccountInfoEmailSubject = NULL, FamilyAccessCareerPlanDisplayShowDroppedCourses = NULL, FamilyAccessDisplayAssignmentAverages = NULL, FamilyAccessDisplayGPA = NULL, FamilyAccessDisplayGradeBucketsAfterEndDate = NULL, FamilyAccessDisplayHonorRoll = NULL, FamilyAccessDisplayLockerCombination = NULL, FamilyAccessDisplayLockerNumber = NULL, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = NULL, FamilyAccessDisplayOnlyCurrentMissingAssignments = NULL, FamilyAccessDisplayStudentRank = NULL, FamilyStudentAccessDisplayTeacherEmail = NULL, FamilyStudentAccessDisplayTeacherPhoneNumber = NULL, HideScheduleMessage = NULL, HideSchedulePriorToCalendarDays = NULL, PhoneTypeIDToDisplayFamilyStudentAccess = NULL, RankMethodIDFamilyAccessReportCardStudent = NULL, ReportCardStudentRankDisplay = NULL, SchoolYearID = NULL, StaffNameDisplayType = NULL, TrackFamilyAccessUsageHistory = NULL, TrackStudentAccessUsageHistory = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified FamilyConfigEntityGroupYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyFamilyConfigEntityGroupYear <- function(ConfigEntityGroupYearID, EntityID = NULL, SchoolYearID = NULL, EntityGroupKey = NULL, FamilyAccessDisplayStudentRank = NULL, FamilyAccessDisplayHonorRoll = NULL, FamilyAccessDisplayGradeBucketsAfterEndDate = NULL, HideSchedulePriorToCalendarDays = NULL, HideScheduleMessage = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, ChangeRequestFamilyEmail = NULL, ChangeRequestFamilyPhone = NULL, ChangeRequestStudentEmail = NULL, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = NULL, FamilyAccessDisplayOnlyCurrentMissingAssignments = NULL, DisplayStudentActivityEvents = NULL, DisplayDistrictActivityEvents = NULL, DisplayCalendarEvents = NULL, EndorsementSignatureOption = NULL, EndorsementSignatureStatement = NULL, FamilyStudentAccessDisplayTeacherEmail = NULL, EmailTypeIDToDisplayFamilyStudentAccess = NULL, FamilyStudentAccessDisplayTeacherPhoneNumber = NULL, PhoneTypeIDToDisplayFamilyStudentAccess = NULL, DefaultFeeManagementOnlinePaymentAccess = NULL, DefaultFoodServiceOnlinePaymentAccess = NULL, FamilyAccessAccountInfoEmailSubject = NULL, FamilyAccessAccountInfoEmailBody = NULL, FamilyAccessAccountInfoEmailIncludeResetPasswordText = NULL, DisplayAssignments = NULL, FamilyAccessCareerPlanDisplayShowDroppedCourses = NULL, RankMethodIDFamilyAccessReportCardStudent = NULL, ReportCardStudentRankDisplay = NULL, FamilyAccessDisplayLockerCombination = NULL, FamilyAccessDisplayLockerNumber = NULL, StaffNameDisplayType = NULL, CareerPlanSignatureOption = NULL, CareerPlanSignatureStatement = NULL, FamilyAccessDisplayStaffDirectory = NULL, TrackFamilyAccessUsageHistory = NULL, FamilyAccessDisplayAssignmentAverages = NULL, FamilyAccessDisplayGPA = NULL, TrackStudentAccessUsageHistory = NULL, DisplayAbsencesAndTardies = NULL, DisplayCalendarComments = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyFamilyConfigEntityGroupYear <- function(ConfigEntityGroupYearID, CareerPlanSignatureOption = NULL, CareerPlanSignatureStatement = NULL, ChangeRequestFamilyEmail = NULL, ChangeRequestFamilyPhone = NULL, ChangeRequestStudentEmail = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, DefaultFeeManagementOnlinePaymentAccess = NULL, DefaultFoodServiceOnlinePaymentAccess = NULL, DisplayAbsencesAndTardies = NULL, DisplayAssignments = NULL, DisplayCalendarComments = NULL, DisplayCalendarEvents = NULL, DisplayDistrictActivityEvents = NULL, DisplayStudentActivityEvents = NULL, EmailTypeIDToDisplayFamilyStudentAccess = NULL, EndorsementSignatureOption = NULL, EndorsementSignatureStatement = NULL, EntityGroupKey = NULL, EntityID = NULL, FamilyAccessAccountInfoEmailBody = NULL, FamilyAccessAccountInfoEmailIncludeResetPasswordText = NULL, FamilyAccessAccountInfoEmailSubject = NULL, FamilyAccessCareerPlanDisplayShowDroppedCourses = NULL, FamilyAccessDisplayAssignmentAverages = NULL, FamilyAccessDisplayGPA = NULL, FamilyAccessDisplayGradeBucketsAfterEndDate = NULL, FamilyAccessDisplayHonorRoll = NULL, FamilyAccessDisplayLockerCombination = NULL, FamilyAccessDisplayLockerNumber = NULL, FamilyAccessDisplayOnlyCurrentAndCompleteGrades = NULL, FamilyAccessDisplayOnlyCurrentMissingAssignments = NULL, FamilyAccessDisplayStudentRank = NULL, FamilyStudentAccessDisplayTeacherEmail = NULL, FamilyStudentAccessDisplayTeacherPhoneNumber = NULL, HideScheduleMessage = NULL, HideSchedulePriorToCalendarDays = NULL, PhoneTypeIDToDisplayFamilyStudentAccess = NULL, RankMethodIDFamilyAccessReportCardStudent = NULL, ReportCardStudentRankDisplay = NULL, SchoolYearID = NULL, StaffNameDisplayType = NULL, TrackFamilyAccessUsageHistory = NULL, TrackStudentAccessUsageHistory = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of FamilyConfigSystems
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyConfigSystems <- function(searchConditionsList = NULL, ConfigSystemID = F, AllowFamilyAccessDefault = F, EnableNewStudentEnrollment = F, AutoGenerateSecurityUser = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnableAddressValidation = F, AllowOutOfRangeAddressesToSubmit = F, AddressValidationMessage = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyConfigSystems <- function(searchConditionsList = NULL, AddressValidationMessage = F, AllowFamilyAccessDefault = F, AllowOutOfRangeAddressesToSubmit = F, AutoGenerateSecurityUser = F, ConfigSystemID = F, CreatedTime = F, EnableAddressValidation = F, EnableNewStudentEnrollment = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of FamilyConfigSystem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyConfigSystem <- function(FamilyConfigSystemID, ConfigSystemID = F, AllowFamilyAccessDefault = F, EnableNewStudentEnrollment = F, AutoGenerateSecurityUser = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnableAddressValidation = F, AllowOutOfRangeAddressesToSubmit = F, AddressValidationMessage = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyConfigSystem <- function(FamilyConfigSystemID, AddressValidationMessage = F, AllowFamilyAccessDefault = F, AllowOutOfRangeAddressesToSubmit = F, AutoGenerateSecurityUser = F, ConfigSystemID = F, CreatedTime = F, EnableAddressValidation = F, EnableNewStudentEnrollment = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyConfigSystemID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created FamilyConfigSystem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createFamilyConfigSystem <- function(AllowFamilyAccessDefault = NULL, EnableNewStudentEnrollment = NULL, AutoGenerateSecurityUser = NULL, EnableAddressValidation = NULL, AllowOutOfRangeAddressesToSubmit = NULL, AddressValidationMessage = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createFamilyConfigSystem <- function(AddressValidationMessage = NULL, AllowFamilyAccessDefault = NULL, AllowOutOfRangeAddressesToSubmit = NULL, AutoGenerateSecurityUser = NULL, EnableAddressValidation = NULL, EnableNewStudentEnrollment = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified FamilyConfigSystem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyFamilyConfigSystem <- function(ConfigSystemID, AllowFamilyAccessDefault = NULL, EnableNewStudentEnrollment = NULL, AutoGenerateSecurityUser = NULL, EnableAddressValidation = NULL, AllowOutOfRangeAddressesToSubmit = NULL, AddressValidationMessage = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyFamilyConfigSystem <- function(ConfigSystemID, AddressValidationMessage = NULL, AllowFamilyAccessDefault = NULL, AllowOutOfRangeAddressesToSubmit = NULL, AutoGenerateSecurityUser = NULL, EnableAddressValidation = NULL, EnableNewStudentEnrollment = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of TempFamilyGuardians
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempFamilyGuardians <- function(searchConditionsList = NULL, TempFamilyGuardianID = F, GuardianNameID = F, GuardianNameLFM = F, IsFamilyAccessUser = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempFamilyGuardians <- function(searchConditionsList = NULL, CreatedTime = F, GuardianNameID = F, GuardianNameLFM = F, IsFamilyAccessUser = F, ModifiedTime = F, TempFamilyGuardianID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of TempFamilyGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempFamilyGuardian <- function(TempFamilyGuardianID, GuardianNameID = F, GuardianNameLFM = F, IsFamilyAccessUser = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempFamilyGuardian <- function(TempFamilyGuardianID, CreatedTime = F, GuardianNameID = F, GuardianNameLFM = F, IsFamilyAccessUser = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempFamilyGuardianID")
 
@@ -702,7 +702,7 @@
 	#' @return A list of StudentGuardians
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentGuardians <- function(searchConditionsList = NULL, StudentGuardianID = F, StudentID = F, NameIDGuardian = F, IsCustodialGuardian = F, AllowStudentPickup = F, RelationshipID = F, AllowFamilyAccess = F, IsEmergencyContact = F, GuardianCategory = F, GuardianNameIDAndFamilyID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, NeedsSecurityGroupAudit = F, HasActiveRestrictedAccess = F, HasUnrestrictedAccess = F, OverrideFeeOnlinePaymentAccess = F, FeeOnlinePaymentOverrideType = F, OverrideFoodOnlinePaymentAccess = F, FoodOnlinePaymentOverrideType = F, Rank = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentGuardians <- function(searchConditionsList = NULL, AllowFamilyAccess = F, AllowStudentPickup = F, CreatedTime = F, FeeOnlinePaymentOverrideType = F, FoodOnlinePaymentOverrideType = F, GuardianCategory = F, GuardianNameIDAndFamilyID = F, HasActiveRestrictedAccess = F, HasUnrestrictedAccess = F, IsCustodialGuardian = F, IsEmergencyContact = F, ModifiedTime = F, NameIDGuardian = F, NeedsSecurityGroupAudit = F, OverrideFeeOnlinePaymentAccess = F, OverrideFoodOnlinePaymentAccess = F, Rank = F, RelationshipID = F, StudentGuardianID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of StudentGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentGuardian <- function(StudentGuardianID, StudentID = F, NameIDGuardian = F, IsCustodialGuardian = F, AllowStudentPickup = F, RelationshipID = F, AllowFamilyAccess = F, IsEmergencyContact = F, GuardianCategory = F, GuardianNameIDAndFamilyID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, NeedsSecurityGroupAudit = F, HasActiveRestrictedAccess = F, HasUnrestrictedAccess = F, OverrideFeeOnlinePaymentAccess = F, FeeOnlinePaymentOverrideType = F, OverrideFoodOnlinePaymentAccess = F, FoodOnlinePaymentOverrideType = F, Rank = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentGuardian <- function(StudentGuardianID, AllowFamilyAccess = F, AllowStudentPickup = F, CreatedTime = F, FeeOnlinePaymentOverrideType = F, FoodOnlinePaymentOverrideType = F, GuardianCategory = F, GuardianNameIDAndFamilyID = F, HasActiveRestrictedAccess = F, HasUnrestrictedAccess = F, IsCustodialGuardian = F, IsEmergencyContact = F, ModifiedTime = F, NameIDGuardian = F, NeedsSecurityGroupAudit = F, OverrideFeeOnlinePaymentAccess = F, OverrideFoodOnlinePaymentAccess = F, Rank = F, RelationshipID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentGuardianID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created StudentGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentGuardian <- function(StudentID = NULL, NameIDGuardian = NULL, IsCustodialGuardian = NULL, AllowStudentPickup = NULL, RelationshipID = NULL, AllowFamilyAccess = NULL, OverrideFeeOnlinePaymentAccess = NULL, FeeOnlinePaymentOverrideType = NULL, OverrideFoodOnlinePaymentAccess = NULL, FoodOnlinePaymentOverrideType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentGuardian <- function(AllowFamilyAccess = NULL, AllowStudentPickup = NULL, FeeOnlinePaymentOverrideType = NULL, FoodOnlinePaymentOverrideType = NULL, IsCustodialGuardian = NULL, NameIDGuardian = NULL, OverrideFeeOnlinePaymentAccess = NULL, OverrideFoodOnlinePaymentAccess = NULL, RelationshipID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified StudentGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentGuardian <- function(StudentGuardianID, StudentID = NULL, NameIDGuardian = NULL, IsCustodialGuardian = NULL, AllowStudentPickup = NULL, RelationshipID = NULL, AllowFamilyAccess = NULL, OverrideFeeOnlinePaymentAccess = NULL, FeeOnlinePaymentOverrideType = NULL, OverrideFoodOnlinePaymentAccess = NULL, FoodOnlinePaymentOverrideType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentGuardian <- function(StudentGuardianID, AllowFamilyAccess = NULL, AllowStudentPickup = NULL, FeeOnlinePaymentOverrideType = NULL, FoodOnlinePaymentOverrideType = NULL, IsCustodialGuardian = NULL, NameIDGuardian = NULL, OverrideFeeOnlinePaymentAccess = NULL, OverrideFoodOnlinePaymentAccess = NULL, RelationshipID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of StudentFamilies
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentFamilies <- function(searchConditionsList = NULL, StudentFamilyID = F, StudentID = F, FamilyID = F, Rank = F, ReceivesForms = F, IsEmergencyContact = F, IsPrimaryEmergencyContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AttachmentCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentFamilies <- function(searchConditionsList = NULL, AttachmentCount = F, CreatedTime = F, FamilyID = F, IsEmergencyContact = F, IsPrimaryEmergencyContact = F, ModifiedTime = F, Rank = F, ReceivesForms = F, StudentFamilyID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of StudentFamily
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentFamily <- function(StudentFamilyID, StudentID = F, FamilyID = F, Rank = F, ReceivesForms = F, IsEmergencyContact = F, IsPrimaryEmergencyContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AttachmentCount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentFamily <- function(StudentFamilyID, AttachmentCount = F, CreatedTime = F, FamilyID = F, IsEmergencyContact = F, IsPrimaryEmergencyContact = F, ModifiedTime = F, Rank = F, ReceivesForms = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentFamilyID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created StudentFamily
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentFamily <- function(StudentID = NULL, FamilyID = NULL, Rank = NULL, ReceivesForms = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentFamily <- function(FamilyID = NULL, Rank = NULL, ReceivesForms = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified StudentFamily
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentFamily <- function(StudentFamilyID, StudentID = NULL, FamilyID = NULL, Rank = NULL, ReceivesForms = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentFamily <- function(StudentFamilyID, FamilyID = NULL, Rank = NULL, ReceivesForms = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of FamilyGuardians
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyGuardians <- function(searchConditionsList = NULL, FamilyGuardianID = F, NameID = F, FamilyID = F, Rank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasActiveStudentGuardianRestrictedAccess = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyGuardians <- function(searchConditionsList = NULL, CreatedTime = F, FamilyGuardianID = F, FamilyID = F, HasActiveStudentGuardianRestrictedAccess = F, ModifiedTime = F, NameID = F, Rank = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of FamilyGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyGuardian <- function(FamilyGuardianID, NameID = F, FamilyID = F, Rank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasActiveStudentGuardianRestrictedAccess = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyGuardian <- function(FamilyGuardianID, CreatedTime = F, FamilyID = F, HasActiveStudentGuardianRestrictedAccess = F, ModifiedTime = F, NameID = F, Rank = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyGuardianID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created FamilyGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createFamilyGuardian <- function(NameID = NULL, FamilyID = NULL, Rank = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createFamilyGuardian <- function(FamilyID = NULL, NameID = NULL, Rank = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified FamilyGuardian
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyFamilyGuardian <- function(FamilyGuardianID, NameID = NULL, FamilyID = NULL, Rank = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyFamilyGuardian <- function(FamilyGuardianID, FamilyID = NULL, NameID = NULL, Rank = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of Families
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilies <- function(searchConditionsList = NULL, FamilyID = F, LanguageIDHome = F, AttachmentCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasStudentInSpecificDistrict = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilies <- function(searchConditionsList = NULL, AttachmentCount = F, CreatedTime = F, FamilyID = F, HasStudentInSpecificDistrict = F, LanguageIDHome = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of Family
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamily <- function(FamilyID, LanguageIDHome = F, AttachmentCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasStudentInSpecificDistrict = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamily <- function(FamilyID, AttachmentCount = F, CreatedTime = F, HasStudentInSpecificDistrict = F, LanguageIDHome = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyID")
 
@@ -1158,7 +1158,7 @@
 	#' @return A list of StudentGuardianRestrictedAccesses
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentGuardianRestrictedAccesses <- function(searchConditionsList = NULL, StudentGuardianRestrictedAccessID = F, StudentGuardianID = F, StartDate = F, EndDate = F, Reason = F, AttachmentCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentGuardianRestrictedAccesses <- function(searchConditionsList = NULL, AttachmentCount = F, CreatedTime = F, EndDate = F, ModifiedTime = F, Reason = F, StartDate = F, StudentGuardianID = F, StudentGuardianRestrictedAccessID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of StudentGuardianRestrictedAccess
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentGuardianRestrictedAccess <- function(StudentGuardianRestrictedAccessID, StudentGuardianID = F, StartDate = F, EndDate = F, Reason = F, AttachmentCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentGuardianRestrictedAccess <- function(StudentGuardianRestrictedAccessID, AttachmentCount = F, CreatedTime = F, EndDate = F, ModifiedTime = F, Reason = F, StartDate = F, StudentGuardianID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentGuardianRestrictedAccessID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created StudentGuardianRestrictedAccess
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentGuardianRestrictedAccess <- function(StudentGuardianID = NULL, StartDate = NULL, EndDate = NULL, Reason = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentGuardianRestrictedAccess <- function(EndDate = NULL, Reason = NULL, StartDate = NULL, StudentGuardianID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified StudentGuardianRestrictedAccess
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentGuardianRestrictedAccess <- function(StudentGuardianRestrictedAccessID, StudentGuardianID = NULL, StartDate = NULL, EndDate = NULL, Reason = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentGuardianRestrictedAccess <- function(StudentGuardianRestrictedAccessID, EndDate = NULL, Reason = NULL, StartDate = NULL, StudentGuardianID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of FamilyConfigDistricts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, DistrictID = F, DisplayModuleContact = F, DisplayDefaultContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, CreatedTime = F, DisplayDefaultContact = F, DisplayModuleContact = F, DistrictID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of FamilyConfigDistrict
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyConfigDistrict <- function(FamilyConfigDistrictID, ConfigDistrictID = F, DistrictID = F, DisplayModuleContact = F, DisplayDefaultContact = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyConfigDistrict <- function(FamilyConfigDistrictID, ConfigDistrictID = F, CreatedTime = F, DisplayDefaultContact = F, DisplayModuleContact = F, DistrictID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyConfigDistrictID")
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of ConfigDistrictContacts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listConfigDistrictContacts <- function(searchConditionsList = NULL, ConfigDistrictContactID = F, Module = F, ModuleDisplay = F, NameID = F, ConfigDistrictID = F, DisplayPhone = F, DisplayEmail = F, CanDisplayEmail = F, CanDisplayPhone = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmailTypeID = F, PhoneTypeID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listConfigDistrictContacts <- function(searchConditionsList = NULL, CanDisplayEmail = F, CanDisplayPhone = F, ConfigDistrictContactID = F, ConfigDistrictID = F, CreatedTime = F, DisplayEmail = F, DisplayPhone = F, EmailTypeID = F, ModifiedTime = F, Module = F, ModuleDisplay = F, NameID = F, PhoneTypeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of ConfigDistrictContact
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getConfigDistrictContact <- function(ConfigDistrictContactID, Module = F, ModuleDisplay = F, NameID = F, ConfigDistrictID = F, DisplayPhone = F, DisplayEmail = F, CanDisplayEmail = F, CanDisplayPhone = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmailTypeID = F, PhoneTypeID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getConfigDistrictContact <- function(ConfigDistrictContactID, CanDisplayEmail = F, CanDisplayPhone = F, ConfigDistrictID = F, CreatedTime = F, DisplayEmail = F, DisplayPhone = F, EmailTypeID = F, ModifiedTime = F, Module = F, ModuleDisplay = F, NameID = F, PhoneTypeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ConfigDistrictContactID")
 
@@ -1451,7 +1451,7 @@
 	#' @return A newly created ConfigDistrictContact
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createConfigDistrictContact <- function(Module = NULL, NameID = NULL, ConfigDistrictID = NULL, DisplayPhone = NULL, DisplayEmail = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createConfigDistrictContact <- function(ConfigDistrictID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, EmailTypeID = NULL, Module = NULL, NameID = NULL, PhoneTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1472,7 +1472,7 @@
 	#' @return The modified ConfigDistrictContact
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyConfigDistrictContact <- function(ConfigDistrictContactID, Module = NULL, NameID = NULL, ConfigDistrictID = NULL, DisplayPhone = NULL, DisplayEmail = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyConfigDistrictContact <- function(ConfigDistrictContactID, ConfigDistrictID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, EmailTypeID = NULL, Module = NULL, NameID = NULL, PhoneTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of ConfigEntityGroupYearStaffDirectories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listConfigEntityGroupYearStaffDirectories <- function(searchConditionsList = NULL, ConfigEntityGroupYearStaffDirectoryID = F, ConfigEntityGroupYearID = F, StaffTypeID = F, EmailTypeID = F, PhoneTypeID = F, DisplayEmail = F, DisplayPhone = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listConfigEntityGroupYearStaffDirectories <- function(searchConditionsList = NULL, ConfigEntityGroupYearID = F, ConfigEntityGroupYearStaffDirectoryID = F, CreatedTime = F, DisplayEmail = F, DisplayPhone = F, EmailTypeID = F, ModifiedTime = F, PhoneTypeID = F, StaffTypeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of ConfigEntityGroupYearStaffDirectory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearStaffDirectoryID, ConfigEntityGroupYearID = F, StaffTypeID = F, EmailTypeID = F, PhoneTypeID = F, DisplayEmail = F, DisplayPhone = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearStaffDirectoryID, ConfigEntityGroupYearID = F, CreatedTime = F, DisplayEmail = F, DisplayPhone = F, EmailTypeID = F, ModifiedTime = F, PhoneTypeID = F, StaffTypeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ConfigEntityGroupYearStaffDirectoryID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created ConfigEntityGroupYearStaffDirectory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearID = NULL, StaffTypeID = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, StaffTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified ConfigEntityGroupYearStaffDirectory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearStaffDirectoryID, ConfigEntityGroupYearID = NULL, StaffTypeID = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyConfigEntityGroupYearStaffDirectory <- function(ConfigEntityGroupYearStaffDirectoryID, ConfigEntityGroupYearID = NULL, DisplayEmail = NULL, DisplayPhone = NULL, EmailTypeID = NULL, PhoneTypeID = NULL, StaffTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of EmployerInformations
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEmployerInformations <- function(searchConditionsList = NULL, EmployerInformationID = F, PlaceofEmployment = F, Occupation = F, WorkAddress = F, WorkPhoneNumber = F, FamilyGuardianID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEmployerInformations <- function(searchConditionsList = NULL, EmployerInformationID = F, FamilyGuardianID = F, Occupation = F, PlaceofEmployment = F, WorkAddress = F, WorkPhoneNumber = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of EmployerInformation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEmployerInformation <- function(EmployerInformationID, PlaceofEmployment = F, Occupation = F, WorkAddress = F, WorkPhoneNumber = F, FamilyGuardianID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEmployerInformation <- function(EmployerInformationID, FamilyGuardianID = F, Occupation = F, PlaceofEmployment = F, WorkAddress = F, WorkPhoneNumber = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EmployerInformationID")
 
@@ -1679,7 +1679,7 @@
 	#' @return A newly created EmployerInformation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEmployerInformation <- function(PlaceofEmployment = NULL, Occupation = NULL, WorkAddress = NULL, WorkPhoneNumber = NULL, FamilyGuardianID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEmployerInformation <- function(FamilyGuardianID = NULL, Occupation = NULL, PlaceofEmployment = NULL, WorkAddress = NULL, WorkPhoneNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1700,7 +1700,7 @@
 	#' @return The modified EmployerInformation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEmployerInformation <- function(EmployerInformationID, PlaceofEmployment = NULL, Occupation = NULL, WorkAddress = NULL, WorkPhoneNumber = NULL, FamilyGuardianID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEmployerInformation <- function(EmployerInformationID, FamilyGuardianID = NULL, Occupation = NULL, PlaceofEmployment = NULL, WorkAddress = NULL, WorkPhoneNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of FamilyStudentAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyStudentAccounts <- function(searchConditionsList = NULL, FamilyStudentAccountsID = F, ReligionID = F, PlaceOfWorship = F, FamilyID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyStudentAccounts <- function(searchConditionsList = NULL, FamilyID = F, FamilyStudentAccountsID = F, PlaceOfWorship = F, ReligionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of FamilyStudentAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyStudentAccounts <- function(FamilyStudentAccountsID, ReligionID = F, PlaceOfWorship = F, FamilyID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyStudentAccounts <- function(FamilyStudentAccountsID, FamilyID = F, PlaceOfWorship = F, ReligionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyStudentAccountsID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created FamilyStudentAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createFamilyStudentAccounts <- function(ReligionID = NULL, PlaceOfWorship = NULL, FamilyID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createFamilyStudentAccounts <- function(FamilyID = NULL, PlaceOfWorship = NULL, ReligionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified FamilyStudentAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyFamilyStudentAccounts <- function(FamilyStudentAccountsID, ReligionID = NULL, PlaceOfWorship = NULL, FamilyID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyFamilyStudentAccounts <- function(FamilyStudentAccountsID, FamilyID = NULL, PlaceOfWorship = NULL, ReligionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of FamilyAccessUsageHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listFamilyAccessUsageHistories <- function(searchConditionsList = NULL, FamilyAccessUsageHistoryID = F, StudentID = F, SecurityLocationID = F, FriendlyNameScreen = F, DisplayScreen = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listFamilyAccessUsageHistories <- function(searchConditionsList = NULL, CreatedTime = F, DisplayScreen = F, EntityID = F, FamilyAccessUsageHistoryID = F, FriendlyNameScreen = F, ModifiedTime = F, SecurityLocationID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of FamilyAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getFamilyAccessUsageHistory <- function(FamilyAccessUsageHistoryID, StudentID = F, SecurityLocationID = F, FriendlyNameScreen = F, DisplayScreen = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getFamilyAccessUsageHistory <- function(FamilyAccessUsageHistoryID, CreatedTime = F, DisplayScreen = F, EntityID = F, FriendlyNameScreen = F, ModifiedTime = F, SecurityLocationID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "FamilyAccessUsageHistoryID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created FamilyAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createFamilyAccessUsageHistory <- function(StudentID = NULL, SecurityLocationID = NULL, FriendlyNameScreen = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createFamilyAccessUsageHistory <- function(EntityID = NULL, FriendlyNameScreen = NULL, SecurityLocationID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified FamilyAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyFamilyAccessUsageHistory <- function(FamilyAccessUsageHistoryID, StudentID = NULL, SecurityLocationID = NULL, FriendlyNameScreen = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyFamilyAccessUsageHistory <- function(FamilyAccessUsageHistoryID, EntityID = NULL, FriendlyNameScreen = NULL, SecurityLocationID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of StudentAccessUsageHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentAccessUsageHistories <- function(searchConditionsList = NULL, StudentAccessUsageHistoryID = F, StudentID = F, SecurityLocationID = F, FriendlyNameScreen = F, DisplayScreen = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentAccessUsageHistories <- function(searchConditionsList = NULL, CreatedTime = F, DisplayScreen = F, EntityID = F, FriendlyNameScreen = F, ModifiedTime = F, SecurityLocationID = F, StudentAccessUsageHistoryID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of StudentAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentAccessUsageHistory <- function(StudentAccessUsageHistoryID, StudentID = F, SecurityLocationID = F, FriendlyNameScreen = F, DisplayScreen = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentAccessUsageHistory <- function(StudentAccessUsageHistoryID, CreatedTime = F, DisplayScreen = F, EntityID = F, FriendlyNameScreen = F, ModifiedTime = F, SecurityLocationID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentAccessUsageHistoryID")
 
@@ -2021,7 +2021,7 @@
 	#' @return A newly created StudentAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentAccessUsageHistory <- function(StudentID = NULL, SecurityLocationID = NULL, FriendlyNameScreen = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentAccessUsageHistory <- function(EntityID = NULL, FriendlyNameScreen = NULL, SecurityLocationID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2042,7 +2042,7 @@
 	#' @return The modified StudentAccessUsageHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentAccessUsageHistory <- function(StudentAccessUsageHistoryID, StudentID = NULL, SecurityLocationID = NULL, FriendlyNameScreen = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentAccessUsageHistory <- function(StudentAccessUsageHistoryID, EntityID = NULL, FriendlyNameScreen = NULL, SecurityLocationID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of StudentCalendarNotes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentCalendarNotes <- function(searchConditionsList = NULL, StudentCalendarNoteID = F, StudentID = F, Date = F, Note = F, Description = F, PriorityType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentCalendarNotes <- function(searchConditionsList = NULL, CreatedTime = F, Date = F, Description = F, ModifiedTime = F, Note = F, PriorityType = F, StudentCalendarNoteID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of StudentCalendarNote
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentCalendarNote <- function(StudentCalendarNoteID, StudentID = F, Date = F, Note = F, Description = F, PriorityType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentCalendarNote <- function(StudentCalendarNoteID, CreatedTime = F, Date = F, Description = F, ModifiedTime = F, Note = F, PriorityType = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentCalendarNoteID")
 
@@ -2135,7 +2135,7 @@
 	#' @return A newly created StudentCalendarNote
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentCalendarNote <- function(StudentID = NULL, Date = NULL, Note = NULL, Description = NULL, PriorityType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentCalendarNote <- function(Date = NULL, Description = NULL, Note = NULL, PriorityType = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2156,7 +2156,7 @@
 	#' @return The modified StudentCalendarNote
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentCalendarNote <- function(StudentCalendarNoteID, StudentID = NULL, Date = NULL, Note = NULL, Description = NULL, PriorityType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentCalendarNote <- function(StudentCalendarNoteID, Date = NULL, Description = NULL, Note = NULL, PriorityType = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

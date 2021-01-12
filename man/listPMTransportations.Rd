@@ -6,9 +6,9 @@
 \usage{
 listPMTransportations(
   searchConditionsList = NULL,
-  PMTransportationID = F,
   Code = F,
   Description = F,
+  PMTransportationID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

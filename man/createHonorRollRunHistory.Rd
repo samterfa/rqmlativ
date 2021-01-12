@@ -5,12 +5,12 @@
 \title{Create a HonorRollRunHistory}
 \usage{
 createHonorRollRunHistory(
+  Calculation = NULL,
+  Date = NULL,
+  Description = NULL,
+  GPAAsOfDate = NULL,
   HonorRollRunID = NULL,
   StudentFilterParameter = NULL,
-  Date = NULL,
-  GPAAsOfDate = NULL,
-  Description = NULL,
-  Calculation = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 getTempNameEmailError(
   TempNameEmailErrorID,
-  ErrorText = F,
+  CreatedTime = F,
   ErrorField = F,
   ErrorNumber = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorText = F,
   ModifiedTime = F,
   TempNameEmailID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

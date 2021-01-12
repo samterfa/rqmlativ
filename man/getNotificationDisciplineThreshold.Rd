@@ -6,12 +6,12 @@
 \usage{
 getNotificationDisciplineThreshold(
   NotificationDisciplineThresholdID,
-  NotificationID = F,
-  DisciplineThresholdID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisciplineThresholdID = F,
   ModifiedTime = F,
+  NotificationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

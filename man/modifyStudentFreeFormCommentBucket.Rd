@@ -6,9 +6,9 @@
 \usage{
 modifyStudentFreeFormCommentBucket(
   StudentFreeFormCommentBucketID,
-  StudentSectionID = NULL,
-  GradingPeriodID = NULL,
   Comment = NULL,
+  GradingPeriodID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

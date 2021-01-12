@@ -6,13 +6,13 @@
 \usage{
 getTempHonorRollGradeMarkMethodRangeGradingPeriodGradeBucket(
   TempHonorRollGradeMarkMethodRangeGradingPeriodGradeBucketID,
-  HonorRollGradeMarkMethodRangeGradingPeriodGradeBucketID = F,
-  TempHonorRollGradeMarkMethodRangeID = F,
-  GradingPeriodGradeBucketID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradingPeriodGradeBucketID = F,
+  HonorRollGradeMarkMethodRangeGradingPeriodGradeBucketID = F,
   ModifiedTime = F,
+  TempHonorRollGradeMarkMethodRangeID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

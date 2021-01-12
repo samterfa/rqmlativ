@@ -6,14 +6,14 @@
 \usage{
 listTempHomeroomErrors(
   searchConditionsList = NULL,
+  Code = F,
+  CreatedTime = F,
+  FailureReason = F,
+  ModifiedTime = F,
   TempHomeroomErrorID = F,
   TempHomeroomRecordID = F,
-  Code = F,
-  FailureReason = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

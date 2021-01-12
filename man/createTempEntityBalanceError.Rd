@@ -5,11 +5,11 @@
 \title{Create a TempEntityBalanceError}
 \usage{
 createTempEntityBalanceError(
-  FundDimensionID = NULL,
-  FundDimensionCodeDescription = NULL,
   ActivityAccountingGroupID = NULL,
   EntityCodeName = NULL,
   Error = NULL,
+  FundDimensionCodeDescription = NULL,
+  FundDimensionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

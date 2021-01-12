@@ -5,13 +5,13 @@
 \title{Create an AppleSchoolManagerConfig}
 \usage{
 createAppleSchoolManagerConfig(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   AsOfDateSetting = NULL,
+  DistrictID = NULL,
   EntityIDSelectedList = NULL,
+  MediaID = NULL,
+  SchoolYearID = NULL,
   SpecifiedAsOfDate = NULL,
   ZipFileName = NULL,
-  MediaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

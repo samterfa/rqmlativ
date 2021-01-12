@@ -7,8 +7,8 @@
 createDentalComment(
   Code = NULL,
   Description = NULL,
-  DistrictID = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   entityId = 1,
   query = NULL,

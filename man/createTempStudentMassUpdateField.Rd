@@ -5,15 +5,15 @@
 \title{Create a TempStudentMassUpdateField}
 \usage{
 createTempStudentMassUpdateField(
-  StudentID = NULL,
   AffectedPrimaryKey = NULL,
-  FullNameLFM = NULL,
   FieldName = NULL,
-  OriginalValue = NULL,
   FriendlyOriginalValue = NULL,
-  UpdatedValue = NULL,
   FriendlyUpdatedValue = NULL,
+  FullNameLFM = NULL,
+  OriginalValue = NULL,
   RelatedType = NULL,
+  StudentID = NULL,
+  UpdatedValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

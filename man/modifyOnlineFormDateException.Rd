@@ -6,9 +6,9 @@
 \usage{
 modifyOnlineFormDateException(
   OnlineFormDateExceptionID,
-  OnlineFormID = NULL,
   ObjectID = NULL,
   ObjectPrimaryKey = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

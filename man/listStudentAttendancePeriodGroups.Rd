@@ -6,12 +6,12 @@
 \usage{
 listStudentAttendancePeriodGroups(
   searchConditionsList = NULL,
-  StudentAttendanceID = F,
-  StudentAttendancePeriodID = F,
   AttendancePeriodID = F,
-  StudentID = F,
   EntityID = F,
   SchoolYearID = F,
+  StudentAttendanceID = F,
+  StudentAttendancePeriodID = F,
+  StudentID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

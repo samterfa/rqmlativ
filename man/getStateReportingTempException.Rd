@@ -6,13 +6,13 @@
 \usage{
 getStateReportingTempException(
   StateReportingTempExceptionID,
-  TempExceptionID = F,
-  RecordIdentifier = F,
-  Message = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Message = F,
   ModifiedTime = F,
+  RecordIdentifier = F,
+  TempExceptionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

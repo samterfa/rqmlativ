@@ -6,10 +6,10 @@
 \usage{
 modifyTempMassChangeResult(
   TempMassChangeResultID,
-  Type = NULL,
-  ObjectIdentifier = NULL,
   Message = NULL,
+  ObjectIdentifier = NULL,
   Result = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

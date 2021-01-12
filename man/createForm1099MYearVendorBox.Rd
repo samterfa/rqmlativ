@@ -5,9 +5,9 @@
 \title{Create a Form1099MYearVendorBox}
 \usage{
 createForm1099MYearVendorBox(
+  Amount = NULL,
   Form1099MYearVendorID = NULL,
   Form1099TypeID = NULL,
-  Amount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

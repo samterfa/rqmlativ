@@ -6,9 +6,9 @@
 \usage{
 modifyGASBRevenueAndExpenditureColumnIncludedAccount(
   GASBRevenueAndExpenditureColumnIncludedAccountID,
-  GASBRevenueAndExpenditureIncludedAccountID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBRevenueAndExpenditureIncludedAccountID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

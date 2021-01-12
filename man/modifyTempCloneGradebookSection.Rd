@@ -6,9 +6,9 @@
 \usage{
 modifyTempCloneGradebookSection(
   TempCloneGradebookSectionID,
-  SectionID = NULL,
   CanClone = NULL,
   ErrorMessage = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

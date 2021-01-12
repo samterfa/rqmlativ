@@ -5,14 +5,14 @@
 \title{Create a TempGradeReportTemplate}
 \usage{
 createTempGradeReportTemplate(
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityCodeNameClonedFrom = NULL,
   EntityCodeNameClonedTo = NULL,
-  OriginalGradeReportTemplateDescription = NULL,
-  NewGradeReportTemplateDescription = NULL,
-  HasErrors = NULL,
+  EntityID = NULL,
   ErrorCount = NULL,
+  HasErrors = NULL,
+  NewGradeReportTemplateDescription = NULL,
+  OriginalGradeReportTemplateDescription = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

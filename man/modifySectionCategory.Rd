@@ -6,8 +6,8 @@
 \usage{
 modifySectionCategory(
   SectionCategoryID,
-  SectionGradeBucketID = NULL,
   CategoryID = NULL,
+  SectionGradeBucketID = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

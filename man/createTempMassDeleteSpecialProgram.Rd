@@ -5,13 +5,13 @@
 \title{Create a TempMassDeleteSpecialProgram}
 \usage{
 createTempMassDeleteSpecialProgram(
+  AffectedPrimaryKey = NULL,
+  EndDate = NULL,
   RecordType = NULL,
   RecordTypeFriendlyName = NULL,
-  StudentID = NULL,
-  StudentFullName = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  AffectedPrimaryKey = NULL,
+  StudentFullName = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

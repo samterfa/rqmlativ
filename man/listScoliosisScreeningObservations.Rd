@@ -6,13 +6,13 @@
 \usage{
 listScoliosisScreeningObservations(
   searchConditionsList = NULL,
-  ScoliosisScreeningObservationID = F,
-  ScoliosisScreeningID = F,
-  ScoliosisObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  ScoliosisObservationID = F,
+  ScoliosisScreeningID = F,
+  ScoliosisScreeningObservationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

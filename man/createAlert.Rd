@@ -5,11 +5,11 @@
 \title{Create an Alert}
 \usage{
 createAlert(
-  Information = NULL,
-  StudentID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  Information = NULL,
   IsCritical = NULL,
+  StartDate = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,16 +5,16 @@
 \title{Create a DroppedStudentAttendancePeriod}
 \usage{
 createDroppedStudentAttendancePeriod(
-  AttendanceTypeID = NULL,
-  AttendanceReasonID = NULL,
   AttendancePeriodID = NULL,
-  Comment = NULL,
-  IncidentOffenseNameActionDetailID = NULL,
-  StudentID = NULL,
+  AttendanceReasonID = NULL,
+  AttendanceTypeID = NULL,
   CalendarDayID = NULL,
-  IsGuardianNotified = NULL,
+  Comment = NULL,
   CourseID = NULL,
+  IncidentOffenseNameActionDetailID = NULL,
+  IsGuardianNotified = NULL,
   SectionID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

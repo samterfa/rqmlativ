@@ -5,8 +5,8 @@
 \title{Create a NotificationGradeBucket}
 \usage{
 createNotificationGradeBucket(
-  NotificationID = NULL,
   GradeBucketID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

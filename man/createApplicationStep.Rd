@@ -6,11 +6,11 @@
 \usage{
 createApplicationStep(
   ApplicationFormatID = NULL,
-  Name = NULL,
-  ShortDescription = NULL,
+  Description = NULL,
   DisplayOrder = NULL,
   Instruction = NULL,
-  Description = NULL,
+  Name = NULL,
+  ShortDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

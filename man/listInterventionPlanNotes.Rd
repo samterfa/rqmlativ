@@ -6,13 +6,13 @@
 \usage{
 listInterventionPlanNotes(
   searchConditionsList = NULL,
-  InterventionPlanNoteID = F,
+  CreatedTime = F,
   InterventionPlanID = F,
+  InterventionPlanNoteID = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

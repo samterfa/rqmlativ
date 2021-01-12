@@ -5,12 +5,12 @@
 \title{Create an ElectronicTranscriptLicensureNoteV1}
 \usage{
 createElectronicTranscriptLicensureNoteV1(
+  ElectronicTranscriptRunHistoryID = NULL,
+  EntityID = NULL,
   LicensureName = NULL,
   LicensurePassageDate = NULL,
   NoteMessage = NULL,
   OrganizationName = NULL,
-  ElectronicTranscriptRunHistoryID = NULL,
-  EntityID = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,

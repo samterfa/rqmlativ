@@ -6,13 +6,13 @@
 \usage{
 listThresholdResetRangeAttendanceTypes(
   searchConditionsList = NULL,
-  ThresholdResetRangeAttendanceTypeID = F,
   AttendanceTypeID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
+  ThresholdResetRangeAttendanceTypeID = F,
   ThresholdResetRangeID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

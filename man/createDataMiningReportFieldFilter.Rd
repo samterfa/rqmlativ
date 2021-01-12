@@ -5,15 +5,15 @@
 \title{Create a DataMiningReportFieldFilter}
 \usage{
 createDataMiningReportFieldFilter(
-  FilterType = NULL,
-  Low = NULL,
-  High = NULL,
-  SubtopicFieldID = NULL,
-  DataMiningReportID = NULL,
-  IsPrompt = NULL,
-  PromptLabel = NULL,
-  PromptIsRequired = NULL,
   ComparisonType = NULL,
+  DataMiningReportID = NULL,
+  FilterType = NULL,
+  High = NULL,
+  IsPrompt = NULL,
+  Low = NULL,
+  PromptIsRequired = NULL,
+  PromptLabel = NULL,
+  SubtopicFieldID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

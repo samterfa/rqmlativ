@@ -5,9 +5,9 @@
 \title{Create a TempCalcGroupBucketRemoveStandardOrSubjectResult}
 \usage{
 createTempCalcGroupBucketRemoveStandardOrSubjectResult(
+  ErrorText = NULL,
   IsError = NULL,
   StandardOrSubjectDescription = NULL,
-  ErrorText = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a ReimbursementMonth}
 \usage{
 createReimbursementMonth(
-  NumericYear = NULL,
+  Description = NULL,
   DisplayOrder = NULL,
   NumericMonth = NULL,
-  Description = NULL,
+  NumericYear = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

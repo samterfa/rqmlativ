@@ -5,10 +5,10 @@
 \title{Create a DisciplineLetterTemplateHeaderRow}
 \usage{
 createDisciplineLetterTemplateHeaderRow(
-  DisciplineLetterTemplateID = NULL,
-  SortNumber = NULL,
   ColumnCount = NULL,
   DisciplineLetterTemplateHeaderRowIDClonedFrom = NULL,
+  DisciplineLetterTemplateID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

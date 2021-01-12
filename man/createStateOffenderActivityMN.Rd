@@ -5,14 +5,14 @@
 \title{Create a StateOffenderActivityMN}
 \usage{
 createStateOffenderActivityMN(
-  Code = NULL,
-  Description = NULL,
-  SeverityRank = NULL,
   ActivityTypeCode = NULL,
   ActivityTypeDescription = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
+  Code = NULL,
+  Description = NULL,
   IsInvalid = NULL,
+  SeverityRank = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

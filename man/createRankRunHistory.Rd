@@ -5,16 +5,16 @@
 \title{Create a RankRunHistory}
 \usage{
 createRankRunHistory(
-  RankMethodID = NULL,
-  Date = NULL,
-  GPAAsOfDate = NULL,
-  Description = NULL,
   Calculation = NULL,
-  StudentGroup = NULL,
-  GradeLevelIDCohort = NULL,
+  Date = NULL,
+  Description = NULL,
   EntityID = NULL,
+  GPAAsOfDate = NULL,
+  GradeLevelIDCohort = NULL,
+  RankMethodID = NULL,
   SchoolYearID = NULL,
   StudentActiveAsOfDate = NULL,
+  StudentGroup = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

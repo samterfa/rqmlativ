@@ -6,8 +6,8 @@
 \usage{
 modifyGradeReportAcademicSessionTemplateGradeLevel(
   GradeReportAcademicSessionTemplateGradeLevelID,
-  GradeReportAcademicSessionTemplateID = NULL,
   GradeLevelID = NULL,
+  GradeReportAcademicSessionTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

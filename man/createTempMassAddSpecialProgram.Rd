@@ -5,12 +5,12 @@
 \title{Create a TempMassAddSpecialProgram}
 \usage{
 createTempMassAddSpecialProgram(
-  SpecialProgramDBTableName = NULL,
   RecordType = NULL,
   RecordTypeFriendlyName = NULL,
-  StudentID = NULL,
-  StudentFullName = NULL,
+  SpecialProgramDBTableName = NULL,
   StudentDefaultEntityID = NULL,
+  StudentFullName = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

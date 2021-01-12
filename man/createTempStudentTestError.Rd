@@ -5,16 +5,14 @@
 \title{Create a TempStudentTestError}
 \usage{
 createTempStudentTestError(
-  FirstName = NULL,
-  LastName = NULL,
-  MiddleName = NULL,
   BirthDate = NULL,
-  Gender = NULL,
-  StudentNumber = NULL,
   DateTaken = NULL,
-  TestTypeCode = NULL,
+  FirstName = NULL,
+  Gender = NULL,
+  LastName = NULL,
   Message = NULL,
-  TestTypeCodeDisplayName = NULL,
+  MiddleName = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

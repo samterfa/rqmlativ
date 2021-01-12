@@ -6,9 +6,9 @@
 \usage{
 createGASBBalanceSheetRow(
   GASBBalanceSheetReportID = NULL,
-  TotalFunds = NULL,
   GASBExtractRunID = NULL,
   RowDescription = NULL,
+  TotalFunds = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

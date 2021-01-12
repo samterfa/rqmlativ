@@ -6,11 +6,11 @@
 \usage{
 createTempMasterDateChangeDetail(
   CurrentDate = NULL,
+  DateDescriptor = NULL,
+  HighDate = NULL,
+  LowDate = NULL,
   NewDate = NULL,
   UsedBy = NULL,
-  DateDescriptor = NULL,
-  LowDate = NULL,
-  HighDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -18,7 +18,7 @@
 	#' @return A list of BudgetPublicationDetailV1IncludedAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBudgetPublicationDetailV1IncludedAccounts <- function(searchConditionsList = NULL, BudgetPublicationDetailV1IncludedAccountID = F, BudgetPublicationDetailV1ID = F, AccountID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Amount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBudgetPublicationDetailV1IncludedAccounts <- function(searchConditionsList = NULL, AccountID = F, Amount = F, BudgetPublicationDetailV1ID = F, BudgetPublicationDetailV1IncludedAccountID = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of BudgetPublicationDetailV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBudgetPublicationDetailV1IncludedAccount <- function(BudgetPublicationDetailV1IncludedAccountID, BudgetPublicationDetailV1ID = F, AccountID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Amount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBudgetPublicationDetailV1IncludedAccount <- function(BudgetPublicationDetailV1IncludedAccountID, AccountID = F, Amount = F, BudgetPublicationDetailV1ID = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BudgetPublicationDetailV1IncludedAccountID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created BudgetPublicationDetailV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBudgetPublicationDetailV1IncludedAccount <- function(BudgetPublicationDetailV1ID = NULL, AccountID = NULL, Amount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBudgetPublicationDetailV1IncludedAccount <- function(AccountID = NULL, Amount = NULL, BudgetPublicationDetailV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified BudgetPublicationDetailV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBudgetPublicationDetailV1IncludedAccount <- function(BudgetPublicationDetailV1IncludedAccountID, BudgetPublicationDetailV1ID = NULL, AccountID = NULL, Amount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBudgetPublicationDetailV1IncludedAccount <- function(BudgetPublicationDetailV1IncludedAccountID, AccountID = NULL, Amount = NULL, BudgetPublicationDetailV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of ConfigFiscalYears
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listConfigFiscalYears <- function(searchConditionsList = NULL, ConfigFiscalYearID = F, FiscalYearID = F, GeneralFundRestrictedFilter = F, GeneralFundOtherFilter = F, FoodServiceFundFilter = F, CommunityServiceFundFilter = F, BuildingConstructionFundFilter = F, DebtServiceFundFilter = F, TrustFundFilter = F, InternalServiceFundFilter = F, OPEBRevocableTrustFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBDebtServiceFundFilter = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, GeneralFundRestrictedStandardFilterData = F, GeneralFundOtherStandardFilterData = F, FoodServiceFundStandardFilterData = F, CommunityServiceFundStandardFilterData = F, BuildingConstructionFundStandardFilterData = F, DebtServiceFundStandardFilterData = F, TrustFundStandardFilterData = F, InternalServiceFundStandardFilterData = F, OPEBRevocableTrustFundStandardFilterData = F, OPEBIrrevocableTrustFundStandardFilterData = F, OPEBDebtServiceFundStandardFilterData = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listConfigFiscalYears <- function(searchConditionsList = NULL, BuildingConstructionFundFilter = F, BuildingConstructionFundStandardFilterData = F, CommunityServiceFundFilter = F, CommunityServiceFundStandardFilterData = F, ConfigFiscalYearID = F, CreatedTime = F, DebtServiceFundFilter = F, DebtServiceFundStandardFilterData = F, FiscalYearID = F, FoodServiceFundFilter = F, FoodServiceFundStandardFilterData = F, GeneralFundOtherFilter = F, GeneralFundOtherStandardFilterData = F, GeneralFundRestrictedFilter = F, GeneralFundRestrictedStandardFilterData = F, InternalServiceFundFilter = F, InternalServiceFundStandardFilterData = F, ModifiedTime = F, OPEBDebtServiceFundFilter = F, OPEBDebtServiceFundStandardFilterData = F, OPEBIrrevocableTrustFundFilter = F, OPEBIrrevocableTrustFundStandardFilterData = F, OPEBRevocableTrustFundFilter = F, OPEBRevocableTrustFundStandardFilterData = F, TrustFundFilter = F, TrustFundStandardFilterData = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of ConfigFiscalYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getConfigFiscalYear <- function(ConfigFiscalYearID, FiscalYearID = F, GeneralFundRestrictedFilter = F, GeneralFundOtherFilter = F, FoodServiceFundFilter = F, CommunityServiceFundFilter = F, BuildingConstructionFundFilter = F, DebtServiceFundFilter = F, TrustFundFilter = F, InternalServiceFundFilter = F, OPEBRevocableTrustFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBDebtServiceFundFilter = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, GeneralFundRestrictedStandardFilterData = F, GeneralFundOtherStandardFilterData = F, FoodServiceFundStandardFilterData = F, CommunityServiceFundStandardFilterData = F, BuildingConstructionFundStandardFilterData = F, DebtServiceFundStandardFilterData = F, TrustFundStandardFilterData = F, InternalServiceFundStandardFilterData = F, OPEBRevocableTrustFundStandardFilterData = F, OPEBIrrevocableTrustFundStandardFilterData = F, OPEBDebtServiceFundStandardFilterData = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getConfigFiscalYear <- function(ConfigFiscalYearID, BuildingConstructionFundFilter = F, BuildingConstructionFundStandardFilterData = F, CommunityServiceFundFilter = F, CommunityServiceFundStandardFilterData = F, CreatedTime = F, DebtServiceFundFilter = F, DebtServiceFundStandardFilterData = F, FiscalYearID = F, FoodServiceFundFilter = F, FoodServiceFundStandardFilterData = F, GeneralFundOtherFilter = F, GeneralFundOtherStandardFilterData = F, GeneralFundRestrictedFilter = F, GeneralFundRestrictedStandardFilterData = F, InternalServiceFundFilter = F, InternalServiceFundStandardFilterData = F, ModifiedTime = F, OPEBDebtServiceFundFilter = F, OPEBDebtServiceFundStandardFilterData = F, OPEBIrrevocableTrustFundFilter = F, OPEBIrrevocableTrustFundStandardFilterData = F, OPEBRevocableTrustFundFilter = F, OPEBRevocableTrustFundStandardFilterData = F, TrustFundFilter = F, TrustFundStandardFilterData = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ConfigFiscalYearID")
 
@@ -246,7 +246,7 @@
 	#' @return A list of BudgetPublicationExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBudgetPublicationExtractRuns <- function(searchConditionsList = NULL, BudgetPublicationExtractRunID = F, FiscalYearID = F, DistrictName = F, DistrictNumber = F, LongTermDebtAtStartOfPriorYear = F, LongTermDebtNewIssues = F, LongTermDebtRedeemedIssues = F, ShortTermCertificateOfIndebtedness = F, ShortTermOtherIndebtedness = F, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = F, ADMTotalOperatingExpenditure = F, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = F, GeneralFundRestrictedFilter = F, GeneralFundOtherFilter = F, FoodServiceFundFilter = F, CommunityServiceFundFilter = F, BuildingConstructionFundFilter = F, DebtServiceFundFilter = F, TrustFundFilter = F, InternalServiceFundFilter = F, OPEBRevocableTrustFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBDebtServiceFundFilter = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedAccountsCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBudgetPublicationExtractRuns <- function(searchConditionsList = NULL, ADMTotalOperatingExpenditure = F, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = F, BudgetPublicationExtractRunID = F, BuildingConstructionFundFilter = F, CommunityServiceFundFilter = F, CreatedTime = F, DebtServiceFundFilter = F, DistrictName = F, DistrictNumber = F, ExtractedAccountsCount = F, FatalExceptionCount = F, FiscalYearID = F, FoodServiceFundFilter = F, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = F, GeneralFundOtherFilter = F, GeneralFundRestrictedFilter = F, InternalServiceFundFilter = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, LongTermDebtAtStartOfPriorYear = F, LongTermDebtNewIssues = F, LongTermDebtRedeemedIssues = F, ModifiedTime = F, NonFatalExceptionCount = F, OPEBDebtServiceFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBRevocableTrustFundFilter = F, ShortTermCertificateOfIndebtedness = F, ShortTermOtherIndebtedness = F, TrustFundFilter = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of BudgetPublicationExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBudgetPublicationExtractRun <- function(BudgetPublicationExtractRunID, FiscalYearID = F, DistrictName = F, DistrictNumber = F, LongTermDebtAtStartOfPriorYear = F, LongTermDebtNewIssues = F, LongTermDebtRedeemedIssues = F, ShortTermCertificateOfIndebtedness = F, ShortTermOtherIndebtedness = F, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = F, ADMTotalOperatingExpenditure = F, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = F, GeneralFundRestrictedFilter = F, GeneralFundOtherFilter = F, FoodServiceFundFilter = F, CommunityServiceFundFilter = F, BuildingConstructionFundFilter = F, DebtServiceFundFilter = F, TrustFundFilter = F, InternalServiceFundFilter = F, OPEBRevocableTrustFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBDebtServiceFundFilter = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedAccountsCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBudgetPublicationExtractRun <- function(BudgetPublicationExtractRunID, ADMTotalOperatingExpenditure = F, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = F, BuildingConstructionFundFilter = F, CommunityServiceFundFilter = F, CreatedTime = F, DebtServiceFundFilter = F, DistrictName = F, DistrictNumber = F, ExtractedAccountsCount = F, FatalExceptionCount = F, FiscalYearID = F, FoodServiceFundFilter = F, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = F, GeneralFundOtherFilter = F, GeneralFundRestrictedFilter = F, InternalServiceFundFilter = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, LongTermDebtAtStartOfPriorYear = F, LongTermDebtNewIssues = F, LongTermDebtRedeemedIssues = F, ModifiedTime = F, NonFatalExceptionCount = F, OPEBDebtServiceFundFilter = F, OPEBIrrevocableTrustFundFilter = F, OPEBRevocableTrustFundFilter = F, ShortTermCertificateOfIndebtedness = F, ShortTermOtherIndebtedness = F, TrustFundFilter = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BudgetPublicationExtractRunID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created BudgetPublicationExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBudgetPublicationExtractRun <- function(FiscalYearID = NULL, DistrictName = NULL, DistrictNumber = NULL, LongTermDebtAtStartOfPriorYear = NULL, LongTermDebtNewIssues = NULL, LongTermDebtRedeemedIssues = NULL, ShortTermCertificateOfIndebtedness = NULL, ShortTermOtherIndebtedness = NULL, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL, ADMTotalOperatingExpenditure = NULL, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBudgetPublicationExtractRun <- function(ADMTotalOperatingExpenditure = NULL, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL, DistrictName = NULL, DistrictNumber = NULL, FiscalYearID = NULL, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL, LongTermDebtAtStartOfPriorYear = NULL, LongTermDebtNewIssues = NULL, LongTermDebtRedeemedIssues = NULL, ShortTermCertificateOfIndebtedness = NULL, ShortTermOtherIndebtedness = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified BudgetPublicationExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBudgetPublicationExtractRun <- function(BudgetPublicationExtractRunID, FiscalYearID = NULL, DistrictName = NULL, DistrictNumber = NULL, LongTermDebtAtStartOfPriorYear = NULL, LongTermDebtNewIssues = NULL, LongTermDebtRedeemedIssues = NULL, ShortTermCertificateOfIndebtedness = NULL, ShortTermOtherIndebtedness = NULL, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL, ADMTotalOperatingExpenditure = NULL, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBudgetPublicationExtractRun <- function(BudgetPublicationExtractRunID, ADMTotalOperatingExpenditure = NULL, ADMTotalServedAndTuitionedOutAndAdjustedExtendedInPriorYear = NULL, DistrictName = NULL, DistrictNumber = NULL, FiscalYearID = NULL, GeneralFundDeficitInExcessOfTwoAndAHalfPercentOfExpendituresAtEndOfPriorYear = NULL, LongTermDebtAtStartOfPriorYear = NULL, LongTermDebtNewIssues = NULL, LongTermDebtRedeemedIssues = NULL, ShortTermCertificateOfIndebtedness = NULL, ShortTermOtherIndebtedness = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of BudgetPublicationDetailV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBudgetPublicationDetailV1s <- function(searchConditionsList = NULL, BudgetPublicationDetailV1ID = F, BudgetPublicationExtractRunID = F, CellRow = F, CellColumn = F, Amount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedAmount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBudgetPublicationDetailV1s <- function(searchConditionsList = NULL, Amount = F, BudgetPublicationDetailV1ID = F, BudgetPublicationExtractRunID = F, CellColumn = F, CellRow = F, CreatedTime = F, ExtractedAmount = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of BudgetPublicationDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBudgetPublicationDetailV1 <- function(BudgetPublicationDetailV1ID, BudgetPublicationExtractRunID = F, CellRow = F, CellColumn = F, Amount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedAmount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBudgetPublicationDetailV1 <- function(BudgetPublicationDetailV1ID, Amount = F, BudgetPublicationExtractRunID = F, CellColumn = F, CellRow = F, CreatedTime = F, ExtractedAmount = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BudgetPublicationDetailV1ID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created BudgetPublicationDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBudgetPublicationDetailV1 <- function(BudgetPublicationExtractRunID = NULL, CellRow = NULL, CellColumn = NULL, Amount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBudgetPublicationDetailV1 <- function(Amount = NULL, BudgetPublicationExtractRunID = NULL, CellColumn = NULL, CellRow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified BudgetPublicationDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBudgetPublicationDetailV1 <- function(BudgetPublicationDetailV1ID, BudgetPublicationExtractRunID = NULL, CellRow = NULL, CellColumn = NULL, Amount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBudgetPublicationDetailV1 <- function(BudgetPublicationDetailV1ID, Amount = NULL, BudgetPublicationExtractRunID = NULL, CellColumn = NULL, CellRow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of BudgetPublicationExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBudgetPublicationExceptions <- function(searchConditionsList = NULL, BudgetPublicationExceptionID = F, BudgetPublicationExtractRunID = F, AccountID = F, Amount = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBudgetPublicationExceptions <- function(searchConditionsList = NULL, AccountID = F, Amount = F, BudgetPublicationExceptionID = F, BudgetPublicationExtractRunID = F, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of BudgetPublicationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBudgetPublicationException <- function(BudgetPublicationExceptionID, BudgetPublicationExtractRunID = F, AccountID = F, Amount = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBudgetPublicationException <- function(BudgetPublicationExceptionID, AccountID = F, Amount = F, BudgetPublicationExtractRunID = F, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BudgetPublicationExceptionID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created BudgetPublicationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBudgetPublicationException <- function(BudgetPublicationExtractRunID = NULL, AccountID = NULL, Amount = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBudgetPublicationException <- function(AccountID = NULL, Amount = NULL, BudgetPublicationExtractRunID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified BudgetPublicationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBudgetPublicationException <- function(BudgetPublicationExceptionID, BudgetPublicationExtractRunID = NULL, AccountID = NULL, Amount = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBudgetPublicationException <- function(BudgetPublicationExceptionID, AccountID = NULL, Amount = NULL, BudgetPublicationExtractRunID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of UFARSExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSExceptions <- function(searchConditionsList = NULL, UFARSExceptionID = F, UFARSExtractRunID = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountFiscalYearID = F, UFARSGeneralLedgerV1ID = F, UFARSGeneralLedgerV1IncludedAccountID = F, UFARSRevenueExpenseV1ID = F, ExtractedCrosswalkAccount = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSExceptions <- function(searchConditionsList = NULL, AccountFiscalYearID = F, CreatedTime = F, ExtractedCrosswalkAccount = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Type = F, UFARSExceptionID = F, UFARSExtractRunID = F, UFARSGeneralLedgerV1ID = F, UFARSGeneralLedgerV1IncludedAccountID = F, UFARSRevenueExpenseV1ID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of UFARSException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSException <- function(UFARSExceptionID, UFARSExtractRunID = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountFiscalYearID = F, UFARSGeneralLedgerV1ID = F, UFARSGeneralLedgerV1IncludedAccountID = F, UFARSRevenueExpenseV1ID = F, ExtractedCrosswalkAccount = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSException <- function(UFARSExceptionID, AccountFiscalYearID = F, CreatedTime = F, ExtractedCrosswalkAccount = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Type = F, UFARSExtractRunID = F, UFARSGeneralLedgerV1ID = F, UFARSGeneralLedgerV1IncludedAccountID = F, UFARSRevenueExpenseV1ID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSExceptionID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created UFARSException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSException <- function(UFARSExtractRunID = NULL, IsFatal = NULL, Type = NULL, Message = NULL, AccountFiscalYearID = NULL, UFARSGeneralLedgerV1ID = NULL, UFARSGeneralLedgerV1IncludedAccountID = NULL, UFARSRevenueExpenseV1ID = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSException <- function(AccountFiscalYearID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Type = NULL, UFARSExtractRunID = NULL, UFARSGeneralLedgerV1ID = NULL, UFARSGeneralLedgerV1IncludedAccountID = NULL, UFARSRevenueExpenseV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified UFARSException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSException <- function(UFARSExceptionID, UFARSExtractRunID = NULL, IsFatal = NULL, Type = NULL, Message = NULL, AccountFiscalYearID = NULL, UFARSGeneralLedgerV1ID = NULL, UFARSGeneralLedgerV1IncludedAccountID = NULL, UFARSRevenueExpenseV1ID = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSException <- function(UFARSExceptionID, AccountFiscalYearID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Type = NULL, UFARSExtractRunID = NULL, UFARSGeneralLedgerV1ID = NULL, UFARSGeneralLedgerV1IncludedAccountID = NULL, UFARSRevenueExpenseV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -702,7 +702,7 @@
 	#' @return A list of UFARSExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSExports <- function(searchConditionsList = NULL, UFARSExportID = F, UFARSExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSExports <- function(searchConditionsList = NULL, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UFARSExportID = F, UFARSExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of UFARSExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSExport <- function(UFARSExportID, UFARSExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSExport <- function(UFARSExportID, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UFARSExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSExportID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created UFARSExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSExport <- function(UFARSExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSExport <- function(MediaID = NULL, Status = NULL, UFARSExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified UFARSExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSExport <- function(UFARSExportID, UFARSExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSExport <- function(UFARSExportID, MediaID = NULL, Status = NULL, UFARSExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of UFARSExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSExtractRuns <- function(searchConditionsList = NULL, UFARSExtractRunID = F, FiscalYearID = F, IsAudited = F, RegionNumber = F, DistrictNumber = F, DistrictType = F, AccountingPeriod = F, TotalGNLRecords = F, TotalExpenseRecords = F, TotalRevenueRecords = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, GeneralLedgerFiscalYearEndingBalance = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSExtractRuns <- function(searchConditionsList = NULL, AccountingPeriod = F, CreatedTime = F, DistrictNumber = F, DistrictType = F, FatalExceptionCount = F, FiscalYearID = F, GeneralLedgerFiscalYearEndingBalance = F, IsAudited = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, RegionNumber = F, TotalExpenseRecords = F, TotalGNLRecords = F, TotalRevenueRecords = F, UFARSExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of UFARSExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSExtractRun <- function(UFARSExtractRunID, FiscalYearID = F, IsAudited = F, RegionNumber = F, DistrictNumber = F, DistrictType = F, AccountingPeriod = F, TotalGNLRecords = F, TotalExpenseRecords = F, TotalRevenueRecords = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, GeneralLedgerFiscalYearEndingBalance = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSExtractRun <- function(UFARSExtractRunID, AccountingPeriod = F, CreatedTime = F, DistrictNumber = F, DistrictType = F, FatalExceptionCount = F, FiscalYearID = F, GeneralLedgerFiscalYearEndingBalance = F, IsAudited = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, RegionNumber = F, TotalExpenseRecords = F, TotalGNLRecords = F, TotalRevenueRecords = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSExtractRunID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created UFARSExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSExtractRun <- function(FiscalYearID = NULL, IsAudited = NULL, RegionNumber = NULL, DistrictNumber = NULL, DistrictType = NULL, AccountingPeriod = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSExtractRun <- function(AccountingPeriod = NULL, DistrictNumber = NULL, DistrictType = NULL, FiscalYearID = NULL, IsAudited = NULL, RegionNumber = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified UFARSExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSExtractRun <- function(UFARSExtractRunID, FiscalYearID = NULL, IsAudited = NULL, RegionNumber = NULL, DistrictNumber = NULL, DistrictType = NULL, AccountingPeriod = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSExtractRun <- function(UFARSExtractRunID, AccountingPeriod = NULL, DistrictNumber = NULL, DistrictType = NULL, FiscalYearID = NULL, IsAudited = NULL, RegionNumber = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of UFARSGeneralLedgerV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSGeneralLedgerV1s <- function(searchConditionsList = NULL, UFARSGeneralLedgerV1ID = F, UFARSExtractRunID = F, DimensionValueFund = F, DimensionValueGNL = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DimensionIDFund = F, DimensionIDGNL = F, FiscalYearBeginningBalance = F, FiscalYearDebits = F, FiscalYearCredits = F, FiscalYearEndingBalance = F, ExcludeFromExport = F, CrosswalkMNValueFund = F, CrosswalkMNValueGNL = F, StateCrosswalkIDFund = F, StateCrosswalkIDGNL = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSGeneralLedgerV1s <- function(searchConditionsList = NULL, CreatedTime = F, CrosswalkMNValueFund = F, CrosswalkMNValueGNL = F, DimensionIDFund = F, DimensionIDGNL = F, DimensionValueFund = F, DimensionValueGNL = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, FiscalYearBeginningBalance = F, FiscalYearCredits = F, FiscalYearDebits = F, FiscalYearEndingBalance = F, ModifiedTime = F, StateCrosswalkIDFund = F, StateCrosswalkIDGNL = F, UFARSExtractRunID = F, UFARSGeneralLedgerV1ID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of UFARSGeneralLedgerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSGeneralLedgerV1 <- function(UFARSGeneralLedgerV1ID, UFARSExtractRunID = F, DimensionValueFund = F, DimensionValueGNL = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DimensionIDFund = F, DimensionIDGNL = F, FiscalYearBeginningBalance = F, FiscalYearDebits = F, FiscalYearCredits = F, FiscalYearEndingBalance = F, ExcludeFromExport = F, CrosswalkMNValueFund = F, CrosswalkMNValueGNL = F, StateCrosswalkIDFund = F, StateCrosswalkIDGNL = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSGeneralLedgerV1 <- function(UFARSGeneralLedgerV1ID, CreatedTime = F, CrosswalkMNValueFund = F, CrosswalkMNValueGNL = F, DimensionIDFund = F, DimensionIDGNL = F, DimensionValueFund = F, DimensionValueGNL = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, FiscalYearBeginningBalance = F, FiscalYearCredits = F, FiscalYearDebits = F, FiscalYearEndingBalance = F, ModifiedTime = F, StateCrosswalkIDFund = F, StateCrosswalkIDGNL = F, UFARSExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSGeneralLedgerV1ID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created UFARSGeneralLedgerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSGeneralLedgerV1 <- function(UFARSExtractRunID = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, DimensionIDFund = NULL, DimensionIDGNL = NULL, ExcludeFromExport = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueGNL = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDGNL = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSGeneralLedgerV1 <- function(CrosswalkMNValueFund = NULL, CrosswalkMNValueGNL = NULL, DimensionIDFund = NULL, DimensionIDGNL = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, ExcludeFromExport = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDGNL = NULL, UFARSExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified UFARSGeneralLedgerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSGeneralLedgerV1 <- function(UFARSGeneralLedgerV1ID, UFARSExtractRunID = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, DimensionIDFund = NULL, DimensionIDGNL = NULL, ExcludeFromExport = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueGNL = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDGNL = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSGeneralLedgerV1 <- function(UFARSGeneralLedgerV1ID, CrosswalkMNValueFund = NULL, CrosswalkMNValueGNL = NULL, DimensionIDFund = NULL, DimensionIDGNL = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, ExcludeFromExport = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDGNL = NULL, UFARSExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of UFARSRevenueExpenseV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSRevenueExpenseV1s <- function(searchConditionsList = NULL, UFARSRevenueExpenseV1ID = F, UFARSExtractRunID = F, Type = F, DimensionValueGNL = F, DimensionValueFund = F, DimensionValueOrgSite = F, DimensionValueProgram = F, DimensionValueFinance = F, DimensionValueSourceObject = F, DimensionValueCourse = F, AdoptedBudget = F, RevisedBudget = F, NextYearBudget = F, YearToDateAmount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountFiscalYearID = F, DimensionIDFund = F, DimensionIDOrgSite = F, DimensionIDProgram = F, DimensionIDFinance = F, DimensionIDSourceObject = F, DimensionIDCourse = F, ExcludeFromExport = F, CrosswalkMNValueFund = F, CrosswalkMNValueOrgSite = F, CrosswalkMNValueProgram = F, CrosswalkMNValueFinance = F, CrosswalkMNValueSourceObject = F, CrosswalkMNValueCourse = F, StateCrosswalkIDFund = F, StateCrosswalkIDOrgSite = F, StateCrosswalkIDProgram = F, StateCrosswalkIDFinance = F, StateCrosswalkIDSourceObject = F, StateCrosswalkIDCourse = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSRevenueExpenseV1s <- function(searchConditionsList = NULL, AccountFiscalYearID = F, AdoptedBudget = F, CreatedTime = F, CrosswalkMNValueCourse = F, CrosswalkMNValueFinance = F, CrosswalkMNValueFund = F, CrosswalkMNValueOrgSite = F, CrosswalkMNValueProgram = F, CrosswalkMNValueSourceObject = F, DimensionIDCourse = F, DimensionIDFinance = F, DimensionIDFund = F, DimensionIDOrgSite = F, DimensionIDProgram = F, DimensionIDSourceObject = F, DimensionValueCourse = F, DimensionValueFinance = F, DimensionValueFund = F, DimensionValueGNL = F, DimensionValueOrgSite = F, DimensionValueProgram = F, DimensionValueSourceObject = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, ModifiedTime = F, NextYearBudget = F, RevisedBudget = F, StateCrosswalkIDCourse = F, StateCrosswalkIDFinance = F, StateCrosswalkIDFund = F, StateCrosswalkIDOrgSite = F, StateCrosswalkIDProgram = F, StateCrosswalkIDSourceObject = F, Type = F, UFARSExtractRunID = F, UFARSRevenueExpenseV1ID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, YearToDateAmount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of UFARSRevenueExpenseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSRevenueExpenseV1 <- function(UFARSRevenueExpenseV1ID, UFARSExtractRunID = F, Type = F, DimensionValueGNL = F, DimensionValueFund = F, DimensionValueOrgSite = F, DimensionValueProgram = F, DimensionValueFinance = F, DimensionValueSourceObject = F, DimensionValueCourse = F, AdoptedBudget = F, RevisedBudget = F, NextYearBudget = F, YearToDateAmount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountFiscalYearID = F, DimensionIDFund = F, DimensionIDOrgSite = F, DimensionIDProgram = F, DimensionIDFinance = F, DimensionIDSourceObject = F, DimensionIDCourse = F, ExcludeFromExport = F, CrosswalkMNValueFund = F, CrosswalkMNValueOrgSite = F, CrosswalkMNValueProgram = F, CrosswalkMNValueFinance = F, CrosswalkMNValueSourceObject = F, CrosswalkMNValueCourse = F, StateCrosswalkIDFund = F, StateCrosswalkIDOrgSite = F, StateCrosswalkIDProgram = F, StateCrosswalkIDFinance = F, StateCrosswalkIDSourceObject = F, StateCrosswalkIDCourse = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSRevenueExpenseV1 <- function(UFARSRevenueExpenseV1ID, AccountFiscalYearID = F, AdoptedBudget = F, CreatedTime = F, CrosswalkMNValueCourse = F, CrosswalkMNValueFinance = F, CrosswalkMNValueFund = F, CrosswalkMNValueOrgSite = F, CrosswalkMNValueProgram = F, CrosswalkMNValueSourceObject = F, DimensionIDCourse = F, DimensionIDFinance = F, DimensionIDFund = F, DimensionIDOrgSite = F, DimensionIDProgram = F, DimensionIDSourceObject = F, DimensionValueCourse = F, DimensionValueFinance = F, DimensionValueFund = F, DimensionValueGNL = F, DimensionValueOrgSite = F, DimensionValueProgram = F, DimensionValueSourceObject = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, ModifiedTime = F, NextYearBudget = F, RevisedBudget = F, StateCrosswalkIDCourse = F, StateCrosswalkIDFinance = F, StateCrosswalkIDFund = F, StateCrosswalkIDOrgSite = F, StateCrosswalkIDProgram = F, StateCrosswalkIDSourceObject = F, Type = F, UFARSExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, YearToDateAmount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSRevenueExpenseV1ID")
 
@@ -1109,7 +1109,7 @@
 	#' @return A newly created UFARSRevenueExpenseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSRevenueExpenseV1 <- function(UFARSExtractRunID = NULL, Type = NULL, DimensionValueGNL = NULL, DimensionValueFund = NULL, DimensionValueOrgSite = NULL, DimensionValueProgram = NULL, DimensionValueFinance = NULL, DimensionValueSourceObject = NULL, DimensionValueCourse = NULL, AdoptedBudget = NULL, RevisedBudget = NULL, NextYearBudget = NULL, YearToDateAmount = NULL, AccountFiscalYearID = NULL, DimensionIDFund = NULL, DimensionIDOrgSite = NULL, DimensionIDProgram = NULL, DimensionIDFinance = NULL, DimensionIDSourceObject = NULL, DimensionIDCourse = NULL, ExcludeFromExport = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueOrgSite = NULL, CrosswalkMNValueProgram = NULL, CrosswalkMNValueFinance = NULL, CrosswalkMNValueSourceObject = NULL, CrosswalkMNValueCourse = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDOrgSite = NULL, StateCrosswalkIDProgram = NULL, StateCrosswalkIDFinance = NULL, StateCrosswalkIDSourceObject = NULL, StateCrosswalkIDCourse = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSRevenueExpenseV1 <- function(AccountFiscalYearID = NULL, AdoptedBudget = NULL, CrosswalkMNValueCourse = NULL, CrosswalkMNValueFinance = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueOrgSite = NULL, CrosswalkMNValueProgram = NULL, CrosswalkMNValueSourceObject = NULL, DimensionIDCourse = NULL, DimensionIDFinance = NULL, DimensionIDFund = NULL, DimensionIDOrgSite = NULL, DimensionIDProgram = NULL, DimensionIDSourceObject = NULL, DimensionValueCourse = NULL, DimensionValueFinance = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, DimensionValueOrgSite = NULL, DimensionValueProgram = NULL, DimensionValueSourceObject = NULL, ExcludeFromExport = NULL, NextYearBudget = NULL, RevisedBudget = NULL, StateCrosswalkIDCourse = NULL, StateCrosswalkIDFinance = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDOrgSite = NULL, StateCrosswalkIDProgram = NULL, StateCrosswalkIDSourceObject = NULL, Type = NULL, UFARSExtractRunID = NULL, YearToDateAmount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1130,7 +1130,7 @@
 	#' @return The modified UFARSRevenueExpenseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSRevenueExpenseV1 <- function(UFARSRevenueExpenseV1ID, UFARSExtractRunID = NULL, Type = NULL, DimensionValueGNL = NULL, DimensionValueFund = NULL, DimensionValueOrgSite = NULL, DimensionValueProgram = NULL, DimensionValueFinance = NULL, DimensionValueSourceObject = NULL, DimensionValueCourse = NULL, AdoptedBudget = NULL, RevisedBudget = NULL, NextYearBudget = NULL, YearToDateAmount = NULL, AccountFiscalYearID = NULL, DimensionIDFund = NULL, DimensionIDOrgSite = NULL, DimensionIDProgram = NULL, DimensionIDFinance = NULL, DimensionIDSourceObject = NULL, DimensionIDCourse = NULL, ExcludeFromExport = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueOrgSite = NULL, CrosswalkMNValueProgram = NULL, CrosswalkMNValueFinance = NULL, CrosswalkMNValueSourceObject = NULL, CrosswalkMNValueCourse = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDOrgSite = NULL, StateCrosswalkIDProgram = NULL, StateCrosswalkIDFinance = NULL, StateCrosswalkIDSourceObject = NULL, StateCrosswalkIDCourse = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSRevenueExpenseV1 <- function(UFARSRevenueExpenseV1ID, AccountFiscalYearID = NULL, AdoptedBudget = NULL, CrosswalkMNValueCourse = NULL, CrosswalkMNValueFinance = NULL, CrosswalkMNValueFund = NULL, CrosswalkMNValueOrgSite = NULL, CrosswalkMNValueProgram = NULL, CrosswalkMNValueSourceObject = NULL, DimensionIDCourse = NULL, DimensionIDFinance = NULL, DimensionIDFund = NULL, DimensionIDOrgSite = NULL, DimensionIDProgram = NULL, DimensionIDSourceObject = NULL, DimensionValueCourse = NULL, DimensionValueFinance = NULL, DimensionValueFund = NULL, DimensionValueGNL = NULL, DimensionValueOrgSite = NULL, DimensionValueProgram = NULL, DimensionValueSourceObject = NULL, ExcludeFromExport = NULL, NextYearBudget = NULL, RevisedBudget = NULL, StateCrosswalkIDCourse = NULL, StateCrosswalkIDFinance = NULL, StateCrosswalkIDFund = NULL, StateCrosswalkIDOrgSite = NULL, StateCrosswalkIDProgram = NULL, StateCrosswalkIDSourceObject = NULL, Type = NULL, UFARSExtractRunID = NULL, YearToDateAmount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1158,7 +1158,7 @@
 	#' @return A list of MCCCStaffV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStaffV1Exceptions <- function(searchConditionsList = NULL, MCCCStaffV1ExceptionID = F, MCCCStaffV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LinkedToStaff = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStaffV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, LinkedToStaff = F, MCCCStaffV1ExceptionID = F, MCCCStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of MCCCStaffV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStaffV1Exception <- function(MCCCStaffV1ExceptionID, MCCCStaffV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LinkedToStaff = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStaffV1Exception <- function(MCCCStaffV1ExceptionID, CourseID = F, CreatedTime = F, EntityID = F, LinkedToStaff = F, MCCCStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStaffV1ExceptionID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created MCCCStaffV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStaffV1Exception <- function(MCCCStaffV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStaffV1Exception <- function(CourseID = NULL, EntityID = NULL, MCCCStaffV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified MCCCStaffV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStaffV1Exception <- function(MCCCStaffV1ExceptionID, MCCCStaffV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStaffV1Exception <- function(MCCCStaffV1ExceptionID, CourseID = NULL, EntityID = NULL, MCCCStaffV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of MCCCStudentAssessmentV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStudentAssessmentV1Exceptions <- function(searchConditionsList = NULL, MCCCStudentAssessmentV1ExceptionID = F, MCCCStudentAssessmentV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StaffID = F, StudentID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStudentAssessmentV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, MCCCStudentAssessmentV1ExceptionID = F, MCCCStudentAssessmentV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of MCCCStudentAssessmentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStudentAssessmentV1Exception <- function(MCCCStudentAssessmentV1ExceptionID, MCCCStudentAssessmentV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StaffID = F, StudentID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStudentAssessmentV1Exception <- function(MCCCStudentAssessmentV1ExceptionID, CourseID = F, CreatedTime = F, EntityID = F, MCCCStudentAssessmentV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStudentAssessmentV1ExceptionID")
 
@@ -1337,7 +1337,7 @@
 	#' @return A newly created MCCCStudentAssessmentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStudentAssessmentV1Exception <- function(MCCCStudentAssessmentV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StaffID = NULL, StudentID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStudentAssessmentV1Exception <- function(CourseID = NULL, EntityID = NULL, MCCCStudentAssessmentV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1358,7 +1358,7 @@
 	#' @return The modified MCCCStudentAssessmentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStudentAssessmentV1Exception <- function(MCCCStudentAssessmentV1ExceptionID, MCCCStudentAssessmentV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StaffID = NULL, StudentID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStudentAssessmentV1Exception <- function(MCCCStudentAssessmentV1ExceptionID, CourseID = NULL, EntityID = NULL, MCCCStudentAssessmentV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of MCCCStaffV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStaffV1s <- function(searchConditionsList = NULL, MCCCStaffV1ID = F, LocalCourseCode = F, SectionCode = F, SchoolNumber = F, MCCCAcademicYearImportID = F, AcademicYearNumber = F, MCCCCalendarImportID = F, CalendarNumber = F, MCCCTermImportID = F, TermType = F, TermNumber = F, FileFolderNumber = F, IsFixedPeriod = F, MarkingIndicator = F, StateInstructionalMethodCodeMNID = F, InstructionMethod = F, StateLanguageCodeMNID = F, InstructionLanguage = F, InstructionMinutes = F, IsTeacherOfRecord = F, SchoolID = F, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, MeetID = F, StaffMeetID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, PeriodData = F, PeriodCodes = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStaffV1s <- function(searchConditionsList = NULL, AcademicYearNumber = F, CalendarNumber = F, CourseID = F, CreatedTime = F, EntityID = F, FileFolderNumber = F, HasErrors = F, InstructionLanguage = F, InstructionMethod = F, InstructionMinutes = F, IsFixedPeriod = F, IsTeacherOfRecord = F, KeyHash = F, LocalCourseCode = F, MarkingIndicator = F, MCCCAcademicYearImportID = F, MCCCCalendarImportID = F, MCCCStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, MeetID = F, ModifiedTime = F, PeriodCodes = F, PeriodData = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, StaffMeetID = F, StateInstructionalMethodCodeMNID = F, StateLanguageCodeMNID = F, TermNumber = F, TermType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of MCCCStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStaffV1 <- function(MCCCStaffV1ID, LocalCourseCode = F, SectionCode = F, SchoolNumber = F, MCCCAcademicYearImportID = F, AcademicYearNumber = F, MCCCCalendarImportID = F, CalendarNumber = F, MCCCTermImportID = F, TermType = F, TermNumber = F, FileFolderNumber = F, IsFixedPeriod = F, MarkingIndicator = F, StateInstructionalMethodCodeMNID = F, InstructionMethod = F, StateLanguageCodeMNID = F, InstructionLanguage = F, InstructionMinutes = F, IsTeacherOfRecord = F, SchoolID = F, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, MeetID = F, StaffMeetID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, PeriodData = F, PeriodCodes = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStaffV1 <- function(MCCCStaffV1ID, AcademicYearNumber = F, CalendarNumber = F, CourseID = F, CreatedTime = F, EntityID = F, FileFolderNumber = F, HasErrors = F, InstructionLanguage = F, InstructionMethod = F, InstructionMinutes = F, IsFixedPeriod = F, IsTeacherOfRecord = F, KeyHash = F, LocalCourseCode = F, MarkingIndicator = F, MCCCAcademicYearImportID = F, MCCCCalendarImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, MeetID = F, ModifiedTime = F, PeriodCodes = F, PeriodData = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, StaffMeetID = F, StateInstructionalMethodCodeMNID = F, StateLanguageCodeMNID = F, TermNumber = F, TermType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStaffV1ID")
 
@@ -1451,7 +1451,7 @@
 	#' @return A newly created MCCCStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStaffV1 <- function(LocalCourseCode = NULL, SectionCode = NULL, SchoolNumber = NULL, MCCCAcademicYearImportID = NULL, AcademicYearNumber = NULL, MCCCCalendarImportID = NULL, CalendarNumber = NULL, MCCCTermImportID = NULL, TermType = NULL, TermNumber = NULL, FileFolderNumber = NULL, IsFixedPeriod = NULL, MarkingIndicator = NULL, StateInstructionalMethodCodeMNID = NULL, InstructionMethod = NULL, StateLanguageCodeMNID = NULL, InstructionLanguage = NULL, InstructionMinutes = NULL, IsTeacherOfRecord = NULL, SchoolID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, MeetID = NULL, StaffMeetID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, PeriodData = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStaffV1 <- function(AcademicYearNumber = NULL, CalendarNumber = NULL, CourseID = NULL, EntityID = NULL, FileFolderNumber = NULL, InstructionLanguage = NULL, InstructionMethod = NULL, InstructionMinutes = NULL, IsFixedPeriod = NULL, IsTeacherOfRecord = NULL, LocalCourseCode = NULL, MarkingIndicator = NULL, MCCCAcademicYearImportID = NULL, MCCCCalendarImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, MeetID = NULL, PeriodData = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, StaffMeetID = NULL, StateInstructionalMethodCodeMNID = NULL, StateLanguageCodeMNID = NULL, TermNumber = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1472,7 +1472,7 @@
 	#' @return The modified MCCCStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStaffV1 <- function(MCCCStaffV1ID, LocalCourseCode = NULL, SectionCode = NULL, SchoolNumber = NULL, MCCCAcademicYearImportID = NULL, AcademicYearNumber = NULL, MCCCCalendarImportID = NULL, CalendarNumber = NULL, MCCCTermImportID = NULL, TermType = NULL, TermNumber = NULL, FileFolderNumber = NULL, IsFixedPeriod = NULL, MarkingIndicator = NULL, StateInstructionalMethodCodeMNID = NULL, InstructionMethod = NULL, StateLanguageCodeMNID = NULL, InstructionLanguage = NULL, InstructionMinutes = NULL, IsTeacherOfRecord = NULL, SchoolID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, MeetID = NULL, StaffMeetID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, PeriodData = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStaffV1 <- function(MCCCStaffV1ID, AcademicYearNumber = NULL, CalendarNumber = NULL, CourseID = NULL, EntityID = NULL, FileFolderNumber = NULL, InstructionLanguage = NULL, InstructionMethod = NULL, InstructionMinutes = NULL, IsFixedPeriod = NULL, IsTeacherOfRecord = NULL, LocalCourseCode = NULL, MarkingIndicator = NULL, MCCCAcademicYearImportID = NULL, MCCCCalendarImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, MeetID = NULL, PeriodData = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, StaffMeetID = NULL, StateInstructionalMethodCodeMNID = NULL, StateLanguageCodeMNID = NULL, TermNumber = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of MCCCStudentAssessmentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStudentAssessmentV1s <- function(searchConditionsList = NULL, MCCCStudentAssessmentV1ID = F, CourseID = F, LocalCourseCode = F, CurriculumYearID = F, StateStandardCodeMNID = F, StateStandardCode = F, MCCCTermImportID = F, ScoringTermNumber = F, RubricAssessmentMNID = F, ScoreValue = F, RubricLevel = F, StaffID = F, StudentID = F, StudentStateID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, SchoolID = F, MCCCSubmissionID = F, FileFolderNumber = F, IsDirectPay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScoringTermType = F, SchoolNumber = F, IsEarlyEducationAllCode = F, KeyHash = F, UpdateHash = F, StartDate = F, EndDate = F, StateAssessmentToolMNID = F, AssessmentToolCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStudentAssessmentV1s <- function(searchConditionsList = NULL, AssessmentToolCode = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, EndDate = F, EntityID = F, FileFolderNumber = F, HasErrors = F, ImplementationStatusCode = F, IsDirectPay = F, IsEarlyEducationAllCode = F, KeyHash = F, LocalCourseCode = F, MCCCStudentAssessmentV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, ModifiedTime = F, RubricAssessmentMNID = F, RubricLevel = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, ScoreValue = F, ScoringTermNumber = F, ScoringTermType = F, StaffID = F, StartDate = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, StateStandardCode = F, StateStandardCodeMNID = F, StudentID = F, StudentStateID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of MCCCStudentAssessmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStudentAssessmentV1 <- function(MCCCStudentAssessmentV1ID, CourseID = F, LocalCourseCode = F, CurriculumYearID = F, StateStandardCodeMNID = F, StateStandardCode = F, MCCCTermImportID = F, ScoringTermNumber = F, RubricAssessmentMNID = F, ScoreValue = F, RubricLevel = F, StaffID = F, StudentID = F, StudentStateID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, SchoolID = F, MCCCSubmissionID = F, FileFolderNumber = F, IsDirectPay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScoringTermType = F, SchoolNumber = F, IsEarlyEducationAllCode = F, KeyHash = F, UpdateHash = F, StartDate = F, EndDate = F, StateAssessmentToolMNID = F, AssessmentToolCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStudentAssessmentV1 <- function(MCCCStudentAssessmentV1ID, AssessmentToolCode = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, EndDate = F, EntityID = F, FileFolderNumber = F, HasErrors = F, ImplementationStatusCode = F, IsDirectPay = F, IsEarlyEducationAllCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, ModifiedTime = F, RubricAssessmentMNID = F, RubricLevel = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, ScoreValue = F, ScoringTermNumber = F, ScoringTermType = F, StaffID = F, StartDate = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, StateStandardCode = F, StateStandardCodeMNID = F, StudentID = F, StudentStateID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStudentAssessmentV1ID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created MCCCStudentAssessmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStudentAssessmentV1 <- function(CourseID = NULL, LocalCourseCode = NULL, CurriculumYearID = NULL, StateStandardCodeMNID = NULL, StateStandardCode = NULL, MCCCTermImportID = NULL, ScoringTermNumber = NULL, RubricAssessmentMNID = NULL, ScoreValue = NULL, RubricLevel = NULL, StaffID = NULL, StudentID = NULL, StudentStateID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, MCCCSubmissionID = NULL, FileFolderNumber = NULL, IsDirectPay = NULL, ScoringTermType = NULL, SchoolNumber = NULL, IsEarlyEducationAllCode = NULL, StartDate = NULL, EndDate = NULL, StateAssessmentToolMNID = NULL, AssessmentToolCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStudentAssessmentV1 <- function(AssessmentToolCode = NULL, CourseID = NULL, CurriculumYearID = NULL, EndDate = NULL, EntityID = NULL, FileFolderNumber = NULL, ImplementationStatusCode = NULL, IsDirectPay = NULL, IsEarlyEducationAllCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, RubricAssessmentMNID = NULL, RubricLevel = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, ScoreValue = NULL, ScoringTermNumber = NULL, ScoringTermType = NULL, StaffID = NULL, StartDate = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, StateStandardCode = NULL, StateStandardCodeMNID = NULL, StudentID = NULL, StudentStateID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified MCCCStudentAssessmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStudentAssessmentV1 <- function(MCCCStudentAssessmentV1ID, CourseID = NULL, LocalCourseCode = NULL, CurriculumYearID = NULL, StateStandardCodeMNID = NULL, StateStandardCode = NULL, MCCCTermImportID = NULL, ScoringTermNumber = NULL, RubricAssessmentMNID = NULL, ScoreValue = NULL, RubricLevel = NULL, StaffID = NULL, StudentID = NULL, StudentStateID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, MCCCSubmissionID = NULL, FileFolderNumber = NULL, IsDirectPay = NULL, ScoringTermType = NULL, SchoolNumber = NULL, IsEarlyEducationAllCode = NULL, StartDate = NULL, EndDate = NULL, StateAssessmentToolMNID = NULL, AssessmentToolCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStudentAssessmentV1 <- function(MCCCStudentAssessmentV1ID, AssessmentToolCode = NULL, CourseID = NULL, CurriculumYearID = NULL, EndDate = NULL, EntityID = NULL, FileFolderNumber = NULL, ImplementationStatusCode = NULL, IsDirectPay = NULL, IsEarlyEducationAllCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, RubricAssessmentMNID = NULL, RubricLevel = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, ScoreValue = NULL, ScoringTermNumber = NULL, ScoringTermType = NULL, StaffID = NULL, StartDate = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, StateStandardCode = NULL, StateStandardCodeMNID = NULL, StudentID = NULL, StudentStateID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of PERAExclusionEmployeeV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExclusionEmployeeV1s <- function(searchConditionsList = NULL, PERAExclusionEmployeeV1ID = F, PERAExclusionExtractRunID = F, EmployeeID = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAExclusionPayCycleMNID = F, StatePERAExclusionPayCycleMNValue = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleInitial = F, OriginalHireDate = F, LastHireDate = F, AnnualSalary = F, LastPayPeriodSalary = F, JobTitle = F, StatusAtYearEnd = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExclusionEmployeeV1s <- function(searchConditionsList = NULL, AnnualSalary = F, CreatedTime = F, EmployeeID = F, FirstName = F, JobTitle = F, LastHireDate = F, LastName = F, LastPayPeriodSalary = F, MiddleInitial = F, ModifiedTime = F, OriginalHireDate = F, PERAExclusionEmployeeV1ID = F, PERAExclusionExtractRunID = F, SocialSecurityNumber = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAExclusionPayCycleMNID = F, StatePERAExclusionPayCycleMNValue = F, StatusAtYearEnd = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of PERAExclusionEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExclusionEmployeeV1 <- function(PERAExclusionEmployeeV1ID, PERAExclusionExtractRunID = F, EmployeeID = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAExclusionPayCycleMNID = F, StatePERAExclusionPayCycleMNValue = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleInitial = F, OriginalHireDate = F, LastHireDate = F, AnnualSalary = F, LastPayPeriodSalary = F, JobTitle = F, StatusAtYearEnd = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExclusionEmployeeV1 <- function(PERAExclusionEmployeeV1ID, AnnualSalary = F, CreatedTime = F, EmployeeID = F, FirstName = F, JobTitle = F, LastHireDate = F, LastName = F, LastPayPeriodSalary = F, MiddleInitial = F, ModifiedTime = F, OriginalHireDate = F, PERAExclusionExtractRunID = F, SocialSecurityNumber = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAExclusionPayCycleMNID = F, StatePERAExclusionPayCycleMNValue = F, StatusAtYearEnd = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExclusionEmployeeV1ID")
 
@@ -1679,7 +1679,7 @@
 	#' @return A newly created PERAExclusionEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExclusionEmployeeV1 <- function(PERAExclusionExtractRunID = NULL, EmployeeID = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAExclusionPayCycleMNID = NULL, StatePERAExclusionPayCycleMNValue = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleInitial = NULL, OriginalHireDate = NULL, LastHireDate = NULL, AnnualSalary = NULL, LastPayPeriodSalary = NULL, JobTitle = NULL, StatusAtYearEnd = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExclusionEmployeeV1 <- function(AnnualSalary = NULL, EmployeeID = NULL, FirstName = NULL, JobTitle = NULL, LastHireDate = NULL, LastName = NULL, LastPayPeriodSalary = NULL, MiddleInitial = NULL, OriginalHireDate = NULL, PERAExclusionExtractRunID = NULL, SocialSecurityNumber = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAExclusionPayCycleMNID = NULL, StatePERAExclusionPayCycleMNValue = NULL, StatusAtYearEnd = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1700,7 +1700,7 @@
 	#' @return The modified PERAExclusionEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExclusionEmployeeV1 <- function(PERAExclusionEmployeeV1ID, PERAExclusionExtractRunID = NULL, EmployeeID = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAExclusionPayCycleMNID = NULL, StatePERAExclusionPayCycleMNValue = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleInitial = NULL, OriginalHireDate = NULL, LastHireDate = NULL, AnnualSalary = NULL, LastPayPeriodSalary = NULL, JobTitle = NULL, StatusAtYearEnd = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExclusionEmployeeV1 <- function(PERAExclusionEmployeeV1ID, AnnualSalary = NULL, EmployeeID = NULL, FirstName = NULL, JobTitle = NULL, LastHireDate = NULL, LastName = NULL, LastPayPeriodSalary = NULL, MiddleInitial = NULL, OriginalHireDate = NULL, PERAExclusionExtractRunID = NULL, SocialSecurityNumber = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAExclusionPayCycleMNID = NULL, StatePERAExclusionPayCycleMNValue = NULL, StatusAtYearEnd = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of PERAExclusionExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExclusionExceptions <- function(searchConditionsList = NULL, PERAExclusionExceptionID = F, PERAExclusionExtractRunID = F, PERAExclusionEmployeeV1ID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExclusionExceptions <- function(searchConditionsList = NULL, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PERAExclusionEmployeeV1ID = F, PERAExclusionExceptionID = F, PERAExclusionExtractRunID = F, PreserveException = F, Source = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of PERAExclusionException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExclusionException <- function(PERAExclusionExceptionID, PERAExclusionExtractRunID = F, PERAExclusionEmployeeV1ID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExclusionException <- function(PERAExclusionExceptionID, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PERAExclusionEmployeeV1ID = F, PERAExclusionExtractRunID = F, PreserveException = F, Source = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExclusionExceptionID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created PERAExclusionException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExclusionException <- function(PERAExclusionExtractRunID = NULL, PERAExclusionEmployeeV1ID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExclusionException <- function(IsFatal = NULL, Message = NULL, PERAExclusionEmployeeV1ID = NULL, PERAExclusionExtractRunID = NULL, PreserveException = NULL, Source = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified PERAExclusionException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExclusionException <- function(PERAExclusionExceptionID, PERAExclusionExtractRunID = NULL, PERAExclusionEmployeeV1ID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExclusionException <- function(PERAExclusionExceptionID, IsFatal = NULL, Message = NULL, PERAExclusionEmployeeV1ID = NULL, PERAExclusionExtractRunID = NULL, PreserveException = NULL, Source = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of PERAExclusionExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExclusionExports <- function(searchConditionsList = NULL, PERAExclusionExportID = F, PERAExclusionExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExclusionExports <- function(searchConditionsList = NULL, CreatedTime = F, MediaID = F, ModifiedTime = F, PERAExclusionExportID = F, PERAExclusionExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of PERAExclusionExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExclusionExport <- function(PERAExclusionExportID, PERAExclusionExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExclusionExport <- function(PERAExclusionExportID, CreatedTime = F, MediaID = F, ModifiedTime = F, PERAExclusionExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExclusionExportID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created PERAExclusionExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExclusionExport <- function(PERAExclusionExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExclusionExport <- function(MediaID = NULL, PERAExclusionExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified PERAExclusionExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExclusionExport <- function(PERAExclusionExportID, PERAExclusionExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExclusionExport <- function(PERAExclusionExportID, MediaID = NULL, PERAExclusionExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of PERAExclusionExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExclusionExtractRuns <- function(searchConditionsList = NULL, PERAExclusionExtractRunID = F, EmployerID = F, EmployerNumber = F, ExclusionYear = F, PERAExclusionType = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExclusionExtractRuns <- function(searchConditionsList = NULL, CreatedTime = F, EmployerID = F, EmployerNumber = F, ExclusionYear = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, PERAExclusionExtractRunID = F, PERAExclusionType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of PERAExclusionExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExclusionExtractRun <- function(PERAExclusionExtractRunID, EmployerID = F, EmployerNumber = F, ExclusionYear = F, PERAExclusionType = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExclusionExtractRun <- function(PERAExclusionExtractRunID, CreatedTime = F, EmployerID = F, EmployerNumber = F, ExclusionYear = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, PERAExclusionType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExclusionExtractRunID")
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of STARExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARExports <- function(searchConditionsList = NULL, STARExportID = F, STARExtractRunID = F, Type = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARExports <- function(searchConditionsList = NULL, CreatedTime = F, MediaID = F, ModifiedTime = F, STARExportID = F, STARExtractRunID = F, Status = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of STARExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARExport <- function(STARExportID, STARExtractRunID = F, Type = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARExport <- function(STARExportID, CreatedTime = F, MediaID = F, ModifiedTime = F, STARExtractRunID = F, Status = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARExportID")
 
@@ -2135,7 +2135,7 @@
 	#' @return A newly created STARExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARExport <- function(STARExtractRunID = NULL, Type = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARExport <- function(MediaID = NULL, STARExtractRunID = NULL, Status = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2156,7 +2156,7 @@
 	#' @return The modified STARExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARExport <- function(STARExportID, STARExtractRunID = NULL, Type = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARExport <- function(STARExportID, MediaID = NULL, STARExtractRunID = NULL, Status = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2184,7 +2184,7 @@
 	#' @return A list of StateUFARSRestrictedGridMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateUFARSRestrictedGridMNS <- function(searchConditionsList = NULL, StateUFARSRestrictedGridMNID = F, SkywardID = F, GridType = F, AccountType = F, Finance = F, Fund = F, OrganizationLow = F, OrganizationHigh = F, ProgramLow = F, ProgramHigh = F, ObjectLow = F, ObjectHigh = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, FiscalYearLow = F, FiscalYearHigh = F, IsInvalid = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateUFARSRestrictedGridMNS <- function(searchConditionsList = NULL, AccountType = F, CreatedTime = F, Finance = F, FiscalYearHigh = F, FiscalYearLow = F, Fund = F, GridType = F, IsInvalid = F, ModifiedTime = F, ObjectHigh = F, ObjectLow = F, OrganizationHigh = F, OrganizationLow = F, ProgramHigh = F, ProgramLow = F, SkywardHash = F, SkywardID = F, StateUFARSRestrictedGridMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2209,7 +2209,7 @@
 	#' @return A dataframe or of StateUFARSRestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateUFARSRestrictedGridMN <- function(StateUFARSRestrictedGridMNID, SkywardID = F, GridType = F, AccountType = F, Finance = F, Fund = F, OrganizationLow = F, OrganizationHigh = F, ProgramLow = F, ProgramHigh = F, ObjectLow = F, ObjectHigh = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, FiscalYearLow = F, FiscalYearHigh = F, IsInvalid = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateUFARSRestrictedGridMN <- function(StateUFARSRestrictedGridMNID, AccountType = F, CreatedTime = F, Finance = F, FiscalYearHigh = F, FiscalYearLow = F, Fund = F, GridType = F, IsInvalid = F, ModifiedTime = F, ObjectHigh = F, ObjectLow = F, OrganizationHigh = F, OrganizationLow = F, ProgramHigh = F, ProgramLow = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateUFARSRestrictedGridMNID")
 
@@ -2249,7 +2249,7 @@
 	#' @return A newly created StateUFARSRestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateUFARSRestrictedGridMN <- function(AccountType = NULL, Finance = NULL, Fund = NULL, OrganizationLow = NULL, OrganizationHigh = NULL, ProgramLow = NULL, ProgramHigh = NULL, ObjectLow = NULL, ObjectHigh = NULL, FiscalYearLow = NULL, FiscalYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateUFARSRestrictedGridMN <- function(AccountType = NULL, Finance = NULL, FiscalYearHigh = NULL, FiscalYearLow = NULL, Fund = NULL, IsInvalid = NULL, ObjectHigh = NULL, ObjectLow = NULL, OrganizationHigh = NULL, OrganizationLow = NULL, ProgramHigh = NULL, ProgramLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2270,7 +2270,7 @@
 	#' @return The modified StateUFARSRestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateUFARSRestrictedGridMN <- function(StateUFARSRestrictedGridMNID, AccountType = NULL, Finance = NULL, Fund = NULL, OrganizationLow = NULL, OrganizationHigh = NULL, ProgramLow = NULL, ProgramHigh = NULL, ObjectLow = NULL, ObjectHigh = NULL, FiscalYearLow = NULL, FiscalYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateUFARSRestrictedGridMN <- function(StateUFARSRestrictedGridMNID, AccountType = NULL, Finance = NULL, FiscalYearHigh = NULL, FiscalYearLow = NULL, Fund = NULL, IsInvalid = NULL, ObjectHigh = NULL, ObjectLow = NULL, OrganizationHigh = NULL, OrganizationLow = NULL, ProgramHigh = NULL, ProgramLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2298,7 +2298,7 @@
 	#' @return A list of StateUFARSUnrestrictedGridMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateUFARSUnrestrictedGridMNS <- function(searchConditionsList = NULL, StateUFARSUnrestrictedGridMNID = F, SkywardID = F, GridType = F, AccountType = F, Fund = F, ProgramLow = F, ProgramHigh = F, OrganizationLow = F, OrganizationHigh = F, ObjectLow = F, ObjectHigh = F, FinanceLow = F, FinanceHigh = F, CourseLow = F, CourseHigh = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, FiscalYearLow = F, FiscalYearHigh = F, IsInvalid = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateUFARSUnrestrictedGridMNS <- function(searchConditionsList = NULL, AccountType = F, CourseHigh = F, CourseLow = F, CreatedTime = F, FinanceHigh = F, FinanceLow = F, FiscalYearHigh = F, FiscalYearLow = F, Fund = F, GridType = F, IsInvalid = F, ModifiedTime = F, ObjectHigh = F, ObjectLow = F, OrganizationHigh = F, OrganizationLow = F, ProgramHigh = F, ProgramLow = F, SkywardHash = F, SkywardID = F, StateUFARSUnrestrictedGridMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2323,7 +2323,7 @@
 	#' @return A dataframe or of StateUFARSUnrestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateUFARSUnrestrictedGridMN <- function(StateUFARSUnrestrictedGridMNID, SkywardID = F, GridType = F, AccountType = F, Fund = F, ProgramLow = F, ProgramHigh = F, OrganizationLow = F, OrganizationHigh = F, ObjectLow = F, ObjectHigh = F, FinanceLow = F, FinanceHigh = F, CourseLow = F, CourseHigh = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, FiscalYearLow = F, FiscalYearHigh = F, IsInvalid = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateUFARSUnrestrictedGridMN <- function(StateUFARSUnrestrictedGridMNID, AccountType = F, CourseHigh = F, CourseLow = F, CreatedTime = F, FinanceHigh = F, FinanceLow = F, FiscalYearHigh = F, FiscalYearLow = F, Fund = F, GridType = F, IsInvalid = F, ModifiedTime = F, ObjectHigh = F, ObjectLow = F, OrganizationHigh = F, OrganizationLow = F, ProgramHigh = F, ProgramLow = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateUFARSUnrestrictedGridMNID")
 
@@ -2363,7 +2363,7 @@
 	#' @return A newly created StateUFARSUnrestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateUFARSUnrestrictedGridMN <- function(AccountType = NULL, Fund = NULL, ProgramLow = NULL, ProgramHigh = NULL, OrganizationLow = NULL, OrganizationHigh = NULL, ObjectLow = NULL, ObjectHigh = NULL, FinanceLow = NULL, FinanceHigh = NULL, CourseLow = NULL, CourseHigh = NULL, FiscalYearLow = NULL, FiscalYearHigh = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateUFARSUnrestrictedGridMN <- function(AccountType = NULL, CourseHigh = NULL, CourseLow = NULL, FinanceHigh = NULL, FinanceLow = NULL, FiscalYearHigh = NULL, FiscalYearLow = NULL, Fund = NULL, ObjectHigh = NULL, ObjectLow = NULL, OrganizationHigh = NULL, OrganizationLow = NULL, ProgramHigh = NULL, ProgramLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2384,7 +2384,7 @@
 	#' @return The modified StateUFARSUnrestrictedGridMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateUFARSUnrestrictedGridMN <- function(StateUFARSUnrestrictedGridMNID, AccountType = NULL, Fund = NULL, ProgramLow = NULL, ProgramHigh = NULL, OrganizationLow = NULL, OrganizationHigh = NULL, ObjectLow = NULL, ObjectHigh = NULL, FinanceLow = NULL, FinanceHigh = NULL, CourseLow = NULL, CourseHigh = NULL, FiscalYearLow = NULL, FiscalYearHigh = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateUFARSUnrestrictedGridMN <- function(StateUFARSUnrestrictedGridMNID, AccountType = NULL, CourseHigh = NULL, CourseLow = NULL, FinanceHigh = NULL, FinanceLow = NULL, FiscalYearHigh = NULL, FiscalYearLow = NULL, Fund = NULL, ObjectHigh = NULL, ObjectLow = NULL, OrganizationHigh = NULL, OrganizationLow = NULL, ProgramHigh = NULL, ProgramLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2412,7 +2412,7 @@
 	#' @return A list of MCCCStudentCourseV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStudentCourseV1Exceptions <- function(searchConditionsList = NULL, MCCCStudentCourseV1ExceptionID = F, MCCCStudentCourseV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StudentID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStudentCourseV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, MCCCStudentCourseV1ExceptionID = F, MCCCStudentCourseV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2437,7 +2437,7 @@
 	#' @return A dataframe or of MCCCStudentCourseV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStudentCourseV1Exception <- function(MCCCStudentCourseV1ExceptionID, MCCCStudentCourseV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, StudentID = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStudentCourseV1Exception <- function(MCCCStudentCourseV1ExceptionID, CourseID = F, CreatedTime = F, EntityID = F, MCCCStudentCourseV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStudentCourseV1ExceptionID")
 
@@ -2477,7 +2477,7 @@
 	#' @return A newly created MCCCStudentCourseV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStudentCourseV1Exception <- function(MCCCStudentCourseV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StudentID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStudentCourseV1Exception <- function(CourseID = NULL, EntityID = NULL, MCCCStudentCourseV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2498,7 +2498,7 @@
 	#' @return The modified MCCCStudentCourseV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStudentCourseV1Exception <- function(MCCCStudentCourseV1ExceptionID, MCCCStudentCourseV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, StudentID = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStudentCourseV1Exception <- function(MCCCStudentCourseV1ExceptionID, CourseID = NULL, EntityID = NULL, MCCCStudentCourseV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2526,7 +2526,7 @@
 	#' @return A list of MCCCStudentCourseV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStudentCourseV1s <- function(searchConditionsList = NULL, MCCCStudentCourseV1ID = F, LocalCourseCode = F, CourseID = F, SectionID = F, SchoolID = F, SectionCode = F, CurriculumYearID = F, StateCourseCodeMNID = F, StateCourseCode = F, StudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, Gender = F, BirthDate = F, StudentStateID = F, MeetID = F, SchoolNumber = F, RecordType = F, AcademicYearNumber = F, MCCCAcademicYearImportID = F, CalendarNumber = F, MCCCCalendarImportID = F, TermType = F, MCCCTermImportID = F, TermNumber = F, StateSubjectAreaCodeMNID = F, SubjectArea = F, MCCCTermImportIDMarkingTerm = F, MarkingTermType = F, MarkingTermNumber = F, StaffID = F, FileFolderNumber = F, StudentGradeBucketID = F, GradeMarkIDEarned = F, GradeMark = F, LocalCreditsEarned = F, CollegeMarkEarned = F, CollegeCredits = F, CourseLevelMNID = F, CollegeCode = F, CollegeCourseCode = F, CollegeCourseTitle = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, InstitutionID = F, StateGradeMarkMNID = F, KeyHash = F, UpdateHash = F, EarlyEducationInstructionalMinutes = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStudentCourseV1s <- function(searchConditionsList = NULL, AcademicYearNumber = F, BirthDate = F, CalendarNumber = F, CollegeCode = F, CollegeCourseCode = F, CollegeCourseTitle = F, CollegeCredits = F, CollegeMarkEarned = F, CourseID = F, CourseLevelMNID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalMinutes = F, EntityID = F, FileFolderNumber = F, FirstName = F, Gender = F, GradeMark = F, GradeMarkIDEarned = F, HasErrors = F, InstitutionID = F, KeyHash = F, LastName = F, LocalCourseCode = F, LocalCreditsEarned = F, MarkingTermNumber = F, MarkingTermType = F, MCCCAcademicYearImportID = F, MCCCCalendarImportID = F, MCCCStudentCourseV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, MCCCTermImportIDMarkingTerm = F, MeetID = F, MiddleName = F, ModifiedTime = F, RecordType = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, StateCourseCode = F, StateCourseCodeMNID = F, StateGradeMarkMNID = F, StateSubjectAreaCodeMNID = F, StudentGradeBucketID = F, StudentID = F, StudentStateID = F, SubjectArea = F, Suffix = F, TermNumber = F, TermType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2551,7 +2551,7 @@
 	#' @return A dataframe or of MCCCStudentCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStudentCourseV1 <- function(MCCCStudentCourseV1ID, LocalCourseCode = F, CourseID = F, SectionID = F, SchoolID = F, SectionCode = F, CurriculumYearID = F, StateCourseCodeMNID = F, StateCourseCode = F, StudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, Gender = F, BirthDate = F, StudentStateID = F, MeetID = F, SchoolNumber = F, RecordType = F, AcademicYearNumber = F, MCCCAcademicYearImportID = F, CalendarNumber = F, MCCCCalendarImportID = F, TermType = F, MCCCTermImportID = F, TermNumber = F, StateSubjectAreaCodeMNID = F, SubjectArea = F, MCCCTermImportIDMarkingTerm = F, MarkingTermType = F, MarkingTermNumber = F, StaffID = F, FileFolderNumber = F, StudentGradeBucketID = F, GradeMarkIDEarned = F, GradeMark = F, LocalCreditsEarned = F, CollegeMarkEarned = F, CollegeCredits = F, CourseLevelMNID = F, CollegeCode = F, CollegeCourseCode = F, CollegeCourseTitle = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, InstitutionID = F, StateGradeMarkMNID = F, KeyHash = F, UpdateHash = F, EarlyEducationInstructionalMinutes = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStudentCourseV1 <- function(MCCCStudentCourseV1ID, AcademicYearNumber = F, BirthDate = F, CalendarNumber = F, CollegeCode = F, CollegeCourseCode = F, CollegeCourseTitle = F, CollegeCredits = F, CollegeMarkEarned = F, CourseID = F, CourseLevelMNID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalMinutes = F, EntityID = F, FileFolderNumber = F, FirstName = F, Gender = F, GradeMark = F, GradeMarkIDEarned = F, HasErrors = F, InstitutionID = F, KeyHash = F, LastName = F, LocalCourseCode = F, LocalCreditsEarned = F, MarkingTermNumber = F, MarkingTermType = F, MCCCAcademicYearImportID = F, MCCCCalendarImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, MCCCTermImportIDMarkingTerm = F, MeetID = F, MiddleName = F, ModifiedTime = F, RecordType = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, StateCourseCode = F, StateCourseCodeMNID = F, StateGradeMarkMNID = F, StateSubjectAreaCodeMNID = F, StudentGradeBucketID = F, StudentID = F, StudentStateID = F, SubjectArea = F, Suffix = F, TermNumber = F, TermType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStudentCourseV1ID")
 
@@ -2591,7 +2591,7 @@
 	#' @return A newly created MCCCStudentCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStudentCourseV1 <- function(LocalCourseCode = NULL, CourseID = NULL, SectionID = NULL, SchoolID = NULL, SectionCode = NULL, CurriculumYearID = NULL, StateCourseCodeMNID = NULL, StateCourseCode = NULL, StudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, Gender = NULL, BirthDate = NULL, StudentStateID = NULL, MeetID = NULL, SchoolNumber = NULL, RecordType = NULL, AcademicYearNumber = NULL, MCCCAcademicYearImportID = NULL, CalendarNumber = NULL, MCCCCalendarImportID = NULL, TermType = NULL, MCCCTermImportID = NULL, TermNumber = NULL, StateSubjectAreaCodeMNID = NULL, SubjectArea = NULL, MCCCTermImportIDMarkingTerm = NULL, MarkingTermType = NULL, MarkingTermNumber = NULL, StaffID = NULL, FileFolderNumber = NULL, StudentGradeBucketID = NULL, GradeMarkIDEarned = NULL, GradeMark = NULL, LocalCreditsEarned = NULL, CollegeMarkEarned = NULL, CollegeCredits = NULL, CourseLevelMNID = NULL, CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseTitle = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, InstitutionID = NULL, StateGradeMarkMNID = NULL, EarlyEducationInstructionalMinutes = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStudentCourseV1 <- function(AcademicYearNumber = NULL, BirthDate = NULL, CalendarNumber = NULL, CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseTitle = NULL, CollegeCredits = NULL, CollegeMarkEarned = NULL, CourseID = NULL, CourseLevelMNID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalMinutes = NULL, EntityID = NULL, FileFolderNumber = NULL, FirstName = NULL, Gender = NULL, GradeMark = NULL, GradeMarkIDEarned = NULL, InstitutionID = NULL, LastName = NULL, LocalCourseCode = NULL, LocalCreditsEarned = NULL, MarkingTermNumber = NULL, MarkingTermType = NULL, MCCCAcademicYearImportID = NULL, MCCCCalendarImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, MCCCTermImportIDMarkingTerm = NULL, MeetID = NULL, MiddleName = NULL, RecordType = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, StateCourseCode = NULL, StateCourseCodeMNID = NULL, StateGradeMarkMNID = NULL, StateSubjectAreaCodeMNID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, StudentStateID = NULL, SubjectArea = NULL, Suffix = NULL, TermNumber = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2612,7 +2612,7 @@
 	#' @return The modified MCCCStudentCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStudentCourseV1 <- function(MCCCStudentCourseV1ID, LocalCourseCode = NULL, CourseID = NULL, SectionID = NULL, SchoolID = NULL, SectionCode = NULL, CurriculumYearID = NULL, StateCourseCodeMNID = NULL, StateCourseCode = NULL, StudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, Gender = NULL, BirthDate = NULL, StudentStateID = NULL, MeetID = NULL, SchoolNumber = NULL, RecordType = NULL, AcademicYearNumber = NULL, MCCCAcademicYearImportID = NULL, CalendarNumber = NULL, MCCCCalendarImportID = NULL, TermType = NULL, MCCCTermImportID = NULL, TermNumber = NULL, StateSubjectAreaCodeMNID = NULL, SubjectArea = NULL, MCCCTermImportIDMarkingTerm = NULL, MarkingTermType = NULL, MarkingTermNumber = NULL, StaffID = NULL, FileFolderNumber = NULL, StudentGradeBucketID = NULL, GradeMarkIDEarned = NULL, GradeMark = NULL, LocalCreditsEarned = NULL, CollegeMarkEarned = NULL, CollegeCredits = NULL, CourseLevelMNID = NULL, CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseTitle = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, InstitutionID = NULL, StateGradeMarkMNID = NULL, EarlyEducationInstructionalMinutes = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStudentCourseV1 <- function(MCCCStudentCourseV1ID, AcademicYearNumber = NULL, BirthDate = NULL, CalendarNumber = NULL, CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseTitle = NULL, CollegeCredits = NULL, CollegeMarkEarned = NULL, CourseID = NULL, CourseLevelMNID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalMinutes = NULL, EntityID = NULL, FileFolderNumber = NULL, FirstName = NULL, Gender = NULL, GradeMark = NULL, GradeMarkIDEarned = NULL, InstitutionID = NULL, LastName = NULL, LocalCourseCode = NULL, LocalCreditsEarned = NULL, MarkingTermNumber = NULL, MarkingTermType = NULL, MCCCAcademicYearImportID = NULL, MCCCCalendarImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MCCCTermImportID = NULL, MCCCTermImportIDMarkingTerm = NULL, MeetID = NULL, MiddleName = NULL, RecordType = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, StateCourseCode = NULL, StateCourseCodeMNID = NULL, StateGradeMarkMNID = NULL, StateSubjectAreaCodeMNID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, StudentStateID = NULL, SubjectArea = NULL, Suffix = NULL, TermNumber = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2640,7 +2640,7 @@
 	#' @return A list of STARExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARExceptions <- function(searchConditionsList = NULL, STARExceptionID = F, STARExtractRunID = F, STAREmployeeV1ID = F, STARLicensedStaffEmploymentV1ID = F, STARLicensedStaffAssignmentV1ID = F, STARNonLicensedStaffV1ID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARExceptions <- function(searchConditionsList = NULL, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Source = F, STAREmployeeV1ID = F, STARExceptionID = F, STARExtractRunID = F, STARLicensedStaffAssignmentV1ID = F, STARLicensedStaffEmploymentV1ID = F, STARNonLicensedStaffV1ID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2665,7 +2665,7 @@
 	#' @return A dataframe or of STARException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARException <- function(STARExceptionID, STARExtractRunID = F, STAREmployeeV1ID = F, STARLicensedStaffEmploymentV1ID = F, STARLicensedStaffAssignmentV1ID = F, STARNonLicensedStaffV1ID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARException <- function(STARExceptionID, CreatedTime = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Source = F, STAREmployeeV1ID = F, STARExtractRunID = F, STARLicensedStaffAssignmentV1ID = F, STARLicensedStaffEmploymentV1ID = F, STARNonLicensedStaffV1ID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARExceptionID")
 
@@ -2705,7 +2705,7 @@
 	#' @return A newly created STARException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARException <- function(STARExtractRunID = NULL, STAREmployeeV1ID = NULL, STARLicensedStaffEmploymentV1ID = NULL, STARLicensedStaffAssignmentV1ID = NULL, STARNonLicensedStaffV1ID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARException <- function(IsFatal = NULL, Message = NULL, PreserveException = NULL, Source = NULL, STAREmployeeV1ID = NULL, STARExtractRunID = NULL, STARLicensedStaffAssignmentV1ID = NULL, STARLicensedStaffEmploymentV1ID = NULL, STARNonLicensedStaffV1ID = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2726,7 +2726,7 @@
 	#' @return The modified STARException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARException <- function(STARExceptionID, STARExtractRunID = NULL, STAREmployeeV1ID = NULL, STARLicensedStaffEmploymentV1ID = NULL, STARLicensedStaffAssignmentV1ID = NULL, STARNonLicensedStaffV1ID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARException <- function(STARExceptionID, IsFatal = NULL, Message = NULL, PreserveException = NULL, Source = NULL, STAREmployeeV1ID = NULL, STARExtractRunID = NULL, STARLicensedStaffAssignmentV1ID = NULL, STARLicensedStaffEmploymentV1ID = NULL, STARNonLicensedStaffV1ID = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2754,7 +2754,7 @@
 	#' @return A list of MCCCCourseOfferingV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCourseOfferingV1Exceptions <- function(searchConditionsList = NULL, MCCCCourseOfferingV1ExceptionID = F, MCCCCourseOfferingV1ID = F, SchoolID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, CourseID = F, IsCollegeRecordError = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCourseOfferingV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, IsCollegeRecordError = F, MCCCCourseOfferingV1ExceptionID = F, MCCCCourseOfferingV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2779,7 +2779,7 @@
 	#' @return A dataframe or of MCCCCourseOfferingV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCourseOfferingV1Exception <- function(MCCCCourseOfferingV1ExceptionID, MCCCCourseOfferingV1ID = F, SchoolID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, CourseID = F, IsCollegeRecordError = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCourseOfferingV1Exception <- function(MCCCCourseOfferingV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, IsCollegeRecordError = F, MCCCCourseOfferingV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCourseOfferingV1ExceptionID")
 
@@ -2819,7 +2819,7 @@
 	#' @return A newly created MCCCCourseOfferingV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCourseOfferingV1Exception <- function(MCCCCourseOfferingV1ID = NULL, SchoolID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, IsCollegeRecordError = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCourseOfferingV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, IsCollegeRecordError = NULL, MCCCCourseOfferingV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2840,7 +2840,7 @@
 	#' @return The modified MCCCCourseOfferingV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCourseOfferingV1Exception <- function(MCCCCourseOfferingV1ExceptionID, MCCCCourseOfferingV1ID = NULL, SchoolID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, IsCollegeRecordError = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCourseOfferingV1Exception <- function(MCCCCourseOfferingV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, IsCollegeRecordError = NULL, MCCCCourseOfferingV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2868,7 +2868,7 @@
 	#' @return A list of MCCCStandardPlacementV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStandardPlacementV1Exceptions <- function(searchConditionsList = NULL, MCCCStandardPlacementV1ExceptionID = F, MCCCStandardPlacementV1ID = F, SchoolID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStandardPlacementV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCStandardPlacementV1ExceptionID = F, MCCCStandardPlacementV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2893,7 +2893,7 @@
 	#' @return A dataframe or of MCCCStandardPlacementV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStandardPlacementV1Exception <- function(MCCCStandardPlacementV1ExceptionID, MCCCStandardPlacementV1ID = F, SchoolID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStandardPlacementV1Exception <- function(MCCCStandardPlacementV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCStandardPlacementV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStandardPlacementV1ExceptionID")
 
@@ -2933,7 +2933,7 @@
 	#' @return A newly created MCCCStandardPlacementV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStandardPlacementV1Exception <- function(MCCCStandardPlacementV1ID = NULL, SchoolID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStandardPlacementV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCStandardPlacementV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2954,7 +2954,7 @@
 	#' @return The modified MCCCStandardPlacementV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStandardPlacementV1Exception <- function(MCCCStandardPlacementV1ExceptionID, MCCCStandardPlacementV1ID = NULL, SchoolID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStandardPlacementV1Exception <- function(MCCCStandardPlacementV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCStandardPlacementV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2982,7 +2982,7 @@
 	#' @return A list of MCCCCourseOfferingCollegeCourseV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCourseOfferingCollegeCourseV1s <- function(searchConditionsList = NULL, MCCCCourseOfferingCollegeCourseV1ID = F, MCCCCourseOfferingV1ID = F, CourseLevelMNID = F, CollegeCourseCode = F, StateCollegeCourseLevelMNID = F, CollegeCourseLevel = F, CollegeCode = F, CollegeCourseCredit = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, InstitutionID = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCourseOfferingCollegeCourseV1s <- function(searchConditionsList = NULL, CollegeCode = F, CollegeCourseCode = F, CollegeCourseCredit = F, CollegeCourseLevel = F, CourseLevelMNID = F, CreatedTime = F, HasErrors = F, InstitutionID = F, KeyHash = F, MCCCCourseOfferingCollegeCourseV1ID = F, MCCCCourseOfferingV1ID = F, ModifiedTime = F, StateCollegeCourseLevelMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3007,7 +3007,7 @@
 	#' @return A dataframe or of MCCCCourseOfferingCollegeCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCourseOfferingCollegeCourseV1 <- function(MCCCCourseOfferingCollegeCourseV1ID, MCCCCourseOfferingV1ID = F, CourseLevelMNID = F, CollegeCourseCode = F, StateCollegeCourseLevelMNID = F, CollegeCourseLevel = F, CollegeCode = F, CollegeCourseCredit = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, InstitutionID = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCourseOfferingCollegeCourseV1 <- function(MCCCCourseOfferingCollegeCourseV1ID, CollegeCode = F, CollegeCourseCode = F, CollegeCourseCredit = F, CollegeCourseLevel = F, CourseLevelMNID = F, CreatedTime = F, HasErrors = F, InstitutionID = F, KeyHash = F, MCCCCourseOfferingV1ID = F, ModifiedTime = F, StateCollegeCourseLevelMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCourseOfferingCollegeCourseV1ID")
 
@@ -3047,7 +3047,7 @@
 	#' @return A newly created MCCCCourseOfferingCollegeCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCourseOfferingCollegeCourseV1 <- function(MCCCCourseOfferingV1ID = NULL, CourseLevelMNID = NULL, CollegeCourseCode = NULL, StateCollegeCourseLevelMNID = NULL, CollegeCourseLevel = NULL, CollegeCode = NULL, CollegeCourseCredit = NULL, InstitutionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCourseOfferingCollegeCourseV1 <- function(CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseCredit = NULL, CollegeCourseLevel = NULL, CourseLevelMNID = NULL, InstitutionID = NULL, MCCCCourseOfferingV1ID = NULL, StateCollegeCourseLevelMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3068,7 +3068,7 @@
 	#' @return The modified MCCCCourseOfferingCollegeCourseV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCourseOfferingCollegeCourseV1 <- function(MCCCCourseOfferingCollegeCourseV1ID, MCCCCourseOfferingV1ID = NULL, CourseLevelMNID = NULL, CollegeCourseCode = NULL, StateCollegeCourseLevelMNID = NULL, CollegeCourseLevel = NULL, CollegeCode = NULL, CollegeCourseCredit = NULL, InstitutionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCourseOfferingCollegeCourseV1 <- function(MCCCCourseOfferingCollegeCourseV1ID, CollegeCode = NULL, CollegeCourseCode = NULL, CollegeCourseCredit = NULL, CollegeCourseLevel = NULL, CourseLevelMNID = NULL, InstitutionID = NULL, MCCCCourseOfferingV1ID = NULL, StateCollegeCourseLevelMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3096,7 +3096,7 @@
 	#' @return A list of MCCCCourseOfferingV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCourseOfferingV1s <- function(searchConditionsList = NULL, MCCCCourseOfferingV1ID = F, LocalCourseCode = F, LocalCourseTitle = F, SchoolNumber = F, StateCourseCodeMNID = F, StateCourseCode = F, LocalDescription = F, SequenceNumber = F, SequenceLimit = F, StateStandardAddressedCodeMNID = F, StandardAddressedCode = F, GraduationRequirementIndicator = F, EndOfCourseIndicator = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, SchoolID = F, CurriculumYearID = F, CourseID = F, IsDirectPayCourse = F, CourseLevelData = F, CourseLevelCodes = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CourseClassificationType = F, GradeRange = F, KeyHash = F, UpdateHash = F, StateEarlyEducationLocationMNID = F, EarlyEducationLocationCode = F, StateProgramIndicator = F, FederalProgramIndicator = F, ABEIndicator = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCourseOfferingV1s <- function(searchConditionsList = NULL, ABEIndicator = F, CourseClassificationType = F, CourseID = F, CourseLevelCodes = F, CourseLevelData = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationLocationCode = F, EndOfCourseIndicator = F, EntityID = F, FederalProgramIndicator = F, GradeRange = F, GraduationRequirementIndicator = F, HasErrors = F, IsDirectPayCourse = F, KeyHash = F, LocalCourseCode = F, LocalCourseTitle = F, LocalDescription = F, MCCCCourseOfferingV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SequenceLimit = F, SequenceNumber = F, StandardAddressedCode = F, StateCourseCode = F, StateCourseCodeMNID = F, StateEarlyEducationLocationMNID = F, StateProgramIndicator = F, StateStandardAddressedCodeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3121,7 +3121,7 @@
 	#' @return A dataframe or of MCCCCourseOfferingV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCourseOfferingV1 <- function(MCCCCourseOfferingV1ID, LocalCourseCode = F, LocalCourseTitle = F, SchoolNumber = F, StateCourseCodeMNID = F, StateCourseCode = F, LocalDescription = F, SequenceNumber = F, SequenceLimit = F, StateStandardAddressedCodeMNID = F, StandardAddressedCode = F, GraduationRequirementIndicator = F, EndOfCourseIndicator = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, EntityID = F, SchoolYearID = F, SchoolID = F, CurriculumYearID = F, CourseID = F, IsDirectPayCourse = F, CourseLevelData = F, CourseLevelCodes = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CourseClassificationType = F, GradeRange = F, KeyHash = F, UpdateHash = F, StateEarlyEducationLocationMNID = F, EarlyEducationLocationCode = F, StateProgramIndicator = F, FederalProgramIndicator = F, ABEIndicator = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCourseOfferingV1 <- function(MCCCCourseOfferingV1ID, ABEIndicator = F, CourseClassificationType = F, CourseID = F, CourseLevelCodes = F, CourseLevelData = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationLocationCode = F, EndOfCourseIndicator = F, EntityID = F, FederalProgramIndicator = F, GradeRange = F, GraduationRequirementIndicator = F, HasErrors = F, IsDirectPayCourse = F, KeyHash = F, LocalCourseCode = F, LocalCourseTitle = F, LocalDescription = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SequenceLimit = F, SequenceNumber = F, StandardAddressedCode = F, StateCourseCode = F, StateCourseCodeMNID = F, StateEarlyEducationLocationMNID = F, StateProgramIndicator = F, StateStandardAddressedCodeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCourseOfferingV1ID")
 
@@ -3161,7 +3161,7 @@
 	#' @return A newly created MCCCCourseOfferingV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCourseOfferingV1 <- function(LocalCourseCode = NULL, LocalCourseTitle = NULL, SchoolNumber = NULL, StateCourseCodeMNID = NULL, StateCourseCode = NULL, LocalDescription = NULL, SequenceNumber = NULL, SequenceLimit = NULL, StateStandardAddressedCodeMNID = NULL, StandardAddressedCode = NULL, GraduationRequirementIndicator = NULL, EndOfCourseIndicator = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, CurriculumYearID = NULL, CourseID = NULL, IsDirectPayCourse = NULL, CourseLevelData = NULL, CourseClassificationType = NULL, GradeRange = NULL, StateEarlyEducationLocationMNID = NULL, EarlyEducationLocationCode = NULL, StateProgramIndicator = NULL, FederalProgramIndicator = NULL, ABEIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCourseOfferingV1 <- function(ABEIndicator = NULL, CourseClassificationType = NULL, CourseID = NULL, CourseLevelData = NULL, CurriculumYearID = NULL, EarlyEducationLocationCode = NULL, EndOfCourseIndicator = NULL, EntityID = NULL, FederalProgramIndicator = NULL, GradeRange = NULL, GraduationRequirementIndicator = NULL, IsDirectPayCourse = NULL, LocalCourseCode = NULL, LocalCourseTitle = NULL, LocalDescription = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SequenceLimit = NULL, SequenceNumber = NULL, StandardAddressedCode = NULL, StateCourseCode = NULL, StateCourseCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, StateProgramIndicator = NULL, StateStandardAddressedCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3182,7 +3182,7 @@
 	#' @return The modified MCCCCourseOfferingV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCourseOfferingV1 <- function(MCCCCourseOfferingV1ID, LocalCourseCode = NULL, LocalCourseTitle = NULL, SchoolNumber = NULL, StateCourseCodeMNID = NULL, StateCourseCode = NULL, LocalDescription = NULL, SequenceNumber = NULL, SequenceLimit = NULL, StateStandardAddressedCodeMNID = NULL, StandardAddressedCode = NULL, GraduationRequirementIndicator = NULL, EndOfCourseIndicator = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, CurriculumYearID = NULL, CourseID = NULL, IsDirectPayCourse = NULL, CourseLevelData = NULL, CourseClassificationType = NULL, GradeRange = NULL, StateEarlyEducationLocationMNID = NULL, EarlyEducationLocationCode = NULL, StateProgramIndicator = NULL, FederalProgramIndicator = NULL, ABEIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCourseOfferingV1 <- function(MCCCCourseOfferingV1ID, ABEIndicator = NULL, CourseClassificationType = NULL, CourseID = NULL, CourseLevelData = NULL, CurriculumYearID = NULL, EarlyEducationLocationCode = NULL, EndOfCourseIndicator = NULL, EntityID = NULL, FederalProgramIndicator = NULL, GradeRange = NULL, GraduationRequirementIndicator = NULL, IsDirectPayCourse = NULL, LocalCourseCode = NULL, LocalCourseTitle = NULL, LocalDescription = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SequenceLimit = NULL, SequenceNumber = NULL, StandardAddressedCode = NULL, StateCourseCode = NULL, StateCourseCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, StateProgramIndicator = NULL, StateStandardAddressedCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3210,7 +3210,7 @@
 	#' @return A list of MCCCStandardPlacementV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCStandardPlacementV1s <- function(searchConditionsList = NULL, MCCCStandardPlacementV1ID = F, StandardPlacementMNID = F, StateStandardCodeMNID = F, StandardCode = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEarlyEducationAllCode = F, KeyHash = F, UpdateHash = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCStandardPlacementV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, IsEarlyEducationAllCode = F, KeyHash = F, LocalCourseCode = F, MCCCStandardPlacementV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StandardCode = F, StandardPlacementMNID = F, StateStandardCodeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3235,7 +3235,7 @@
 	#' @return A dataframe or of MCCCStandardPlacementV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCStandardPlacementV1 <- function(MCCCStandardPlacementV1ID, StandardPlacementMNID = F, StateStandardCodeMNID = F, StandardCode = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEarlyEducationAllCode = F, KeyHash = F, UpdateHash = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCStandardPlacementV1 <- function(MCCCStandardPlacementV1ID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, IsEarlyEducationAllCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StandardCode = F, StandardPlacementMNID = F, StateStandardCodeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCStandardPlacementV1ID")
 
@@ -3275,7 +3275,7 @@
 	#' @return A newly created MCCCStandardPlacementV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCStandardPlacementV1 <- function(StandardPlacementMNID = NULL, StateStandardCodeMNID = NULL, StandardCode = NULL, IsEarlyEducationAllCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCStandardPlacementV1 <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, IsEarlyEducationAllCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StandardCode = NULL, StandardPlacementMNID = NULL, StateStandardCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3296,7 +3296,7 @@
 	#' @return The modified MCCCStandardPlacementV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCStandardPlacementV1 <- function(MCCCStandardPlacementV1ID, StandardPlacementMNID = NULL, StateStandardCodeMNID = NULL, StandardCode = NULL, IsEarlyEducationAllCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCStandardPlacementV1 <- function(MCCCStandardPlacementV1ID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, IsEarlyEducationAllCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StandardCode = NULL, StandardPlacementMNID = NULL, StateStandardCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3324,7 +3324,7 @@
 	#' @return A list of MCCCAcademicYearImports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCAcademicYearImports <- function(searchConditionsList = NULL, MCCCAcademicYearImportID = F, SchoolYearID = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCAcademicYearImports <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCAcademicYearImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3349,7 +3349,7 @@
 	#' @return A dataframe or of MCCCAcademicYearImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCAcademicYearImport <- function(MCCCAcademicYearImportID, SchoolYearID = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCAcademicYearImport <- function(MCCCAcademicYearImportID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCAcademicYearImportID")
 
@@ -3389,7 +3389,7 @@
 	#' @return A newly created MCCCAcademicYearImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCAcademicYearImport <- function(SchoolYearID = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCAcademicYearImport <- function(Code = NULL, Description = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3410,7 +3410,7 @@
 	#' @return The modified MCCCAcademicYearImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCAcademicYearImport <- function(MCCCAcademicYearImportID, SchoolYearID = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCAcademicYearImport <- function(MCCCAcademicYearImportID, Code = NULL, Description = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3438,7 +3438,7 @@
 	#' @return A list of MCCCCalendarImports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCalendarImports <- function(searchConditionsList = NULL, MCCCCalendarImportID = F, SchoolYearID = F, DistrictID = F, MCCCAcademicYearImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCalendarImports <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCAcademicYearImportID = F, MCCCCalendarImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3463,7 +3463,7 @@
 	#' @return A dataframe or of MCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCalendarImport <- function(MCCCCalendarImportID, SchoolYearID = F, DistrictID = F, MCCCAcademicYearImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCalendarImport <- function(MCCCCalendarImportID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCAcademicYearImportID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCalendarImportID")
 
@@ -3503,7 +3503,7 @@
 	#' @return A newly created MCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCalendarImport <- function(SchoolYearID = NULL, DistrictID = NULL, MCCCAcademicYearImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCalendarImport <- function(Code = NULL, Description = NULL, DistrictID = NULL, MCCCAcademicYearImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3524,7 +3524,7 @@
 	#' @return The modified MCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCalendarImport <- function(MCCCCalendarImportID, SchoolYearID = NULL, DistrictID = NULL, MCCCAcademicYearImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCalendarImport <- function(MCCCCalendarImportID, Code = NULL, Description = NULL, DistrictID = NULL, MCCCAcademicYearImportID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3552,7 +3552,7 @@
 	#' @return A list of MCCCTermImports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCTermImports <- function(searchConditionsList = NULL, MCCCTermImportID = F, SchoolYearID = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, TermType = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCTermImports <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MCCCTermImportID = F, ModifiedTime = F, SchoolYearID = F, TermType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3577,7 +3577,7 @@
 	#' @return A dataframe or of MCCCTermImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCTermImport <- function(MCCCTermImportID, SchoolYearID = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, TermType = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCTermImport <- function(MCCCTermImportID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolYearID = F, TermType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCTermImportID")
 
@@ -3617,7 +3617,7 @@
 	#' @return A newly created MCCCTermImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCTermImport <- function(SchoolYearID = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, TermType = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCTermImport <- function(Code = NULL, Description = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3638,7 +3638,7 @@
 	#' @return The modified MCCCTermImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCTermImport <- function(MCCCTermImportID, SchoolYearID = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, TermType = NULL, Code = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCTermImport <- function(MCCCTermImportID, Code = NULL, Description = NULL, DistrictID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolYearID = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3666,7 +3666,7 @@
 	#' @return A list of TempMCCCCalendarImports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempMCCCCalendarImports <- function(searchConditionsList = NULL, TempMCCCCalendarImportID = F, Code = F, Description = F, ImportTable = F, AcademicYearCode = F, TermType = F, FailedSave = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempMCCCCalendarImports <- function(searchConditionsList = NULL, AcademicYearCode = F, Code = F, CreatedTime = F, Description = F, FailedSave = F, ImportTable = F, Message = F, ModifiedTime = F, TempMCCCCalendarImportID = F, TermType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3691,7 +3691,7 @@
 	#' @return A dataframe or of TempMCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempMCCCCalendarImport <- function(TempMCCCCalendarImportID, Code = F, Description = F, ImportTable = F, AcademicYearCode = F, TermType = F, FailedSave = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempMCCCCalendarImport <- function(TempMCCCCalendarImportID, AcademicYearCode = F, Code = F, CreatedTime = F, Description = F, FailedSave = F, ImportTable = F, Message = F, ModifiedTime = F, TermType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempMCCCCalendarImportID")
 
@@ -3731,7 +3731,7 @@
 	#' @return A newly created TempMCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempMCCCCalendarImport <- function(Code = NULL, Description = NULL, ImportTable = NULL, AcademicYearCode = NULL, TermType = NULL, FailedSave = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempMCCCCalendarImport <- function(AcademicYearCode = NULL, Code = NULL, Description = NULL, FailedSave = NULL, ImportTable = NULL, Message = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3752,7 +3752,7 @@
 	#' @return The modified TempMCCCCalendarImport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempMCCCCalendarImport <- function(TempMCCCCalendarImportID, Code = NULL, Description = NULL, ImportTable = NULL, AcademicYearCode = NULL, TermType = NULL, FailedSave = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempMCCCCalendarImport <- function(TempMCCCCalendarImportID, AcademicYearCode = NULL, Code = NULL, Description = NULL, FailedSave = NULL, ImportTable = NULL, Message = NULL, TermType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3780,7 +3780,7 @@
 	#' @return A list of NewHireExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listNewHireExceptions <- function(searchConditionsList = NULL, NewHireExceptionID = F, NewHireExtractRunID = F, EmployerID = F, EmployeeID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listNewHireExceptions <- function(searchConditionsList = NULL, CreatedTime = F, EmployeeID = F, EmployerID = F, IsFatal = F, Message = F, ModifiedTime = F, NewHireExceptionID = F, NewHireExtractRunID = F, PreserveException = F, Source = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3805,7 +3805,7 @@
 	#' @return A dataframe or of NewHireException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getNewHireException <- function(NewHireExceptionID, NewHireExtractRunID = F, EmployerID = F, EmployeeID = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getNewHireException <- function(NewHireExceptionID, CreatedTime = F, EmployeeID = F, EmployerID = F, IsFatal = F, Message = F, ModifiedTime = F, NewHireExtractRunID = F, PreserveException = F, Source = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "NewHireExceptionID")
 
@@ -3845,7 +3845,7 @@
 	#' @return A newly created NewHireException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createNewHireException <- function(NewHireExtractRunID = NULL, EmployerID = NULL, EmployeeID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createNewHireException <- function(EmployeeID = NULL, EmployerID = NULL, IsFatal = NULL, Message = NULL, NewHireExtractRunID = NULL, PreserveException = NULL, Source = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3866,7 +3866,7 @@
 	#' @return The modified NewHireException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyNewHireException <- function(NewHireExceptionID, NewHireExtractRunID = NULL, EmployerID = NULL, EmployeeID = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyNewHireException <- function(NewHireExceptionID, EmployeeID = NULL, EmployerID = NULL, IsFatal = NULL, Message = NULL, NewHireExtractRunID = NULL, PreserveException = NULL, Source = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3894,7 +3894,7 @@
 	#' @return A list of NewHireExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listNewHireExports <- function(searchConditionsList = NULL, NewHireExportID = F, NewHireExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listNewHireExports <- function(searchConditionsList = NULL, CreatedTime = F, MediaID = F, ModifiedTime = F, NewHireExportID = F, NewHireExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3919,7 +3919,7 @@
 	#' @return A dataframe or of NewHireExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getNewHireExport <- function(NewHireExportID, NewHireExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getNewHireExport <- function(NewHireExportID, CreatedTime = F, MediaID = F, ModifiedTime = F, NewHireExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "NewHireExportID")
 
@@ -3959,7 +3959,7 @@
 	#' @return A newly created NewHireExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createNewHireExport <- function(NewHireExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createNewHireExport <- function(MediaID = NULL, NewHireExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3980,7 +3980,7 @@
 	#' @return The modified NewHireExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyNewHireExport <- function(NewHireExportID, NewHireExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyNewHireExport <- function(NewHireExportID, MediaID = NULL, NewHireExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4008,7 +4008,7 @@
 	#' @return A list of STARLicensedStaffAssignmentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARLicensedStaffAssignmentV1s <- function(searchConditionsList = NULL, STARLicensedStaffAssignmentV1ID = F, STARLicensedStaffEmploymentV1ID = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARGradeLevelMNID = F, StateSTARGradeLevelMNValue = F, StateSTARModeOfTeachingMNID = F, StateSTARModeOfTeachingMNValue = F, SchoolNumber = F, PeriodsPerWeek = F, LengthOfPeriod = F, TotalNumberOfPupils = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARLicensedStaffAssignmentV1s <- function(searchConditionsList = NULL, CreatedTime = F, LengthOfPeriod = F, ModifiedTime = F, PeriodsPerWeek = F, SchoolNumber = F, STARLicensedStaffAssignmentV1ID = F, STARLicensedStaffEmploymentV1ID = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARGradeLevelMNID = F, StateSTARGradeLevelMNValue = F, StateSTARModeOfTeachingMNID = F, StateSTARModeOfTeachingMNValue = F, TotalNumberOfPupils = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4033,7 +4033,7 @@
 	#' @return A dataframe or of STARLicensedStaffAssignmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARLicensedStaffAssignmentV1 <- function(STARLicensedStaffAssignmentV1ID, STARLicensedStaffEmploymentV1ID = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARGradeLevelMNID = F, StateSTARGradeLevelMNValue = F, StateSTARModeOfTeachingMNID = F, StateSTARModeOfTeachingMNValue = F, SchoolNumber = F, PeriodsPerWeek = F, LengthOfPeriod = F, TotalNumberOfPupils = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARLicensedStaffAssignmentV1 <- function(STARLicensedStaffAssignmentV1ID, CreatedTime = F, LengthOfPeriod = F, ModifiedTime = F, PeriodsPerWeek = F, SchoolNumber = F, STARLicensedStaffEmploymentV1ID = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARGradeLevelMNID = F, StateSTARGradeLevelMNValue = F, StateSTARModeOfTeachingMNID = F, StateSTARModeOfTeachingMNValue = F, TotalNumberOfPupils = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARLicensedStaffAssignmentV1ID")
 
@@ -4073,7 +4073,7 @@
 	#' @return A newly created STARLicensedStaffAssignmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARLicensedStaffAssignmentV1 <- function(STARLicensedStaffEmploymentV1ID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARGradeLevelMNID = NULL, StateSTARGradeLevelMNValue = NULL, StateSTARModeOfTeachingMNID = NULL, StateSTARModeOfTeachingMNValue = NULL, SchoolNumber = NULL, PeriodsPerWeek = NULL, LengthOfPeriod = NULL, TotalNumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARLicensedStaffAssignmentV1 <- function(LengthOfPeriod = NULL, PeriodsPerWeek = NULL, SchoolNumber = NULL, STARLicensedStaffEmploymentV1ID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARGradeLevelMNID = NULL, StateSTARGradeLevelMNValue = NULL, StateSTARModeOfTeachingMNID = NULL, StateSTARModeOfTeachingMNValue = NULL, TotalNumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4094,7 +4094,7 @@
 	#' @return The modified STARLicensedStaffAssignmentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARLicensedStaffAssignmentV1 <- function(STARLicensedStaffAssignmentV1ID, STARLicensedStaffEmploymentV1ID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARGradeLevelMNID = NULL, StateSTARGradeLevelMNValue = NULL, StateSTARModeOfTeachingMNID = NULL, StateSTARModeOfTeachingMNValue = NULL, SchoolNumber = NULL, PeriodsPerWeek = NULL, LengthOfPeriod = NULL, TotalNumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARLicensedStaffAssignmentV1 <- function(STARLicensedStaffAssignmentV1ID, LengthOfPeriod = NULL, PeriodsPerWeek = NULL, SchoolNumber = NULL, STARLicensedStaffEmploymentV1ID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARGradeLevelMNID = NULL, StateSTARGradeLevelMNValue = NULL, StateSTARModeOfTeachingMNID = NULL, StateSTARModeOfTeachingMNValue = NULL, TotalNumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4122,7 +4122,7 @@
 	#' @return A list of STARLicensedStaffEmploymentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARLicensedStaffEmploymentV1s <- function(searchConditionsList = NULL, STARLicensedStaffEmploymentV1ID = F, STAREmployeeV1ID = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewLicensedStaffMNValue = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNValue = F, StateSTARHighestEducationLevelMNID = F, StateSTARHighestEducationLevelMNValue = F, ContractSalary = F, ReportedContractSalary = F, ContractDays = F, YearsOfExperienceSuperintendent = F, YearsOfExperiencePrincipal = F, YearsOfExperienceClassroomTeacher = F, YearsOfExperienceOther = F, OutOfDistrictAssignment = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, STAREmploymentType = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARLicensedStaffEmploymentV1s <- function(searchConditionsList = NULL, ContractDays = F, ContractSalary = F, CreatedTime = F, ModifiedTime = F, OutOfDistrictAssignment = F, ReportedContractSalary = F, STAREmployeeV1ID = F, STAREmploymentType = F, STARLicensedStaffEmploymentV1ID = F, StateSTARHighestEducationLevelMNID = F, StateSTARHighestEducationLevelMNValue = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNValue = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewLicensedStaffMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, YearsOfExperienceClassroomTeacher = F, YearsOfExperienceOther = F, YearsOfExperiencePrincipal = F, YearsOfExperienceSuperintendent = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4147,7 +4147,7 @@
 	#' @return A dataframe or of STARLicensedStaffEmploymentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARLicensedStaffEmploymentV1 <- function(STARLicensedStaffEmploymentV1ID, STAREmployeeV1ID = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewLicensedStaffMNValue = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNValue = F, StateSTARHighestEducationLevelMNID = F, StateSTARHighestEducationLevelMNValue = F, ContractSalary = F, ReportedContractSalary = F, ContractDays = F, YearsOfExperienceSuperintendent = F, YearsOfExperiencePrincipal = F, YearsOfExperienceClassroomTeacher = F, YearsOfExperienceOther = F, OutOfDistrictAssignment = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, STAREmploymentType = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARLicensedStaffEmploymentV1 <- function(STARLicensedStaffEmploymentV1ID, ContractDays = F, ContractSalary = F, CreatedTime = F, ModifiedTime = F, OutOfDistrictAssignment = F, ReportedContractSalary = F, STAREmployeeV1ID = F, STAREmploymentType = F, StateSTARHighestEducationLevelMNID = F, StateSTARHighestEducationLevelMNValue = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNValue = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewLicensedStaffMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, YearsOfExperienceClassroomTeacher = F, YearsOfExperienceOther = F, YearsOfExperiencePrincipal = F, YearsOfExperienceSuperintendent = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARLicensedStaffEmploymentV1ID")
 
@@ -4187,7 +4187,7 @@
 	#' @return A newly created STARLicensedStaffEmploymentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARLicensedStaffEmploymentV1 <- function(STAREmployeeV1ID = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewLicensedStaffMNValue = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNValue = NULL, StateSTARHighestEducationLevelMNID = NULL, StateSTARHighestEducationLevelMNValue = NULL, ContractSalary = NULL, ContractDays = NULL, YearsOfExperienceSuperintendent = NULL, YearsOfExperiencePrincipal = NULL, YearsOfExperienceClassroomTeacher = NULL, YearsOfExperienceOther = NULL, OutOfDistrictAssignment = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARLicensedStaffEmploymentV1 <- function(ContractDays = NULL, ContractSalary = NULL, OutOfDistrictAssignment = NULL, STAREmployeeV1ID = NULL, STAREmploymentType = NULL, StateSTARHighestEducationLevelMNID = NULL, StateSTARHighestEducationLevelMNValue = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNValue = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewLicensedStaffMNValue = NULL, YearsOfExperienceClassroomTeacher = NULL, YearsOfExperienceOther = NULL, YearsOfExperiencePrincipal = NULL, YearsOfExperienceSuperintendent = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4208,7 +4208,7 @@
 	#' @return The modified STARLicensedStaffEmploymentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARLicensedStaffEmploymentV1 <- function(STARLicensedStaffEmploymentV1ID, STAREmployeeV1ID = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewLicensedStaffMNValue = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNValue = NULL, StateSTARHighestEducationLevelMNID = NULL, StateSTARHighestEducationLevelMNValue = NULL, ContractSalary = NULL, ContractDays = NULL, YearsOfExperienceSuperintendent = NULL, YearsOfExperiencePrincipal = NULL, YearsOfExperienceClassroomTeacher = NULL, YearsOfExperienceOther = NULL, OutOfDistrictAssignment = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARLicensedStaffEmploymentV1 <- function(STARLicensedStaffEmploymentV1ID, ContractDays = NULL, ContractSalary = NULL, OutOfDistrictAssignment = NULL, STAREmployeeV1ID = NULL, STAREmploymentType = NULL, StateSTARHighestEducationLevelMNID = NULL, StateSTARHighestEducationLevelMNValue = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNValue = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewLicensedStaffMNValue = NULL, YearsOfExperienceClassroomTeacher = NULL, YearsOfExperienceOther = NULL, YearsOfExperiencePrincipal = NULL, YearsOfExperienceSuperintendent = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4236,7 +4236,7 @@
 	#' @return A list of STAREmployeeV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTAREmployeeV1s <- function(searchConditionsList = NULL, STAREmployeeV1ID = F, STARExtractRunID = F, EmployeeID = F, FileFolderNumber = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleName = F, ReportedName = F, Gender = F, BirthDate = F, StateEthnicityRaceCodeMNID = F, StateEthnicityRaceCodeMNValue = F, IsHispanic = F, IsAmericanIndianOrAlaskanNative = F, IsAsian = F, IsNativeHawaiianOrPacificIslander = F, IsBlack = F, IsWhite = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasLAFile = F, HasLBFile = F, HasNAFile = F, STARUniqueIdentifier = F, NameSuffixID = F, NameSuffixValue = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTAREmployeeV1s <- function(searchConditionsList = NULL, BirthDate = F, CreatedTime = F, EmployeeID = F, FileFolderNumber = F, FirstName = F, Gender = F, HasLAFile = F, HasLBFile = F, HasNAFile = F, IsAmericanIndianOrAlaskanNative = F, IsAsian = F, IsBlack = F, IsHispanic = F, IsNativeHawaiianOrPacificIslander = F, IsWhite = F, LastName = F, MiddleName = F, ModifiedTime = F, NameSuffixID = F, NameSuffixValue = F, ReportedName = F, SocialSecurityNumber = F, STAREmployeeV1ID = F, STARExtractRunID = F, STARUniqueIdentifier = F, StateEthnicityRaceCodeMNID = F, StateEthnicityRaceCodeMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4261,7 +4261,7 @@
 	#' @return A dataframe or of STAREmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTAREmployeeV1 <- function(STAREmployeeV1ID, STARExtractRunID = F, EmployeeID = F, FileFolderNumber = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleName = F, ReportedName = F, Gender = F, BirthDate = F, StateEthnicityRaceCodeMNID = F, StateEthnicityRaceCodeMNValue = F, IsHispanic = F, IsAmericanIndianOrAlaskanNative = F, IsAsian = F, IsNativeHawaiianOrPacificIslander = F, IsBlack = F, IsWhite = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasLAFile = F, HasLBFile = F, HasNAFile = F, STARUniqueIdentifier = F, NameSuffixID = F, NameSuffixValue = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTAREmployeeV1 <- function(STAREmployeeV1ID, BirthDate = F, CreatedTime = F, EmployeeID = F, FileFolderNumber = F, FirstName = F, Gender = F, HasLAFile = F, HasLBFile = F, HasNAFile = F, IsAmericanIndianOrAlaskanNative = F, IsAsian = F, IsBlack = F, IsHispanic = F, IsNativeHawaiianOrPacificIslander = F, IsWhite = F, LastName = F, MiddleName = F, ModifiedTime = F, NameSuffixID = F, NameSuffixValue = F, ReportedName = F, SocialSecurityNumber = F, STARExtractRunID = F, STARUniqueIdentifier = F, StateEthnicityRaceCodeMNID = F, StateEthnicityRaceCodeMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STAREmployeeV1ID")
 
@@ -4301,7 +4301,7 @@
 	#' @return A newly created STAREmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTAREmployeeV1 <- function(STARExtractRunID = NULL, EmployeeID = NULL, FileFolderNumber = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Gender = NULL, BirthDate = NULL, StateEthnicityRaceCodeMNID = NULL, StateEthnicityRaceCodeMNValue = NULL, IsHispanic = NULL, IsAmericanIndianOrAlaskanNative = NULL, IsAsian = NULL, IsNativeHawaiianOrPacificIslander = NULL, IsBlack = NULL, IsWhite = NULL, STARUniqueIdentifier = NULL, NameSuffixID = NULL, NameSuffixValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTAREmployeeV1 <- function(BirthDate = NULL, EmployeeID = NULL, FileFolderNumber = NULL, FirstName = NULL, Gender = NULL, IsAmericanIndianOrAlaskanNative = NULL, IsAsian = NULL, IsBlack = NULL, IsHispanic = NULL, IsNativeHawaiianOrPacificIslander = NULL, IsWhite = NULL, LastName = NULL, MiddleName = NULL, NameSuffixID = NULL, NameSuffixValue = NULL, SocialSecurityNumber = NULL, STARExtractRunID = NULL, STARUniqueIdentifier = NULL, StateEthnicityRaceCodeMNID = NULL, StateEthnicityRaceCodeMNValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4322,7 +4322,7 @@
 	#' @return The modified STAREmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTAREmployeeV1 <- function(STAREmployeeV1ID, STARExtractRunID = NULL, EmployeeID = NULL, FileFolderNumber = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Gender = NULL, BirthDate = NULL, StateEthnicityRaceCodeMNID = NULL, StateEthnicityRaceCodeMNValue = NULL, IsHispanic = NULL, IsAmericanIndianOrAlaskanNative = NULL, IsAsian = NULL, IsNativeHawaiianOrPacificIslander = NULL, IsBlack = NULL, IsWhite = NULL, STARUniqueIdentifier = NULL, NameSuffixID = NULL, NameSuffixValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTAREmployeeV1 <- function(STAREmployeeV1ID, BirthDate = NULL, EmployeeID = NULL, FileFolderNumber = NULL, FirstName = NULL, Gender = NULL, IsAmericanIndianOrAlaskanNative = NULL, IsAsian = NULL, IsBlack = NULL, IsHispanic = NULL, IsNativeHawaiianOrPacificIslander = NULL, IsWhite = NULL, LastName = NULL, MiddleName = NULL, NameSuffixID = NULL, NameSuffixValue = NULL, SocialSecurityNumber = NULL, STARExtractRunID = NULL, STARUniqueIdentifier = NULL, StateEthnicityRaceCodeMNID = NULL, StateEthnicityRaceCodeMNValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4350,7 +4350,7 @@
 	#' @return A list of STARExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARExtractRuns <- function(searchConditionsList = NULL, STARExtractRunID = F, EmployerID = F, FiscalYearID = F, SnapshotDate = F, DistrictNumber = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNValue = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedLAFileCount = F, ExtractedLBFileCount = F, ExtractedNAFileCount = F, LatestLicensedStaffEmploymentExport = F, LatestLicensedStaffAssignmentExport = F, LatestNonLicensedStaffExport = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARExtractRuns <- function(searchConditionsList = NULL, CreatedTime = F, DistrictNumber = F, EmployerID = F, ExtractedLAFileCount = F, ExtractedLBFileCount = F, ExtractedNAFileCount = F, FatalExceptionCount = F, FiscalYearID = F, LatestExport = F, LatestLicensedStaffAssignmentExport = F, LatestLicensedStaffEmploymentExport = F, LatestNonLicensedStaffExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, SnapshotDate = F, STARExtractRunID = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4375,7 +4375,7 @@
 	#' @return A dataframe or of STARExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARExtractRun <- function(STARExtractRunID, EmployerID = F, FiscalYearID = F, SnapshotDate = F, DistrictNumber = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNValue = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedLAFileCount = F, ExtractedLBFileCount = F, ExtractedNAFileCount = F, LatestLicensedStaffEmploymentExport = F, LatestLicensedStaffAssignmentExport = F, LatestNonLicensedStaffExport = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARExtractRun <- function(STARExtractRunID, CreatedTime = F, DistrictNumber = F, EmployerID = F, ExtractedLAFileCount = F, ExtractedLBFileCount = F, ExtractedNAFileCount = F, FatalExceptionCount = F, FiscalYearID = F, LatestExport = F, LatestLicensedStaffAssignmentExport = F, LatestLicensedStaffEmploymentExport = F, LatestNonLicensedStaffExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, SnapshotDate = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARExtractRunID")
 
@@ -4415,7 +4415,7 @@
 	#' @return A newly created STARExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARExtractRun <- function(EmployerID = NULL, FiscalYearID = NULL, SnapshotDate = NULL, DistrictNumber = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNValue = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARExtractRun <- function(DistrictNumber = NULL, EmployerID = NULL, FiscalYearID = NULL, SnapshotDate = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNValue = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4436,7 +4436,7 @@
 	#' @return The modified STARExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARExtractRun <- function(STARExtractRunID, EmployerID = NULL, FiscalYearID = NULL, SnapshotDate = NULL, DistrictNumber = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNValue = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARExtractRun <- function(STARExtractRunID, DistrictNumber = NULL, EmployerID = NULL, FiscalYearID = NULL, SnapshotDate = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNValue = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4464,7 +4464,7 @@
 	#' @return A list of STARNonLicensedStaffV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARNonLicensedStaffV1s <- function(searchConditionsList = NULL, STARNonLicensedStaffV1ID = F, STAREmployeeV1ID = F, SchoolNumber = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNValue = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, HoursWorkedPerWeek = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, STAREmploymentType = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARNonLicensedStaffV1s <- function(searchConditionsList = NULL, CreatedTime = F, HoursWorkedPerWeek = F, ModifiedTime = F, SchoolNumber = F, STAREmployeeV1ID = F, STAREmploymentType = F, STARNonLicensedStaffV1ID = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4489,7 +4489,7 @@
 	#' @return A dataframe or of STARNonLicensedStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARNonLicensedStaffV1 <- function(STARNonLicensedStaffV1ID, STAREmployeeV1ID = F, SchoolNumber = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNValue = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, HoursWorkedPerWeek = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, STAREmploymentType = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARNonLicensedStaffV1 <- function(STARNonLicensedStaffV1ID, CreatedTime = F, HoursWorkedPerWeek = F, ModifiedTime = F, SchoolNumber = F, STAREmployeeV1ID = F, STAREmploymentType = F, StateSTARAssignmentCodeMNID = F, StateSTARAssignmentCodeMNValue = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARNonLicensedStaffV1ID")
 
@@ -4529,7 +4529,7 @@
 	#' @return A newly created STARNonLicensedStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARNonLicensedStaffV1 <- function(STAREmployeeV1ID = NULL, SchoolNumber = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNValue = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, HoursWorkedPerWeek = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARNonLicensedStaffV1 <- function(HoursWorkedPerWeek = NULL, SchoolNumber = NULL, STAREmployeeV1ID = NULL, STAREmploymentType = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4550,7 +4550,7 @@
 	#' @return The modified STARNonLicensedStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARNonLicensedStaffV1 <- function(STARNonLicensedStaffV1ID, STAREmployeeV1ID = NULL, SchoolNumber = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNValue = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, HoursWorkedPerWeek = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARNonLicensedStaffV1 <- function(STARNonLicensedStaffV1ID, HoursWorkedPerWeek = NULL, SchoolNumber = NULL, STAREmployeeV1ID = NULL, STAREmploymentType = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARAssignmentCodeMNValue = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4578,7 +4578,7 @@
 	#' @return A list of StateStandardAddressedCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateStandardAddressedCodeMNS <- function(searchConditionsList = NULL, StateStandardAddressedCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateStandardAddressedCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateStandardAddressedCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4603,7 +4603,7 @@
 	#' @return A dataframe or of StateStandardAddressedCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateStandardAddressedCodeMN <- function(StateStandardAddressedCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateStandardAddressedCodeMN <- function(StateStandardAddressedCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateStandardAddressedCodeMNID")
 
@@ -4643,7 +4643,7 @@
 	#' @return A newly created StateStandardAddressedCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateStandardAddressedCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateStandardAddressedCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4664,7 +4664,7 @@
 	#' @return The modified StateStandardAddressedCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateStandardAddressedCodeMN <- function(StateStandardAddressedCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateStandardAddressedCodeMN <- function(StateStandardAddressedCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4692,7 +4692,7 @@
 	#' @return A list of MCCCSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCSubmissions <- function(searchConditionsList = NULL, MCCCSubmissionID = F, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCSubmissions <- function(searchConditionsList = NULL, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, MCCCSubmissionID = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4717,7 +4717,7 @@
 	#' @return A dataframe or of MCCCSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCSubmission <- function(MCCCSubmissionID, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCSubmission <- function(MCCCSubmissionID, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCSubmissionID")
 
@@ -4757,7 +4757,7 @@
 	#' @return A newly created MCCCSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCSubmission <- function(Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCSubmission <- function(CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4778,7 +4778,7 @@
 	#' @return The modified MCCCSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCSubmission <- function(MCCCSubmissionID, Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCSubmission <- function(MCCCSubmissionID, CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4806,7 +4806,7 @@
 	#' @return A list of MCCCSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCSubmissionRunHistories <- function(searchConditionsList = NULL, MCCCSubmissionRunHistoryID = F, MCCCSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunIdentification = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MediaID = F, ModifiedTime = F, RunData = F, RunIdentification = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4831,7 +4831,7 @@
 	#' @return A dataframe or of MCCCSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCSubmissionRunHistory <- function(MCCCSubmissionRunHistoryID, MCCCSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunIdentification = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCSubmissionRunHistory <- function(MCCCSubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MCCCSubmissionID = F, MediaID = F, ModifiedTime = F, RunData = F, RunIdentification = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCSubmissionRunHistoryID")
 
@@ -4871,7 +4871,7 @@
 	#' @return A newly created MCCCSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCSubmissionRunHistory <- function(MCCCSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCSubmissionRunHistory <- function(EndDateTime = NULL, MCCCSubmissionID = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4892,7 +4892,7 @@
 	#' @return The modified MCCCSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCSubmissionRunHistory <- function(MCCCSubmissionRunHistoryID, MCCCSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCSubmissionRunHistory <- function(MCCCSubmissionRunHistoryID, EndDateTime = NULL, MCCCSubmissionID = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4920,7 +4920,7 @@
 	#' @return A list of StateSubjectAreaCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateSubjectAreaCodeMNS <- function(searchConditionsList = NULL, StateSubjectAreaCodeMNID = F, Rank = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateSubjectAreaCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, Rank = F, SkywardHash = F, SkywardID = F, StateSubjectAreaCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -4945,7 +4945,7 @@
 	#' @return A dataframe or of StateSubjectAreaCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateSubjectAreaCodeMN <- function(StateSubjectAreaCodeMNID, Rank = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateSubjectAreaCodeMN <- function(StateSubjectAreaCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, Rank = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateSubjectAreaCodeMNID")
 
@@ -4985,7 +4985,7 @@
 	#' @return A newly created StateSubjectAreaCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateSubjectAreaCodeMN <- function(Rank = NULL, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateSubjectAreaCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, Rank = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5006,7 +5006,7 @@
 	#' @return The modified StateSubjectAreaCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateSubjectAreaCodeMN <- function(StateSubjectAreaCodeMNID, Rank = NULL, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateSubjectAreaCodeMN <- function(StateSubjectAreaCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, Rank = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5034,7 +5034,7 @@
 	#' @return A list of StateCollegeCourseLevelMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateCollegeCourseLevelMNS <- function(searchConditionsList = NULL, StateCollegeCourseLevelMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsCollegeCourseLevel = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateCollegeCourseLevelMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsCollegeCourseLevel = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateCollegeCourseLevelMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5059,7 +5059,7 @@
 	#' @return A dataframe or of StateCollegeCourseLevelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateCollegeCourseLevelMN <- function(StateCollegeCourseLevelMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsCollegeCourseLevel = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateCollegeCourseLevelMN <- function(StateCollegeCourseLevelMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsCollegeCourseLevel = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateCollegeCourseLevelMNID")
 
@@ -5099,7 +5099,7 @@
 	#' @return A newly created StateCollegeCourseLevelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateCollegeCourseLevelMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, IsCollegeCourseLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateCollegeCourseLevelMN <- function(Code = NULL, Description = NULL, IsCollegeCourseLevel = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5120,7 +5120,7 @@
 	#' @return The modified StateCollegeCourseLevelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateCollegeCourseLevelMN <- function(StateCollegeCourseLevelMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, IsCollegeCourseLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateCollegeCourseLevelMN <- function(StateCollegeCourseLevelMNID, Code = NULL, Description = NULL, IsCollegeCourseLevel = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5148,7 +5148,7 @@
 	#' @return A list of StateInstructionalMethodCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateInstructionalMethodCodeMNS <- function(searchConditionsList = NULL, StateInstructionalMethodCodeMNID = F, Code = F, Description = F, CodeDescription = F, GradeRange = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateInstructionalMethodCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, GradeRange = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateInstructionalMethodCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5173,7 +5173,7 @@
 	#' @return A dataframe or of StateInstructionalMethodCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateInstructionalMethodCodeMN <- function(StateInstructionalMethodCodeMNID, Code = F, Description = F, CodeDescription = F, GradeRange = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateInstructionalMethodCodeMN <- function(StateInstructionalMethodCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, GradeRange = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateInstructionalMethodCodeMNID")
 
@@ -5213,7 +5213,7 @@
 	#' @return A newly created StateInstructionalMethodCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateInstructionalMethodCodeMN <- function(Code = NULL, Description = NULL, GradeRange = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateInstructionalMethodCodeMN <- function(Code = NULL, Description = NULL, GradeRange = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5234,7 +5234,7 @@
 	#' @return The modified StateInstructionalMethodCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateInstructionalMethodCodeMN <- function(StateInstructionalMethodCodeMNID, Code = NULL, Description = NULL, GradeRange = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateInstructionalMethodCodeMN <- function(StateInstructionalMethodCodeMNID, Code = NULL, Description = NULL, GradeRange = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5262,7 +5262,7 @@
 	#' @return A list of StateStandardCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateStandardCodeMNS <- function(searchConditionsList = NULL, StateStandardCodeMNID = F, Code = F, Description = F, StandardType = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEarlyEducationAllCode = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateStandardCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsEarlyEducationAllCode = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StandardType = F, StateStandardCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5287,7 +5287,7 @@
 	#' @return A dataframe or of StateStandardCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateStandardCodeMN <- function(StateStandardCodeMNID, Code = F, Description = F, StandardType = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEarlyEducationAllCode = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateStandardCodeMN <- function(StateStandardCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsEarlyEducationAllCode = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StandardType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateStandardCodeMNID")
 
@@ -5327,7 +5327,7 @@
 	#' @return A newly created StateStandardCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateStandardCodeMN <- function(Code = NULL, Description = NULL, StandardType = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateStandardCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, StandardType = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5348,7 +5348,7 @@
 	#' @return The modified StateStandardCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateStandardCodeMN <- function(StateStandardCodeMNID, Code = NULL, Description = NULL, StandardType = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateStandardCodeMN <- function(StateStandardCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, StandardType = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5376,7 +5376,7 @@
 	#' @return A list of StateCourseCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateCourseCodeMNS <- function(searchConditionsList = NULL, StateCourseCodeMNID = F, Code = F, Description = F, CodeDescription = F, CodeNumericValue = F, CourseClassificationType = F, GradeRange = F, IsUndefinedSubject = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateCourseCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CodeNumericValue = F, CourseClassificationType = F, CreatedTime = F, Description = F, GradeRange = F, IsInvalid = F, IsUndefinedSubject = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateCourseCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5401,7 +5401,7 @@
 	#' @return A dataframe or of StateCourseCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateCourseCodeMN <- function(StateCourseCodeMNID, Code = F, Description = F, CodeDescription = F, CodeNumericValue = F, CourseClassificationType = F, GradeRange = F, IsUndefinedSubject = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateCourseCodeMN <- function(StateCourseCodeMNID, Code = F, CodeDescription = F, CodeNumericValue = F, CourseClassificationType = F, CreatedTime = F, Description = F, GradeRange = F, IsInvalid = F, IsUndefinedSubject = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateCourseCodeMNID")
 
@@ -5441,7 +5441,7 @@
 	#' @return A newly created StateCourseCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateCourseCodeMN <- function(Code = NULL, Description = NULL, CourseClassificationType = NULL, GradeRange = NULL, IsUndefinedSubject = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateCourseCodeMN <- function(Code = NULL, CourseClassificationType = NULL, Description = NULL, GradeRange = NULL, IsInvalid = NULL, IsUndefinedSubject = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5462,7 +5462,7 @@
 	#' @return The modified StateCourseCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateCourseCodeMN <- function(StateCourseCodeMNID, Code = NULL, Description = NULL, CourseClassificationType = NULL, GradeRange = NULL, IsUndefinedSubject = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateCourseCodeMN <- function(StateCourseCodeMNID, Code = NULL, CourseClassificationType = NULL, Description = NULL, GradeRange = NULL, IsInvalid = NULL, IsUndefinedSubject = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5490,7 +5490,7 @@
 	#' @return A list of StateReportingMNNewHireEmployeeV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateReportingMNNewHireEmployeeV1s <- function(searchConditionsList = NULL, NewHireEmployeeV1ID = F, NewHireEmployerV1ID = F, EmployeeID = F, FirstNameLegal = F, MiddleNameLegal = F, LastNameLegal = F, SocialSecurityNumber = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, StateCode = F, ZipCode = F, ZipCodePlusFour = F, CountryCode = F, BirthDate = F, HireDate = F, StateIDHire = F, HireStateCode = F, IsIndependentContractor = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsRehire = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateReportingMNNewHireEmployeeV1s <- function(searchConditionsList = NULL, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, BirthDate = F, City = F, CountryCode = F, CreatedTime = F, EmployeeID = F, FirstNameLegal = F, HireDate = F, HireStateCode = F, IsIndependentContractor = F, IsRehire = F, LastNameLegal = F, MiddleNameLegal = F, ModifiedTime = F, NewHireEmployeeV1ID = F, NewHireEmployerV1ID = F, SocialSecurityNumber = F, StateCode = F, StateIDHire = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5515,7 +5515,7 @@
 	#' @return A dataframe or of StateReportingMNNewHireEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateReportingMNNewHireEmployeeV1 <- function(StateReportingMNNewHireEmployeeV1ID, NewHireEmployeeV1ID = F, NewHireEmployerV1ID = F, EmployeeID = F, FirstNameLegal = F, MiddleNameLegal = F, LastNameLegal = F, SocialSecurityNumber = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, StateCode = F, ZipCode = F, ZipCodePlusFour = F, CountryCode = F, BirthDate = F, HireDate = F, StateIDHire = F, HireStateCode = F, IsIndependentContractor = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsRehire = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateReportingMNNewHireEmployeeV1 <- function(StateReportingMNNewHireEmployeeV1ID, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, BirthDate = F, City = F, CountryCode = F, CreatedTime = F, EmployeeID = F, FirstNameLegal = F, HireDate = F, HireStateCode = F, IsIndependentContractor = F, IsRehire = F, LastNameLegal = F, MiddleNameLegal = F, ModifiedTime = F, NewHireEmployeeV1ID = F, NewHireEmployerV1ID = F, SocialSecurityNumber = F, StateCode = F, StateIDHire = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateReportingMNNewHireEmployeeV1ID")
 
@@ -5555,7 +5555,7 @@
 	#' @return A newly created StateReportingMNNewHireEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateReportingMNNewHireEmployeeV1 <- function(NewHireEmployerV1ID = NULL, EmployeeID = NULL, FirstNameLegal = NULL, MiddleNameLegal = NULL, LastNameLegal = NULL, SocialSecurityNumber = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, CountryCode = NULL, BirthDate = NULL, HireDate = NULL, StateIDHire = NULL, HireStateCode = NULL, IsIndependentContractor = NULL, IsRehire = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateReportingMNNewHireEmployeeV1 <- function(AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, BirthDate = NULL, City = NULL, CountryCode = NULL, EmployeeID = NULL, FirstNameLegal = NULL, HireDate = NULL, HireStateCode = NULL, IsIndependentContractor = NULL, IsRehire = NULL, LastNameLegal = NULL, MiddleNameLegal = NULL, NewHireEmployerV1ID = NULL, SocialSecurityNumber = NULL, StateCode = NULL, StateIDHire = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5576,7 +5576,7 @@
 	#' @return The modified StateReportingMNNewHireEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateReportingMNNewHireEmployeeV1 <- function(NewHireEmployeeV1ID, NewHireEmployerV1ID = NULL, EmployeeID = NULL, FirstNameLegal = NULL, MiddleNameLegal = NULL, LastNameLegal = NULL, SocialSecurityNumber = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, CountryCode = NULL, BirthDate = NULL, HireDate = NULL, StateIDHire = NULL, HireStateCode = NULL, IsIndependentContractor = NULL, IsRehire = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateReportingMNNewHireEmployeeV1 <- function(NewHireEmployeeV1ID, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, BirthDate = NULL, City = NULL, CountryCode = NULL, EmployeeID = NULL, FirstNameLegal = NULL, HireDate = NULL, HireStateCode = NULL, IsIndependentContractor = NULL, IsRehire = NULL, LastNameLegal = NULL, MiddleNameLegal = NULL, NewHireEmployerV1ID = NULL, SocialSecurityNumber = NULL, StateCode = NULL, StateIDHire = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5604,7 +5604,7 @@
 	#' @return A list of NewHireExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listNewHireExtractRuns <- function(searchConditionsList = NULL, NewHireExtractRunID = F, PostingDate = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, EmploymentHireDateLow = F, EmploymentHireDateHigh = F, NewHireDateType = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listNewHireExtractRuns <- function(searchConditionsList = NULL, CreatedTime = F, EmploymentHireDateHigh = F, EmploymentHireDateLow = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NewHireDateType = F, NewHireExtractRunID = F, NonFatalExceptionCount = F, PostingDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5629,7 +5629,7 @@
 	#' @return A dataframe or of NewHireExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getNewHireExtractRun <- function(NewHireExtractRunID, PostingDate = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, EmploymentHireDateLow = F, EmploymentHireDateHigh = F, NewHireDateType = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getNewHireExtractRun <- function(NewHireExtractRunID, CreatedTime = F, EmploymentHireDateHigh = F, EmploymentHireDateLow = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NewHireDateType = F, NonFatalExceptionCount = F, PostingDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "NewHireExtractRunID")
 
@@ -5669,7 +5669,7 @@
 	#' @return A newly created NewHireExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createNewHireExtractRun <- function(PostingDate = NULL, Version = NULL, EmploymentHireDateLow = NULL, EmploymentHireDateHigh = NULL, NewHireDateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createNewHireExtractRun <- function(EmploymentHireDateHigh = NULL, EmploymentHireDateLow = NULL, NewHireDateType = NULL, PostingDate = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5690,7 +5690,7 @@
 	#' @return The modified NewHireExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyNewHireExtractRun <- function(NewHireExtractRunID, PostingDate = NULL, Version = NULL, EmploymentHireDateLow = NULL, EmploymentHireDateHigh = NULL, NewHireDateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyNewHireExtractRun <- function(NewHireExtractRunID, EmploymentHireDateHigh = NULL, EmploymentHireDateLow = NULL, NewHireDateType = NULL, PostingDate = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5718,7 +5718,7 @@
 	#' @return A list of StateReportingMNNewHireEmployerV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateReportingMNNewHireEmployerV1s <- function(searchConditionsList = NULL, NewHireEmployerV1ID = F, NewHireExtractRunID = F, EmployerID = F, FederalEIN = F, EmployerName = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, StateCode = F, ZipCode = F, ZipCodePlusFour = F, CountryCode = F, ContactPerson = F, ContactPhoneNumber = F, ContactPhoneExtension = F, AddressIDSecondary = F, SecondaryAddressLine1 = F, SecondaryAddressLine2 = F, SecondaryAddressLine3 = F, SecondaryCity = F, SecondaryStateCode = F, SecondaryZipCode = F, SecondaryZipCodePlusFour = F, SecondaryCountryCode = F, SecondaryContactPerson = F, SecondaryContactPhoneNumber = F, SecondaryContactPhoneExtension = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateReportingMNNewHireEmployerV1s <- function(searchConditionsList = NULL, AddressID = F, AddressIDSecondary = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, ContactPerson = F, ContactPhoneExtension = F, ContactPhoneNumber = F, CountryCode = F, CreatedTime = F, EmployerID = F, EmployerName = F, FederalEIN = F, ModifiedTime = F, NewHireEmployerV1ID = F, NewHireExtractRunID = F, SecondaryAddressLine1 = F, SecondaryAddressLine2 = F, SecondaryAddressLine3 = F, SecondaryCity = F, SecondaryContactPerson = F, SecondaryContactPhoneExtension = F, SecondaryContactPhoneNumber = F, SecondaryCountryCode = F, SecondaryStateCode = F, SecondaryZipCode = F, SecondaryZipCodePlusFour = F, StateCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5743,7 +5743,7 @@
 	#' @return A dataframe or of StateReportingMNNewHireEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateReportingMNNewHireEmployerV1 <- function(StateReportingMNNewHireEmployerV1ID, NewHireEmployerV1ID = F, NewHireExtractRunID = F, EmployerID = F, FederalEIN = F, EmployerName = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, StateCode = F, ZipCode = F, ZipCodePlusFour = F, CountryCode = F, ContactPerson = F, ContactPhoneNumber = F, ContactPhoneExtension = F, AddressIDSecondary = F, SecondaryAddressLine1 = F, SecondaryAddressLine2 = F, SecondaryAddressLine3 = F, SecondaryCity = F, SecondaryStateCode = F, SecondaryZipCode = F, SecondaryZipCodePlusFour = F, SecondaryCountryCode = F, SecondaryContactPerson = F, SecondaryContactPhoneNumber = F, SecondaryContactPhoneExtension = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateReportingMNNewHireEmployerV1 <- function(StateReportingMNNewHireEmployerV1ID, AddressID = F, AddressIDSecondary = F, AddressLine1 = F, AddressLine2 = F, AddressLine3 = F, City = F, ContactPerson = F, ContactPhoneExtension = F, ContactPhoneNumber = F, CountryCode = F, CreatedTime = F, EmployerID = F, EmployerName = F, FederalEIN = F, ModifiedTime = F, NewHireEmployerV1ID = F, NewHireExtractRunID = F, SecondaryAddressLine1 = F, SecondaryAddressLine2 = F, SecondaryAddressLine3 = F, SecondaryCity = F, SecondaryContactPerson = F, SecondaryContactPhoneExtension = F, SecondaryContactPhoneNumber = F, SecondaryCountryCode = F, SecondaryStateCode = F, SecondaryZipCode = F, SecondaryZipCodePlusFour = F, StateCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateReportingMNNewHireEmployerV1ID")
 
@@ -5783,7 +5783,7 @@
 	#' @return A newly created StateReportingMNNewHireEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateReportingMNNewHireEmployerV1 <- function(NewHireExtractRunID = NULL, EmployerID = NULL, FederalEIN = NULL, EmployerName = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, CountryCode = NULL, ContactPerson = NULL, ContactPhoneNumber = NULL, ContactPhoneExtension = NULL, AddressIDSecondary = NULL, SecondaryAddressLine1 = NULL, SecondaryAddressLine2 = NULL, SecondaryAddressLine3 = NULL, SecondaryCity = NULL, SecondaryStateCode = NULL, SecondaryZipCode = NULL, SecondaryZipCodePlusFour = NULL, SecondaryCountryCode = NULL, SecondaryContactPerson = NULL, SecondaryContactPhoneNumber = NULL, SecondaryContactPhoneExtension = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateReportingMNNewHireEmployerV1 <- function(AddressID = NULL, AddressIDSecondary = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, ContactPerson = NULL, ContactPhoneExtension = NULL, ContactPhoneNumber = NULL, CountryCode = NULL, EmployerID = NULL, EmployerName = NULL, FederalEIN = NULL, NewHireExtractRunID = NULL, SecondaryAddressLine1 = NULL, SecondaryAddressLine2 = NULL, SecondaryAddressLine3 = NULL, SecondaryCity = NULL, SecondaryContactPerson = NULL, SecondaryContactPhoneExtension = NULL, SecondaryContactPhoneNumber = NULL, SecondaryCountryCode = NULL, SecondaryStateCode = NULL, SecondaryZipCode = NULL, SecondaryZipCodePlusFour = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5804,7 +5804,7 @@
 	#' @return The modified StateReportingMNNewHireEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateReportingMNNewHireEmployerV1 <- function(NewHireEmployerV1ID, NewHireExtractRunID = NULL, EmployerID = NULL, FederalEIN = NULL, EmployerName = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, CountryCode = NULL, ContactPerson = NULL, ContactPhoneNumber = NULL, ContactPhoneExtension = NULL, AddressIDSecondary = NULL, SecondaryAddressLine1 = NULL, SecondaryAddressLine2 = NULL, SecondaryAddressLine3 = NULL, SecondaryCity = NULL, SecondaryStateCode = NULL, SecondaryZipCode = NULL, SecondaryZipCodePlusFour = NULL, SecondaryCountryCode = NULL, SecondaryContactPerson = NULL, SecondaryContactPhoneNumber = NULL, SecondaryContactPhoneExtension = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateReportingMNNewHireEmployerV1 <- function(NewHireEmployerV1ID, AddressID = NULL, AddressIDSecondary = NULL, AddressLine1 = NULL, AddressLine2 = NULL, AddressLine3 = NULL, City = NULL, ContactPerson = NULL, ContactPhoneExtension = NULL, ContactPhoneNumber = NULL, CountryCode = NULL, EmployerID = NULL, EmployerName = NULL, FederalEIN = NULL, NewHireExtractRunID = NULL, SecondaryAddressLine1 = NULL, SecondaryAddressLine2 = NULL, SecondaryAddressLine3 = NULL, SecondaryCity = NULL, SecondaryContactPerson = NULL, SecondaryContactPhoneExtension = NULL, SecondaryContactPhoneNumber = NULL, SecondaryCountryCode = NULL, SecondaryStateCode = NULL, SecondaryZipCode = NULL, SecondaryZipCodePlusFour = NULL, StateCode = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5832,7 +5832,7 @@
 	#' @return A list of NewHireEmployerV1IncludedPayrollRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listNewHireEmployerV1IncludedPayrollRuns <- function(searchConditionsList = NULL, NewHireEmployerV1IncludedPayrollRunID = F, NewHireExtractRunID = F, EmployerID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listNewHireEmployerV1IncludedPayrollRuns <- function(searchConditionsList = NULL, CreatedTime = F, EmployerID = F, ModifiedTime = F, NewHireEmployerV1IncludedPayrollRunID = F, NewHireExtractRunID = F, PayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5857,7 +5857,7 @@
 	#' @return A dataframe or of NewHireEmployerV1IncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getNewHireEmployerV1IncludedPayrollRun <- function(NewHireEmployerV1IncludedPayrollRunID, NewHireExtractRunID = F, EmployerID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getNewHireEmployerV1IncludedPayrollRun <- function(NewHireEmployerV1IncludedPayrollRunID, CreatedTime = F, EmployerID = F, ModifiedTime = F, NewHireExtractRunID = F, PayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "NewHireEmployerV1IncludedPayrollRunID")
 
@@ -5897,7 +5897,7 @@
 	#' @return A newly created NewHireEmployerV1IncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createNewHireEmployerV1IncludedPayrollRun <- function(NewHireExtractRunID = NULL, EmployerID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createNewHireEmployerV1IncludedPayrollRun <- function(EmployerID = NULL, NewHireExtractRunID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5918,7 +5918,7 @@
 	#' @return The modified NewHireEmployerV1IncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyNewHireEmployerV1IncludedPayrollRun <- function(NewHireEmployerV1IncludedPayrollRunID, NewHireExtractRunID = NULL, EmployerID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyNewHireEmployerV1IncludedPayrollRun <- function(NewHireEmployerV1IncludedPayrollRunID, EmployerID = NULL, NewHireExtractRunID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5946,7 +5946,7 @@
 	#' @return A list of WageDetailEmployerV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailEmployerV1s <- function(searchConditionsList = NULL, WageDetailEmployerV1ID = F, WageDetailExtractRunID = F, EmployerID = F, UnemploymentInsuranceAccountNumber = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailEmployerV1s <- function(searchConditionsList = NULL, CreatedTime = F, EmployerID = F, ModifiedTime = F, UnemploymentInsuranceAccountNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailEmployerV1ID = F, WageDetailExtractRunID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -5971,7 +5971,7 @@
 	#' @return A dataframe or of WageDetailEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailEmployerV1 <- function(WageDetailEmployerV1ID, WageDetailExtractRunID = F, EmployerID = F, UnemploymentInsuranceAccountNumber = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailEmployerV1 <- function(WageDetailEmployerV1ID, CreatedTime = F, EmployerID = F, ModifiedTime = F, UnemploymentInsuranceAccountNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExtractRunID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailEmployerV1ID")
 
@@ -6011,7 +6011,7 @@
 	#' @return A newly created WageDetailEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWageDetailEmployerV1 <- function(WageDetailExtractRunID = NULL, EmployerID = NULL, UnemploymentInsuranceAccountNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWageDetailEmployerV1 <- function(EmployerID = NULL, UnemploymentInsuranceAccountNumber = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6032,7 +6032,7 @@
 	#' @return The modified WageDetailEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWageDetailEmployerV1 <- function(WageDetailEmployerV1ID, WageDetailExtractRunID = NULL, EmployerID = NULL, UnemploymentInsuranceAccountNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWageDetailEmployerV1 <- function(WageDetailEmployerV1ID, EmployerID = NULL, UnemploymentInsuranceAccountNumber = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6060,7 +6060,7 @@
 	#' @return A list of WageDetailExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailExceptions <- function(searchConditionsList = NULL, WageDetailExceptionID = F, WageDetailExtractRunID = F, EmployerID = F, EmployeeID = F, UnemploymentInsuranceUnitLocationNumber = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailExceptions <- function(searchConditionsList = NULL, CreatedTime = F, EmployeeID = F, EmployerID = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Source = F, Type = F, UnemploymentInsuranceUnitLocationNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExceptionID = F, WageDetailExtractRunID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6085,7 +6085,7 @@
 	#' @return A dataframe or of WageDetailException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailException <- function(WageDetailExceptionID, WageDetailExtractRunID = F, EmployerID = F, EmployeeID = F, UnemploymentInsuranceUnitLocationNumber = F, Source = F, IsFatal = F, Type = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailException <- function(WageDetailExceptionID, CreatedTime = F, EmployeeID = F, EmployerID = F, IsFatal = F, Message = F, ModifiedTime = F, PreserveException = F, Source = F, Type = F, UnemploymentInsuranceUnitLocationNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExtractRunID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailExceptionID")
 
@@ -6125,7 +6125,7 @@
 	#' @return A newly created WageDetailException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWageDetailException <- function(WageDetailExtractRunID = NULL, EmployerID = NULL, EmployeeID = NULL, UnemploymentInsuranceUnitLocationNumber = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWageDetailException <- function(EmployeeID = NULL, EmployerID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Source = NULL, Type = NULL, UnemploymentInsuranceUnitLocationNumber = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6146,7 +6146,7 @@
 	#' @return The modified WageDetailException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWageDetailException <- function(WageDetailExceptionID, WageDetailExtractRunID = NULL, EmployerID = NULL, EmployeeID = NULL, UnemploymentInsuranceUnitLocationNumber = NULL, Source = NULL, IsFatal = NULL, Type = NULL, Message = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWageDetailException <- function(WageDetailExceptionID, EmployeeID = NULL, EmployerID = NULL, IsFatal = NULL, Message = NULL, PreserveException = NULL, Source = NULL, Type = NULL, UnemploymentInsuranceUnitLocationNumber = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6174,7 +6174,7 @@
 	#' @return A list of WageDetailExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailExports <- function(searchConditionsList = NULL, WageDetailExportID = F, WageDetailExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailExports <- function(searchConditionsList = NULL, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExportID = F, WageDetailExtractRunID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6199,7 +6199,7 @@
 	#' @return A dataframe or of WageDetailExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailExport <- function(WageDetailExportID, WageDetailExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailExport <- function(WageDetailExportID, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExtractRunID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailExportID")
 
@@ -6239,7 +6239,7 @@
 	#' @return A newly created WageDetailExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWageDetailExport <- function(WageDetailExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWageDetailExport <- function(MediaID = NULL, Status = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6260,7 +6260,7 @@
 	#' @return The modified WageDetailExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWageDetailExport <- function(WageDetailExportID, WageDetailExtractRunID = NULL, MediaID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWageDetailExport <- function(WageDetailExportID, MediaID = NULL, Status = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6288,7 +6288,7 @@
 	#' @return A list of WageDetailExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailExtractRuns <- function(searchConditionsList = NULL, WageDetailExtractRunID = F, CalendarYear = F, Quarter = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailExtractRuns <- function(searchConditionsList = NULL, CalendarYear = F, CreatedTime = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, Quarter = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, WageDetailExtractRunID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6313,7 +6313,7 @@
 	#' @return A dataframe or of WageDetailExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailExtractRun <- function(WageDetailExtractRunID, CalendarYear = F, Quarter = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedEmployeeCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailExtractRun <- function(WageDetailExtractRunID, CalendarYear = F, CreatedTime = F, ExtractedEmployeeCount = F, FatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, Quarter = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailExtractRunID")
 
@@ -6402,7 +6402,7 @@
 	#' @return A list of WageDetailEmployerIncludedPayrollRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailEmployerIncludedPayrollRuns <- function(searchConditionsList = NULL, WageDetailEmployerIncludedPayrollRunID = F, WageDetailExtractRunID = F, PayrollRunID = F, EmployerID = F, Month = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailEmployerIncludedPayrollRuns <- function(searchConditionsList = NULL, CreatedTime = F, EmployerID = F, ModifiedTime = F, Month = F, PayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailEmployerIncludedPayrollRunID = F, WageDetailExtractRunID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6427,7 +6427,7 @@
 	#' @return A dataframe or of WageDetailEmployerIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailEmployerIncludedPayrollRun <- function(WageDetailEmployerIncludedPayrollRunID, WageDetailExtractRunID = F, PayrollRunID = F, EmployerID = F, Month = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailEmployerIncludedPayrollRun <- function(WageDetailEmployerIncludedPayrollRunID, CreatedTime = F, EmployerID = F, ModifiedTime = F, Month = F, PayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailExtractRunID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailEmployerIncludedPayrollRunID")
 
@@ -6467,7 +6467,7 @@
 	#' @return A newly created WageDetailEmployerIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWageDetailEmployerIncludedPayrollRun <- function(WageDetailExtractRunID = NULL, PayrollRunID = NULL, EmployerID = NULL, Month = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWageDetailEmployerIncludedPayrollRun <- function(EmployerID = NULL, Month = NULL, PayrollRunID = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6488,7 +6488,7 @@
 	#' @return The modified WageDetailEmployerIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWageDetailEmployerIncludedPayrollRun <- function(WageDetailEmployerIncludedPayrollRunID, WageDetailExtractRunID = NULL, PayrollRunID = NULL, EmployerID = NULL, Month = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWageDetailEmployerIncludedPayrollRun <- function(WageDetailEmployerIncludedPayrollRunID, EmployerID = NULL, Month = NULL, PayrollRunID = NULL, WageDetailExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6516,7 +6516,7 @@
 	#' @return A list of WageDetailEmployeeV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWageDetailEmployeeV1s <- function(searchConditionsList = NULL, WageDetailEmployeeV1ID = F, WageDetailEmployerV1ID = F, EmployeeID = F, UnemploymentInsuranceUnitLocation = F, FirstName = F, MiddleInitial = F, LastName = F, SocialSecurityNumber = F, Month1Wages = F, Month2Wages = F, Month3Wages = F, PaidFor12thDayOfMonth1 = F, PaidFor12thDayOfMonth2 = F, PaidFor12thDayOfMonth3 = F, HoursWorked = F, IsOfficer = F, TotalWagesInQuarter = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreviousQuarterYTDWages = F, CurrentQuarterYTDWages = F, TaxStateID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWageDetailEmployeeV1s <- function(searchConditionsList = NULL, CreatedTime = F, CurrentQuarterYTDWages = F, EmployeeID = F, FirstName = F, HoursWorked = F, IsOfficer = F, LastName = F, MiddleInitial = F, ModifiedTime = F, Month1Wages = F, Month2Wages = F, Month3Wages = F, PaidFor12thDayOfMonth1 = F, PaidFor12thDayOfMonth2 = F, PaidFor12thDayOfMonth3 = F, PreviousQuarterYTDWages = F, SocialSecurityNumber = F, TaxStateID = F, TotalWagesInQuarter = F, UnemploymentInsuranceUnitLocation = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailEmployeeV1ID = F, WageDetailEmployerV1ID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6541,7 +6541,7 @@
 	#' @return A dataframe or of WageDetailEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWageDetailEmployeeV1 <- function(WageDetailEmployeeV1ID, WageDetailEmployerV1ID = F, EmployeeID = F, UnemploymentInsuranceUnitLocation = F, FirstName = F, MiddleInitial = F, LastName = F, SocialSecurityNumber = F, Month1Wages = F, Month2Wages = F, Month3Wages = F, PaidFor12thDayOfMonth1 = F, PaidFor12thDayOfMonth2 = F, PaidFor12thDayOfMonth3 = F, HoursWorked = F, IsOfficer = F, TotalWagesInQuarter = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreviousQuarterYTDWages = F, CurrentQuarterYTDWages = F, TaxStateID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWageDetailEmployeeV1 <- function(WageDetailEmployeeV1ID, CreatedTime = F, CurrentQuarterYTDWages = F, EmployeeID = F, FirstName = F, HoursWorked = F, IsOfficer = F, LastName = F, MiddleInitial = F, ModifiedTime = F, Month1Wages = F, Month2Wages = F, Month3Wages = F, PaidFor12thDayOfMonth1 = F, PaidFor12thDayOfMonth2 = F, PaidFor12thDayOfMonth3 = F, PreviousQuarterYTDWages = F, SocialSecurityNumber = F, TaxStateID = F, TotalWagesInQuarter = F, UnemploymentInsuranceUnitLocation = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WageDetailEmployerV1ID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WageDetailEmployeeV1ID")
 
@@ -6581,7 +6581,7 @@
 	#' @return A newly created WageDetailEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWageDetailEmployeeV1 <- function(WageDetailEmployerV1ID = NULL, EmployeeID = NULL, UnemploymentInsuranceUnitLocation = NULL, FirstName = NULL, MiddleInitial = NULL, LastName = NULL, SocialSecurityNumber = NULL, Month1Wages = NULL, Month2Wages = NULL, Month3Wages = NULL, PaidFor12thDayOfMonth1 = NULL, PaidFor12thDayOfMonth2 = NULL, PaidFor12thDayOfMonth3 = NULL, HoursWorked = NULL, IsOfficer = NULL, PreviousQuarterYTDWages = NULL, TaxStateID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWageDetailEmployeeV1 <- function(EmployeeID = NULL, FirstName = NULL, HoursWorked = NULL, IsOfficer = NULL, LastName = NULL, MiddleInitial = NULL, Month1Wages = NULL, Month2Wages = NULL, Month3Wages = NULL, PaidFor12thDayOfMonth1 = NULL, PaidFor12thDayOfMonth2 = NULL, PaidFor12thDayOfMonth3 = NULL, PreviousQuarterYTDWages = NULL, SocialSecurityNumber = NULL, TaxStateID = NULL, UnemploymentInsuranceUnitLocation = NULL, WageDetailEmployerV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6602,7 +6602,7 @@
 	#' @return The modified WageDetailEmployeeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWageDetailEmployeeV1 <- function(WageDetailEmployeeV1ID, WageDetailEmployerV1ID = NULL, EmployeeID = NULL, UnemploymentInsuranceUnitLocation = NULL, FirstName = NULL, MiddleInitial = NULL, LastName = NULL, SocialSecurityNumber = NULL, Month1Wages = NULL, Month2Wages = NULL, Month3Wages = NULL, PaidFor12thDayOfMonth1 = NULL, PaidFor12thDayOfMonth2 = NULL, PaidFor12thDayOfMonth3 = NULL, HoursWorked = NULL, IsOfficer = NULL, PreviousQuarterYTDWages = NULL, TaxStateID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWageDetailEmployeeV1 <- function(WageDetailEmployeeV1ID, EmployeeID = NULL, FirstName = NULL, HoursWorked = NULL, IsOfficer = NULL, LastName = NULL, MiddleInitial = NULL, Month1Wages = NULL, Month2Wages = NULL, Month3Wages = NULL, PaidFor12thDayOfMonth1 = NULL, PaidFor12thDayOfMonth2 = NULL, PaidFor12thDayOfMonth3 = NULL, PreviousQuarterYTDWages = NULL, SocialSecurityNumber = NULL, TaxStateID = NULL, UnemploymentInsuranceUnitLocation = NULL, WageDetailEmployerV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6630,7 +6630,7 @@
 	#' @return A list of MARSSSchoolFileFallV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSchoolFileFallV1s <- function(searchConditionsList = NULL, MARSSSchoolFileFallV1ID = F, SchoolYearID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, GradeLevelCode = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, StateKindergartenScheduleIndicatorCodeMNID = F, KindergartenIndicator = F, InstructionalDays = F, MinutesInSchoolDay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, IsCharter = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSchoolFileFallV1s <- function(searchConditionsList = NULL, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, EntitySchoolID = F, GradeLevelCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, InstructionalDays = F, IsCharter = F, KeyHash = F, KindergartenIndicator = F, MARSSSchoolFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MinutesInSchoolDay = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateKindergartenScheduleIndicatorCodeMNID = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6655,7 +6655,7 @@
 	#' @return A dataframe or of MARSSSchoolFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSchoolFileFallV1 <- function(MARSSSchoolFileFallV1ID, SchoolYearID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, GradeLevelCode = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, StateKindergartenScheduleIndicatorCodeMNID = F, KindergartenIndicator = F, InstructionalDays = F, MinutesInSchoolDay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, IsCharter = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSchoolFileFallV1 <- function(MARSSSchoolFileFallV1ID, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, EntitySchoolID = F, GradeLevelCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, InstructionalDays = F, IsCharter = F, KeyHash = F, KindergartenIndicator = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MinutesInSchoolDay = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateKindergartenScheduleIndicatorCodeMNID = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSchoolFileFallV1ID")
 
@@ -6695,7 +6695,7 @@
 	#' @return A newly created MARSSSchoolFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSchoolFileFallV1 <- function(SchoolYearID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, GradeLevelCode = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, KindergartenIndicator = NULL, InstructionalDays = NULL, MinutesInSchoolDay = NULL, IsCharter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSchoolFileFallV1 <- function(DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, EntitySchoolID = NULL, GradeLevelCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, InstructionalDays = NULL, IsCharter = NULL, KindergartenIndicator = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MinutesInSchoolDay = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6716,7 +6716,7 @@
 	#' @return The modified MARSSSchoolFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSchoolFileFallV1 <- function(MARSSSchoolFileFallV1ID, SchoolYearID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, GradeLevelCode = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, KindergartenIndicator = NULL, InstructionalDays = NULL, MinutesInSchoolDay = NULL, IsCharter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSchoolFileFallV1 <- function(MARSSSchoolFileFallV1ID, DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, EntitySchoolID = NULL, GradeLevelCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, InstructionalDays = NULL, IsCharter = NULL, KindergartenIndicator = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MinutesInSchoolDay = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6744,7 +6744,7 @@
 	#' @return A list of MARSSSchoolFileFallV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSchoolFileFallV1Exceptions <- function(searchConditionsList = NULL, MARSSSchoolFileFallV1ExceptionID = F, SchoolYearID = F, EntityID = F, SchoolID = F, MARSSSchoolFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSchoolFileFallV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, EntityID = F, MARSSSchoolFileFallV1ExceptionID = F, MARSSSchoolFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6769,7 +6769,7 @@
 	#' @return A dataframe or of MARSSSchoolFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSchoolFileFallV1Exception <- function(MARSSSchoolFileFallV1ExceptionID, SchoolYearID = F, EntityID = F, SchoolID = F, MARSSSchoolFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSchoolFileFallV1Exception <- function(MARSSSchoolFileFallV1ExceptionID, CreatedTime = F, EntityID = F, MARSSSchoolFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSchoolFileFallV1ExceptionID")
 
@@ -6809,7 +6809,7 @@
 	#' @return A newly created MARSSSchoolFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSchoolFileFallV1Exception <- function(SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, MARSSSchoolFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSchoolFileFallV1Exception <- function(EntityID = NULL, MARSSSchoolFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6830,7 +6830,7 @@
 	#' @return The modified MARSSSchoolFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSchoolFileFallV1Exception <- function(MARSSSchoolFileFallV1ExceptionID, SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, MARSSSchoolFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSchoolFileFallV1Exception <- function(MARSSSchoolFileFallV1ExceptionID, EntityID = NULL, MARSSSchoolFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6858,7 +6858,7 @@
 	#' @return A list of MARSSStudentFileFallV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSStudentFileFallV1s <- function(searchConditionsList = NULL, MARSSStudentFileFallV1ID = F, SchoolYearID = F, SchoolYearCode = F, EntryWithdrawalID = F, StateStudentNumber = F, SocialSecurityNumber = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, StudentID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, StudentGradeLevelCode = F, StateDistrictMNIDStudent = F, StudentResidentDistrictCode = F, StateDistrictTypeCodeMNIDStudent = F, StudentResidentDistrictType = F, StateAidCategoryCodeMNID = F, StateAidCategoryCode = F, StatusBeginDate = F, StateLastAttendanceLocationCodeMNID = F, LastAttendanceLocation = F, StateStatusEndCodeMNID = F, StatusEndCode = F, StatusEndDate = F, PercentEnrolled = F, AttendanceDays = F, MembershipDays = F, PostSecondaryOption = F, PostSecondaryEducationOptionHours = F, HomeboundService = F, EnrollmentMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, SpecialEdEvalStatus = F, StateSpecEdInstructionalSettingCodeMNID = F, SpecialEdInstructionalSetting = F, LimitedEnglishProficiency = F, LEPBeginDate = F, GiftedAndTalented = F, Gender = F, BirthDate = F, LanguageSchoolYearMNID = F, StateLanguageCodeMNID = F, HomePrimaryLanguage = F, DisabilityMNIDPrimary = F, StateDisabilityCodeMNIDPrimary = F, PrimaryDisability = F, StateTransportationCategoryCodeMNID = F, TransportationCategory = F, EconomicIndicatorMNID = F, StateEconomicIndicatorCodeMNID = F, EconomicIndicator = F, TitleIStudentIndicator = F, Homeless = F, StateDistrictMNIDTransportation = F, TransportationResidentDistrictCode = F, StateDistrictTypeCodeMNIDTransportation = F, TransportationResidentDistrictType = F, StateEthnicityRaceCodeMNID = F, EthnicityRaceCode = F, SpecialPupilsCareAndTreatment = F, IndependentStudy = F, SpecialEducationServiceHours = F, OptOutMNID = F, MinnesotaHealthCareOptOut = F, HispanicLatino = F, AmericanIndianAlaskaNative = F, Asian = F, BlackAfricanAmerican = F, NativeHawaiianPacificIslander = F, White = F, LocalUseData = F, StudentFirstName = F, StudentMiddleName = F, StudentLastName = F, Suffix = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StudentTransportationID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSStudentFileFallV1s <- function(searchConditionsList = NULL, AmericanIndianAlaskaNative = F, Asian = F, AttendanceDays = F, BirthDate = F, BlackAfricanAmerican = F, CreatedTime = F, DisabilityMNIDPrimary = F, DistrictCode = F, DistrictType = F, EconomicIndicator = F, EconomicIndicatorMNID = F, EnrollmentMNID = F, EntityID = F, EntryWithdrawalID = F, EthnicityRaceCode = F, Gender = F, GiftedAndTalented = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, HispanicLatino = F, HomeboundService = F, Homeless = F, HomePrimaryLanguage = F, IndependentStudy = F, KeyHash = F, LanguageSchoolYearMNID = F, LastAttendanceLocation = F, LEPBeginDate = F, LimitedEnglishProficiency = F, LocalUseData = F, MARSSStudentFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MembershipDays = F, MinnesotaHealthCareOptOut = F, ModifiedTime = F, NativeHawaiianPacificIslander = F, OptOutMNID = F, PercentEnrolled = F, PostSecondaryEducationOptionHours = F, PostSecondaryOption = F, PrimaryDisability = F, SchoolID = F, SchoolNumber = F, SchoolYearCode = F, SchoolYearID = F, SocialSecurityNumber = F, SpecialEdEvalStatus = F, SpecialEdInstructionalSetting = F, SpecialEducationServiceHours = F, SpecialPupilsCareAndTreatment = F, StateAidCategoryCode = F, StateAidCategoryCodeMNID = F, StateDisabilityCodeMNIDPrimary = F, StateDistrictMNID = F, StateDistrictMNIDStudent = F, StateDistrictMNIDTransportation = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNIDStudent = F, StateDistrictTypeCodeMNIDTransportation = F, StateEconomicIndicatorCodeMNID = F, StateEthnicityRaceCodeMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, StateLanguageCodeMNID = F, StateLastAttendanceLocationCodeMNID = F, StateSpecEdInstructionalSettingCodeMNID = F, StateStatusEndCodeMNID = F, StateStudentNumber = F, StateTransportationCategoryCodeMNID = F, StatusBeginDate = F, StatusEndCode = F, StatusEndDate = F, StudentFirstName = F, StudentGradeLevelCode = F, StudentID = F, StudentLastName = F, StudentMiddleName = F, StudentResidentDistrictCode = F, StudentResidentDistrictType = F, StudentTransportationID = F, Suffix = F, TitleIStudentIndicator = F, TransportationCategory = F, TransportationResidentDistrictCode = F, TransportationResidentDistrictType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, White = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6883,7 +6883,7 @@
 	#' @return A dataframe or of MARSSStudentFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSStudentFileFallV1 <- function(MARSSStudentFileFallV1ID, SchoolYearID = F, SchoolYearCode = F, EntryWithdrawalID = F, StateStudentNumber = F, SocialSecurityNumber = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, StudentID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, StudentGradeLevelCode = F, StateDistrictMNIDStudent = F, StudentResidentDistrictCode = F, StateDistrictTypeCodeMNIDStudent = F, StudentResidentDistrictType = F, StateAidCategoryCodeMNID = F, StateAidCategoryCode = F, StatusBeginDate = F, StateLastAttendanceLocationCodeMNID = F, LastAttendanceLocation = F, StateStatusEndCodeMNID = F, StatusEndCode = F, StatusEndDate = F, PercentEnrolled = F, AttendanceDays = F, MembershipDays = F, PostSecondaryOption = F, PostSecondaryEducationOptionHours = F, HomeboundService = F, EnrollmentMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, SpecialEdEvalStatus = F, StateSpecEdInstructionalSettingCodeMNID = F, SpecialEdInstructionalSetting = F, LimitedEnglishProficiency = F, LEPBeginDate = F, GiftedAndTalented = F, Gender = F, BirthDate = F, LanguageSchoolYearMNID = F, StateLanguageCodeMNID = F, HomePrimaryLanguage = F, DisabilityMNIDPrimary = F, StateDisabilityCodeMNIDPrimary = F, PrimaryDisability = F, StateTransportationCategoryCodeMNID = F, TransportationCategory = F, EconomicIndicatorMNID = F, StateEconomicIndicatorCodeMNID = F, EconomicIndicator = F, TitleIStudentIndicator = F, Homeless = F, StateDistrictMNIDTransportation = F, TransportationResidentDistrictCode = F, StateDistrictTypeCodeMNIDTransportation = F, TransportationResidentDistrictType = F, StateEthnicityRaceCodeMNID = F, EthnicityRaceCode = F, SpecialPupilsCareAndTreatment = F, IndependentStudy = F, SpecialEducationServiceHours = F, OptOutMNID = F, MinnesotaHealthCareOptOut = F, HispanicLatino = F, AmericanIndianAlaskaNative = F, Asian = F, BlackAfricanAmerican = F, NativeHawaiianPacificIslander = F, White = F, LocalUseData = F, StudentFirstName = F, StudentMiddleName = F, StudentLastName = F, Suffix = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StudentTransportationID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSStudentFileFallV1 <- function(MARSSStudentFileFallV1ID, AmericanIndianAlaskaNative = F, Asian = F, AttendanceDays = F, BirthDate = F, BlackAfricanAmerican = F, CreatedTime = F, DisabilityMNIDPrimary = F, DistrictCode = F, DistrictType = F, EconomicIndicator = F, EconomicIndicatorMNID = F, EnrollmentMNID = F, EntityID = F, EntryWithdrawalID = F, EthnicityRaceCode = F, Gender = F, GiftedAndTalented = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, HispanicLatino = F, HomeboundService = F, Homeless = F, HomePrimaryLanguage = F, IndependentStudy = F, KeyHash = F, LanguageSchoolYearMNID = F, LastAttendanceLocation = F, LEPBeginDate = F, LimitedEnglishProficiency = F, LocalUseData = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MembershipDays = F, MinnesotaHealthCareOptOut = F, ModifiedTime = F, NativeHawaiianPacificIslander = F, OptOutMNID = F, PercentEnrolled = F, PostSecondaryEducationOptionHours = F, PostSecondaryOption = F, PrimaryDisability = F, SchoolID = F, SchoolNumber = F, SchoolYearCode = F, SchoolYearID = F, SocialSecurityNumber = F, SpecialEdEvalStatus = F, SpecialEdInstructionalSetting = F, SpecialEducationServiceHours = F, SpecialPupilsCareAndTreatment = F, StateAidCategoryCode = F, StateAidCategoryCodeMNID = F, StateDisabilityCodeMNIDPrimary = F, StateDistrictMNID = F, StateDistrictMNIDStudent = F, StateDistrictMNIDTransportation = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNIDStudent = F, StateDistrictTypeCodeMNIDTransportation = F, StateEconomicIndicatorCodeMNID = F, StateEthnicityRaceCodeMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, StateLanguageCodeMNID = F, StateLastAttendanceLocationCodeMNID = F, StateSpecEdInstructionalSettingCodeMNID = F, StateStatusEndCodeMNID = F, StateStudentNumber = F, StateTransportationCategoryCodeMNID = F, StatusBeginDate = F, StatusEndCode = F, StatusEndDate = F, StudentFirstName = F, StudentGradeLevelCode = F, StudentID = F, StudentLastName = F, StudentMiddleName = F, StudentResidentDistrictCode = F, StudentResidentDistrictType = F, StudentTransportationID = F, Suffix = F, TitleIStudentIndicator = F, TransportationCategory = F, TransportationResidentDistrictCode = F, TransportationResidentDistrictType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, White = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSStudentFileFallV1ID")
 
@@ -6923,7 +6923,7 @@
 	#' @return A newly created MARSSStudentFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSStudentFileFallV1 <- function(SchoolYearID = NULL, SchoolYearCode = NULL, EntryWithdrawalID = NULL, StateStudentNumber = NULL, SocialSecurityNumber = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, StudentID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, StudentGradeLevelCode = NULL, StateDistrictMNIDStudent = NULL, StudentResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StudentResidentDistrictType = NULL, StateAidCategoryCodeMNID = NULL, StateAidCategoryCode = NULL, StatusBeginDate = NULL, StateLastAttendanceLocationCodeMNID = NULL, LastAttendanceLocation = NULL, StateStatusEndCodeMNID = NULL, StatusEndCode = NULL, StatusEndDate = NULL, PercentEnrolled = NULL, AttendanceDays = NULL, MembershipDays = NULL, PostSecondaryOption = NULL, PostSecondaryEducationOptionHours = NULL, HomeboundService = NULL, EnrollmentMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, SpecialEdEvalStatus = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, SpecialEdInstructionalSetting = NULL, LimitedEnglishProficiency = NULL, LEPBeginDate = NULL, GiftedAndTalented = NULL, Gender = NULL, BirthDate = NULL, LanguageSchoolYearMNID = NULL, StateLanguageCodeMNID = NULL, HomePrimaryLanguage = NULL, DisabilityMNIDPrimary = NULL, StateDisabilityCodeMNIDPrimary = NULL, PrimaryDisability = NULL, StateTransportationCategoryCodeMNID = NULL, TransportationCategory = NULL, EconomicIndicatorMNID = NULL, StateEconomicIndicatorCodeMNID = NULL, EconomicIndicator = NULL, TitleIStudentIndicator = NULL, Homeless = NULL, StateDistrictMNIDTransportation = NULL, TransportationResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, TransportationResidentDistrictType = NULL, StateEthnicityRaceCodeMNID = NULL, EthnicityRaceCode = NULL, SpecialPupilsCareAndTreatment = NULL, IndependentStudy = NULL, SpecialEducationServiceHours = NULL, OptOutMNID = NULL, MinnesotaHealthCareOptOut = NULL, HispanicLatino = NULL, AmericanIndianAlaskaNative = NULL, Asian = NULL, BlackAfricanAmerican = NULL, NativeHawaiianPacificIslander = NULL, White = NULL, LocalUseData = NULL, StudentFirstName = NULL, StudentMiddleName = NULL, StudentLastName = NULL, Suffix = NULL, StudentTransportationID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSStudentFileFallV1 <- function(AmericanIndianAlaskaNative = NULL, Asian = NULL, AttendanceDays = NULL, BirthDate = NULL, BlackAfricanAmerican = NULL, DisabilityMNIDPrimary = NULL, DistrictCode = NULL, DistrictType = NULL, EconomicIndicator = NULL, EconomicIndicatorMNID = NULL, EnrollmentMNID = NULL, EntityID = NULL, EntryWithdrawalID = NULL, EthnicityRaceCode = NULL, Gender = NULL, GiftedAndTalented = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, HispanicLatino = NULL, HomeboundService = NULL, Homeless = NULL, HomePrimaryLanguage = NULL, IndependentStudy = NULL, LanguageSchoolYearMNID = NULL, LastAttendanceLocation = NULL, LEPBeginDate = NULL, LimitedEnglishProficiency = NULL, LocalUseData = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MembershipDays = NULL, MinnesotaHealthCareOptOut = NULL, NativeHawaiianPacificIslander = NULL, OptOutMNID = NULL, PercentEnrolled = NULL, PostSecondaryEducationOptionHours = NULL, PostSecondaryOption = NULL, PrimaryDisability = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearCode = NULL, SchoolYearID = NULL, SocialSecurityNumber = NULL, SpecialEdEvalStatus = NULL, SpecialEdInstructionalSetting = NULL, SpecialEducationServiceHours = NULL, SpecialPupilsCareAndTreatment = NULL, StateAidCategoryCode = NULL, StateAidCategoryCodeMNID = NULL, StateDisabilityCodeMNIDPrimary = NULL, StateDistrictMNID = NULL, StateDistrictMNIDStudent = NULL, StateDistrictMNIDTransportation = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, StateEconomicIndicatorCodeMNID = NULL, StateEthnicityRaceCodeMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, StateLanguageCodeMNID = NULL, StateLastAttendanceLocationCodeMNID = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StateStatusEndCodeMNID = NULL, StateStudentNumber = NULL, StateTransportationCategoryCodeMNID = NULL, StatusBeginDate = NULL, StatusEndCode = NULL, StatusEndDate = NULL, StudentFirstName = NULL, StudentGradeLevelCode = NULL, StudentID = NULL, StudentLastName = NULL, StudentMiddleName = NULL, StudentResidentDistrictCode = NULL, StudentResidentDistrictType = NULL, StudentTransportationID = NULL, Suffix = NULL, TitleIStudentIndicator = NULL, TransportationCategory = NULL, TransportationResidentDistrictCode = NULL, TransportationResidentDistrictType = NULL, White = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6944,7 +6944,7 @@
 	#' @return The modified MARSSStudentFileFallV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSStudentFileFallV1 <- function(MARSSStudentFileFallV1ID, SchoolYearID = NULL, SchoolYearCode = NULL, EntryWithdrawalID = NULL, StateStudentNumber = NULL, SocialSecurityNumber = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, StudentID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, StudentGradeLevelCode = NULL, StateDistrictMNIDStudent = NULL, StudentResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StudentResidentDistrictType = NULL, StateAidCategoryCodeMNID = NULL, StateAidCategoryCode = NULL, StatusBeginDate = NULL, StateLastAttendanceLocationCodeMNID = NULL, LastAttendanceLocation = NULL, StateStatusEndCodeMNID = NULL, StatusEndCode = NULL, StatusEndDate = NULL, PercentEnrolled = NULL, AttendanceDays = NULL, MembershipDays = NULL, PostSecondaryOption = NULL, PostSecondaryEducationOptionHours = NULL, HomeboundService = NULL, EnrollmentMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, SpecialEdEvalStatus = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, SpecialEdInstructionalSetting = NULL, LimitedEnglishProficiency = NULL, LEPBeginDate = NULL, GiftedAndTalented = NULL, Gender = NULL, BirthDate = NULL, LanguageSchoolYearMNID = NULL, StateLanguageCodeMNID = NULL, HomePrimaryLanguage = NULL, DisabilityMNIDPrimary = NULL, StateDisabilityCodeMNIDPrimary = NULL, PrimaryDisability = NULL, StateTransportationCategoryCodeMNID = NULL, TransportationCategory = NULL, EconomicIndicatorMNID = NULL, StateEconomicIndicatorCodeMNID = NULL, EconomicIndicator = NULL, TitleIStudentIndicator = NULL, Homeless = NULL, StateDistrictMNIDTransportation = NULL, TransportationResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, TransportationResidentDistrictType = NULL, StateEthnicityRaceCodeMNID = NULL, EthnicityRaceCode = NULL, SpecialPupilsCareAndTreatment = NULL, IndependentStudy = NULL, SpecialEducationServiceHours = NULL, OptOutMNID = NULL, MinnesotaHealthCareOptOut = NULL, HispanicLatino = NULL, AmericanIndianAlaskaNative = NULL, Asian = NULL, BlackAfricanAmerican = NULL, NativeHawaiianPacificIslander = NULL, White = NULL, LocalUseData = NULL, StudentFirstName = NULL, StudentMiddleName = NULL, StudentLastName = NULL, Suffix = NULL, StudentTransportationID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSStudentFileFallV1 <- function(MARSSStudentFileFallV1ID, AmericanIndianAlaskaNative = NULL, Asian = NULL, AttendanceDays = NULL, BirthDate = NULL, BlackAfricanAmerican = NULL, DisabilityMNIDPrimary = NULL, DistrictCode = NULL, DistrictType = NULL, EconomicIndicator = NULL, EconomicIndicatorMNID = NULL, EnrollmentMNID = NULL, EntityID = NULL, EntryWithdrawalID = NULL, EthnicityRaceCode = NULL, Gender = NULL, GiftedAndTalented = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, HispanicLatino = NULL, HomeboundService = NULL, Homeless = NULL, HomePrimaryLanguage = NULL, IndependentStudy = NULL, LanguageSchoolYearMNID = NULL, LastAttendanceLocation = NULL, LEPBeginDate = NULL, LimitedEnglishProficiency = NULL, LocalUseData = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MembershipDays = NULL, MinnesotaHealthCareOptOut = NULL, NativeHawaiianPacificIslander = NULL, OptOutMNID = NULL, PercentEnrolled = NULL, PostSecondaryEducationOptionHours = NULL, PostSecondaryOption = NULL, PrimaryDisability = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearCode = NULL, SchoolYearID = NULL, SocialSecurityNumber = NULL, SpecialEdEvalStatus = NULL, SpecialEdInstructionalSetting = NULL, SpecialEducationServiceHours = NULL, SpecialPupilsCareAndTreatment = NULL, StateAidCategoryCode = NULL, StateAidCategoryCodeMNID = NULL, StateDisabilityCodeMNIDPrimary = NULL, StateDistrictMNID = NULL, StateDistrictMNIDStudent = NULL, StateDistrictMNIDTransportation = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, StateEconomicIndicatorCodeMNID = NULL, StateEthnicityRaceCodeMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, StateLanguageCodeMNID = NULL, StateLastAttendanceLocationCodeMNID = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StateStatusEndCodeMNID = NULL, StateStudentNumber = NULL, StateTransportationCategoryCodeMNID = NULL, StatusBeginDate = NULL, StatusEndCode = NULL, StatusEndDate = NULL, StudentFirstName = NULL, StudentGradeLevelCode = NULL, StudentID = NULL, StudentLastName = NULL, StudentMiddleName = NULL, StudentResidentDistrictCode = NULL, StudentResidentDistrictType = NULL, StudentTransportationID = NULL, Suffix = NULL, TitleIStudentIndicator = NULL, TransportationCategory = NULL, TransportationResidentDistrictCode = NULL, TransportationResidentDistrictType = NULL, White = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6972,7 +6972,7 @@
 	#' @return A list of MARSSStudentFileFallV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSStudentFileFallV1Exceptions <- function(searchConditionsList = NULL, MARSSStudentFileFallV1ExceptionID = F, SchoolYearID = F, EntityID = F, StudentID = F, MARSSStudentFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSStudentFileFallV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, EntityID = F, MARSSStudentFileFallV1ExceptionID = F, MARSSStudentFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -6997,7 +6997,7 @@
 	#' @return A dataframe or of MARSSStudentFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSStudentFileFallV1Exception <- function(MARSSStudentFileFallV1ExceptionID, SchoolYearID = F, EntityID = F, StudentID = F, MARSSStudentFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSStudentFileFallV1Exception <- function(MARSSStudentFileFallV1ExceptionID, CreatedTime = F, EntityID = F, MARSSStudentFileFallV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSStudentFileFallV1ExceptionID")
 
@@ -7037,7 +7037,7 @@
 	#' @return A newly created MARSSStudentFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSStudentFileFallV1Exception <- function(SchoolYearID = NULL, EntityID = NULL, StudentID = NULL, MARSSStudentFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSStudentFileFallV1Exception <- function(EntityID = NULL, MARSSStudentFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7058,7 +7058,7 @@
 	#' @return The modified MARSSStudentFileFallV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSStudentFileFallV1Exception <- function(MARSSStudentFileFallV1ExceptionID, SchoolYearID = NULL, EntityID = NULL, StudentID = NULL, MARSSStudentFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSStudentFileFallV1Exception <- function(MARSSStudentFileFallV1ExceptionID, EntityID = NULL, MARSSStudentFileFallV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7086,7 +7086,7 @@
 	#' @return A list of MARSSSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSubmissionRunHistories <- function(searchConditionsList = NULL, MARSSSubmissionRunHistoryID = F, MARSSSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7111,7 +7111,7 @@
 	#' @return A dataframe or of MARSSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSubmissionRunHistory <- function(MARSSSubmissionRunHistoryID, MARSSSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSubmissionRunHistory <- function(MARSSSubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MARSSSubmissionID = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSubmissionRunHistoryID")
 
@@ -7151,7 +7151,7 @@
 	#' @return A newly created MARSSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSubmissionRunHistory <- function(MARSSSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSubmissionRunHistory <- function(EndDateTime = NULL, MARSSSubmissionID = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7172,7 +7172,7 @@
 	#' @return The modified MARSSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSubmissionRunHistory <- function(MARSSSubmissionRunHistoryID, MARSSSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSubmissionRunHistory <- function(MARSSSubmissionRunHistoryID, EndDateTime = NULL, MARSSSubmissionID = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7200,7 +7200,7 @@
 	#' @return A list of MARSSSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSubmissions <- function(searchConditionsList = NULL, MARSSSubmissionID = F, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, Collection = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSubmissions <- function(searchConditionsList = NULL, CloseDate = F, Collection = F, CreatedTime = F, Description = F, HasAnExport = F, MARSSSubmissionID = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7225,7 +7225,7 @@
 	#' @return A dataframe or of MARSSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSubmission <- function(MARSSSubmissionID, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, Collection = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSubmission <- function(MARSSSubmissionID, CloseDate = F, Collection = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSubmissionID")
 
@@ -7265,7 +7265,7 @@
 	#' @return A newly created MARSSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSubmission <- function(Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, Collection = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSubmission <- function(CloseDate = NULL, Collection = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7286,7 +7286,7 @@
 	#' @return The modified MARSSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSubmission <- function(MARSSSubmissionID, Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, Collection = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSubmission <- function(MARSSSubmissionID, CloseDate = NULL, Collection = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7314,7 +7314,7 @@
 	#' @return A list of StateDisabilityCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateDisabilityCodeMNS <- function(searchConditionsList = NULL, StateDisabilityCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateDisabilityCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateDisabilityCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7339,7 +7339,7 @@
 	#' @return A dataframe or of StateDisabilityCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateDisabilityCodeMN <- function(StateDisabilityCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateDisabilityCodeMN <- function(StateDisabilityCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateDisabilityCodeMNID")
 
@@ -7379,7 +7379,7 @@
 	#' @return A newly created StateDisabilityCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateDisabilityCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateDisabilityCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7400,7 +7400,7 @@
 	#' @return The modified StateDisabilityCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateDisabilityCodeMN <- function(StateDisabilityCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateDisabilityCodeMN <- function(StateDisabilityCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7428,7 +7428,7 @@
 	#' @return A list of StateEthnicityRaceCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEthnicityRaceCodeMNS <- function(searchConditionsList = NULL, StateEthnicityRaceCodeMNID = F, Code = F, Description = F, CodeDescription = F, IsInvalidFinHR = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEthnicityRaceCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsInvalidFinHR = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEthnicityRaceCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7453,7 +7453,7 @@
 	#' @return A dataframe or of StateEthnicityRaceCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEthnicityRaceCodeMN <- function(StateEthnicityRaceCodeMNID, Code = F, Description = F, CodeDescription = F, IsInvalidFinHR = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEthnicityRaceCodeMN <- function(StateEthnicityRaceCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsInvalidFinHR = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEthnicityRaceCodeMNID")
 
@@ -7493,7 +7493,7 @@
 	#' @return A newly created StateEthnicityRaceCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEthnicityRaceCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEthnicityRaceCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7514,7 +7514,7 @@
 	#' @return The modified StateEthnicityRaceCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEthnicityRaceCodeMN <- function(StateEthnicityRaceCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEthnicityRaceCodeMN <- function(StateEthnicityRaceCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7542,7 +7542,7 @@
 	#' @return A list of StateEvaluationStatusCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEvaluationStatusCodeMNS <- function(searchConditionsList = NULL, StateEvaluationStatusCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEvaluationStatusCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEvaluationStatusCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7567,7 +7567,7 @@
 	#' @return A dataframe or of StateEvaluationStatusCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEvaluationStatusCodeMN <- function(StateEvaluationStatusCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEvaluationStatusCodeMN <- function(StateEvaluationStatusCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEvaluationStatusCodeMNID")
 
@@ -7607,7 +7607,7 @@
 	#' @return A newly created StateEvaluationStatusCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEvaluationStatusCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEvaluationStatusCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7628,7 +7628,7 @@
 	#' @return The modified StateEvaluationStatusCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEvaluationStatusCodeMN <- function(StateEvaluationStatusCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEvaluationStatusCodeMN <- function(StateEvaluationStatusCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7656,7 +7656,7 @@
 	#' @return A list of StateEconomicIndicatorCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEconomicIndicatorCodeMNS <- function(searchConditionsList = NULL, StateEconomicIndicatorCodeMNID = F, Rank = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEconomicIndicatorCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, Rank = F, SkywardHash = F, SkywardID = F, StateEconomicIndicatorCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7681,7 +7681,7 @@
 	#' @return A dataframe or of StateEconomicIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEconomicIndicatorCodeMN <- function(StateEconomicIndicatorCodeMNID, Rank = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEconomicIndicatorCodeMN <- function(StateEconomicIndicatorCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, Rank = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEconomicIndicatorCodeMNID")
 
@@ -7721,7 +7721,7 @@
 	#' @return A newly created StateEconomicIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEconomicIndicatorCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEconomicIndicatorCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7742,7 +7742,7 @@
 	#' @return The modified StateEconomicIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEconomicIndicatorCodeMN <- function(StateEconomicIndicatorCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEconomicIndicatorCodeMN <- function(StateEconomicIndicatorCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7770,7 +7770,7 @@
 	#' @return A list of StateAidCategoryCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateAidCategoryCodeMNS <- function(searchConditionsList = NULL, StateAidCategoryCodeMNID = F, Code = F, Description = F, StateAid = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateAidCategoryCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateAid = F, StateAidCategoryCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7795,7 +7795,7 @@
 	#' @return A dataframe or of StateAidCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateAidCategoryCodeMN <- function(StateAidCategoryCodeMNID, Code = F, Description = F, StateAid = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateAidCategoryCodeMN <- function(StateAidCategoryCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateAid = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateAidCategoryCodeMNID")
 
@@ -7835,7 +7835,7 @@
 	#' @return A newly created StateAidCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateAidCategoryCodeMN <- function(Code = NULL, Description = NULL, StateAid = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateAidCategoryCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, StateAid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7856,7 +7856,7 @@
 	#' @return The modified StateAidCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateAidCategoryCodeMN <- function(StateAidCategoryCodeMNID, Code = NULL, Description = NULL, StateAid = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateAidCategoryCodeMN <- function(StateAidCategoryCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, StateAid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7884,7 +7884,7 @@
 	#' @return A list of StateDistrictTypeCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateDistrictTypeCodeMNS <- function(searchConditionsList = NULL, StateDistrictTypeCodeMNID = F, Code = F, Description = F, IsResidentDistrict = F, CodeDescription = F, IsInvalidFINHR = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateDistrictTypeCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsInvalidFINHR = F, IsResidentDistrict = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateDistrictTypeCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7909,7 +7909,7 @@
 	#' @return A dataframe or of StateDistrictTypeCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateDistrictTypeCodeMN <- function(StateDistrictTypeCodeMNID, Code = F, Description = F, IsResidentDistrict = F, CodeDescription = F, IsInvalidFINHR = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateDistrictTypeCodeMN <- function(StateDistrictTypeCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsInvalidFINHR = F, IsResidentDistrict = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateDistrictTypeCodeMNID")
 
@@ -7949,7 +7949,7 @@
 	#' @return A newly created StateDistrictTypeCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateDistrictTypeCodeMN <- function(Code = NULL, Description = NULL, IsResidentDistrict = NULL, IsInvalidFINHR = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateDistrictTypeCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, IsInvalidFINHR = NULL, IsResidentDistrict = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7970,7 +7970,7 @@
 	#' @return The modified StateDistrictTypeCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateDistrictTypeCodeMN <- function(StateDistrictTypeCodeMNID, Code = NULL, Description = NULL, IsResidentDistrict = NULL, IsInvalidFINHR = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateDistrictTypeCodeMN <- function(StateDistrictTypeCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, IsInvalidFINHR = NULL, IsResidentDistrict = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -7998,7 +7998,7 @@
 	#' @return A list of StateKindergartenScheduleIndicatorCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateKindergartenScheduleIndicatorCodeMNS <- function(searchConditionsList = NULL, StateKindergartenScheduleIndicatorCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateKindergartenScheduleIndicatorCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateKindergartenScheduleIndicatorCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8023,7 +8023,7 @@
 	#' @return A dataframe or of StateKindergartenScheduleIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateKindergartenScheduleIndicatorCodeMN <- function(StateKindergartenScheduleIndicatorCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateKindergartenScheduleIndicatorCodeMN <- function(StateKindergartenScheduleIndicatorCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateKindergartenScheduleIndicatorCodeMNID")
 
@@ -8063,7 +8063,7 @@
 	#' @return A newly created StateKindergartenScheduleIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateKindergartenScheduleIndicatorCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateKindergartenScheduleIndicatorCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8084,7 +8084,7 @@
 	#' @return The modified StateKindergartenScheduleIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateKindergartenScheduleIndicatorCodeMN <- function(StateKindergartenScheduleIndicatorCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateKindergartenScheduleIndicatorCodeMN <- function(StateKindergartenScheduleIndicatorCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8112,7 +8112,7 @@
 	#' @return A list of StateLanguageCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateLanguageCodeMNS <- function(searchConditionsList = NULL, StateLanguageCodeMNID = F, Code = F, Description = F, Country = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateLanguageCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, Country = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateLanguageCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8137,7 +8137,7 @@
 	#' @return A dataframe or of StateLanguageCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateLanguageCodeMN <- function(StateLanguageCodeMNID, Code = F, Description = F, Country = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateLanguageCodeMN <- function(StateLanguageCodeMNID, Code = F, CodeDescription = F, Country = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateLanguageCodeMNID")
 
@@ -8177,7 +8177,7 @@
 	#' @return A newly created StateLanguageCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateLanguageCodeMN <- function(Code = NULL, Description = NULL, Country = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateLanguageCodeMN <- function(Code = NULL, Country = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8198,7 +8198,7 @@
 	#' @return The modified StateLanguageCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateLanguageCodeMN <- function(StateLanguageCodeMNID, Code = NULL, Description = NULL, Country = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateLanguageCodeMN <- function(StateLanguageCodeMNID, Code = NULL, Country = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8226,7 +8226,7 @@
 	#' @return A list of StateSpecEdInstructionalSettingCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateSpecEdInstructionalSettingCodeMNS <- function(searchConditionsList = NULL, StateSpecEdInstructionalSettingCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateSpecEdInstructionalSettingCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateSpecEdInstructionalSettingCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8251,7 +8251,7 @@
 	#' @return A dataframe or of StateSpecEdInstructionalSettingCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateSpecEdInstructionalSettingCodeMN <- function(StateSpecEdInstructionalSettingCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateSpecEdInstructionalSettingCodeMN <- function(StateSpecEdInstructionalSettingCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateSpecEdInstructionalSettingCodeMNID")
 
@@ -8291,7 +8291,7 @@
 	#' @return A newly created StateSpecEdInstructionalSettingCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateSpecEdInstructionalSettingCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateSpecEdInstructionalSettingCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8312,7 +8312,7 @@
 	#' @return The modified StateSpecEdInstructionalSettingCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateSpecEdInstructionalSettingCodeMN <- function(StateSpecEdInstructionalSettingCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateSpecEdInstructionalSettingCodeMN <- function(StateSpecEdInstructionalSettingCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8340,7 +8340,7 @@
 	#' @return A list of StateStatusEndCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateStatusEndCodeMNS <- function(searchConditionsList = NULL, StateStatusEndCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateStatusEndCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateStatusEndCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8365,7 +8365,7 @@
 	#' @return A dataframe or of StateStatusEndCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateStatusEndCodeMN <- function(StateStatusEndCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateStatusEndCodeMN <- function(StateStatusEndCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateStatusEndCodeMNID")
 
@@ -8405,7 +8405,7 @@
 	#' @return A newly created StateStatusEndCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateStatusEndCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateStatusEndCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8426,7 +8426,7 @@
 	#' @return The modified StateStatusEndCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateStatusEndCodeMN <- function(StateStatusEndCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateStatusEndCodeMN <- function(StateStatusEndCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8454,7 +8454,7 @@
 	#' @return A list of StateTitleISchoolIndicatorCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateTitleISchoolIndicatorCodeMNS <- function(searchConditionsList = NULL, StateTitleISchoolIndicatorCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateTitleISchoolIndicatorCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateTitleISchoolIndicatorCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8479,7 +8479,7 @@
 	#' @return A dataframe or of StateTitleISchoolIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateTitleISchoolIndicatorCodeMN <- function(StateTitleISchoolIndicatorCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateTitleISchoolIndicatorCodeMN <- function(StateTitleISchoolIndicatorCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateTitleISchoolIndicatorCodeMNID")
 
@@ -8519,7 +8519,7 @@
 	#' @return A newly created StateTitleISchoolIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateTitleISchoolIndicatorCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateTitleISchoolIndicatorCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8540,7 +8540,7 @@
 	#' @return The modified StateTitleISchoolIndicatorCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateTitleISchoolIndicatorCodeMN <- function(StateTitleISchoolIndicatorCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateTitleISchoolIndicatorCodeMN <- function(StateTitleISchoolIndicatorCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8568,7 +8568,7 @@
 	#' @return A list of StateLastAttendanceLocationCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateLastAttendanceLocationCodeMNS <- function(searchConditionsList = NULL, StateLastAttendanceLocationCodeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateLastAttendanceLocationCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateLastAttendanceLocationCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8593,7 +8593,7 @@
 	#' @return A dataframe or of StateLastAttendanceLocationCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateLastAttendanceLocationCodeMN <- function(StateLastAttendanceLocationCodeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateLastAttendanceLocationCodeMN <- function(StateLastAttendanceLocationCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateLastAttendanceLocationCodeMNID")
 
@@ -8633,7 +8633,7 @@
 	#' @return A newly created StateLastAttendanceLocationCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateLastAttendanceLocationCodeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateLastAttendanceLocationCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8654,7 +8654,7 @@
 	#' @return The modified StateLastAttendanceLocationCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateLastAttendanceLocationCodeMN <- function(StateLastAttendanceLocationCodeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateLastAttendanceLocationCodeMN <- function(StateLastAttendanceLocationCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8682,7 +8682,7 @@
 	#' @return A list of StateTransportationCategoryCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateTransportationCategoryCodeMNS <- function(searchConditionsList = NULL, StateTransportationCategoryCodeMNID = F, Code = F, Description = F, IsTransported = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateTransportationCategoryCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsTransported = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateTransportationCategoryCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8707,7 +8707,7 @@
 	#' @return A dataframe or of StateTransportationCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateTransportationCategoryCodeMN <- function(StateTransportationCategoryCodeMNID, Code = F, Description = F, IsTransported = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateTransportationCategoryCodeMN <- function(StateTransportationCategoryCodeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, IsTransported = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateTransportationCategoryCodeMNID")
 
@@ -8747,7 +8747,7 @@
 	#' @return A newly created StateTransportationCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateTransportationCategoryCodeMN <- function(Code = NULL, Description = NULL, IsTransported = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateTransportationCategoryCodeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, IsTransported = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8768,7 +8768,7 @@
 	#' @return The modified StateTransportationCategoryCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateTransportationCategoryCodeMN <- function(StateTransportationCategoryCodeMNID, Code = NULL, Description = NULL, IsTransported = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateTransportationCategoryCodeMN <- function(StateTransportationCategoryCodeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, IsTransported = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8796,7 +8796,7 @@
 	#' @return A list of PERAExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExports <- function(searchConditionsList = NULL, PERAExportID = F, PERAExtractRunID = F, MediaID = F, EmployerNumber = F, PaidDate = F, Status = F, ExportType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExports <- function(searchConditionsList = NULL, CreatedTime = F, EmployerNumber = F, ExportType = F, MediaID = F, ModifiedTime = F, PaidDate = F, PERAExportID = F, PERAExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8821,7 +8821,7 @@
 	#' @return A dataframe or of PERAExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExport <- function(PERAExportID, PERAExtractRunID = F, MediaID = F, EmployerNumber = F, PaidDate = F, Status = F, ExportType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExport <- function(PERAExportID, CreatedTime = F, EmployerNumber = F, ExportType = F, MediaID = F, ModifiedTime = F, PaidDate = F, PERAExtractRunID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExportID")
 
@@ -8861,7 +8861,7 @@
 	#' @return A newly created PERAExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExport <- function(PERAExtractRunID = NULL, MediaID = NULL, EmployerNumber = NULL, PaidDate = NULL, Status = NULL, ExportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExport <- function(EmployerNumber = NULL, ExportType = NULL, MediaID = NULL, PaidDate = NULL, PERAExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8882,7 +8882,7 @@
 	#' @return The modified PERAExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExport <- function(PERAExportID, PERAExtractRunID = NULL, MediaID = NULL, EmployerNumber = NULL, PaidDate = NULL, Status = NULL, ExportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExport <- function(PERAExportID, EmployerNumber = NULL, ExportType = NULL, MediaID = NULL, PaidDate = NULL, PERAExtractRunID = NULL, Status = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8910,7 +8910,7 @@
 	#' @return A list of PERAExtractEmployeeContributionV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExtractEmployeeContributionV1s <- function(searchConditionsList = NULL, PERAExtractEmployeeContributionV1ID = F, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, SocialSecurityNumber = F, FirstName = F, MiddleInitial = F, LastName = F, TitleAfterName = F, PayrollStartDate = F, PayrollEndDate = F, PaidDate = F, MemberAmount = F, EligibleEarnings = F, EmployerAmount = F, SchoolFiscalYear = F, CompensatedHours = F, OvertimePay = F, StatePERAPayTypeMNID = F, StatePERAPayTypeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypePlanValue = F, AdjustmentIndicator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExtractEmployeeContributionV1s <- function(searchConditionsList = NULL, AdjustmentIndicator = F, CompensatedHours = F, CreatedTime = F, DistrictID = F, EligibleEarnings = F, EmployeeID = F, EmployerAmount = F, FirstName = F, LastName = F, MemberAmount = F, MiddleInitial = F, ModifiedTime = F, OvertimePay = F, PaidDate = F, PayrollEndDate = F, PayrollStartDate = F, PERAExtractEmployeeContributionV1ID = F, PERAExtractRunID = F, SchoolFiscalYear = F, SocialSecurityNumber = F, StatePERAPayTypeMNID = F, StatePERAPayTypeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypePlanValue = F, TitleAfterName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8935,7 +8935,7 @@
 	#' @return A dataframe or of PERAExtractEmployeeContributionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExtractEmployeeContributionV1 <- function(PERAExtractEmployeeContributionV1ID, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, SocialSecurityNumber = F, FirstName = F, MiddleInitial = F, LastName = F, TitleAfterName = F, PayrollStartDate = F, PayrollEndDate = F, PaidDate = F, MemberAmount = F, EligibleEarnings = F, EmployerAmount = F, SchoolFiscalYear = F, CompensatedHours = F, OvertimePay = F, StatePERAPayTypeMNID = F, StatePERAPayTypeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypePlanValue = F, AdjustmentIndicator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExtractEmployeeContributionV1 <- function(PERAExtractEmployeeContributionV1ID, AdjustmentIndicator = F, CompensatedHours = F, CreatedTime = F, DistrictID = F, EligibleEarnings = F, EmployeeID = F, EmployerAmount = F, FirstName = F, LastName = F, MemberAmount = F, MiddleInitial = F, ModifiedTime = F, OvertimePay = F, PaidDate = F, PayrollEndDate = F, PayrollStartDate = F, PERAExtractRunID = F, SchoolFiscalYear = F, SocialSecurityNumber = F, StatePERAPayTypeMNID = F, StatePERAPayTypeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypePlanValue = F, TitleAfterName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExtractEmployeeContributionV1ID")
 
@@ -8975,7 +8975,7 @@
 	#' @return A newly created PERAExtractEmployeeContributionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExtractEmployeeContributionV1 <- function(PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, SocialSecurityNumber = NULL, FirstName = NULL, MiddleInitial = NULL, LastName = NULL, TitleAfterName = NULL, PayrollStartDate = NULL, PayrollEndDate = NULL, PaidDate = NULL, MemberAmount = NULL, EligibleEarnings = NULL, EmployerAmount = NULL, SchoolFiscalYear = NULL, CompensatedHours = NULL, OvertimePay = NULL, StatePERAPayTypeMNID = NULL, StatePERAPayTypeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypePlanValue = NULL, AdjustmentIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExtractEmployeeContributionV1 <- function(AdjustmentIndicator = NULL, CompensatedHours = NULL, DistrictID = NULL, EligibleEarnings = NULL, EmployeeID = NULL, EmployerAmount = NULL, FirstName = NULL, LastName = NULL, MemberAmount = NULL, MiddleInitial = NULL, OvertimePay = NULL, PaidDate = NULL, PayrollEndDate = NULL, PayrollStartDate = NULL, PERAExtractRunID = NULL, SchoolFiscalYear = NULL, SocialSecurityNumber = NULL, StatePERAPayTypeMNID = NULL, StatePERAPayTypeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypePlanValue = NULL, TitleAfterName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -8996,7 +8996,7 @@
 	#' @return The modified PERAExtractEmployeeContributionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExtractEmployeeContributionV1 <- function(PERAExtractEmployeeContributionV1ID, PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, SocialSecurityNumber = NULL, FirstName = NULL, MiddleInitial = NULL, LastName = NULL, TitleAfterName = NULL, PayrollStartDate = NULL, PayrollEndDate = NULL, PaidDate = NULL, MemberAmount = NULL, EligibleEarnings = NULL, EmployerAmount = NULL, SchoolFiscalYear = NULL, CompensatedHours = NULL, OvertimePay = NULL, StatePERAPayTypeMNID = NULL, StatePERAPayTypeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypePlanValue = NULL, AdjustmentIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExtractEmployeeContributionV1 <- function(PERAExtractEmployeeContributionV1ID, AdjustmentIndicator = NULL, CompensatedHours = NULL, DistrictID = NULL, EligibleEarnings = NULL, EmployeeID = NULL, EmployerAmount = NULL, FirstName = NULL, LastName = NULL, MemberAmount = NULL, MiddleInitial = NULL, OvertimePay = NULL, PaidDate = NULL, PayrollEndDate = NULL, PayrollStartDate = NULL, PERAExtractRunID = NULL, SchoolFiscalYear = NULL, SocialSecurityNumber = NULL, StatePERAPayTypeMNID = NULL, StatePERAPayTypeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypePlanValue = NULL, TitleAfterName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9024,7 +9024,7 @@
 	#' @return A list of PERADemographicDetailV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERADemographicDetailV1s <- function(searchConditionsList = NULL, PERADemographicDetailV1ID = F, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, EmployerNumber = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypeMNPlanValue = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleInitial = F, TitleFollowingName = F, MostRecentHireDate = F, EligibilityDate = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAMemberEmploymentStatusMNID = F, StatePERAMemberEmploymentStatusMNValue = F, MemberEmploymentStatusEffectiveDate = F, StatePERAPositionCodeMNID = F, StatePERAPositionCodeMNValue = F, StatePERAPositionClassMNID = F, StatePERAPositionClassMNValue = F, JobTitle = F, BirthLastName = F, Sex = F, BirthDate = F, AddressID = F, AddressAttentionTo = F, AddressLine1 = F, AddressLine2 = F, City = F, State = F, ZipCode = F, ZipCodePlusFour = F, ExcludeFromExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERADemographicDetailV1s <- function(searchConditionsList = NULL, AddressAttentionTo = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, BirthDate = F, BirthLastName = F, City = F, CreatedTime = F, DistrictID = F, EligibilityDate = F, EmployeeID = F, EmployerNumber = F, ExcludeFromExport = F, FirstName = F, JobTitle = F, LastName = F, MemberEmploymentStatusEffectiveDate = F, MiddleInitial = F, ModifiedTime = F, MostRecentHireDate = F, PERADemographicDetailV1ID = F, PERAExtractRunID = F, Sex = F, SocialSecurityNumber = F, State = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAMemberEmploymentStatusMNID = F, StatePERAMemberEmploymentStatusMNValue = F, StatePERAPositionClassMNID = F, StatePERAPositionClassMNValue = F, StatePERAPositionCodeMNID = F, StatePERAPositionCodeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypeMNPlanValue = F, TitleFollowingName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9049,7 +9049,7 @@
 	#' @return A dataframe or of PERADemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERADemographicDetailV1 <- function(PERADemographicDetailV1ID, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, EmployerNumber = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypeMNPlanValue = F, SocialSecurityNumber = F, LastName = F, FirstName = F, MiddleInitial = F, TitleFollowingName = F, MostRecentHireDate = F, EligibilityDate = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAMemberEmploymentStatusMNID = F, StatePERAMemberEmploymentStatusMNValue = F, MemberEmploymentStatusEffectiveDate = F, StatePERAPositionCodeMNID = F, StatePERAPositionCodeMNValue = F, StatePERAPositionClassMNID = F, StatePERAPositionClassMNValue = F, JobTitle = F, BirthLastName = F, Sex = F, BirthDate = F, AddressID = F, AddressAttentionTo = F, AddressLine1 = F, AddressLine2 = F, City = F, State = F, ZipCode = F, ZipCodePlusFour = F, ExcludeFromExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERADemographicDetailV1 <- function(PERADemographicDetailV1ID, AddressAttentionTo = F, AddressID = F, AddressLine1 = F, AddressLine2 = F, BirthDate = F, BirthLastName = F, City = F, CreatedTime = F, DistrictID = F, EligibilityDate = F, EmployeeID = F, EmployerNumber = F, ExcludeFromExport = F, FirstName = F, JobTitle = F, LastName = F, MemberEmploymentStatusEffectiveDate = F, MiddleInitial = F, ModifiedTime = F, MostRecentHireDate = F, PERAExtractRunID = F, Sex = F, SocialSecurityNumber = F, State = F, StatePERAExclusionCodeMNID = F, StatePERAExclusionCodeMNValue = F, StatePERAMemberEmploymentStatusMNID = F, StatePERAMemberEmploymentStatusMNValue = F, StatePERAPositionClassMNID = F, StatePERAPositionClassMNValue = F, StatePERAPositionCodeMNID = F, StatePERAPositionCodeMNValue = F, StateRetirementAssociationTypeMNIDPlan = F, StateRetirementAssociationTypeMNPlanValue = F, TitleFollowingName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ZipCode = F, ZipCodePlusFour = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERADemographicDetailV1ID")
 
@@ -9089,7 +9089,7 @@
 	#' @return A newly created PERADemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERADemographicDetailV1 <- function(PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, EmployerNumber = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypeMNPlanValue = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleInitial = NULL, TitleFollowingName = NULL, MostRecentHireDate = NULL, EligibilityDate = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAMemberEmploymentStatusMNID = NULL, StatePERAMemberEmploymentStatusMNValue = NULL, MemberEmploymentStatusEffectiveDate = NULL, StatePERAPositionCodeMNID = NULL, StatePERAPositionCodeMNValue = NULL, StatePERAPositionClassMNID = NULL, StatePERAPositionClassMNValue = NULL, JobTitle = NULL, BirthLastName = NULL, Sex = NULL, BirthDate = NULL, AddressID = NULL, AddressAttentionTo = NULL, AddressLine1 = NULL, AddressLine2 = NULL, City = NULL, State = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, ExcludeFromExport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERADemographicDetailV1 <- function(AddressAttentionTo = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, BirthDate = NULL, BirthLastName = NULL, City = NULL, DistrictID = NULL, EligibilityDate = NULL, EmployeeID = NULL, EmployerNumber = NULL, ExcludeFromExport = NULL, FirstName = NULL, JobTitle = NULL, LastName = NULL, MemberEmploymentStatusEffectiveDate = NULL, MiddleInitial = NULL, MostRecentHireDate = NULL, PERAExtractRunID = NULL, Sex = NULL, SocialSecurityNumber = NULL, State = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAMemberEmploymentStatusMNID = NULL, StatePERAMemberEmploymentStatusMNValue = NULL, StatePERAPositionClassMNID = NULL, StatePERAPositionClassMNValue = NULL, StatePERAPositionCodeMNID = NULL, StatePERAPositionCodeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypeMNPlanValue = NULL, TitleFollowingName = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9110,7 +9110,7 @@
 	#' @return The modified PERADemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERADemographicDetailV1 <- function(PERADemographicDetailV1ID, PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, EmployerNumber = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypeMNPlanValue = NULL, SocialSecurityNumber = NULL, LastName = NULL, FirstName = NULL, MiddleInitial = NULL, TitleFollowingName = NULL, MostRecentHireDate = NULL, EligibilityDate = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAMemberEmploymentStatusMNID = NULL, StatePERAMemberEmploymentStatusMNValue = NULL, MemberEmploymentStatusEffectiveDate = NULL, StatePERAPositionCodeMNID = NULL, StatePERAPositionCodeMNValue = NULL, StatePERAPositionClassMNID = NULL, StatePERAPositionClassMNValue = NULL, JobTitle = NULL, BirthLastName = NULL, Sex = NULL, BirthDate = NULL, AddressID = NULL, AddressAttentionTo = NULL, AddressLine1 = NULL, AddressLine2 = NULL, City = NULL, State = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, ExcludeFromExport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERADemographicDetailV1 <- function(PERADemographicDetailV1ID, AddressAttentionTo = NULL, AddressID = NULL, AddressLine1 = NULL, AddressLine2 = NULL, BirthDate = NULL, BirthLastName = NULL, City = NULL, DistrictID = NULL, EligibilityDate = NULL, EmployeeID = NULL, EmployerNumber = NULL, ExcludeFromExport = NULL, FirstName = NULL, JobTitle = NULL, LastName = NULL, MemberEmploymentStatusEffectiveDate = NULL, MiddleInitial = NULL, MostRecentHireDate = NULL, PERAExtractRunID = NULL, Sex = NULL, SocialSecurityNumber = NULL, State = NULL, StatePERAExclusionCodeMNID = NULL, StatePERAExclusionCodeMNValue = NULL, StatePERAMemberEmploymentStatusMNID = NULL, StatePERAMemberEmploymentStatusMNValue = NULL, StatePERAPositionClassMNID = NULL, StatePERAPositionClassMNValue = NULL, StatePERAPositionCodeMNID = NULL, StatePERAPositionCodeMNValue = NULL, StateRetirementAssociationTypeMNIDPlan = NULL, StateRetirementAssociationTypeMNPlanValue = NULL, TitleFollowingName = NULL, ZipCode = NULL, ZipCodePlusFour = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9138,7 +9138,7 @@
 	#' @return A list of PERAExtractRunExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExtractRunExceptions <- function(searchConditionsList = NULL, PERAExtractRunExceptionID = F, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, PERAExtractEmployeeContributionV1ID = F, PERADemographicDetailV1ID = F, Message = F, IsFatal = F, Type = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExtractRunExceptions <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployeeID = F, IsFatal = F, Message = F, ModifiedTime = F, PERADemographicDetailV1ID = F, PERAExtractEmployeeContributionV1ID = F, PERAExtractRunExceptionID = F, PERAExtractRunID = F, PreserveException = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9163,7 +9163,7 @@
 	#' @return A dataframe or of PERAExtractRunException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExtractRunException <- function(PERAExtractRunExceptionID, PERAExtractRunID = F, EmployeeID = F, DistrictID = F, PERAExtractEmployeeContributionV1ID = F, PERADemographicDetailV1ID = F, Message = F, IsFatal = F, Type = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, PreserveException = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExtractRunException <- function(PERAExtractRunExceptionID, CreatedTime = F, DistrictID = F, EmployeeID = F, IsFatal = F, Message = F, ModifiedTime = F, PERADemographicDetailV1ID = F, PERAExtractEmployeeContributionV1ID = F, PERAExtractRunID = F, PreserveException = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExtractRunExceptionID")
 
@@ -9203,7 +9203,7 @@
 	#' @return A newly created PERAExtractRunException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExtractRunException <- function(PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, PERAExtractEmployeeContributionV1ID = NULL, Message = NULL, IsFatal = NULL, Type = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExtractRunException <- function(DistrictID = NULL, EmployeeID = NULL, IsFatal = NULL, Message = NULL, PERAExtractEmployeeContributionV1ID = NULL, PERAExtractRunID = NULL, PreserveException = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9224,7 +9224,7 @@
 	#' @return The modified PERAExtractRunException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExtractRunException <- function(PERAExtractRunExceptionID, PERAExtractRunID = NULL, EmployeeID = NULL, DistrictID = NULL, PERAExtractEmployeeContributionV1ID = NULL, Message = NULL, IsFatal = NULL, Type = NULL, PreserveException = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExtractRunException <- function(PERAExtractRunExceptionID, DistrictID = NULL, EmployeeID = NULL, IsFatal = NULL, Message = NULL, PERAExtractEmployeeContributionV1ID = NULL, PERAExtractRunID = NULL, PreserveException = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9252,7 +9252,7 @@
 	#' @return A list of PERAExtractRunIncludedPayrollRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExtractRunIncludedPayrollRuns <- function(searchConditionsList = NULL, PERAExtractRunIncludedPayrollRunID = F, PERAExtractRunID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExtractRunIncludedPayrollRuns <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, PayrollRunID = F, PERAExtractRunID = F, PERAExtractRunIncludedPayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9277,7 +9277,7 @@
 	#' @return A dataframe or of PERAExtractRunIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExtractRunIncludedPayrollRun <- function(PERAExtractRunIncludedPayrollRunID, PERAExtractRunID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExtractRunIncludedPayrollRun <- function(PERAExtractRunIncludedPayrollRunID, CreatedTime = F, ModifiedTime = F, PayrollRunID = F, PERAExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExtractRunIncludedPayrollRunID")
 
@@ -9317,7 +9317,7 @@
 	#' @return A newly created PERAExtractRunIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExtractRunIncludedPayrollRun <- function(PERAExtractRunID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExtractRunIncludedPayrollRun <- function(PayrollRunID = NULL, PERAExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9338,7 +9338,7 @@
 	#' @return The modified PERAExtractRunIncludedPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExtractRunIncludedPayrollRun <- function(PERAExtractRunIncludedPayrollRunID, PERAExtractRunID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExtractRunIncludedPayrollRun <- function(PERAExtractRunIncludedPayrollRunID, PayrollRunID = NULL, PERAExtractRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9366,7 +9366,7 @@
 	#' @return A list of PERAExtractRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAExtractRuns <- function(searchConditionsList = NULL, PERAExtractRunID = F, EntityID = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedContributionFileCount = F, ExtractedDemographicFileCount = F, LatestDemographicExport = F, LatestContributionExport = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAExtractRuns <- function(searchConditionsList = NULL, CreatedTime = F, Description = F, EntityID = F, ExtractedContributionFileCount = F, ExtractedDemographicFileCount = F, FatalExceptionCount = F, LatestContributionExport = F, LatestDemographicExport = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, PERAExtractRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9391,7 +9391,7 @@
 	#' @return A dataframe or of PERAExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAExtractRun <- function(PERAExtractRunID, EntityID = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExtractedContributionFileCount = F, ExtractedDemographicFileCount = F, LatestDemographicExport = F, LatestContributionExport = F, Version = F, FatalExceptionCount = F, NonFatalExceptionCount = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAExtractRun <- function(PERAExtractRunID, CreatedTime = F, Description = F, EntityID = F, ExtractedContributionFileCount = F, ExtractedDemographicFileCount = F, FatalExceptionCount = F, LatestContributionExport = F, LatestDemographicExport = F, LatestExport = F, LatestSentOrAcceptedExportTime = F, ModifiedTime = F, NonFatalExceptionCount = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAExtractRunID")
 
@@ -9431,7 +9431,7 @@
 	#' @return A newly created PERAExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAExtractRun <- function(EntityID = NULL, Description = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAExtractRun <- function(Description = NULL, EntityID = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9452,7 +9452,7 @@
 	#' @return The modified PERAExtractRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAExtractRun <- function(PERAExtractRunID, EntityID = NULL, Description = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAExtractRun <- function(PERAExtractRunID, Description = NULL, EntityID = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9480,7 +9480,7 @@
 	#' @return A list of StateTransactionTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateTransactionTypeMNS <- function(searchConditionsList = NULL, StateTransactionTypeMNID = F, Code = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateTransactionTypeMNS <- function(searchConditionsList = NULL, Code = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateTransactionTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9505,7 +9505,7 @@
 	#' @return A dataframe or of StateTransactionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateTransactionTypeMN <- function(StateTransactionTypeMNID, Code = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateTransactionTypeMN <- function(StateTransactionTypeMNID, Code = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateTransactionTypeMNID")
 
@@ -9545,7 +9545,7 @@
 	#' @return A newly created StateTransactionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateTransactionTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateTransactionTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9566,7 +9566,7 @@
 	#' @return The modified StateTransactionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateTransactionTypeMN <- function(StateTransactionTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateTransactionTypeMN <- function(StateTransactionTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9594,7 +9594,7 @@
 	#' @return A list of BudgetPublicationExports
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBudgetPublicationExports <- function(searchConditionsList = NULL, BudgetPublicationExportID = F, BudgetPublicationExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBudgetPublicationExports <- function(searchConditionsList = NULL, BudgetPublicationExportID = F, BudgetPublicationExtractRunID = F, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9619,7 +9619,7 @@
 	#' @return A dataframe or of BudgetPublicationExport
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBudgetPublicationExport <- function(BudgetPublicationExportID, BudgetPublicationExtractRunID = F, MediaID = F, Status = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBudgetPublicationExport <- function(BudgetPublicationExportID, BudgetPublicationExtractRunID = F, CreatedTime = F, MediaID = F, ModifiedTime = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BudgetPublicationExportID")
 
@@ -9708,7 +9708,7 @@
 	#' @return A list of MARSSSchoolFileEOYV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSchoolFileEOYV1Exceptions <- function(searchConditionsList = NULL, MARSSSchoolFileEOYV1ExceptionID = F, SchoolYearID = F, EntityID = F, SchoolID = F, MARSSSchoolFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSchoolFileEOYV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, EntityID = F, MARSSSchoolFileEOYV1ExceptionID = F, MARSSSchoolFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9733,7 +9733,7 @@
 	#' @return A dataframe or of MARSSSchoolFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSchoolFileEOYV1Exception <- function(MARSSSchoolFileEOYV1ExceptionID, SchoolYearID = F, EntityID = F, SchoolID = F, MARSSSchoolFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSchoolFileEOYV1Exception <- function(MARSSSchoolFileEOYV1ExceptionID, CreatedTime = F, EntityID = F, MARSSSchoolFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSchoolFileEOYV1ExceptionID")
 
@@ -9773,7 +9773,7 @@
 	#' @return A newly created MARSSSchoolFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSchoolFileEOYV1Exception <- function(SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, MARSSSchoolFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSchoolFileEOYV1Exception <- function(EntityID = NULL, MARSSSchoolFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9794,7 +9794,7 @@
 	#' @return The modified MARSSSchoolFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSchoolFileEOYV1Exception <- function(MARSSSchoolFileEOYV1ExceptionID, SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, MARSSSchoolFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSchoolFileEOYV1Exception <- function(MARSSSchoolFileEOYV1ExceptionID, EntityID = NULL, MARSSSchoolFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9822,7 +9822,7 @@
 	#' @return A list of MARSSStudentFileEOYV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSStudentFileEOYV1Exceptions <- function(searchConditionsList = NULL, MARSSStudentFileEOYV1ExceptionID = F, SchoolYearID = F, EntityID = F, StudentID = F, MARSSStudentFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSStudentFileEOYV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, EntityID = F, MARSSStudentFileEOYV1ExceptionID = F, MARSSStudentFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9847,7 +9847,7 @@
 	#' @return A dataframe or of MARSSStudentFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSStudentFileEOYV1Exception <- function(MARSSStudentFileEOYV1ExceptionID, SchoolYearID = F, EntityID = F, StudentID = F, MARSSStudentFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSStudentFileEOYV1Exception <- function(MARSSStudentFileEOYV1ExceptionID, CreatedTime = F, EntityID = F, MARSSStudentFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSStudentFileEOYV1ExceptionID")
 
@@ -9887,7 +9887,7 @@
 	#' @return A newly created MARSSStudentFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSStudentFileEOYV1Exception <- function(SchoolYearID = NULL, EntityID = NULL, StudentID = NULL, MARSSStudentFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSStudentFileEOYV1Exception <- function(EntityID = NULL, MARSSStudentFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9908,7 +9908,7 @@
 	#' @return The modified MARSSStudentFileEOYV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSStudentFileEOYV1Exception <- function(MARSSStudentFileEOYV1ExceptionID, SchoolYearID = NULL, EntityID = NULL, StudentID = NULL, MARSSStudentFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSStudentFileEOYV1Exception <- function(MARSSStudentFileEOYV1ExceptionID, EntityID = NULL, MARSSStudentFileEOYV1ID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9936,7 +9936,7 @@
 	#' @return A list of MARSSSchoolFileEOYV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSSchoolFileEOYV1s <- function(searchConditionsList = NULL, MARSSSchoolFileEOYV1ID = F, SchoolYearID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, GradeLevelCode = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, StateKindergartenScheduleIndicatorCodeMNID = F, KindergartenIndicator = F, InstructionalDays = F, MinutesInSchoolDay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, IsCharter = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSSchoolFileEOYV1s <- function(searchConditionsList = NULL, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, EntitySchoolID = F, GradeLevelCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, InstructionalDays = F, IsCharter = F, KeyHash = F, KindergartenIndicator = F, MARSSSchoolFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MinutesInSchoolDay = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateKindergartenScheduleIndicatorCodeMNID = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -9961,7 +9961,7 @@
 	#' @return A dataframe or of MARSSSchoolFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSSchoolFileEOYV1 <- function(MARSSSchoolFileEOYV1ID, SchoolYearID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, GradeLevelCode = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, StateKindergartenScheduleIndicatorCodeMNID = F, KindergartenIndicator = F, InstructionalDays = F, MinutesInSchoolDay = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, IsCharter = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSSchoolFileEOYV1 <- function(MARSSSchoolFileEOYV1ID, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, EntitySchoolID = F, GradeLevelCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, InstructionalDays = F, IsCharter = F, KeyHash = F, KindergartenIndicator = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MinutesInSchoolDay = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateKindergartenScheduleIndicatorCodeMNID = F, StateTitleISchoolIndicatorCodeMNID = F, TitleIIndicator = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSSchoolFileEOYV1ID")
 
@@ -10001,7 +10001,7 @@
 	#' @return A newly created MARSSSchoolFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSSchoolFileEOYV1 <- function(SchoolYearID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, GradeLevelCode = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, KindergartenIndicator = NULL, InstructionalDays = NULL, MinutesInSchoolDay = NULL, IsCharter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSSchoolFileEOYV1 <- function(DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, EntitySchoolID = NULL, GradeLevelCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, InstructionalDays = NULL, IsCharter = NULL, KindergartenIndicator = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MinutesInSchoolDay = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10022,7 +10022,7 @@
 	#' @return The modified MARSSSchoolFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSSchoolFileEOYV1 <- function(MARSSSchoolFileEOYV1ID, SchoolYearID = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, GradeLevelCode = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, KindergartenIndicator = NULL, InstructionalDays = NULL, MinutesInSchoolDay = NULL, IsCharter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSSchoolFileEOYV1 <- function(MARSSSchoolFileEOYV1ID, DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, EntitySchoolID = NULL, GradeLevelCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, InstructionalDays = NULL, IsCharter = NULL, KindergartenIndicator = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MinutesInSchoolDay = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateKindergartenScheduleIndicatorCodeMNID = NULL, StateTitleISchoolIndicatorCodeMNID = NULL, TitleIIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10050,7 +10050,7 @@
 	#' @return A list of MARSSStudentFileEOYV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMARSSStudentFileEOYV1s <- function(searchConditionsList = NULL, MARSSStudentFileEOYV1ID = F, SchoolYearID = F, SchoolYearCode = F, EntryWithdrawalID = F, StateStudentNumber = F, SocialSecurityNumber = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, StudentID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, StudentGradeLevelCode = F, StateDistrictMNIDStudent = F, StudentResidentDistrictCode = F, StateDistrictTypeCodeMNIDStudent = F, StudentResidentDistrictType = F, StateAidCategoryCodeMNID = F, StateAidCategoryCode = F, StatusBeginDate = F, StateLastAttendanceLocationCodeMNID = F, LastAttendanceLocation = F, StateStatusEndCodeMNID = F, StatusEndCode = F, StatusEndDate = F, PercentEnrolled = F, AttendanceDays = F, MembershipDays = F, PostSecondaryOption = F, PostSecondaryEducationOptionHours = F, HomeboundServiceCode = F, EnrollmentMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, SpecialEdEvalStatus = F, StateSpecEdInstructionalSettingCodeMNID = F, SpecialEdInstructionalSetting = F, LimitedEnglishProficiencyCode = F, IsReceivingServices = F, LEPBeginDate = F, GiftedAndTalentedCode = F, Gender = F, BirthDate = F, LanguageSchoolYearMNID = F, StateLanguageCodeMNID = F, HomePrimaryLanguage = F, DisabilityMNIDPrimary = F, StateDisabilityCodeMNIDPrimary = F, PrimaryDisability = F, StateTransportationCategoryCodeMNID = F, TransportationCategory = F, EconomicIndicatorMNID = F, StateEconomicIndicatorCodeMNID = F, EconomicIndicator = F, TitleIStudentIndicatorCode = F, HomelessCode = F, StateDistrictMNIDTransportation = F, TransportationResidentDistrictCode = F, StateDistrictTypeCodeMNIDTransportation = F, TransportationResidentDistrictType = F, StateEthnicityRaceCodeMNID = F, EthnicityRaceCode = F, SpecialPupilsCareAndTreatmentCode = F, IndependentStudyCode = F, SpecialEducationServiceHours = F, OptOutMNID = F, MinnesotaHealthCareOptOutCode = F, HispanicLatino = F, AmericanIndianAlaskaNative = F, Asian = F, BlackAfricanAmerican = F, NativeHawaiianPacificIslander = F, White = F, IsPSEOConcurrentEnrollment = F, LocalUseData = F, StudentFirstName = F, StudentMiddleName = F, StudentLastName = F, Suffix = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StudentTransportationID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMARSSStudentFileEOYV1s <- function(searchConditionsList = NULL, AmericanIndianAlaskaNative = F, Asian = F, AttendanceDays = F, BirthDate = F, BlackAfricanAmerican = F, CreatedTime = F, DisabilityMNIDPrimary = F, DistrictCode = F, DistrictType = F, EconomicIndicator = F, EconomicIndicatorMNID = F, EnrollmentMNID = F, EntityID = F, EntryWithdrawalID = F, EthnicityRaceCode = F, Gender = F, GiftedAndTalentedCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, HispanicLatino = F, HomeboundServiceCode = F, HomelessCode = F, HomePrimaryLanguage = F, IndependentStudyCode = F, IsPSEOConcurrentEnrollment = F, IsReceivingServices = F, KeyHash = F, LanguageSchoolYearMNID = F, LastAttendanceLocation = F, LEPBeginDate = F, LimitedEnglishProficiencyCode = F, LocalUseData = F, MARSSStudentFileEOYV1ID = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MembershipDays = F, MinnesotaHealthCareOptOutCode = F, ModifiedTime = F, NativeHawaiianPacificIslander = F, OptOutMNID = F, PercentEnrolled = F, PostSecondaryEducationOptionHours = F, PostSecondaryOption = F, PrimaryDisability = F, SchoolID = F, SchoolNumber = F, SchoolYearCode = F, SchoolYearID = F, SocialSecurityNumber = F, SpecialEdEvalStatus = F, SpecialEdInstructionalSetting = F, SpecialEducationServiceHours = F, SpecialPupilsCareAndTreatmentCode = F, StateAidCategoryCode = F, StateAidCategoryCodeMNID = F, StateDisabilityCodeMNIDPrimary = F, StateDistrictMNID = F, StateDistrictMNIDStudent = F, StateDistrictMNIDTransportation = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNIDStudent = F, StateDistrictTypeCodeMNIDTransportation = F, StateEconomicIndicatorCodeMNID = F, StateEthnicityRaceCodeMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, StateLanguageCodeMNID = F, StateLastAttendanceLocationCodeMNID = F, StateSpecEdInstructionalSettingCodeMNID = F, StateStatusEndCodeMNID = F, StateStudentNumber = F, StateTransportationCategoryCodeMNID = F, StatusBeginDate = F, StatusEndCode = F, StatusEndDate = F, StudentFirstName = F, StudentGradeLevelCode = F, StudentID = F, StudentLastName = F, StudentMiddleName = F, StudentResidentDistrictCode = F, StudentResidentDistrictType = F, StudentTransportationID = F, Suffix = F, TitleIStudentIndicatorCode = F, TransportationCategory = F, TransportationResidentDistrictCode = F, TransportationResidentDistrictType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, White = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10075,7 +10075,7 @@
 	#' @return A dataframe or of MARSSStudentFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMARSSStudentFileEOYV1 <- function(MARSSStudentFileEOYV1ID, SchoolYearID = F, SchoolYearCode = F, EntryWithdrawalID = F, StateStudentNumber = F, SocialSecurityNumber = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, EntityID = F, StudentID = F, SchoolID = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, SchoolNumber = F, GradeReferenceID = F, GradeLevelID = F, StudentGradeLevelCode = F, StateDistrictMNIDStudent = F, StudentResidentDistrictCode = F, StateDistrictTypeCodeMNIDStudent = F, StudentResidentDistrictType = F, StateAidCategoryCodeMNID = F, StateAidCategoryCode = F, StatusBeginDate = F, StateLastAttendanceLocationCodeMNID = F, LastAttendanceLocation = F, StateStatusEndCodeMNID = F, StatusEndCode = F, StatusEndDate = F, PercentEnrolled = F, AttendanceDays = F, MembershipDays = F, PostSecondaryOption = F, PostSecondaryEducationOptionHours = F, HomeboundServiceCode = F, EnrollmentMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, SpecialEdEvalStatus = F, StateSpecEdInstructionalSettingCodeMNID = F, SpecialEdInstructionalSetting = F, LimitedEnglishProficiencyCode = F, IsReceivingServices = F, LEPBeginDate = F, GiftedAndTalentedCode = F, Gender = F, BirthDate = F, LanguageSchoolYearMNID = F, StateLanguageCodeMNID = F, HomePrimaryLanguage = F, DisabilityMNIDPrimary = F, StateDisabilityCodeMNIDPrimary = F, PrimaryDisability = F, StateTransportationCategoryCodeMNID = F, TransportationCategory = F, EconomicIndicatorMNID = F, StateEconomicIndicatorCodeMNID = F, EconomicIndicator = F, TitleIStudentIndicatorCode = F, HomelessCode = F, StateDistrictMNIDTransportation = F, TransportationResidentDistrictCode = F, StateDistrictTypeCodeMNIDTransportation = F, TransportationResidentDistrictType = F, StateEthnicityRaceCodeMNID = F, EthnicityRaceCode = F, SpecialPupilsCareAndTreatmentCode = F, IndependentStudyCode = F, SpecialEducationServiceHours = F, OptOutMNID = F, MinnesotaHealthCareOptOutCode = F, HispanicLatino = F, AmericanIndianAlaskaNative = F, Asian = F, BlackAfricanAmerican = F, NativeHawaiianPacificIslander = F, White = F, IsPSEOConcurrentEnrollment = F, LocalUseData = F, StudentFirstName = F, StudentMiddleName = F, StudentLastName = F, Suffix = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StudentTransportationID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMARSSStudentFileEOYV1 <- function(MARSSStudentFileEOYV1ID, AmericanIndianAlaskaNative = F, Asian = F, AttendanceDays = F, BirthDate = F, BlackAfricanAmerican = F, CreatedTime = F, DisabilityMNIDPrimary = F, DistrictCode = F, DistrictType = F, EconomicIndicator = F, EconomicIndicatorMNID = F, EnrollmentMNID = F, EntityID = F, EntryWithdrawalID = F, EthnicityRaceCode = F, Gender = F, GiftedAndTalentedCode = F, GradeLevelID = F, GradeReferenceID = F, HasErrors = F, HispanicLatino = F, HomeboundServiceCode = F, HomelessCode = F, HomePrimaryLanguage = F, IndependentStudyCode = F, IsPSEOConcurrentEnrollment = F, IsReceivingServices = F, KeyHash = F, LanguageSchoolYearMNID = F, LastAttendanceLocation = F, LEPBeginDate = F, LimitedEnglishProficiencyCode = F, LocalUseData = F, MARSSSubmissionID = F, MARSSSubmissionRunHistoryID = F, MembershipDays = F, MinnesotaHealthCareOptOutCode = F, ModifiedTime = F, NativeHawaiianPacificIslander = F, OptOutMNID = F, PercentEnrolled = F, PostSecondaryEducationOptionHours = F, PostSecondaryOption = F, PrimaryDisability = F, SchoolID = F, SchoolNumber = F, SchoolYearCode = F, SchoolYearID = F, SocialSecurityNumber = F, SpecialEdEvalStatus = F, SpecialEdInstructionalSetting = F, SpecialEducationServiceHours = F, SpecialPupilsCareAndTreatmentCode = F, StateAidCategoryCode = F, StateAidCategoryCodeMNID = F, StateDisabilityCodeMNIDPrimary = F, StateDistrictMNID = F, StateDistrictMNIDStudent = F, StateDistrictMNIDTransportation = F, StateDistrictTypeCodeMNID = F, StateDistrictTypeCodeMNIDStudent = F, StateDistrictTypeCodeMNIDTransportation = F, StateEconomicIndicatorCodeMNID = F, StateEthnicityRaceCodeMNID = F, StateEvaluationStatusCodeMNIDSpecialEd = F, StateLanguageCodeMNID = F, StateLastAttendanceLocationCodeMNID = F, StateSpecEdInstructionalSettingCodeMNID = F, StateStatusEndCodeMNID = F, StateStudentNumber = F, StateTransportationCategoryCodeMNID = F, StatusBeginDate = F, StatusEndCode = F, StatusEndDate = F, StudentFirstName = F, StudentGradeLevelCode = F, StudentID = F, StudentLastName = F, StudentMiddleName = F, StudentResidentDistrictCode = F, StudentResidentDistrictType = F, StudentTransportationID = F, Suffix = F, TitleIStudentIndicatorCode = F, TransportationCategory = F, TransportationResidentDistrictCode = F, TransportationResidentDistrictType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, White = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MARSSStudentFileEOYV1ID")
 
@@ -10115,7 +10115,7 @@
 	#' @return A newly created MARSSStudentFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMARSSStudentFileEOYV1 <- function(SchoolYearID = NULL, SchoolYearCode = NULL, EntryWithdrawalID = NULL, StateStudentNumber = NULL, SocialSecurityNumber = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, StudentID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, StudentGradeLevelCode = NULL, StateDistrictMNIDStudent = NULL, StudentResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StudentResidentDistrictType = NULL, StateAidCategoryCodeMNID = NULL, StateAidCategoryCode = NULL, StatusBeginDate = NULL, StateLastAttendanceLocationCodeMNID = NULL, LastAttendanceLocation = NULL, StateStatusEndCodeMNID = NULL, StatusEndCode = NULL, StatusEndDate = NULL, PercentEnrolled = NULL, AttendanceDays = NULL, MembershipDays = NULL, PostSecondaryOption = NULL, PostSecondaryEducationOptionHours = NULL, HomeboundServiceCode = NULL, EnrollmentMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, SpecialEdEvalStatus = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, SpecialEdInstructionalSetting = NULL, LimitedEnglishProficiencyCode = NULL, IsReceivingServices = NULL, LEPBeginDate = NULL, GiftedAndTalentedCode = NULL, Gender = NULL, BirthDate = NULL, LanguageSchoolYearMNID = NULL, StateLanguageCodeMNID = NULL, HomePrimaryLanguage = NULL, DisabilityMNIDPrimary = NULL, StateDisabilityCodeMNIDPrimary = NULL, PrimaryDisability = NULL, StateTransportationCategoryCodeMNID = NULL, TransportationCategory = NULL, EconomicIndicatorMNID = NULL, StateEconomicIndicatorCodeMNID = NULL, EconomicIndicator = NULL, TitleIStudentIndicatorCode = NULL, HomelessCode = NULL, StateDistrictMNIDTransportation = NULL, TransportationResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, TransportationResidentDistrictType = NULL, StateEthnicityRaceCodeMNID = NULL, EthnicityRaceCode = NULL, SpecialPupilsCareAndTreatmentCode = NULL, IndependentStudyCode = NULL, SpecialEducationServiceHours = NULL, OptOutMNID = NULL, MinnesotaHealthCareOptOutCode = NULL, HispanicLatino = NULL, AmericanIndianAlaskaNative = NULL, Asian = NULL, BlackAfricanAmerican = NULL, NativeHawaiianPacificIslander = NULL, White = NULL, IsPSEOConcurrentEnrollment = NULL, LocalUseData = NULL, StudentFirstName = NULL, StudentMiddleName = NULL, StudentLastName = NULL, Suffix = NULL, StudentTransportationID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMARSSStudentFileEOYV1 <- function(AmericanIndianAlaskaNative = NULL, Asian = NULL, AttendanceDays = NULL, BirthDate = NULL, BlackAfricanAmerican = NULL, DisabilityMNIDPrimary = NULL, DistrictCode = NULL, DistrictType = NULL, EconomicIndicator = NULL, EconomicIndicatorMNID = NULL, EnrollmentMNID = NULL, EntityID = NULL, EntryWithdrawalID = NULL, EthnicityRaceCode = NULL, Gender = NULL, GiftedAndTalentedCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, HispanicLatino = NULL, HomeboundServiceCode = NULL, HomelessCode = NULL, HomePrimaryLanguage = NULL, IndependentStudyCode = NULL, IsPSEOConcurrentEnrollment = NULL, IsReceivingServices = NULL, LanguageSchoolYearMNID = NULL, LastAttendanceLocation = NULL, LEPBeginDate = NULL, LimitedEnglishProficiencyCode = NULL, LocalUseData = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MembershipDays = NULL, MinnesotaHealthCareOptOutCode = NULL, NativeHawaiianPacificIslander = NULL, OptOutMNID = NULL, PercentEnrolled = NULL, PostSecondaryEducationOptionHours = NULL, PostSecondaryOption = NULL, PrimaryDisability = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearCode = NULL, SchoolYearID = NULL, SocialSecurityNumber = NULL, SpecialEdEvalStatus = NULL, SpecialEdInstructionalSetting = NULL, SpecialEducationServiceHours = NULL, SpecialPupilsCareAndTreatmentCode = NULL, StateAidCategoryCode = NULL, StateAidCategoryCodeMNID = NULL, StateDisabilityCodeMNIDPrimary = NULL, StateDistrictMNID = NULL, StateDistrictMNIDStudent = NULL, StateDistrictMNIDTransportation = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, StateEconomicIndicatorCodeMNID = NULL, StateEthnicityRaceCodeMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, StateLanguageCodeMNID = NULL, StateLastAttendanceLocationCodeMNID = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StateStatusEndCodeMNID = NULL, StateStudentNumber = NULL, StateTransportationCategoryCodeMNID = NULL, StatusBeginDate = NULL, StatusEndCode = NULL, StatusEndDate = NULL, StudentFirstName = NULL, StudentGradeLevelCode = NULL, StudentID = NULL, StudentLastName = NULL, StudentMiddleName = NULL, StudentResidentDistrictCode = NULL, StudentResidentDistrictType = NULL, StudentTransportationID = NULL, Suffix = NULL, TitleIStudentIndicatorCode = NULL, TransportationCategory = NULL, TransportationResidentDistrictCode = NULL, TransportationResidentDistrictType = NULL, White = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10136,7 +10136,7 @@
 	#' @return The modified MARSSStudentFileEOYV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMARSSStudentFileEOYV1 <- function(MARSSStudentFileEOYV1ID, SchoolYearID = NULL, SchoolYearCode = NULL, EntryWithdrawalID = NULL, StateStudentNumber = NULL, SocialSecurityNumber = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, EntityID = NULL, StudentID = NULL, SchoolID = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, SchoolNumber = NULL, GradeReferenceID = NULL, GradeLevelID = NULL, StudentGradeLevelCode = NULL, StateDistrictMNIDStudent = NULL, StudentResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StudentResidentDistrictType = NULL, StateAidCategoryCodeMNID = NULL, StateAidCategoryCode = NULL, StatusBeginDate = NULL, StateLastAttendanceLocationCodeMNID = NULL, LastAttendanceLocation = NULL, StateStatusEndCodeMNID = NULL, StatusEndCode = NULL, StatusEndDate = NULL, PercentEnrolled = NULL, AttendanceDays = NULL, MembershipDays = NULL, PostSecondaryOption = NULL, PostSecondaryEducationOptionHours = NULL, HomeboundServiceCode = NULL, EnrollmentMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, SpecialEdEvalStatus = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, SpecialEdInstructionalSetting = NULL, LimitedEnglishProficiencyCode = NULL, IsReceivingServices = NULL, LEPBeginDate = NULL, GiftedAndTalentedCode = NULL, Gender = NULL, BirthDate = NULL, LanguageSchoolYearMNID = NULL, StateLanguageCodeMNID = NULL, HomePrimaryLanguage = NULL, DisabilityMNIDPrimary = NULL, StateDisabilityCodeMNIDPrimary = NULL, PrimaryDisability = NULL, StateTransportationCategoryCodeMNID = NULL, TransportationCategory = NULL, EconomicIndicatorMNID = NULL, StateEconomicIndicatorCodeMNID = NULL, EconomicIndicator = NULL, TitleIStudentIndicatorCode = NULL, HomelessCode = NULL, StateDistrictMNIDTransportation = NULL, TransportationResidentDistrictCode = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, TransportationResidentDistrictType = NULL, StateEthnicityRaceCodeMNID = NULL, EthnicityRaceCode = NULL, SpecialPupilsCareAndTreatmentCode = NULL, IndependentStudyCode = NULL, SpecialEducationServiceHours = NULL, OptOutMNID = NULL, MinnesotaHealthCareOptOutCode = NULL, HispanicLatino = NULL, AmericanIndianAlaskaNative = NULL, Asian = NULL, BlackAfricanAmerican = NULL, NativeHawaiianPacificIslander = NULL, White = NULL, IsPSEOConcurrentEnrollment = NULL, LocalUseData = NULL, StudentFirstName = NULL, StudentMiddleName = NULL, StudentLastName = NULL, Suffix = NULL, StudentTransportationID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMARSSStudentFileEOYV1 <- function(MARSSStudentFileEOYV1ID, AmericanIndianAlaskaNative = NULL, Asian = NULL, AttendanceDays = NULL, BirthDate = NULL, BlackAfricanAmerican = NULL, DisabilityMNIDPrimary = NULL, DistrictCode = NULL, DistrictType = NULL, EconomicIndicator = NULL, EconomicIndicatorMNID = NULL, EnrollmentMNID = NULL, EntityID = NULL, EntryWithdrawalID = NULL, EthnicityRaceCode = NULL, Gender = NULL, GiftedAndTalentedCode = NULL, GradeLevelID = NULL, GradeReferenceID = NULL, HispanicLatino = NULL, HomeboundServiceCode = NULL, HomelessCode = NULL, HomePrimaryLanguage = NULL, IndependentStudyCode = NULL, IsPSEOConcurrentEnrollment = NULL, IsReceivingServices = NULL, LanguageSchoolYearMNID = NULL, LastAttendanceLocation = NULL, LEPBeginDate = NULL, LimitedEnglishProficiencyCode = NULL, LocalUseData = NULL, MARSSSubmissionID = NULL, MARSSSubmissionRunHistoryID = NULL, MembershipDays = NULL, MinnesotaHealthCareOptOutCode = NULL, NativeHawaiianPacificIslander = NULL, OptOutMNID = NULL, PercentEnrolled = NULL, PostSecondaryEducationOptionHours = NULL, PostSecondaryOption = NULL, PrimaryDisability = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearCode = NULL, SchoolYearID = NULL, SocialSecurityNumber = NULL, SpecialEdEvalStatus = NULL, SpecialEdInstructionalSetting = NULL, SpecialEducationServiceHours = NULL, SpecialPupilsCareAndTreatmentCode = NULL, StateAidCategoryCode = NULL, StateAidCategoryCodeMNID = NULL, StateDisabilityCodeMNIDPrimary = NULL, StateDistrictMNID = NULL, StateDistrictMNIDStudent = NULL, StateDistrictMNIDTransportation = NULL, StateDistrictTypeCodeMNID = NULL, StateDistrictTypeCodeMNIDStudent = NULL, StateDistrictTypeCodeMNIDTransportation = NULL, StateEconomicIndicatorCodeMNID = NULL, StateEthnicityRaceCodeMNID = NULL, StateEvaluationStatusCodeMNIDSpecialEd = NULL, StateLanguageCodeMNID = NULL, StateLastAttendanceLocationCodeMNID = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StateStatusEndCodeMNID = NULL, StateStudentNumber = NULL, StateTransportationCategoryCodeMNID = NULL, StatusBeginDate = NULL, StatusEndCode = NULL, StatusEndDate = NULL, StudentFirstName = NULL, StudentGradeLevelCode = NULL, StudentID = NULL, StudentLastName = NULL, StudentMiddleName = NULL, StudentResidentDistrictCode = NULL, StudentResidentDistrictType = NULL, StudentTransportationID = NULL, Suffix = NULL, TitleIStudentIndicatorCode = NULL, TransportationCategory = NULL, TransportationResidentDistrictCode = NULL, TransportationResidentDistrictType = NULL, White = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10164,7 +10164,7 @@
 	#' @return A list of STARStudentFileV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARStudentFileV1s <- function(searchConditionsList = NULL, STARStudentFileV1ID = F, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, StaffID = F, SchoolID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, CurriculumYearID = F, StateDistrictMNID = F, DistrictNumber = F, StateDistrictTypeCodeMNID = F, DistrictType = F, FileFolderNumber = F, SchoolNumber = F, StateSTARAssignmentCodeMNID = F, AssignmentCode = F, StateSTARGradeLevelMNID = F, GradeLevel = F, StateSTARModeOfTeachingMNID = F, TeachingMode = F, PeriodsPerWeek = F, LengthOfPeriod = F, NumberOfPupils = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARStudentFileV1s <- function(searchConditionsList = NULL, AssignmentCode = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, DistrictNumber = F, DistrictType = F, EntityID = F, FileFolderNumber = F, GradeLevel = F, HasErrors = F, KeyHash = F, LengthOfPeriod = F, ModifiedTime = F, NumberOfPupils = F, PeriodsPerWeek = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionID = F, StaffID = F, STARStudentFileV1ID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateSTARAssignmentCodeMNID = F, StateSTARGradeLevelMNID = F, StateSTARModeOfTeachingMNID = F, TeachingMode = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10189,7 +10189,7 @@
 	#' @return A dataframe or of STARStudentFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARStudentFileV1 <- function(STARStudentFileV1ID, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, StaffID = F, SchoolID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, CurriculumYearID = F, StateDistrictMNID = F, DistrictNumber = F, StateDistrictTypeCodeMNID = F, DistrictType = F, FileFolderNumber = F, SchoolNumber = F, StateSTARAssignmentCodeMNID = F, AssignmentCode = F, StateSTARGradeLevelMNID = F, GradeLevel = F, StateSTARModeOfTeachingMNID = F, TeachingMode = F, PeriodsPerWeek = F, LengthOfPeriod = F, NumberOfPupils = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARStudentFileV1 <- function(STARStudentFileV1ID, AssignmentCode = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, DistrictNumber = F, DistrictType = F, EntityID = F, FileFolderNumber = F, GradeLevel = F, HasErrors = F, KeyHash = F, LengthOfPeriod = F, ModifiedTime = F, NumberOfPupils = F, PeriodsPerWeek = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionID = F, StaffID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateSTARAssignmentCodeMNID = F, StateSTARGradeLevelMNID = F, StateSTARModeOfTeachingMNID = F, TeachingMode = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARStudentFileV1ID")
 
@@ -10229,7 +10229,7 @@
 	#' @return A newly created STARStudentFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARStudentFileV1 <- function(EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, StaffID = NULL, SchoolID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, CurriculumYearID = NULL, StateDistrictMNID = NULL, DistrictNumber = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, FileFolderNumber = NULL, SchoolNumber = NULL, StateSTARAssignmentCodeMNID = NULL, AssignmentCode = NULL, StateSTARGradeLevelMNID = NULL, GradeLevel = NULL, StateSTARModeOfTeachingMNID = NULL, TeachingMode = NULL, PeriodsPerWeek = NULL, LengthOfPeriod = NULL, NumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARStudentFileV1 <- function(AssignmentCode = NULL, CourseID = NULL, CurriculumYearID = NULL, DistrictNumber = NULL, DistrictType = NULL, EntityID = NULL, FileFolderNumber = NULL, GradeLevel = NULL, LengthOfPeriod = NULL, NumberOfPupils = NULL, PeriodsPerWeek = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARGradeLevelMNID = NULL, StateSTARModeOfTeachingMNID = NULL, TeachingMode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10250,7 +10250,7 @@
 	#' @return The modified STARStudentFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARStudentFileV1 <- function(STARStudentFileV1ID, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, StaffID = NULL, SchoolID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, CurriculumYearID = NULL, StateDistrictMNID = NULL, DistrictNumber = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, FileFolderNumber = NULL, SchoolNumber = NULL, StateSTARAssignmentCodeMNID = NULL, AssignmentCode = NULL, StateSTARGradeLevelMNID = NULL, GradeLevel = NULL, StateSTARModeOfTeachingMNID = NULL, TeachingMode = NULL, PeriodsPerWeek = NULL, LengthOfPeriod = NULL, NumberOfPupils = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARStudentFileV1 <- function(STARStudentFileV1ID, AssignmentCode = NULL, CourseID = NULL, CurriculumYearID = NULL, DistrictNumber = NULL, DistrictType = NULL, EntityID = NULL, FileFolderNumber = NULL, GradeLevel = NULL, LengthOfPeriod = NULL, NumberOfPupils = NULL, PeriodsPerWeek = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSTARGradeLevelMNID = NULL, StateSTARModeOfTeachingMNID = NULL, TeachingMode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10278,7 +10278,7 @@
 	#' @return A list of STARStudentFileV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARStudentFileV1Exceptions <- function(searchConditionsList = NULL, STARStudentFileV1ExceptionID = F, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, StaffID = F, SchoolID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, STARStudentFileV1ID = F, MessageType = F, RuleNumber = F, Message = F, LinkedToStaff = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARStudentFileV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, LinkedToStaff = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, SectionID = F, StaffID = F, STARStudentFileV1ExceptionID = F, STARStudentFileV1ID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10303,7 +10303,7 @@
 	#' @return A dataframe or of STARStudentFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARStudentFileV1Exception <- function(STARStudentFileV1ExceptionID, EntityID = F, SchoolYearID = F, CourseID = F, SectionID = F, StaffID = F, SchoolID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, STARStudentFileV1ID = F, MessageType = F, RuleNumber = F, Message = F, LinkedToStaff = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARStudentFileV1Exception <- function(STARStudentFileV1ExceptionID, CourseID = F, CreatedTime = F, EntityID = F, LinkedToStaff = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, SectionID = F, StaffID = F, STARStudentFileV1ID = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARStudentFileV1ExceptionID")
 
@@ -10343,7 +10343,7 @@
 	#' @return A newly created STARStudentFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARStudentFileV1Exception <- function(EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, StaffID = NULL, SchoolID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, STARStudentFileV1ID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARStudentFileV1Exception <- function(CourseID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, STARStudentFileV1ID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10364,7 +10364,7 @@
 	#' @return The modified STARStudentFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARStudentFileV1Exception <- function(STARStudentFileV1ExceptionID, EntityID = NULL, SchoolYearID = NULL, CourseID = NULL, SectionID = NULL, StaffID = NULL, SchoolID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, STARStudentFileV1ID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARStudentFileV1Exception <- function(STARStudentFileV1ExceptionID, CourseID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, STARStudentFileV1ID = NULL, STARStudentSubmissionID = NULL, STARStudentSubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10392,7 +10392,7 @@
 	#' @return A list of STARStudentSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARStudentSubmissions <- function(searchConditionsList = NULL, STARStudentSubmissionID = F, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SnapshotDate = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARStudentSubmissions <- function(searchConditionsList = NULL, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, SnapshotDate = F, STARStudentSubmissionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10417,7 +10417,7 @@
 	#' @return A dataframe or of STARStudentSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARStudentSubmission <- function(STARStudentSubmissionID, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SnapshotDate = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARStudentSubmission <- function(STARStudentSubmissionID, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, SnapshotDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARStudentSubmissionID")
 
@@ -10457,7 +10457,7 @@
 	#' @return A newly created STARStudentSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARStudentSubmission <- function(Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, SnapshotDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARStudentSubmission <- function(CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, SnapshotDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10478,7 +10478,7 @@
 	#' @return The modified STARStudentSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARStudentSubmission <- function(STARStudentSubmissionID, Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, SnapshotDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARStudentSubmission <- function(STARStudentSubmissionID, CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, SnapshotDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10506,7 +10506,7 @@
 	#' @return A list of STARStudentSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTARStudentSubmissionRunHistories <- function(searchConditionsList = NULL, STARStudentSubmissionRunHistoryID = F, STARStudentSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTARStudentSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, STARStudentSubmissionID = F, STARStudentSubmissionRunHistoryID = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10531,7 +10531,7 @@
 	#' @return A dataframe or of STARStudentSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTARStudentSubmissionRunHistory <- function(STARStudentSubmissionRunHistoryID, STARStudentSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTARStudentSubmissionRunHistory <- function(STARStudentSubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, STARStudentSubmissionID = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STARStudentSubmissionRunHistoryID")
 
@@ -10571,7 +10571,7 @@
 	#' @return A newly created STARStudentSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTARStudentSubmissionRunHistory <- function(STARStudentSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTARStudentSubmissionRunHistory <- function(EndDateTime = NULL, MediaID = NULL, STARStudentSubmissionID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10592,7 +10592,7 @@
 	#' @return The modified STARStudentSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTARStudentSubmissionRunHistory <- function(STARStudentSubmissionRunHistoryID, STARStudentSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTARStudentSubmissionRunHistory <- function(STARStudentSubmissionRunHistoryID, EndDateTime = NULL, MediaID = NULL, STARStudentSubmissionID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10620,7 +10620,7 @@
 	#' @return A list of CarlPerkinsSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCarlPerkinsSubmissions <- function(searchConditionsList = NULL, CarlPerkinsSubmissionID = F, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCarlPerkinsSubmissions <- function(searchConditionsList = NULL, CarlPerkinsSubmissionID = F, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10645,7 +10645,7 @@
 	#' @return A dataframe or of CarlPerkinsSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCarlPerkinsSubmission <- function(CarlPerkinsSubmissionID, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCarlPerkinsSubmission <- function(CarlPerkinsSubmissionID, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CarlPerkinsSubmissionID")
 
@@ -10685,7 +10685,7 @@
 	#' @return A newly created CarlPerkinsSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCarlPerkinsSubmission <- function(Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCarlPerkinsSubmission <- function(CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10706,7 +10706,7 @@
 	#' @return The modified CarlPerkinsSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCarlPerkinsSubmission <- function(CarlPerkinsSubmissionID, Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCarlPerkinsSubmission <- function(CarlPerkinsSubmissionID, CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10734,7 +10734,7 @@
 	#' @return A list of CarlPerkinsSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCarlPerkinsSubmissionRunHistories <- function(searchConditionsList = NULL, CarlPerkinsSubmissionRunHistoryID = F, CarlPerkinsSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCarlPerkinsSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10759,7 +10759,7 @@
 	#' @return A dataframe or of CarlPerkinsSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionRunHistoryID, CarlPerkinsSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionRunHistoryID, CanAccessMedia = F, CarlPerkinsSubmissionID = F, CreatedTime = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CarlPerkinsSubmissionRunHistoryID")
 
@@ -10799,7 +10799,7 @@
 	#' @return A newly created CarlPerkinsSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10820,7 +10820,7 @@
 	#' @return The modified CarlPerkinsSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionRunHistoryID, CarlPerkinsSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCarlPerkinsSubmissionRunHistory <- function(CarlPerkinsSubmissionRunHistoryID, CarlPerkinsSubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10848,7 +10848,7 @@
 	#' @return A list of StateCarlPerkinsProgramCodeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateCarlPerkinsProgramCodeMNS <- function(searchConditionsList = NULL, StateCarlPerkinsProgramCodeMNID = F, Code = F, Description = F, CourseCode = F, CourseTitle = F, CodeDescription = F, CourseCodeTitle = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateCarlPerkinsProgramCodeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CourseCode = F, CourseCodeTitle = F, CourseTitle = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateCarlPerkinsProgramCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10873,7 +10873,7 @@
 	#' @return A dataframe or of StateCarlPerkinsProgramCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateCarlPerkinsProgramCodeMN <- function(StateCarlPerkinsProgramCodeMNID, Code = F, Description = F, CourseCode = F, CourseTitle = F, CodeDescription = F, CourseCodeTitle = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateCarlPerkinsProgramCodeMN <- function(StateCarlPerkinsProgramCodeMNID, Code = F, CodeDescription = F, CourseCode = F, CourseCodeTitle = F, CourseTitle = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateCarlPerkinsProgramCodeMNID")
 
@@ -10913,7 +10913,7 @@
 	#' @return A newly created StateCarlPerkinsProgramCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateCarlPerkinsProgramCodeMN <- function(Code = NULL, Description = NULL, CourseCode = NULL, CourseTitle = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateCarlPerkinsProgramCodeMN <- function(Code = NULL, CourseCode = NULL, CourseTitle = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10934,7 +10934,7 @@
 	#' @return The modified StateCarlPerkinsProgramCodeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateCarlPerkinsProgramCodeMN <- function(StateCarlPerkinsProgramCodeMNID, Code = NULL, Description = NULL, CourseCode = NULL, CourseTitle = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateCarlPerkinsProgramCodeMN <- function(StateCarlPerkinsProgramCodeMNID, Code = NULL, CourseCode = NULL, CourseTitle = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10962,7 +10962,7 @@
 	#' @return A list of CarlPerkinsSubmissionFileV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCarlPerkinsSubmissionFileV1Exceptions <- function(searchConditionsList = NULL, CarlPerkinsSubmissionFileV1ExceptionID = F, SchoolID = F, EntityID = F, CourseID = F, SchoolYearID = F, StudentID = F, StudentGradeBucketID = F, CarlPerkinsSubmissionFileV1ID = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCarlPerkinsSubmissionFileV1Exceptions <- function(searchConditionsList = NULL, CarlPerkinsSubmissionFileV1ExceptionID = F, CarlPerkinsSubmissionFileV1ID = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, CourseID = F, CreatedTime = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, StudentGradeBucketID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -10987,7 +10987,7 @@
 	#' @return A dataframe or of CarlPerkinsSubmissionFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCarlPerkinsSubmissionFileV1Exception <- function(CarlPerkinsSubmissionFileV1ExceptionID, SchoolID = F, EntityID = F, CourseID = F, SchoolYearID = F, StudentID = F, StudentGradeBucketID = F, CarlPerkinsSubmissionFileV1ID = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCarlPerkinsSubmissionFileV1Exception <- function(CarlPerkinsSubmissionFileV1ExceptionID, CarlPerkinsSubmissionFileV1ID = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, CourseID = F, CreatedTime = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, StudentGradeBucketID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CarlPerkinsSubmissionFileV1ExceptionID")
 
@@ -11027,7 +11027,7 @@
 	#' @return A newly created CarlPerkinsSubmissionFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCarlPerkinsSubmissionFileV1Exception <- function(SchoolID = NULL, EntityID = NULL, CourseID = NULL, SchoolYearID = NULL, StudentID = NULL, StudentGradeBucketID = NULL, CarlPerkinsSubmissionFileV1ID = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCarlPerkinsSubmissionFileV1Exception <- function(CarlPerkinsSubmissionFileV1ID = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, CourseID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11048,7 +11048,7 @@
 	#' @return The modified CarlPerkinsSubmissionFileV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCarlPerkinsSubmissionFileV1Exception <- function(CarlPerkinsSubmissionFileV1ExceptionID, SchoolID = NULL, EntityID = NULL, CourseID = NULL, SchoolYearID = NULL, StudentID = NULL, StudentGradeBucketID = NULL, CarlPerkinsSubmissionFileV1ID = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCarlPerkinsSubmissionFileV1Exception <- function(CarlPerkinsSubmissionFileV1ExceptionID, CarlPerkinsSubmissionFileV1ID = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, CourseID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11076,7 +11076,7 @@
 	#' @return A list of CarlPerkinsSubmissionFileV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCarlPerkinsSubmissionFileV1s <- function(searchConditionsList = NULL, CarlPerkinsSubmissionFileV1ID = F, SchoolID = F, SchoolNumber = F, EntityID = F, SchoolYearID = F, StudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, StudentStateID = F, Gender = F, BirthDate = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, CourseID = F, StateCarlPerkinsProgramCodeMNID = F, CarlPerkinsProgramCode = F, CarlPerkinsCourseCode = F, CourseLength = F, StudentGradeBucketID = F, IsPassingGrade = F, CarlPerkinsMNID = F, IsTeenParent = F, IsDisplacedHomemaker = F, IsAdministeredForTSA = F, IsTSAProficient = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCarlPerkinsSubmissionFileV1s <- function(searchConditionsList = NULL, BirthDate = F, CarlPerkinsCourseCode = F, CarlPerkinsMNID = F, CarlPerkinsProgramCode = F, CarlPerkinsSubmissionFileV1ID = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, CourseID = F, CourseLength = F, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, FirstName = F, Gender = F, HasErrors = F, IsAdministeredForTSA = F, IsDisplacedHomemaker = F, IsPassingGrade = F, IsTeenParent = F, IsTSAProficient = F, KeyHash = F, LastName = F, MiddleName = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateCarlPerkinsProgramCodeMNID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StudentGradeBucketID = F, StudentID = F, StudentStateID = F, Suffix = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11101,7 +11101,7 @@
 	#' @return A dataframe or of CarlPerkinsSubmissionFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCarlPerkinsSubmissionFileV1 <- function(CarlPerkinsSubmissionFileV1ID, SchoolID = F, SchoolNumber = F, EntityID = F, SchoolYearID = F, StudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, StudentStateID = F, Gender = F, BirthDate = F, StateDistrictMNID = F, DistrictCode = F, StateDistrictTypeCodeMNID = F, DistrictType = F, CourseID = F, StateCarlPerkinsProgramCodeMNID = F, CarlPerkinsProgramCode = F, CarlPerkinsCourseCode = F, CourseLength = F, StudentGradeBucketID = F, IsPassingGrade = F, CarlPerkinsMNID = F, IsTeenParent = F, IsDisplacedHomemaker = F, IsAdministeredForTSA = F, IsTSAProficient = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCarlPerkinsSubmissionFileV1 <- function(CarlPerkinsSubmissionFileV1ID, BirthDate = F, CarlPerkinsCourseCode = F, CarlPerkinsMNID = F, CarlPerkinsProgramCode = F, CarlPerkinsSubmissionID = F, CarlPerkinsSubmissionRunHistoryID = F, CourseID = F, CourseLength = F, CreatedTime = F, DistrictCode = F, DistrictType = F, EntityID = F, FirstName = F, Gender = F, HasErrors = F, IsAdministeredForTSA = F, IsDisplacedHomemaker = F, IsPassingGrade = F, IsTeenParent = F, IsTSAProficient = F, KeyHash = F, LastName = F, MiddleName = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateCarlPerkinsProgramCodeMNID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StudentGradeBucketID = F, StudentID = F, StudentStateID = F, Suffix = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CarlPerkinsSubmissionFileV1ID")
 
@@ -11141,7 +11141,7 @@
 	#' @return A newly created CarlPerkinsSubmissionFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCarlPerkinsSubmissionFileV1 <- function(SchoolID = NULL, SchoolNumber = NULL, EntityID = NULL, SchoolYearID = NULL, StudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, StudentStateID = NULL, Gender = NULL, BirthDate = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, CourseID = NULL, StateCarlPerkinsProgramCodeMNID = NULL, CarlPerkinsProgramCode = NULL, CarlPerkinsCourseCode = NULL, CourseLength = NULL, StudentGradeBucketID = NULL, IsPassingGrade = NULL, CarlPerkinsMNID = NULL, IsTeenParent = NULL, IsDisplacedHomemaker = NULL, IsAdministeredForTSA = NULL, IsTSAProficient = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCarlPerkinsSubmissionFileV1 <- function(BirthDate = NULL, CarlPerkinsCourseCode = NULL, CarlPerkinsMNID = NULL, CarlPerkinsProgramCode = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, CourseID = NULL, CourseLength = NULL, DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, IsAdministeredForTSA = NULL, IsDisplacedHomemaker = NULL, IsPassingGrade = NULL, IsTeenParent = NULL, IsTSAProficient = NULL, LastName = NULL, MiddleName = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateCarlPerkinsProgramCodeMNID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, StudentStateID = NULL, Suffix = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11162,7 +11162,7 @@
 	#' @return The modified CarlPerkinsSubmissionFileV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCarlPerkinsSubmissionFileV1 <- function(CarlPerkinsSubmissionFileV1ID, SchoolID = NULL, SchoolNumber = NULL, EntityID = NULL, SchoolYearID = NULL, StudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, StudentStateID = NULL, Gender = NULL, BirthDate = NULL, StateDistrictMNID = NULL, DistrictCode = NULL, StateDistrictTypeCodeMNID = NULL, DistrictType = NULL, CourseID = NULL, StateCarlPerkinsProgramCodeMNID = NULL, CarlPerkinsProgramCode = NULL, CarlPerkinsCourseCode = NULL, CourseLength = NULL, StudentGradeBucketID = NULL, IsPassingGrade = NULL, CarlPerkinsMNID = NULL, IsTeenParent = NULL, IsDisplacedHomemaker = NULL, IsAdministeredForTSA = NULL, IsTSAProficient = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCarlPerkinsSubmissionFileV1 <- function(CarlPerkinsSubmissionFileV1ID, BirthDate = NULL, CarlPerkinsCourseCode = NULL, CarlPerkinsMNID = NULL, CarlPerkinsProgramCode = NULL, CarlPerkinsSubmissionID = NULL, CarlPerkinsSubmissionRunHistoryID = NULL, CourseID = NULL, CourseLength = NULL, DistrictCode = NULL, DistrictType = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, IsAdministeredForTSA = NULL, IsDisplacedHomemaker = NULL, IsPassingGrade = NULL, IsTeenParent = NULL, IsTSAProficient = NULL, LastName = NULL, MiddleName = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateCarlPerkinsProgramCodeMNID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StudentGradeBucketID = NULL, StudentID = NULL, StudentStateID = NULL, Suffix = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11190,7 +11190,7 @@
 	#' @return A list of StateActionTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateActionTypeMNS <- function(searchConditionsList = NULL, StateActionTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateActionTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateActionTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11215,7 +11215,7 @@
 	#' @return A dataframe or of StateActionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateActionTypeMN <- function(StateActionTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateActionTypeMN <- function(StateActionTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateActionTypeMNID")
 
@@ -11255,7 +11255,7 @@
 	#' @return A newly created StateActionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateActionTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateActionTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11276,7 +11276,7 @@
 	#' @return The modified StateActionTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateActionTypeMN <- function(StateActionTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateActionTypeMN <- function(StateActionTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11304,7 +11304,7 @@
 	#' @return A list of StateDIRSAESTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateDIRSAESTypeMNS <- function(searchConditionsList = NULL, StateDIRSAESTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateDIRSAESTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateDIRSAESTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11329,7 +11329,7 @@
 	#' @return A dataframe or of StateDIRSAESTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateDIRSAESTypeMN <- function(StateDIRSAESTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateDIRSAESTypeMN <- function(StateDIRSAESTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateDIRSAESTypeMNID")
 
@@ -11369,7 +11369,7 @@
 	#' @return A newly created StateDIRSAESTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateDIRSAESTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateDIRSAESTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11390,7 +11390,7 @@
 	#' @return The modified StateDIRSAESTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateDIRSAESTypeMN <- function(StateDIRSAESTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateDIRSAESTypeMN <- function(StateDIRSAESTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11418,7 +11418,7 @@
 	#' @return A list of StateDIRSTimeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateDIRSTimeMNS <- function(searchConditionsList = NULL, StateDIRSTimeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateDIRSTimeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateDIRSTimeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11443,7 +11443,7 @@
 	#' @return A dataframe or of StateDIRSTimeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateDIRSTimeMN <- function(StateDIRSTimeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateDIRSTimeMN <- function(StateDIRSTimeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateDIRSTimeMNID")
 
@@ -11483,7 +11483,7 @@
 	#' @return A newly created StateDIRSTimeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateDIRSTimeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateDIRSTimeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11504,7 +11504,7 @@
 	#' @return The modified StateDIRSTimeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateDIRSTimeMN <- function(StateDIRSTimeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateDIRSTimeMN <- function(StateDIRSTimeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11532,7 +11532,7 @@
 	#' @return A list of StateDrugTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateDrugTypeMNS <- function(searchConditionsList = NULL, StateDrugTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateDrugTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateDrugTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11557,7 +11557,7 @@
 	#' @return A dataframe or of StateDrugTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateDrugTypeMN <- function(StateDrugTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateDrugTypeMN <- function(StateDrugTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateDrugTypeMNID")
 
@@ -11597,7 +11597,7 @@
 	#' @return A newly created StateDrugTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateDrugTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateDrugTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11618,7 +11618,7 @@
 	#' @return The modified StateDrugTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateDrugTypeMN <- function(StateDrugTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateDrugTypeMN <- function(StateDrugTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11646,7 +11646,7 @@
 	#' @return A list of StateIncidentLocationMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateIncidentLocationMNS <- function(searchConditionsList = NULL, StateIncidentLocationMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateIncidentLocationMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateIncidentLocationMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11671,7 +11671,7 @@
 	#' @return A dataframe or of StateIncidentLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateIncidentLocationMN <- function(StateIncidentLocationMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateIncidentLocationMN <- function(StateIncidentLocationMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateIncidentLocationMNID")
 
@@ -11711,7 +11711,7 @@
 	#' @return A newly created StateIncidentLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateIncidentLocationMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateIncidentLocationMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11732,7 +11732,7 @@
 	#' @return The modified StateIncidentLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateIncidentLocationMN <- function(StateIncidentLocationMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateIncidentLocationMN <- function(StateIncidentLocationMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11760,7 +11760,7 @@
 	#' @return A list of StateOffenderActivityMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateOffenderActivityMNS <- function(searchConditionsList = NULL, StateOffenderActivityMNID = F, Code = F, Description = F, SeverityRank = F, ActivityTypeCode = F, ActivityTypeDescription = F, CodeDescription = F, ActivityTypeCodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateOffenderActivityMNS <- function(searchConditionsList = NULL, ActivityTypeCode = F, ActivityTypeCodeDescription = F, ActivityTypeDescription = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SeverityRank = F, SkywardHash = F, SkywardID = F, StateOffenderActivityMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11785,7 +11785,7 @@
 	#' @return A dataframe or of StateOffenderActivityMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateOffenderActivityMN <- function(StateOffenderActivityMNID, Code = F, Description = F, SeverityRank = F, ActivityTypeCode = F, ActivityTypeDescription = F, CodeDescription = F, ActivityTypeCodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateOffenderActivityMN <- function(StateOffenderActivityMNID, ActivityTypeCode = F, ActivityTypeCodeDescription = F, ActivityTypeDescription = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SeverityRank = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateOffenderActivityMNID")
 
@@ -11825,7 +11825,7 @@
 	#' @return A newly created StateOffenderActivityMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateOffenderActivityMN <- function(Code = NULL, Description = NULL, SeverityRank = NULL, ActivityTypeCode = NULL, ActivityTypeDescription = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateOffenderActivityMN <- function(ActivityTypeCode = NULL, ActivityTypeDescription = NULL, Code = NULL, Description = NULL, IsInvalid = NULL, SeverityRank = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11846,7 +11846,7 @@
 	#' @return The modified StateOffenderActivityMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateOffenderActivityMN <- function(StateOffenderActivityMNID, Code = NULL, Description = NULL, SeverityRank = NULL, ActivityTypeCode = NULL, ActivityTypeDescription = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateOffenderActivityMN <- function(StateOffenderActivityMNID, ActivityTypeCode = NULL, ActivityTypeDescription = NULL, Code = NULL, Description = NULL, IsInvalid = NULL, SeverityRank = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11874,7 +11874,7 @@
 	#' @return A list of StatePelletGunTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStatePelletGunTypeMNS <- function(searchConditionsList = NULL, StatePelletGunTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStatePelletGunTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StatePelletGunTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11899,7 +11899,7 @@
 	#' @return A dataframe or of StatePelletGunTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStatePelletGunTypeMN <- function(StatePelletGunTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStatePelletGunTypeMN <- function(StatePelletGunTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StatePelletGunTypeMNID")
 
@@ -11939,7 +11939,7 @@
 	#' @return A newly created StatePelletGunTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStatePelletGunTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStatePelletGunTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11960,7 +11960,7 @@
 	#' @return The modified StatePelletGunTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStatePelletGunTypeMN <- function(StatePelletGunTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStatePelletGunTypeMN <- function(StatePelletGunTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -11988,7 +11988,7 @@
 	#' @return A list of StateVictimCostMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateVictimCostMNS <- function(searchConditionsList = NULL, StateVictimCostMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateVictimCostMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateVictimCostMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12013,7 +12013,7 @@
 	#' @return A dataframe or of StateVictimCostMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateVictimCostMN <- function(StateVictimCostMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateVictimCostMN <- function(StateVictimCostMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateVictimCostMNID")
 
@@ -12053,7 +12053,7 @@
 	#' @return A newly created StateVictimCostMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateVictimCostMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateVictimCostMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12074,7 +12074,7 @@
 	#' @return The modified StateVictimCostMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateVictimCostMN <- function(StateVictimCostMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateVictimCostMN <- function(StateVictimCostMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12102,7 +12102,7 @@
 	#' @return A list of StateVictimTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateVictimTypeMNS <- function(searchConditionsList = NULL, StateVictimTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateVictimTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateVictimTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12127,7 +12127,7 @@
 	#' @return A dataframe or of StateVictimTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateVictimTypeMN <- function(StateVictimTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateVictimTypeMN <- function(StateVictimTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateVictimTypeMNID")
 
@@ -12167,7 +12167,7 @@
 	#' @return A newly created StateVictimTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateVictimTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateVictimTypeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12188,7 +12188,7 @@
 	#' @return The modified StateVictimTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateVictimTypeMN <- function(StateVictimTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateVictimTypeMN <- function(StateVictimTypeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12216,7 +12216,7 @@
 	#' @return A list of StateWeaponTypeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateWeaponTypeMNS <- function(searchConditionsList = NULL, StateWeaponTypeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsPelletGun = F, IsGun = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateWeaponTypeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsGun = F, IsInvalid = F, IsPelletGun = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateWeaponTypeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12241,7 +12241,7 @@
 	#' @return A dataframe or of StateWeaponTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateWeaponTypeMN <- function(StateWeaponTypeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsPelletGun = F, IsGun = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateWeaponTypeMN <- function(StateWeaponTypeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsGun = F, IsInvalid = F, IsPelletGun = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateWeaponTypeMNID")
 
@@ -12281,7 +12281,7 @@
 	#' @return A newly created StateWeaponTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateWeaponTypeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, IsGun = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateWeaponTypeMN <- function(Code = NULL, Description = NULL, IsGun = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12302,7 +12302,7 @@
 	#' @return The modified StateWeaponTypeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateWeaponTypeMN <- function(StateWeaponTypeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, IsGun = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateWeaponTypeMN <- function(StateWeaponTypeMNID, Code = NULL, Description = NULL, IsGun = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12330,7 +12330,7 @@
 	#' @return A list of DIRSSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSSubmissionRunHistories <- function(searchConditionsList = NULL, DIRSSubmissionRunHistoryID = F, DIRSSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12355,7 +12355,7 @@
 	#' @return A dataframe or of DIRSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSSubmissionRunHistory <- function(DIRSSubmissionRunHistoryID, DIRSSubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSSubmissionRunHistory <- function(DIRSSubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, DIRSSubmissionID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSSubmissionRunHistoryID")
 
@@ -12395,7 +12395,7 @@
 	#' @return A newly created DIRSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSSubmissionRunHistory <- function(DIRSSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSSubmissionRunHistory <- function(DIRSSubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12416,7 +12416,7 @@
 	#' @return The modified DIRSSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSSubmissionRunHistory <- function(DIRSSubmissionRunHistoryID, DIRSSubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSSubmissionRunHistory <- function(DIRSSubmissionRunHistoryID, DIRSSubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12444,7 +12444,7 @@
 	#' @return A list of DIRSSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSSubmissions <- function(searchConditionsList = NULL, DIRSSubmissionID = F, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSSubmissions <- function(searchConditionsList = NULL, CloseDate = F, CreatedTime = F, Description = F, DIRSSubmissionID = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12469,7 +12469,7 @@
 	#' @return A dataframe or of DIRSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSSubmission <- function(DIRSSubmissionID, SkywardID = F, Description = F, OpenDate = F, CloseDate = F, SchoolYearID = F, SkywardHash = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSSubmission <- function(DIRSSubmissionID, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSSubmissionID")
 
@@ -12509,7 +12509,7 @@
 	#' @return A newly created DIRSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSSubmission <- function(Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSSubmission <- function(CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12530,7 +12530,7 @@
 	#' @return The modified DIRSSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSSubmission <- function(DIRSSubmissionID, Description = NULL, OpenDate = NULL, CloseDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSSubmission <- function(DIRSSubmissionID, CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12558,7 +12558,7 @@
 	#' @return A list of DIRSSchoolV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSSchoolV1Exceptions <- function(searchConditionsList = NULL, DIRSSchoolV1ExceptionID = F, DIRSSchoolV1ID = F, EntityID = F, SchoolYearID = F, SchoolID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSSchoolV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSSchoolV1ExceptionID = F, DIRSSchoolV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12583,7 +12583,7 @@
 	#' @return A dataframe or of DIRSSchoolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSSchoolV1Exception <- function(DIRSSchoolV1ExceptionID, DIRSSchoolV1ID = F, EntityID = F, SchoolYearID = F, SchoolID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSSchoolV1Exception <- function(DIRSSchoolV1ExceptionID, CreatedTime = F, DIRSSchoolV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSSchoolV1ExceptionID")
 
@@ -12623,7 +12623,7 @@
 	#' @return A newly created DIRSSchoolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSSchoolV1Exception <- function(DIRSSchoolV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSSchoolV1Exception <- function(DIRSSchoolV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12644,7 +12644,7 @@
 	#' @return The modified DIRSSchoolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSSchoolV1Exception <- function(DIRSSchoolV1ExceptionID, DIRSSchoolV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSSchoolV1Exception <- function(DIRSSchoolV1ExceptionID, DIRSSchoolV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12672,7 +12672,7 @@
 	#' @return A list of DIRSSchoolV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSSchoolV1s <- function(searchConditionsList = NULL, DIRSSchoolV1ID = F, HasAntiBullyingPolicy = F, HasAntiViolencePolicy = F, HasCrisisPlan = F, HasDrugEducation = F, HasSafetyPlan = F, HasZeroTolerancePolicy = F, HabitualTruants = F, NameIDSafetySpecialist = F, NameEmailID = F, SafetySpecialistEmail = F, SchoolNumber = F, SchoolID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntitySchoolID = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSSchoolV1s <- function(searchConditionsList = NULL, CreatedTime = F, DIRSSchoolV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, HabitualTruants = F, HasAntiBullyingPolicy = F, HasAntiViolencePolicy = F, HasCrisisPlan = F, HasDrugEducation = F, HasErrors = F, HasSafetyPlan = F, HasZeroTolerancePolicy = F, KeyHash = F, ModifiedTime = F, NameEmailID = F, NameIDSafetySpecialist = F, SafetySpecialistEmail = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12697,7 +12697,7 @@
 	#' @return A dataframe or of DIRSSchoolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSSchoolV1 <- function(DIRSSchoolV1ID, HasAntiBullyingPolicy = F, HasAntiViolencePolicy = F, HasCrisisPlan = F, HasDrugEducation = F, HasSafetyPlan = F, HasZeroTolerancePolicy = F, HabitualTruants = F, NameIDSafetySpecialist = F, NameEmailID = F, SafetySpecialistEmail = F, SchoolNumber = F, SchoolID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntitySchoolID = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSSchoolV1 <- function(DIRSSchoolV1ID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, EntitySchoolID = F, HabitualTruants = F, HasAntiBullyingPolicy = F, HasAntiViolencePolicy = F, HasCrisisPlan = F, HasDrugEducation = F, HasErrors = F, HasSafetyPlan = F, HasZeroTolerancePolicy = F, KeyHash = F, ModifiedTime = F, NameEmailID = F, NameIDSafetySpecialist = F, SafetySpecialistEmail = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSSchoolV1ID")
 
@@ -12737,7 +12737,7 @@
 	#' @return A newly created DIRSSchoolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSSchoolV1 <- function(HasAntiBullyingPolicy = NULL, HasAntiViolencePolicy = NULL, HasCrisisPlan = NULL, HasDrugEducation = NULL, HasSafetyPlan = NULL, HasZeroTolerancePolicy = NULL, HabitualTruants = NULL, NameIDSafetySpecialist = NULL, NameEmailID = NULL, SafetySpecialistEmail = NULL, SchoolNumber = NULL, SchoolID = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntitySchoolID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSSchoolV1 <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, HabitualTruants = NULL, HasAntiBullyingPolicy = NULL, HasAntiViolencePolicy = NULL, HasCrisisPlan = NULL, HasDrugEducation = NULL, HasSafetyPlan = NULL, HasZeroTolerancePolicy = NULL, NameEmailID = NULL, NameIDSafetySpecialist = NULL, SafetySpecialistEmail = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12758,7 +12758,7 @@
 	#' @return The modified DIRSSchoolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSSchoolV1 <- function(DIRSSchoolV1ID, HasAntiBullyingPolicy = NULL, HasAntiViolencePolicy = NULL, HasCrisisPlan = NULL, HasDrugEducation = NULL, HasSafetyPlan = NULL, HasZeroTolerancePolicy = NULL, HabitualTruants = NULL, NameIDSafetySpecialist = NULL, NameEmailID = NULL, SafetySpecialistEmail = NULL, SchoolNumber = NULL, SchoolID = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntitySchoolID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSSchoolV1 <- function(DIRSSchoolV1ID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, EntitySchoolID = NULL, HabitualTruants = NULL, HasAntiBullyingPolicy = NULL, HasAntiViolencePolicy = NULL, HasCrisisPlan = NULL, HasDrugEducation = NULL, HasSafetyPlan = NULL, HasZeroTolerancePolicy = NULL, NameEmailID = NULL, NameIDSafetySpecialist = NULL, SafetySpecialistEmail = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12786,7 +12786,7 @@
 	#' @return A list of DIRSDrugV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSDrugV1Exceptions <- function(searchConditionsList = NULL, DIRSDrugV1ExceptionID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, IncidentOffenseNameDrugID = F, StudentID = F, DIRSDrugV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSDrugV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSDrugV1ExceptionID = F, DIRSDrugV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameDrugID = F, IncidentOffenseNameID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12811,7 +12811,7 @@
 	#' @return A dataframe or of DIRSDrugV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSDrugV1Exception <- function(DIRSDrugV1ExceptionID, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, IncidentOffenseNameDrugID = F, StudentID = F, DIRSDrugV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSDrugV1Exception <- function(DIRSDrugV1ExceptionID, CreatedTime = F, DIRSDrugV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameDrugID = F, IncidentOffenseNameID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSDrugV1ExceptionID")
 
@@ -12851,7 +12851,7 @@
 	#' @return A newly created DIRSDrugV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSDrugV1Exception <- function(EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameDrugID = NULL, StudentID = NULL, DIRSDrugV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSDrugV1Exception <- function(DIRSDrugV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameDrugID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12872,7 +12872,7 @@
 	#' @return The modified DIRSDrugV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSDrugV1Exception <- function(DIRSDrugV1ExceptionID, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameDrugID = NULL, StudentID = NULL, DIRSDrugV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSDrugV1Exception <- function(DIRSDrugV1ExceptionID, DIRSDrugV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameDrugID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12900,7 +12900,7 @@
 	#' @return A list of DIRSIncidentV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSIncidentV1Exceptions <- function(searchConditionsList = NULL, DIRSIncidentV1ExceptionID = F, EntityID = F, SchoolYearID = F, DIRSIncidentV1ID = F, IncidentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSIncidentV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSIncidentV1ExceptionID = F, DIRSIncidentV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12925,7 +12925,7 @@
 	#' @return A dataframe or of DIRSIncidentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSIncidentV1Exception <- function(DIRSIncidentV1ExceptionID, EntityID = F, SchoolYearID = F, DIRSIncidentV1ID = F, IncidentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSIncidentV1Exception <- function(DIRSIncidentV1ExceptionID, CreatedTime = F, DIRSIncidentV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSIncidentV1ExceptionID")
 
@@ -12965,7 +12965,7 @@
 	#' @return A newly created DIRSIncidentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSIncidentV1Exception <- function(EntityID = NULL, SchoolYearID = NULL, DIRSIncidentV1ID = NULL, IncidentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSIncidentV1Exception <- function(DIRSIncidentV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -12986,7 +12986,7 @@
 	#' @return The modified DIRSIncidentV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSIncidentV1Exception <- function(DIRSIncidentV1ExceptionID, EntityID = NULL, SchoolYearID = NULL, DIRSIncidentV1ID = NULL, IncidentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSIncidentV1Exception <- function(DIRSIncidentV1ExceptionID, DIRSIncidentV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13014,7 +13014,7 @@
 	#' @return A list of DIRSVictimV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSVictimV1Exceptions <- function(searchConditionsList = NULL, DIRSVictimV1ExceptionID = F, DIRSVictimV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StaffID = F, VictimName = F, LinkedToStaff = F, LinkedToStudent = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSVictimV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSVictimV1ExceptionID = F, DIRSVictimV1ID = F, EntityID = F, IncidentOffenseNameID = F, LinkedToStaff = F, LinkedToStudent = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VictimName = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13039,7 +13039,7 @@
 	#' @return A dataframe or of DIRSVictimV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSVictimV1Exception <- function(DIRSVictimV1ExceptionID, DIRSVictimV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StaffID = F, VictimName = F, LinkedToStaff = F, LinkedToStudent = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSVictimV1Exception <- function(DIRSVictimV1ExceptionID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSVictimV1ID = F, EntityID = F, IncidentOffenseNameID = F, LinkedToStaff = F, LinkedToStudent = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StaffID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VictimName = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSVictimV1ExceptionID")
 
@@ -13079,7 +13079,7 @@
 	#' @return A newly created DIRSVictimV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSVictimV1Exception <- function(DIRSVictimV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSVictimV1Exception <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DIRSVictimV1ID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13100,7 +13100,7 @@
 	#' @return The modified DIRSVictimV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSVictimV1Exception <- function(DIRSVictimV1ExceptionID, DIRSVictimV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSVictimV1Exception <- function(DIRSVictimV1ExceptionID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DIRSVictimV1ID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StaffID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13128,7 +13128,7 @@
 	#' @return A list of DIRSDisciplinaryActionV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSDisciplinaryActionV1Exceptions <- function(searchConditionsList = NULL, DIRSDisciplinaryActionV1ExceptionID = F, DIRSDisciplinaryActionV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameActionID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSDisciplinaryActionV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSDisciplinaryActionV1ExceptionID = F, DIRSDisciplinaryActionV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameActionID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13153,7 +13153,7 @@
 	#' @return A dataframe or of DIRSDisciplinaryActionV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ExceptionID, DIRSDisciplinaryActionV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameActionID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ExceptionID, CreatedTime = F, DIRSDisciplinaryActionV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameActionID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSDisciplinaryActionV1ExceptionID")
 
@@ -13193,7 +13193,7 @@
 	#' @return A newly created DIRSDisciplinaryActionV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameActionID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameActionID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13214,7 +13214,7 @@
 	#' @return The modified DIRSDisciplinaryActionV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ExceptionID, DIRSDisciplinaryActionV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameActionID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSDisciplinaryActionV1Exception <- function(DIRSDisciplinaryActionV1ExceptionID, DIRSDisciplinaryActionV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameActionID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13242,7 +13242,7 @@
 	#' @return A list of DIRSWeaponV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSWeaponV1Exceptions <- function(searchConditionsList = NULL, DIRSWeaponV1ExceptionID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, StudentID = F, DIRSWeaponV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSWeaponV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSWeaponV1ExceptionID = F, DIRSWeaponV1ID = F, EntityID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13267,7 +13267,7 @@
 	#' @return A dataframe or of DIRSWeaponV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSWeaponV1Exception <- function(DIRSWeaponV1ExceptionID, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, StudentID = F, DIRSWeaponV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSWeaponV1Exception <- function(DIRSWeaponV1ExceptionID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSWeaponV1ID = F, EntityID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSWeaponV1ExceptionID")
 
@@ -13307,7 +13307,7 @@
 	#' @return A newly created DIRSWeaponV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSWeaponV1Exception <- function(EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, StudentID = NULL, DIRSWeaponV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSWeaponV1Exception <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DIRSWeaponV1ID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13328,7 +13328,7 @@
 	#' @return The modified DIRSWeaponV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSWeaponV1Exception <- function(DIRSWeaponV1ExceptionID, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, StudentID = NULL, DIRSWeaponV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSWeaponV1Exception <- function(DIRSWeaponV1ExceptionID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DIRSWeaponV1ID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13356,7 +13356,7 @@
 	#' @return A list of DIRSOffenderV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSOffenderV1Exceptions <- function(searchConditionsList = NULL, DIRSOffenderV1ExceptionID = F, DIRSOffenderV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSOffenderV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DIRSOffenderV1ExceptionID = F, DIRSOffenderV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13381,7 +13381,7 @@
 	#' @return A dataframe or of DIRSOffenderV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSOffenderV1Exception <- function(DIRSOffenderV1ExceptionID, DIRSOffenderV1ID = F, EntityID = F, SchoolYearID = F, IncidentOffenseNameID = F, StudentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSOffenderV1Exception <- function(DIRSOffenderV1ExceptionID, CreatedTime = F, DIRSOffenderV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, IncidentOffenseNameID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSOffenderV1ExceptionID")
 
@@ -13421,7 +13421,7 @@
 	#' @return A newly created DIRSOffenderV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSOffenderV1Exception <- function(DIRSOffenderV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSOffenderV1Exception <- function(DIRSOffenderV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13442,7 +13442,7 @@
 	#' @return The modified DIRSOffenderV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSOffenderV1Exception <- function(DIRSOffenderV1ExceptionID, DIRSOffenderV1ID = NULL, EntityID = NULL, SchoolYearID = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSOffenderV1Exception <- function(DIRSOffenderV1ExceptionID, DIRSOffenderV1ID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, IncidentOffenseNameID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13470,7 +13470,7 @@
 	#' @return A list of DIRSDrugV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSDrugV1s <- function(searchConditionsList = NULL, DIRSDrugV1ID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentOffenseNameID = F, IncidentOffenseNameDrugID = F, StudentID = F, MARSSNumber = F, IncidentID = F, ExternalIncidentID = F, StateDrugTypeMNID = F, DrugType = F, DrugTypeOtherDescription = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSDrugV1s <- function(searchConditionsList = NULL, CreatedTime = F, DIRSDrugV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DrugType = F, DrugTypeOtherDescription = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameDrugID = F, IncidentOffenseNameID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateDrugTypeMNID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13495,7 +13495,7 @@
 	#' @return A dataframe or of DIRSDrugV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSDrugV1 <- function(DIRSDrugV1ID, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentOffenseNameID = F, IncidentOffenseNameDrugID = F, StudentID = F, MARSSNumber = F, IncidentID = F, ExternalIncidentID = F, StateDrugTypeMNID = F, DrugType = F, DrugTypeOtherDescription = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSDrugV1 <- function(DIRSDrugV1ID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DrugType = F, DrugTypeOtherDescription = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameDrugID = F, IncidentOffenseNameID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateDrugTypeMNID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSDrugV1ID")
 
@@ -13535,7 +13535,7 @@
 	#' @return A newly created DIRSDrugV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSDrugV1 <- function(EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameDrugID = NULL, StudentID = NULL, MARSSNumber = NULL, IncidentID = NULL, ExternalIncidentID = NULL, StateDrugTypeMNID = NULL, DrugType = NULL, DrugTypeOtherDescription = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSDrugV1 <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DrugType = NULL, DrugTypeOtherDescription = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameDrugID = NULL, IncidentOffenseNameID = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateDrugTypeMNID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13556,7 +13556,7 @@
 	#' @return The modified DIRSDrugV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSDrugV1 <- function(DIRSDrugV1ID, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameDrugID = NULL, StudentID = NULL, MARSSNumber = NULL, IncidentID = NULL, ExternalIncidentID = NULL, StateDrugTypeMNID = NULL, DrugType = NULL, DrugTypeOtherDescription = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSDrugV1 <- function(DIRSDrugV1ID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DrugType = NULL, DrugTypeOtherDescription = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameDrugID = NULL, IncidentOffenseNameID = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateDrugTypeMNID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13584,7 +13584,7 @@
 	#' @return A list of DIRSIncidentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSIncidentV1s <- function(searchConditionsList = NULL, DIRSIncidentV1ID = F, CostToProperty = F, ExternalIncidentID = F, IncidentDate = F, LocationID = F, StateIncidentLocationMNID = F, IncidentLocation = F, StateDIRSTimeMNID = F, TimeOfIncident = F, NumberOfUnknownOffenders = F, NumberOfUnknownVictims = F, DIRSIncidentID = F, SchoolID = F, SchoolNumber = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateVictimCostMNID = F, CostToPropertyCode = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSIncidentV1s <- function(searchConditionsList = NULL, CostToProperty = F, CostToPropertyCode = F, CreatedTime = F, DIRSIncidentID = F, DIRSIncidentV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentDate = F, IncidentID = F, IncidentLocation = F, KeyHash = F, LocationID = F, ModifiedTime = F, NumberOfUnknownOffenders = F, NumberOfUnknownVictims = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDIRSTimeMNID = F, StateIncidentLocationMNID = F, StateVictimCostMNID = F, TimeOfIncident = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13609,7 +13609,7 @@
 	#' @return A dataframe or of DIRSIncidentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSIncidentV1 <- function(DIRSIncidentV1ID, CostToProperty = F, ExternalIncidentID = F, IncidentDate = F, LocationID = F, StateIncidentLocationMNID = F, IncidentLocation = F, StateDIRSTimeMNID = F, TimeOfIncident = F, NumberOfUnknownOffenders = F, NumberOfUnknownVictims = F, DIRSIncidentID = F, SchoolID = F, SchoolNumber = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateVictimCostMNID = F, CostToPropertyCode = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSIncidentV1 <- function(DIRSIncidentV1ID, CostToProperty = F, CostToPropertyCode = F, CreatedTime = F, DIRSIncidentID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentDate = F, IncidentID = F, IncidentLocation = F, KeyHash = F, LocationID = F, ModifiedTime = F, NumberOfUnknownOffenders = F, NumberOfUnknownVictims = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateDIRSTimeMNID = F, StateIncidentLocationMNID = F, StateVictimCostMNID = F, TimeOfIncident = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSIncidentV1ID")
 
@@ -13649,7 +13649,7 @@
 	#' @return A newly created DIRSIncidentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSIncidentV1 <- function(ExternalIncidentID = NULL, IncidentDate = NULL, LocationID = NULL, StateIncidentLocationMNID = NULL, IncidentLocation = NULL, StateDIRSTimeMNID = NULL, TimeOfIncident = NULL, NumberOfUnknownOffenders = NULL, NumberOfUnknownVictims = NULL, DIRSIncidentID = NULL, SchoolID = NULL, SchoolNumber = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentID = NULL, StateVictimCostMNID = NULL, CostToPropertyCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSIncidentV1 <- function(CostToPropertyCode = NULL, DIRSIncidentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentDate = NULL, IncidentID = NULL, IncidentLocation = NULL, LocationID = NULL, NumberOfUnknownOffenders = NULL, NumberOfUnknownVictims = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDIRSTimeMNID = NULL, StateIncidentLocationMNID = NULL, StateVictimCostMNID = NULL, TimeOfIncident = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13670,7 +13670,7 @@
 	#' @return The modified DIRSIncidentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSIncidentV1 <- function(DIRSIncidentV1ID, ExternalIncidentID = NULL, IncidentDate = NULL, LocationID = NULL, StateIncidentLocationMNID = NULL, IncidentLocation = NULL, StateDIRSTimeMNID = NULL, TimeOfIncident = NULL, NumberOfUnknownOffenders = NULL, NumberOfUnknownVictims = NULL, DIRSIncidentID = NULL, SchoolID = NULL, SchoolNumber = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentID = NULL, StateVictimCostMNID = NULL, CostToPropertyCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSIncidentV1 <- function(DIRSIncidentV1ID, CostToPropertyCode = NULL, DIRSIncidentID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentDate = NULL, IncidentID = NULL, IncidentLocation = NULL, LocationID = NULL, NumberOfUnknownOffenders = NULL, NumberOfUnknownVictims = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateDIRSTimeMNID = NULL, StateIncidentLocationMNID = NULL, StateVictimCostMNID = NULL, TimeOfIncident = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13698,7 +13698,7 @@
 	#' @return A list of DIRSDisciplinaryActionV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSDisciplinaryActionV1s <- function(searchConditionsList = NULL, DIRSDisciplinaryActionV1ID = F, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, StateDIRSAESTypeMNID = F, AESType = F, ReturnBeforeEndOfSchoolYear = F, StateActionTypeMNID = F, DisciplinaryActionType = F, StartDate = F, EndDate = F, DIRSActionExplanation = F, IncidentOffenseNameActionID = F, NumberDays = F, NumberDaysExpulsionReduced = F, WasDAThroughYear = F, WasExpulsionModified = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, StudentID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, KeyHash = F, UpdateHash = F, NoServiceProvidedExplanation = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSDisciplinaryActionV1s <- function(searchConditionsList = NULL, AESType = F, CreatedTime = F, DIRSActionExplanation = F, DIRSDisciplinaryActionV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DisciplinaryActionType = F, EndDate = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameActionID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, NoServiceProvidedExplanation = F, NumberDays = F, NumberDaysExpulsionReduced = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, ReturnBeforeEndOfSchoolYear = F, SchoolYearID = F, StartDate = F, StateActionTypeMNID = F, StateDIRSAESTypeMNID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasDAThroughYear = F, WasExpulsionModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13723,7 +13723,7 @@
 	#' @return A dataframe or of DIRSDisciplinaryActionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSDisciplinaryActionV1 <- function(DIRSDisciplinaryActionV1ID, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, StateDIRSAESTypeMNID = F, AESType = F, ReturnBeforeEndOfSchoolYear = F, StateActionTypeMNID = F, DisciplinaryActionType = F, StartDate = F, EndDate = F, DIRSActionExplanation = F, IncidentOffenseNameActionID = F, NumberDays = F, NumberDaysExpulsionReduced = F, WasDAThroughYear = F, WasExpulsionModified = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, StudentID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, KeyHash = F, UpdateHash = F, NoServiceProvidedExplanation = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSDisciplinaryActionV1 <- function(DIRSDisciplinaryActionV1ID, AESType = F, CreatedTime = F, DIRSActionExplanation = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DisciplinaryActionType = F, EndDate = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameActionID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, NoServiceProvidedExplanation = F, NumberDays = F, NumberDaysExpulsionReduced = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, ReturnBeforeEndOfSchoolYear = F, SchoolYearID = F, StartDate = F, StateActionTypeMNID = F, StateDIRSAESTypeMNID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasDAThroughYear = F, WasExpulsionModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSDisciplinaryActionV1ID")
 
@@ -13763,7 +13763,7 @@
 	#' @return A newly created DIRSDisciplinaryActionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSDisciplinaryActionV1 <- function(IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, StateDIRSAESTypeMNID = NULL, AESType = NULL, ReturnBeforeEndOfSchoolYear = NULL, StateActionTypeMNID = NULL, DisciplinaryActionType = NULL, StartDate = NULL, EndDate = NULL, DIRSActionExplanation = NULL, IncidentOffenseNameActionID = NULL, NumberDays = NULL, NumberDaysExpulsionReduced = NULL, WasDAThroughYear = NULL, WasExpulsionModified = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, StudentID = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, NoServiceProvidedExplanation = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSDisciplinaryActionV1 <- function(AESType = NULL, DIRSActionExplanation = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DisciplinaryActionType = NULL, EndDate = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameActionID = NULL, MARSSNumber = NULL, NoServiceProvidedExplanation = NULL, NumberDays = NULL, NumberDaysExpulsionReduced = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, ReturnBeforeEndOfSchoolYear = NULL, SchoolYearID = NULL, StartDate = NULL, StateActionTypeMNID = NULL, StateDIRSAESTypeMNID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, WasDAThroughYear = NULL, WasExpulsionModified = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13784,7 +13784,7 @@
 	#' @return The modified DIRSDisciplinaryActionV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSDisciplinaryActionV1 <- function(DIRSDisciplinaryActionV1ID, IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, StateDIRSAESTypeMNID = NULL, AESType = NULL, ReturnBeforeEndOfSchoolYear = NULL, StateActionTypeMNID = NULL, DisciplinaryActionType = NULL, StartDate = NULL, EndDate = NULL, DIRSActionExplanation = NULL, IncidentOffenseNameActionID = NULL, NumberDays = NULL, NumberDaysExpulsionReduced = NULL, WasDAThroughYear = NULL, WasExpulsionModified = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, StudentID = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, NoServiceProvidedExplanation = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSDisciplinaryActionV1 <- function(DIRSDisciplinaryActionV1ID, AESType = NULL, DIRSActionExplanation = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, DisciplinaryActionType = NULL, EndDate = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameActionID = NULL, MARSSNumber = NULL, NoServiceProvidedExplanation = NULL, NumberDays = NULL, NumberDaysExpulsionReduced = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, ReturnBeforeEndOfSchoolYear = NULL, SchoolYearID = NULL, StartDate = NULL, StateActionTypeMNID = NULL, StateDIRSAESTypeMNID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, WasDAThroughYear = NULL, WasExpulsionModified = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13812,7 +13812,7 @@
 	#' @return A list of DIRSWeaponV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSWeaponV1s <- function(searchConditionsList = NULL, DIRSWeaponV1ID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, StudentID = F, MARSSNumber = F, IncidentID = F, ExternalIncidentID = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, IsGunCased = F, IsGunInTrunk = F, IsGunLoaded = F, WasUsedAsADangerousWeaponFederal = F, WasUsedAsADangerousWeaponState = F, StateWeaponTypeMNID = F, WeaponType = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSWeaponV1s <- function(searchConditionsList = NULL, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSWeaponV1ID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, IsGunCased = F, IsGunInTrunk = F, IsGunLoaded = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateOffenderActivityMNID = F, StateWeaponTypeMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasUsedAsADangerousWeaponFederal = F, WasUsedAsADangerousWeaponState = F, WeaponType = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13837,7 +13837,7 @@
 	#' @return A dataframe or of DIRSWeaponV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSWeaponV1 <- function(DIRSWeaponV1ID, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, StudentID = F, MARSSNumber = F, IncidentID = F, ExternalIncidentID = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, IsGunCased = F, IsGunInTrunk = F, IsGunLoaded = F, WasUsedAsADangerousWeaponFederal = F, WasUsedAsADangerousWeaponState = F, StateWeaponTypeMNID = F, WeaponType = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSWeaponV1 <- function(DIRSWeaponV1ID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, IncidentOffenseNameWeaponID = F, IsGunCased = F, IsGunInTrunk = F, IsGunLoaded = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateOffenderActivityMNID = F, StateWeaponTypeMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasUsedAsADangerousWeaponFederal = F, WasUsedAsADangerousWeaponState = F, WeaponType = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSWeaponV1ID")
 
@@ -13877,7 +13877,7 @@
 	#' @return A newly created DIRSWeaponV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSWeaponV1 <- function(EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, StudentID = NULL, MARSSNumber = NULL, IncidentID = NULL, ExternalIncidentID = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, IsGunCased = NULL, IsGunInTrunk = NULL, IsGunLoaded = NULL, WasUsedAsADangerousWeaponFederal = NULL, WasUsedAsADangerousWeaponState = NULL, StateWeaponTypeMNID = NULL, WeaponType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSWeaponV1 <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, IsGunCased = NULL, IsGunInTrunk = NULL, IsGunLoaded = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateOffenderActivityMNID = NULL, StateWeaponTypeMNID = NULL, StudentID = NULL, WasUsedAsADangerousWeaponFederal = NULL, WasUsedAsADangerousWeaponState = NULL, WeaponType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13898,7 +13898,7 @@
 	#' @return The modified DIRSWeaponV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSWeaponV1 <- function(DIRSWeaponV1ID, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, StudentID = NULL, MARSSNumber = NULL, IncidentID = NULL, ExternalIncidentID = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, IsGunCased = NULL, IsGunInTrunk = NULL, IsGunLoaded = NULL, WasUsedAsADangerousWeaponFederal = NULL, WasUsedAsADangerousWeaponState = NULL, StateWeaponTypeMNID = NULL, WeaponType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSWeaponV1 <- function(DIRSWeaponV1ID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, IncidentOffenseNameWeaponID = NULL, IsGunCased = NULL, IsGunInTrunk = NULL, IsGunLoaded = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateOffenderActivityMNID = NULL, StateWeaponTypeMNID = NULL, StudentID = NULL, WasUsedAsADangerousWeaponFederal = NULL, WasUsedAsADangerousWeaponState = NULL, WeaponType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13926,7 +13926,7 @@
 	#' @return A list of DIRSOffenderV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSOffenderV1s <- function(searchConditionsList = NULL, DIRSOffenderV1ID = F, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, IncidentOffenseNameID = F, WasRefferredToLawEnforcement = F, WasUnderCurrentSuspension = F, WasUsedAsDangerousWeaponState = F, WasUsedAsDangerousWeaponFederal = F, StudentID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, WasArrestedByLawEnforcement = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSOffenderV1s <- function(searchConditionsList = NULL, CreatedTime = F, DIRSOffenderV1ID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasArrestedByLawEnforcement = F, WasRefferredToLawEnforcement = F, WasUnderCurrentSuspension = F, WasUsedAsDangerousWeaponFederal = F, WasUsedAsDangerousWeaponState = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -13951,7 +13951,7 @@
 	#' @return A dataframe or of DIRSOffenderV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSOffenderV1 <- function(DIRSOffenderV1ID, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, StateOffenderActivityMNID = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, IncidentOffenseNameID = F, WasRefferredToLawEnforcement = F, WasUnderCurrentSuspension = F, WasUsedAsDangerousWeaponState = F, WasUsedAsDangerousWeaponFederal = F, StudentID = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, WasArrestedByLawEnforcement = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSOffenderV1 <- function(DIRSOffenderV1ID, CreatedTime = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, KeyHash = F, MARSSNumber = F, ModifiedTime = F, OffenderActivityCode = F, OffenderActivityTypeCode = F, SchoolYearID = F, StateOffenderActivityMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WasArrestedByLawEnforcement = F, WasRefferredToLawEnforcement = F, WasUnderCurrentSuspension = F, WasUsedAsDangerousWeaponFederal = F, WasUsedAsDangerousWeaponState = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSOffenderV1ID")
 
@@ -13991,7 +13991,7 @@
 	#' @return A newly created DIRSOffenderV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSOffenderV1 <- function(IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, IncidentOffenseNameID = NULL, WasRefferredToLawEnforcement = NULL, WasUnderCurrentSuspension = NULL, WasUsedAsDangerousWeaponState = NULL, WasUsedAsDangerousWeaponFederal = NULL, StudentID = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, WasArrestedByLawEnforcement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSOffenderV1 <- function(DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, WasArrestedByLawEnforcement = NULL, WasRefferredToLawEnforcement = NULL, WasUnderCurrentSuspension = NULL, WasUsedAsDangerousWeaponFederal = NULL, WasUsedAsDangerousWeaponState = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14012,7 +14012,7 @@
 	#' @return The modified DIRSOffenderV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSOffenderV1 <- function(DIRSOffenderV1ID, IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, StateOffenderActivityMNID = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, IncidentOffenseNameID = NULL, WasRefferredToLawEnforcement = NULL, WasUnderCurrentSuspension = NULL, WasUsedAsDangerousWeaponState = NULL, WasUsedAsDangerousWeaponFederal = NULL, StudentID = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, WasArrestedByLawEnforcement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSOffenderV1 <- function(DIRSOffenderV1ID, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, MARSSNumber = NULL, OffenderActivityCode = NULL, OffenderActivityTypeCode = NULL, SchoolYearID = NULL, StateOffenderActivityMNID = NULL, StudentID = NULL, WasArrestedByLawEnforcement = NULL, WasRefferredToLawEnforcement = NULL, WasUnderCurrentSuspension = NULL, WasUsedAsDangerousWeaponFederal = NULL, WasUsedAsDangerousWeaponState = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14040,7 +14040,7 @@
 	#' @return A list of DIRSVictimV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDIRSVictimV1s <- function(searchConditionsList = NULL, DIRSVictimV1ID = F, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, IncidentOffenseNameID = F, StudentID = F, StateVictimCostMNID = F, CostToVictimCode = F, DidInjuryOccur = F, StateVictimTypeMNID = F, VictimTypeCode = F, WasSeriousBodilyInjury = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StaffID = F, NameType = F, VictimName = F, LinkedToStaff = F, LinkedToStudent = F, IsPhysicalAssault = F, IsPhysicalAssaultState = F, KeyHash = F, UpdateHash = F, MultipleVictimCount = F, EstimatedVictimsEnrolled = F, EstimatedVictimsNotEnrolled = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDIRSVictimV1s <- function(searchConditionsList = NULL, CostToVictimCode = F, CreatedTime = F, DidInjuryOccur = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, DIRSVictimV1ID = F, EntityID = F, EstimatedVictimsEnrolled = F, EstimatedVictimsNotEnrolled = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, IsPhysicalAssault = F, IsPhysicalAssaultState = F, KeyHash = F, LinkedToStaff = F, LinkedToStudent = F, MARSSNumber = F, ModifiedTime = F, MultipleVictimCount = F, NameType = F, SchoolYearID = F, StaffID = F, StateVictimCostMNID = F, StateVictimTypeMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VictimName = F, VictimTypeCode = F, WasSeriousBodilyInjury = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14065,7 +14065,7 @@
 	#' @return A dataframe or of DIRSVictimV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDIRSVictimV1 <- function(DIRSVictimV1ID, IncidentID = F, ExternalIncidentID = F, MARSSNumber = F, IncidentOffenseNameID = F, StudentID = F, StateVictimCostMNID = F, CostToVictimCode = F, DidInjuryOccur = F, StateVictimTypeMNID = F, VictimTypeCode = F, WasSeriousBodilyInjury = F, EntityID = F, SchoolYearID = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StaffID = F, NameType = F, VictimName = F, LinkedToStaff = F, LinkedToStudent = F, IsPhysicalAssault = F, IsPhysicalAssaultState = F, KeyHash = F, UpdateHash = F, MultipleVictimCount = F, EstimatedVictimsEnrolled = F, EstimatedVictimsNotEnrolled = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDIRSVictimV1 <- function(DIRSVictimV1ID, CostToVictimCode = F, CreatedTime = F, DidInjuryOccur = F, DIRSSubmissionID = F, DIRSSubmissionRunHistoryID = F, EntityID = F, EstimatedVictimsEnrolled = F, EstimatedVictimsNotEnrolled = F, ExternalIncidentID = F, HasErrors = F, IncidentID = F, IncidentOffenseNameID = F, IsPhysicalAssault = F, IsPhysicalAssaultState = F, KeyHash = F, LinkedToStaff = F, LinkedToStudent = F, MARSSNumber = F, ModifiedTime = F, MultipleVictimCount = F, NameType = F, SchoolYearID = F, StaffID = F, StateVictimCostMNID = F, StateVictimTypeMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VictimName = F, VictimTypeCode = F, WasSeriousBodilyInjury = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DIRSVictimV1ID")
 
@@ -14105,7 +14105,7 @@
 	#' @return A newly created DIRSVictimV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDIRSVictimV1 <- function(IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, StateVictimCostMNID = NULL, CostToVictimCode = NULL, DidInjuryOccur = NULL, StateVictimTypeMNID = NULL, VictimTypeCode = NULL, WasSeriousBodilyInjury = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, StaffID = NULL, NameType = NULL, IsPhysicalAssault = NULL, IsPhysicalAssaultState = NULL, MultipleVictimCount = NULL, EstimatedVictimsEnrolled = NULL, EstimatedVictimsNotEnrolled = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDIRSVictimV1 <- function(CostToVictimCode = NULL, DidInjuryOccur = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, EstimatedVictimsEnrolled = NULL, EstimatedVictimsNotEnrolled = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, IsPhysicalAssault = NULL, IsPhysicalAssaultState = NULL, MARSSNumber = NULL, MultipleVictimCount = NULL, NameType = NULL, SchoolYearID = NULL, StaffID = NULL, StateVictimCostMNID = NULL, StateVictimTypeMNID = NULL, StudentID = NULL, VictimTypeCode = NULL, WasSeriousBodilyInjury = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14126,7 +14126,7 @@
 	#' @return The modified DIRSVictimV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDIRSVictimV1 <- function(DIRSVictimV1ID, IncidentID = NULL, ExternalIncidentID = NULL, MARSSNumber = NULL, IncidentOffenseNameID = NULL, StudentID = NULL, StateVictimCostMNID = NULL, CostToVictimCode = NULL, DidInjuryOccur = NULL, StateVictimTypeMNID = NULL, VictimTypeCode = NULL, WasSeriousBodilyInjury = NULL, EntityID = NULL, SchoolYearID = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, StaffID = NULL, NameType = NULL, IsPhysicalAssault = NULL, IsPhysicalAssaultState = NULL, MultipleVictimCount = NULL, EstimatedVictimsEnrolled = NULL, EstimatedVictimsNotEnrolled = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDIRSVictimV1 <- function(DIRSVictimV1ID, CostToVictimCode = NULL, DidInjuryOccur = NULL, DIRSSubmissionID = NULL, DIRSSubmissionRunHistoryID = NULL, EntityID = NULL, EstimatedVictimsEnrolled = NULL, EstimatedVictimsNotEnrolled = NULL, ExternalIncidentID = NULL, IncidentID = NULL, IncidentOffenseNameID = NULL, IsPhysicalAssault = NULL, IsPhysicalAssaultState = NULL, MARSSNumber = NULL, MultipleVictimCount = NULL, NameType = NULL, SchoolYearID = NULL, StaffID = NULL, StateVictimCostMNID = NULL, StateVictimTypeMNID = NULL, StudentID = NULL, VictimTypeCode = NULL, WasSeriousBodilyInjury = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14154,7 +14154,7 @@
 	#' @return A list of UFARSGeneralLedgerV1IncludedAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUFARSGeneralLedgerV1IncludedAccounts <- function(searchConditionsList = NULL, UFARSGeneralLedgerV1IncludedAccountID = F, UFARSGeneralLedgerV1ID = F, AccountFiscalYearID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, FiscalYearBeginningBalance = F, FiscalYearDebits = F, FiscalYearCredits = F, FiscalYearEndingBalance = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUFARSGeneralLedgerV1IncludedAccounts <- function(searchConditionsList = NULL, AccountFiscalYearID = F, CreatedTime = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, FiscalYearBeginningBalance = F, FiscalYearCredits = F, FiscalYearDebits = F, FiscalYearEndingBalance = F, ModifiedTime = F, UFARSGeneralLedgerV1ID = F, UFARSGeneralLedgerV1IncludedAccountID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14179,7 +14179,7 @@
 	#' @return A dataframe or of UFARSGeneralLedgerV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUFARSGeneralLedgerV1IncludedAccount <- function(UFARSGeneralLedgerV1IncludedAccountID, UFARSGeneralLedgerV1ID = F, AccountFiscalYearID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, FiscalYearBeginningBalance = F, FiscalYearDebits = F, FiscalYearCredits = F, FiscalYearEndingBalance = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUFARSGeneralLedgerV1IncludedAccount <- function(UFARSGeneralLedgerV1IncludedAccountID, AccountFiscalYearID = F, CreatedTime = F, ExcludeFromExport = F, ExtractedCrosswalkAccount = F, FiscalYearBeginningBalance = F, FiscalYearCredits = F, FiscalYearDebits = F, FiscalYearEndingBalance = F, ModifiedTime = F, UFARSGeneralLedgerV1ID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UFARSGeneralLedgerV1IncludedAccountID")
 
@@ -14219,7 +14219,7 @@
 	#' @return A newly created UFARSGeneralLedgerV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUFARSGeneralLedgerV1IncludedAccount <- function(UFARSGeneralLedgerV1ID = NULL, AccountFiscalYearID = NULL, FiscalYearBeginningBalance = NULL, FiscalYearDebits = NULL, FiscalYearCredits = NULL, ExcludeFromExport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUFARSGeneralLedgerV1IncludedAccount <- function(AccountFiscalYearID = NULL, ExcludeFromExport = NULL, FiscalYearBeginningBalance = NULL, FiscalYearCredits = NULL, FiscalYearDebits = NULL, UFARSGeneralLedgerV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14240,7 +14240,7 @@
 	#' @return The modified UFARSGeneralLedgerV1IncludedAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUFARSGeneralLedgerV1IncludedAccount <- function(UFARSGeneralLedgerV1IncludedAccountID, UFARSGeneralLedgerV1ID = NULL, AccountFiscalYearID = NULL, FiscalYearBeginningBalance = NULL, FiscalYearDebits = NULL, FiscalYearCredits = NULL, ExcludeFromExport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUFARSGeneralLedgerV1IncludedAccount <- function(UFARSGeneralLedgerV1IncludedAccountID, AccountFiscalYearID = NULL, ExcludeFromExport = NULL, FiscalYearBeginningBalance = NULL, FiscalYearCredits = NULL, FiscalYearDebits = NULL, UFARSGeneralLedgerV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14268,7 +14268,7 @@
 	#' @return A list of StateAssessmentToolMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateAssessmentToolMNS <- function(searchConditionsList = NULL, StateAssessmentToolMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateAssessmentToolMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateAssessmentToolMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14293,7 +14293,7 @@
 	#' @return A dataframe or of StateAssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateAssessmentToolMN <- function(StateAssessmentToolMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateAssessmentToolMN <- function(StateAssessmentToolMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateAssessmentToolMNID")
 
@@ -14333,7 +14333,7 @@
 	#' @return A newly created StateAssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateAssessmentToolMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateAssessmentToolMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14354,7 +14354,7 @@
 	#' @return The modified StateAssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateAssessmentToolMN <- function(StateAssessmentToolMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateAssessmentToolMN <- function(StateAssessmentToolMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14382,7 +14382,7 @@
 	#' @return A list of StateCurriculumProgramMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateCurriculumProgramMNS <- function(searchConditionsList = NULL, StateCurriculumProgramMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateCurriculumProgramMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateCurriculumProgramMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14407,7 +14407,7 @@
 	#' @return A dataframe or of StateCurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateCurriculumProgramMN <- function(StateCurriculumProgramMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateCurriculumProgramMN <- function(StateCurriculumProgramMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateCurriculumProgramMNID")
 
@@ -14447,7 +14447,7 @@
 	#' @return A newly created StateCurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateCurriculumProgramMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateCurriculumProgramMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14468,7 +14468,7 @@
 	#' @return The modified StateCurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateCurriculumProgramMN <- function(StateCurriculumProgramMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateCurriculumProgramMN <- function(StateCurriculumProgramMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14496,7 +14496,7 @@
 	#' @return A list of StateECFEClassroomParticipationMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEClassroomParticipationMNS <- function(searchConditionsList = NULL, StateECFEClassroomParticipationMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEClassroomParticipationMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEClassroomParticipationMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14521,7 +14521,7 @@
 	#' @return A dataframe or of StateECFEClassroomParticipationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEClassroomParticipationMN <- function(StateECFEClassroomParticipationMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEClassroomParticipationMN <- function(StateECFEClassroomParticipationMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEClassroomParticipationMNID")
 
@@ -14561,7 +14561,7 @@
 	#' @return A newly created StateECFEClassroomParticipationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEClassroomParticipationMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEClassroomParticipationMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14582,7 +14582,7 @@
 	#' @return The modified StateECFEClassroomParticipationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEClassroomParticipationMN <- function(StateECFEClassroomParticipationMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEClassroomParticipationMN <- function(StateECFEClassroomParticipationMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14610,7 +14610,7 @@
 	#' @return A list of StateECFEEducationBackgroundMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEEducationBackgroundMNS <- function(searchConditionsList = NULL, StateECFEEducationBackgroundMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEEducationBackgroundMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEEducationBackgroundMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14635,7 +14635,7 @@
 	#' @return A dataframe or of StateECFEEducationBackgroundMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEEducationBackgroundMN <- function(StateECFEEducationBackgroundMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEEducationBackgroundMN <- function(StateECFEEducationBackgroundMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEEducationBackgroundMNID")
 
@@ -14675,7 +14675,7 @@
 	#' @return A newly created StateECFEEducationBackgroundMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEEducationBackgroundMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEEducationBackgroundMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14696,7 +14696,7 @@
 	#' @return The modified StateECFEEducationBackgroundMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEEducationBackgroundMN <- function(StateECFEEducationBackgroundMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEEducationBackgroundMN <- function(StateECFEEducationBackgroundMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14724,7 +14724,7 @@
 	#' @return A list of StateECFEEmploymentStatusMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEEmploymentStatusMNS <- function(searchConditionsList = NULL, StateECFEEmploymentStatusMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEEmploymentStatusMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEEmploymentStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14749,7 +14749,7 @@
 	#' @return A dataframe or of StateECFEEmploymentStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEEmploymentStatusMN <- function(StateECFEEmploymentStatusMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEEmploymentStatusMN <- function(StateECFEEmploymentStatusMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEEmploymentStatusMNID")
 
@@ -14789,7 +14789,7 @@
 	#' @return A newly created StateECFEEmploymentStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEEmploymentStatusMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEEmploymentStatusMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14810,7 +14810,7 @@
 	#' @return The modified StateECFEEmploymentStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEEmploymentStatusMN <- function(StateECFEEmploymentStatusMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEEmploymentStatusMN <- function(StateECFEEmploymentStatusMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14838,7 +14838,7 @@
 	#' @return A list of StateECFEFeeStatusMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEFeeStatusMNS <- function(searchConditionsList = NULL, StateECFEFeeStatusMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEFeeStatusMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEFeeStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14863,7 +14863,7 @@
 	#' @return A dataframe or of StateECFEFeeStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEFeeStatusMN <- function(StateECFEFeeStatusMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEFeeStatusMN <- function(StateECFEFeeStatusMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEFeeStatusMNID")
 
@@ -14903,7 +14903,7 @@
 	#' @return A newly created StateECFEFeeStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEFeeStatusMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEFeeStatusMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14924,7 +14924,7 @@
 	#' @return The modified StateECFEFeeStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEFeeStatusMN <- function(StateECFEFeeStatusMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEFeeStatusMN <- function(StateECFEFeeStatusMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14952,7 +14952,7 @@
 	#' @return A list of StateECFEFundingSourceMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEFundingSourceMNS <- function(searchConditionsList = NULL, StateECFEFundingSourceMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEFundingSourceMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEFundingSourceMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -14977,7 +14977,7 @@
 	#' @return A dataframe or of StateECFEFundingSourceMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEFundingSourceMN <- function(StateECFEFundingSourceMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEFundingSourceMN <- function(StateECFEFundingSourceMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEFundingSourceMNID")
 
@@ -15017,7 +15017,7 @@
 	#' @return A newly created StateECFEFundingSourceMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEFundingSourceMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEFundingSourceMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15038,7 +15038,7 @@
 	#' @return The modified StateECFEFundingSourceMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEFundingSourceMN <- function(StateECFEFundingSourceMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEFundingSourceMN <- function(StateECFEFundingSourceMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15066,7 +15066,7 @@
 	#' @return A list of StateECFEIEPStatusMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEIEPStatusMNS <- function(searchConditionsList = NULL, StateECFEIEPStatusMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEIEPStatusMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEIEPStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15091,7 +15091,7 @@
 	#' @return A dataframe or of StateECFEIEPStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEIEPStatusMN <- function(StateECFEIEPStatusMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEIEPStatusMN <- function(StateECFEIEPStatusMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEIEPStatusMNID")
 
@@ -15131,7 +15131,7 @@
 	#' @return A newly created StateECFEIEPStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEIEPStatusMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEIEPStatusMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15152,7 +15152,7 @@
 	#' @return The modified StateECFEIEPStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEIEPStatusMN <- function(StateECFEIEPStatusMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEIEPStatusMN <- function(StateECFEIEPStatusMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15180,7 +15180,7 @@
 	#' @return A list of StateECFEProgramModelMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEProgramModelMNS <- function(searchConditionsList = NULL, StateECFEProgramModelMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEProgramModelMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEProgramModelMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15205,7 +15205,7 @@
 	#' @return A dataframe or of StateECFEProgramModelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEProgramModelMN <- function(StateECFEProgramModelMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEProgramModelMN <- function(StateECFEProgramModelMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEProgramModelMNID")
 
@@ -15245,7 +15245,7 @@
 	#' @return A newly created StateECFEProgramModelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEProgramModelMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEProgramModelMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15266,7 +15266,7 @@
 	#' @return The modified StateECFEProgramModelMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEProgramModelMN <- function(StateECFEProgramModelMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEProgramModelMN <- function(StateECFEProgramModelMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15294,7 +15294,7 @@
 	#' @return A list of StateECFEProgramNameMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFEProgramNameMNS <- function(searchConditionsList = NULL, StateECFEProgramNameMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFEProgramNameMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFEProgramNameMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15319,7 +15319,7 @@
 	#' @return A dataframe or of StateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFEProgramNameMN <- function(StateECFEProgramNameMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFEProgramNameMN <- function(StateECFEProgramNameMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFEProgramNameMNID")
 
@@ -15359,7 +15359,7 @@
 	#' @return A newly created StateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFEProgramNameMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFEProgramNameMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15380,7 +15380,7 @@
 	#' @return The modified StateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFEProgramNameMN <- function(StateECFEProgramNameMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFEProgramNameMN <- function(StateECFEProgramNameMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15408,7 +15408,7 @@
 	#' @return A list of StateECFERegisteringPersonMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateECFERegisteringPersonMNS <- function(searchConditionsList = NULL, StateECFERegisteringPersonMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateECFERegisteringPersonMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateECFERegisteringPersonMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15433,7 +15433,7 @@
 	#' @return A dataframe or of StateECFERegisteringPersonMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateECFERegisteringPersonMN <- function(StateECFERegisteringPersonMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateECFERegisteringPersonMN <- function(StateECFERegisteringPersonMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateECFERegisteringPersonMNID")
 
@@ -15473,7 +15473,7 @@
 	#' @return A newly created StateECFERegisteringPersonMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateECFERegisteringPersonMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateECFERegisteringPersonMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15494,7 +15494,7 @@
 	#' @return The modified StateECFERegisteringPersonMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateECFERegisteringPersonMN <- function(StateECFERegisteringPersonMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateECFERegisteringPersonMN <- function(StateECFERegisteringPersonMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15522,7 +15522,7 @@
 	#' @return A list of StateHeadStartLanguageMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateHeadStartLanguageMNS <- function(searchConditionsList = NULL, StateHeadStartLanguageMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateHeadStartLanguageMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateHeadStartLanguageMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15547,7 +15547,7 @@
 	#' @return A dataframe or of StateHeadStartLanguageMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateHeadStartLanguageMN <- function(StateHeadStartLanguageMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateHeadStartLanguageMN <- function(StateHeadStartLanguageMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateHeadStartLanguageMNID")
 
@@ -15587,7 +15587,7 @@
 	#' @return A newly created StateHeadStartLanguageMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateHeadStartLanguageMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateHeadStartLanguageMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15608,7 +15608,7 @@
 	#' @return The modified StateHeadStartLanguageMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateHeadStartLanguageMN <- function(StateHeadStartLanguageMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateHeadStartLanguageMN <- function(StateHeadStartLanguageMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15636,7 +15636,7 @@
 	#' @return A list of StateEarlyEducationInstructionalApproachMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEarlyEducationInstructionalApproachMNS <- function(searchConditionsList = NULL, StateEarlyEducationInstructionalApproachMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEarlyEducationInstructionalApproachMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEarlyEducationInstructionalApproachMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15661,7 +15661,7 @@
 	#' @return A dataframe or of StateEarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEarlyEducationInstructionalApproachMN <- function(StateEarlyEducationInstructionalApproachMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEarlyEducationInstructionalApproachMN <- function(StateEarlyEducationInstructionalApproachMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEarlyEducationInstructionalApproachMNID")
 
@@ -15701,7 +15701,7 @@
 	#' @return A newly created StateEarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEarlyEducationInstructionalApproachMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEarlyEducationInstructionalApproachMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15722,7 +15722,7 @@
 	#' @return The modified StateEarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEarlyEducationInstructionalApproachMN <- function(StateEarlyEducationInstructionalApproachMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEarlyEducationInstructionalApproachMN <- function(StateEarlyEducationInstructionalApproachMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15750,7 +15750,7 @@
 	#' @return A list of StateEarlyEducationLocationMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEarlyEducationLocationMNS <- function(searchConditionsList = NULL, StateEarlyEducationLocationMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEarlyEducationLocationMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEarlyEducationLocationMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15775,7 +15775,7 @@
 	#' @return A dataframe or of StateEarlyEducationLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEarlyEducationLocationMN <- function(StateEarlyEducationLocationMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEarlyEducationLocationMN <- function(StateEarlyEducationLocationMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEarlyEducationLocationMNID")
 
@@ -15815,7 +15815,7 @@
 	#' @return A newly created StateEarlyEducationLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEarlyEducationLocationMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEarlyEducationLocationMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15836,7 +15836,7 @@
 	#' @return The modified StateEarlyEducationLocationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEarlyEducationLocationMN <- function(StateEarlyEducationLocationMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEarlyEducationLocationMN <- function(StateEarlyEducationLocationMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15864,7 +15864,7 @@
 	#' @return A list of StateEarlyEducationProgramMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEarlyEducationProgramMNS <- function(searchConditionsList = NULL, StateEarlyEducationProgramMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEarlyEducationProgramMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEarlyEducationProgramMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15889,7 +15889,7 @@
 	#' @return A dataframe or of StateEarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEarlyEducationProgramMN <- function(StateEarlyEducationProgramMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEarlyEducationProgramMN <- function(StateEarlyEducationProgramMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEarlyEducationProgramMNID")
 
@@ -15929,7 +15929,7 @@
 	#' @return A newly created StateEarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEarlyEducationProgramMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEarlyEducationProgramMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15950,7 +15950,7 @@
 	#' @return The modified StateEarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEarlyEducationProgramMN <- function(StateEarlyEducationProgramMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEarlyEducationProgramMN <- function(StateEarlyEducationProgramMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -15978,7 +15978,7 @@
 	#' @return A list of StateImplementationStatusMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateImplementationStatusMNS <- function(searchConditionsList = NULL, StateImplementationStatusMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateImplementationStatusMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16003,7 +16003,7 @@
 	#' @return A dataframe or of StateImplementationStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateImplementationStatusMN <- function(StateImplementationStatusMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateImplementationStatusMN <- function(StateImplementationStatusMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateImplementationStatusMNID")
 
@@ -16043,7 +16043,7 @@
 	#' @return A newly created StateImplementationStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateImplementationStatusMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateImplementationStatusMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16064,7 +16064,7 @@
 	#' @return The modified StateImplementationStatusMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateImplementationStatusMN <- function(StateImplementationStatusMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateImplementationStatusMN <- function(StateImplementationStatusMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16092,7 +16092,7 @@
 	#' @return A list of StateSiteBasedInitiativeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateSiteBasedInitiativeMNS <- function(searchConditionsList = NULL, StateSiteBasedInitiativeMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateSiteBasedInitiativeMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateSiteBasedInitiativeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16117,7 +16117,7 @@
 	#' @return A dataframe or of StateSiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateSiteBasedInitiativeMN <- function(StateSiteBasedInitiativeMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateSiteBasedInitiativeMN <- function(StateSiteBasedInitiativeMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateSiteBasedInitiativeMNID")
 
@@ -16157,7 +16157,7 @@
 	#' @return A newly created StateSiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateSiteBasedInitiativeMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateSiteBasedInitiativeMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16178,7 +16178,7 @@
 	#' @return The modified StateSiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateSiteBasedInitiativeMN <- function(StateSiteBasedInitiativeMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateSiteBasedInitiativeMN <- function(StateSiteBasedInitiativeMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16206,7 +16206,7 @@
 	#' @return A list of TempEducatedEmployees
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempEducatedEmployees <- function(searchConditionsList = NULL, TempEducatedEmployeeID = F, EmployeeID = F, StateSTARHighestEducationLevelMNID = F, EmployeeFullNameFML = F, CurrentLane = F, CurrentCredits = F, STARHighestEducationLevelOverride = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmployeeNumber = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempEducatedEmployees <- function(searchConditionsList = NULL, CreatedTime = F, CurrentCredits = F, CurrentLane = F, EmployeeFullNameFML = F, EmployeeID = F, EmployeeNumber = F, ModifiedTime = F, STARHighestEducationLevelOverride = F, StateSTARHighestEducationLevelMNID = F, TempEducatedEmployeeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16231,7 +16231,7 @@
 	#' @return A dataframe or of TempEducatedEmployee
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempEducatedEmployee <- function(TempEducatedEmployeeID, EmployeeID = F, StateSTARHighestEducationLevelMNID = F, EmployeeFullNameFML = F, CurrentLane = F, CurrentCredits = F, STARHighestEducationLevelOverride = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmployeeNumber = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempEducatedEmployee <- function(TempEducatedEmployeeID, CreatedTime = F, CurrentCredits = F, CurrentLane = F, EmployeeFullNameFML = F, EmployeeID = F, EmployeeNumber = F, ModifiedTime = F, STARHighestEducationLevelOverride = F, StateSTARHighestEducationLevelMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempEducatedEmployeeID")
 
@@ -16271,7 +16271,7 @@
 	#' @return A newly created TempEducatedEmployee
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempEducatedEmployee <- function(EmployeeID = NULL, StateSTARHighestEducationLevelMNID = NULL, EmployeeFullNameFML = NULL, CurrentLane = NULL, CurrentCredits = NULL, STARHighestEducationLevelOverride = NULL, EmployeeNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempEducatedEmployee <- function(CurrentCredits = NULL, CurrentLane = NULL, EmployeeFullNameFML = NULL, EmployeeID = NULL, EmployeeNumber = NULL, STARHighestEducationLevelOverride = NULL, StateSTARHighestEducationLevelMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16292,7 +16292,7 @@
 	#' @return The modified TempEducatedEmployee
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempEducatedEmployee <- function(TempEducatedEmployeeID, EmployeeID = NULL, StateSTARHighestEducationLevelMNID = NULL, EmployeeFullNameFML = NULL, CurrentLane = NULL, CurrentCredits = NULL, STARHighestEducationLevelOverride = NULL, EmployeeNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempEducatedEmployee <- function(TempEducatedEmployeeID, CurrentCredits = NULL, CurrentLane = NULL, EmployeeFullNameFML = NULL, EmployeeID = NULL, EmployeeNumber = NULL, STARHighestEducationLevelOverride = NULL, StateSTARHighestEducationLevelMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16320,7 +16320,7 @@
 	#' @return A list of TempEducatedEmployeeExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempEducatedEmployeeExceptions <- function(searchConditionsList = NULL, TempEducatedEmployeeExceptionID = F, EmployeeFullNameFML = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmployeeNumber = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempEducatedEmployeeExceptions <- function(searchConditionsList = NULL, CreatedTime = F, EmployeeFullNameFML = F, EmployeeNumber = F, Error = F, ModifiedTime = F, TempEducatedEmployeeExceptionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16345,7 +16345,7 @@
 	#' @return A dataframe or of TempEducatedEmployeeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempEducatedEmployeeException <- function(TempEducatedEmployeeExceptionID, EmployeeFullNameFML = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EmployeeNumber = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempEducatedEmployeeException <- function(TempEducatedEmployeeExceptionID, CreatedTime = F, EmployeeFullNameFML = F, EmployeeNumber = F, Error = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempEducatedEmployeeExceptionID")
 
@@ -16385,7 +16385,7 @@
 	#' @return A newly created TempEducatedEmployeeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempEducatedEmployeeException <- function(EmployeeFullNameFML = NULL, Error = NULL, EmployeeNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempEducatedEmployeeException <- function(EmployeeFullNameFML = NULL, EmployeeNumber = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16406,7 +16406,7 @@
 	#' @return The modified TempEducatedEmployeeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempEducatedEmployeeException <- function(TempEducatedEmployeeExceptionID, EmployeeFullNameFML = NULL, Error = NULL, EmployeeNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempEducatedEmployeeException <- function(TempEducatedEmployeeExceptionID, EmployeeFullNameFML = NULL, EmployeeNumber = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16434,7 +16434,7 @@
 	#' @return A list of StateGraduationRequirementMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateGraduationRequirementMNS <- function(searchConditionsList = NULL, StateGraduationRequirementMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateGraduationRequirementMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateGraduationRequirementMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16459,7 +16459,7 @@
 	#' @return A dataframe or of StateGraduationRequirementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateGraduationRequirementMN <- function(StateGraduationRequirementMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateGraduationRequirementMN <- function(StateGraduationRequirementMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateGraduationRequirementMNID")
 
@@ -16499,7 +16499,7 @@
 	#' @return A newly created StateGraduationRequirementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateGraduationRequirementMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateGraduationRequirementMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16520,7 +16520,7 @@
 	#' @return The modified StateGraduationRequirementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateGraduationRequirementMN <- function(StateGraduationRequirementMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateGraduationRequirementMN <- function(StateGraduationRequirementMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16548,7 +16548,7 @@
 	#' @return A list of StateGraduationRequirementMethodMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateGraduationRequirementMethodMNS <- function(searchConditionsList = NULL, StateGraduationRequirementMethodMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateGraduationRequirementMethodMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateGraduationRequirementMethodMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16573,7 +16573,7 @@
 	#' @return A dataframe or of StateGraduationRequirementMethodMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateGraduationRequirementMethodMN <- function(StateGraduationRequirementMethodMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateGraduationRequirementMethodMN <- function(StateGraduationRequirementMethodMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateGraduationRequirementMethodMNID")
 
@@ -16613,7 +16613,7 @@
 	#' @return A newly created StateGraduationRequirementMethodMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateGraduationRequirementMethodMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateGraduationRequirementMethodMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16634,7 +16634,7 @@
 	#' @return The modified StateGraduationRequirementMethodMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateGraduationRequirementMethodMN <- function(StateGraduationRequirementMethodMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateGraduationRequirementMethodMN <- function(StateGraduationRequirementMethodMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16662,7 +16662,7 @@
 	#' @return A list of StateGradeMarkMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateGradeMarkMNS <- function(searchConditionsList = NULL, StateGradeMarkMNID = F, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateGradeMarkMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateGradeMarkMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16687,7 +16687,7 @@
 	#' @return A dataframe or of StateGradeMarkMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateGradeMarkMN <- function(StateGradeMarkMNID, Code = F, Description = F, CodeDescription = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateGradeMarkMN <- function(StateGradeMarkMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateGradeMarkMNID")
 
@@ -16727,7 +16727,7 @@
 	#' @return A newly created StateGradeMarkMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateGradeMarkMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateGradeMarkMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16748,7 +16748,7 @@
 	#' @return The modified StateGradeMarkMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateGradeMarkMN <- function(StateGradeMarkMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateGradeMarkMN <- function(StateGradeMarkMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16776,7 +16776,7 @@
 	#' @return A list of TRASubmissionDemographicDetailV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionDemographicDetailV1Exceptions <- function(searchConditionsList = NULL, TRASubmissionDemographicDetailV1ExceptionID = F, DistrictID = F, EmployeeID = F, TRASubmissionDemographicDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionDemographicDetailV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployeeID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionDemographicDetailV1ExceptionID = F, TRASubmissionDemographicDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16801,7 +16801,7 @@
 	#' @return A dataframe or of TRASubmissionDemographicDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionDemographicDetailV1Exception <- function(TRASubmissionDemographicDetailV1ExceptionID, DistrictID = F, EmployeeID = F, TRASubmissionDemographicDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionDemographicDetailV1Exception <- function(TRASubmissionDemographicDetailV1ExceptionID, CreatedTime = F, DistrictID = F, EmployeeID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionDemographicDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionDemographicDetailV1ExceptionID")
 
@@ -16841,7 +16841,7 @@
 	#' @return A newly created TRASubmissionDemographicDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionDemographicDetailV1Exception <- function(DistrictID = NULL, EmployeeID = NULL, TRASubmissionDemographicDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionDemographicDetailV1Exception <- function(DistrictID = NULL, EmployeeID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionDemographicDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16862,7 +16862,7 @@
 	#' @return The modified TRASubmissionDemographicDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionDemographicDetailV1Exception <- function(TRASubmissionDemographicDetailV1ExceptionID, DistrictID = NULL, EmployeeID = NULL, TRASubmissionDemographicDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionDemographicDetailV1Exception <- function(TRASubmissionDemographicDetailV1ExceptionID, DistrictID = NULL, EmployeeID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionDemographicDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16890,7 +16890,7 @@
 	#' @return A list of TRASubmissionEmployerV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionEmployerV1Exceptions <- function(searchConditionsList = NULL, TRASubmissionEmployerV1ExceptionID = F, EmployerID = F, TRASubmissionEmployerV1ID = F, DistrictID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionEmployerV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployerID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionEmployerV1ExceptionID = F, TRASubmissionEmployerV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16915,7 +16915,7 @@
 	#' @return A dataframe or of TRASubmissionEmployerV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionEmployerV1Exception <- function(TRASubmissionEmployerV1ExceptionID, EmployerID = F, TRASubmissionEmployerV1ID = F, DistrictID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionEmployerV1Exception <- function(TRASubmissionEmployerV1ExceptionID, CreatedTime = F, DistrictID = F, EmployerID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionEmployerV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionEmployerV1ExceptionID")
 
@@ -16955,7 +16955,7 @@
 	#' @return A newly created TRASubmissionEmployerV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionEmployerV1Exception <- function(EmployerID = NULL, TRASubmissionEmployerV1ID = NULL, DistrictID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionEmployerV1Exception <- function(DistrictID = NULL, EmployerID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionEmployerV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -16976,7 +16976,7 @@
 	#' @return The modified TRASubmissionEmployerV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionEmployerV1Exception <- function(TRASubmissionEmployerV1ExceptionID, EmployerID = NULL, TRASubmissionEmployerV1ID = NULL, DistrictID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionEmployerV1Exception <- function(TRASubmissionEmployerV1ExceptionID, DistrictID = NULL, EmployerID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionEmployerV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17004,7 +17004,7 @@
 	#' @return A list of TRASubmissionPayrollDetailV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionPayrollDetailV1Exceptions <- function(searchConditionsList = NULL, TRASubmissionPayrollDetailV1ExceptionID = F, DistrictID = F, EmployeeID = F, TRASubmissionPayrollDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionPayrollDetailV1Exceptions <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployeeID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionID = F, TRASubmissionPayrollDetailV1ExceptionID = F, TRASubmissionPayrollDetailV1ID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17029,7 +17029,7 @@
 	#' @return A dataframe or of TRASubmissionPayrollDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionPayrollDetailV1Exception <- function(TRASubmissionPayrollDetailV1ExceptionID, DistrictID = F, EmployeeID = F, TRASubmissionPayrollDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, RuleNumber = F, MessageType = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionPayrollDetailV1Exception <- function(TRASubmissionPayrollDetailV1ExceptionID, CreatedTime = F, DistrictID = F, EmployeeID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, TRASubmissionID = F, TRASubmissionPayrollDetailV1ID = F, TRASubmissionRunHistoryID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionPayrollDetailV1ExceptionID")
 
@@ -17069,7 +17069,7 @@
 	#' @return A newly created TRASubmissionPayrollDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionPayrollDetailV1Exception <- function(DistrictID = NULL, EmployeeID = NULL, TRASubmissionPayrollDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionPayrollDetailV1Exception <- function(DistrictID = NULL, EmployeeID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionID = NULL, TRASubmissionPayrollDetailV1ID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17090,7 +17090,7 @@
 	#' @return The modified TRASubmissionPayrollDetailV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionPayrollDetailV1Exception <- function(TRASubmissionPayrollDetailV1ExceptionID, DistrictID = NULL, EmployeeID = NULL, TRASubmissionPayrollDetailV1ID = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, RuleNumber = NULL, MessageType = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionPayrollDetailV1Exception <- function(TRASubmissionPayrollDetailV1ExceptionID, DistrictID = NULL, EmployeeID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, TRASubmissionID = NULL, TRASubmissionPayrollDetailV1ID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17118,7 +17118,7 @@
 	#' @return A list of TRASubmissionDemographicDetailV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionDemographicDetailV1s <- function(searchConditionsList = NULL, TRASubmissionDemographicDetailV1ID = F, EmployeeID = F, EmployeeName = F, AddressID = F, StreetLine1 = F, StreetLine2 = F, City = F, State = F, Zip = F, SocialSecurityNumber = F, EmployeeNumber = F, TRANumber = F, DateOfBirth = F, EffectiveDate = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNValue = F, StateTRAEligibilityMNID = F, StateTRAEligibilityMNValue = F, StateTRAStatusMNID = F, StateTRAStatusMNValue = F, ExcludeFromExport = F, GenderCode = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionDemographicDetailV1s <- function(searchConditionsList = NULL, AddressID = F, City = F, CreatedTime = F, DateOfBirth = F, DistrictID = F, EffectiveDate = F, EmployeeID = F, EmployeeName = F, EmployeeNumber = F, ExcludeFromExport = F, GenderCode = F, HasErrors = F, KeyHash = F, ModifiedTime = F, SocialSecurityNumber = F, State = F, StateTRAEligibilityMNID = F, StateTRAEligibilityMNValue = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNValue = F, StateTRAStatusMNID = F, StateTRAStatusMNValue = F, StreetLine1 = F, StreetLine2 = F, TRANumber = F, TRASubmissionDemographicDetailV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Zip = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17143,7 +17143,7 @@
 	#' @return A dataframe or of TRASubmissionDemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionDemographicDetailV1 <- function(TRASubmissionDemographicDetailV1ID, EmployeeID = F, EmployeeName = F, AddressID = F, StreetLine1 = F, StreetLine2 = F, City = F, State = F, Zip = F, SocialSecurityNumber = F, EmployeeNumber = F, TRANumber = F, DateOfBirth = F, EffectiveDate = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNValue = F, StateTRAEligibilityMNID = F, StateTRAEligibilityMNValue = F, StateTRAStatusMNID = F, StateTRAStatusMNValue = F, ExcludeFromExport = F, GenderCode = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionDemographicDetailV1 <- function(TRASubmissionDemographicDetailV1ID, AddressID = F, City = F, CreatedTime = F, DateOfBirth = F, DistrictID = F, EffectiveDate = F, EmployeeID = F, EmployeeName = F, EmployeeNumber = F, ExcludeFromExport = F, GenderCode = F, HasErrors = F, KeyHash = F, ModifiedTime = F, SocialSecurityNumber = F, State = F, StateTRAEligibilityMNID = F, StateTRAEligibilityMNValue = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNValue = F, StateTRAStatusMNID = F, StateTRAStatusMNValue = F, StreetLine1 = F, StreetLine2 = F, TRANumber = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Zip = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionDemographicDetailV1ID")
 
@@ -17183,7 +17183,7 @@
 	#' @return A newly created TRASubmissionDemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionDemographicDetailV1 <- function(EmployeeID = NULL, EmployeeName = NULL, AddressID = NULL, StreetLine1 = NULL, StreetLine2 = NULL, City = NULL, State = NULL, Zip = NULL, SocialSecurityNumber = NULL, EmployeeNumber = NULL, TRANumber = NULL, DateOfBirth = NULL, EffectiveDate = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNValue = NULL, StateTRAEligibilityMNID = NULL, StateTRAEligibilityMNValue = NULL, StateTRAStatusMNID = NULL, StateTRAStatusMNValue = NULL, ExcludeFromExport = NULL, GenderCode = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionDemographicDetailV1 <- function(AddressID = NULL, City = NULL, DateOfBirth = NULL, DistrictID = NULL, EffectiveDate = NULL, EmployeeID = NULL, EmployeeName = NULL, EmployeeNumber = NULL, ExcludeFromExport = NULL, GenderCode = NULL, SocialSecurityNumber = NULL, State = NULL, StateTRAEligibilityMNID = NULL, StateTRAEligibilityMNValue = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNValue = NULL, StateTRAStatusMNID = NULL, StateTRAStatusMNValue = NULL, StreetLine1 = NULL, StreetLine2 = NULL, TRANumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, Zip = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17204,7 +17204,7 @@
 	#' @return The modified TRASubmissionDemographicDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionDemographicDetailV1 <- function(TRASubmissionDemographicDetailV1ID, EmployeeID = NULL, EmployeeName = NULL, AddressID = NULL, StreetLine1 = NULL, StreetLine2 = NULL, City = NULL, State = NULL, Zip = NULL, SocialSecurityNumber = NULL, EmployeeNumber = NULL, TRANumber = NULL, DateOfBirth = NULL, EffectiveDate = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNValue = NULL, StateTRAEligibilityMNID = NULL, StateTRAEligibilityMNValue = NULL, StateTRAStatusMNID = NULL, StateTRAStatusMNValue = NULL, ExcludeFromExport = NULL, GenderCode = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionDemographicDetailV1 <- function(TRASubmissionDemographicDetailV1ID, AddressID = NULL, City = NULL, DateOfBirth = NULL, DistrictID = NULL, EffectiveDate = NULL, EmployeeID = NULL, EmployeeName = NULL, EmployeeNumber = NULL, ExcludeFromExport = NULL, GenderCode = NULL, SocialSecurityNumber = NULL, State = NULL, StateTRAEligibilityMNID = NULL, StateTRAEligibilityMNValue = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNValue = NULL, StateTRAStatusMNID = NULL, StateTRAStatusMNValue = NULL, StreetLine1 = NULL, StreetLine2 = NULL, TRANumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, Zip = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17232,7 +17232,7 @@
 	#' @return A list of TRASubmissionEmployerV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionEmployerV1s <- function(searchConditionsList = NULL, TRASubmissionEmployerV1ID = F, EmployerID = F, TRACountyGroupNumber = F, TRADistrictUnitNumber = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionEmployerV1s <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployerID = F, HasErrors = F, KeyHash = F, ModifiedTime = F, TRACountyGroupNumber = F, TRADistrictUnitNumber = F, TRASubmissionEmployerV1ID = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17257,7 +17257,7 @@
 	#' @return A dataframe or of TRASubmissionEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionEmployerV1 <- function(TRASubmissionEmployerV1ID, EmployerID = F, TRACountyGroupNumber = F, TRADistrictUnitNumber = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionEmployerV1 <- function(TRASubmissionEmployerV1ID, CreatedTime = F, DistrictID = F, EmployerID = F, HasErrors = F, KeyHash = F, ModifiedTime = F, TRACountyGroupNumber = F, TRADistrictUnitNumber = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionEmployerV1ID")
 
@@ -17297,7 +17297,7 @@
 	#' @return A newly created TRASubmissionEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionEmployerV1 <- function(EmployerID = NULL, TRACountyGroupNumber = NULL, TRADistrictUnitNumber = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionEmployerV1 <- function(DistrictID = NULL, EmployerID = NULL, TRACountyGroupNumber = NULL, TRADistrictUnitNumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17318,7 +17318,7 @@
 	#' @return The modified TRASubmissionEmployerV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionEmployerV1 <- function(TRASubmissionEmployerV1ID, EmployerID = NULL, TRACountyGroupNumber = NULL, TRADistrictUnitNumber = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionEmployerV1 <- function(TRASubmissionEmployerV1ID, DistrictID = NULL, EmployerID = NULL, TRACountyGroupNumber = NULL, TRADistrictUnitNumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17346,7 +17346,7 @@
 	#' @return A list of TRASubmissionPayrollDetailV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionPayrollDetailV1s <- function(searchConditionsList = NULL, TRASubmissionPayrollDetailV1ID = F, EmployeeID = F, SocialSecurityNumber = F, EmployeeNumber = F, TRANumber = F, StateTRACurrentPositionMNID = F, StateTRACurrentPositionMNValue = F, Salary = F, EmployeeDeductionAmount = F, EmployerDeductionAmount = F, StateTransactionTypeMNID = F, StateTransactionTypeMNValue = F, StateTRAPaymentTypeMNID = F, StateTRAPaymentTypeMNValue = F, TRAFiscalYear = F, PayPeriodBeginDate = F, PayPeriodEndDate = F, PaymentDate = F, StateTRAPayrollFrequencyMNID = F, StateTRAPayrollFrequencyMNValue = F, StateRetirementAssociationTypeCode = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionPayrollDetailV1s <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployeeDeductionAmount = F, EmployeeID = F, EmployeeNumber = F, EmployerDeductionAmount = F, HasErrors = F, KeyHash = F, ModifiedTime = F, PaymentDate = F, PayPeriodBeginDate = F, PayPeriodEndDate = F, Salary = F, SocialSecurityNumber = F, StateRetirementAssociationTypeCode = F, StateTRACurrentPositionMNID = F, StateTRACurrentPositionMNValue = F, StateTRAExemptStatusMNCode = F, StateTRAExemptStatusMNID = F, StateTransactionTypeMNID = F, StateTransactionTypeMNValue = F, StateTRAPaymentTypeMNID = F, StateTRAPaymentTypeMNValue = F, StateTRAPayrollFrequencyMNID = F, StateTRAPayrollFrequencyMNValue = F, TRAFiscalYear = F, TRANumber = F, TRASubmissionID = F, TRASubmissionPayrollDetailV1ID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17371,7 +17371,7 @@
 	#' @return A dataframe or of TRASubmissionPayrollDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionPayrollDetailV1 <- function(TRASubmissionPayrollDetailV1ID, EmployeeID = F, SocialSecurityNumber = F, EmployeeNumber = F, TRANumber = F, StateTRACurrentPositionMNID = F, StateTRACurrentPositionMNValue = F, Salary = F, EmployeeDeductionAmount = F, EmployerDeductionAmount = F, StateTransactionTypeMNID = F, StateTransactionTypeMNValue = F, StateTRAPaymentTypeMNID = F, StateTRAPaymentTypeMNValue = F, TRAFiscalYear = F, PayPeriodBeginDate = F, PayPeriodEndDate = F, PaymentDate = F, StateTRAPayrollFrequencyMNID = F, StateTRAPayrollFrequencyMNValue = F, StateRetirementAssociationTypeCode = F, TRASubmissionID = F, DistrictID = F, TRASubmissionRunHistoryID = F, HasErrors = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, KeyHash = F, UpdateHash = F, StateTRAExemptStatusMNID = F, StateTRAExemptStatusMNCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionPayrollDetailV1 <- function(TRASubmissionPayrollDetailV1ID, CreatedTime = F, DistrictID = F, EmployeeDeductionAmount = F, EmployeeID = F, EmployeeNumber = F, EmployerDeductionAmount = F, HasErrors = F, KeyHash = F, ModifiedTime = F, PaymentDate = F, PayPeriodBeginDate = F, PayPeriodEndDate = F, Salary = F, SocialSecurityNumber = F, StateRetirementAssociationTypeCode = F, StateTRACurrentPositionMNID = F, StateTRACurrentPositionMNValue = F, StateTRAExemptStatusMNCode = F, StateTRAExemptStatusMNID = F, StateTransactionTypeMNID = F, StateTransactionTypeMNValue = F, StateTRAPaymentTypeMNID = F, StateTRAPaymentTypeMNValue = F, StateTRAPayrollFrequencyMNID = F, StateTRAPayrollFrequencyMNValue = F, TRAFiscalYear = F, TRANumber = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionPayrollDetailV1ID")
 
@@ -17411,7 +17411,7 @@
 	#' @return A newly created TRASubmissionPayrollDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionPayrollDetailV1 <- function(EmployeeID = NULL, SocialSecurityNumber = NULL, EmployeeNumber = NULL, TRANumber = NULL, StateTRACurrentPositionMNID = NULL, StateTRACurrentPositionMNValue = NULL, Salary = NULL, EmployeeDeductionAmount = NULL, EmployerDeductionAmount = NULL, StateTransactionTypeMNID = NULL, StateTransactionTypeMNValue = NULL, StateTRAPaymentTypeMNID = NULL, StateTRAPaymentTypeMNValue = NULL, TRAFiscalYear = NULL, PayPeriodBeginDate = NULL, PayPeriodEndDate = NULL, PaymentDate = NULL, StateTRAPayrollFrequencyMNID = NULL, StateTRAPayrollFrequencyMNValue = NULL, StateRetirementAssociationTypeCode = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionPayrollDetailV1 <- function(DistrictID = NULL, EmployeeDeductionAmount = NULL, EmployeeID = NULL, EmployeeNumber = NULL, EmployerDeductionAmount = NULL, PaymentDate = NULL, PayPeriodBeginDate = NULL, PayPeriodEndDate = NULL, Salary = NULL, SocialSecurityNumber = NULL, StateRetirementAssociationTypeCode = NULL, StateTRACurrentPositionMNID = NULL, StateTRACurrentPositionMNValue = NULL, StateTRAExemptStatusMNCode = NULL, StateTRAExemptStatusMNID = NULL, StateTransactionTypeMNID = NULL, StateTransactionTypeMNValue = NULL, StateTRAPaymentTypeMNID = NULL, StateTRAPaymentTypeMNValue = NULL, StateTRAPayrollFrequencyMNID = NULL, StateTRAPayrollFrequencyMNValue = NULL, TRAFiscalYear = NULL, TRANumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17432,7 +17432,7 @@
 	#' @return The modified TRASubmissionPayrollDetailV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionPayrollDetailV1 <- function(TRASubmissionPayrollDetailV1ID, EmployeeID = NULL, SocialSecurityNumber = NULL, EmployeeNumber = NULL, TRANumber = NULL, StateTRACurrentPositionMNID = NULL, StateTRACurrentPositionMNValue = NULL, Salary = NULL, EmployeeDeductionAmount = NULL, EmployerDeductionAmount = NULL, StateTransactionTypeMNID = NULL, StateTransactionTypeMNValue = NULL, StateTRAPaymentTypeMNID = NULL, StateTRAPaymentTypeMNValue = NULL, TRAFiscalYear = NULL, PayPeriodBeginDate = NULL, PayPeriodEndDate = NULL, PaymentDate = NULL, StateTRAPayrollFrequencyMNID = NULL, StateTRAPayrollFrequencyMNValue = NULL, StateRetirementAssociationTypeCode = NULL, TRASubmissionID = NULL, DistrictID = NULL, TRASubmissionRunHistoryID = NULL, StateTRAExemptStatusMNID = NULL, StateTRAExemptStatusMNCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionPayrollDetailV1 <- function(TRASubmissionPayrollDetailV1ID, DistrictID = NULL, EmployeeDeductionAmount = NULL, EmployeeID = NULL, EmployeeNumber = NULL, EmployerDeductionAmount = NULL, PaymentDate = NULL, PayPeriodBeginDate = NULL, PayPeriodEndDate = NULL, Salary = NULL, SocialSecurityNumber = NULL, StateRetirementAssociationTypeCode = NULL, StateTRACurrentPositionMNID = NULL, StateTRACurrentPositionMNValue = NULL, StateTRAExemptStatusMNCode = NULL, StateTRAExemptStatusMNID = NULL, StateTransactionTypeMNID = NULL, StateTransactionTypeMNValue = NULL, StateTRAPaymentTypeMNID = NULL, StateTRAPaymentTypeMNValue = NULL, StateTRAPayrollFrequencyMNID = NULL, StateTRAPayrollFrequencyMNValue = NULL, TRAFiscalYear = NULL, TRANumber = NULL, TRASubmissionID = NULL, TRASubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17460,7 +17460,7 @@
 	#' @return A list of TRASubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissions <- function(searchConditionsList = NULL, TRASubmissionID = F, DistrictID = F, FiscalYearID = F, Description = F, IsFinal = F, HasRunHistories = F, ReportType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissions <- function(searchConditionsList = NULL, CreatedTime = F, Description = F, DistrictID = F, FiscalYearID = F, HasRunHistories = F, IsFinal = F, ModifiedTime = F, ReportType = F, TRASubmissionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17485,7 +17485,7 @@
 	#' @return A dataframe or of TRASubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmission <- function(TRASubmissionID, DistrictID = F, FiscalYearID = F, Description = F, IsFinal = F, HasRunHistories = F, ReportType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmission <- function(TRASubmissionID, CreatedTime = F, Description = F, DistrictID = F, FiscalYearID = F, HasRunHistories = F, IsFinal = F, ModifiedTime = F, ReportType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionID")
 
@@ -17525,7 +17525,7 @@
 	#' @return A newly created TRASubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmission <- function(DistrictID = NULL, FiscalYearID = NULL, Description = NULL, IsFinal = NULL, ReportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmission <- function(Description = NULL, DistrictID = NULL, FiscalYearID = NULL, IsFinal = NULL, ReportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17546,7 +17546,7 @@
 	#' @return The modified TRASubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmission <- function(TRASubmissionID, DistrictID = NULL, FiscalYearID = NULL, Description = NULL, IsFinal = NULL, ReportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmission <- function(TRASubmissionID, Description = NULL, DistrictID = NULL, FiscalYearID = NULL, IsFinal = NULL, ReportType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17574,7 +17574,7 @@
 	#' @return A list of TRASubmissionPayrollRuns
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionPayrollRuns <- function(searchConditionsList = NULL, TRASubmissionPayrollRunID = F, TRASubmissionID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionPayrollRuns <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, PayrollRunID = F, TRASubmissionID = F, TRASubmissionPayrollRunID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17599,7 +17599,7 @@
 	#' @return A dataframe or of TRASubmissionPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionPayrollRun <- function(TRASubmissionPayrollRunID, TRASubmissionID = F, PayrollRunID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionPayrollRun <- function(TRASubmissionPayrollRunID, CreatedTime = F, ModifiedTime = F, PayrollRunID = F, TRASubmissionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionPayrollRunID")
 
@@ -17639,7 +17639,7 @@
 	#' @return A newly created TRASubmissionPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionPayrollRun <- function(TRASubmissionID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionPayrollRun <- function(PayrollRunID = NULL, TRASubmissionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17660,7 +17660,7 @@
 	#' @return The modified TRASubmissionPayrollRun
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionPayrollRun <- function(TRASubmissionPayrollRunID, TRASubmissionID = NULL, PayrollRunID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionPayrollRun <- function(TRASubmissionPayrollRunID, PayrollRunID = NULL, TRASubmissionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17688,7 +17688,7 @@
 	#' @return A list of TRASubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTRASubmissionRunHistories <- function(searchConditionsList = NULL, TRASubmissionRunHistoryID = F, TRASubmissionID = F, DistrictID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTRASubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, DistrictID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, TRASubmissionID = F, TRASubmissionRunHistoryID = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17713,7 +17713,7 @@
 	#' @return A dataframe or of TRASubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTRASubmissionRunHistory <- function(TRASubmissionRunHistoryID, TRASubmissionID = F, DistrictID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTRASubmissionRunHistory <- function(TRASubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, DistrictID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, TRASubmissionID = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TRASubmissionRunHistoryID")
 
@@ -17753,7 +17753,7 @@
 	#' @return A newly created TRASubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTRASubmissionRunHistory <- function(TRASubmissionID = NULL, DistrictID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTRASubmissionRunHistory <- function(DistrictID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, TRASubmissionID = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17774,7 +17774,7 @@
 	#' @return The modified TRASubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTRASubmissionRunHistory <- function(TRASubmissionRunHistoryID, TRASubmissionID = NULL, DistrictID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTRASubmissionRunHistory <- function(TRASubmissionRunHistoryID, DistrictID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, TRASubmissionID = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17802,7 +17802,7 @@
 	#' @return A list of StateCountyMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateCountyMNS <- function(searchConditionsList = NULL, StateCountyMNID = F, Code = F, Description = F, CodeDescription = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateCountyMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateCountyMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17827,7 +17827,7 @@
 	#' @return A dataframe or of StateCountyMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateCountyMN <- function(StateCountyMNID, Code = F, Description = F, CodeDescription = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateCountyMN <- function(StateCountyMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateCountyMNID")
 
@@ -17867,7 +17867,7 @@
 	#' @return A newly created StateCountyMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateCountyMN <- function(Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateCountyMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17888,7 +17888,7 @@
 	#' @return The modified StateCountyMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateCountyMN <- function(StateCountyMNID, Code = NULL, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateCountyMN <- function(StateCountyMNID, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17916,7 +17916,7 @@
 	#' @return A list of GRRStudentExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listGRRStudentExceptions <- function(searchConditionsList = NULL, GRRStudentExceptionID = F, GRRSubmissionID = F, GRRStudentV1ID = F, GRRSubmissionRunHistoryID = F, SchoolYearID = F, EntityID = F, SchoolID = F, StudentID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listGRRStudentExceptions <- function(searchConditionsList = NULL, CreatedTime = F, EntityID = F, GRRStudentExceptionID = F, GRRStudentV1ID = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -17941,7 +17941,7 @@
 	#' @return A dataframe or of GRRStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getGRRStudentException <- function(GRRStudentExceptionID, GRRSubmissionID = F, GRRStudentV1ID = F, GRRSubmissionRunHistoryID = F, SchoolYearID = F, EntityID = F, SchoolID = F, StudentID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getGRRStudentException <- function(GRRStudentExceptionID, CreatedTime = F, EntityID = F, GRRStudentV1ID = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "GRRStudentExceptionID")
 
@@ -17981,7 +17981,7 @@
 	#' @return A newly created GRRStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createGRRStudentException <- function(GRRSubmissionID = NULL, GRRStudentV1ID = NULL, GRRSubmissionRunHistoryID = NULL, SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, StudentID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createGRRStudentException <- function(EntityID = NULL, GRRStudentV1ID = NULL, GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18002,7 +18002,7 @@
 	#' @return The modified GRRStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyGRRStudentException <- function(GRRStudentExceptionID, GRRSubmissionID = NULL, GRRStudentV1ID = NULL, GRRSubmissionRunHistoryID = NULL, SchoolYearID = NULL, EntityID = NULL, SchoolID = NULL, StudentID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyGRRStudentException <- function(GRRStudentExceptionID, EntityID = NULL, GRRStudentV1ID = NULL, GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18030,7 +18030,7 @@
 	#' @return A list of GRRSubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listGRRSubmissions <- function(searchConditionsList = NULL, GRRSubmissionID = F, SkywardID = F, Description = F, TestTakenByDate = F, SubmissionDate = F, SchoolYearID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasAnExport = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listGRRSubmissions <- function(searchConditionsList = NULL, CreatedTime = F, Description = F, GRRSubmissionID = F, HasAnExport = F, ModifiedTime = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, SubmissionDate = F, TestTakenByDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18055,7 +18055,7 @@
 	#' @return A dataframe or of GRRSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getGRRSubmission <- function(GRRSubmissionID, SkywardID = F, Description = F, TestTakenByDate = F, SubmissionDate = F, SchoolYearID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasAnExport = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getGRRSubmission <- function(GRRSubmissionID, CreatedTime = F, Description = F, HasAnExport = F, ModifiedTime = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, SubmissionDate = F, TestTakenByDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "GRRSubmissionID")
 
@@ -18095,7 +18095,7 @@
 	#' @return A newly created GRRSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createGRRSubmission <- function(Description = NULL, TestTakenByDate = NULL, SubmissionDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createGRRSubmission <- function(Description = NULL, SchoolYearID = NULL, SubmissionDate = NULL, TestTakenByDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18116,7 +18116,7 @@
 	#' @return The modified GRRSubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyGRRSubmission <- function(GRRSubmissionID, Description = NULL, TestTakenByDate = NULL, SubmissionDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyGRRSubmission <- function(GRRSubmissionID, Description = NULL, SchoolYearID = NULL, SubmissionDate = NULL, TestTakenByDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18144,7 +18144,7 @@
 	#' @return A list of GRRSubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listGRRSubmissionRunHistories <- function(searchConditionsList = NULL, GRRSubmissionRunHistoryID = F, GRRSubmissionID = F, DistrictID = F, SchoolYearID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsFinalized = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listGRRSubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, DistrictID = F, EndDateTime = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, HasValidMedia = F, IsExport = F, IsFinalized = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, SchoolYearID = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18169,7 +18169,7 @@
 	#' @return A dataframe or of GRRSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getGRRSubmissionRunHistory <- function(GRRSubmissionRunHistoryID, GRRSubmissionID = F, DistrictID = F, SchoolYearID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsFinalized = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getGRRSubmissionRunHistory <- function(GRRSubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, DistrictID = F, EndDateTime = F, GRRSubmissionID = F, HasValidMedia = F, IsExport = F, IsFinalized = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, SchoolYearID = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "GRRSubmissionRunHistoryID")
 
@@ -18209,7 +18209,7 @@
 	#' @return A newly created GRRSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createGRRSubmissionRunHistory <- function(GRRSubmissionID = NULL, DistrictID = NULL, SchoolYearID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, IsFinalized = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createGRRSubmissionRunHistory <- function(DistrictID = NULL, EndDateTime = NULL, GRRSubmissionID = NULL, IsFinalized = NULL, MediaID = NULL, SchoolYearID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18230,7 +18230,7 @@
 	#' @return The modified GRRSubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyGRRSubmissionRunHistory <- function(GRRSubmissionRunHistoryID, GRRSubmissionID = NULL, DistrictID = NULL, SchoolYearID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, IsFinalized = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyGRRSubmissionRunHistory <- function(GRRSubmissionRunHistoryID, DistrictID = NULL, EndDateTime = NULL, GRRSubmissionID = NULL, IsFinalized = NULL, MediaID = NULL, SchoolYearID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18258,7 +18258,7 @@
 	#' @return A list of GRRStudentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listGRRStudentV1s <- function(searchConditionsList = NULL, GRRStudentV1ID = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, GraduationRequirementMNID = F, StateUnitNumber = F, SchoolYearID = F, EntityID = F, StateDistrictTypeCodeMNID = F, StateUnitType = F, SchoolID = F, StateSiteNumber = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, StudentID = F, StateStudentID = F, BirthDate = F, Gender = F, LocalUseID = F, StateGraduationRequirementMNID = F, SubjectCode = F, StateGraduationRequirementMethodMNID = F, MethodCode = F, MetGraduationRequirement = F, TestedDate = F, Comment = F, RequestReimbursement = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateDistrictMNID = F, Version = F, HasErrors = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listGRRStudentV1s <- function(searchConditionsList = NULL, BirthDate = F, Comment = F, CreatedTime = F, EntityID = F, FirstName = F, Gender = F, GraduationRequirementMNID = F, GRRStudentV1ID = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, LastName = F, LocalUseID = F, MetGraduationRequirement = F, MethodCode = F, MiddleName = F, ModifiedTime = F, RequestReimbursement = F, SchoolID = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateGraduationRequirementMethodMNID = F, StateGraduationRequirementMNID = F, StateSiteNumber = F, StateStudentID = F, StateUnitNumber = F, StateUnitType = F, StudentID = F, SubjectCode = F, Suffix = F, TestedDate = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18283,7 +18283,7 @@
 	#' @return A dataframe or of GRRStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getGRRStudentV1 <- function(GRRStudentV1ID, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, GraduationRequirementMNID = F, StateUnitNumber = F, SchoolYearID = F, EntityID = F, StateDistrictTypeCodeMNID = F, StateUnitType = F, SchoolID = F, StateSiteNumber = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, StudentID = F, StateStudentID = F, BirthDate = F, Gender = F, LocalUseID = F, StateGraduationRequirementMNID = F, SubjectCode = F, StateGraduationRequirementMethodMNID = F, MethodCode = F, MetGraduationRequirement = F, TestedDate = F, Comment = F, RequestReimbursement = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateDistrictMNID = F, Version = F, HasErrors = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getGRRStudentV1 <- function(GRRStudentV1ID, BirthDate = F, Comment = F, CreatedTime = F, EntityID = F, FirstName = F, Gender = F, GraduationRequirementMNID = F, GRRSubmissionID = F, GRRSubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, LastName = F, LocalUseID = F, MetGraduationRequirement = F, MethodCode = F, MiddleName = F, ModifiedTime = F, RequestReimbursement = F, SchoolID = F, SchoolYearID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateGraduationRequirementMethodMNID = F, StateGraduationRequirementMNID = F, StateSiteNumber = F, StateStudentID = F, StateUnitNumber = F, StateUnitType = F, StudentID = F, SubjectCode = F, Suffix = F, TestedDate = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Version = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "GRRStudentV1ID")
 
@@ -18323,7 +18323,7 @@
 	#' @return A newly created GRRStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createGRRStudentV1 <- function(GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, GraduationRequirementMNID = NULL, StateUnitNumber = NULL, SchoolYearID = NULL, EntityID = NULL, StateDistrictTypeCodeMNID = NULL, StateUnitType = NULL, SchoolID = NULL, StateSiteNumber = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, StudentID = NULL, StateStudentID = NULL, BirthDate = NULL, Gender = NULL, LocalUseID = NULL, StateGraduationRequirementMNID = NULL, SubjectCode = NULL, StateGraduationRequirementMethodMNID = NULL, MethodCode = NULL, MetGraduationRequirement = NULL, TestedDate = NULL, Comment = NULL, RequestReimbursement = NULL, StateDistrictMNID = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createGRRStudentV1 <- function(BirthDate = NULL, Comment = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, GraduationRequirementMNID = NULL, GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, LastName = NULL, LocalUseID = NULL, MetGraduationRequirement = NULL, MethodCode = NULL, MiddleName = NULL, RequestReimbursement = NULL, SchoolID = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateGraduationRequirementMethodMNID = NULL, StateGraduationRequirementMNID = NULL, StateSiteNumber = NULL, StateStudentID = NULL, StateUnitNumber = NULL, StateUnitType = NULL, StudentID = NULL, SubjectCode = NULL, Suffix = NULL, TestedDate = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18344,7 +18344,7 @@
 	#' @return The modified GRRStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyGRRStudentV1 <- function(GRRStudentV1ID, GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, GraduationRequirementMNID = NULL, StateUnitNumber = NULL, SchoolYearID = NULL, EntityID = NULL, StateDistrictTypeCodeMNID = NULL, StateUnitType = NULL, SchoolID = NULL, StateSiteNumber = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, StudentID = NULL, StateStudentID = NULL, BirthDate = NULL, Gender = NULL, LocalUseID = NULL, StateGraduationRequirementMNID = NULL, SubjectCode = NULL, StateGraduationRequirementMethodMNID = NULL, MethodCode = NULL, MetGraduationRequirement = NULL, TestedDate = NULL, Comment = NULL, RequestReimbursement = NULL, StateDistrictMNID = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyGRRStudentV1 <- function(GRRStudentV1ID, BirthDate = NULL, Comment = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, GraduationRequirementMNID = NULL, GRRSubmissionID = NULL, GRRSubmissionRunHistoryID = NULL, LastName = NULL, LocalUseID = NULL, MetGraduationRequirement = NULL, MethodCode = NULL, MiddleName = NULL, RequestReimbursement = NULL, SchoolID = NULL, SchoolYearID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateGraduationRequirementMethodMNID = NULL, StateGraduationRequirementMNID = NULL, StateSiteNumber = NULL, StateStudentID = NULL, StateUnitNumber = NULL, StateUnitType = NULL, StudentID = NULL, SubjectCode = NULL, Suffix = NULL, TestedDate = NULL, Version = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18372,7 +18372,7 @@
 	#' @return A list of ImmunizationStatusRunHistoryMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listImmunizationStatusRunHistoryMNS <- function(searchConditionsList = NULL, ImmunizationStatusRunHistoryMNID = F, DistrictID = F, SchoolYearID = F, ComplianceDate = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listImmunizationStatusRunHistoryMNS <- function(searchConditionsList = NULL, CanAccessMedia = F, ComplianceDate = F, CreatedTime = F, DistrictID = F, EndDateTime = F, HasValidMedia = F, ImmunizationStatusRunHistoryMNID = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, SchoolYearID = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18397,7 +18397,7 @@
 	#' @return A dataframe or of ImmunizationStatusRunHistoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getImmunizationStatusRunHistoryMN <- function(ImmunizationStatusRunHistoryMNID, DistrictID = F, SchoolYearID = F, ComplianceDate = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getImmunizationStatusRunHistoryMN <- function(ImmunizationStatusRunHistoryMNID, CanAccessMedia = F, ComplianceDate = F, CreatedTime = F, DistrictID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, SchoolYearID = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ImmunizationStatusRunHistoryMNID")
 
@@ -18437,7 +18437,7 @@
 	#' @return A newly created ImmunizationStatusRunHistoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createImmunizationStatusRunHistoryMN <- function(DistrictID = NULL, SchoolYearID = NULL, ComplianceDate = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createImmunizationStatusRunHistoryMN <- function(ComplianceDate = NULL, DistrictID = NULL, EndDateTime = NULL, MediaID = NULL, SchoolYearID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18458,7 +18458,7 @@
 	#' @return The modified ImmunizationStatusRunHistoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyImmunizationStatusRunHistoryMN <- function(ImmunizationStatusRunHistoryMNID, DistrictID = NULL, SchoolYearID = NULL, ComplianceDate = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyImmunizationStatusRunHistoryMN <- function(ImmunizationStatusRunHistoryMNID, ComplianceDate = NULL, DistrictID = NULL, EndDateTime = NULL, MediaID = NULL, SchoolYearID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18486,7 +18486,7 @@
 	#' @return A list of ImmunizationStatusStudentMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listImmunizationStatusStudentMNS <- function(searchConditionsList = NULL, ImmunizationStatusStudentMNID = F, ImmunizationStatusRunHistoryMNID = F, DistrictID = F, EntityID = F, StudentID = F, StateSTARGradeLevelMNID = F, IsExemptCOAllVaccines = F, IsExemptMEAllVaccines = F, HasAllRequiredDosesDTP = F, IsMissingDosesDTP = F, IsExemptCODTP = F, IsExemptMEDTP = F, HasAllRequiredDosesPolio = F, IsMissingDosesPolio = F, IsExemptCOPolio = F, IsExemptMEPolio = F, HasAllRequiredDosesMMR = F, IsMissingDosesMMR = F, IsExemptCOMMR = F, IsExemptMEMMR = F, HasAllRequiredDosesHepatitisB = F, IsMissingDosesHepatitisB = F, IsExemptCOHepatitisB = F, IsExemptMEHepatitisB = F, HasAllRequiredDosesVaricella = F, IsMissingDosesVaricella = F, HasHistoryOfVaricella = F, IsExemptCOVaricella = F, IsExemptMEVaricella = F, HasAllRequiredDosesTdap = F, IsMissingDosesTdap = F, IsExemptCOTdap = F, IsExemptMETdap = F, HasAllRequiredDosesMeningococcal = F, IsMissingDosesMeningococcal = F, IsExemptCOMeningococcal = F, IsExemptMEMeningococcal = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listImmunizationStatusStudentMNS <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EntityID = F, HasAllRequiredDosesDTP = F, HasAllRequiredDosesHepatitisB = F, HasAllRequiredDosesMeningococcal = F, HasAllRequiredDosesMMR = F, HasAllRequiredDosesPolio = F, HasAllRequiredDosesTdap = F, HasAllRequiredDosesVaricella = F, HasHistoryOfVaricella = F, ImmunizationStatusRunHistoryMNID = F, ImmunizationStatusStudentMNID = F, IsExemptCOAllVaccines = F, IsExemptCODTP = F, IsExemptCOHepatitisB = F, IsExemptCOMeningococcal = F, IsExemptCOMMR = F, IsExemptCOPolio = F, IsExemptCOTdap = F, IsExemptCOVaricella = F, IsExemptMEAllVaccines = F, IsExemptMEDTP = F, IsExemptMEHepatitisB = F, IsExemptMEMeningococcal = F, IsExemptMEMMR = F, IsExemptMEPolio = F, IsExemptMETdap = F, IsExemptMEVaricella = F, IsMissingDosesDTP = F, IsMissingDosesHepatitisB = F, IsMissingDosesMeningococcal = F, IsMissingDosesMMR = F, IsMissingDosesPolio = F, IsMissingDosesTdap = F, IsMissingDosesVaricella = F, KeyHash = F, ModifiedTime = F, StateSTARGradeLevelMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18511,7 +18511,7 @@
 	#' @return A dataframe or of ImmunizationStatusStudentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getImmunizationStatusStudentMN <- function(ImmunizationStatusStudentMNID, ImmunizationStatusRunHistoryMNID = F, DistrictID = F, EntityID = F, StudentID = F, StateSTARGradeLevelMNID = F, IsExemptCOAllVaccines = F, IsExemptMEAllVaccines = F, HasAllRequiredDosesDTP = F, IsMissingDosesDTP = F, IsExemptCODTP = F, IsExemptMEDTP = F, HasAllRequiredDosesPolio = F, IsMissingDosesPolio = F, IsExemptCOPolio = F, IsExemptMEPolio = F, HasAllRequiredDosesMMR = F, IsMissingDosesMMR = F, IsExemptCOMMR = F, IsExemptMEMMR = F, HasAllRequiredDosesHepatitisB = F, IsMissingDosesHepatitisB = F, IsExemptCOHepatitisB = F, IsExemptMEHepatitisB = F, HasAllRequiredDosesVaricella = F, IsMissingDosesVaricella = F, HasHistoryOfVaricella = F, IsExemptCOVaricella = F, IsExemptMEVaricella = F, HasAllRequiredDosesTdap = F, IsMissingDosesTdap = F, IsExemptCOTdap = F, IsExemptMETdap = F, HasAllRequiredDosesMeningococcal = F, IsMissingDosesMeningococcal = F, IsExemptCOMeningococcal = F, IsExemptMEMeningococcal = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getImmunizationStatusStudentMN <- function(ImmunizationStatusStudentMNID, CreatedTime = F, DistrictID = F, EntityID = F, HasAllRequiredDosesDTP = F, HasAllRequiredDosesHepatitisB = F, HasAllRequiredDosesMeningococcal = F, HasAllRequiredDosesMMR = F, HasAllRequiredDosesPolio = F, HasAllRequiredDosesTdap = F, HasAllRequiredDosesVaricella = F, HasHistoryOfVaricella = F, ImmunizationStatusRunHistoryMNID = F, IsExemptCOAllVaccines = F, IsExemptCODTP = F, IsExemptCOHepatitisB = F, IsExemptCOMeningococcal = F, IsExemptCOMMR = F, IsExemptCOPolio = F, IsExemptCOTdap = F, IsExemptCOVaricella = F, IsExemptMEAllVaccines = F, IsExemptMEDTP = F, IsExemptMEHepatitisB = F, IsExemptMEMeningococcal = F, IsExemptMEMMR = F, IsExemptMEPolio = F, IsExemptMETdap = F, IsExemptMEVaricella = F, IsMissingDosesDTP = F, IsMissingDosesHepatitisB = F, IsMissingDosesMeningococcal = F, IsMissingDosesMMR = F, IsMissingDosesPolio = F, IsMissingDosesTdap = F, IsMissingDosesVaricella = F, KeyHash = F, ModifiedTime = F, StateSTARGradeLevelMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ImmunizationStatusStudentMNID")
 
@@ -18551,7 +18551,7 @@
 	#' @return A newly created ImmunizationStatusStudentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createImmunizationStatusStudentMN <- function(ImmunizationStatusRunHistoryMNID = NULL, DistrictID = NULL, EntityID = NULL, StudentID = NULL, StateSTARGradeLevelMNID = NULL, IsExemptCOAllVaccines = NULL, IsExemptMEAllVaccines = NULL, HasAllRequiredDosesDTP = NULL, IsMissingDosesDTP = NULL, IsExemptCODTP = NULL, IsExemptMEDTP = NULL, HasAllRequiredDosesPolio = NULL, IsMissingDosesPolio = NULL, IsExemptCOPolio = NULL, IsExemptMEPolio = NULL, HasAllRequiredDosesMMR = NULL, IsMissingDosesMMR = NULL, IsExemptCOMMR = NULL, IsExemptMEMMR = NULL, HasAllRequiredDosesHepatitisB = NULL, IsMissingDosesHepatitisB = NULL, IsExemptCOHepatitisB = NULL, IsExemptMEHepatitisB = NULL, HasAllRequiredDosesVaricella = NULL, IsMissingDosesVaricella = NULL, HasHistoryOfVaricella = NULL, IsExemptCOVaricella = NULL, IsExemptMEVaricella = NULL, HasAllRequiredDosesTdap = NULL, IsMissingDosesTdap = NULL, IsExemptCOTdap = NULL, IsExemptMETdap = NULL, HasAllRequiredDosesMeningococcal = NULL, IsMissingDosesMeningococcal = NULL, IsExemptCOMeningococcal = NULL, IsExemptMEMeningococcal = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createImmunizationStatusStudentMN <- function(DistrictID = NULL, EntityID = NULL, HasAllRequiredDosesDTP = NULL, HasAllRequiredDosesHepatitisB = NULL, HasAllRequiredDosesMeningococcal = NULL, HasAllRequiredDosesMMR = NULL, HasAllRequiredDosesPolio = NULL, HasAllRequiredDosesTdap = NULL, HasAllRequiredDosesVaricella = NULL, HasHistoryOfVaricella = NULL, ImmunizationStatusRunHistoryMNID = NULL, IsExemptCOAllVaccines = NULL, IsExemptCODTP = NULL, IsExemptCOHepatitisB = NULL, IsExemptCOMeningococcal = NULL, IsExemptCOMMR = NULL, IsExemptCOPolio = NULL, IsExemptCOTdap = NULL, IsExemptCOVaricella = NULL, IsExemptMEAllVaccines = NULL, IsExemptMEDTP = NULL, IsExemptMEHepatitisB = NULL, IsExemptMEMeningococcal = NULL, IsExemptMEMMR = NULL, IsExemptMEPolio = NULL, IsExemptMETdap = NULL, IsExemptMEVaricella = NULL, IsMissingDosesDTP = NULL, IsMissingDosesHepatitisB = NULL, IsMissingDosesMeningococcal = NULL, IsMissingDosesMMR = NULL, IsMissingDosesPolio = NULL, IsMissingDosesTdap = NULL, IsMissingDosesVaricella = NULL, StateSTARGradeLevelMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18572,7 +18572,7 @@
 	#' @return The modified ImmunizationStatusStudentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyImmunizationStatusStudentMN <- function(ImmunizationStatusStudentMNID, ImmunizationStatusRunHistoryMNID = NULL, DistrictID = NULL, EntityID = NULL, StudentID = NULL, StateSTARGradeLevelMNID = NULL, IsExemptCOAllVaccines = NULL, IsExemptMEAllVaccines = NULL, HasAllRequiredDosesDTP = NULL, IsMissingDosesDTP = NULL, IsExemptCODTP = NULL, IsExemptMEDTP = NULL, HasAllRequiredDosesPolio = NULL, IsMissingDosesPolio = NULL, IsExemptCOPolio = NULL, IsExemptMEPolio = NULL, HasAllRequiredDosesMMR = NULL, IsMissingDosesMMR = NULL, IsExemptCOMMR = NULL, IsExemptMEMMR = NULL, HasAllRequiredDosesHepatitisB = NULL, IsMissingDosesHepatitisB = NULL, IsExemptCOHepatitisB = NULL, IsExemptMEHepatitisB = NULL, HasAllRequiredDosesVaricella = NULL, IsMissingDosesVaricella = NULL, HasHistoryOfVaricella = NULL, IsExemptCOVaricella = NULL, IsExemptMEVaricella = NULL, HasAllRequiredDosesTdap = NULL, IsMissingDosesTdap = NULL, IsExemptCOTdap = NULL, IsExemptMETdap = NULL, HasAllRequiredDosesMeningococcal = NULL, IsMissingDosesMeningococcal = NULL, IsExemptCOMeningococcal = NULL, IsExemptMEMeningococcal = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyImmunizationStatusStudentMN <- function(ImmunizationStatusStudentMNID, DistrictID = NULL, EntityID = NULL, HasAllRequiredDosesDTP = NULL, HasAllRequiredDosesHepatitisB = NULL, HasAllRequiredDosesMeningococcal = NULL, HasAllRequiredDosesMMR = NULL, HasAllRequiredDosesPolio = NULL, HasAllRequiredDosesTdap = NULL, HasAllRequiredDosesVaricella = NULL, HasHistoryOfVaricella = NULL, ImmunizationStatusRunHistoryMNID = NULL, IsExemptCOAllVaccines = NULL, IsExemptCODTP = NULL, IsExemptCOHepatitisB = NULL, IsExemptCOMeningococcal = NULL, IsExemptCOMMR = NULL, IsExemptCOPolio = NULL, IsExemptCOTdap = NULL, IsExemptCOVaricella = NULL, IsExemptMEAllVaccines = NULL, IsExemptMEDTP = NULL, IsExemptMEHepatitisB = NULL, IsExemptMEMeningococcal = NULL, IsExemptMEMMR = NULL, IsExemptMEPolio = NULL, IsExemptMETdap = NULL, IsExemptMEVaricella = NULL, IsMissingDosesDTP = NULL, IsMissingDosesHepatitisB = NULL, IsMissingDosesMeningococcal = NULL, IsMissingDosesMMR = NULL, IsMissingDosesPolio = NULL, IsMissingDosesTdap = NULL, IsMissingDosesVaricella = NULL, StateSTARGradeLevelMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18600,7 +18600,7 @@
 	#' @return A list of ImmunizationStatusSummaryMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listImmunizationStatusSummaryMNS <- function(searchConditionsList = NULL, DistrictID = F, EntityID = F, StateSTARGradeLevelMNID = F, EnrollmentCount = F, ExemptAllVaccinesCO = F, ExemptAllVaccinesME = F, DTPAllRequiredDoses = F, DTPMissingDoses = F, DTPExemptCO = F, DTPExemptME = F, PolioAllRequiredDoses = F, PolioMissingDoses = F, PolioExemptCO = F, PolioExemptME = F, MMRAllRequiredDoses = F, MMRMissingDoses = F, MMRExemptCO = F, MMRExemptME = F, HepatitisBAllRequiredDoses = F, HepatitisBMissingDoses = F, HepatitisBExemptCO = F, HepatitisBExemptME = F, VaricellaAllRequiredDoses = F, VaricellaMissingDoses = F, VaricellaHistoryOfDisease = F, VaricellaExemptCO = F, VaricellaExemptME = F, TdapAllRequiredDoses = F, TdapMissingDoses = F, TdapExemptCO = F, TdapExemptME = F, MeningococcalAllRequiredDoses = F, MeningococcalMissingDoses = F, MeningococcalExemptCO = F, MeningococcalExemptME = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listImmunizationStatusSummaryMNS <- function(searchConditionsList = NULL, DistrictID = F, DTPAllRequiredDoses = F, DTPExemptCO = F, DTPExemptME = F, DTPMissingDoses = F, EnrollmentCount = F, EntityID = F, ExemptAllVaccinesCO = F, ExemptAllVaccinesME = F, HepatitisBAllRequiredDoses = F, HepatitisBExemptCO = F, HepatitisBExemptME = F, HepatitisBMissingDoses = F, MeningococcalAllRequiredDoses = F, MeningococcalExemptCO = F, MeningococcalExemptME = F, MeningococcalMissingDoses = F, MMRAllRequiredDoses = F, MMRExemptCO = F, MMRExemptME = F, MMRMissingDoses = F, PolioAllRequiredDoses = F, PolioExemptCO = F, PolioExemptME = F, PolioMissingDoses = F, StateSTARGradeLevelMNID = F, TdapAllRequiredDoses = F, TdapExemptCO = F, TdapExemptME = F, TdapMissingDoses = F, VaricellaAllRequiredDoses = F, VaricellaExemptCO = F, VaricellaExemptME = F, VaricellaHistoryOfDisease = F, VaricellaMissingDoses = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18625,7 +18625,7 @@
 	#' @return A dataframe or of ImmunizationStatusSummaryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getImmunizationStatusSummaryMN <- function(ImmunizationStatusSummaryMNID, DistrictID = F, EntityID = F, StateSTARGradeLevelMNID = F, EnrollmentCount = F, ExemptAllVaccinesCO = F, ExemptAllVaccinesME = F, DTPAllRequiredDoses = F, DTPMissingDoses = F, DTPExemptCO = F, DTPExemptME = F, PolioAllRequiredDoses = F, PolioMissingDoses = F, PolioExemptCO = F, PolioExemptME = F, MMRAllRequiredDoses = F, MMRMissingDoses = F, MMRExemptCO = F, MMRExemptME = F, HepatitisBAllRequiredDoses = F, HepatitisBMissingDoses = F, HepatitisBExemptCO = F, HepatitisBExemptME = F, VaricellaAllRequiredDoses = F, VaricellaMissingDoses = F, VaricellaHistoryOfDisease = F, VaricellaExemptCO = F, VaricellaExemptME = F, TdapAllRequiredDoses = F, TdapMissingDoses = F, TdapExemptCO = F, TdapExemptME = F, MeningococcalAllRequiredDoses = F, MeningococcalMissingDoses = F, MeningococcalExemptCO = F, MeningococcalExemptME = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getImmunizationStatusSummaryMN <- function(ImmunizationStatusSummaryMNID, DistrictID = F, DTPAllRequiredDoses = F, DTPExemptCO = F, DTPExemptME = F, DTPMissingDoses = F, EnrollmentCount = F, EntityID = F, ExemptAllVaccinesCO = F, ExemptAllVaccinesME = F, HepatitisBAllRequiredDoses = F, HepatitisBExemptCO = F, HepatitisBExemptME = F, HepatitisBMissingDoses = F, MeningococcalAllRequiredDoses = F, MeningococcalExemptCO = F, MeningococcalExemptME = F, MeningococcalMissingDoses = F, MMRAllRequiredDoses = F, MMRExemptCO = F, MMRExemptME = F, MMRMissingDoses = F, PolioAllRequiredDoses = F, PolioExemptCO = F, PolioExemptME = F, PolioMissingDoses = F, StateSTARGradeLevelMNID = F, TdapAllRequiredDoses = F, TdapExemptCO = F, TdapExemptME = F, TdapMissingDoses = F, VaricellaAllRequiredDoses = F, VaricellaExemptCO = F, VaricellaExemptME = F, VaricellaHistoryOfDisease = F, VaricellaMissingDoses = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ImmunizationStatusSummaryMNID")
 
@@ -18665,7 +18665,7 @@
 	#' @return A newly created ImmunizationStatusSummaryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createImmunizationStatusSummaryMN <- function(EntityID = NULL, StateSTARGradeLevelMNID = NULL, EnrollmentCount = NULL, ExemptAllVaccinesCO = NULL, ExemptAllVaccinesME = NULL, DTPAllRequiredDoses = NULL, DTPMissingDoses = NULL, DTPExemptCO = NULL, DTPExemptME = NULL, PolioAllRequiredDoses = NULL, PolioMissingDoses = NULL, PolioExemptCO = NULL, PolioExemptME = NULL, MMRAllRequiredDoses = NULL, MMRMissingDoses = NULL, MMRExemptCO = NULL, MMRExemptME = NULL, HepatitisBAllRequiredDoses = NULL, HepatitisBMissingDoses = NULL, HepatitisBExemptCO = NULL, HepatitisBExemptME = NULL, VaricellaAllRequiredDoses = NULL, VaricellaMissingDoses = NULL, VaricellaHistoryOfDisease = NULL, VaricellaExemptCO = NULL, VaricellaExemptME = NULL, TdapAllRequiredDoses = NULL, TdapMissingDoses = NULL, TdapExemptCO = NULL, TdapExemptME = NULL, MeningococcalAllRequiredDoses = NULL, MeningococcalMissingDoses = NULL, MeningococcalExemptCO = NULL, MeningococcalExemptME = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createImmunizationStatusSummaryMN <- function(DTPAllRequiredDoses = NULL, DTPExemptCO = NULL, DTPExemptME = NULL, DTPMissingDoses = NULL, EnrollmentCount = NULL, EntityID = NULL, ExemptAllVaccinesCO = NULL, ExemptAllVaccinesME = NULL, HepatitisBAllRequiredDoses = NULL, HepatitisBExemptCO = NULL, HepatitisBExemptME = NULL, HepatitisBMissingDoses = NULL, MeningococcalAllRequiredDoses = NULL, MeningococcalExemptCO = NULL, MeningococcalExemptME = NULL, MeningococcalMissingDoses = NULL, MMRAllRequiredDoses = NULL, MMRExemptCO = NULL, MMRExemptME = NULL, MMRMissingDoses = NULL, PolioAllRequiredDoses = NULL, PolioExemptCO = NULL, PolioExemptME = NULL, PolioMissingDoses = NULL, StateSTARGradeLevelMNID = NULL, TdapAllRequiredDoses = NULL, TdapExemptCO = NULL, TdapExemptME = NULL, TdapMissingDoses = NULL, VaricellaAllRequiredDoses = NULL, VaricellaExemptCO = NULL, VaricellaExemptME = NULL, VaricellaHistoryOfDisease = NULL, VaricellaMissingDoses = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18686,7 +18686,7 @@
 	#' @return The modified ImmunizationStatusSummaryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyImmunizationStatusSummaryMN <- function(ImmunizationStatusSummaryMNID, EntityID = NULL, StateSTARGradeLevelMNID = NULL, EnrollmentCount = NULL, ExemptAllVaccinesCO = NULL, ExemptAllVaccinesME = NULL, DTPAllRequiredDoses = NULL, DTPMissingDoses = NULL, DTPExemptCO = NULL, DTPExemptME = NULL, PolioAllRequiredDoses = NULL, PolioMissingDoses = NULL, PolioExemptCO = NULL, PolioExemptME = NULL, MMRAllRequiredDoses = NULL, MMRMissingDoses = NULL, MMRExemptCO = NULL, MMRExemptME = NULL, HepatitisBAllRequiredDoses = NULL, HepatitisBMissingDoses = NULL, HepatitisBExemptCO = NULL, HepatitisBExemptME = NULL, VaricellaAllRequiredDoses = NULL, VaricellaMissingDoses = NULL, VaricellaHistoryOfDisease = NULL, VaricellaExemptCO = NULL, VaricellaExemptME = NULL, TdapAllRequiredDoses = NULL, TdapMissingDoses = NULL, TdapExemptCO = NULL, TdapExemptME = NULL, MeningococcalAllRequiredDoses = NULL, MeningococcalMissingDoses = NULL, MeningococcalExemptCO = NULL, MeningococcalExemptME = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyImmunizationStatusSummaryMN <- function(ImmunizationStatusSummaryMNID, DTPAllRequiredDoses = NULL, DTPExemptCO = NULL, DTPExemptME = NULL, DTPMissingDoses = NULL, EnrollmentCount = NULL, EntityID = NULL, ExemptAllVaccinesCO = NULL, ExemptAllVaccinesME = NULL, HepatitisBAllRequiredDoses = NULL, HepatitisBExemptCO = NULL, HepatitisBExemptME = NULL, HepatitisBMissingDoses = NULL, MeningococcalAllRequiredDoses = NULL, MeningococcalExemptCO = NULL, MeningococcalExemptME = NULL, MeningococcalMissingDoses = NULL, MMRAllRequiredDoses = NULL, MMRExemptCO = NULL, MMRExemptME = NULL, MMRMissingDoses = NULL, PolioAllRequiredDoses = NULL, PolioExemptCO = NULL, PolioExemptME = NULL, PolioMissingDoses = NULL, StateSTARGradeLevelMNID = NULL, TdapAllRequiredDoses = NULL, TdapExemptCO = NULL, TdapExemptME = NULL, TdapMissingDoses = NULL, VaricellaAllRequiredDoses = NULL, VaricellaExemptCO = NULL, VaricellaExemptME = NULL, VaricellaHistoryOfDisease = NULL, VaricellaMissingDoses = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18714,7 +18714,7 @@
 	#' @return A list of MCCCAssessmentToolV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCAssessmentToolV1Exceptions <- function(searchConditionsList = NULL, MCCCAssessmentToolV1ExceptionID = F, MCCCAssessmentToolV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCAssessmentToolV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCAssessmentToolV1ExceptionID = F, MCCCAssessmentToolV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18739,7 +18739,7 @@
 	#' @return A dataframe or of MCCCAssessmentToolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCAssessmentToolV1Exception <- function(MCCCAssessmentToolV1ExceptionID, MCCCAssessmentToolV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCAssessmentToolV1Exception <- function(MCCCAssessmentToolV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCAssessmentToolV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCAssessmentToolV1ExceptionID")
 
@@ -18779,7 +18779,7 @@
 	#' @return A newly created MCCCAssessmentToolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCAssessmentToolV1Exception <- function(MCCCAssessmentToolV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCAssessmentToolV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCAssessmentToolV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18800,7 +18800,7 @@
 	#' @return The modified MCCCAssessmentToolV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCAssessmentToolV1Exception <- function(MCCCAssessmentToolV1ExceptionID, MCCCAssessmentToolV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCAssessmentToolV1Exception <- function(MCCCAssessmentToolV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCAssessmentToolV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18828,7 +18828,7 @@
 	#' @return A list of MCCCAssessmentToolV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCAssessmentToolV1s <- function(searchConditionsList = NULL, MCCCAssessmentToolV1ID = F, AssessmentToolMNID = F, StateAssessmentToolMNID = F, AssessmentToolCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCAssessmentToolV1s <- function(searchConditionsList = NULL, AssessmentToolCode = F, AssessmentToolMNID = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCAssessmentToolV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18853,7 +18853,7 @@
 	#' @return A dataframe or of MCCCAssessmentToolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCAssessmentToolV1 <- function(MCCCAssessmentToolV1ID, AssessmentToolMNID = F, StateAssessmentToolMNID = F, AssessmentToolCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCAssessmentToolV1 <- function(MCCCAssessmentToolV1ID, AssessmentToolCode = F, AssessmentToolMNID = F, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCAssessmentToolV1ID")
 
@@ -18893,7 +18893,7 @@
 	#' @return A newly created MCCCAssessmentToolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCAssessmentToolV1 <- function(AssessmentToolMNID = NULL, StateAssessmentToolMNID = NULL, AssessmentToolCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCAssessmentToolV1 <- function(AssessmentToolCode = NULL, AssessmentToolMNID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18914,7 +18914,7 @@
 	#' @return The modified MCCCAssessmentToolV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCAssessmentToolV1 <- function(MCCCAssessmentToolV1ID, AssessmentToolMNID = NULL, StateAssessmentToolMNID = NULL, AssessmentToolCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCAssessmentToolV1 <- function(MCCCAssessmentToolV1ID, AssessmentToolCode = NULL, AssessmentToolMNID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18942,7 +18942,7 @@
 	#' @return A list of MCCCEarlyEducationInstructionalApproachV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCEarlyEducationInstructionalApproachV1Exceptions <- function(searchConditionsList = NULL, MCCCEarlyEducationInstructionalApproachV1ExceptionID = F, MCCCEarlyEducationInstructionalApproachV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCEarlyEducationInstructionalApproachV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCEarlyEducationInstructionalApproachV1ExceptionID = F, MCCCEarlyEducationInstructionalApproachV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -18967,7 +18967,7 @@
 	#' @return A dataframe or of MCCCEarlyEducationInstructionalApproachV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCEarlyEducationInstructionalApproachV1Exception <- function(MCCCEarlyEducationInstructionalApproachV1ExceptionID, MCCCEarlyEducationInstructionalApproachV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCEarlyEducationInstructionalApproachV1Exception <- function(MCCCEarlyEducationInstructionalApproachV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCEarlyEducationInstructionalApproachV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCEarlyEducationInstructionalApproachV1ExceptionID")
 
@@ -19007,7 +19007,7 @@
 	#' @return A newly created MCCCEarlyEducationInstructionalApproachV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCEarlyEducationInstructionalApproachV1Exception <- function(MCCCEarlyEducationInstructionalApproachV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCEarlyEducationInstructionalApproachV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCEarlyEducationInstructionalApproachV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19028,7 +19028,7 @@
 	#' @return The modified MCCCEarlyEducationInstructionalApproachV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCEarlyEducationInstructionalApproachV1Exception <- function(MCCCEarlyEducationInstructionalApproachV1ExceptionID, MCCCEarlyEducationInstructionalApproachV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCEarlyEducationInstructionalApproachV1Exception <- function(MCCCEarlyEducationInstructionalApproachV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCEarlyEducationInstructionalApproachV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19056,7 +19056,7 @@
 	#' @return A list of MCCCEarlyEducationInstructionalApproachV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCEarlyEducationInstructionalApproachV1s <- function(searchConditionsList = NULL, MCCCEarlyEducationInstructionalApproachV1ID = F, EarlyEducationInstructionalApproachMNID = F, StateEarlyEducationInstructionalApproachMNID = F, EarlyEducationInstructionalApproachCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCEarlyEducationInstructionalApproachV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalApproachCode = F, EarlyEducationInstructionalApproachMNID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCEarlyEducationInstructionalApproachV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19081,7 +19081,7 @@
 	#' @return A dataframe or of MCCCEarlyEducationInstructionalApproachV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCEarlyEducationInstructionalApproachV1 <- function(MCCCEarlyEducationInstructionalApproachV1ID, EarlyEducationInstructionalApproachMNID = F, StateEarlyEducationInstructionalApproachMNID = F, EarlyEducationInstructionalApproachCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCEarlyEducationInstructionalApproachV1 <- function(MCCCEarlyEducationInstructionalApproachV1ID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalApproachCode = F, EarlyEducationInstructionalApproachMNID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCEarlyEducationInstructionalApproachV1ID")
 
@@ -19121,7 +19121,7 @@
 	#' @return A newly created MCCCEarlyEducationInstructionalApproachV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCEarlyEducationInstructionalApproachV1 <- function(EarlyEducationInstructionalApproachMNID = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, EarlyEducationInstructionalApproachCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCEarlyEducationInstructionalApproachV1 <- function(CourseID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalApproachCode = NULL, EarlyEducationInstructionalApproachMNID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19142,7 +19142,7 @@
 	#' @return The modified MCCCEarlyEducationInstructionalApproachV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCEarlyEducationInstructionalApproachV1 <- function(MCCCEarlyEducationInstructionalApproachV1ID, EarlyEducationInstructionalApproachMNID = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, EarlyEducationInstructionalApproachCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCEarlyEducationInstructionalApproachV1 <- function(MCCCEarlyEducationInstructionalApproachV1ID, CourseID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalApproachCode = NULL, EarlyEducationInstructionalApproachMNID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19170,7 +19170,7 @@
 	#' @return A list of StateSchoolMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateSchoolMNS <- function(searchConditionsList = NULL, StateSchoolMNID = F, Code = F, Description = F, SchoolClassificationCode = F, CodeDescription = F, SchoolNumber = F, DistrictCode = F, DistrictType = F, Number = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateSchoolMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictCode = F, DistrictType = F, IsInvalid = F, ModifiedTime = F, Number = F, SchoolClassificationCode = F, SchoolNumber = F, SkywardHash = F, SkywardID = F, StateSchoolMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19195,7 +19195,7 @@
 	#' @return A dataframe or of StateSchoolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateSchoolMN <- function(StateSchoolMNID, Code = F, Description = F, SchoolClassificationCode = F, CodeDescription = F, SchoolNumber = F, DistrictCode = F, DistrictType = F, Number = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateSchoolMN <- function(StateSchoolMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictCode = F, DistrictType = F, IsInvalid = F, ModifiedTime = F, Number = F, SchoolClassificationCode = F, SchoolNumber = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateSchoolMNID")
 
@@ -19235,7 +19235,7 @@
 	#' @return A newly created StateSchoolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateSchoolMN <- function(Code = NULL, Description = NULL, SchoolClassificationCode = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateSchoolMN <- function(Code = NULL, Description = NULL, IsInvalid = NULL, SchoolClassificationCode = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19256,7 +19256,7 @@
 	#' @return The modified StateSchoolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateSchoolMN <- function(StateSchoolMNID, Code = NULL, Description = NULL, SchoolClassificationCode = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateSchoolMN <- function(StateSchoolMNID, Code = NULL, Description = NULL, IsInvalid = NULL, SchoolClassificationCode = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19284,7 +19284,7 @@
 	#' @return A list of StateSchoolClassificationMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateSchoolClassificationMNS <- function(searchConditionsList = NULL, StateSchoolClassificationMNID = F, Code = F, Description = F, Classification = F, CodeDescription = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateSchoolClassificationMNS <- function(searchConditionsList = NULL, Classification = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateSchoolClassificationMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19309,7 +19309,7 @@
 	#' @return A dataframe or of StateSchoolClassificationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateSchoolClassificationMN <- function(StateSchoolClassificationMNID, Code = F, Description = F, Classification = F, CodeDescription = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateSchoolClassificationMN <- function(StateSchoolClassificationMNID, Classification = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateSchoolClassificationMNID")
 
@@ -19349,7 +19349,7 @@
 	#' @return A newly created StateSchoolClassificationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateSchoolClassificationMN <- function(Code = NULL, Description = NULL, Classification = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateSchoolClassificationMN <- function(Classification = NULL, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19370,7 +19370,7 @@
 	#' @return The modified StateSchoolClassificationMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateSchoolClassificationMN <- function(StateSchoolClassificationMNID, Code = NULL, Description = NULL, Classification = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateSchoolClassificationMN <- function(StateSchoolClassificationMNID, Classification = NULL, Code = NULL, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19398,7 +19398,7 @@
 	#' @return A list of ECFEProgramRegistrationStateECFEFundingSourceMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFEProgramRegistrationStateECFEFundingSourceMNS <- function(searchConditionsList = NULL, ECFEProgramRegistrationStateECFEFundingSourceMNID = F, ECFEProgramRegistrationMNID = F, StateECFEFundingSourceMNID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFEProgramRegistrationStateECFEFundingSourceMNS <- function(searchConditionsList = NULL, CreatedTime = F, ECFEProgramRegistrationMNID = F, ECFEProgramRegistrationStateECFEFundingSourceMNID = F, ModifiedTime = F, StateECFEFundingSourceMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19423,7 +19423,7 @@
 	#' @return A dataframe or of ECFEProgramRegistrationStateECFEFundingSourceMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFEProgramRegistrationStateECFEFundingSourceMN <- function(ECFEProgramRegistrationStateECFEFundingSourceMNID, ECFEProgramRegistrationMNID = F, StateECFEFundingSourceMNID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFEProgramRegistrationStateECFEFundingSourceMN <- function(ECFEProgramRegistrationStateECFEFundingSourceMNID, CreatedTime = F, ECFEProgramRegistrationMNID = F, ModifiedTime = F, StateECFEFundingSourceMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFEProgramRegistrationStateECFEFundingSourceMNID")
 
@@ -19512,7 +19512,7 @@
 	#' @return A list of ECFEProgramRegistrationStateECFEProgramNameMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFEProgramRegistrationStateECFEProgramNameMNS <- function(searchConditionsList = NULL, ECFEProgramRegistrationStateECFEProgramNameMNID = F, ECFEProgramRegistrationMNID = F, StateECFEProgramNameMNID = F, ProgramReferred = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFEProgramRegistrationStateECFEProgramNameMNS <- function(searchConditionsList = NULL, CreatedTime = F, ECFEProgramRegistrationMNID = F, ECFEProgramRegistrationStateECFEProgramNameMNID = F, ModifiedTime = F, ProgramReferred = F, StateECFEProgramNameMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19537,7 +19537,7 @@
 	#' @return A dataframe or of ECFEProgramRegistrationStateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationStateECFEProgramNameMNID, ECFEProgramRegistrationMNID = F, StateECFEProgramNameMNID = F, ProgramReferred = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationStateECFEProgramNameMNID, CreatedTime = F, ECFEProgramRegistrationMNID = F, ModifiedTime = F, ProgramReferred = F, StateECFEProgramNameMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFEProgramRegistrationStateECFEProgramNameMNID")
 
@@ -19577,7 +19577,7 @@
 	#' @return A newly created ECFEProgramRegistrationStateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationMNID = NULL, StateECFEProgramNameMNID = NULL, ProgramReferred = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationMNID = NULL, ProgramReferred = NULL, StateECFEProgramNameMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19598,7 +19598,7 @@
 	#' @return The modified ECFEProgramRegistrationStateECFEProgramNameMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationStateECFEProgramNameMNID, ECFEProgramRegistrationMNID = NULL, StateECFEProgramNameMNID = NULL, ProgramReferred = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFEProgramRegistrationStateECFEProgramNameMN <- function(ECFEProgramRegistrationStateECFEProgramNameMNID, ECFEProgramRegistrationMNID = NULL, ProgramReferred = NULL, StateECFEProgramNameMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19626,7 +19626,7 @@
 	#' @return A list of MCCCSiteBasedInitiativeExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCSiteBasedInitiativeExceptions <- function(searchConditionsList = NULL, MCCCSiteBasedInitiativeExceptionID = F, MCCCSiteBasedInitiativeV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCSiteBasedInitiativeExceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCSiteBasedInitiativeExceptionID = F, MCCCSiteBasedInitiativeV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19651,7 +19651,7 @@
 	#' @return A dataframe or of MCCCSiteBasedInitiativeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCSiteBasedInitiativeException <- function(MCCCSiteBasedInitiativeExceptionID, MCCCSiteBasedInitiativeV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCSiteBasedInitiativeException <- function(MCCCSiteBasedInitiativeExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCSiteBasedInitiativeV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCSiteBasedInitiativeExceptionID")
 
@@ -19691,7 +19691,7 @@
 	#' @return A newly created MCCCSiteBasedInitiativeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCSiteBasedInitiativeException <- function(MCCCSiteBasedInitiativeV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCSiteBasedInitiativeException <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCSiteBasedInitiativeV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19712,7 +19712,7 @@
 	#' @return The modified MCCCSiteBasedInitiativeException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCSiteBasedInitiativeException <- function(MCCCSiteBasedInitiativeExceptionID, MCCCSiteBasedInitiativeV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCSiteBasedInitiativeException <- function(MCCCSiteBasedInitiativeExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCSiteBasedInitiativeV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19740,7 +19740,7 @@
 	#' @return A list of MCCCEarlyEducationProgramV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCEarlyEducationProgramV1Exceptions <- function(searchConditionsList = NULL, MCCCEarlyEducationProgramV1ExceptionID = F, MCCCEarlyEducationProgramV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCEarlyEducationProgramV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCEarlyEducationProgramV1ExceptionID = F, MCCCEarlyEducationProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19765,7 +19765,7 @@
 	#' @return A dataframe or of MCCCEarlyEducationProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCEarlyEducationProgramV1Exception <- function(MCCCEarlyEducationProgramV1ExceptionID, MCCCEarlyEducationProgramV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCEarlyEducationProgramV1Exception <- function(MCCCEarlyEducationProgramV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCEarlyEducationProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCEarlyEducationProgramV1ExceptionID")
 
@@ -19805,7 +19805,7 @@
 	#' @return A newly created MCCCEarlyEducationProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCEarlyEducationProgramV1Exception <- function(MCCCEarlyEducationProgramV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCEarlyEducationProgramV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCEarlyEducationProgramV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19826,7 +19826,7 @@
 	#' @return The modified MCCCEarlyEducationProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCEarlyEducationProgramV1Exception <- function(MCCCEarlyEducationProgramV1ExceptionID, MCCCEarlyEducationProgramV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCEarlyEducationProgramV1Exception <- function(MCCCEarlyEducationProgramV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCEarlyEducationProgramV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19854,7 +19854,7 @@
 	#' @return A list of MCCCSiteBasedInitiativeV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCSiteBasedInitiativeV1s <- function(searchConditionsList = NULL, MCCCSiteBasedInitiativeV1ID = F, SiteBasedInitiativeMNID = F, StateSiteBasedInitiativeMNID = F, SiteBasedInitiativeCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCSiteBasedInitiativeV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCSiteBasedInitiativeV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SiteBasedInitiativeCode = F, SiteBasedInitiativeMNID = F, StateImplementationStatusMNID = F, StateSiteBasedInitiativeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19879,7 +19879,7 @@
 	#' @return A dataframe or of MCCCSiteBasedInitiativeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCSiteBasedInitiativeV1 <- function(MCCCSiteBasedInitiativeV1ID, SiteBasedInitiativeMNID = F, StateSiteBasedInitiativeMNID = F, SiteBasedInitiativeCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCSiteBasedInitiativeV1 <- function(MCCCSiteBasedInitiativeV1ID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SiteBasedInitiativeCode = F, SiteBasedInitiativeMNID = F, StateImplementationStatusMNID = F, StateSiteBasedInitiativeMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCSiteBasedInitiativeV1ID")
 
@@ -19919,7 +19919,7 @@
 	#' @return A newly created MCCCSiteBasedInitiativeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCSiteBasedInitiativeV1 <- function(SiteBasedInitiativeMNID = NULL, StateSiteBasedInitiativeMNID = NULL, SiteBasedInitiativeCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCSiteBasedInitiativeV1 <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SiteBasedInitiativeCode = NULL, SiteBasedInitiativeMNID = NULL, StateImplementationStatusMNID = NULL, StateSiteBasedInitiativeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19940,7 +19940,7 @@
 	#' @return The modified MCCCSiteBasedInitiativeV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCSiteBasedInitiativeV1 <- function(MCCCSiteBasedInitiativeV1ID, SiteBasedInitiativeMNID = NULL, StateSiteBasedInitiativeMNID = NULL, SiteBasedInitiativeCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCSiteBasedInitiativeV1 <- function(MCCCSiteBasedInitiativeV1ID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SiteBasedInitiativeCode = NULL, SiteBasedInitiativeMNID = NULL, StateImplementationStatusMNID = NULL, StateSiteBasedInitiativeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19968,7 +19968,7 @@
 	#' @return A list of MCCCEarlyEducationProgramV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCEarlyEducationProgramV1s <- function(searchConditionsList = NULL, MCCCEarlyEducationProgramV1ID = F, EarlyEducationProgramMNID = F, StateEarlyEducationProgramMNID = F, EarlyEducationProgramCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCEarlyEducationProgramV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationProgramCode = F, EarlyEducationProgramMNID = F, EntityID = F, HasErrors = F, KeyHash = F, LocalCourseCode = F, MCCCEarlyEducationProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateEarlyEducationProgramMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -19993,7 +19993,7 @@
 	#' @return A dataframe or of MCCCEarlyEducationProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCEarlyEducationProgramV1 <- function(MCCCEarlyEducationProgramV1ID, EarlyEducationProgramMNID = F, StateEarlyEducationProgramMNID = F, EarlyEducationProgramCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCEarlyEducationProgramV1 <- function(MCCCEarlyEducationProgramV1ID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EarlyEducationProgramCode = F, EarlyEducationProgramMNID = F, EntityID = F, HasErrors = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateEarlyEducationProgramMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCEarlyEducationProgramV1ID")
 
@@ -20033,7 +20033,7 @@
 	#' @return A newly created MCCCEarlyEducationProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCEarlyEducationProgramV1 <- function(EarlyEducationProgramMNID = NULL, StateEarlyEducationProgramMNID = NULL, EarlyEducationProgramCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCEarlyEducationProgramV1 <- function(CourseID = NULL, CurriculumYearID = NULL, EarlyEducationProgramCode = NULL, EarlyEducationProgramMNID = NULL, EntityID = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateEarlyEducationProgramMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20054,7 +20054,7 @@
 	#' @return The modified MCCCEarlyEducationProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCEarlyEducationProgramV1 <- function(MCCCEarlyEducationProgramV1ID, EarlyEducationProgramMNID = NULL, StateEarlyEducationProgramMNID = NULL, EarlyEducationProgramCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCEarlyEducationProgramV1 <- function(MCCCEarlyEducationProgramV1ID, CourseID = NULL, CurriculumYearID = NULL, EarlyEducationProgramCode = NULL, EarlyEducationProgramMNID = NULL, EntityID = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateEarlyEducationProgramMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20082,7 +20082,7 @@
 	#' @return A list of MCCCCurriculumProgramV1Exceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCurriculumProgramV1Exceptions <- function(searchConditionsList = NULL, MCCCCurriculumProgramV1ExceptionID = F, MCCCCurriculumProgramV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCurriculumProgramV1Exceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCCurriculumProgramV1ExceptionID = F, MCCCCurriculumProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20107,7 +20107,7 @@
 	#' @return A dataframe or of MCCCCurriculumProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCurriculumProgramV1Exception <- function(MCCCCurriculumProgramV1ExceptionID, MCCCCurriculumProgramV1ID = F, SchoolID = F, CourseID = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCurriculumProgramV1Exception <- function(MCCCCurriculumProgramV1ExceptionID, CourseID = F, CreatedTime = F, CurriculumYearID = F, EntityID = F, MCCCCurriculumProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCurriculumProgramV1ExceptionID")
 
@@ -20147,7 +20147,7 @@
 	#' @return A newly created MCCCCurriculumProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCurriculumProgramV1Exception <- function(MCCCCurriculumProgramV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCurriculumProgramV1Exception <- function(CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCCurriculumProgramV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20168,7 +20168,7 @@
 	#' @return The modified MCCCCurriculumProgramV1Exception
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCurriculumProgramV1Exception <- function(MCCCCurriculumProgramV1ExceptionID, MCCCCurriculumProgramV1ID = NULL, SchoolID = NULL, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCurriculumProgramV1Exception <- function(MCCCCurriculumProgramV1ExceptionID, CourseID = NULL, CurriculumYearID = NULL, EntityID = NULL, MCCCCurriculumProgramV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20196,7 +20196,7 @@
 	#' @return A list of MCCCCurriculumProgramV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCCurriculumProgramV1s <- function(searchConditionsList = NULL, MCCCCurriculumProgramV1ID = F, CurriculumProgramMNID = F, StateCurriculumProgramMNID = F, CurriculumProgramCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCCurriculumProgramV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, CurriculumProgramCode = F, CurriculumProgramMNID = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCCurriculumProgramV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20221,7 +20221,7 @@
 	#' @return A dataframe or of MCCCCurriculumProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCCurriculumProgramV1 <- function(MCCCCurriculumProgramV1ID, CurriculumProgramMNID = F, StateCurriculumProgramMNID = F, CurriculumProgramCode = F, StateImplementationStatusMNID = F, ImplementationStatusCode = F, CurriculumYearID = F, EntityID = F, SchoolYearID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, SchoolID = F, SchoolNumber = F, CourseID = F, LocalCourseCode = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCCurriculumProgramV1 <- function(MCCCCurriculumProgramV1ID, CourseID = F, CreatedTime = F, CurriculumProgramCode = F, CurriculumProgramMNID = F, CurriculumYearID = F, EntityID = F, HasErrors = F, ImplementationStatusCode = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCCurriculumProgramV1ID")
 
@@ -20261,7 +20261,7 @@
 	#' @return A newly created MCCCCurriculumProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCCurriculumProgramV1 <- function(CurriculumProgramMNID = NULL, StateCurriculumProgramMNID = NULL, CurriculumProgramCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCCurriculumProgramV1 <- function(CourseID = NULL, CurriculumProgramCode = NULL, CurriculumProgramMNID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20282,7 +20282,7 @@
 	#' @return The modified MCCCCurriculumProgramV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCCurriculumProgramV1 <- function(MCCCCurriculumProgramV1ID, CurriculumProgramMNID = NULL, StateCurriculumProgramMNID = NULL, CurriculumProgramCode = NULL, StateImplementationStatusMNID = NULL, ImplementationStatusCode = NULL, CurriculumYearID = NULL, EntityID = NULL, SchoolYearID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, CourseID = NULL, LocalCourseCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCCurriculumProgramV1 <- function(MCCCCurriculumProgramV1ID, CourseID = NULL, CurriculumProgramCode = NULL, CurriculumProgramMNID = NULL, CurriculumYearID = NULL, EntityID = NULL, ImplementationStatusCode = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20310,7 +20310,7 @@
 	#' @return A list of StateEthnicityRaceSubcategoryMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStateEthnicityRaceSubcategoryMNS <- function(searchConditionsList = NULL, StateEthnicityRaceSubcategoryMNID = F, Code = F, Description = F, CodeDescription = F, EthnicityRaceType = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStateEthnicityRaceSubcategoryMNS <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EthnicityRaceType = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, StateEthnicityRaceSubcategoryMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20335,7 +20335,7 @@
 	#' @return A dataframe or of StateEthnicityRaceSubcategoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStateEthnicityRaceSubcategoryMN <- function(StateEthnicityRaceSubcategoryMNID, Code = F, Description = F, CodeDescription = F, EthnicityRaceType = F, SkywardID = F, SkywardHash = F, ValidYearLow = F, ValidYearHigh = F, IsInvalid = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStateEthnicityRaceSubcategoryMN <- function(StateEthnicityRaceSubcategoryMNID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EthnicityRaceType = F, IsInvalid = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, ValidYearHigh = F, ValidYearLow = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StateEthnicityRaceSubcategoryMNID")
 
@@ -20375,7 +20375,7 @@
 	#' @return A newly created StateEthnicityRaceSubcategoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStateEthnicityRaceSubcategoryMN <- function(Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStateEthnicityRaceSubcategoryMN <- function(Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20396,7 +20396,7 @@
 	#' @return The modified StateEthnicityRaceSubcategoryMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStateEthnicityRaceSubcategoryMN <- function(StateEthnicityRaceSubcategoryMNID, Description = NULL, ValidYearLow = NULL, ValidYearHigh = NULL, IsInvalid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStateEthnicityRaceSubcategoryMN <- function(StateEthnicityRaceSubcategoryMNID, Description = NULL, IsInvalid = NULL, ValidYearHigh = NULL, ValidYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20424,7 +20424,7 @@
 	#' @return A list of MCCCAdditionalAssessmentStaffExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCAdditionalAssessmentStaffExceptions <- function(searchConditionsList = NULL, MCCCAdditionalAssessmentStaffExceptionID = F, MCCCAdditionalAssessmentStaffV1ID = F, SchoolID = F, CourseID = F, EntityID = F, SchoolYearID = F, StaffID = F, SectionID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCAdditionalAssessmentStaffExceptions <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, MCCCAdditionalAssessmentStaffExceptionID = F, MCCCAdditionalAssessmentStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, SectionID = F, StaffID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20449,7 +20449,7 @@
 	#' @return A dataframe or of MCCCAdditionalAssessmentStaffException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCAdditionalAssessmentStaffException <- function(MCCCAdditionalAssessmentStaffExceptionID, MCCCAdditionalAssessmentStaffV1ID = F, SchoolID = F, CourseID = F, EntityID = F, SchoolYearID = F, StaffID = F, SectionID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCAdditionalAssessmentStaffException <- function(MCCCAdditionalAssessmentStaffExceptionID, CourseID = F, CreatedTime = F, EntityID = F, MCCCAdditionalAssessmentStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolID = F, SchoolYearID = F, SectionID = F, StaffID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCAdditionalAssessmentStaffExceptionID")
 
@@ -20489,7 +20489,7 @@
 	#' @return A newly created MCCCAdditionalAssessmentStaffException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCAdditionalAssessmentStaffException <- function(MCCCAdditionalAssessmentStaffV1ID = NULL, SchoolID = NULL, CourseID = NULL, EntityID = NULL, SchoolYearID = NULL, StaffID = NULL, SectionID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCAdditionalAssessmentStaffException <- function(CourseID = NULL, EntityID = NULL, MCCCAdditionalAssessmentStaffV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20510,7 +20510,7 @@
 	#' @return The modified MCCCAdditionalAssessmentStaffException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCAdditionalAssessmentStaffException <- function(MCCCAdditionalAssessmentStaffExceptionID, MCCCAdditionalAssessmentStaffV1ID = NULL, SchoolID = NULL, CourseID = NULL, EntityID = NULL, SchoolYearID = NULL, StaffID = NULL, SectionID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCAdditionalAssessmentStaffException <- function(MCCCAdditionalAssessmentStaffExceptionID, CourseID = NULL, EntityID = NULL, MCCCAdditionalAssessmentStaffV1ID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolID = NULL, SchoolYearID = NULL, SectionID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20538,7 +20538,7 @@
 	#' @return A list of MCCCAdditionalAssessmentStaffV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCCCAdditionalAssessmentStaffV1s <- function(searchConditionsList = NULL, MCCCAdditionalAssessmentStaffV1ID = F, LocalCourseCode = F, CourseID = F, SectionID = F, SectionCode = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, FileFolderNumber = F, EntityID = F, SchoolYearID = F, SchoolID = F, SchoolNumber = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCCCAdditionalAssessmentStaffV1s <- function(searchConditionsList = NULL, CourseID = F, CreatedTime = F, EntityID = F, FileFolderNumber = F, HasErrors = F, KeyHash = F, LocalCourseCode = F, MCCCAdditionalAssessmentStaffV1ID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20563,7 +20563,7 @@
 	#' @return A dataframe or of MCCCAdditionalAssessmentStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCCCAdditionalAssessmentStaffV1 <- function(MCCCAdditionalAssessmentStaffV1ID, LocalCourseCode = F, CourseID = F, SectionID = F, SectionCode = F, StaffID = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, FileFolderNumber = F, EntityID = F, SchoolYearID = F, SchoolID = F, SchoolNumber = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCCCAdditionalAssessmentStaffV1 <- function(MCCCAdditionalAssessmentStaffV1ID, CourseID = F, CreatedTime = F, EntityID = F, FileFolderNumber = F, HasErrors = F, KeyHash = F, LocalCourseCode = F, MCCCSubmissionID = F, MCCCSubmissionRunHistoryID = F, ModifiedTime = F, SchoolID = F, SchoolNumber = F, SchoolYearID = F, SectionCode = F, SectionID = F, StaffID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCCCAdditionalAssessmentStaffV1ID")
 
@@ -20603,7 +20603,7 @@
 	#' @return A newly created MCCCAdditionalAssessmentStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCCCAdditionalAssessmentStaffV1 <- function(LocalCourseCode = NULL, CourseID = NULL, SectionID = NULL, SectionCode = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, FileFolderNumber = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, SchoolNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCCCAdditionalAssessmentStaffV1 <- function(CourseID = NULL, EntityID = NULL, FileFolderNumber = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20624,7 +20624,7 @@
 	#' @return The modified MCCCAdditionalAssessmentStaffV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCCCAdditionalAssessmentStaffV1 <- function(MCCCAdditionalAssessmentStaffV1ID, LocalCourseCode = NULL, CourseID = NULL, SectionID = NULL, SectionCode = NULL, StaffID = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, FileFolderNumber = NULL, EntityID = NULL, SchoolYearID = NULL, SchoolID = NULL, SchoolNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCCCAdditionalAssessmentStaffV1 <- function(MCCCAdditionalAssessmentStaffV1ID, CourseID = NULL, EntityID = NULL, FileFolderNumber = NULL, LocalCourseCode = NULL, MCCCSubmissionID = NULL, MCCCSubmissionRunHistoryID = NULL, SchoolID = NULL, SchoolNumber = NULL, SchoolYearID = NULL, SectionCode = NULL, SectionID = NULL, StaffID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20652,7 +20652,7 @@
 	#' @return A list of STAREmploymentPeriods
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSTAREmploymentPeriods <- function(searchConditionsList = NULL, STAREmploymentPeriodID = F, DistrictID = F, EmployeeID = F, StartDate = F, EndDate = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNIDTermination = F, FileFolderNumber = F, StateSTARHighestEducationLevelMNIDOverride = F, STAREmploymentType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsActive = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSTAREmploymentPeriods <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EmployeeID = F, EndDate = F, FileFolderNumber = F, IsActive = F, ModifiedTime = F, STAREmploymentPeriodID = F, STAREmploymentType = F, StartDate = F, StateSTARHighestEducationLevelMNIDOverride = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNIDTermination = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20677,7 +20677,7 @@
 	#' @return A dataframe or of STAREmploymentPeriod
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSTAREmploymentPeriod <- function(STAREmploymentPeriodID, DistrictID = F, EmployeeID = F, StartDate = F, EndDate = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNID = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNIDTermination = F, FileFolderNumber = F, StateSTARHighestEducationLevelMNIDOverride = F, STAREmploymentType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsActive = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSTAREmploymentPeriod <- function(STAREmploymentPeriodID, CreatedTime = F, DistrictID = F, EmployeeID = F, EndDate = F, FileFolderNumber = F, IsActive = F, ModifiedTime = F, STAREmploymentType = F, StartDate = F, StateSTARHighestEducationLevelMNIDOverride = F, StateSTARInactiveTransferTerminationMNID = F, StateSTARInactiveTransferTerminationMNIDTermination = F, StateSTARNewLicensedStaffMNID = F, StateSTARNewNonLicensedStaffMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "STAREmploymentPeriodID")
 
@@ -20717,7 +20717,7 @@
 	#' @return A newly created STAREmploymentPeriod
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSTAREmploymentPeriod <- function(DistrictID = NULL, EmployeeID = NULL, StartDate = NULL, EndDate = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNIDTermination = NULL, FileFolderNumber = NULL, StateSTARHighestEducationLevelMNIDOverride = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSTAREmploymentPeriod <- function(DistrictID = NULL, EmployeeID = NULL, EndDate = NULL, FileFolderNumber = NULL, STAREmploymentType = NULL, StartDate = NULL, StateSTARHighestEducationLevelMNIDOverride = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNIDTermination = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20738,7 +20738,7 @@
 	#' @return The modified STAREmploymentPeriod
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySTAREmploymentPeriod <- function(STAREmploymentPeriodID, DistrictID = NULL, EmployeeID = NULL, StartDate = NULL, EndDate = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNID = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNIDTermination = NULL, FileFolderNumber = NULL, StateSTARHighestEducationLevelMNIDOverride = NULL, STAREmploymentType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySTAREmploymentPeriod <- function(STAREmploymentPeriodID, DistrictID = NULL, EmployeeID = NULL, EndDate = NULL, FileFolderNumber = NULL, STAREmploymentType = NULL, StartDate = NULL, StateSTARHighestEducationLevelMNIDOverride = NULL, StateSTARInactiveTransferTerminationMNID = NULL, StateSTARInactiveTransferTerminationMNIDTermination = NULL, StateSTARNewLicensedStaffMNID = NULL, StateSTARNewNonLicensedStaffMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20766,7 +20766,7 @@
 	#' @return A list of ECFERegistrationV1RegisteringPersonV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFERegistrationV1RegisteringPersonV1s <- function(searchConditionsList = NULL, ECFERegistrationV1RegisteringPersonV1ID = F, ECFERegistrationV1ID = F, ECFERegisteringPersonV1ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFERegistrationV1RegisteringPersonV1s <- function(searchConditionsList = NULL, CreatedTime = F, ECFERegisteringPersonV1ID = F, ECFERegistrationV1ID = F, ECFERegistrationV1RegisteringPersonV1ID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20791,7 +20791,7 @@
 	#' @return A dataframe or of ECFERegistrationV1RegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFERegistrationV1RegisteringPersonV1 <- function(ECFERegistrationV1RegisteringPersonV1ID, ECFERegistrationV1ID = F, ECFERegisteringPersonV1ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFERegistrationV1RegisteringPersonV1 <- function(ECFERegistrationV1RegisteringPersonV1ID, CreatedTime = F, ECFERegisteringPersonV1ID = F, ECFERegistrationV1ID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFERegistrationV1RegisteringPersonV1ID")
 
@@ -20831,7 +20831,7 @@
 	#' @return A newly created ECFERegistrationV1RegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFERegistrationV1RegisteringPersonV1 <- function(ECFERegistrationV1ID = NULL, ECFERegisteringPersonV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFERegistrationV1RegisteringPersonV1 <- function(ECFERegisteringPersonV1ID = NULL, ECFERegistrationV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20852,7 +20852,7 @@
 	#' @return The modified ECFERegistrationV1RegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFERegistrationV1RegisteringPersonV1 <- function(ECFERegistrationV1RegisteringPersonV1ID, ECFERegistrationV1ID = NULL, ECFERegisteringPersonV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFERegistrationV1RegisteringPersonV1 <- function(ECFERegistrationV1RegisteringPersonV1ID, ECFERegisteringPersonV1ID = NULL, ECFERegistrationV1ID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20880,7 +20880,7 @@
 	#' @return A list of ECFERegisteringPersonExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFERegisteringPersonExceptions <- function(searchConditionsList = NULL, ECFERegisteringPersonExceptionID = F, ECFERegisteringPersonV1ID = F, NameID = F, LastName = F, FirstName = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntityID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFERegisteringPersonExceptions <- function(searchConditionsList = NULL, CreatedTime = F, ECFERegisteringPersonExceptionID = F, ECFERegisteringPersonV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FirstName = F, LastName = F, Message = F, MessageType = F, ModifiedTime = F, NameID = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20905,7 +20905,7 @@
 	#' @return A dataframe or of ECFERegisteringPersonException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFERegisteringPersonException <- function(ECFERegisteringPersonExceptionID, ECFERegisteringPersonV1ID = F, NameID = F, LastName = F, FirstName = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntityID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFERegisteringPersonException <- function(ECFERegisteringPersonExceptionID, CreatedTime = F, ECFERegisteringPersonV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FirstName = F, LastName = F, Message = F, MessageType = F, ModifiedTime = F, NameID = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFERegisteringPersonExceptionID")
 
@@ -20945,7 +20945,7 @@
 	#' @return A newly created ECFERegisteringPersonException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFERegisteringPersonException <- function(ECFERegisteringPersonV1ID = NULL, NameID = NULL, LastName = NULL, FirstName = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFERegisteringPersonException <- function(ECFERegisteringPersonV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FirstName = NULL, LastName = NULL, Message = NULL, MessageType = NULL, NameID = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20966,7 +20966,7 @@
 	#' @return The modified ECFERegisteringPersonException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFERegisteringPersonException <- function(ECFERegisteringPersonExceptionID, ECFERegisteringPersonV1ID = NULL, NameID = NULL, LastName = NULL, FirstName = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFERegisteringPersonException <- function(ECFERegisteringPersonExceptionID, ECFERegisteringPersonV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FirstName = NULL, LastName = NULL, Message = NULL, MessageType = NULL, NameID = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -20994,7 +20994,7 @@
 	#' @return A list of ECFERegistrationExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFERegistrationExceptions <- function(searchConditionsList = NULL, ECFERegistrationExceptionID = F, ECFERegistrationV1ID = F, StudentID = F, ECFEProgramRegistrationMNID = F, EntityID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFERegistrationExceptions <- function(searchConditionsList = NULL, CreatedTime = F, ECFEProgramRegistrationMNID = F, ECFERegistrationExceptionID = F, ECFERegistrationV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21019,7 +21019,7 @@
 	#' @return A dataframe or of ECFERegistrationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFERegistrationException <- function(ECFERegistrationExceptionID, ECFERegistrationV1ID = F, StudentID = F, ECFEProgramRegistrationMNID = F, EntityID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFERegistrationException <- function(ECFERegistrationExceptionID, CreatedTime = F, ECFEProgramRegistrationMNID = F, ECFERegistrationV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFERegistrationExceptionID")
 
@@ -21059,7 +21059,7 @@
 	#' @return A newly created ECFERegistrationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFERegistrationException <- function(ECFERegistrationV1ID = NULL, StudentID = NULL, ECFEProgramRegistrationMNID = NULL, EntityID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFERegistrationException <- function(ECFEProgramRegistrationMNID = NULL, ECFERegistrationV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21080,7 +21080,7 @@
 	#' @return The modified ECFERegistrationException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFERegistrationException <- function(ECFERegistrationExceptionID, ECFERegistrationV1ID = NULL, StudentID = NULL, ECFEProgramRegistrationMNID = NULL, EntityID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFERegistrationException <- function(ECFERegistrationExceptionID, ECFEProgramRegistrationMNID = NULL, ECFERegistrationV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21108,7 +21108,7 @@
 	#' @return A list of ECFEStudentExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFEStudentExceptions <- function(searchConditionsList = NULL, ECFEStudentExceptionID = F, ECFEStudentV1ID = F, NameID = F, StudentID = F, EntityID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFEStudentExceptions <- function(searchConditionsList = NULL, CreatedTime = F, ECFEStudentExceptionID = F, ECFEStudentV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, NameID = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21133,7 +21133,7 @@
 	#' @return A dataframe or of ECFEStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFEStudentException <- function(ECFEStudentExceptionID, ECFEStudentV1ID = F, NameID = F, StudentID = F, EntityID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, SchoolYearID = F, MessageType = F, RuleNumber = F, Message = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFEStudentException <- function(ECFEStudentExceptionID, CreatedTime = F, ECFEStudentV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, Message = F, MessageType = F, ModifiedTime = F, NameID = F, ProcessType = F, RuleNumber = F, SchoolYearID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFEStudentExceptionID")
 
@@ -21173,7 +21173,7 @@
 	#' @return A newly created ECFEStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFEStudentException <- function(ECFEStudentV1ID = NULL, NameID = NULL, StudentID = NULL, EntityID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFEStudentException <- function(ECFEStudentV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, NameID = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21194,7 +21194,7 @@
 	#' @return The modified ECFEStudentException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFEStudentException <- function(ECFEStudentExceptionID, ECFEStudentV1ID = NULL, NameID = NULL, StudentID = NULL, EntityID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, SchoolYearID = NULL, MessageType = NULL, RuleNumber = NULL, Message = NULL, ProcessType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFEStudentException <- function(ECFEStudentExceptionID, ECFEStudentV1ID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, Message = NULL, MessageType = NULL, NameID = NULL, ProcessType = NULL, RuleNumber = NULL, SchoolYearID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21222,7 +21222,7 @@
 	#' @return A list of ECFESubmissions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFESubmissions <- function(searchConditionsList = NULL, ECFESubmissionID = F, SchoolYearID = F, Description = F, OpenDate = F, CloseDate = F, SkywardID = F, SkywardHash = F, HasAnExtract = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFESubmissions <- function(searchConditionsList = NULL, CloseDate = F, CreatedTime = F, Description = F, ECFESubmissionID = F, HasAnExport = F, HasAnExtract = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21247,7 +21247,7 @@
 	#' @return A dataframe or of ECFESubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFESubmission <- function(ECFESubmissionID, SchoolYearID = F, Description = F, OpenDate = F, CloseDate = F, SkywardID = F, SkywardHash = F, HasAnExtract = F, HasAnExport = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFESubmission <- function(ECFESubmissionID, CloseDate = F, CreatedTime = F, Description = F, HasAnExport = F, HasAnExtract = F, ModifiedTime = F, OpenDate = F, SchoolYearID = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFESubmissionID")
 
@@ -21287,7 +21287,7 @@
 	#' @return A newly created ECFESubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFESubmission <- function(SchoolYearID = NULL, Description = NULL, OpenDate = NULL, CloseDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFESubmission <- function(CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21308,7 +21308,7 @@
 	#' @return The modified ECFESubmission
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFESubmission <- function(ECFESubmissionID, SchoolYearID = NULL, Description = NULL, OpenDate = NULL, CloseDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFESubmission <- function(ECFESubmissionID, CloseDate = NULL, Description = NULL, OpenDate = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21336,7 +21336,7 @@
 	#' @return A list of ECFESubmissionRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFESubmissionRunHistories <- function(searchConditionsList = NULL, ECFESubmissionRunHistoryID = F, DistrictID = F, ECFESubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFESubmissionRunHistories <- function(searchConditionsList = NULL, CanAccessMedia = F, CreatedTime = F, DistrictID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21361,7 +21361,7 @@
 	#' @return A dataframe or of ECFESubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFESubmissionRunHistory <- function(ECFESubmissionRunHistoryID, DistrictID = F, ECFESubmissionID = F, StartDateTime = F, EndDateTime = F, Type = F, MediaID = F, ScopeAccessAllowed = F, HasValidMedia = F, CanAccessMedia = F, IsExport = F, IsLocked = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFESubmissionRunHistory <- function(ECFESubmissionRunHistoryID, CanAccessMedia = F, CreatedTime = F, DistrictID = F, ECFESubmissionID = F, EndDateTime = F, HasValidMedia = F, IsExport = F, IsLocked = F, MediaID = F, ModifiedTime = F, RunData = F, RunParameters = F, ScopeAccessAllowed = F, StartDateTime = F, Status = F, Type = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFESubmissionRunHistoryID")
 
@@ -21401,7 +21401,7 @@
 	#' @return A newly created ECFESubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFESubmissionRunHistory <- function(DistrictID = NULL, ECFESubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFESubmissionRunHistory <- function(DistrictID = NULL, ECFESubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21422,7 +21422,7 @@
 	#' @return The modified ECFESubmissionRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFESubmissionRunHistory <- function(ECFESubmissionRunHistoryID, DistrictID = NULL, ECFESubmissionID = NULL, StartDateTime = NULL, EndDateTime = NULL, Type = NULL, MediaID = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFESubmissionRunHistory <- function(ECFESubmissionRunHistoryID, DistrictID = NULL, ECFESubmissionID = NULL, EndDateTime = NULL, MediaID = NULL, StartDateTime = NULL, Status = NULL, Type = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21450,7 +21450,7 @@
 	#' @return A list of ECFERegisteringPersonV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFERegisteringPersonV1s <- function(searchConditionsList = NULL, ECFERegisteringPersonV1ID = F, NameID = F, LastName = F, FirstName = F, FullName = F, DateOfBirth = F, StateECFERegisteringPersonMNID = F, RegisteringPersonType = F, StateECFEEducationBackgroundMNID = F, EducationBackground = F, StateECFEEmploymentStatusMNID = F, EmploymentStatus = F, HouseholdIncome = F, NoOfPeopleInHousehold = F, ReceivingInterpreterAsst = F, StateECFEClassroomParticipationMNID = F, ClassRoomVolunteerType = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntityID = F, ECFEProgramRegistrationMNID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFERegisteringPersonV1s <- function(searchConditionsList = NULL, ClassRoomVolunteerType = F, CreatedTime = F, DateOfBirth = F, ECFEProgramRegistrationMNID = F, ECFERegisteringPersonV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EducationBackground = F, EmploymentStatus = F, EntityID = F, FirstName = F, FullName = F, HasErrors = F, HouseholdIncome = F, KeyHash = F, LastName = F, ModifiedTime = F, NameID = F, NoOfPeopleInHousehold = F, ReceivingInterpreterAsst = F, RegisteringPersonType = F, SchoolYearID = F, StateECFEClassroomParticipationMNID = F, StateECFEEducationBackgroundMNID = F, StateECFEEmploymentStatusMNID = F, StateECFERegisteringPersonMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21475,7 +21475,7 @@
 	#' @return A dataframe or of ECFERegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFERegisteringPersonV1 <- function(ECFERegisteringPersonV1ID, NameID = F, LastName = F, FirstName = F, FullName = F, DateOfBirth = F, StateECFERegisteringPersonMNID = F, RegisteringPersonType = F, StateECFEEducationBackgroundMNID = F, EducationBackground = F, StateECFEEmploymentStatusMNID = F, EmploymentStatus = F, HouseholdIncome = F, NoOfPeopleInHousehold = F, ReceivingInterpreterAsst = F, StateECFEClassroomParticipationMNID = F, ClassRoomVolunteerType = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EntityID = F, ECFEProgramRegistrationMNID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFERegisteringPersonV1 <- function(ECFERegisteringPersonV1ID, ClassRoomVolunteerType = F, CreatedTime = F, DateOfBirth = F, ECFEProgramRegistrationMNID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EducationBackground = F, EmploymentStatus = F, EntityID = F, FirstName = F, FullName = F, HasErrors = F, HouseholdIncome = F, KeyHash = F, LastName = F, ModifiedTime = F, NameID = F, NoOfPeopleInHousehold = F, ReceivingInterpreterAsst = F, RegisteringPersonType = F, SchoolYearID = F, StateECFEClassroomParticipationMNID = F, StateECFEEducationBackgroundMNID = F, StateECFEEmploymentStatusMNID = F, StateECFERegisteringPersonMNID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFERegisteringPersonV1ID")
 
@@ -21515,7 +21515,7 @@
 	#' @return A newly created ECFERegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFERegisteringPersonV1 <- function(NameID = NULL, LastName = NULL, FirstName = NULL, DateOfBirth = NULL, StateECFERegisteringPersonMNID = NULL, RegisteringPersonType = NULL, StateECFEEducationBackgroundMNID = NULL, EducationBackground = NULL, StateECFEEmploymentStatusMNID = NULL, EmploymentStatus = NULL, HouseholdIncome = NULL, NoOfPeopleInHousehold = NULL, ReceivingInterpreterAsst = NULL, StateECFEClassroomParticipationMNID = NULL, ClassRoomVolunteerType = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, ECFEProgramRegistrationMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFERegisteringPersonV1 <- function(ClassRoomVolunteerType = NULL, DateOfBirth = NULL, ECFEProgramRegistrationMNID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EducationBackground = NULL, EmploymentStatus = NULL, EntityID = NULL, FirstName = NULL, HouseholdIncome = NULL, LastName = NULL, NameID = NULL, NoOfPeopleInHousehold = NULL, ReceivingInterpreterAsst = NULL, RegisteringPersonType = NULL, SchoolYearID = NULL, StateECFEClassroomParticipationMNID = NULL, StateECFEEducationBackgroundMNID = NULL, StateECFEEmploymentStatusMNID = NULL, StateECFERegisteringPersonMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21536,7 +21536,7 @@
 	#' @return The modified ECFERegisteringPersonV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFERegisteringPersonV1 <- function(ECFERegisteringPersonV1ID, NameID = NULL, LastName = NULL, FirstName = NULL, DateOfBirth = NULL, StateECFERegisteringPersonMNID = NULL, RegisteringPersonType = NULL, StateECFEEducationBackgroundMNID = NULL, EducationBackground = NULL, StateECFEEmploymentStatusMNID = NULL, EmploymentStatus = NULL, HouseholdIncome = NULL, NoOfPeopleInHousehold = NULL, ReceivingInterpreterAsst = NULL, StateECFEClassroomParticipationMNID = NULL, ClassRoomVolunteerType = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, ECFEProgramRegistrationMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFERegisteringPersonV1 <- function(ECFERegisteringPersonV1ID, ClassRoomVolunteerType = NULL, DateOfBirth = NULL, ECFEProgramRegistrationMNID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EducationBackground = NULL, EmploymentStatus = NULL, EntityID = NULL, FirstName = NULL, HouseholdIncome = NULL, LastName = NULL, NameID = NULL, NoOfPeopleInHousehold = NULL, ReceivingInterpreterAsst = NULL, RegisteringPersonType = NULL, SchoolYearID = NULL, StateECFEClassroomParticipationMNID = NULL, StateECFEEducationBackgroundMNID = NULL, StateECFEEmploymentStatusMNID = NULL, StateECFERegisteringPersonMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21564,7 +21564,7 @@
 	#' @return A list of ECFERegistrationV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFERegistrationV1s <- function(searchConditionsList = NULL, ECFERegistrationV1ID = F, StudentID = F, EntityID = F, ECFEProgramRegistrationMNID = F, SiteNumber = F, StateECFEProgramNameMNID = F, ProgramName = F, StateECFEProgramModelMNID = F, ProgramModel = F, ProgramReferralsToData = F, ProgramReferralsTo = F, ProgramReferralsFromData = F, ProgramReferralsFrom = F, ProgramRegistrationDate = F, CountOfClasses = F, HoursAttended = F, DaysAttended = F, DaysAbsent = F, StateECFEFeeStatusMNID = F, FeeStatus = F, FundingSourceData = F, FundingSources = F, StateECFEIEPStatusMNID = F, IEPStatus = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFERegistrationV1s <- function(searchConditionsList = NULL, CountOfClasses = F, CreatedTime = F, DaysAbsent = F, DaysAttended = F, ECFEProgramRegistrationMNID = F, ECFERegistrationV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FeeStatus = F, FundingSourceData = F, FundingSources = F, HasErrors = F, HoursAttended = F, IEPStatus = F, KeyHash = F, ModifiedTime = F, ProgramModel = F, ProgramName = F, ProgramReferralsFrom = F, ProgramReferralsFromData = F, ProgramReferralsTo = F, ProgramReferralsToData = F, ProgramRegistrationDate = F, SchoolYearID = F, SiteNumber = F, StateECFEFeeStatusMNID = F, StateECFEIEPStatusMNID = F, StateECFEProgramModelMNID = F, StateECFEProgramNameMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21589,7 +21589,7 @@
 	#' @return A dataframe or of ECFERegistrationV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFERegistrationV1 <- function(ECFERegistrationV1ID, StudentID = F, EntityID = F, ECFEProgramRegistrationMNID = F, SiteNumber = F, StateECFEProgramNameMNID = F, ProgramName = F, StateECFEProgramModelMNID = F, ProgramModel = F, ProgramReferralsToData = F, ProgramReferralsTo = F, ProgramReferralsFromData = F, ProgramReferralsFrom = F, ProgramRegistrationDate = F, CountOfClasses = F, HoursAttended = F, DaysAttended = F, DaysAbsent = F, StateECFEFeeStatusMNID = F, FeeStatus = F, FundingSourceData = F, FundingSources = F, StateECFEIEPStatusMNID = F, IEPStatus = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFERegistrationV1 <- function(ECFERegistrationV1ID, CountOfClasses = F, CreatedTime = F, DaysAbsent = F, DaysAttended = F, ECFEProgramRegistrationMNID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FeeStatus = F, FundingSourceData = F, FundingSources = F, HasErrors = F, HoursAttended = F, IEPStatus = F, KeyHash = F, ModifiedTime = F, ProgramModel = F, ProgramName = F, ProgramReferralsFrom = F, ProgramReferralsFromData = F, ProgramReferralsTo = F, ProgramReferralsToData = F, ProgramRegistrationDate = F, SchoolYearID = F, SiteNumber = F, StateECFEFeeStatusMNID = F, StateECFEIEPStatusMNID = F, StateECFEProgramModelMNID = F, StateECFEProgramNameMNID = F, StudentID = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFERegistrationV1ID")
 
@@ -21629,7 +21629,7 @@
 	#' @return A newly created ECFERegistrationV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFERegistrationV1 <- function(StudentID = NULL, EntityID = NULL, ECFEProgramRegistrationMNID = NULL, SiteNumber = NULL, StateECFEProgramNameMNID = NULL, ProgramName = NULL, StateECFEProgramModelMNID = NULL, ProgramModel = NULL, ProgramRegistrationDate = NULL, CountOfClasses = NULL, HoursAttended = NULL, DaysAttended = NULL, DaysAbsent = NULL, StateECFEFeeStatusMNID = NULL, FeeStatus = NULL, StateECFEIEPStatusMNID = NULL, IEPStatus = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFERegistrationV1 <- function(CountOfClasses = NULL, DaysAbsent = NULL, DaysAttended = NULL, ECFEProgramRegistrationMNID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FeeStatus = NULL, HoursAttended = NULL, IEPStatus = NULL, ProgramModel = NULL, ProgramName = NULL, ProgramRegistrationDate = NULL, SchoolYearID = NULL, SiteNumber = NULL, StateECFEFeeStatusMNID = NULL, StateECFEIEPStatusMNID = NULL, StateECFEProgramModelMNID = NULL, StateECFEProgramNameMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21650,7 +21650,7 @@
 	#' @return The modified ECFERegistrationV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFERegistrationV1 <- function(ECFERegistrationV1ID, StudentID = NULL, EntityID = NULL, ECFEProgramRegistrationMNID = NULL, SiteNumber = NULL, StateECFEProgramNameMNID = NULL, ProgramName = NULL, StateECFEProgramModelMNID = NULL, ProgramModel = NULL, ProgramRegistrationDate = NULL, CountOfClasses = NULL, HoursAttended = NULL, DaysAttended = NULL, DaysAbsent = NULL, StateECFEFeeStatusMNID = NULL, FeeStatus = NULL, StateECFEIEPStatusMNID = NULL, IEPStatus = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFERegistrationV1 <- function(ECFERegistrationV1ID, CountOfClasses = NULL, DaysAbsent = NULL, DaysAttended = NULL, ECFEProgramRegistrationMNID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FeeStatus = NULL, HoursAttended = NULL, IEPStatus = NULL, ProgramModel = NULL, ProgramName = NULL, ProgramRegistrationDate = NULL, SchoolYearID = NULL, SiteNumber = NULL, StateECFEFeeStatusMNID = NULL, StateECFEIEPStatusMNID = NULL, StateECFEProgramModelMNID = NULL, StateECFEProgramNameMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21678,7 +21678,7 @@
 	#' @return A list of ECFEStudentV1s
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listECFEStudentV1s <- function(searchConditionsList = NULL, ECFEStudentV1ID = F, NameID = F, StudentID = F, EntityID = F, StateStudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, Gender = F, StateDistrictMNID = F, UnitNumber = F, StateDistrictTypeCodeMNID = F, UnitType = F, DateOfBirth = F, HispanicLatino = F, RaceIsAmericanIndianOrAlaskanNative = F, RaceIsAsian = F, RaceIsBlackOrAfricanAmerican = F, RaceIsNativeHawaiianOrOtherPacificIslander = F, RaceIsWhite = F, RaceIsOther = F, RaceSpecifyOther = F, RaceIsUnspecified = F, Migrant = F, StateLanguageCodeMNIDPrimary = F, PrimaryLanguage = F, SpecifyOtherLanguage = F, StateLanguageCodeMNIDSecondary = F, SecondaryLanguage = F, McKinneyVentoHomeless = F, ImmunizationsUpToDate = F, ParentInKindHours = F, TotalHomeVisitsCompleted = F, StateCountyMNID = F, CountyOfResidence = F, SiblingData = F, IsSibling = F, IsMultiRacial = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listECFEStudentV1s <- function(searchConditionsList = NULL, CountyOfResidence = F, CreatedTime = F, DateOfBirth = F, ECFEStudentV1ID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FirstName = F, Gender = F, HasErrors = F, HispanicLatino = F, ImmunizationsUpToDate = F, IsMultiRacial = F, IsSibling = F, KeyHash = F, LastName = F, McKinneyVentoHomeless = F, MiddleName = F, Migrant = F, ModifiedTime = F, NameID = F, ParentInKindHours = F, PrimaryLanguage = F, RaceIsAmericanIndianOrAlaskanNative = F, RaceIsAsian = F, RaceIsBlackOrAfricanAmerican = F, RaceIsNativeHawaiianOrOtherPacificIslander = F, RaceIsOther = F, RaceIsUnspecified = F, RaceIsWhite = F, RaceSpecifyOther = F, SchoolYearID = F, SecondaryLanguage = F, SiblingData = F, SpecifyOtherLanguage = F, StateCountyMNID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateLanguageCodeMNIDPrimary = F, StateLanguageCodeMNIDSecondary = F, StateStudentID = F, StudentID = F, Suffix = F, TotalHomeVisitsCompleted = F, UnitNumber = F, UnitType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21703,7 +21703,7 @@
 	#' @return A dataframe or of ECFEStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getECFEStudentV1 <- function(ECFEStudentV1ID, NameID = F, StudentID = F, EntityID = F, StateStudentID = F, LastName = F, FirstName = F, MiddleName = F, Suffix = F, Gender = F, StateDistrictMNID = F, UnitNumber = F, StateDistrictTypeCodeMNID = F, UnitType = F, DateOfBirth = F, HispanicLatino = F, RaceIsAmericanIndianOrAlaskanNative = F, RaceIsAsian = F, RaceIsBlackOrAfricanAmerican = F, RaceIsNativeHawaiianOrOtherPacificIslander = F, RaceIsWhite = F, RaceIsOther = F, RaceSpecifyOther = F, RaceIsUnspecified = F, Migrant = F, StateLanguageCodeMNIDPrimary = F, PrimaryLanguage = F, SpecifyOtherLanguage = F, StateLanguageCodeMNIDSecondary = F, SecondaryLanguage = F, McKinneyVentoHomeless = F, ImmunizationsUpToDate = F, ParentInKindHours = F, TotalHomeVisitsCompleted = F, StateCountyMNID = F, CountyOfResidence = F, SiblingData = F, IsSibling = F, IsMultiRacial = F, SchoolYearID = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, HasErrors = F, KeyHash = F, UpdateHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getECFEStudentV1 <- function(ECFEStudentV1ID, CountyOfResidence = F, CreatedTime = F, DateOfBirth = F, ECFESubmissionID = F, ECFESubmissionRunHistoryID = F, EntityID = F, FirstName = F, Gender = F, HasErrors = F, HispanicLatino = F, ImmunizationsUpToDate = F, IsMultiRacial = F, IsSibling = F, KeyHash = F, LastName = F, McKinneyVentoHomeless = F, MiddleName = F, Migrant = F, ModifiedTime = F, NameID = F, ParentInKindHours = F, PrimaryLanguage = F, RaceIsAmericanIndianOrAlaskanNative = F, RaceIsAsian = F, RaceIsBlackOrAfricanAmerican = F, RaceIsNativeHawaiianOrOtherPacificIslander = F, RaceIsOther = F, RaceIsUnspecified = F, RaceIsWhite = F, RaceSpecifyOther = F, SchoolYearID = F, SecondaryLanguage = F, SiblingData = F, SpecifyOtherLanguage = F, StateCountyMNID = F, StateDistrictMNID = F, StateDistrictTypeCodeMNID = F, StateLanguageCodeMNIDPrimary = F, StateLanguageCodeMNIDSecondary = F, StateStudentID = F, StudentID = F, Suffix = F, TotalHomeVisitsCompleted = F, UnitNumber = F, UnitType = F, UpdateHash = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ECFEStudentV1ID")
 
@@ -21743,7 +21743,7 @@
 	#' @return A newly created ECFEStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createECFEStudentV1 <- function(NameID = NULL, StudentID = NULL, EntityID = NULL, StateStudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, Gender = NULL, StateDistrictMNID = NULL, UnitNumber = NULL, StateDistrictTypeCodeMNID = NULL, UnitType = NULL, DateOfBirth = NULL, HispanicLatino = NULL, RaceIsAmericanIndianOrAlaskanNative = NULL, RaceIsAsian = NULL, RaceIsBlackOrAfricanAmerican = NULL, RaceIsNativeHawaiianOrOtherPacificIslander = NULL, RaceIsWhite = NULL, RaceIsOther = NULL, RaceSpecifyOther = NULL, RaceIsUnspecified = NULL, Migrant = NULL, StateLanguageCodeMNIDPrimary = NULL, PrimaryLanguage = NULL, SpecifyOtherLanguage = NULL, StateLanguageCodeMNIDSecondary = NULL, SecondaryLanguage = NULL, McKinneyVentoHomeless = NULL, ImmunizationsUpToDate = NULL, ParentInKindHours = NULL, TotalHomeVisitsCompleted = NULL, StateCountyMNID = NULL, CountyOfResidence = NULL, IsSibling = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createECFEStudentV1 <- function(CountyOfResidence = NULL, DateOfBirth = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, HispanicLatino = NULL, ImmunizationsUpToDate = NULL, IsSibling = NULL, LastName = NULL, McKinneyVentoHomeless = NULL, MiddleName = NULL, Migrant = NULL, NameID = NULL, ParentInKindHours = NULL, PrimaryLanguage = NULL, RaceIsAmericanIndianOrAlaskanNative = NULL, RaceIsAsian = NULL, RaceIsBlackOrAfricanAmerican = NULL, RaceIsNativeHawaiianOrOtherPacificIslander = NULL, RaceIsOther = NULL, RaceIsUnspecified = NULL, RaceIsWhite = NULL, RaceSpecifyOther = NULL, SchoolYearID = NULL, SecondaryLanguage = NULL, SpecifyOtherLanguage = NULL, StateCountyMNID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateLanguageCodeMNIDPrimary = NULL, StateLanguageCodeMNIDSecondary = NULL, StateStudentID = NULL, StudentID = NULL, Suffix = NULL, TotalHomeVisitsCompleted = NULL, UnitNumber = NULL, UnitType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21764,7 +21764,7 @@
 	#' @return The modified ECFEStudentV1
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyECFEStudentV1 <- function(ECFEStudentV1ID, NameID = NULL, StudentID = NULL, EntityID = NULL, StateStudentID = NULL, LastName = NULL, FirstName = NULL, MiddleName = NULL, Suffix = NULL, Gender = NULL, StateDistrictMNID = NULL, UnitNumber = NULL, StateDistrictTypeCodeMNID = NULL, UnitType = NULL, DateOfBirth = NULL, HispanicLatino = NULL, RaceIsAmericanIndianOrAlaskanNative = NULL, RaceIsAsian = NULL, RaceIsBlackOrAfricanAmerican = NULL, RaceIsNativeHawaiianOrOtherPacificIslander = NULL, RaceIsWhite = NULL, RaceIsOther = NULL, RaceSpecifyOther = NULL, RaceIsUnspecified = NULL, Migrant = NULL, StateLanguageCodeMNIDPrimary = NULL, PrimaryLanguage = NULL, SpecifyOtherLanguage = NULL, StateLanguageCodeMNIDSecondary = NULL, SecondaryLanguage = NULL, McKinneyVentoHomeless = NULL, ImmunizationsUpToDate = NULL, ParentInKindHours = NULL, TotalHomeVisitsCompleted = NULL, StateCountyMNID = NULL, CountyOfResidence = NULL, IsSibling = NULL, SchoolYearID = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyECFEStudentV1 <- function(ECFEStudentV1ID, CountyOfResidence = NULL, DateOfBirth = NULL, ECFESubmissionID = NULL, ECFESubmissionRunHistoryID = NULL, EntityID = NULL, FirstName = NULL, Gender = NULL, HispanicLatino = NULL, ImmunizationsUpToDate = NULL, IsSibling = NULL, LastName = NULL, McKinneyVentoHomeless = NULL, MiddleName = NULL, Migrant = NULL, NameID = NULL, ParentInKindHours = NULL, PrimaryLanguage = NULL, RaceIsAmericanIndianOrAlaskanNative = NULL, RaceIsAsian = NULL, RaceIsBlackOrAfricanAmerican = NULL, RaceIsNativeHawaiianOrOtherPacificIslander = NULL, RaceIsOther = NULL, RaceIsUnspecified = NULL, RaceIsWhite = NULL, RaceSpecifyOther = NULL, SchoolYearID = NULL, SecondaryLanguage = NULL, SpecifyOtherLanguage = NULL, StateCountyMNID = NULL, StateDistrictMNID = NULL, StateDistrictTypeCodeMNID = NULL, StateLanguageCodeMNIDPrimary = NULL, StateLanguageCodeMNIDSecondary = NULL, StateStudentID = NULL, StudentID = NULL, Suffix = NULL, TotalHomeVisitsCompleted = NULL, UnitNumber = NULL, UnitType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21792,7 +21792,7 @@
 	#' @return A list of PERAIncludedPayTransactions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPERAIncludedPayTransactions <- function(searchConditionsList = NULL, PERAIncludedPayTransactionID = F, PERAExtractRunID = F, EmployeeID = F, CheckDate = F, PayrollStartDate = F, MemberAmount = F, EligibleEarnings = F, EmployerAmount = F, CompensatedHours = F, OvertimePay = F, AdjustmentIndicator = F, PERAPaymentTypeCodeValue = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPERAIncludedPayTransactions <- function(searchConditionsList = NULL, AdjustmentIndicator = F, CheckDate = F, CompensatedHours = F, CreatedTime = F, EligibleEarnings = F, EmployeeID = F, EmployerAmount = F, MemberAmount = F, ModifiedTime = F, OvertimePay = F, PayrollStartDate = F, PERAExtractRunID = F, PERAIncludedPayTransactionID = F, PERAPaymentTypeCodeValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21817,7 +21817,7 @@
 	#' @return A dataframe or of PERAIncludedPayTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPERAIncludedPayTransaction <- function(PERAIncludedPayTransactionID, PERAExtractRunID = F, EmployeeID = F, CheckDate = F, PayrollStartDate = F, MemberAmount = F, EligibleEarnings = F, EmployerAmount = F, CompensatedHours = F, OvertimePay = F, AdjustmentIndicator = F, PERAPaymentTypeCodeValue = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPERAIncludedPayTransaction <- function(PERAIncludedPayTransactionID, AdjustmentIndicator = F, CheckDate = F, CompensatedHours = F, CreatedTime = F, EligibleEarnings = F, EmployeeID = F, EmployerAmount = F, MemberAmount = F, ModifiedTime = F, OvertimePay = F, PayrollStartDate = F, PERAExtractRunID = F, PERAPaymentTypeCodeValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PERAIncludedPayTransactionID")
 
@@ -21857,7 +21857,7 @@
 	#' @return A newly created PERAIncludedPayTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPERAIncludedPayTransaction <- function(PERAExtractRunID = NULL, EmployeeID = NULL, CheckDate = NULL, PayrollStartDate = NULL, MemberAmount = NULL, EligibleEarnings = NULL, EmployerAmount = NULL, CompensatedHours = NULL, OvertimePay = NULL, AdjustmentIndicator = NULL, PERAPaymentTypeCodeValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPERAIncludedPayTransaction <- function(AdjustmentIndicator = NULL, CheckDate = NULL, CompensatedHours = NULL, EligibleEarnings = NULL, EmployeeID = NULL, EmployerAmount = NULL, MemberAmount = NULL, OvertimePay = NULL, PayrollStartDate = NULL, PERAExtractRunID = NULL, PERAPaymentTypeCodeValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -21878,7 +21878,7 @@
 	#' @return The modified PERAIncludedPayTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPERAIncludedPayTransaction <- function(PERAIncludedPayTransactionID, PERAExtractRunID = NULL, EmployeeID = NULL, CheckDate = NULL, PayrollStartDate = NULL, MemberAmount = NULL, EligibleEarnings = NULL, EmployerAmount = NULL, CompensatedHours = NULL, OvertimePay = NULL, AdjustmentIndicator = NULL, PERAPaymentTypeCodeValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPERAIncludedPayTransaction <- function(PERAIncludedPayTransactionID, AdjustmentIndicator = NULL, CheckDate = NULL, CompensatedHours = NULL, EligibleEarnings = NULL, EmployeeID = NULL, EmployerAmount = NULL, MemberAmount = NULL, OvertimePay = NULL, PayrollStartDate = NULL, PERAExtractRunID = NULL, PERAPaymentTypeCodeValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

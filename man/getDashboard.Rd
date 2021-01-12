@@ -6,12 +6,12 @@
 \usage{
 getDashboard(
   DashboardID,
-  Name = F,
-  UserIDOwner = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Name = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserIDOwner = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

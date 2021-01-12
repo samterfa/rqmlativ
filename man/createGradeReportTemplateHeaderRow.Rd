@@ -5,10 +5,10 @@
 \title{Create a GradeReportTemplateHeaderRow}
 \usage{
 createGradeReportTemplateHeaderRow(
-  GradeReportTemplateID = NULL,
-  SortNumber = NULL,
   ColumnCount = NULL,
   GradeReportTemplateHeaderRowIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

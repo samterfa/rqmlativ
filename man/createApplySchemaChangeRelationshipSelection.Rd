@@ -5,12 +5,12 @@
 \title{Create an ApplySchemaChangeRelationshipSelection}
 \usage{
 createApplySchemaChangeRelationshipSelection(
+  FieldPendingName = NULL,
   ModulePendingName = NULL,
   ObjectPendingName = NULL,
-  FieldPendingName = NULL,
+  RelationshipChangeType = NULL,
   RelationshipCurrentName = NULL,
   RelationshipPendingName = NULL,
-  RelationshipChangeType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

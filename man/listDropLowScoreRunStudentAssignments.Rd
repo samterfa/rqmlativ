@@ -6,14 +6,14 @@
 \usage{
 listDropLowScoreRunStudentAssignments(
   searchConditionsList = NULL,
-  DropLowScoreRunStudentAssignmentID = F,
+  CreatedTime = F,
+  DropActionType = F,
   DropLowScoreRunID = F,
+  DropLowScoreRunStudentAssignmentID = F,
+  ModifiedTime = F,
   StudentAssignmentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  DropActionType = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

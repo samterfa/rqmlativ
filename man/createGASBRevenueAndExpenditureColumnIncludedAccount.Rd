@@ -5,9 +5,9 @@
 \title{Create a GASBRevenueAndExpenditureColumnIncludedAccount}
 \usage{
 createGASBRevenueAndExpenditureColumnIncludedAccount(
-  GASBRevenueAndExpenditureIncludedAccountID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBRevenueAndExpenditureIncludedAccountID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

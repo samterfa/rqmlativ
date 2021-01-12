@@ -5,9 +5,9 @@
 \title{Create a DisciplineConfigEntityYear}
 \usage{
 createDisciplineConfigEntityYear(
+  ConfigEntityYearIDClonedFrom = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  ConfigEntityYearIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,13 +5,13 @@
 \title{Create a CategoryDefault}
 \usage{
 createCategoryDefault(
-  ConfigEntityGroupYearID = NULL,
-  EntityGroupKey = NULL,
-  EligibilityCategoryID = NULL,
-  PriceCategoryID = NULL,
-  GradeLevelIDLow = NULL,
-  GradeLevelIDHigh = NULL,
   CategoryDefaultIDClonedFrom = NULL,
+  ConfigEntityGroupYearID = NULL,
+  EligibilityCategoryID = NULL,
+  EntityGroupKey = NULL,
+  GradeLevelIDHigh = NULL,
+  GradeLevelIDLow = NULL,
+  PriceCategoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

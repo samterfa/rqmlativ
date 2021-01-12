@@ -5,8 +5,8 @@
 \title{Create a RolePortal}
 \usage{
 createRolePortal(
-  RoleID = NULL,
   Portal = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

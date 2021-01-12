@@ -6,11 +6,11 @@
 \usage{
 modifyBlockPeriod(
   BlockPeriodID,
-  Code = NULL,
   BlockPeriodIDClonedFrom = NULL,
+  Code = NULL,
+  Description = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

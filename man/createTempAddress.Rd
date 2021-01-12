@@ -6,10 +6,10 @@
 \usage{
 createTempAddress(
   AddressID = NULL,
-  CurrentFormattedFullAddress = NULL,
-  NewFormattedFullAddress = NULL,
-  FieldsToUpdate = NULL,
   AddressUsedBy = NULL,
+  CurrentFormattedFullAddress = NULL,
+  FieldsToUpdate = NULL,
+  NewFormattedFullAddress = NULL,
   WorkflowErrors = NULL,
   entityId = 1,
   query = NULL,

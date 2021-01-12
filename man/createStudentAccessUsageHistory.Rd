@@ -5,10 +5,10 @@
 \title{Create a StudentAccessUsageHistory}
 \usage{
 createStudentAccessUsageHistory(
-  StudentID = NULL,
-  SecurityLocationID = NULL,
-  FriendlyNameScreen = NULL,
   EntityID = NULL,
+  FriendlyNameScreen = NULL,
+  SecurityLocationID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

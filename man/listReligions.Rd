@@ -6,9 +6,9 @@
 \usage{
 listReligions(
   searchConditionsList = NULL,
-  ReligionID = F,
   Code = F,
   Description = F,
+  ReligionID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

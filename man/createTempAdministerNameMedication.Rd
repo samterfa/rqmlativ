@@ -6,12 +6,12 @@
 \usage{
 createTempAdministerNameMedication(
   AdministerNameMedicationID = NULL,
-  Name = NULL,
-  MedicationCode = NULL,
   AdministrationTime = NULL,
   DosesAdministered = NULL,
-  NewDosesAdministered = NULL,
   ErrorMessage = NULL,
+  MedicationCode = NULL,
+  Name = NULL,
+  NewDosesAdministered = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

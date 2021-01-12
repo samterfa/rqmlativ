@@ -5,9 +5,9 @@
 \title{Create a Street}
 \usage{
 createStreet(
-  ZipID = NULL,
-  Name = NULL,
   DirectionalID = NULL,
+  Name = NULL,
+  ZipID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

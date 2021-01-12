@@ -5,10 +5,10 @@
 \title{Create a ClassPeriodDashboardV1}
 \usage{
 createClassPeriodDashboardV1(
-  SchoolYearID = NULL,
-  DistrictID = NULL,
   ClassPeriodName = NULL,
   DashboardRunHistoryID = NULL,
+  DistrictID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

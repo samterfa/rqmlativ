@@ -6,13 +6,13 @@
 \usage{
 getTempHomeroomError(
   TempHomeroomErrorID,
-  TempHomeroomRecordID = F,
   Code = F,
-  FailureReason = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FailureReason = F,
   ModifiedTime = F,
+  TempHomeroomRecordID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

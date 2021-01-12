@@ -6,10 +6,10 @@
 \usage{
 modifyTempEndorsementDefault(
   TempEndorsementDefaultID,
+  ActionType = NULL,
+  CodeDescription = NULL,
   EndorsementDefaultID = NULL,
   EndorsementID = NULL,
-  CodeDescription = NULL,
-  ActionType = NULL,
   PrintOnTranscript = NULL,
   Waivable = NULL,
   entityId = 1,

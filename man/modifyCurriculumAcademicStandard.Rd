@@ -6,9 +6,9 @@
 \usage{
 modifyCurriculumAcademicStandard(
   CurriculumAcademicStandardID,
-  DistrictGroupKey = NULL,
   AcademicStandardID = NULL,
   CurriculumID = NULL,
+  DistrictGroupKey = NULL,
   IsGraded = NULL,
   entityId = 1,
   query = NULL,

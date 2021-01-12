@@ -5,13 +5,13 @@
 \title{Create a TrustedDevice}
 \usage{
 createTrustedDevice(
-  UserID = NULL,
-  UserAgent = NULL,
-  DeviceType = NULL,
   BrowserType = NULL,
   BrowserVersion = NULL,
-  OperatingSystemType = NULL,
+  DeviceType = NULL,
   HostAddress = NULL,
+  OperatingSystemType = NULL,
+  UserAgent = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

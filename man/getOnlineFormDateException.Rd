@@ -6,13 +6,13 @@
 \usage{
 getOnlineFormDateException(
   OnlineFormDateExceptionID,
-  OnlineFormID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectID = F,
   ObjectPrimaryKey = F,
+  OnlineFormID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

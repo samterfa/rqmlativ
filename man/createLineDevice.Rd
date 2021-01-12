@@ -5,12 +5,12 @@
 \title{Create a LineDevice}
 \usage{
 createLineDevice(
+  BaudRate = NULL,
+  ComPort = NULL,
+  DataBit = NULL,
+  DeviceType = NULL,
   LineID = NULL,
   Name = NULL,
-  DeviceType = NULL,
-  ComPort = NULL,
-  BaudRate = NULL,
-  DataBit = NULL,
   Parity = NULL,
   StopBit = NULL,
   entityId = 1,

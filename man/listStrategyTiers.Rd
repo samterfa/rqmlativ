@@ -6,13 +6,13 @@
 \usage{
 listStrategyTiers(
   searchConditionsList = NULL,
-  StrategyTierID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   StrategyID = F,
+  StrategyTierID = F,
   TierID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

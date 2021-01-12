@@ -6,12 +6,12 @@
 \usage{
 modifyRole(
   RoleID,
-  Name = NULL,
-  Description = NULL,
-  IsActive = NULL,
-  DocumentationPersona = NULL,
-  MultifactorAuthenticationID = NULL,
   AuthenticationRoleID = NULL,
+  Description = NULL,
+  DocumentationPersona = NULL,
+  IsActive = NULL,
+  MultifactorAuthenticationID = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getTempCalcGroupBucketRemoveStandardOrSubjectResult(
   TempCalcGroupBucketRemoveStandardOrSubjectResultID,
-  IsError = F,
-  StandardOrSubjectDescription = F,
-  ErrorText = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorText = F,
+  IsError = F,
   ModifiedTime = F,
+  StandardOrSubjectDescription = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

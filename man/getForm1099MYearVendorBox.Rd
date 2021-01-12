@@ -6,13 +6,13 @@
 \usage{
 getForm1099MYearVendorBox(
   Form1099MYearVendorBoxID,
+  Amount = F,
+  CreatedTime = F,
   Form1099MYearVendorID = F,
   Form1099TypeID = F,
-  Amount = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

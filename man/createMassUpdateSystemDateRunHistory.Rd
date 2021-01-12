@@ -5,15 +5,15 @@
 \title{Create a MassUpdateSystemDateRunHistory}
 \usage{
 createMassUpdateSystemDateRunHistory(
-  RunReason = NULL,
-  RunDescription = NULL,
   DateTemplateXML = NULL,
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  StartTime = NULL,
   EndTime = NULL,
+  EntityID = NULL,
   Location = NULL,
+  RunDescription = NULL,
+  RunReason = NULL,
+  SchoolYearID = NULL,
   SourceID = NULL,
+  StartTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

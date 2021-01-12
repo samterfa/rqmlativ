@@ -6,8 +6,8 @@
 \usage{
 modifyCustomerAlertMessage(
   CustomerAlertMessageID,
-  CustomerID = NULL,
   AlertMessageID = NULL,
+  CustomerID = NULL,
   IsCritical = NULL,
   entityId = 1,
   query = NULL,

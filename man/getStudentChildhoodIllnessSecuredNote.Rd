@@ -6,12 +6,12 @@
 \usage{
 getStudentChildhoodIllnessSecuredNote(
   StudentChildhoodIllnessSecuredNoteID,
-  StudentChildhoodIllnessID = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  StudentChildhoodIllnessID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

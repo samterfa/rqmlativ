@@ -6,14 +6,14 @@
 \usage{
 listAvailabilityFilterCourseStudentStudents(
   searchConditionsList = NULL,
-  AvailabilityFilterCourseStudentStudentID = F,
+  ArenaSchedulingStatus = F,
   AvailabilityFilterCourseStudentID = F,
+  AvailabilityFilterCourseStudentStudentID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  ArenaSchedulingStatus = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

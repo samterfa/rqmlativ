@@ -5,11 +5,11 @@
 \title{Create an EntityCloneError}
 \usage{
 createEntityCloneError(
+  AttemptedOperation = NULL,
   EntityCloneSelectedObjectID = NULL,
+  EntityIDTarget = NULL,
   Message = NULL,
   ObjectJSON = NULL,
-  AttemptedOperation = NULL,
-  EntityIDTarget = NULL,
   SchoolYearIDTarget = NULL,
   entityId = 1,
   query = NULL,

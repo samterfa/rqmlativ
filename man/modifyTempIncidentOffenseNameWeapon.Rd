@@ -7,8 +7,8 @@
 modifyTempIncidentOffenseNameWeapon(
   TempIncidentOffenseNameWeaponID,
   TempIncidentOffenseNameID = NULL,
-  WeaponID = NULL,
   WeaponCount = NULL,
+  WeaponID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

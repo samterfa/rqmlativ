@@ -6,13 +6,13 @@
 \usage{
 listConfigDistrictStructureDimensionPositions(
   searchConditionsList = NULL,
-  ConfigDistrictStructureDimensionPositionID = F,
   ConfigDistrictID = F,
+  ConfigDistrictStructureDimensionPositionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Position = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

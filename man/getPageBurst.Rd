@@ -6,13 +6,13 @@
 \usage{
 getPageBurst(
   PageBurstID,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectID = F,
   ObjectPrimaryKey = F,
   PageID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

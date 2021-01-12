@@ -5,10 +5,10 @@
 \title{Create a SiteBasedInitiativeMN}
 \usage{
 createSiteBasedInitiativeMN(
-  StateSiteBasedInitiativeMNID = NULL,
-  StateImplementationStatusMNID = NULL,
   CurriculumYearID = NULL,
   SiteBasedInitiativeMNIDClonedFrom = NULL,
+  StateImplementationStatusMNID = NULL,
+  StateSiteBasedInitiativeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

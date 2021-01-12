@@ -5,11 +5,11 @@
 \title{Create a StudentQuestion}
 \usage{
 createStudentQuestion(
-  StudentAssignmentID = NULL,
   AssignmentQuestionID = NULL,
-  Score = NULL,
   Order = NULL,
+  Score = NULL,
   Status = NULL,
+  StudentAssignmentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

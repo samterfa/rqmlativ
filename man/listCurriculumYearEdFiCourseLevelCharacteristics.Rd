@@ -6,14 +6,14 @@
 \usage{
 listCurriculumYearEdFiCourseLevelCharacteristics(
   searchConditionsList = NULL,
+  CreatedTime = F,
   CurriculumYearEdFiCourseLevelCharacteristicID = F,
+  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F,
   CurriculumYearID = F,
   EdFiCourseLevelCharacteristicID = F,
-  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

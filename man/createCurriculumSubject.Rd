@@ -5,15 +5,15 @@
 \title{Create a CurriculumSubject}
 \usage{
 createCurriculumSubject(
+  BackgroundColor = NULL,
   Code = NULL,
   Description = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   DistrictGroupKey = NULL,
-  BackgroundColor = NULL,
-  TextColor = NULL,
-  SubjectIDClonedFrom = NULL,
+  DistrictID = NULL,
   EdFiAcademicSubjectDescriptorID = NULL,
+  SchoolYearID = NULL,
+  SubjectIDClonedFrom = NULL,
+  TextColor = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

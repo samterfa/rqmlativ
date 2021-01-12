@@ -6,9 +6,9 @@
 \usage{
 modifySurveyQuestion(
   SurveyQuestionID,
+  Inverse = NULL,
   Question = NULL,
   SortNumber = NULL,
-  Inverse = NULL,
   SurveyID = NULL,
   entityId = 1,
   query = NULL,

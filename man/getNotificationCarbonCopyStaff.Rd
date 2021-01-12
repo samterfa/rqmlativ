@@ -6,12 +6,12 @@
 \usage{
 getNotificationCarbonCopyStaff(
   NotificationCarbonCopyStaffID,
+  CreatedTime = F,
+  ModifiedTime = F,
   NotificationID = F,
   StaffID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

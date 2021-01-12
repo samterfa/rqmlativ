@@ -6,12 +6,12 @@
 \usage{
 modifySTARStudentSubmissionRunHistory(
   STARStudentSubmissionRunHistoryID,
+  EndDateTime = NULL,
+  MediaID = NULL,
   STARStudentSubmissionID = NULL,
   StartDateTime = NULL,
-  EndDateTime = NULL,
-  Type = NULL,
-  MediaID = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

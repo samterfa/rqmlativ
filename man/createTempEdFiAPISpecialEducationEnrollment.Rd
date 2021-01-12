@@ -5,15 +5,15 @@
 \title{Create a TempEdFiAPISpecialEducationEnrollment}
 \usage{
 createTempEdFiAPISpecialEducationEnrollment(
-  LastName = NULL,
-  FirstName = NULL,
-  MiddleName = NULL,
   DisabilityCodes = NULL,
-  UpdateType = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  FirstName = NULL,
   LastEvaluationDate = NULL,
+  LastName = NULL,
   LatestServiceStartDate = NULL,
+  MiddleName = NULL,
+  StartDate = NULL,
+  UpdateType = NULL,
   WISEIDNumber = NULL,
   entityId = 1,
   query = NULL,

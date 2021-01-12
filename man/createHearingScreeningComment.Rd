@@ -5,8 +5,8 @@
 \title{Create a HearingScreeningComment}
 \usage{
 createHearingScreeningComment(
-  HearingScreeningID = NULL,
   HearingCommentID = NULL,
+  HearingScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

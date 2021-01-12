@@ -6,9 +6,9 @@
 \usage{
 modifyTRASubmission(
   TRASubmissionID,
+  Description = NULL,
   DistrictID = NULL,
   FiscalYearID = NULL,
-  Description = NULL,
   IsFinal = NULL,
   ReportType = NULL,
   entityId = 1,

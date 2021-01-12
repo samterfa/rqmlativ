@@ -5,11 +5,11 @@
 \title{Create a WorkflowInstanceVariable}
 \usage{
 createWorkflowInstanceVariable(
-  WorkflowInstanceID = NULL,
   ClassName = NULL,
+  IsEncrypted = NULL,
   Name = NULL,
   Value = NULL,
-  IsEncrypted = NULL,
+  WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyStudentGroupAssignment(
   StudentGroupAssignmentID,
-  StudentGroupID = NULL,
   AssignmentID = NULL,
+  StudentGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

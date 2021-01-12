@@ -5,9 +5,9 @@
 \title{Create a DistrictConfigEntityYear}
 \usage{
 createDistrictConfigEntityYear(
+  ConfigEntityYearIDClonedFrom = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  ConfigEntityYearIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

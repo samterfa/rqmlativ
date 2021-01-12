@@ -6,15 +6,15 @@
 \usage{
 modifyESSAIncludedAccountException(
   ESSAIncludedAccountExceptionID,
-  ESSAIncludedAccountV1ID = NULL,
   AccountFiscalYearID = NULL,
   DisplayAccount = NULL,
+  ESSAIncludedAccountV1ID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

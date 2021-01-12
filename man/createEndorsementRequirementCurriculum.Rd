@@ -5,11 +5,11 @@
 \title{Create an EndorsementRequirementCurriculum}
 \usage{
 createEndorsementRequirementCurriculum(
-  EndorsementRequirementID = NULL,
-  EndorsementRequirementCurriculumDefaultID = NULL,
-  CurriculumClusterID = NULL,
-  CreditsRequired = NULL,
   AdvancedCreditsRequired = NULL,
+  CreditsRequired = NULL,
+  CurriculumClusterID = NULL,
+  EndorsementRequirementCurriculumDefaultID = NULL,
+  EndorsementRequirementID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

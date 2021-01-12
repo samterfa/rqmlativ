@@ -6,10 +6,10 @@
 \usage{
 modifyEvent(
   EventID,
-  SchemaName = NULL,
-  TableName = NULL,
   AuditIDSource = NULL,
+  SchemaName = NULL,
   Status = NULL,
+  TableName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

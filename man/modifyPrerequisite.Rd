@@ -6,13 +6,13 @@
 \usage{
 modifyPrerequisite(
   PrerequisiteID,
-  CurriculumID = NULL,
   Code = NULL,
+  CurriculumID = NULL,
   Description = NULL,
-  SchoolYearLow = NULL,
-  SchoolYearHigh = NULL,
   DistrictGroupKey = NULL,
   EarnedCredits = NULL,
+  SchoolYearHigh = NULL,
+  SchoolYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

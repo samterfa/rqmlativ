@@ -6,14 +6,14 @@
 \usage{
 listSkylertAttendanceExportAttendanceTypes(
   searchConditionsList = NULL,
+  AttendanceTypeCodeOverride = F,
+  AttendanceTypeID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SkylertAttendanceExportAttendanceTypeID = F,
   SkylertAttendanceExportSettingID = F,
-  AttendanceTypeID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  AttendanceTypeCodeOverride = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

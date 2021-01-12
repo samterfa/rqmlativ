@@ -5,13 +5,13 @@
 \title{Create a BudgetPublicationException}
 \usage{
 createBudgetPublicationException(
-  BudgetPublicationExtractRunID = NULL,
   AccountID = NULL,
   Amount = NULL,
+  BudgetPublicationExtractRunID = NULL,
   IsFatal = NULL,
-  Type = NULL,
   Message = NULL,
   PreserveException = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listReportQueueDestinationResults(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  FileDestinationResultID = F,
+  ModifiedTime = F,
   ReportQueueDestinationResultID = F,
   ReportQueueID = F,
-  FileDestinationResultID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

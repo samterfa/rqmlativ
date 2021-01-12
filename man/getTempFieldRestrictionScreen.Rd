@@ -6,12 +6,12 @@
 \usage{
 getTempFieldRestrictionScreen(
   TempFieldRestrictionScreenID,
-  SecurityLocationID = F,
-  DisplayText = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayText = F,
   ModifiedTime = F,
+  SecurityLocationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

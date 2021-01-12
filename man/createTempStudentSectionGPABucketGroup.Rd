@@ -5,15 +5,15 @@
 \title{Create a TempStudentSectionGPABucketGroup}
 \usage{
 createTempStudentSectionGPABucketGroup(
-  StudentSectionID = NULL,
+  EntityID = NULL,
+  GPABucketID = NULL,
+  GPAMethodID = NULL,
+  IsCumulative = NULL,
+  SchoolYearID = NULL,
   StudentGPABucketGroupID = NULL,
   StudentGPABucketGroupIsFromTemp = NULL,
   StudentID = NULL,
-  GPABucketID = NULL,
-  GPAMethodID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  IsCumulative = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a QuestionMedia}
 \usage{
 createQuestionMedia(
-  QuestionID = NULL,
   MediaID = NULL,
+  QuestionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

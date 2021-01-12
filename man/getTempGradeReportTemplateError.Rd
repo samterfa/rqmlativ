@@ -6,13 +6,13 @@
 \usage{
 getTempGradeReportTemplateError(
   TempGradeReportTemplateErrorID,
-  TempGradeReportTemplateID = F,
+  CreatedTime = F,
   Error = F,
   ErrorDetail = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  TempGradeReportTemplateID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

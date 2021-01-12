@@ -6,9 +6,9 @@
 \usage{
 modifyCharacterLimitGroup(
   CharacterLimitGroupID,
+  Code = NULL,
   Description = NULL,
   MaxLength = NULL,
-  Code = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

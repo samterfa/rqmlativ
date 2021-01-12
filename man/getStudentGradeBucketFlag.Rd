@@ -6,13 +6,13 @@
 \usage{
 getStudentGradeBucketFlag(
   StudentGradeBucketFlagID,
-  StudentGradeBucketID = F,
-  GradeBucketFlagID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  GradeBucketFlagID = F,
   IsManual = F,
+  ModifiedTime = F,
+  StudentGradeBucketID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

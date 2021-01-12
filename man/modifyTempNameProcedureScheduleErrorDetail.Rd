@@ -6,9 +6,9 @@
 \usage{
 modifyTempNameProcedureScheduleErrorDetail(
   TempNameProcedureScheduleErrorDetailID,
-  TempNameProcedureScheduleErrorID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameProcedureScheduleErrorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyLAGAMN(
   LAGAMNID,
-  StudentTestID = NULL,
   Description = NULL,
-  ScaleScore = NULL,
   IsPassing = NULL,
+  ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getMeetSummaryDetail(
   MeetSummaryDetailID,
-  DisplayPeriodID = F,
-  MeetSummaryID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  DisplayPeriodID = F,
   IsPrimary = F,
+  MeetSummaryID = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

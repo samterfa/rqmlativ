@@ -5,8 +5,8 @@
 \title{Create a GradeReportAcademicSessionTemplateCourseGroup}
 \usage{
 createGradeReportAcademicSessionTemplateCourseGroup(
-  GradeReportAcademicSessionTemplateID = NULL,
   CourseGroupID = NULL,
+  GradeReportAcademicSessionTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

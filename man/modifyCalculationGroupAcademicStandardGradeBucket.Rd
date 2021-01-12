@@ -6,11 +6,11 @@
 \usage{
 modifyCalculationGroupAcademicStandardGradeBucket(
   CalculationGroupAcademicStandardGradeBucketID,
+  CalculationGroupAcademicStandardGradeBucketIDClonedFrom = NULL,
   CalculationGroupAcademicStandardID = NULL,
   CalculationGroupGradeBucketID = NULL,
   CalculationType = NULL,
   EntityGroupKey = NULL,
-  CalculationGroupAcademicStandardGradeBucketIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

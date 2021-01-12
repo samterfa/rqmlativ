@@ -5,8 +5,8 @@
 \title{Create an ApprovalWorkflowInstance}
 \usage{
 createApprovalWorkflowInstance(
-  ApprovalType = NULL,
   ApprovalObjectID = NULL,
+  ApprovalType = NULL,
   WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,

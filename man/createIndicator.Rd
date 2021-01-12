@@ -5,10 +5,10 @@
 \title{Create an Indicator}
 \usage{
 createIndicator(
+  Image = NULL,
+  IsActive = NULL,
   Name = NULL,
   Rank = NULL,
-  IsActive = NULL,
-  Image = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

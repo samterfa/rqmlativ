@@ -5,14 +5,14 @@
 \title{Create a CRDCLEAHarassmentV1}
 \usage{
 createCRDCLEAHarassmentV1(
+  CivilRightsDataCollectionID = NULL,
+  CivilRightsDataCollectionRunHistoryID = NULL,
   DistrictID = NULL,
   DistrictSchoolYearID = NULL,
+  HarassmentPolicyWebLink = NULL,
   HasDesegregationPlan = NULL,
   HasHarassmentPolicy = NULL,
   HasHarassmentPolicyWebLink = NULL,
-  HarassmentPolicyWebLink = NULL,
-  CivilRightsDataCollectionID = NULL,
-  CivilRightsDataCollectionRunHistoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

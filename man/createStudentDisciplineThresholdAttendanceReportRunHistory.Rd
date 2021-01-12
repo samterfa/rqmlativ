@@ -5,14 +5,14 @@
 \title{Create a StudentDisciplineThresholdAttendanceReportRunHistory}
 \usage{
 createStudentDisciplineThresholdAttendanceReportRunHistory(
-  StudentID = NULL,
-  AttendanceReportRunHistoryID = NULL,
-  DisciplineThresholdID = NULL,
-  IsActive = NULL,
   AttachmentID = NULL,
-  Header = NULL,
+  AttendanceReportRunHistoryID = NULL,
   Body = NULL,
+  DisciplineThresholdID = NULL,
   Footer = NULL,
+  Header = NULL,
+  IsActive = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

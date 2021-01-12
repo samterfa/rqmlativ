@@ -6,9 +6,9 @@
 \usage{
 modifyNameEthnicityRaceSubcategoryMN(
   NameEthnicityRaceSubcategoryMNID,
+  EthnicityRaceType = NULL,
   NameID = NULL,
   StateEthnicityRaceSubcategoryMNID = NULL,
-  EthnicityRaceType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

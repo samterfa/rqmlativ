@@ -7,11 +7,11 @@
 modifyCommentSet(
   CommentSetID,
   Code = NULL,
-  EntityGroupKey = NULL,
+  CommentSetIDClonedFrom = NULL,
   Description = NULL,
+  EntityGroupKey = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  CommentSetIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

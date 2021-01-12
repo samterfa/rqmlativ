@@ -6,13 +6,13 @@
 \usage{
 getEarlyEducationProgramMN(
   EarlyEducationProgramMNID,
-  StateEarlyEducationProgramMNID = F,
+  CreatedTime = F,
   CurriculumYearID = F,
   EarlyEducationProgramMNIDClonedFrom = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  StateEarlyEducationProgramMNID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

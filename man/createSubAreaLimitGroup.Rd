@@ -5,10 +5,10 @@
 \title{Create a SubAreaLimitGroup}
 \usage{
 createSubAreaLimitGroup(
-  SubAreaID = NULL,
   Code = NULL,
-  Description = NULL,
   CreditLimit = NULL,
+  Description = NULL,
+  SubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

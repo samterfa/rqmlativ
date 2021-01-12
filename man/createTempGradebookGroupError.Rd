@@ -5,11 +5,11 @@
 \title{Create a TempGradebookGroupError}
 \usage{
 createTempGradebookGroupError(
-  EntityID = NULL,
   CalculationGroupID = NULL,
-  GradingScaleGroupID = NULL,
   Description = NULL,
+  EntityID = NULL,
   ErrorText = NULL,
+  GradingScaleGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

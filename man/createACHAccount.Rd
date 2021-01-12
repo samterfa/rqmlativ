@@ -5,16 +5,16 @@
 \title{Create an ACHAccount}
 \usage{
 createACHAccount(
-  NameID = NULL,
-  ACHAccountNumber = NULL,
-  RoutingNumber = NULL,
   AccountType = NULL,
+  ACHAccountNumber = NULL,
   Class = NULL,
-  PrenoteDate = NULL,
+  CompanyEntryDescription = NULL,
   IsActive = NULL,
   IsStateDisbursementUnit = NULL,
-  CompanyEntryDescription = NULL,
+  NameID = NULL,
+  PrenoteDate = NULL,
   ReceivingCompany = NULL,
+  RoutingNumber = NULL,
   StateIDSDU = NULL,
   entityId = 1,
   query = NULL,

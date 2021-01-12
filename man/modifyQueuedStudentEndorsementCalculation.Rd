@@ -6,9 +6,9 @@
 \usage{
 modifyQueuedStudentEndorsementCalculation(
   QueuedStudentEndorsementCalculationID,
-  StudentID = NULL,
   DistrictID = NULL,
   Status = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

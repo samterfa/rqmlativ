@@ -18,7 +18,7 @@
 	#' @return A list of DisabilityMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDisabilityMNS <- function(searchConditionsList = NULL, DisabilityMNID = F, EnrollmentMNID = F, Rank = F, StateDisabilityCodeMNID = F, DisabilityRank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDisabilityMNS <- function(searchConditionsList = NULL, CreatedTime = F, DisabilityMNID = F, DisabilityRank = F, EnrollmentMNID = F, ModifiedTime = F, Rank = F, StateDisabilityCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of DisabilityMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDisabilityMN <- function(DisabilityMNID, EnrollmentMNID = F, Rank = F, StateDisabilityCodeMNID = F, DisabilityRank = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDisabilityMN <- function(DisabilityMNID, CreatedTime = F, DisabilityRank = F, EnrollmentMNID = F, ModifiedTime = F, Rank = F, StateDisabilityCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DisabilityMNID")
 
@@ -132,7 +132,7 @@
 	#' @return A list of EnrollmentMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEnrollmentMNS <- function(searchConditionsList = NULL, EnrollmentMNID = F, DistrictID = F, StateEvaluationStatusCodeMNIDEvaluation = F, StateSpecEdInstructionalSettingCodeMNID = F, IsConsideredSpecialEd = F, IsExitingSpecialEd = F, StateEvaluationStatusCodeMNIDMARSSExit = F, EntryComment = F, ExitComment = F, StartDate = F, EndDate = F, IsActive = F, StudentID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ReceivesServicesInDistrict = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEnrollmentMNS <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EndDate = F, EnrollmentMNID = F, EntryComment = F, ExitComment = F, IsActive = F, IsConsideredSpecialEd = F, IsExitingSpecialEd = F, ModifiedTime = F, ReceivesServicesInDistrict = F, StartDate = F, StateEvaluationStatusCodeMNIDEvaluation = F, StateEvaluationStatusCodeMNIDMARSSExit = F, StateSpecEdInstructionalSettingCodeMNID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of EnrollmentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEnrollmentMN <- function(EnrollmentMNID, DistrictID = F, StateEvaluationStatusCodeMNIDEvaluation = F, StateSpecEdInstructionalSettingCodeMNID = F, IsConsideredSpecialEd = F, IsExitingSpecialEd = F, StateEvaluationStatusCodeMNIDMARSSExit = F, EntryComment = F, ExitComment = F, StartDate = F, EndDate = F, IsActive = F, StudentID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ReceivesServicesInDistrict = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEnrollmentMN <- function(EnrollmentMNID, CreatedTime = F, DistrictID = F, EndDate = F, EntryComment = F, ExitComment = F, IsActive = F, IsConsideredSpecialEd = F, IsExitingSpecialEd = F, ModifiedTime = F, ReceivesServicesInDistrict = F, StartDate = F, StateEvaluationStatusCodeMNIDEvaluation = F, StateEvaluationStatusCodeMNIDMARSSExit = F, StateSpecEdInstructionalSettingCodeMNID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EnrollmentMNID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created EnrollmentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEnrollmentMN <- function(DistrictID = NULL, StateEvaluationStatusCodeMNIDEvaluation = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, IsConsideredSpecialEd = NULL, IsExitingSpecialEd = NULL, StateEvaluationStatusCodeMNIDMARSSExit = NULL, EntryComment = NULL, ExitComment = NULL, StartDate = NULL, EndDate = NULL, StudentID = NULL, ReceivesServicesInDistrict = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEnrollmentMN <- function(DistrictID = NULL, EndDate = NULL, EntryComment = NULL, ExitComment = NULL, IsConsideredSpecialEd = NULL, IsExitingSpecialEd = NULL, ReceivesServicesInDistrict = NULL, StartDate = NULL, StateEvaluationStatusCodeMNIDEvaluation = NULL, StateEvaluationStatusCodeMNIDMARSSExit = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified EnrollmentMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEnrollmentMN <- function(EnrollmentMNID, DistrictID = NULL, StateEvaluationStatusCodeMNIDEvaluation = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, IsConsideredSpecialEd = NULL, IsExitingSpecialEd = NULL, StateEvaluationStatusCodeMNIDMARSSExit = NULL, EntryComment = NULL, ExitComment = NULL, StartDate = NULL, EndDate = NULL, StudentID = NULL, ReceivesServicesInDistrict = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEnrollmentMN <- function(EnrollmentMNID, DistrictID = NULL, EndDate = NULL, EntryComment = NULL, ExitComment = NULL, IsConsideredSpecialEd = NULL, IsExitingSpecialEd = NULL, ReceivesServicesInDistrict = NULL, StartDate = NULL, StateEvaluationStatusCodeMNIDEvaluation = NULL, StateEvaluationStatusCodeMNIDMARSSExit = NULL, StateSpecEdInstructionalSettingCodeMNID = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of NextRestraintInstanceNumberTXES
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listNextRestraintInstanceNumberTXES <- function(searchConditionsList = NULL, NextRestraintInstanceNumberTXID = F, DistrictID = F, SchoolYearID = F, SequenceNumber = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listNextRestraintInstanceNumberTXES <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, ModifiedTime = F, NextRestraintInstanceNumberTXID = F, SchoolYearID = F, SequenceNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of NextRestraintInstanceNumberTX
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getNextRestraintInstanceNumberTX <- function(NextRestraintInstanceNumberTXID, DistrictID = F, SchoolYearID = F, SequenceNumber = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getNextRestraintInstanceNumberTX <- function(NextRestraintInstanceNumberTXID, CreatedTime = F, DistrictID = F, ModifiedTime = F, SchoolYearID = F, SequenceNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "NextRestraintInstanceNumberTXID")
 
@@ -360,7 +360,7 @@
 	#' @return A list of EasyIEPExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEasyIEPExceptions <- function(searchConditionsList = NULL, EasyIEPExceptionID = F, EasyIEPRunHistoryID = F, StudentID = F, RecordType = F, StartDate = F, EndDate = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEasyIEPExceptions <- function(searchConditionsList = NULL, CreatedTime = F, EasyIEPExceptionID = F, EasyIEPRunHistoryID = F, EndDate = F, Message = F, ModifiedTime = F, RecordType = F, StartDate = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of EasyIEPException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEasyIEPException <- function(EasyIEPExceptionID, EasyIEPRunHistoryID = F, StudentID = F, RecordType = F, StartDate = F, EndDate = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEasyIEPException <- function(EasyIEPExceptionID, CreatedTime = F, EasyIEPRunHistoryID = F, EndDate = F, Message = F, ModifiedTime = F, RecordType = F, StartDate = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EasyIEPExceptionID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created EasyIEPException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEasyIEPException <- function(EasyIEPRunHistoryID = NULL, StudentID = NULL, RecordType = NULL, StartDate = NULL, EndDate = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEasyIEPException <- function(EasyIEPRunHistoryID = NULL, EndDate = NULL, Message = NULL, RecordType = NULL, StartDate = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified EasyIEPException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEasyIEPException <- function(EasyIEPExceptionID, EasyIEPRunHistoryID = NULL, StudentID = NULL, RecordType = NULL, StartDate = NULL, EndDate = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEasyIEPException <- function(EasyIEPExceptionID, EasyIEPRunHistoryID = NULL, EndDate = NULL, Message = NULL, RecordType = NULL, StartDate = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of EasyIEPImportedRecords
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEasyIEPImportedRecords <- function(searchConditionsList = NULL, EasyIEPImportedRecordID = F, EasyIEPRunHistoryID = F, StudentID = F, StartDate = F, EndDate = F, RecordType = F, UpdateType = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEasyIEPImportedRecords <- function(searchConditionsList = NULL, CreatedTime = F, EasyIEPImportedRecordID = F, EasyIEPRunHistoryID = F, EndDate = F, Message = F, ModifiedTime = F, RecordType = F, StartDate = F, StudentID = F, UpdateType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of EasyIEPImportedRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEasyIEPImportedRecord <- function(EasyIEPImportedRecordID, EasyIEPRunHistoryID = F, StudentID = F, StartDate = F, EndDate = F, RecordType = F, UpdateType = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEasyIEPImportedRecord <- function(EasyIEPImportedRecordID, CreatedTime = F, EasyIEPRunHistoryID = F, EndDate = F, Message = F, ModifiedTime = F, RecordType = F, StartDate = F, StudentID = F, UpdateType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EasyIEPImportedRecordID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created EasyIEPImportedRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEasyIEPImportedRecord <- function(EasyIEPRunHistoryID = NULL, StudentID = NULL, StartDate = NULL, EndDate = NULL, RecordType = NULL, UpdateType = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEasyIEPImportedRecord <- function(EasyIEPRunHistoryID = NULL, EndDate = NULL, Message = NULL, RecordType = NULL, StartDate = NULL, StudentID = NULL, UpdateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified EasyIEPImportedRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEasyIEPImportedRecord <- function(EasyIEPImportedRecordID, EasyIEPRunHistoryID = NULL, StudentID = NULL, StartDate = NULL, EndDate = NULL, RecordType = NULL, UpdateType = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEasyIEPImportedRecord <- function(EasyIEPImportedRecordID, EasyIEPRunHistoryID = NULL, EndDate = NULL, Message = NULL, RecordType = NULL, StartDate = NULL, StudentID = NULL, UpdateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of EasyIEPRunHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEasyIEPRunHistories <- function(searchConditionsList = NULL, EasyIEPRunHistoryID = F, SchoolYearID = F, DistrictID = F, StartTime = F, EndTime = F, ProcessType = F, ImportType = F, IsLocked = F, ExceptionCount = F, AddCount = F, UpdateCount = F, DeleteCount = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEasyIEPRunHistories <- function(searchConditionsList = NULL, AddCount = F, CreatedTime = F, DeleteCount = F, DistrictID = F, EasyIEPRunHistoryID = F, EndTime = F, ExceptionCount = F, ImportType = F, IsLocked = F, ModifiedTime = F, ProcessType = F, RunData = F, RunParameters = F, SchoolYearID = F, StartTime = F, Status = F, UpdateCount = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of EasyIEPRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEasyIEPRunHistory <- function(EasyIEPRunHistoryID, SchoolYearID = F, DistrictID = F, StartTime = F, EndTime = F, ProcessType = F, ImportType = F, IsLocked = F, ExceptionCount = F, AddCount = F, UpdateCount = F, DeleteCount = F, Status = F, RunData = F, UserIDCanceledBy = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, RunParameters = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEasyIEPRunHistory <- function(EasyIEPRunHistoryID, AddCount = F, CreatedTime = F, DeleteCount = F, DistrictID = F, EndTime = F, ExceptionCount = F, ImportType = F, IsLocked = F, ModifiedTime = F, ProcessType = F, RunData = F, RunParameters = F, SchoolYearID = F, StartTime = F, Status = F, UpdateCount = F, UserIDCanceledBy = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EasyIEPRunHistoryID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created EasyIEPRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEasyIEPRunHistory <- function(SchoolYearID = NULL, DistrictID = NULL, StartTime = NULL, EndTime = NULL, ProcessType = NULL, ImportType = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEasyIEPRunHistory <- function(DistrictID = NULL, EndTime = NULL, ImportType = NULL, ProcessType = NULL, SchoolYearID = NULL, StartTime = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified EasyIEPRunHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEasyIEPRunHistory <- function(EasyIEPRunHistoryID, SchoolYearID = NULL, DistrictID = NULL, StartTime = NULL, EndTime = NULL, ProcessType = NULL, ImportType = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEasyIEPRunHistory <- function(EasyIEPRunHistoryID, DistrictID = NULL, EndTime = NULL, ImportType = NULL, ProcessType = NULL, SchoolYearID = NULL, StartTime = NULL, Status = NULL, UserIDCanceledBy = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

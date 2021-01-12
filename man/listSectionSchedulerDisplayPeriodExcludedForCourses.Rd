@@ -6,14 +6,14 @@
 \usage{
 listSectionSchedulerDisplayPeriodExcludedForCourses(
   searchConditionsList = NULL,
-  SectionSchedulerDisplayPeriodExcludedForCourseID = F,
   CourseID = F,
+  CreatedTime = F,
   DisplayPeriodID = F,
+  ModifiedTime = F,
+  SectionSchedulerDisplayPeriodExcludedForCourseID = F,
   SectionSchedulerDisplayPeriodExcludedForCourseIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

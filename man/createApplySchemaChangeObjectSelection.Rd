@@ -6,11 +6,11 @@
 \usage{
 createApplySchemaChangeObjectSelection(
   ModulePendingName = NULL,
-  ObjectCurrentName = NULL,
-  ObjectPendingName = NULL,
   ObjectChangeType = NULL,
+  ObjectCurrentName = NULL,
   ObjectHasChangedFields = NULL,
   ObjectHasChangedRelationships = NULL,
+  ObjectPendingName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

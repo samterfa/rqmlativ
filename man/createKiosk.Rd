@@ -5,9 +5,9 @@
 \title{Create a Kiosk}
 \usage{
 createKiosk(
-  Name = NULL,
   IPAddress = NULL,
   IsTardyKiosk = NULL,
+  Name = NULL,
   PrinterType = NULL,
   entityId = 1,
   query = NULL,

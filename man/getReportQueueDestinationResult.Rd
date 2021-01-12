@@ -6,12 +6,12 @@
 \usage{
 getReportQueueDestinationResult(
   ReportQueueDestinationResultID,
-  ReportQueueID = F,
-  FileDestinationResultID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FileDestinationResultID = F,
   ModifiedTime = F,
+  ReportQueueID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

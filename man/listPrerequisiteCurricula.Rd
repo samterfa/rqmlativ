@@ -6,13 +6,13 @@
 \usage{
 listPrerequisiteCurricula(
   searchConditionsList = NULL,
-  PrerequisiteCurriculumID = F,
+  CreatedTime = F,
   CurriculumIDRequired = F,
+  ModifiedTime = F,
+  PrerequisiteCurriculumID = F,
   PrerequisiteID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

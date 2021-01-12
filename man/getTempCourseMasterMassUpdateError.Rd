@@ -6,13 +6,13 @@
 \usage{
 getTempCourseMasterMassUpdateError(
   TempCourseMasterMassUpdateErrorID,
-  SourceDescription = F,
   BaseTableName = F,
+  CreatedTime = F,
+  ModifiedTime = F,
+  SourceDescription = F,
   TableName = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

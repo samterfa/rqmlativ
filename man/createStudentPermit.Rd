@@ -6,9 +6,9 @@
 \usage{
 createStudentPermit(
   DistrictID = NULL,
+  PermitID = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  PermitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

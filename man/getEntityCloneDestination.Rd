@@ -6,13 +6,13 @@
 \usage{
 getEntityCloneDestination(
   EntityCloneDestinationID,
+  CreatedTime = F,
   EntityCloneRunID = F,
   EntityID = F,
+  ModifiedTime = F,
   SchoolYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,14 +6,14 @@
 \usage{
 modifyReimbursementRunHistory(
   ReimbursementRunHistoryID,
-  ReimbursementMonthID = NULL,
   DistrictID = NULL,
+  EndDateTime = NULL,
+  MediaID = NULL,
+  ReimbursementMonthID = NULL,
   SchoolYearID = NULL,
   StartDateTime = NULL,
-  EndDateTime = NULL,
-  Type = NULL,
-  MediaID = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

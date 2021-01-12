@@ -5,9 +5,9 @@
 \title{Create a CodeGroup}
 \usage{
 createCodeGroup(
-  PluginType = NULL,
   Code = NULL,
   Description = NULL,
+  PluginType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

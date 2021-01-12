@@ -6,12 +6,12 @@
 \usage{
 modifyTempMassUpdateStateReportingSourceUtilityRecordType(
   TempMassUpdateStateReportingSourceUtilityRecordTypeID,
+  FilterType = NULL,
+  ModuleFriendlyName = NULL,
   RecordType = NULL,
   RecordTypeFriendlyName = NULL,
   StateReportingSourceDBTableName = NULL,
   StateReportingSourceID = NULL,
-  ModuleFriendlyName = NULL,
-  FilterType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a Country}
 \usage{
 createCountry(
-  Name = NULL,
   EdFiCountryID = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

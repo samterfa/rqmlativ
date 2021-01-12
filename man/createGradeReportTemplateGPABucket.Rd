@@ -5,9 +5,9 @@
 \title{Create a GradeReportTemplateGPABucket}
 \usage{
 createGradeReportTemplateGPABucket(
-  GradeReportTemplateID = NULL,
   GPABucketID = NULL,
   GradeReportTemplateGPABucketIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

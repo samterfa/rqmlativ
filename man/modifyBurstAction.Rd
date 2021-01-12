@@ -6,10 +6,10 @@
 \usage{
 modifyBurstAction(
   BurstActionID,
+  CanBeReverted = NULL,
+  IsPrintAction = NULL,
   Name = NULL,
   ObjectID = NULL,
-  IsPrintAction = NULL,
-  CanBeReverted = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

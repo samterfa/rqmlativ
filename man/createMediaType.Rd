@@ -5,10 +5,10 @@
 \title{Create a MediaType}
 \usage{
 createMediaType(
+  AllowAttachment = NULL,
   Code = NULL,
   Description = NULL,
   MimeType = NULL,
-  AllowAttachment = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

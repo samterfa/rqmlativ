@@ -6,9 +6,9 @@
 \usage{
 modifyTempMassApproveError(
   TempMassApproveErrorID,
-  ErrorMessage = NULL,
-  DataObjectID = NULL,
   ApprovalObjectDescription = NULL,
+  DataObjectID = NULL,
+  ErrorMessage = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

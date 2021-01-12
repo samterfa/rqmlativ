@@ -7,8 +7,8 @@
 modifyESSAExpenditure(
   ESSAExpenditureID,
   DistrictID = NULL,
-  SchoolName = NULL,
   Enrollment = NULL,
+  SchoolName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

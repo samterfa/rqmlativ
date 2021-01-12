@@ -6,8 +6,8 @@
 \usage{
 createIncidentOffense(
   IncidentID = NULL,
-  OffenseID = NULL,
   IsPrimaryOffense = NULL,
+  OffenseID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

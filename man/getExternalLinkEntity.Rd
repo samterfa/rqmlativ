@@ -6,12 +6,12 @@
 \usage{
 getExternalLinkEntity(
   ExternalLinkEntityID,
-  ExternalLinkID = F,
-  EntityID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityID = F,
+  ExternalLinkID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

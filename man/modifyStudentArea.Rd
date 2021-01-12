@@ -6,8 +6,8 @@
 \usage{
 modifyStudentArea(
   StudentAreaID,
-  StudentPlanID = NULL,
   AreaID = NULL,
+  StudentPlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

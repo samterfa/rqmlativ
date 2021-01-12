@@ -5,8 +5,8 @@
 \title{Create a W2ExportPrintFile}
 \usage{
 createW2ExportPrintFile(
-  W2YearID = NULL,
   MediaID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

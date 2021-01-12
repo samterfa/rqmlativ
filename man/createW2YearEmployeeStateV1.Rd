@@ -5,12 +5,12 @@
 \title{Create a W2YearEmployeeStateV1}
 \usage{
 createW2YearEmployeeStateV1(
-  W2YearEmployeeV1ID = NULL,
-  W2YearTaxStateIDBox15 = NULL,
   Box16StateWages = NULL,
   Box17StateIncomeTax = NULL,
   IsOriginalExtractedValue = NULL,
   StateAllowance = NULL,
+  W2YearEmployeeV1ID = NULL,
+  W2YearTaxStateIDBox15 = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

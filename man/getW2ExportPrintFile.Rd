@@ -6,12 +6,12 @@
 \usage{
 getW2ExportPrintFile(
   W2ExportPrintFileID,
-  W2YearID = F,
-  MediaID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MediaID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  W2YearID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

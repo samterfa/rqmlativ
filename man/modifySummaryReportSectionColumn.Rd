@@ -6,11 +6,11 @@
 \usage{
 modifySummaryReportSectionColumn(
   SummaryReportSectionColumnID,
-  SummaryReportSectionID = NULL,
+  DataType = NULL,
   DisplayName = NULL,
   FieldName = NULL,
-  DataType = NULL,
   HiddenType = NULL,
+  SummaryReportSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 createCourseSectionLengthExclude(
   CourseID = NULL,
-  SectionLengthID = NULL,
   DistributionPercent = NULL,
   EntityGroupKey = NULL,
+  SectionLengthID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

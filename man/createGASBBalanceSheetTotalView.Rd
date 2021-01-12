@@ -5,10 +5,10 @@
 \title{Create a GASBBalanceSheetTotalView}
 \usage{
 createGASBBalanceSheetTotalView(
-  TotalFunds = NULL,
   BalanceSheetTotalType = NULL,
-  GASBExtractRunID = NULL,
   DisplayOrder = NULL,
+  GASBExtractRunID = NULL,
+  TotalFunds = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

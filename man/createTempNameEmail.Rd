@@ -5,15 +5,15 @@
 \title{Create a TempNameEmail}
 \usage{
 createTempNameEmail(
+  EmailAddress = NULL,
+  EmailTypeID = NULL,
+  ErrorCount = NULL,
+  FullNameFML = NULL,
+  HasError = NULL,
   NameEmailID = NULL,
   NameID = NULL,
-  FullNameFML = NULL,
-  Rank = NULL,
-  EmailTypeID = NULL,
-  EmailAddress = NULL,
   Note = NULL,
-  ErrorCount = NULL,
-  HasError = NULL,
+  Rank = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

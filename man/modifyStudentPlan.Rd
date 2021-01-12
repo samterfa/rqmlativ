@@ -6,9 +6,9 @@
 \usage{
 modifyStudentPlan(
   StudentPlanID,
-  StudentID = NULL,
-  PlanID = NULL,
   IsCurrent = NULL,
+  PlanID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

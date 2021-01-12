@@ -7,8 +7,8 @@
 createPhoneType(
   Code = NULL,
   Description = NULL,
-  PreventFamilyStudentAccessUpdates = NULL,
   EdFiTelephoneNumberTypeDescriptorID = NULL,
+  PreventFamilyStudentAccessUpdates = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

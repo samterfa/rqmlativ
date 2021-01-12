@@ -5,10 +5,10 @@
 \title{Create a CourseCustomRequirement}
 \usage{
 createCourseCustomRequirement(
+  CourseCustomRequirementIDClonedFrom = NULL,
   CourseID = NULL,
   CustomRequirementID = NULL,
   EntityGroupKey = NULL,
-  CourseCustomRequirementIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

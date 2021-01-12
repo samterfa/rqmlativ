@@ -6,10 +6,10 @@
 \usage{
 modifyAcademicStandardHierarchyDepth(
   AcademicStandardHierarchyDepthID,
-  DistrictGroupKey = NULL,
   AcademicStandardID = NULL,
-  HierarchyDepthID = NULL,
   AcademicStandardIDAtLevel = NULL,
+  DistrictGroupKey = NULL,
+  HierarchyDepthID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 listStudentGroupAssignments(
   searchConditionsList = NULL,
+  AssignmentID = F,
+  CreatedTime = F,
+  DeleteErrorMessage = F,
+  ModifiedTime = F,
   StudentGroupAssignmentID = F,
   StudentGroupID = F,
-  AssignmentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  DeleteErrorMessage = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

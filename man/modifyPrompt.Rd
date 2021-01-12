@@ -6,13 +6,13 @@
 \usage{
 modifyPrompt(
   PromptID,
-  Label = NULL,
-  Value = NULL,
-  Type = NULL,
+  DataObjectFieldPathID = NULL,
   DisplayOrder = NULL,
   InputType = NULL,
+  Label = NULL,
   PresenceType = NULL,
-  DataObjectFieldPathID = NULL,
+  Type = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

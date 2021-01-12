@@ -5,15 +5,15 @@
 \title{Create a TempNewStudentEnrollmentGuardianEmail}
 \usage{
 createTempNewStudentEnrollmentGuardianEmail(
-  NameEmailID = NULL,
-  EmailTypeID = NULL,
-  EmailAddress = NULL,
-  EmailPreventFamilyStudentAccessUpdates = NULL,
-  OnScreenID = NULL,
-  ParentOnScreenID = NULL,
+  AddEmail = NULL,
   CreateNewEmail = NULL,
   DeleteEmail = NULL,
-  AddEmail = NULL,
+  EmailAddress = NULL,
+  EmailPreventFamilyStudentAccessUpdates = NULL,
+  EmailTypeID = NULL,
+  NameEmailID = NULL,
+  OnScreenID = NULL,
+  ParentOnScreenID = NULL,
   Rank = NULL,
   entityId = 1,
   query = NULL,

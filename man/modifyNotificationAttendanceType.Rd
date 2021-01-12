@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationAttendanceType(
   NotificationAttendanceTypeID,
-  NotificationID = NULL,
   AttendanceTypeID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyReportError(
   ReportErrorID,
-  ReportID = NULL,
   ErrorMessage = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

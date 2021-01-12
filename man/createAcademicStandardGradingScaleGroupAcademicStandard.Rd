@@ -5,10 +5,10 @@
 \title{Create an AcademicStandardGradingScaleGroupAcademicStandard}
 \usage{
 createAcademicStandardGradingScaleGroupAcademicStandard(
+  AcademicStandardGradingScaleGroupAcademicStandardIDClonedFrom = NULL,
   AcademicStandardGradingScaleGroupID = NULL,
   CalculationGroupAcademicStandardID = NULL,
   EntityGroupKey = NULL,
-  AcademicStandardGradingScaleGroupAcademicStandardIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

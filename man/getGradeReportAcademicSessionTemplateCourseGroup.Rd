@@ -6,12 +6,12 @@
 \usage{
 getGradeReportAcademicSessionTemplateCourseGroup(
   GradeReportAcademicSessionTemplateCourseGroupID,
-  GradeReportAcademicSessionTemplateID = F,
   CourseGroupID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeReportAcademicSessionTemplateID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

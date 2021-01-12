@@ -7,9 +7,9 @@
 modifyAffordableCareActEmployeeWeekV1(
   AffordableCareActEmployeeWeekV1ID,
   AffordableCareActExtractRunID = NULL,
+  Amount = NULL,
   EmployeeID = NULL,
   WeekStartDate = NULL,
-  Amount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

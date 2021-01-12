@@ -5,12 +5,12 @@
 \title{Create a StateSubjectAreaCodeMN}
 \usage{
 createStateSubjectAreaCodeMN(
-  Rank = NULL,
   Code = NULL,
   Description = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  Rank = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

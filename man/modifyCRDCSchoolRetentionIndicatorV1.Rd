@@ -6,7 +6,9 @@
 \usage{
 modifyCRDCSchoolRetentionIndicatorV1(
   CRDCSchoolRetentionIndicatorV1ID,
-  HasKindergarten = NULL,
+  CivilRightsDataCollectionID = NULL,
+  CivilRightsDataCollectionRunHistoryID = NULL,
+  FederalNCESSchoolID = NULL,
   HasGrade01 = NULL,
   HasGrade02 = NULL,
   HasGrade03 = NULL,
@@ -19,9 +21,7 @@ modifyCRDCSchoolRetentionIndicatorV1(
   HasGrade10 = NULL,
   HasGrade11 = NULL,
   HasGrade12 = NULL,
-  CivilRightsDataCollectionID = NULL,
-  CivilRightsDataCollectionRunHistoryID = NULL,
-  FederalNCESSchoolID = NULL,
+  HasKindergarten = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

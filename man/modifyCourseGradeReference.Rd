@@ -6,10 +6,10 @@
 \usage{
 modifyCourseGradeReference(
   CourseGradeReferenceID,
-  CourseID = NULL,
-  GradeReferenceID = NULL,
-  EntityGroupKey = NULL,
   CourseGradeReferenceIDClonedFrom = NULL,
+  CourseID = NULL,
+  EntityGroupKey = NULL,
+  GradeReferenceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listVisionScreeningNotes(
   searchConditionsList = NULL,
-  VisionScreeningNoteID = F,
-  VisionScreeningID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  VisionScreeningID = F,
+  VisionScreeningNoteID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

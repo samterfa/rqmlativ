@@ -6,13 +6,13 @@
 \usage{
 getNameEthnicityRaceSubcategoryMN(
   NameEthnicityRaceSubcategoryMNID,
+  CreatedTime = F,
+  EthnicityRaceType = F,
+  ModifiedTime = F,
   NameID = F,
   StateEthnicityRaceSubcategoryMNID = F,
-  EthnicityRaceType = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

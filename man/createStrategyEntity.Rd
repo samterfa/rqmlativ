@@ -5,8 +5,8 @@
 \title{Create a StrategyEntity}
 \usage{
 createStrategyEntity(
-  StrategyID = NULL,
   EntityID = NULL,
+  StrategyID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

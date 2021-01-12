@@ -6,13 +6,13 @@
 \usage{
 listTRASubmissionPayrollRuns(
   searchConditionsList = NULL,
-  TRASubmissionPayrollRunID = F,
-  TRASubmissionID = F,
-  PayrollRunID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PayrollRunID = F,
+  TRASubmissionID = F,
+  TRASubmissionPayrollRunID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

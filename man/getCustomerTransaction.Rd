@@ -6,12 +6,12 @@
 \usage{
 getCustomerTransaction(
   CustomerTransactionID,
-  CustomerID = F,
-  PurchaseDetailID = F,
-  PaymentID = F,
-  Time = F,
   Amount = F,
   Balance = F,
+  CustomerID = F,
+  PaymentID = F,
+  PurchaseDetailID = F,
+  Time = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

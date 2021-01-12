@@ -5,13 +5,13 @@
 \title{Create a DefaultGradingScaleGroupGradeMark}
 \usage{
 createDefaultGradingScaleGroupGradeMark(
-  GradeMarkID = NULL,
-  PercentLow = NULL,
-  PercentHigh = NULL,
-  DefaultCalculationPercent = NULL,
   ConfigEntityGroupYearID = NULL,
+  DefaultCalculationPercent = NULL,
   DefaultGradingScaleGroupGradeMarkIDClonedFrom = NULL,
   EntityGroupKey = NULL,
+  GradeMarkID = NULL,
+  PercentHigh = NULL,
+  PercentLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifySTARExport(
   STARExportID,
-  STARExtractRunID = NULL,
-  Type = NULL,
   MediaID = NULL,
+  STARExtractRunID = NULL,
   Status = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 createACAEmployerException(
   ACAEmployerV2ID = NULL,
+  ACASubmissionRunHistoryID = NULL,
+  ACATransmissionID = NULL,
   DistrictID = NULL,
   EmployerID = NULL,
-  ACATransmissionID = NULL,
-  ACASubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create an ESSAExclusionV1}
 \usage{
 createESSAExclusionV1(
-  ESSAExclusionID = NULL,
   Description = NULL,
+  ESSAExclusionID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
   entityId = 1,

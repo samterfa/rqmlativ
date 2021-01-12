@@ -5,10 +5,10 @@
 \title{Create a NewFeatureUser}
 \usage{
 createNewFeatureUser(
+  MarkedAsRead = NULL,
   NewFeatureID = NULL,
   UserIDViewer = NULL,
   ViewCount = NULL,
-  MarkedAsRead = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listDirectCertificationDenialReasons(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  DenialReasonID = F,
   DirectCertificationDenialReasonID = F,
   DirectCertificationID = F,
-  DenialReasonID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

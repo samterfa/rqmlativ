@@ -5,15 +5,15 @@
 \title{Create a LoginHistory}
 \usage{
 createLoginHistory(
-  UserID = NULL,
-  UserAgent = NULL,
-  DeviceType = NULL,
   BrowserType = NULL,
   BrowserVersion = NULL,
-  OperatingSystemType = NULL,
-  HostAddress = NULL,
+  DeviceType = NULL,
   EnteredUserName = NULL,
+  HostAddress = NULL,
   IsSuccessfulLogin = NULL,
+  OperatingSystemType = NULL,
+  UserAgent = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

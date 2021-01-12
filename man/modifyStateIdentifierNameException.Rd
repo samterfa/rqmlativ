@@ -6,10 +6,10 @@
 \usage{
 modifyStateIdentifierNameException(
   StateIdentifierNameExceptionID,
+  Message = NULL,
+  MessageType = NULL,
   StateIdentifierNameID = NULL,
   StateIdentifierRunHistoryID = NULL,
-  MessageType = NULL,
-  Message = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

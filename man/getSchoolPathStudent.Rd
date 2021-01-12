@@ -6,14 +6,14 @@
 \usage{
 getSchoolPathStudent(
   SchoolPathStudentID,
+  CreatedTime = F,
   DistrictID = F,
-  SchoolYearID = F,
+  ModifiedTime = F,
   SchoolPathID = F,
+  SchoolYearID = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

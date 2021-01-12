@@ -6,10 +6,10 @@
 \usage{
 modifyCurriculumProgramMN(
   CurriculumProgramMNID,
+  CurriculumProgramMNIDClonedFrom = NULL,
+  CurriculumYearID = NULL,
   StateCurriculumProgramMNID = NULL,
   StateImplementationStatusMNID = NULL,
-  CurriculumYearID = NULL,
-  CurriculumProgramMNIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

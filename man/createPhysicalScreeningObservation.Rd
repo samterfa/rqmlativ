@@ -5,8 +5,8 @@
 \title{Create a PhysicalScreeningObservation}
 \usage{
 createPhysicalScreeningObservation(
-  PhysicalScreeningID = NULL,
   PhysicalObservationID = NULL,
+  PhysicalScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

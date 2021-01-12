@@ -6,12 +6,12 @@
 \usage{
 getPERAExtractRunIncludedPayrollRun(
   PERAExtractRunIncludedPayrollRunID,
-  PERAExtractRunID = F,
-  PayrollRunID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PayrollRunID = F,
+  PERAExtractRunID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

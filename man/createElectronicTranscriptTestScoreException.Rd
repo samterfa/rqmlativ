@@ -5,15 +5,15 @@
 \title{Create an ElectronicTranscriptTestScoreException}
 \usage{
 createElectronicTranscriptTestScoreException(
-  ElectronicTranscriptTestScoreV1ID = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
-  Message = NULL,
+  ElectronicTranscriptTestScoreV1ID = NULL,
   EntityID = NULL,
+  Message = NULL,
+  MessageType = NULL,
+  ProcessType = NULL,
+  RuleNumber = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  ProcessType = NULL,
   StudentTestID = NULL,
   entityId = 1,
   query = NULL,

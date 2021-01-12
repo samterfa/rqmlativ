@@ -6,12 +6,12 @@
 \usage{
 getScheduleBlockerDisplayPeriod(
   ScheduleBlockerDisplayPeriodID,
-  ScheduleBlockerID = F,
-  DisplayPeriodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayPeriodID = F,
   ModifiedTime = F,
+  ScheduleBlockerID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

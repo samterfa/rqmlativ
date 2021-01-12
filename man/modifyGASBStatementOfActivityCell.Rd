@@ -6,11 +6,11 @@
 \usage{
 modifyGASBStatementOfActivityCell(
   GASBStatementOfActivityCellID,
-  GASBStatementOfActivityRowID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
-  Value = NULL,
+  GASBColumnID = NULL,
   GASBExtractRunID = NULL,
+  GASBStatementOfActivityRowID = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

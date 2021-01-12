@@ -6,13 +6,13 @@
 \usage{
 listNotificationGradeMarks(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeMarkID = F,
+  ModifiedTime = F,
   NotificationGradeMarkID = F,
   NotificationID = F,
-  GradeMarkID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

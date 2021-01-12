@@ -6,14 +6,14 @@
 \usage{
 listTempCourseMasterMassUpdateErrorDetails(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  Error = F,
+  ErrorName = F,
+  ModifiedTime = F,
   TempCourseMasterMassUpdateErrorDetailID = F,
   TempCourseMasterMassUpdateErrorID = F,
-  ErrorName = F,
-  Error = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,10 +6,11 @@
 \usage{
 createBrowseView(
   BrowseID = NULL,
+  IsEnabled = NULL,
+  IsTemporary = NULL,
+  RowsPerPage = NULL,
   ShowFooter = NULL,
   Type = NULL,
-  RowsPerPage = NULL,
-  IsEnabled = NULL,
   UserID = NULL,
   entityId = 1,
   query = NULL,

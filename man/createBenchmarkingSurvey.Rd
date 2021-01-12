@@ -5,11 +5,11 @@
 \title{Create a BenchmarkingSurvey}
 \usage{
 createBenchmarkingSurvey(
-  StartTime = NULL,
-  EndTime = NULL,
-  SecurityLocationID = NULL,
   BannerMessage = NULL,
+  EndTime = NULL,
   HeaderMessage = NULL,
+  SecurityLocationID = NULL,
+  StartTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

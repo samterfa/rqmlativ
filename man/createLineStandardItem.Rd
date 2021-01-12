@@ -5,10 +5,10 @@
 \title{Create a LineStandardItem}
 \usage{
 createLineStandardItem(
-  LineID = NULL,
-  ItemID = NULL,
-  StartTime = NULL,
   EndTime = NULL,
+  ItemID = NULL,
+  LineID = NULL,
+  StartTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

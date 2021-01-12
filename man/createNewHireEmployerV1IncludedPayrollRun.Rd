@@ -5,8 +5,8 @@
 \title{Create a NewHireEmployerV1IncludedPayrollRun}
 \usage{
 createNewHireEmployerV1IncludedPayrollRun(
-  NewHireExtractRunID = NULL,
   EmployerID = NULL,
+  NewHireExtractRunID = NULL,
   PayrollRunID = NULL,
   entityId = 1,
   query = NULL,

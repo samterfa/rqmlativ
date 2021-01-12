@@ -6,14 +6,14 @@
 \usage{
 listSchoolPathSchoolOverrides(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  Order = F,
+  SchoolID = F,
   SchoolPathSchoolOverrideID = F,
   StudentID = F,
-  SchoolID = F,
-  Order = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

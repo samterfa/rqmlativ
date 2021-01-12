@@ -5,16 +5,16 @@
 \title{Create a StudentSectionTransaction}
 \usage{
 createStudentSectionTransaction(
-  StudentSectionID = NULL,
-  SectionLengthSubsetID = NULL,
-  EntityIDCountsAs = NULL,
-  StartDate = NULL,
-  EndDate = NULL,
-  NameIDRequestedBy = NULL,
   EarlyExitReasonID = NULL,
+  EndDate = NULL,
+  EntityIDCountsAs = NULL,
   HideNewStudentButton = NULL,
+  NameIDRequestedBy = NULL,
   SectionID = NULL,
+  SectionLengthSubsetID = NULL,
+  StartDate = NULL,
   StudentID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

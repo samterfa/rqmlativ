@@ -5,8 +5,8 @@
 \title{Create a StudentOfficeVisitReason}
 \usage{
 createStudentOfficeVisitReason(
-  StudentOfficeVisitID = NULL,
   OfficeVisitReasonID = NULL,
+  StudentOfficeVisitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

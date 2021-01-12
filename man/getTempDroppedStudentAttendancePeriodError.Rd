@@ -6,13 +6,13 @@
 \usage{
 getTempDroppedStudentAttendancePeriodError(
   TempDroppedStudentAttendancePeriodErrorID,
-  TempDroppedStudentAttendancePeriodRecordID = F,
-  ErrorNumber = F,
-  ErrorDescription = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorDescription = F,
+  ErrorNumber = F,
   ModifiedTime = F,
+  TempDroppedStudentAttendancePeriodRecordID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -7,10 +7,10 @@
 modifyUploadReportLog(
   UploadReportLogID,
   FileName = NULL,
-  Result = NULL,
+  LogID = NULL,
   Message = NULL,
   ReportID = NULL,
-  LogID = NULL,
+  Result = NULL,
   WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,

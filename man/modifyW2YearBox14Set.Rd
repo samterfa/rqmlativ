@@ -6,9 +6,9 @@
 \usage{
 modifyW2YearBox14Set(
   W2YearBox14SetID,
-  W2YearID = NULL,
-  W2Description = NULL,
   W2Box14SetID = NULL,
+  W2Description = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

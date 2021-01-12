@@ -5,8 +5,8 @@
 \title{Create a SectionGradeBucketWeight}
 \usage{
 createSectionGradeBucketWeight(
-  SectionGradeBucketIDFeeder = NULL,
   SectionGradeBucketIDComposite = NULL,
+  SectionGradeBucketIDFeeder = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

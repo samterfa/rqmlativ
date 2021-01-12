@@ -5,8 +5,8 @@
 \title{Create a FamilyGuardian}
 \usage{
 createFamilyGuardian(
-  NameID = NULL,
   FamilyID = NULL,
+  NameID = NULL,
   Rank = NULL,
   entityId = 1,
   query = NULL,

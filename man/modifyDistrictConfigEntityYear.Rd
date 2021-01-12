@@ -6,9 +6,9 @@
 \usage{
 modifyDistrictConfigEntityYear(
   ConfigEntityYearID,
+  ConfigEntityYearIDClonedFrom = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  ConfigEntityYearIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

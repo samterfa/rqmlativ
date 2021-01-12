@@ -5,8 +5,8 @@
 \title{Create a HealthConfigDistrictGroup}
 \usage{
 createHealthConfigDistrictGroup(
-  DistrictID = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   UseNationalChartForBodyMassIndexPercentile = NULL,
   entityId = 1,
   query = NULL,

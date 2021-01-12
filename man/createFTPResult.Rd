@@ -5,13 +5,13 @@
 \title{Create a FTPResult}
 \usage{
 createFTPResult(
+  FileName = NULL,
+  FTPConnectionID = NULL,
+  LogID = NULL,
+  MediaIDDownload = NULL,
+  Message = NULL,
   Status = NULL,
   TransmissionType = NULL,
-  Message = NULL,
-  MediaIDDownload = NULL,
-  FTPConnectionID = NULL,
-  FileName = NULL,
-  LogID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

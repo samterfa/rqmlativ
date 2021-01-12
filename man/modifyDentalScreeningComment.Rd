@@ -6,8 +6,8 @@
 \usage{
 modifyDentalScreeningComment(
   DentalScreeningCommentID,
-  DentalScreeningID = NULL,
   DentalCommentID = NULL,
+  DentalScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

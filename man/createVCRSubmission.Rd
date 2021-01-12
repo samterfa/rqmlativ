@@ -5,8 +5,8 @@
 \title{Create a VCRSubmission}
 \usage{
 createVCRSubmission(
-  SchoolYearID = NULL,
   DistrictID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

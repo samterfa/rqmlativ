@@ -6,10 +6,10 @@
 \usage{
 modifyTSAMN(
   TSAMNID,
-  StudentTestID = NULL,
   Description = NULL,
-  ScaleScore = NULL,
   IsProficient = NULL,
+  ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,17 +5,17 @@
 \title{Create a StaffEntityYear}
 \usage{
 createStaffEntityYear(
-  StaffID = NULL,
   EntityID = NULL,
   IsActive = NULL,
+  IsCareerCenterCounselor = NULL,
   IsDisciplineOfficer = NULL,
-  IsTeacher = NULL,
-  TeacherNumber = NULL,
   IsSubstituteTeacher = NULL,
+  IsTeacher = NULL,
   RoomIDDefault = NULL,
   SchoolYearID = NULL,
-  IsCareerCenterCounselor = NULL,
   StaffEntityYearIDClonedFrom = NULL,
+  StaffID = NULL,
+  TeacherNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

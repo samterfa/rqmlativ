@@ -7,8 +7,8 @@
 createGradeReportStudentTranscriptSealOfBiliteracyIL(
   Description = NULL,
   GradeReportStudentID = NULL,
-  SealOfBiliteracyILID = NULL,
   MediaIDTranscriptSealOfBiliteracyIL = NULL,
+  SealOfBiliteracyILID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

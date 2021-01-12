@@ -6,12 +6,12 @@
 \usage{
 modifyPermit(
   PermitID,
-  DistrictID = NULL,
+  AllowSchoolPathAssignment = NULL,
   Code = NULL,
   Description = NULL,
-  AllowSchoolPathAssignment = NULL,
-  SchoolYearID = NULL,
+  DistrictID = NULL,
   PermitIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

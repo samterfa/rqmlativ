@@ -6,11 +6,11 @@
 \usage{
 modifyDeviceAccess(
   DeviceAccessID,
+  Code = NULL,
+  DeviceAccessIDClonedFrom = NULL,
   DistrictID = NULL,
   SchoolYearID = NULL,
-  Code = NULL,
   StateDeviceAccessID = NULL,
-  DeviceAccessIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

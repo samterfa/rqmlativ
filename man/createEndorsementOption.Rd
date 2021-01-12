@@ -5,14 +5,14 @@
 \title{Create an EndorsementOption}
 \usage{
 createEndorsementOption(
-  EndorsementID = NULL,
-  EndorsementOptionDefaultID = NULL,
   Code = NULL,
   Description = NULL,
-  OrderNumber = NULL,
-  MustCompleteGradPlan = NULL,
-  GradYearLow = NULL,
+  EndorsementID = NULL,
+  EndorsementOptionDefaultID = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
+  MustCompleteGradPlan = NULL,
+  OrderNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

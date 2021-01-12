@@ -5,10 +5,10 @@
 \title{Create a MessageCenterConfigDistrictYear}
 \usage{
 createMessageCenterConfigDistrictYear(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  NumberOfDaysAfterWithdrawalToAllowMessages = NULL,
   ConfigDistrictYearIDClonedFrom = NULL,
+  DistrictID = NULL,
+  NumberOfDaysAfterWithdrawalToAllowMessages = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

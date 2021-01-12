@@ -6,12 +6,12 @@
 \usage{
 modifyQueueActivity(
   QueueActivityID,
-  PluginID = NULL,
-  HostName = NULL,
-  QueueName = NULL,
-  LastActivity = NULL,
   BatchSize = NULL,
+  HostName = NULL,
+  LastActivity = NULL,
+  PluginID = NULL,
   ProcessingWaitStartTime = NULL,
+  QueueName = NULL,
   ThreadName = NULL,
   entityId = 1,
   query = NULL,

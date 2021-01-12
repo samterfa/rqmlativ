@@ -5,12 +5,12 @@
 \title{Create a GradeReportTemplateHierarchyDepthSetting}
 \usage{
 createGradeReportTemplateHierarchyDepthSetting(
-  GradeReportTemplateID = NULL,
-  DepthLevel = NULL,
-  PrintBackgroundColor = NULL,
   BackgroundColor = NULL,
-  TextColor = NULL,
+  DepthLevel = NULL,
   GradeReportTemplateHierarchyDepthSettingIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
+  PrintBackgroundColor = NULL,
+  TextColor = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

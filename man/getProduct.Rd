@@ -6,12 +6,12 @@
 \usage{
 getProduct(
   ProductID,
-  RMSID = F,
-  Name = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Name = F,
+  RMSID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

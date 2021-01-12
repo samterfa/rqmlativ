@@ -5,8 +5,8 @@
 \title{Create a MobileSSO}
 \usage{
 createMobileSSO(
-  UserID = NULL,
   MobileDevice = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

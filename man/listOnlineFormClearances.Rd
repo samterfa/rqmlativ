@@ -6,13 +6,13 @@
 \usage{
 listOnlineFormClearances(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GroupIDSecurity = F,
+  ModifiedTime = F,
   OnlineFormClearanceID = F,
   OnlineFormID = F,
-  GroupIDSecurity = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

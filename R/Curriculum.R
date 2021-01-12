@@ -18,7 +18,7 @@
 	#' @return A list of TempGradeRangeCopyResults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempGradeRangeCopyResults <- function(searchConditionsList = NULL, TempGradeRangeCopyResultID = F, AcademicStandardSubjectCode = F, GradeRangeCode = F, IsError = F, ErrorText = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempGradeRangeCopyResults <- function(searchConditionsList = NULL, AcademicStandardSubjectCode = F, AcademicStandardSubjectID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, ErrorCount = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, IsSelected = F, Key = F, ModifiedTime = F, Sequence = F, TempGradeRangeCopyResultID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of TempGradeRangeCopyResult
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempGradeRangeCopyResult <- function(TempGradeRangeCopyResultID, AcademicStandardSubjectCode = F, GradeRangeCode = F, IsError = F, ErrorText = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempGradeRangeCopyResult <- function(TempGradeRangeCopyResultID, AcademicStandardSubjectCode = F, AcademicStandardSubjectID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, ErrorCount = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, IsSelected = F, Key = F, ModifiedTime = F, Sequence = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempGradeRangeCopyResultID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created TempGradeRangeCopyResult
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempGradeRangeCopyResult <- function(AcademicStandardSubjectCode = NULL, GradeRangeCode = NULL, IsError = NULL, ErrorText = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempGradeRangeCopyResult <- function(AcademicStandardSubjectCode = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, ErrorCount = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, IsSelected = NULL, Key = NULL, Sequence = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified TempGradeRangeCopyResult
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempGradeRangeCopyResult <- function(TempGradeRangeCopyResultID, AcademicStandardSubjectCode = NULL, GradeRangeCode = NULL, IsError = NULL, ErrorText = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempGradeRangeCopyResult <- function(TempGradeRangeCopyResultID, AcademicStandardSubjectCode = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, ErrorCount = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, IsSelected = NULL, Key = NULL, Sequence = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of StandardPlacementMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStandardPlacementMNS <- function(searchConditionsList = NULL, StandardPlacementMNID = F, StateStandardCodeMNID = F, CurriculumYearID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStandardPlacementMNS <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, StandardPlacementMNID = F, StateStandardCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of StandardPlacementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStandardPlacementMN <- function(StandardPlacementMNID, StateStandardCodeMNID = F, CurriculumYearID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStandardPlacementMN <- function(StandardPlacementMNID, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, StateStandardCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StandardPlacementMNID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created StandardPlacementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStandardPlacementMN <- function(StateStandardCodeMNID = NULL, CurriculumYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStandardPlacementMN <- function(CurriculumYearID = NULL, StateStandardCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified StandardPlacementMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStandardPlacementMN <- function(StandardPlacementMNID, StateStandardCodeMNID = NULL, CurriculumYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStandardPlacementMN <- function(StandardPlacementMNID, CurriculumYearID = NULL, StateStandardCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of CurriculumYears
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumYears <- function(searchConditionsList = NULL, CurriculumYearMNID = F, StateCourseCodeMNID = F, Description = F, StateStandardAddressedCodeMNID = F, StateSubjectAreaCodeMNID = F, IsGraduationRequirement = F, IsEndOfCourse = F, HasCourseLevels = F, CurriculumYearID = F, CurriculumID = F, SchoolYearID = F, DistrictGroupKey = F, ReportToFitnessGram = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, FederalSubjectTypeID = F, FederalAdvancedPlacementCourseTypeID = F, CurriculumYearIDClonedFrom = F, CurriculumYearIDClonedTo = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateSTARAssignmentCodeMNID = F, StateEarlyEducationLocationMNID = F, IsStateProgram = F, IsFederalProgram = F, IsAdultBasicEducation = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumYears <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumID = F, CurriculumYearID = F, CurriculumYearIDClonedFrom = F, CurriculumYearIDClonedTo = F, CurriculumYearMNID = F, Description = F, DistrictGroupKey = F, FederalAdvancedPlacementCourseTypeID = F, FederalSubjectTypeID = F, HasCourseLevels = F, IsAdultBasicEducation = F, IsEndOfCourse = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, IsFederalProgram = F, IsGraduationRequirement = F, IsStateProgram = F, ModifiedTime = F, ReportToFitnessGram = F, SchoolYearID = F, StateCourseCodeMNID = F, StateEarlyEducationLocationMNID = F, StateStandardAddressedCodeMNID = F, StateSTARAssignmentCodeMNID = F, StateSubjectAreaCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of CurriculumYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumYear <- function(CurriculumYearID, CurriculumYearMNID = F, StateCourseCodeMNID = F, Description = F, StateStandardAddressedCodeMNID = F, StateSubjectAreaCodeMNID = F, IsGraduationRequirement = F, IsEndOfCourse = F, HasCourseLevels = F, CurriculumID = F, SchoolYearID = F, DistrictGroupKey = F, ReportToFitnessGram = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, FederalSubjectTypeID = F, FederalAdvancedPlacementCourseTypeID = F, CurriculumYearIDClonedFrom = F, CurriculumYearIDClonedTo = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StateSTARAssignmentCodeMNID = F, StateEarlyEducationLocationMNID = F, IsStateProgram = F, IsFederalProgram = F, IsAdultBasicEducation = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumYear <- function(CurriculumYearID, CreatedTime = F, CurriculumID = F, CurriculumYearIDClonedFrom = F, CurriculumYearIDClonedTo = F, CurriculumYearMNID = F, Description = F, DistrictGroupKey = F, FederalAdvancedPlacementCourseTypeID = F, FederalSubjectTypeID = F, HasCourseLevels = F, IsAdultBasicEducation = F, IsEndOfCourse = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, IsFederalProgram = F, IsGraduationRequirement = F, IsStateProgram = F, ModifiedTime = F, ReportToFitnessGram = F, SchoolYearID = F, StateCourseCodeMNID = F, StateEarlyEducationLocationMNID = F, StateStandardAddressedCodeMNID = F, StateSTARAssignmentCodeMNID = F, StateSubjectAreaCodeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumYearID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created CurriculumYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumYear <- function(StateCourseCodeMNID = NULL, Description = NULL, StateStandardAddressedCodeMNID = NULL, StateSubjectAreaCodeMNID = NULL, IsGraduationRequirement = NULL, IsEndOfCourse = NULL, CurriculumID = NULL, SchoolYearID = NULL, DistrictGroupKey = NULL, ReportToFitnessGram = NULL, IsFederalDistanceEducation = NULL, IsFederalDualEnrollment = NULL, FederalSubjectTypeID = NULL, FederalAdvancedPlacementCourseTypeID = NULL, CurriculumYearIDClonedFrom = NULL, StateSTARAssignmentCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, IsStateProgram = NULL, IsFederalProgram = NULL, IsAdultBasicEducation = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumYear <- function(CurriculumID = NULL, CurriculumYearIDClonedFrom = NULL, Description = NULL, DistrictGroupKey = NULL, FederalAdvancedPlacementCourseTypeID = NULL, FederalSubjectTypeID = NULL, IsAdultBasicEducation = NULL, IsEndOfCourse = NULL, IsFederalDistanceEducation = NULL, IsFederalDualEnrollment = NULL, IsFederalProgram = NULL, IsGraduationRequirement = NULL, IsStateProgram = NULL, ReportToFitnessGram = NULL, SchoolYearID = NULL, StateCourseCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, StateStandardAddressedCodeMNID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSubjectAreaCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified CurriculumYear
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumYear <- function(CurriculumYearID, StateCourseCodeMNID = NULL, Description = NULL, StateStandardAddressedCodeMNID = NULL, StateSubjectAreaCodeMNID = NULL, IsGraduationRequirement = NULL, IsEndOfCourse = NULL, CurriculumID = NULL, SchoolYearID = NULL, DistrictGroupKey = NULL, ReportToFitnessGram = NULL, IsFederalDistanceEducation = NULL, IsFederalDualEnrollment = NULL, FederalSubjectTypeID = NULL, FederalAdvancedPlacementCourseTypeID = NULL, CurriculumYearIDClonedFrom = NULL, StateSTARAssignmentCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, IsStateProgram = NULL, IsFederalProgram = NULL, IsAdultBasicEducation = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumYear <- function(CurriculumYearID, CurriculumID = NULL, CurriculumYearIDClonedFrom = NULL, Description = NULL, DistrictGroupKey = NULL, FederalAdvancedPlacementCourseTypeID = NULL, FederalSubjectTypeID = NULL, IsAdultBasicEducation = NULL, IsEndOfCourse = NULL, IsFederalDistanceEducation = NULL, IsFederalDualEnrollment = NULL, IsFederalProgram = NULL, IsGraduationRequirement = NULL, IsStateProgram = NULL, ReportToFitnessGram = NULL, SchoolYearID = NULL, StateCourseCodeMNID = NULL, StateEarlyEducationLocationMNID = NULL, StateStandardAddressedCodeMNID = NULL, StateSTARAssignmentCodeMNID = NULL, StateSubjectAreaCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of AcademicStandardHierarchyDepths
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardHierarchyDepths <- function(searchConditionsList = NULL, AcademicStandardHierarchyDepthID = F, DistrictGroupKey = F, AcademicStandardID = F, HierarchyDepthID = F, AcademicStandardIDAtLevel = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardHierarchyDepths <- function(searchConditionsList = NULL, AcademicStandardHierarchyDepthID = F, AcademicStandardID = F, AcademicStandardIDAtLevel = F, CreatedTime = F, DistrictGroupKey = F, HierarchyDepthID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of AcademicStandardHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardHierarchyDepth <- function(AcademicStandardHierarchyDepthID, DistrictGroupKey = F, AcademicStandardID = F, HierarchyDepthID = F, AcademicStandardIDAtLevel = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardHierarchyDepth <- function(AcademicStandardHierarchyDepthID, AcademicStandardID = F, AcademicStandardIDAtLevel = F, CreatedTime = F, DistrictGroupKey = F, HierarchyDepthID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardHierarchyDepthID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created AcademicStandardHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardHierarchyDepth <- function(DistrictGroupKey = NULL, AcademicStandardID = NULL, HierarchyDepthID = NULL, AcademicStandardIDAtLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardHierarchyDepth <- function(AcademicStandardID = NULL, AcademicStandardIDAtLevel = NULL, DistrictGroupKey = NULL, HierarchyDepthID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified AcademicStandardHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardHierarchyDepth <- function(AcademicStandardHierarchyDepthID, DistrictGroupKey = NULL, AcademicStandardID = NULL, HierarchyDepthID = NULL, AcademicStandardIDAtLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardHierarchyDepth <- function(AcademicStandardHierarchyDepthID, AcademicStandardID = NULL, AcademicStandardIDAtLevel = NULL, DistrictGroupKey = NULL, HierarchyDepthID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of CurriculumCurriculumSubjects
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumCurriculumSubjects <- function(searchConditionsList = NULL, CurriculumSubjectID = F, DistrictGroupKey = F, CurriculumID = F, SubjectID = F, NumberOfAttachedCurriculumAcademicStandards = F, IsDefault = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CurriculumSubjectIDClonedFrom = F, CurriculumSubjectIDClonedTo = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumCurriculumSubjects <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumID = F, CurriculumSubjectID = F, CurriculumSubjectIDClonedFrom = F, CurriculumSubjectIDClonedTo = F, DistrictGroupKey = F, IsDefault = F, ModifiedTime = F, NumberOfAttachedCurriculumAcademicStandards = F, SubjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of CurriculumCurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumCurriculumSubject <- function(CurriculumCurriculumSubjectID, CurriculumSubjectID = F, DistrictGroupKey = F, CurriculumID = F, SubjectID = F, NumberOfAttachedCurriculumAcademicStandards = F, IsDefault = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, CurriculumSubjectIDClonedFrom = F, CurriculumSubjectIDClonedTo = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumCurriculumSubject <- function(CurriculumCurriculumSubjectID, CreatedTime = F, CurriculumID = F, CurriculumSubjectID = F, CurriculumSubjectIDClonedFrom = F, CurriculumSubjectIDClonedTo = F, DistrictGroupKey = F, IsDefault = F, ModifiedTime = F, NumberOfAttachedCurriculumAcademicStandards = F, SubjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumCurriculumSubjectID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created CurriculumCurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumCurriculumSubject <- function(DistrictGroupKey = NULL, CurriculumID = NULL, SubjectID = NULL, IsDefault = NULL, CurriculumSubjectIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumCurriculumSubject <- function(CurriculumID = NULL, CurriculumSubjectIDClonedFrom = NULL, DistrictGroupKey = NULL, IsDefault = NULL, SubjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified CurriculumCurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumCurriculumSubject <- function(CurriculumSubjectID, DistrictGroupKey = NULL, CurriculumID = NULL, SubjectID = NULL, IsDefault = NULL, CurriculumSubjectIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumCurriculumSubject <- function(CurriculumSubjectID, CurriculumID = NULL, CurriculumSubjectIDClonedFrom = NULL, DistrictGroupKey = NULL, IsDefault = NULL, SubjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of CurriculumSubjectAcademicStandards
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumSubjectAcademicStandards <- function(searchConditionsList = NULL, CurriculumSubjectAcademicStandardID = F, CurriculumAcademicStandardID = F, CurriculumSubjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumSubjectAcademicStandards <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumAcademicStandardID = F, CurriculumSubjectAcademicStandardID = F, CurriculumSubjectID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of CurriculumSubjectAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumSubjectAcademicStandard <- function(CurriculumSubjectAcademicStandardID, CurriculumAcademicStandardID = F, CurriculumSubjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumSubjectAcademicStandard <- function(CurriculumSubjectAcademicStandardID, CreatedTime = F, CurriculumAcademicStandardID = F, CurriculumSubjectID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumSubjectAcademicStandardID")
 
@@ -702,7 +702,7 @@
 	#' @return A list of HierarchyDepths
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listHierarchyDepths <- function(searchConditionsList = NULL, HierarchyDepthID = F, DistrictGroupKey = F, AcademicStandardSetID = F, Code = F, Description = F, DepthLevel = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DynamicRelationshipID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listHierarchyDepths <- function(searchConditionsList = NULL, AcademicStandardSetID = F, Code = F, CreatedTime = F, DepthLevel = F, Description = F, DistrictGroupKey = F, DynamicRelationshipID = F, HierarchyDepthID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of HierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getHierarchyDepth <- function(HierarchyDepthID, DistrictGroupKey = F, AcademicStandardSetID = F, Code = F, Description = F, DepthLevel = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DynamicRelationshipID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getHierarchyDepth <- function(HierarchyDepthID, AcademicStandardSetID = F, Code = F, CreatedTime = F, DepthLevel = F, Description = F, DistrictGroupKey = F, DynamicRelationshipID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "HierarchyDepthID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created HierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createHierarchyDepth <- function(DistrictGroupKey = NULL, AcademicStandardSetID = NULL, Code = NULL, Description = NULL, DepthLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createHierarchyDepth <- function(AcademicStandardSetID = NULL, Code = NULL, DepthLevel = NULL, Description = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified HierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyHierarchyDepth <- function(HierarchyDepthID, DistrictGroupKey = NULL, AcademicStandardSetID = NULL, Code = NULL, Description = NULL, DepthLevel = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyHierarchyDepth <- function(HierarchyDepthID, AcademicStandardSetID = NULL, Code = NULL, DepthLevel = NULL, Description = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of TempHierarchyDepths
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempHierarchyDepths <- function(searchConditionsList = NULL, TempHierarchyDepthID = F, Code = F, Description = F, DepthLevel = F, AcademicStandardSetCode = F, AcademicStandardSetDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempHierarchyDepths <- function(searchConditionsList = NULL, AcademicStandardSetCode = F, AcademicStandardSetDescription = F, Code = F, CreatedTime = F, DepthLevel = F, Description = F, ModifiedTime = F, TempHierarchyDepthID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of TempHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempHierarchyDepth <- function(TempHierarchyDepthID, Code = F, Description = F, DepthLevel = F, AcademicStandardSetCode = F, AcademicStandardSetDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempHierarchyDepth <- function(TempHierarchyDepthID, AcademicStandardSetCode = F, AcademicStandardSetDescription = F, Code = F, CreatedTime = F, DepthLevel = F, Description = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempHierarchyDepthID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created TempHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempHierarchyDepth <- function(Code = NULL, Description = NULL, DepthLevel = NULL, AcademicStandardSetCode = NULL, AcademicStandardSetDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempHierarchyDepth <- function(AcademicStandardSetCode = NULL, AcademicStandardSetDescription = NULL, Code = NULL, DepthLevel = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified TempHierarchyDepth
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempHierarchyDepth <- function(TempHierarchyDepthID, Code = NULL, Description = NULL, DepthLevel = NULL, AcademicStandardSetCode = NULL, AcademicStandardSetDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempHierarchyDepth <- function(TempHierarchyDepthID, AcademicStandardSetCode = NULL, AcademicStandardSetDescription = NULL, Code = NULL, DepthLevel = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of PrerequisiteCurricula
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPrerequisiteCurricula <- function(searchConditionsList = NULL, PrerequisiteCurriculumID = F, CurriculumIDRequired = F, PrerequisiteID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPrerequisiteCurricula <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumIDRequired = F, ModifiedTime = F, PrerequisiteCurriculumID = F, PrerequisiteID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of PrerequisiteCurriculum
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPrerequisiteCurriculum <- function(PrerequisiteCurriculumID, CurriculumIDRequired = F, PrerequisiteID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPrerequisiteCurriculum <- function(PrerequisiteCurriculumID, CreatedTime = F, CurriculumIDRequired = F, ModifiedTime = F, PrerequisiteID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PrerequisiteCurriculumID")
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of TempAcademicStandards
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempAcademicStandards <- function(searchConditionsList = NULL, TempAcademicStandardID = F, Label = F, StateNumber = F, Level = F, IsPlaceHolder = F, Description = F, ExtendedDescription = F, Sequence = F, Guid = F, ParentGuid = F, TempAcademicStandardGradeRangeID = F, TempAcademicStandardIDParent = F, TempAcademicStandardSetID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Key = F, EnteredByDistrict = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempAcademicStandards <- function(searchConditionsList = NULL, CreatedTime = F, Description = F, EnteredByDistrict = F, ExtendedDescription = F, Guid = F, ImportedFrom = F, IsPlaceHolder = F, Key = F, Label = F, Level = F, ModifiedTime = F, ParentGuid = F, Sequence = F, StateNumber = F, TempAcademicStandardGradeRangeID = F, TempAcademicStandardID = F, TempAcademicStandardIDParent = F, TempAcademicStandardSetID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of TempAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempAcademicStandard <- function(TempAcademicStandardID, Label = F, StateNumber = F, Level = F, IsPlaceHolder = F, Description = F, ExtendedDescription = F, Sequence = F, Guid = F, ParentGuid = F, TempAcademicStandardGradeRangeID = F, TempAcademicStandardIDParent = F, TempAcademicStandardSetID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Key = F, EnteredByDistrict = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempAcademicStandard <- function(TempAcademicStandardID, CreatedTime = F, Description = F, EnteredByDistrict = F, ExtendedDescription = F, Guid = F, ImportedFrom = F, IsPlaceHolder = F, Key = F, Label = F, Level = F, ModifiedTime = F, ParentGuid = F, Sequence = F, StateNumber = F, TempAcademicStandardGradeRangeID = F, TempAcademicStandardIDParent = F, TempAcademicStandardSetID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempAcademicStandardID")
 
@@ -1109,7 +1109,7 @@
 	#' @return A newly created TempAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempAcademicStandard <- function(Label = NULL, StateNumber = NULL, Level = NULL, IsPlaceHolder = NULL, Description = NULL, ExtendedDescription = NULL, Sequence = NULL, Guid = NULL, ParentGuid = NULL, TempAcademicStandardGradeRangeID = NULL, TempAcademicStandardIDParent = NULL, TempAcademicStandardSetID = NULL, ImportedFrom = NULL, Key = NULL, EnteredByDistrict = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempAcademicStandard <- function(Description = NULL, EnteredByDistrict = NULL, ExtendedDescription = NULL, Guid = NULL, ImportedFrom = NULL, IsPlaceHolder = NULL, Key = NULL, Label = NULL, Level = NULL, ParentGuid = NULL, Sequence = NULL, StateNumber = NULL, TempAcademicStandardGradeRangeID = NULL, TempAcademicStandardIDParent = NULL, TempAcademicStandardSetID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1130,7 +1130,7 @@
 	#' @return The modified TempAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempAcademicStandard <- function(TempAcademicStandardID, Label = NULL, StateNumber = NULL, Level = NULL, IsPlaceHolder = NULL, Description = NULL, ExtendedDescription = NULL, Sequence = NULL, Guid = NULL, ParentGuid = NULL, TempAcademicStandardGradeRangeID = NULL, TempAcademicStandardIDParent = NULL, TempAcademicStandardSetID = NULL, ImportedFrom = NULL, Key = NULL, EnteredByDistrict = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempAcademicStandard <- function(TempAcademicStandardID, Description = NULL, EnteredByDistrict = NULL, ExtendedDescription = NULL, Guid = NULL, ImportedFrom = NULL, IsPlaceHolder = NULL, Key = NULL, Label = NULL, Level = NULL, ParentGuid = NULL, Sequence = NULL, StateNumber = NULL, TempAcademicStandardGradeRangeID = NULL, TempAcademicStandardIDParent = NULL, TempAcademicStandardSetID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1158,7 +1158,7 @@
 	#' @return A list of TempAcademicStandardGradeRanges
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempAcademicStandardGradeRanges <- function(searchConditionsList = NULL, TempAcademicStandardGradeRangeID = F, Code = F, Description = F, GradeRangeLow = F, GradeRangeHigh = F, Sequence = F, Guid = F, TempAcademicStandardSubjectID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempAcademicStandardGradeRanges <- function(searchConditionsList = NULL, Code = F, CreatedTime = F, Description = F, EnteredByDistrict = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, ImportedFrom = F, Key = F, ModifiedTime = F, Sequence = F, TempAcademicStandardGradeRangeID = F, TempAcademicStandardSubjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of TempAcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempAcademicStandardGradeRange <- function(TempAcademicStandardGradeRangeID, Code = F, Description = F, GradeRangeLow = F, GradeRangeHigh = F, Sequence = F, Guid = F, TempAcademicStandardSubjectID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempAcademicStandardGradeRange <- function(TempAcademicStandardGradeRangeID, Code = F, CreatedTime = F, Description = F, EnteredByDistrict = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, ImportedFrom = F, Key = F, ModifiedTime = F, Sequence = F, TempAcademicStandardSubjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempAcademicStandardGradeRangeID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created TempAcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempAcademicStandardGradeRange <- function(Code = NULL, Description = NULL, GradeRangeLow = NULL, GradeRangeHigh = NULL, Sequence = NULL, Guid = NULL, TempAcademicStandardSubjectID = NULL, ImportedFrom = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempAcademicStandardGradeRange <- function(Code = NULL, Description = NULL, EnteredByDistrict = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, ImportedFrom = NULL, Key = NULL, Sequence = NULL, TempAcademicStandardSubjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified TempAcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempAcademicStandardGradeRange <- function(TempAcademicStandardGradeRangeID, Code = NULL, Description = NULL, GradeRangeLow = NULL, GradeRangeHigh = NULL, Sequence = NULL, Guid = NULL, TempAcademicStandardSubjectID = NULL, ImportedFrom = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempAcademicStandardGradeRange <- function(TempAcademicStandardGradeRangeID, Code = NULL, Description = NULL, EnteredByDistrict = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, ImportedFrom = NULL, Key = NULL, Sequence = NULL, TempAcademicStandardSubjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of TempAcademicStandardSets
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempAcademicStandardSets <- function(searchConditionsList = NULL, TempAcademicStandardSetID = F, Code = F, Description = F, IsActive = F, StateCode = F, ImportedFrom = F, DistrictID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempAcademicStandardSets <- function(searchConditionsList = NULL, Code = F, CreatedTime = F, Description = F, DistrictID = F, EnteredByDistrict = F, ImportedFrom = F, IsActive = F, Key = F, ModifiedTime = F, StateCode = F, TempAcademicStandardSetID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of TempAcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempAcademicStandardSet <- function(TempAcademicStandardSetID, Code = F, Description = F, IsActive = F, StateCode = F, ImportedFrom = F, DistrictID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempAcademicStandardSet <- function(TempAcademicStandardSetID, Code = F, CreatedTime = F, Description = F, DistrictID = F, EnteredByDistrict = F, ImportedFrom = F, IsActive = F, Key = F, ModifiedTime = F, StateCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempAcademicStandardSetID")
 
@@ -1337,7 +1337,7 @@
 	#' @return A newly created TempAcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempAcademicStandardSet <- function(Code = NULL, Description = NULL, IsActive = NULL, StateCode = NULL, ImportedFrom = NULL, DistrictID = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempAcademicStandardSet <- function(Code = NULL, Description = NULL, DistrictID = NULL, EnteredByDistrict = NULL, ImportedFrom = NULL, IsActive = NULL, Key = NULL, StateCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1358,7 +1358,7 @@
 	#' @return The modified TempAcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempAcademicStandardSet <- function(TempAcademicStandardSetID, Code = NULL, Description = NULL, IsActive = NULL, StateCode = NULL, ImportedFrom = NULL, DistrictID = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempAcademicStandardSet <- function(TempAcademicStandardSetID, Code = NULL, Description = NULL, DistrictID = NULL, EnteredByDistrict = NULL, ImportedFrom = NULL, IsActive = NULL, Key = NULL, StateCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of TempAcademicStandardSubjects
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempAcademicStandardSubjects <- function(searchConditionsList = NULL, TempAcademicStandardSubjectID = F, Code = F, Description = F, Year = F, Sequence = F, TempAcademicStandardSetID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempAcademicStandardSubjects <- function(searchConditionsList = NULL, Code = F, CreatedTime = F, Description = F, EnteredByDistrict = F, ImportedFrom = F, Key = F, ModifiedTime = F, Sequence = F, TempAcademicStandardSetID = F, TempAcademicStandardSubjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Year = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of TempAcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempAcademicStandardSubject <- function(TempAcademicStandardSubjectID, Code = F, Description = F, Year = F, Sequence = F, TempAcademicStandardSetID = F, ImportedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EnteredByDistrict = F, Key = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempAcademicStandardSubject <- function(TempAcademicStandardSubjectID, Code = F, CreatedTime = F, Description = F, EnteredByDistrict = F, ImportedFrom = F, Key = F, ModifiedTime = F, Sequence = F, TempAcademicStandardSetID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Year = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempAcademicStandardSubjectID")
 
@@ -1451,7 +1451,7 @@
 	#' @return A newly created TempAcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempAcademicStandardSubject <- function(Code = NULL, Description = NULL, Year = NULL, Sequence = NULL, TempAcademicStandardSetID = NULL, ImportedFrom = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempAcademicStandardSubject <- function(Code = NULL, Description = NULL, EnteredByDistrict = NULL, ImportedFrom = NULL, Key = NULL, Sequence = NULL, TempAcademicStandardSetID = NULL, Year = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1472,7 +1472,7 @@
 	#' @return The modified TempAcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempAcademicStandardSubject <- function(TempAcademicStandardSubjectID, Code = NULL, Description = NULL, Year = NULL, Sequence = NULL, TempAcademicStandardSetID = NULL, ImportedFrom = NULL, EnteredByDistrict = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempAcademicStandardSubject <- function(TempAcademicStandardSubjectID, Code = NULL, Description = NULL, EnteredByDistrict = NULL, ImportedFrom = NULL, Key = NULL, Sequence = NULL, TempAcademicStandardSetID = NULL, Year = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of CurriculumGradeLevels
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumGradeLevels <- function(searchConditionsList = NULL, CurriculumGradeLevelID = F, CurriculumID = F, GradeLevelID = F, DistrictGroupKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumGradeLevels <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumGradeLevelID = F, CurriculumID = F, DistrictGroupKey = F, GradeLevelID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of CurriculumGradeLevel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumGradeLevel <- function(CurriculumGradeLevelID, CurriculumID = F, GradeLevelID = F, DistrictGroupKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumGradeLevel <- function(CurriculumGradeLevelID, CreatedTime = F, CurriculumID = F, DistrictGroupKey = F, GradeLevelID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumGradeLevelID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created CurriculumGradeLevel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumGradeLevel <- function(CurriculumID = NULL, GradeLevelID = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumGradeLevel <- function(CurriculumID = NULL, DistrictGroupKey = NULL, GradeLevelID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified CurriculumGradeLevel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumGradeLevel <- function(CurriculumGradeLevelID, CurriculumID = NULL, GradeLevelID = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumGradeLevel <- function(CurriculumGradeLevelID, CurriculumID = NULL, DistrictGroupKey = NULL, GradeLevelID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of AcademicStandardSets
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardSets <- function(searchConditionsList = NULL, AcademicStandardSetID = F, DistrictID = F, DistrictGroupKey = F, Code = F, Description = F, IsActive = F, StateCode = F, EnteredByDistrict = F, Key = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardSetDefaultID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardSets <- function(searchConditionsList = NULL, AcademicStandardSetDefaultID = F, AcademicStandardSetID = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictGroupKey = F, DistrictID = F, EnteredByDistrict = F, IsActive = F, Key = F, ModifiedTime = F, StateCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of AcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardSet <- function(AcademicStandardSetID, DistrictID = F, DistrictGroupKey = F, Code = F, Description = F, IsActive = F, StateCode = F, EnteredByDistrict = F, Key = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardSetDefaultID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardSet <- function(AcademicStandardSetID, AcademicStandardSetDefaultID = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictGroupKey = F, DistrictID = F, EnteredByDistrict = F, IsActive = F, Key = F, ModifiedTime = F, StateCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardSetID")
 
@@ -1679,7 +1679,7 @@
 	#' @return A newly created AcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardSet <- function(DistrictID = NULL, DistrictGroupKey = NULL, Code = NULL, Description = NULL, IsActive = NULL, StateCode = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardSetDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardSet <- function(AcademicStandardSetDefaultID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EnteredByDistrict = NULL, IsActive = NULL, Key = NULL, StateCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1700,7 +1700,7 @@
 	#' @return The modified AcademicStandardSet
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardSet <- function(AcademicStandardSetID, DistrictID = NULL, DistrictGroupKey = NULL, Code = NULL, Description = NULL, IsActive = NULL, StateCode = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardSetDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardSet <- function(AcademicStandardSetID, AcademicStandardSetDefaultID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EnteredByDistrict = NULL, IsActive = NULL, Key = NULL, StateCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of AcademicStandardSubjects
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardSubjects <- function(searchConditionsList = NULL, AcademicStandardSubjectID = F, DistrictGroupKey = F, AcademicStandardSetID = F, Code = F, Description = F, Year = F, Sequence = F, EnteredByDistrict = F, Key = F, FullKeyPrefix = F, FullKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardSubjectDefaultID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardSubjects <- function(searchConditionsList = NULL, AcademicStandardSetID = F, AcademicStandardSubjectDefaultID = F, AcademicStandardSubjectID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, FullKey = F, FullKeyPrefix = F, Key = F, ModifiedTime = F, Sequence = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Year = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of AcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardSubject <- function(AcademicStandardSubjectID, DistrictGroupKey = F, AcademicStandardSetID = F, Code = F, Description = F, Year = F, Sequence = F, EnteredByDistrict = F, Key = F, FullKeyPrefix = F, FullKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardSubjectDefaultID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardSubject <- function(AcademicStandardSubjectID, AcademicStandardSetID = F, AcademicStandardSubjectDefaultID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, FullKey = F, FullKeyPrefix = F, Key = F, ModifiedTime = F, Sequence = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Year = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardSubjectID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created AcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardSubject <- function(DistrictGroupKey = NULL, AcademicStandardSetID = NULL, Code = NULL, Description = NULL, Year = NULL, Sequence = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardSubjectDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardSubject <- function(AcademicStandardSetID = NULL, AcademicStandardSubjectDefaultID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, Key = NULL, Sequence = NULL, Year = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified AcademicStandardSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardSubject <- function(AcademicStandardSubjectID, DistrictGroupKey = NULL, AcademicStandardSetID = NULL, Code = NULL, Description = NULL, Year = NULL, Sequence = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardSubjectDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardSubject <- function(AcademicStandardSubjectID, AcademicStandardSetID = NULL, AcademicStandardSubjectDefaultID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, Key = NULL, Sequence = NULL, Year = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of AcademicStandardGradeRanges
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardGradeRanges <- function(searchConditionsList = NULL, AcademicStandardGradeRangeID = F, DistrictGroupKey = F, AcademicStandardSubjectID = F, Code = F, Description = F, GradeRangeLow = F, GradeRangeHigh = F, Sequence = F, Guid = F, EnteredByDistrict = F, Key = F, FullKey = F, FullKeyPrefix = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardGradeRangeDefaultID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardGradeRanges <- function(searchConditionsList = NULL, AcademicStandardGradeRangeDefaultID = F, AcademicStandardGradeRangeID = F, AcademicStandardSubjectID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, FullKey = F, FullKeyPrefix = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, Key = F, ModifiedTime = F, Sequence = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of AcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardGradeRange <- function(AcademicStandardGradeRangeID, DistrictGroupKey = F, AcademicStandardSubjectID = F, Code = F, Description = F, GradeRangeLow = F, GradeRangeHigh = F, Sequence = F, Guid = F, EnteredByDistrict = F, Key = F, FullKey = F, FullKeyPrefix = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AcademicStandardGradeRangeDefaultID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardGradeRange <- function(AcademicStandardGradeRangeID, AcademicStandardGradeRangeDefaultID = F, AcademicStandardSubjectID = F, Code = F, CreatedTime = F, Description = F, DistrictGroupKey = F, EnteredByDistrict = F, FullKey = F, FullKeyPrefix = F, GradeRangeHigh = F, GradeRangeLow = F, Guid = F, Key = F, ModifiedTime = F, Sequence = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardGradeRangeID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created AcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardGradeRange <- function(DistrictGroupKey = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, GradeRangeLow = NULL, GradeRangeHigh = NULL, Sequence = NULL, Guid = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardGradeRangeDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardGradeRange <- function(AcademicStandardGradeRangeDefaultID = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, Key = NULL, Sequence = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified AcademicStandardGradeRange
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardGradeRange <- function(AcademicStandardGradeRangeID, DistrictGroupKey = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, GradeRangeLow = NULL, GradeRangeHigh = NULL, Sequence = NULL, Guid = NULL, EnteredByDistrict = NULL, Key = NULL, AcademicStandardGradeRangeDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardGradeRange <- function(AcademicStandardGradeRangeID, AcademicStandardGradeRangeDefaultID = NULL, AcademicStandardSubjectID = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, GradeRangeHigh = NULL, GradeRangeLow = NULL, Guid = NULL, Key = NULL, Sequence = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of AcademicStandards
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandards <- function(searchConditionsList = NULL, AcademicStandardID = F, DistrictGroupKey = F, AcademicStandardGradeRangeID = F, Label = F, StateNumber = F, Level = F, IsPlaceHolder = F, Description = F, ExtendedDescription = F, Sequence = F, Guid = F, ParentGuid = F, AcademicStandardIDParent = F, EnteredByDistrict = F, Key = F, DisplayAs = F, DescriptionToUse = F, IsAttachedToASubject = F, FullKeyPrefix = F, FullKey = F, HierarchyDepthDescription = F, NextLevelHierarchyDepthDescription = F, GrandChildLevelHierarchyDepthDescription = F, ChildAcademicStandardCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsHighFrequencyWord = F, LetterAndSoundType = F, LetterType = F, AcademicStandardDefaultID = F, IsLettersAndSounds = F, BackgroundColor = F, TextColor = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandards <- function(searchConditionsList = NULL, AcademicStandardDefaultID = F, AcademicStandardGradeRangeID = F, AcademicStandardID = F, AcademicStandardIDParent = F, BackgroundColor = F, ChildAcademicStandardCount = F, CreatedTime = F, Description = F, DescriptionToUse = F, DisplayAs = F, DistrictGroupKey = F, EnteredByDistrict = F, ExtendedDescription = F, FullKey = F, FullKeyPrefix = F, GrandChildLevelHierarchyDepthDescription = F, Guid = F, HierarchyDepthDescription = F, IsAttachedToASubject = F, IsHighFrequencyWord = F, IsLettersAndSounds = F, IsPlaceHolder = F, Key = F, Label = F, LetterAndSoundType = F, LetterType = F, Level = F, ModifiedTime = F, NextLevelHierarchyDepthDescription = F, ParentGuid = F, Sequence = F, StateNumber = F, TextColor = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of AcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandard <- function(AcademicStandardID, DistrictGroupKey = F, AcademicStandardGradeRangeID = F, Label = F, StateNumber = F, Level = F, IsPlaceHolder = F, Description = F, ExtendedDescription = F, Sequence = F, Guid = F, ParentGuid = F, AcademicStandardIDParent = F, EnteredByDistrict = F, Key = F, DisplayAs = F, DescriptionToUse = F, IsAttachedToASubject = F, FullKeyPrefix = F, FullKey = F, HierarchyDepthDescription = F, NextLevelHierarchyDepthDescription = F, GrandChildLevelHierarchyDepthDescription = F, ChildAcademicStandardCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsHighFrequencyWord = F, LetterAndSoundType = F, LetterType = F, AcademicStandardDefaultID = F, IsLettersAndSounds = F, BackgroundColor = F, TextColor = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandard <- function(AcademicStandardID, AcademicStandardDefaultID = F, AcademicStandardGradeRangeID = F, AcademicStandardIDParent = F, BackgroundColor = F, ChildAcademicStandardCount = F, CreatedTime = F, Description = F, DescriptionToUse = F, DisplayAs = F, DistrictGroupKey = F, EnteredByDistrict = F, ExtendedDescription = F, FullKey = F, FullKeyPrefix = F, GrandChildLevelHierarchyDepthDescription = F, Guid = F, HierarchyDepthDescription = F, IsAttachedToASubject = F, IsHighFrequencyWord = F, IsLettersAndSounds = F, IsPlaceHolder = F, Key = F, Label = F, LetterAndSoundType = F, LetterType = F, Level = F, ModifiedTime = F, NextLevelHierarchyDepthDescription = F, ParentGuid = F, Sequence = F, StateNumber = F, TextColor = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardID")
 
@@ -2021,7 +2021,7 @@
 	#' @return A newly created AcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandard <- function(DistrictGroupKey = NULL, AcademicStandardGradeRangeID = NULL, Label = NULL, StateNumber = NULL, Level = NULL, IsPlaceHolder = NULL, Description = NULL, ExtendedDescription = NULL, Sequence = NULL, Guid = NULL, ParentGuid = NULL, AcademicStandardIDParent = NULL, EnteredByDistrict = NULL, Key = NULL, DisplayAs = NULL, IsHighFrequencyWord = NULL, LetterAndSoundType = NULL, LetterType = NULL, AcademicStandardDefaultID = NULL, BackgroundColor = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandard <- function(AcademicStandardDefaultID = NULL, AcademicStandardGradeRangeID = NULL, AcademicStandardIDParent = NULL, BackgroundColor = NULL, Description = NULL, DisplayAs = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, ExtendedDescription = NULL, Guid = NULL, IsHighFrequencyWord = NULL, IsPlaceHolder = NULL, Key = NULL, Label = NULL, LetterAndSoundType = NULL, LetterType = NULL, Level = NULL, ParentGuid = NULL, Sequence = NULL, StateNumber = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2042,7 +2042,7 @@
 	#' @return The modified AcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandard <- function(AcademicStandardID, DistrictGroupKey = NULL, AcademicStandardGradeRangeID = NULL, Label = NULL, StateNumber = NULL, Level = NULL, IsPlaceHolder = NULL, Description = NULL, ExtendedDescription = NULL, Sequence = NULL, Guid = NULL, ParentGuid = NULL, AcademicStandardIDParent = NULL, EnteredByDistrict = NULL, Key = NULL, DisplayAs = NULL, IsHighFrequencyWord = NULL, LetterAndSoundType = NULL, LetterType = NULL, AcademicStandardDefaultID = NULL, BackgroundColor = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandard <- function(AcademicStandardID, AcademicStandardDefaultID = NULL, AcademicStandardGradeRangeID = NULL, AcademicStandardIDParent = NULL, BackgroundColor = NULL, Description = NULL, DisplayAs = NULL, DistrictGroupKey = NULL, EnteredByDistrict = NULL, ExtendedDescription = NULL, Guid = NULL, IsHighFrequencyWord = NULL, IsPlaceHolder = NULL, Key = NULL, Label = NULL, LetterAndSoundType = NULL, LetterType = NULL, Level = NULL, ParentGuid = NULL, Sequence = NULL, StateNumber = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of CurriculumAcademicStandards
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumAcademicStandards <- function(searchConditionsList = NULL, CurriculumAcademicStandardID = F, DistrictGroupKey = F, AcademicStandardID = F, CurriculumID = F, IsGraded = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumAcademicStandards <- function(searchConditionsList = NULL, AcademicStandardID = F, CreatedTime = F, CurriculumAcademicStandardID = F, CurriculumID = F, DistrictGroupKey = F, IsGraded = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of CurriculumAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumAcademicStandard <- function(CurriculumAcademicStandardID, DistrictGroupKey = F, AcademicStandardID = F, CurriculumID = F, IsGraded = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumAcademicStandard <- function(CurriculumAcademicStandardID, AcademicStandardID = F, CreatedTime = F, CurriculumID = F, DistrictGroupKey = F, IsGraded = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumAcademicStandardID")
 
@@ -2135,7 +2135,7 @@
 	#' @return A newly created CurriculumAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumAcademicStandard <- function(DistrictGroupKey = NULL, AcademicStandardID = NULL, CurriculumID = NULL, IsGraded = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumAcademicStandard <- function(AcademicStandardID = NULL, CurriculumID = NULL, DistrictGroupKey = NULL, IsGraded = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2156,7 +2156,7 @@
 	#' @return The modified CurriculumAcademicStandard
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumAcademicStandard <- function(CurriculumAcademicStandardID, DistrictGroupKey = NULL, AcademicStandardID = NULL, CurriculumID = NULL, IsGraded = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumAcademicStandard <- function(CurriculumAcademicStandardID, AcademicStandardID = NULL, CurriculumID = NULL, DistrictGroupKey = NULL, IsGraded = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2184,7 +2184,7 @@
 	#' @return A list of CurriculumCustomRequirements
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumCustomRequirements <- function(searchConditionsList = NULL, CurriculumCustomRequirementID = F, CustomRequirementID = F, CurriculumID = F, SchoolYearLow = F, SchoolYearHigh = F, DistrictGroupKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumCustomRequirements <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumCustomRequirementID = F, CurriculumID = F, CustomRequirementID = F, DistrictGroupKey = F, ModifiedTime = F, SchoolYearHigh = F, SchoolYearLow = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2209,7 +2209,7 @@
 	#' @return A dataframe or of CurriculumCustomRequirement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumCustomRequirement <- function(CurriculumCustomRequirementID, CustomRequirementID = F, CurriculumID = F, SchoolYearLow = F, SchoolYearHigh = F, DistrictGroupKey = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumCustomRequirement <- function(CurriculumCustomRequirementID, CreatedTime = F, CurriculumID = F, CustomRequirementID = F, DistrictGroupKey = F, ModifiedTime = F, SchoolYearHigh = F, SchoolYearLow = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumCustomRequirementID")
 
@@ -2249,7 +2249,7 @@
 	#' @return A newly created CurriculumCustomRequirement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumCustomRequirement <- function(CustomRequirementID = NULL, CurriculumID = NULL, SchoolYearLow = NULL, SchoolYearHigh = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumCustomRequirement <- function(CurriculumID = NULL, CustomRequirementID = NULL, DistrictGroupKey = NULL, SchoolYearHigh = NULL, SchoolYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2270,7 +2270,7 @@
 	#' @return The modified CurriculumCustomRequirement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumCustomRequirement <- function(CurriculumCustomRequirementID, CustomRequirementID = NULL, CurriculumID = NULL, SchoolYearLow = NULL, SchoolYearHigh = NULL, DistrictGroupKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumCustomRequirement <- function(CurriculumCustomRequirementID, CurriculumID = NULL, CustomRequirementID = NULL, DistrictGroupKey = NULL, SchoolYearHigh = NULL, SchoolYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2298,7 +2298,7 @@
 	#' @return A list of Prerequisites
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPrerequisites <- function(searchConditionsList = NULL, PrerequisiteID = F, CurriculumID = F, Code = F, Description = F, SchoolYearLow = F, SchoolYearHigh = F, DistrictGroupKey = F, CodeDescription = F, EarnedCredits = F, HasPrerequisiteCurriculums = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPrerequisites <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, CurriculumID = F, Description = F, DistrictGroupKey = F, EarnedCredits = F, HasPrerequisiteCurriculums = F, ModifiedTime = F, PrerequisiteID = F, SchoolYearHigh = F, SchoolYearLow = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2323,7 +2323,7 @@
 	#' @return A dataframe or of Prerequisite
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPrerequisite <- function(PrerequisiteID, CurriculumID = F, Code = F, Description = F, SchoolYearLow = F, SchoolYearHigh = F, DistrictGroupKey = F, CodeDescription = F, EarnedCredits = F, HasPrerequisiteCurriculums = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPrerequisite <- function(PrerequisiteID, Code = F, CodeDescription = F, CreatedTime = F, CurriculumID = F, Description = F, DistrictGroupKey = F, EarnedCredits = F, HasPrerequisiteCurriculums = F, ModifiedTime = F, SchoolYearHigh = F, SchoolYearLow = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PrerequisiteID")
 
@@ -2363,7 +2363,7 @@
 	#' @return A newly created Prerequisite
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPrerequisite <- function(CurriculumID = NULL, Code = NULL, Description = NULL, SchoolYearLow = NULL, SchoolYearHigh = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPrerequisite <- function(Code = NULL, CurriculumID = NULL, Description = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, SchoolYearHigh = NULL, SchoolYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2384,7 +2384,7 @@
 	#' @return The modified Prerequisite
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPrerequisite <- function(PrerequisiteID, CurriculumID = NULL, Code = NULL, Description = NULL, SchoolYearLow = NULL, SchoolYearHigh = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPrerequisite <- function(PrerequisiteID, Code = NULL, CurriculumID = NULL, Description = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, SchoolYearHigh = NULL, SchoolYearLow = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2412,7 +2412,7 @@
 	#' @return A list of Curricula
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurricula <- function(searchConditionsList = NULL, CurriculumID = F, Code = F, Description = F, IsActive = F, DistrictID = F, DistrictGroupKey = F, CodeDescription = F, NumberOfActiveCurrentOrFutureCourses = F, CurriculumSubAreaExistsForSubAreaWithoutStudent = F, CurriculumSubAreaExistsForStudentAndSubArea = F, PrerequisiteCurriculumExistsForPrerequisite = F, HasPrerequisites = F, HasPrerequisiteCurriculums = F, NumberOfAttachedSubjects = F, CurriculumSubjectSummary = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, GradeLevelSummary = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EarnedCredits = F, IsAllowedToBeSelectedInCareerPlan = F, GradReqSubjectTypeID = F, GradReqRankGPAIgnoreDuplicateCheck = F, MaximumCompletionsForCredit = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurricula <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, CurriculumID = F, CurriculumSubAreaExistsForStudentAndSubArea = F, CurriculumSubAreaExistsForSubAreaWithoutStudent = F, CurriculumSubjectSummary = F, Description = F, DistrictGroupKey = F, DistrictID = F, EarnedCredits = F, GradeLevelSummary = F, GradReqRankGPAIgnoreDuplicateCheck = F, GradReqSubjectTypeID = F, HasPrerequisiteCurriculums = F, HasPrerequisites = F, IsActive = F, IsAllowedToBeSelectedInCareerPlan = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, MaximumCompletionsForCredit = F, ModifiedTime = F, NumberOfActiveCurrentOrFutureCourses = F, NumberOfAttachedSubjects = F, PrerequisiteCurriculumExistsForPrerequisite = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2437,7 +2437,7 @@
 	#' @return A dataframe or of Curriculum
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculum <- function(CurriculumID, Code = F, Description = F, IsActive = F, DistrictID = F, DistrictGroupKey = F, CodeDescription = F, NumberOfActiveCurrentOrFutureCourses = F, CurriculumSubAreaExistsForSubAreaWithoutStudent = F, CurriculumSubAreaExistsForStudentAndSubArea = F, PrerequisiteCurriculumExistsForPrerequisite = F, HasPrerequisites = F, HasPrerequisiteCurriculums = F, NumberOfAttachedSubjects = F, CurriculumSubjectSummary = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, GradeLevelSummary = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EarnedCredits = F, IsAllowedToBeSelectedInCareerPlan = F, GradReqSubjectTypeID = F, GradReqRankGPAIgnoreDuplicateCheck = F, MaximumCompletionsForCredit = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculum <- function(CurriculumID, Code = F, CodeDescription = F, CreatedTime = F, CurriculumSubAreaExistsForStudentAndSubArea = F, CurriculumSubAreaExistsForSubAreaWithoutStudent = F, CurriculumSubjectSummary = F, Description = F, DistrictGroupKey = F, DistrictID = F, EarnedCredits = F, GradeLevelSummary = F, GradReqRankGPAIgnoreDuplicateCheck = F, GradReqSubjectTypeID = F, HasPrerequisiteCurriculums = F, HasPrerequisites = F, IsActive = F, IsAllowedToBeSelectedInCareerPlan = F, IsFederalDistanceEducation = F, IsFederalDualEnrollment = F, MaximumCompletionsForCredit = F, ModifiedTime = F, NumberOfActiveCurrentOrFutureCourses = F, NumberOfAttachedSubjects = F, PrerequisiteCurriculumExistsForPrerequisite = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumID")
 
@@ -2477,7 +2477,7 @@
 	#' @return A newly created Curriculum
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculum <- function(Code = NULL, Description = NULL, IsActive = NULL, DistrictID = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, IsAllowedToBeSelectedInCareerPlan = NULL, GradReqSubjectTypeID = NULL, GradReqRankGPAIgnoreDuplicateCheck = NULL, MaximumCompletionsForCredit = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculum <- function(Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EarnedCredits = NULL, GradReqRankGPAIgnoreDuplicateCheck = NULL, GradReqSubjectTypeID = NULL, IsActive = NULL, IsAllowedToBeSelectedInCareerPlan = NULL, MaximumCompletionsForCredit = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2498,7 +2498,7 @@
 	#' @return The modified Curriculum
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculum <- function(CurriculumID, Code = NULL, Description = NULL, IsActive = NULL, DistrictID = NULL, DistrictGroupKey = NULL, EarnedCredits = NULL, IsAllowedToBeSelectedInCareerPlan = NULL, GradReqSubjectTypeID = NULL, GradReqRankGPAIgnoreDuplicateCheck = NULL, MaximumCompletionsForCredit = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculum <- function(CurriculumID, Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EarnedCredits = NULL, GradReqRankGPAIgnoreDuplicateCheck = NULL, GradReqSubjectTypeID = NULL, IsActive = NULL, IsAllowedToBeSelectedInCareerPlan = NULL, MaximumCompletionsForCredit = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2526,7 +2526,7 @@
 	#' @return A list of CurriculumSubjects
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumSubjects <- function(searchConditionsList = NULL, SubjectID = F, Code = F, Description = F, DistrictID = F, SchoolYearID = F, DistrictGroupKey = F, BackgroundColor = F, TextColor = F, CodeDescription = F, NumberOfAttachedCurriculums = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SubjectIDClonedFrom = F, IsPrimaryForSelectedCurriculum = F, SubjectIDClonedTo = F, EdFiAcademicSubjectDescriptorID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumSubjects <- function(searchConditionsList = NULL, BackgroundColor = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictGroupKey = F, DistrictID = F, EdFiAcademicSubjectDescriptorID = F, IsPrimaryForSelectedCurriculum = F, ModifiedTime = F, NumberOfAttachedCurriculums = F, SchoolYearID = F, SubjectID = F, SubjectIDClonedFrom = F, SubjectIDClonedTo = F, TextColor = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2551,7 +2551,7 @@
 	#' @return A dataframe or of CurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumSubject <- function(CurriculumSubjectID, SubjectID = F, Code = F, Description = F, DistrictID = F, SchoolYearID = F, DistrictGroupKey = F, BackgroundColor = F, TextColor = F, CodeDescription = F, NumberOfAttachedCurriculums = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SubjectIDClonedFrom = F, IsPrimaryForSelectedCurriculum = F, SubjectIDClonedTo = F, EdFiAcademicSubjectDescriptorID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumSubject <- function(CurriculumSubjectID, BackgroundColor = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictGroupKey = F, DistrictID = F, EdFiAcademicSubjectDescriptorID = F, IsPrimaryForSelectedCurriculum = F, ModifiedTime = F, NumberOfAttachedCurriculums = F, SchoolYearID = F, SubjectID = F, SubjectIDClonedFrom = F, SubjectIDClonedTo = F, TextColor = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumSubjectID")
 
@@ -2591,7 +2591,7 @@
 	#' @return A newly created CurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumSubject <- function(Code = NULL, Description = NULL, DistrictID = NULL, SchoolYearID = NULL, DistrictGroupKey = NULL, BackgroundColor = NULL, TextColor = NULL, SubjectIDClonedFrom = NULL, EdFiAcademicSubjectDescriptorID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumSubject <- function(BackgroundColor = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EdFiAcademicSubjectDescriptorID = NULL, SchoolYearID = NULL, SubjectIDClonedFrom = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2612,7 +2612,7 @@
 	#' @return The modified CurriculumSubject
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumSubject <- function(SubjectID, Code = NULL, Description = NULL, DistrictID = NULL, SchoolYearID = NULL, DistrictGroupKey = NULL, BackgroundColor = NULL, TextColor = NULL, SubjectIDClonedFrom = NULL, EdFiAcademicSubjectDescriptorID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumSubject <- function(SubjectID, BackgroundColor = NULL, Code = NULL, Description = NULL, DistrictGroupKey = NULL, DistrictID = NULL, EdFiAcademicSubjectDescriptorID = NULL, SchoolYearID = NULL, SubjectIDClonedFrom = NULL, TextColor = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2640,7 +2640,7 @@
 	#' @return A list of AssessmentToolMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAssessmentToolMNS <- function(searchConditionsList = NULL, AssessmentToolMNID = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, AssessmentToolMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAssessmentToolMNS <- function(searchConditionsList = NULL, AssessmentToolMNID = F, AssessmentToolMNIDClonedFrom = F, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2665,7 +2665,7 @@
 	#' @return A dataframe or of AssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAssessmentToolMN <- function(AssessmentToolMNID, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, AssessmentToolMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAssessmentToolMN <- function(AssessmentToolMNID, AssessmentToolMNIDClonedFrom = F, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, StateAssessmentToolMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AssessmentToolMNID")
 
@@ -2705,7 +2705,7 @@
 	#' @return A newly created AssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAssessmentToolMN <- function(StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, AssessmentToolMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAssessmentToolMN <- function(AssessmentToolMNIDClonedFrom = NULL, CurriculumYearID = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2726,7 +2726,7 @@
 	#' @return The modified AssessmentToolMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAssessmentToolMN <- function(AssessmentToolMNID, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, AssessmentToolMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAssessmentToolMN <- function(AssessmentToolMNID, AssessmentToolMNIDClonedFrom = NULL, CurriculumYearID = NULL, StateAssessmentToolMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2754,7 +2754,7 @@
 	#' @return A list of EarlyEducationInstructionalApproachMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEarlyEducationInstructionalApproachMNS <- function(searchConditionsList = NULL, EarlyEducationInstructionalApproachMNID = F, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, EarlyEducationInstructionalApproachMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEarlyEducationInstructionalApproachMNS <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalApproachMNID = F, EarlyEducationInstructionalApproachMNIDClonedFrom = F, ModifiedTime = F, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2779,7 +2779,7 @@
 	#' @return A dataframe or of EarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEarlyEducationInstructionalApproachMN <- function(EarlyEducationInstructionalApproachMNID, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, EarlyEducationInstructionalApproachMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEarlyEducationInstructionalApproachMN <- function(EarlyEducationInstructionalApproachMNID, CreatedTime = F, CurriculumYearID = F, EarlyEducationInstructionalApproachMNIDClonedFrom = F, ModifiedTime = F, StateEarlyEducationInstructionalApproachMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EarlyEducationInstructionalApproachMNID")
 
@@ -2819,7 +2819,7 @@
 	#' @return A newly created EarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEarlyEducationInstructionalApproachMN <- function(StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalApproachMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEarlyEducationInstructionalApproachMN <- function(CurriculumYearID = NULL, EarlyEducationInstructionalApproachMNIDClonedFrom = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2840,7 +2840,7 @@
 	#' @return The modified EarlyEducationInstructionalApproachMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEarlyEducationInstructionalApproachMN <- function(EarlyEducationInstructionalApproachMNID, StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, EarlyEducationInstructionalApproachMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEarlyEducationInstructionalApproachMN <- function(EarlyEducationInstructionalApproachMNID, CurriculumYearID = NULL, EarlyEducationInstructionalApproachMNIDClonedFrom = NULL, StateEarlyEducationInstructionalApproachMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2868,7 +2868,7 @@
 	#' @return A list of SiteBasedInitiativeMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSiteBasedInitiativeMNS <- function(searchConditionsList = NULL, SiteBasedInitiativeMNID = F, StateSiteBasedInitiativeMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, SiteBasedInitiativeMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSiteBasedInitiativeMNS <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, SiteBasedInitiativeMNID = F, SiteBasedInitiativeMNIDClonedFrom = F, StateImplementationStatusMNID = F, StateSiteBasedInitiativeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2893,7 +2893,7 @@
 	#' @return A dataframe or of SiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSiteBasedInitiativeMN <- function(SiteBasedInitiativeMNID, StateSiteBasedInitiativeMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, SiteBasedInitiativeMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSiteBasedInitiativeMN <- function(SiteBasedInitiativeMNID, CreatedTime = F, CurriculumYearID = F, ModifiedTime = F, SiteBasedInitiativeMNIDClonedFrom = F, StateImplementationStatusMNID = F, StateSiteBasedInitiativeMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "SiteBasedInitiativeMNID")
 
@@ -2933,7 +2933,7 @@
 	#' @return A newly created SiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSiteBasedInitiativeMN <- function(StateSiteBasedInitiativeMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, SiteBasedInitiativeMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSiteBasedInitiativeMN <- function(CurriculumYearID = NULL, SiteBasedInitiativeMNIDClonedFrom = NULL, StateImplementationStatusMNID = NULL, StateSiteBasedInitiativeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2954,7 +2954,7 @@
 	#' @return The modified SiteBasedInitiativeMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySiteBasedInitiativeMN <- function(SiteBasedInitiativeMNID, StateSiteBasedInitiativeMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, SiteBasedInitiativeMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySiteBasedInitiativeMN <- function(SiteBasedInitiativeMNID, CurriculumYearID = NULL, SiteBasedInitiativeMNIDClonedFrom = NULL, StateImplementationStatusMNID = NULL, StateSiteBasedInitiativeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2982,7 +2982,7 @@
 	#' @return A list of CurriculumProgramMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumProgramMNS <- function(searchConditionsList = NULL, CurriculumProgramMNID = F, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, CurriculumProgramMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumProgramMNS <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumProgramMNID = F, CurriculumProgramMNIDClonedFrom = F, CurriculumYearID = F, ModifiedTime = F, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3007,7 +3007,7 @@
 	#' @return A dataframe or of CurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumProgramMN <- function(CurriculumProgramMNID, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, CurriculumYearID = F, CurriculumProgramMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumProgramMN <- function(CurriculumProgramMNID, CreatedTime = F, CurriculumProgramMNIDClonedFrom = F, CurriculumYearID = F, ModifiedTime = F, StateCurriculumProgramMNID = F, StateImplementationStatusMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumProgramMNID")
 
@@ -3047,7 +3047,7 @@
 	#' @return A newly created CurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumProgramMN <- function(StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, CurriculumProgramMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumProgramMN <- function(CurriculumProgramMNIDClonedFrom = NULL, CurriculumYearID = NULL, StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3068,7 +3068,7 @@
 	#' @return The modified CurriculumProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumProgramMN <- function(CurriculumProgramMNID, StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, CurriculumYearID = NULL, CurriculumProgramMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumProgramMN <- function(CurriculumProgramMNID, CurriculumProgramMNIDClonedFrom = NULL, CurriculumYearID = NULL, StateCurriculumProgramMNID = NULL, StateImplementationStatusMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3096,7 +3096,7 @@
 	#' @return A list of EarlyEducationProgramMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEarlyEducationProgramMNS <- function(searchConditionsList = NULL, EarlyEducationProgramMNID = F, StateEarlyEducationProgramMNID = F, CurriculumYearID = F, EarlyEducationProgramMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEarlyEducationProgramMNS <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumYearID = F, EarlyEducationProgramMNID = F, EarlyEducationProgramMNIDClonedFrom = F, ModifiedTime = F, StateEarlyEducationProgramMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3121,7 +3121,7 @@
 	#' @return A dataframe or of EarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEarlyEducationProgramMN <- function(EarlyEducationProgramMNID, StateEarlyEducationProgramMNID = F, CurriculumYearID = F, EarlyEducationProgramMNIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEarlyEducationProgramMN <- function(EarlyEducationProgramMNID, CreatedTime = F, CurriculumYearID = F, EarlyEducationProgramMNIDClonedFrom = F, ModifiedTime = F, StateEarlyEducationProgramMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EarlyEducationProgramMNID")
 
@@ -3161,7 +3161,7 @@
 	#' @return A newly created EarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createEarlyEducationProgramMN <- function(StateEarlyEducationProgramMNID = NULL, CurriculumYearID = NULL, EarlyEducationProgramMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createEarlyEducationProgramMN <- function(CurriculumYearID = NULL, EarlyEducationProgramMNIDClonedFrom = NULL, StateEarlyEducationProgramMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3182,7 +3182,7 @@
 	#' @return The modified EarlyEducationProgramMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyEarlyEducationProgramMN <- function(EarlyEducationProgramMNID, StateEarlyEducationProgramMNID = NULL, CurriculumYearID = NULL, EarlyEducationProgramMNIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyEarlyEducationProgramMN <- function(EarlyEducationProgramMNID, CurriculumYearID = NULL, EarlyEducationProgramMNIDClonedFrom = NULL, StateEarlyEducationProgramMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3210,7 +3210,7 @@
 	#' @return A list of AcademicStandardDefaults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardDefaults <- function(searchConditionsList = NULL, AcademicStandardDefaultID = F, Level = F, Description = F, Key = F, ParentGuid = F, IsHighFrequencyWord = F, LetterAndSoundType = F, LetterType = F, AcademicStandardDefaultIDParent = F, SkywardID = F, SkywardHash = F, AcademicStandardGradeRangeDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Language = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardDefaults <- function(searchConditionsList = NULL, AcademicStandardDefaultID = F, AcademicStandardDefaultIDParent = F, AcademicStandardGradeRangeDefaultID = F, CreatedTime = F, Description = F, IsHighFrequencyWord = F, Key = F, Language = F, LetterAndSoundType = F, LetterType = F, Level = F, ModifiedTime = F, ParentGuid = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3235,7 +3235,7 @@
 	#' @return A dataframe or of AcademicStandardDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardDefault <- function(AcademicStandardDefaultID, Level = F, Description = F, Key = F, ParentGuid = F, IsHighFrequencyWord = F, LetterAndSoundType = F, LetterType = F, AcademicStandardDefaultIDParent = F, SkywardID = F, SkywardHash = F, AcademicStandardGradeRangeDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Language = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardDefault <- function(AcademicStandardDefaultID, AcademicStandardDefaultIDParent = F, AcademicStandardGradeRangeDefaultID = F, CreatedTime = F, Description = F, IsHighFrequencyWord = F, Key = F, Language = F, LetterAndSoundType = F, LetterType = F, Level = F, ModifiedTime = F, ParentGuid = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardDefaultID")
 
@@ -3275,7 +3275,7 @@
 	#' @return A newly created AcademicStandardDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardDefault <- function(Level = NULL, Description = NULL, Key = NULL, ParentGuid = NULL, IsHighFrequencyWord = NULL, LetterAndSoundType = NULL, LetterType = NULL, AcademicStandardDefaultIDParent = NULL, AcademicStandardGradeRangeDefaultID = NULL, Language = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardDefault <- function(AcademicStandardDefaultIDParent = NULL, AcademicStandardGradeRangeDefaultID = NULL, Description = NULL, IsHighFrequencyWord = NULL, Key = NULL, Language = NULL, LetterAndSoundType = NULL, LetterType = NULL, Level = NULL, ParentGuid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3296,7 +3296,7 @@
 	#' @return The modified AcademicStandardDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardDefault <- function(AcademicStandardDefaultID, Level = NULL, Description = NULL, Key = NULL, ParentGuid = NULL, IsHighFrequencyWord = NULL, LetterAndSoundType = NULL, LetterType = NULL, AcademicStandardDefaultIDParent = NULL, AcademicStandardGradeRangeDefaultID = NULL, Language = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardDefault <- function(AcademicStandardDefaultID, AcademicStandardDefaultIDParent = NULL, AcademicStandardGradeRangeDefaultID = NULL, Description = NULL, IsHighFrequencyWord = NULL, Key = NULL, Language = NULL, LetterAndSoundType = NULL, LetterType = NULL, Level = NULL, ParentGuid = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3324,7 +3324,7 @@
 	#' @return A list of AcademicStandardGradeRangeDefaults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardGradeRangeDefaults <- function(searchConditionsList = NULL, AcademicStandardGradeRangeDefaultID = F, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, AcademicStandardSubjectDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardGradeRangeDefaults <- function(searchConditionsList = NULL, AcademicStandardGradeRangeDefaultID = F, AcademicStandardSubjectDefaultID = F, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3349,7 +3349,7 @@
 	#' @return A dataframe or of AcademicStandardGradeRangeDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardGradeRangeDefault <- function(AcademicStandardGradeRangeDefaultID, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, AcademicStandardSubjectDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardGradeRangeDefault <- function(AcademicStandardGradeRangeDefaultID, AcademicStandardSubjectDefaultID = F, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardGradeRangeDefaultID")
 
@@ -3389,7 +3389,7 @@
 	#' @return A newly created AcademicStandardGradeRangeDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardGradeRangeDefault <- function(Code = NULL, Description = NULL, Key = NULL, AcademicStandardSubjectDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardGradeRangeDefault <- function(AcademicStandardSubjectDefaultID = NULL, Code = NULL, Description = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3410,7 +3410,7 @@
 	#' @return The modified AcademicStandardGradeRangeDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardGradeRangeDefault <- function(AcademicStandardGradeRangeDefaultID, Code = NULL, Description = NULL, Key = NULL, AcademicStandardSubjectDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardGradeRangeDefault <- function(AcademicStandardGradeRangeDefaultID, AcademicStandardSubjectDefaultID = NULL, Code = NULL, Description = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3438,7 +3438,7 @@
 	#' @return A list of AcademicStandardSetDefaults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardSetDefaults <- function(searchConditionsList = NULL, AcademicStandardSetDefaultID = F, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardSetDefaults <- function(searchConditionsList = NULL, AcademicStandardSetDefaultID = F, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3463,7 +3463,7 @@
 	#' @return A dataframe or of AcademicStandardSetDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardSetDefault <- function(AcademicStandardSetDefaultID, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardSetDefault <- function(AcademicStandardSetDefaultID, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardSetDefaultID")
 
@@ -3552,7 +3552,7 @@
 	#' @return A list of AcademicStandardSubjectDefaults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicStandardSubjectDefaults <- function(searchConditionsList = NULL, AcademicStandardSubjectDefaultID = F, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, AcademicStandardSetDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicStandardSubjectDefaults <- function(searchConditionsList = NULL, AcademicStandardSetDefaultID = F, AcademicStandardSubjectDefaultID = F, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3577,7 +3577,7 @@
 	#' @return A dataframe or of AcademicStandardSubjectDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicStandardSubjectDefault <- function(AcademicStandardSubjectDefaultID, Code = F, Description = F, Key = F, SkywardID = F, SkywardHash = F, AcademicStandardSetDefaultID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicStandardSubjectDefault <- function(AcademicStandardSubjectDefaultID, AcademicStandardSetDefaultID = F, Code = F, CreatedTime = F, Description = F, Key = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicStandardSubjectDefaultID")
 
@@ -3617,7 +3617,7 @@
 	#' @return A newly created AcademicStandardSubjectDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAcademicStandardSubjectDefault <- function(Code = NULL, Description = NULL, Key = NULL, AcademicStandardSetDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAcademicStandardSubjectDefault <- function(AcademicStandardSetDefaultID = NULL, Code = NULL, Description = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3638,7 +3638,7 @@
 	#' @return The modified AcademicStandardSubjectDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAcademicStandardSubjectDefault <- function(AcademicStandardSubjectDefaultID, Code = NULL, Description = NULL, Key = NULL, AcademicStandardSetDefaultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAcademicStandardSubjectDefault <- function(AcademicStandardSubjectDefaultID, AcademicStandardSetDefaultID = NULL, Code = NULL, Description = NULL, Key = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3666,7 +3666,7 @@
 	#' @return A list of CurriculumYearEdFiCourseLevelCharacteristics
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCurriculumYearEdFiCourseLevelCharacteristics <- function(searchConditionsList = NULL, CurriculumYearEdFiCourseLevelCharacteristicID = F, CurriculumYearID = F, EdFiCourseLevelCharacteristicID = F, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCurriculumYearEdFiCourseLevelCharacteristics <- function(searchConditionsList = NULL, CreatedTime = F, CurriculumYearEdFiCourseLevelCharacteristicID = F, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F, CurriculumYearID = F, EdFiCourseLevelCharacteristicID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3691,7 +3691,7 @@
 	#' @return A dataframe or of CurriculumYearEdFiCourseLevelCharacteristic
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearEdFiCourseLevelCharacteristicID, CurriculumYearID = F, EdFiCourseLevelCharacteristicID = F, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearEdFiCourseLevelCharacteristicID, CreatedTime = F, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F, CurriculumYearID = F, EdFiCourseLevelCharacteristicID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CurriculumYearEdFiCourseLevelCharacteristicID")
 
@@ -3731,7 +3731,7 @@
 	#' @return A newly created CurriculumYearEdFiCourseLevelCharacteristic
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearID = NULL, EdFiCourseLevelCharacteristicID = NULL, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL, CurriculumYearID = NULL, EdFiCourseLevelCharacteristicID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3752,11 +3752,125 @@
 	#' @return The modified CurriculumYearEdFiCourseLevelCharacteristic
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearEdFiCourseLevelCharacteristicID, CurriculumYearID = NULL, EdFiCourseLevelCharacteristicID = NULL, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCurriculumYearEdFiCourseLevelCharacteristic <- function(CurriculumYearEdFiCourseLevelCharacteristicID, CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL, CurriculumYearID = NULL, EdFiCourseLevelCharacteristicID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Curriculum", objectName = "CurriculumYearEdFiCourseLevelCharacteristic", objectId = CurriculumYearEdFiCourseLevelCharacteristicID, body = list(DataObject = body), searchFields = append("CurriculumYearEdFiCourseLevelCharacteristicID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempGradeRangeCopyResultMessages
+	#'
+	#' This function returns a dataframe or json object of TempGradeRangeCopyResultMessages
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempGradeRangeCopyResultMessages. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempGradeRangeCopyResultMessages.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempGradeRangeCopyResultMessage') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Curriculum
+	#' @return A list of TempGradeRangeCopyResultMessages
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempGradeRangeCopyResultMessages <- function(searchConditionsList = NULL, CreatedTime = F, ErrorID = F, ErrorMessage = F, ModifiedTime = F, TempGradeRangeCopyResultID = F, TempGradeRangeCopyResultMessageID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Curriculum", objectName = "TempGradeRangeCopyResultMessage", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempGradeRangeCopyResultMessage
+	#'
+	#' This function returns a dataframe or json object of a TempGradeRangeCopyResultMessage
+	#' @param TempGradeRangeCopyResultMessageID The ID of the TempGradeRangeCopyResultMessage to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempGradeRangeCopyResultMessage. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempGradeRangeCopyResultMessage.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempGradeRangeCopyResultMessage') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Curriculum
+	#' @return A dataframe or of TempGradeRangeCopyResultMessage
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempGradeRangeCopyResultMessage <- function(TempGradeRangeCopyResultMessageID, CreatedTime = F, ErrorID = F, ErrorMessage = F, ModifiedTime = F, TempGradeRangeCopyResultID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempGradeRangeCopyResultMessageID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Curriculum", objectName = "TempGradeRangeCopyResultMessage", objectId = TempGradeRangeCopyResultMessageID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempGradeRangeCopyResultMessage
+	#'
+	#' This function deletes a TempGradeRangeCopyResultMessage
+	#' @param TempGradeRangeCopyResultMessageID The ID of the TempGradeRangeCopyResultMessage to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Curriculum
+	#' @return The TempGradeRangeCopyResultMessageID of the deleted TempGradeRangeCopyResultMessage.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempGradeRangeCopyResultMessage <- function(TempGradeRangeCopyResultMessageID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Curriculum", objectName = "TempGradeRangeCopyResultMessage", objectId = TempGradeRangeCopyResultMessageID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempGradeRangeCopyResultMessage
+	#'
+	#' This function creates a TempGradeRangeCopyResultMessage
+	#' @param fieldNames The field values to give the created TempGradeRangeCopyResultMessage. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Curriculum
+	#' @return A newly created TempGradeRangeCopyResultMessage
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempGradeRangeCopyResultMessage <- function(ErrorID = NULL, ErrorMessage = NULL, TempGradeRangeCopyResultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Curriculum", objectName = "TempGradeRangeCopyResultMessage", body = list(DataObject = body), searchFields = append("TempGradeRangeCopyResultMessageID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempGradeRangeCopyResultMessage
+	#'
+	#' This function modifies a TempGradeRangeCopyResultMessage
+	#' @param fieldNames The field values to give the modified TempGradeRangeCopyResultMessage. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Curriculum
+	#' @return The modified TempGradeRangeCopyResultMessage
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempGradeRangeCopyResultMessage <- function(TempGradeRangeCopyResultMessageID, ErrorID = NULL, ErrorMessage = NULL, TempGradeRangeCopyResultID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Curriculum", objectName = "TempGradeRangeCopyResultMessage", objectId = TempGradeRangeCopyResultMessageID, body = list(DataObject = body), searchFields = append("TempGradeRangeCopyResultMessageID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}

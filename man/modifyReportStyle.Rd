@@ -6,8 +6,8 @@
 \usage{
 modifyReportStyle(
   ReportStyleID,
-  Name = NULL,
   IsPublic = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

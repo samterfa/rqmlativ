@@ -6,8 +6,8 @@
 \usage{
 modifySectionSchedulerProposedMeetDisplayPeriod(
   SectionSchedulerProposedMeetDisplayPeriodID,
-  SectionSchedulerProposedMeetID = NULL,
   DisplayPeriodID = NULL,
+  SectionSchedulerProposedMeetID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

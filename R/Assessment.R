@@ -18,7 +18,7 @@
 	#' @return A list of PSATS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPSATS <- function(searchConditionsList = NULL, PSATID = F, StudentTestID = F, TestType = F, TestForm = F, CriticalReadingScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, MathScore = F, MathNationalPercentile = F, MathStatePercentile = F, WritingSkillsScore = F, WritingSkillsNationalPercentile = F, WritingSkillsStatePercentile = F, CollegeReadinessBenchmark = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TotalScore = F, ReadingTestScore = F, WritingAndLanguageTestScore = F, MathTestScore = F, AnalysisInScienceScore = F, AnalysisInHistoryScore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathSectionScore = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPSATS <- function(searchConditionsList = NULL, AnalysisInHistoryScore = F, AnalysisInScienceScore = F, CollegeReadinessBenchmarkCode = F, CriticalReadingNationalPercentile = F, CriticalReadingScore = F, CriticalReadingStatePercentile = F, EvidenceBasedReadingAndWritingSectionScore = F, MathNationalPercentile = F, MathScore = F, MathSectionScore = F, MathStatePercentile = F, MathTestScore = F, PSATID = F, ReadingTestScore = F, StudentTestID = F, TestFormCode = F, TestTypeCode = F, TotalScore = F, WritingAndLanguageTestScore = F, WritingSkillsNationalPercentile = F, WritingSkillsScore = F, WritingSkillsStatePercentile = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of PSAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPSAT <- function(PSATID, StudentTestID = F, TestType = F, TestForm = F, CriticalReadingScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, MathScore = F, MathNationalPercentile = F, MathStatePercentile = F, WritingSkillsScore = F, WritingSkillsNationalPercentile = F, WritingSkillsStatePercentile = F, CollegeReadinessBenchmark = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TotalScore = F, ReadingTestScore = F, WritingAndLanguageTestScore = F, MathTestScore = F, AnalysisInScienceScore = F, AnalysisInHistoryScore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathSectionScore = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPSAT <- function(PSATID, AnalysisInHistoryScore = F, AnalysisInScienceScore = F, CollegeReadinessBenchmarkCode = F, CriticalReadingNationalPercentile = F, CriticalReadingScore = F, CriticalReadingStatePercentile = F, EvidenceBasedReadingAndWritingSectionScore = F, MathNationalPercentile = F, MathScore = F, MathSectionScore = F, MathStatePercentile = F, MathTestScore = F, ReadingTestScore = F, StudentTestID = F, TestFormCode = F, TestTypeCode = F, TotalScore = F, WritingAndLanguageTestScore = F, WritingSkillsNationalPercentile = F, WritingSkillsScore = F, WritingSkillsStatePercentile = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PSATID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created PSAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPSAT <- function(StudentTestID = NULL, TestType = NULL, TestForm = NULL, CriticalReadingScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, MathScore = NULL, MathNationalPercentile = NULL, MathStatePercentile = NULL, WritingSkillsScore = NULL, WritingSkillsNationalPercentile = NULL, WritingSkillsStatePercentile = NULL, CollegeReadinessBenchmark = NULL, TotalScore = NULL, ReadingTestScore = NULL, WritingAndLanguageTestScore = NULL, MathTestScore = NULL, AnalysisInScienceScore = NULL, AnalysisInHistoryScore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathSectionScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPSAT <- function(AnalysisInHistoryScore = NULL, AnalysisInScienceScore = NULL, CollegeReadinessBenchmarkCode = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingScore = NULL, CriticalReadingStatePercentile = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathNationalPercentile = NULL, MathScore = NULL, MathSectionScore = NULL, MathStatePercentile = NULL, MathTestScore = NULL, ReadingTestScore = NULL, StudentTestID = NULL, TestFormCode = NULL, TestTypeCode = NULL, TotalScore = NULL, WritingAndLanguageTestScore = NULL, WritingSkillsNationalPercentile = NULL, WritingSkillsScore = NULL, WritingSkillsStatePercentile = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified PSAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPSAT <- function(PSATID, StudentTestID = NULL, TestType = NULL, TestForm = NULL, CriticalReadingScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, MathScore = NULL, MathNationalPercentile = NULL, MathStatePercentile = NULL, WritingSkillsScore = NULL, WritingSkillsNationalPercentile = NULL, WritingSkillsStatePercentile = NULL, CollegeReadinessBenchmark = NULL, TotalScore = NULL, ReadingTestScore = NULL, WritingAndLanguageTestScore = NULL, MathTestScore = NULL, AnalysisInScienceScore = NULL, AnalysisInHistoryScore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathSectionScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPSAT <- function(PSATID, AnalysisInHistoryScore = NULL, AnalysisInScienceScore = NULL, CollegeReadinessBenchmarkCode = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingScore = NULL, CriticalReadingStatePercentile = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathNationalPercentile = NULL, MathScore = NULL, MathSectionScore = NULL, MathStatePercentile = NULL, MathTestScore = NULL, ReadingTestScore = NULL, StudentTestID = NULL, TestFormCode = NULL, TestTypeCode = NULL, TotalScore = NULL, WritingAndLanguageTestScore = NULL, WritingSkillsNationalPercentile = NULL, WritingSkillsScore = NULL, WritingSkillsStatePercentile = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of SATS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSATS <- function(searchConditionsList = NULL, SATID = F, StudentTestID = F, CriticalReadingLatestScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, MathematicsLatestScore = F, MathematicsNationalPercentile = F, MathematicsStatePercentile = F, WritingLatestScore = F, WritingNationalPercentile = F, WritingStatePercentile = F, EssaySubscoreLatestScore = F, WritingMultipleChoiceSubscoreLatestScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TotalScore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathSectionScore = F, ReadingTestScore = F, WritingAndLanguageTestScore = F, MathTestScore = F, AnalysisInScienceScore = F, AnalysisInHistoryScore = F, EssayReadingSubscore = F, EssayAnalysisSubscore = F, EssayWritingSubscore = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSATS <- function(searchConditionsList = NULL, AnalysisInHistoryScore = F, AnalysisInScienceScore = F, CriticalReadingLatestScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, EssayAnalysisSubscore = F, EssayReadingSubscore = F, EssaySubscoreLatestScore = F, EssayWritingSubscore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathLatestScore = F, MathNationalPercentile = F, MathSectionScore = F, MathStatePercentile = F, MathTestScore = F, ReadingTestScore = F, SATID = F, StudentTestID = F, TotalScore = F, WritingAndLanguageTestScore = F, WritingLatestScore = F, WritingMultipleChoiceSubscoreLatestScore = F, WritingNationalPercentile = F, WritingStatePercentile = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of SAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSAT <- function(SATID, StudentTestID = F, CriticalReadingLatestScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, MathematicsLatestScore = F, MathematicsNationalPercentile = F, MathematicsStatePercentile = F, WritingLatestScore = F, WritingNationalPercentile = F, WritingStatePercentile = F, EssaySubscoreLatestScore = F, WritingMultipleChoiceSubscoreLatestScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TotalScore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathSectionScore = F, ReadingTestScore = F, WritingAndLanguageTestScore = F, MathTestScore = F, AnalysisInScienceScore = F, AnalysisInHistoryScore = F, EssayReadingSubscore = F, EssayAnalysisSubscore = F, EssayWritingSubscore = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSAT <- function(SATID, AnalysisInHistoryScore = F, AnalysisInScienceScore = F, CriticalReadingLatestScore = F, CriticalReadingNationalPercentile = F, CriticalReadingStatePercentile = F, EssayAnalysisSubscore = F, EssayReadingSubscore = F, EssaySubscoreLatestScore = F, EssayWritingSubscore = F, EvidenceBasedReadingAndWritingSectionScore = F, MathLatestScore = F, MathNationalPercentile = F, MathSectionScore = F, MathStatePercentile = F, MathTestScore = F, ReadingTestScore = F, StudentTestID = F, TotalScore = F, WritingAndLanguageTestScore = F, WritingLatestScore = F, WritingMultipleChoiceSubscoreLatestScore = F, WritingNationalPercentile = F, WritingStatePercentile = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "SATID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created SAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSAT <- function(StudentTestID = NULL, CriticalReadingLatestScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, MathematicsLatestScore = NULL, MathematicsNationalPercentile = NULL, MathematicsStatePercentile = NULL, WritingLatestScore = NULL, WritingNationalPercentile = NULL, WritingStatePercentile = NULL, EssaySubscoreLatestScore = NULL, WritingMultipleChoiceSubscoreLatestScore = NULL, TotalScore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathSectionScore = NULL, ReadingTestScore = NULL, WritingAndLanguageTestScore = NULL, MathTestScore = NULL, AnalysisInScienceScore = NULL, AnalysisInHistoryScore = NULL, EssayReadingSubscore = NULL, EssayAnalysisSubscore = NULL, EssayWritingSubscore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSAT <- function(AnalysisInHistoryScore = NULL, AnalysisInScienceScore = NULL, CriticalReadingLatestScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, EssayAnalysisSubscore = NULL, EssayReadingSubscore = NULL, EssaySubscoreLatestScore = NULL, EssayWritingSubscore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathLatestScore = NULL, MathNationalPercentile = NULL, MathSectionScore = NULL, MathStatePercentile = NULL, MathTestScore = NULL, ReadingTestScore = NULL, StudentTestID = NULL, TotalScore = NULL, WritingAndLanguageTestScore = NULL, WritingLatestScore = NULL, WritingMultipleChoiceSubscoreLatestScore = NULL, WritingNationalPercentile = NULL, WritingStatePercentile = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified SAT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySAT <- function(SATID, StudentTestID = NULL, CriticalReadingLatestScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, MathematicsLatestScore = NULL, MathematicsNationalPercentile = NULL, MathematicsStatePercentile = NULL, WritingLatestScore = NULL, WritingNationalPercentile = NULL, WritingStatePercentile = NULL, EssaySubscoreLatestScore = NULL, WritingMultipleChoiceSubscoreLatestScore = NULL, TotalScore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathSectionScore = NULL, ReadingTestScore = NULL, WritingAndLanguageTestScore = NULL, MathTestScore = NULL, AnalysisInScienceScore = NULL, AnalysisInHistoryScore = NULL, EssayReadingSubscore = NULL, EssayAnalysisSubscore = NULL, EssayWritingSubscore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySAT <- function(SATID, AnalysisInHistoryScore = NULL, AnalysisInScienceScore = NULL, CriticalReadingLatestScore = NULL, CriticalReadingNationalPercentile = NULL, CriticalReadingStatePercentile = NULL, EssayAnalysisSubscore = NULL, EssayReadingSubscore = NULL, EssaySubscoreLatestScore = NULL, EssayWritingSubscore = NULL, EvidenceBasedReadingAndWritingSectionScore = NULL, MathLatestScore = NULL, MathNationalPercentile = NULL, MathSectionScore = NULL, MathStatePercentile = NULL, MathTestScore = NULL, ReadingTestScore = NULL, StudentTestID = NULL, TotalScore = NULL, WritingAndLanguageTestScore = NULL, WritingLatestScore = NULL, WritingMultipleChoiceSubscoreLatestScore = NULL, WritingNationalPercentile = NULL, WritingStatePercentile = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of TempStudentTests
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentTests <- function(searchConditionsList = NULL, TempStudentTestID = F, StudentID = F, StudentNumber = F, FirstName = F, LastName = F, MiddleName = F, BirthDate = F, Gender = F, DateTaken = F, TestTypeCode = F, TestVersionCode = F, TestXML = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TestTypeCodeDisplayName = F, MatchesExistingStudentTestRecord = F, Action = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentTests <- function(searchConditionsList = NULL, Action = F, BirthDate = F, CreatedTime = F, DateTaken = F, FirstName = F, Gender = F, LastName = F, MatchesExistingStudentTestRecord = F, MiddleName = F, ModifiedTime = F, StudentID = F, StudentNumber = F, TempStudentTestID = F, TestXML = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of TempStudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentTest <- function(TempStudentTestID, StudentID = F, StudentNumber = F, FirstName = F, LastName = F, MiddleName = F, BirthDate = F, Gender = F, DateTaken = F, TestTypeCode = F, TestVersionCode = F, TestXML = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TestTypeCodeDisplayName = F, MatchesExistingStudentTestRecord = F, Action = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentTest <- function(TempStudentTestID, Action = F, BirthDate = F, CreatedTime = F, DateTaken = F, FirstName = F, Gender = F, LastName = F, MatchesExistingStudentTestRecord = F, MiddleName = F, ModifiedTime = F, StudentID = F, StudentNumber = F, TestXML = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentTestID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created TempStudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentTest <- function(StudentID = NULL, StudentNumber = NULL, FirstName = NULL, LastName = NULL, MiddleName = NULL, BirthDate = NULL, Gender = NULL, DateTaken = NULL, TestTypeCode = NULL, TestVersionCode = NULL, TestTypeCodeDisplayName = NULL, MatchesExistingStudentTestRecord = NULL, Action = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentTest <- function(Action = NULL, BirthDate = NULL, DateTaken = NULL, FirstName = NULL, Gender = NULL, LastName = NULL, MatchesExistingStudentTestRecord = NULL, MiddleName = NULL, StudentID = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified TempStudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentTest <- function(TempStudentTestID, StudentID = NULL, StudentNumber = NULL, FirstName = NULL, LastName = NULL, MiddleName = NULL, BirthDate = NULL, Gender = NULL, DateTaken = NULL, TestTypeCode = NULL, TestVersionCode = NULL, TestTypeCodeDisplayName = NULL, MatchesExistingStudentTestRecord = NULL, Action = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentTest <- function(TempStudentTestID, Action = NULL, BirthDate = NULL, DateTaken = NULL, FirstName = NULL, Gender = NULL, LastName = NULL, MatchesExistingStudentTestRecord = NULL, MiddleName = NULL, StudentID = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of TempStudentTestErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentTestErrors <- function(searchConditionsList = NULL, TempStudentTestErrorID = F, FirstName = F, LastName = F, MiddleName = F, BirthDate = F, Gender = F, StudentNumber = F, DateTaken = F, TestTypeCode = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TestTypeCodeDisplayName = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentTestErrors <- function(searchConditionsList = NULL, BirthDate = F, CreatedTime = F, DateTaken = F, FirstName = F, Gender = F, LastName = F, Message = F, MiddleName = F, ModifiedTime = F, StudentNumber = F, TempStudentTestErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of TempStudentTestError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentTestError <- function(TempStudentTestErrorID, FirstName = F, LastName = F, MiddleName = F, BirthDate = F, Gender = F, StudentNumber = F, DateTaken = F, TestTypeCode = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TestTypeCodeDisplayName = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentTestError <- function(TempStudentTestErrorID, BirthDate = F, CreatedTime = F, DateTaken = F, FirstName = F, Gender = F, LastName = F, Message = F, MiddleName = F, ModifiedTime = F, StudentNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentTestErrorID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created TempStudentTestError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentTestError <- function(FirstName = NULL, LastName = NULL, MiddleName = NULL, BirthDate = NULL, Gender = NULL, StudentNumber = NULL, DateTaken = NULL, TestTypeCode = NULL, Message = NULL, TestTypeCodeDisplayName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentTestError <- function(BirthDate = NULL, DateTaken = NULL, FirstName = NULL, Gender = NULL, LastName = NULL, Message = NULL, MiddleName = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified TempStudentTestError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentTestError <- function(TempStudentTestErrorID, FirstName = NULL, LastName = NULL, MiddleName = NULL, BirthDate = NULL, Gender = NULL, StudentNumber = NULL, DateTaken = NULL, TestTypeCode = NULL, Message = NULL, TestTypeCodeDisplayName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentTestError <- function(TempStudentTestErrorID, BirthDate = NULL, DateTaken = NULL, FirstName = NULL, Gender = NULL, LastName = NULL, Message = NULL, MiddleName = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of ACTS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listACTS <- function(searchConditionsList = NULL, ACTID = F, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, CombinedEnglishWritingScore = F, WritingScaleScore = F, WritingSubjectScore = F, ELAScore = F, STEMScore = F, UnderstandingComplexTextIndicator = F, ProgressTowardCareerReadinessIndicator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listACTS <- function(searchConditionsList = NULL, ACTID = F, CombinedEnglishWritingScore = F, CompositeScore = F, ELAScore = F, EnglishScaleScore = F, MathScaleScore = F, ProgressTowardCareerReadinessIndicatorCode = F, ReadingScaleScore = F, ScienceScaleScore = F, STEMScore = F, StudentTestID = F, UnderstandingComplexTextIndicatorCode = F, WritingScaleScore = F, WritingSubjectScore = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of ACT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getACT <- function(ACTID, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, CombinedEnglishWritingScore = F, WritingScaleScore = F, WritingSubjectScore = F, ELAScore = F, STEMScore = F, UnderstandingComplexTextIndicator = F, ProgressTowardCareerReadinessIndicator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getACT <- function(ACTID, CombinedEnglishWritingScore = F, CompositeScore = F, ELAScore = F, EnglishScaleScore = F, MathScaleScore = F, ProgressTowardCareerReadinessIndicatorCode = F, ReadingScaleScore = F, ScienceScaleScore = F, STEMScore = F, StudentTestID = F, UnderstandingComplexTextIndicatorCode = F, WritingScaleScore = F, WritingSubjectScore = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ACTID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created ACT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createACT <- function(StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, CombinedEnglishWritingScore = NULL, WritingScaleScore = NULL, WritingSubjectScore = NULL, ELAScore = NULL, STEMScore = NULL, UnderstandingComplexTextIndicator = NULL, ProgressTowardCareerReadinessIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createACT <- function(CombinedEnglishWritingScore = NULL, CompositeScore = NULL, ELAScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ProgressTowardCareerReadinessIndicatorCode = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, STEMScore = NULL, StudentTestID = NULL, UnderstandingComplexTextIndicatorCode = NULL, WritingScaleScore = NULL, WritingSubjectScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified ACT
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyACT <- function(ACTID, StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, CombinedEnglishWritingScore = NULL, WritingScaleScore = NULL, WritingSubjectScore = NULL, ELAScore = NULL, STEMScore = NULL, UnderstandingComplexTextIndicator = NULL, ProgressTowardCareerReadinessIndicator = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyACT <- function(ACTID, CombinedEnglishWritingScore = NULL, CompositeScore = NULL, ELAScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ProgressTowardCareerReadinessIndicatorCode = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, STEMScore = NULL, StudentTestID = NULL, UnderstandingComplexTextIndicatorCode = NULL, WritingScaleScore = NULL, WritingSubjectScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of Explores
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listExplores <- function(searchConditionsList = NULL, ExploreID = F, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listExplores <- function(searchConditionsList = NULL, CompositeScore = F, EnglishScaleScore = F, ExploreID = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of Explore
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getExplore <- function(ExploreID, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getExplore <- function(ExploreID, CompositeScore = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ExploreID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created Explore
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createExplore <- function(StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createExplore <- function(CompositeScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified Explore
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyExplore <- function(ExploreID, StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyExplore <- function(ExploreID, CompositeScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -702,7 +702,7 @@
 	#' @return A list of PLANS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPLANS <- function(searchConditionsList = NULL, PLANID = F, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPLANS <- function(searchConditionsList = NULL, CompositeScore = F, EnglishScaleScore = F, MathScaleScore = F, PLANID = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of PLAN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPLAN <- function(PLANID, StudentTestID = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, CompositeScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPLAN <- function(PLANID, CompositeScore = F, EnglishScaleScore = F, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PLANID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created PLAN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPLAN <- function(StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPLAN <- function(CompositeScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified PLAN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPLAN <- function(PLANID, StudentTestID = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, CompositeScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPLAN <- function(PLANID, CompositeScore = NULL, EnglishScaleScore = NULL, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of PSAES
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listPSAES <- function(searchConditionsList = NULL, PSAEID = F, StudentTestID = F, ReadingScaleScore = F, MathScaleScore = F, ScienceScaleScore = F, WritingScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listPSAES <- function(searchConditionsList = NULL, MathScaleScore = F, PSAEID = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, WritingScaleScore = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of PSAE
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getPSAE <- function(PSAEID, StudentTestID = F, ReadingScaleScore = F, MathScaleScore = F, ScienceScaleScore = F, WritingScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getPSAE <- function(PSAEID, MathScaleScore = F, ReadingScaleScore = F, ScienceScaleScore = F, StudentTestID = F, WritingScaleScore = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "PSAEID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created PSAE
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createPSAE <- function(StudentTestID = NULL, ReadingScaleScore = NULL, MathScaleScore = NULL, ScienceScaleScore = NULL, WritingScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createPSAE <- function(MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, WritingScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified PSAE
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyPSAE <- function(PSAEID, StudentTestID = NULL, ReadingScaleScore = NULL, MathScaleScore = NULL, ScienceScaleScore = NULL, WritingScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyPSAE <- function(PSAEID, MathScaleScore = NULL, ReadingScaleScore = NULL, ScienceScaleScore = NULL, StudentTestID = NULL, WritingScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of StudentTests
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentTests <- function(searchConditionsList = NULL, StudentTestID = F, StudentID = F, EntityID = F, GradeReferenceID = F, StudentAccessAllowedForCurrentUser = F, FamilyAccessAllowedForCurrentUser = F, TestType = F, TestCode = F, TestVersion = F, DateTaken = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentTests <- function(searchConditionsList = NULL, CreatedTime = F, DateTaken = F, EntityID = F, FamilyAccessAllowedForCurrentUser = F, GradeReferenceID = F, ModifiedTime = F, StudentAccessAllowedForCurrentUser = F, StudentID = F, StudentTestID = F, TestDisplayName = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of StudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentTest <- function(StudentTestID, StudentID = F, EntityID = F, GradeReferenceID = F, StudentAccessAllowedForCurrentUser = F, FamilyAccessAllowedForCurrentUser = F, TestType = F, TestCode = F, TestVersion = F, DateTaken = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentTest <- function(StudentTestID, CreatedTime = F, DateTaken = F, EntityID = F, FamilyAccessAllowedForCurrentUser = F, GradeReferenceID = F, ModifiedTime = F, StudentAccessAllowedForCurrentUser = F, StudentID = F, TestDisplayName = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentTestID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created StudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentTest <- function(StudentID = NULL, EntityID = NULL, GradeReferenceID = NULL, TestType = NULL, TestVersion = NULL, DateTaken = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentTest <- function(DateTaken = NULL, EntityID = NULL, GradeReferenceID = NULL, StudentID = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified StudentTest
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentTest <- function(StudentTestID, StudentID = NULL, EntityID = NULL, GradeReferenceID = NULL, TestType = NULL, TestVersion = NULL, DateTaken = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentTest <- function(StudentTestID, DateTaken = NULL, EntityID = NULL, GradeReferenceID = NULL, StudentID = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1025,11 +1025,11 @@
 		modifySkyObject(module = "Assessment", objectName = "StudentTest", objectId = StudentTestID, body = list(DataObject = body), searchFields = append("StudentTestID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
-	#' List ASVABMNS
+	#' List ASVABS
 	#'
-	#' This function returns a dataframe or json object of ASVABMNS
-	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ASVABMNS. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ASVABMNS.
-	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ASVABMN') to get more field paths.
+	#' This function returns a dataframe or json object of ASVABS
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ASVABS. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ASVABS.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ASVAB') to get more field paths.
 	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
 	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
 	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
@@ -1041,10 +1041,10 @@
 	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Assessment
-	#' @return A list of ASVABMNS
+	#' @return A list of ASVABS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listASVABMNS <- function(searchConditionsList = NULL, ASVABMNID = F, StudentTestID = F, AFQTScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listASVABS <- function(searchConditionsList = NULL, AFQTScore = F, ASVABID = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1052,91 +1052,91 @@
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		listSkyObjects(module = "Assessment", objectName = "ASVABMN", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+		listSkyObjects(module = "Assessment", objectName = "ASVAB", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
-	#' Get an ASVABMN
+	#' Get an ASVAB
 	#'
-	#' This function returns a dataframe or json object of an ASVABMN
-	#' @param ASVABMNID The ID of the ASVABMN to return.
-	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ASVABMN. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ASVABMN.
-	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ASVABMN') to get more field paths.
+	#' This function returns a dataframe or json object of an ASVAB
+	#' @param ASVABID The ID of the ASVAB to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ASVAB. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ASVAB.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ASVAB') to get more field paths.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
 	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Assessment
-	#' @return A dataframe or of ASVABMN
+	#' @return A dataframe or of ASVAB
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getASVABMN <- function(ASVABMNID, StudentTestID = F, AFQTScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getASVAB <- function(ASVABID, AFQTScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
-		params <- as.list(environment()) %>% purrr::keep(names(.) != "ASVABMNID")
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "ASVABID")
 
 		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
 
 		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
 
-		getSkyObject(module = "Assessment", objectName = "ASVABMN", objectId = ASVABMNID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+		getSkyObject(module = "Assessment", objectName = "ASVAB", objectId = ASVABID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
-	#' Delete an ASVABMN
+	#' Delete an ASVAB
 	#'
-	#' This function deletes an ASVABMN
-	#' @param ASVABMNID The ID of the ASVABMN to delete
+	#' This function deletes an ASVAB
+	#' @param ASVABID The ID of the ASVAB to delete
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
 	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Assessment
-	#' @return The ASVABMNID of the deleted ASVABMN.
+	#' @return The ASVABID of the deleted ASVAB.
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	deleteASVABMN <- function(ASVABMNID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	deleteASVAB <- function(ASVABID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
-		deleteSkyObject(module = "Assessment", objectName = "ASVABMN", objectId = ASVABMNID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+		deleteSkyObject(module = "Assessment", objectName = "ASVAB", objectId = ASVABID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
-	#' Create an ASVABMN
+	#' Create an ASVAB
 	#'
-	#' This function creates an ASVABMN
-	#' @param fieldNames The field values to give the created ASVABMN. Each defaults to NULL.
+	#' This function creates an ASVAB
+	#' @param fieldNames The field values to give the created ASVAB. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
 	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Assessment
-	#' @return A newly created ASVABMN
+	#' @return A newly created ASVAB
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createASVABMN <- function(StudentTestID = NULL, AFQTScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createASVAB <- function(AFQTScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
-		createSkyObject(module = "Assessment", objectName = "ASVABMN", body = list(DataObject = body), searchFields = append("ASVABMNID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+		createSkyObject(module = "Assessment", objectName = "ASVAB", body = list(DataObject = body), searchFields = append("ASVABID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
-	#' Modify an ASVABMN
+	#' Modify an ASVAB
 	#'
-	#' This function modifies an ASVABMN
-	#' @param fieldNames The field values to give the modified ASVABMN. Each defaults to NULL.
+	#' This function modifies an ASVAB
+	#' @param fieldNames The field values to give the modified ASVAB. Each defaults to NULL.
 	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
 	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
 	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
 	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
 	#' @concept Assessment
-	#' @return The modified ASVABMN
+	#' @return The modified ASVAB
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyASVABMN <- function(ASVABMNID, StudentTestID = NULL, AFQTScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyASVAB <- function(ASVABID, AFQTScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
-		modifySkyObject(module = "Assessment", objectName = "ASVABMN", objectId = ASVABMNID, body = list(DataObject = body), searchFields = append("ASVABMNID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+		modifySkyObject(module = "Assessment", objectName = "ASVAB", objectId = ASVABID, body = list(DataObject = body), searchFields = append("ASVABID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}
 
 	#' List MTASMNS
@@ -1158,7 +1158,7 @@
 	#' @return A list of MTASMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMTASMNS <- function(searchConditionsList = NULL, MTASMNID = F, StudentTestID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScaleScore = F, IsPassingScaleScore = F, Subject = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMTASMNS <- function(searchConditionsList = NULL, IsPassingScaleScore = F, MTASMNID = F, ScaleScore = F, StudentTestID = F, SubjectCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of MTASMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMTASMN <- function(MTASMNID, StudentTestID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScaleScore = F, IsPassingScaleScore = F, Subject = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMTASMN <- function(MTASMNID, IsPassingScaleScore = F, ScaleScore = F, StudentTestID = F, SubjectCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MTASMNID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created MTASMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMTASMN <- function(StudentTestID = NULL, ScaleScore = NULL, IsPassingScaleScore = NULL, Subject = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMTASMN <- function(IsPassingScaleScore = NULL, ScaleScore = NULL, StudentTestID = NULL, SubjectCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified MTASMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMTASMN <- function(MTASMNID, StudentTestID = NULL, ScaleScore = NULL, IsPassingScaleScore = NULL, Subject = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMTASMN <- function(MTASMNID, IsPassingScaleScore = NULL, ScaleScore = NULL, StudentTestID = NULL, SubjectCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of MCAMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMCAMNS <- function(searchConditionsList = NULL, MCAMNID = F, StudentTestID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScaleScore = F, IsPassingScaleScore = F, Subject = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMCAMNS <- function(searchConditionsList = NULL, IsPassingScaleScore = F, MCAMNID = F, ScaleScore = F, StudentTestID = F, SubjectCode = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of MCAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMCAMN <- function(MCAMNID, StudentTestID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScaleScore = F, IsPassingScaleScore = F, Subject = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMCAMN <- function(MCAMNID, IsPassingScaleScore = F, ScaleScore = F, StudentTestID = F, SubjectCode = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MCAMNID")
 
@@ -1337,7 +1337,7 @@
 	#' @return A newly created MCAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMCAMN <- function(StudentTestID = NULL, ScaleScore = NULL, IsPassingScaleScore = NULL, Subject = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMCAMN <- function(IsPassingScaleScore = NULL, ScaleScore = NULL, StudentTestID = NULL, SubjectCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1358,7 +1358,7 @@
 	#' @return The modified MCAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMCAMN <- function(MCAMNID, StudentTestID = NULL, ScaleScore = NULL, IsPassingScaleScore = NULL, Subject = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMCAMN <- function(MCAMNID, IsPassingScaleScore = NULL, ScaleScore = NULL, StudentTestID = NULL, SubjectCode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of TSAMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTSAMNS <- function(searchConditionsList = NULL, TSAMNID = F, StudentTestID = F, Description = F, ScaleScore = F, IsProficient = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTSAMNS <- function(searchConditionsList = NULL, Description = F, IsProficient = F, ScaleScore = F, StudentTestID = F, TSAMNID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of TSAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTSAMN <- function(TSAMNID, StudentTestID = F, Description = F, ScaleScore = F, IsProficient = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTSAMN <- function(TSAMNID, Description = F, IsProficient = F, ScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TSAMNID")
 
@@ -1451,7 +1451,7 @@
 	#' @return A newly created TSAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTSAMN <- function(StudentTestID = NULL, Description = NULL, ScaleScore = NULL, IsProficient = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTSAMN <- function(Description = NULL, IsProficient = NULL, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1472,7 +1472,7 @@
 	#' @return The modified TSAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTSAMN <- function(TSAMNID, StudentTestID = NULL, Description = NULL, ScaleScore = NULL, IsProficient = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTSAMN <- function(TSAMNID, Description = NULL, IsProficient = NULL, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of LAGAMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listLAGAMNS <- function(searchConditionsList = NULL, LAGAMNID = F, StudentTestID = F, Description = F, ScaleScore = F, IsPassing = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listLAGAMNS <- function(searchConditionsList = NULL, Description = F, IsPassing = F, LAGAMNID = F, ScaleScore = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of LAGAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getLAGAMN <- function(LAGAMNID, StudentTestID = F, Description = F, ScaleScore = F, IsPassing = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getLAGAMN <- function(LAGAMNID, Description = F, IsPassing = F, ScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "LAGAMNID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created LAGAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createLAGAMN <- function(StudentTestID = NULL, Description = NULL, ScaleScore = NULL, IsPassing = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createLAGAMN <- function(Description = NULL, IsPassing = NULL, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified LAGAMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyLAGAMN <- function(LAGAMNID, StudentTestID = NULL, Description = NULL, ScaleScore = NULL, IsPassing = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyLAGAMN <- function(LAGAMNID, Description = NULL, IsPassing = NULL, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of SRIMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSRIMNS <- function(searchConditionsList = NULL, SRIMNID = F, StudentTestID = F, ScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSRIMNS <- function(searchConditionsList = NULL, ScaleScore = F, SRIMNID = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of SRIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSRIMN <- function(SRIMNID, StudentTestID = F, ScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSRIMN <- function(SRIMNID, ScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "SRIMNID")
 
@@ -1679,7 +1679,7 @@
 	#' @return A newly created SRIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSRIMN <- function(StudentTestID = NULL, ScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSRIMN <- function(ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1700,7 +1700,7 @@
 	#' @return The modified SRIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySRIMN <- function(SRIMNID, StudentTestID = NULL, ScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySRIMN <- function(SRIMNID, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of SMIMNS
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSMIMNS <- function(searchConditionsList = NULL, SMIMNID = F, StudentTestID = F, ScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSMIMNS <- function(searchConditionsList = NULL, ScaleScore = F, SMIMNID = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of SMIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSMIMN <- function(SMIMNID, StudentTestID = F, ScaleScore = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSMIMN <- function(SMIMNID, ScaleScore = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "SMIMNID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created SMIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSMIMN <- function(StudentTestID = NULL, ScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSMIMN <- function(ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified SMIMN
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySMIMN <- function(SMIMNID, StudentTestID = NULL, ScaleScore = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySMIMN <- function(SMIMNID, ScaleScore = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of AdvancedPlacements
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAdvancedPlacements <- function(searchConditionsList = NULL, AdvancedPlacementID = F, StudentTestID = F, AdvancedPlacementNumber = F, AdministrationYear = F, Exam = F, ExamGrade = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAdvancedPlacements <- function(searchConditionsList = NULL, AdministrationYear = F, AdvancedPlacementID = F, AdvancedPlacementNumber = F, ExamCode = F, ExamGradeCode = F, StudentTestID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of AdvancedPlacement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAdvancedPlacement <- function(AdvancedPlacementID, StudentTestID = F, AdvancedPlacementNumber = F, AdministrationYear = F, Exam = F, ExamGrade = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAdvancedPlacement <- function(AdvancedPlacementID, AdministrationYear = F, AdvancedPlacementNumber = F, ExamCode = F, ExamGradeCode = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AdvancedPlacementID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created AdvancedPlacement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAdvancedPlacement <- function(StudentTestID = NULL, AdvancedPlacementNumber = NULL, AdministrationYear = NULL, Exam = NULL, ExamGrade = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAdvancedPlacement <- function(AdministrationYear = NULL, AdvancedPlacementNumber = NULL, ExamCode = NULL, ExamGradeCode = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified AdvancedPlacement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAdvancedPlacement <- function(AdvancedPlacementID, StudentTestID = NULL, AdvancedPlacementNumber = NULL, AdministrationYear = NULL, Exam = NULL, ExamGrade = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAdvancedPlacement <- function(AdvancedPlacementID, AdministrationYear = NULL, AdvancedPlacementNumber = NULL, ExamCode = NULL, ExamGradeCode = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of UnitedStatesConstitutions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listUnitedStatesConstitutions <- function(searchConditionsList = NULL, UnitedStatesConstitutionID = F, StudentTestID = F, DatePassed = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listUnitedStatesConstitutions <- function(searchConditionsList = NULL, DatePassed = F, StudentTestID = F, UnitedStatesConstitutionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of UnitedStatesConstitution
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getUnitedStatesConstitution <- function(UnitedStatesConstitutionID, StudentTestID = F, DatePassed = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getUnitedStatesConstitution <- function(UnitedStatesConstitutionID, DatePassed = F, StudentTestID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "UnitedStatesConstitutionID")
 
@@ -2021,7 +2021,7 @@
 	#' @return A newly created UnitedStatesConstitution
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createUnitedStatesConstitution <- function(StudentTestID = NULL, DatePassed = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createUnitedStatesConstitution <- function(DatePassed = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2042,7 +2042,7 @@
 	#' @return The modified UnitedStatesConstitution
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyUnitedStatesConstitution <- function(UnitedStatesConstitutionID, StudentTestID = NULL, DatePassed = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyUnitedStatesConstitution <- function(UnitedStatesConstitutionID, DatePassed = NULL, StudentTestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of Accuplacers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAccuplacers <- function(searchConditionsList = NULL, AccuplacerID = F, StudentTestID = F, MathematicsPlacement = F, ReadingPlacement = F, WritingPlacement = F, WriterPlacer2017 = F, ABEMathematics = F, ABEReading = F, ABEWriting = F, EssayPlacement = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAccuplacers <- function(searchConditionsList = NULL, ABEMathematics = F, ABEReading = F, ABEWriting = F, AccuplacerID = F, EssayPlacement = F, MathematicsPlacement = F, ReadingPlacement = F, StudentTestID = F, WritePlacer = F, WritingPlacement = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of Accuplacer
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAccuplacer <- function(AccuplacerID, StudentTestID = F, MathematicsPlacement = F, ReadingPlacement = F, WritingPlacement = F, WriterPlacer2017 = F, ABEMathematics = F, ABEReading = F, ABEWriting = F, EssayPlacement = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAccuplacer <- function(AccuplacerID, ABEMathematics = F, ABEReading = F, ABEWriting = F, EssayPlacement = F, MathematicsPlacement = F, ReadingPlacement = F, StudentTestID = F, WritePlacer = F, WritingPlacement = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AccuplacerID")
 
@@ -2135,7 +2135,7 @@
 	#' @return A newly created Accuplacer
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createAccuplacer <- function(StudentTestID = NULL, MathematicsPlacement = NULL, ReadingPlacement = NULL, WritingPlacement = NULL, WriterPlacer2017 = NULL, ABEMathematics = NULL, ABEReading = NULL, ABEWriting = NULL, EssayPlacement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createAccuplacer <- function(ABEMathematics = NULL, ABEReading = NULL, ABEWriting = NULL, EssayPlacement = NULL, MathematicsPlacement = NULL, ReadingPlacement = NULL, StudentTestID = NULL, WritePlacer = NULL, WritingPlacement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2156,11 +2156,1379 @@
 	#' @return The modified Accuplacer
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyAccuplacer <- function(AccuplacerID, StudentTestID = NULL, MathematicsPlacement = NULL, ReadingPlacement = NULL, WritingPlacement = NULL, WriterPlacer2017 = NULL, ABEMathematics = NULL, ABEReading = NULL, ABEWriting = NULL, EssayPlacement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyAccuplacer <- function(AccuplacerID, ABEMathematics = NULL, ABEReading = NULL, ABEWriting = NULL, EssayPlacement = NULL, MathematicsPlacement = NULL, ReadingPlacement = NULL, StudentTestID = NULL, WritePlacer = NULL, WritingPlacement = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Assessment", objectName = "Accuplacer", objectId = AccuplacerID, body = list(DataObject = body), searchFields = append("AccuplacerID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempTestErrors
+	#'
+	#' This function returns a dataframe or json object of TempTestErrors
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempTestErrors. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempTestErrors.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempTestError') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TempTestErrors
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempTestErrors <- function(searchConditionsList = NULL, CreatedTime = F, Message = F, MetadataTable = F, ModifiedTime = F, TempTestErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TempTestError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempTestError
+	#'
+	#' This function returns a dataframe or json object of a TempTestError
+	#' @param TempTestErrorID The ID of the TempTestError to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempTestError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempTestError.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempTestError') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TempTestError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempTestError <- function(TempTestErrorID, CreatedTime = F, Message = F, MetadataTable = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempTestErrorID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TempTestError", objectId = TempTestErrorID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempTestError
+	#'
+	#' This function deletes a TempTestError
+	#' @param TempTestErrorID The ID of the TempTestError to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TempTestErrorID of the deleted TempTestError.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempTestError <- function(TempTestErrorID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TempTestError", objectId = TempTestErrorID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempTestError
+	#'
+	#' This function creates a TempTestError
+	#' @param fieldNames The field values to give the created TempTestError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TempTestError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempTestError <- function(Message = NULL, MetadataTable = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TempTestError", body = list(DataObject = body), searchFields = append("TempTestErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempTestError
+	#'
+	#' This function modifies a TempTestError
+	#' @param fieldNames The field values to give the modified TempTestError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TempTestError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempTestError <- function(TempTestErrorID, Message = NULL, MetadataTable = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TempTestError", objectId = TempTestErrorID, body = list(DataObject = body), searchFields = append("TempTestErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List Tests
+	#'
+	#' This function returns a dataframe or json object of Tests
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Tests. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Tests.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Test') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of Tests
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTests <- function(searchConditionsList = NULL, CreatedTime = F, HasPublishedTestVersion = F, IsSkywardCannedTest = F, ModifiedTime = F, Name = F, ObjectIDSkySys = F, SkywardHash = F, SkywardID = F, State = F, TestID = F, TestIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "Test", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a Test
+	#'
+	#' This function returns a dataframe or json object of a Test
+	#' @param TestID The ID of the Test to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Test. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Test.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Test') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of Test
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTest <- function(TestID, CreatedTime = F, HasPublishedTestVersion = F, IsSkywardCannedTest = F, ModifiedTime = F, Name = F, ObjectIDSkySys = F, SkywardHash = F, SkywardID = F, State = F, TestIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "Test", objectId = TestID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a Test
+	#'
+	#' This function deletes a Test
+	#' @param TestID The ID of the Test to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestID of the deleted Test.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTest <- function(TestID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "Test", objectId = TestID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a Test
+	#'
+	#' This function creates a Test
+	#' @param fieldNames The field values to give the created Test. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created Test
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTest <- function(Name = NULL, ObjectIDSkySys = NULL, State = NULL, TestIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "Test", body = list(DataObject = body), searchFields = append("TestID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a Test
+	#'
+	#' This function modifies a Test
+	#' @param fieldNames The field values to give the modified Test. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified Test
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTest <- function(TestID, Name = NULL, ObjectIDSkySys = NULL, State = NULL, TestIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "Test", objectId = TestID, body = list(DataObject = body), searchFields = append("TestID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestColumns
+	#'
+	#' This function returns a dataframe or json object of TestColumns
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestColumns. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestColumns.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestColumn') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestColumns
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestColumns <- function(searchConditionsList = NULL, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestColumnID = F, TestColumnIDClonedFrom = F, TestFieldTypeIDDefault = F, TestSectionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UsesPublishedTestField = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestColumn", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestColumn
+	#'
+	#' This function returns a dataframe or json object of a TestColumn
+	#' @param TestColumnID The ID of the TestColumn to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestColumn. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestColumn.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestColumn') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestColumn <- function(TestColumnID, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestColumnIDClonedFrom = F, TestFieldTypeIDDefault = F, TestSectionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UsesPublishedTestField = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestColumnID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestColumn", objectId = TestColumnID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestColumn
+	#'
+	#' This function deletes a TestColumn
+	#' @param TestColumnID The ID of the TestColumn to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestColumnID of the deleted TestColumn.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestColumn <- function(TestColumnID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestColumn", objectId = TestColumnID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestColumn
+	#'
+	#' This function creates a TestColumn
+	#' @param fieldNames The field values to give the created TestColumn. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestColumn <- function(DisplayOrder = NULL, Name = NULL, TestColumnIDClonedFrom = NULL, TestFieldTypeIDDefault = NULL, TestSectionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestColumn", body = list(DataObject = body), searchFields = append("TestColumnID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestColumn
+	#'
+	#' This function modifies a TestColumn
+	#' @param fieldNames The field values to give the modified TestColumn. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestColumn <- function(TestColumnID, DisplayOrder = NULL, Name = NULL, TestColumnIDClonedFrom = NULL, TestFieldTypeIDDefault = NULL, TestSectionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestColumn", objectId = TestColumnID, body = list(DataObject = body), searchFields = append("TestColumnID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestFields
+	#'
+	#' This function returns a dataframe or json object of TestFields
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestFields. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestFields.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestField') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestFields
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestFields <- function(searchConditionsList = NULL, CreatedTime = F, FieldIDSkySys = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestFieldID = F, TestFieldIDClonedFrom = F, TestID = F, UsedOnPublishedTestVersion = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestField", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestField
+	#'
+	#' This function returns a dataframe or json object of a TestField
+	#' @param TestFieldID The ID of the TestField to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestField. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestField.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestField') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestField <- function(TestFieldID, CreatedTime = F, FieldIDSkySys = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestFieldIDClonedFrom = F, TestID = F, UsedOnPublishedTestVersion = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestFieldID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestField", objectId = TestFieldID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestField
+	#'
+	#' This function deletes a TestField
+	#' @param TestFieldID The ID of the TestField to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestFieldID of the deleted TestField.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestField <- function(TestFieldID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestField", objectId = TestFieldID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestField
+	#'
+	#' This function creates a TestField
+	#' @param fieldNames The field values to give the created TestField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestField <- function(FieldIDSkySys = NULL, Name = NULL, TestFieldIDClonedFrom = NULL, TestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestField", body = list(DataObject = body), searchFields = append("TestFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestField
+	#'
+	#' This function modifies a TestField
+	#' @param fieldNames The field values to give the modified TestField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestField <- function(TestFieldID, FieldIDSkySys = NULL, Name = NULL, TestFieldIDClonedFrom = NULL, TestID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestField", objectId = TestFieldID, body = list(DataObject = body), searchFields = append("TestFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestFieldTypes
+	#'
+	#' This function returns a dataframe or json object of TestFieldTypes
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestFieldTypes. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestFieldTypes.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestFieldType') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestFieldTypes
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestFieldTypes <- function(searchConditionsList = NULL, CreatedTime = F, DisplayFormat = F, DisplayName = F, FieldType = F, IsPercent = F, ModifiedTime = F, Name = F, Precision = F, Scale = F, Size = F, SkywardHash = F, SkywardID = F, TestFieldTypeID = F, UsedOnPublishedTestVersion = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestFieldType", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestFieldType
+	#'
+	#' This function returns a dataframe or json object of a TestFieldType
+	#' @param TestFieldTypeID The ID of the TestFieldType to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestFieldType. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestFieldType.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestFieldType') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestFieldType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestFieldType <- function(TestFieldTypeID, CreatedTime = F, DisplayFormat = F, DisplayName = F, FieldType = F, IsPercent = F, ModifiedTime = F, Name = F, Precision = F, Scale = F, Size = F, SkywardHash = F, SkywardID = F, UsedOnPublishedTestVersion = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestFieldTypeID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestFieldType", objectId = TestFieldTypeID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestFieldType
+	#'
+	#' This function deletes a TestFieldType
+	#' @param TestFieldTypeID The ID of the TestFieldType to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestFieldTypeID of the deleted TestFieldType.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestFieldType <- function(TestFieldTypeID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestFieldType", objectId = TestFieldTypeID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestFieldType
+	#'
+	#' This function creates a TestFieldType
+	#' @param fieldNames The field values to give the created TestFieldType. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestFieldType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestFieldType <- function(DisplayFormat = NULL, FieldType = NULL, IsPercent = NULL, Name = NULL, Precision = NULL, Scale = NULL, Size = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestFieldType", body = list(DataObject = body), searchFields = append("TestFieldTypeID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestFieldType
+	#'
+	#' This function modifies a TestFieldType
+	#' @param fieldNames The field values to give the modified TestFieldType. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestFieldType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestFieldType <- function(TestFieldTypeID, DisplayFormat = NULL, FieldType = NULL, IsPercent = NULL, Name = NULL, Precision = NULL, Scale = NULL, Size = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestFieldType", objectId = TestFieldTypeID, body = list(DataObject = body), searchFields = append("TestFieldTypeID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestFieldTypeValues
+	#'
+	#' This function returns a dataframe or json object of TestFieldTypeValues
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestFieldTypeValues. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestFieldTypeValues.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestFieldTypeValue') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestFieldTypeValues
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestFieldTypeValues <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DisplayOrder = F, IsDefault = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, TestFieldTypeID = F, TestFieldTypeValueID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestFieldTypeValue", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestFieldTypeValue
+	#'
+	#' This function returns a dataframe or json object of a TestFieldTypeValue
+	#' @param TestFieldTypeValueID The ID of the TestFieldTypeValue to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestFieldTypeValue. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestFieldTypeValue.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestFieldTypeValue') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestFieldTypeValue
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestFieldTypeValue <- function(TestFieldTypeValueID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DisplayOrder = F, IsDefault = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, TestFieldTypeID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestFieldTypeValueID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestFieldTypeValue", objectId = TestFieldTypeValueID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestFieldTypeValue
+	#'
+	#' This function deletes a TestFieldTypeValue
+	#' @param TestFieldTypeValueID The ID of the TestFieldTypeValue to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestFieldTypeValueID of the deleted TestFieldTypeValue.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestFieldTypeValue <- function(TestFieldTypeValueID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestFieldTypeValue", objectId = TestFieldTypeValueID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestFieldTypeValue
+	#'
+	#' This function creates a TestFieldTypeValue
+	#' @param fieldNames The field values to give the created TestFieldTypeValue. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestFieldTypeValue
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestFieldTypeValue <- function(Code = NULL, Description = NULL, DisplayOrder = NULL, IsDefault = NULL, TestFieldTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestFieldTypeValue", body = list(DataObject = body), searchFields = append("TestFieldTypeValueID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestFieldTypeValue
+	#'
+	#' This function modifies a TestFieldTypeValue
+	#' @param fieldNames The field values to give the modified TestFieldTypeValue. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestFieldTypeValue
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestFieldTypeValue <- function(TestFieldTypeValueID, Code = NULL, Description = NULL, DisplayOrder = NULL, IsDefault = NULL, TestFieldTypeID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestFieldTypeValue", objectId = TestFieldTypeValueID, body = list(DataObject = body), searchFields = append("TestFieldTypeValueID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestImportFields
+	#'
+	#' This function returns a dataframe or json object of TestImportFields
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestImportFields. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestImportFields.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestImportField') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestImportFields
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestImportFields <- function(searchConditionsList = NULL, CreatedTime = F, DataType = F, EndPosition = F, ImportDateFormat = F, MatchingFieldType = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, SpecialImportProcessingType = F, StartPosition = F, TestImportFieldID = F, TestImportFieldIDClonedFrom = F, TestImportTypeID = F, TestVersionFieldID = F, UniqueIdentifierType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestImportField", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestImportField
+	#'
+	#' This function returns a dataframe or json object of a TestImportField
+	#' @param TestImportFieldID The ID of the TestImportField to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestImportField. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestImportField.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestImportField') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestImportField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestImportField <- function(TestImportFieldID, CreatedTime = F, DataType = F, EndPosition = F, ImportDateFormat = F, MatchingFieldType = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, SpecialImportProcessingType = F, StartPosition = F, TestImportFieldIDClonedFrom = F, TestImportTypeID = F, TestVersionFieldID = F, UniqueIdentifierType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestImportFieldID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestImportField", objectId = TestImportFieldID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestImportField
+	#'
+	#' This function deletes a TestImportField
+	#' @param TestImportFieldID The ID of the TestImportField to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestImportFieldID of the deleted TestImportField.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestImportField <- function(TestImportFieldID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestImportField", objectId = TestImportFieldID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestImportField
+	#'
+	#' This function creates a TestImportField
+	#' @param fieldNames The field values to give the created TestImportField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestImportField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestImportField <- function(DataType = NULL, EndPosition = NULL, ImportDateFormat = NULL, MatchingFieldType = NULL, SpecialImportProcessingType = NULL, StartPosition = NULL, TestImportFieldIDClonedFrom = NULL, TestImportTypeID = NULL, TestVersionFieldID = NULL, UniqueIdentifierType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestImportField", body = list(DataObject = body), searchFields = append("TestImportFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestImportField
+	#'
+	#' This function modifies a TestImportField
+	#' @param fieldNames The field values to give the modified TestImportField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestImportField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestImportField <- function(TestImportFieldID, DataType = NULL, EndPosition = NULL, ImportDateFormat = NULL, MatchingFieldType = NULL, SpecialImportProcessingType = NULL, StartPosition = NULL, TestImportFieldIDClonedFrom = NULL, TestImportTypeID = NULL, TestVersionFieldID = NULL, UniqueIdentifierType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestImportField", objectId = TestImportFieldID, body = list(DataObject = body), searchFields = append("TestImportFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestImportTypes
+	#'
+	#' This function returns a dataframe or json object of TestImportTypes
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestImportTypes. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestImportTypes.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestImportType') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestImportTypes
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestImportTypes <- function(searchConditionsList = NULL, CreatedTime = F, DelimiterType = F, FileType = F, IsSkywardTestImportType = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestImportTypeID = F, TestImportTypeIDClonedFrom = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestImportType", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestImportType
+	#'
+	#' This function returns a dataframe or json object of a TestImportType
+	#' @param TestImportTypeID The ID of the TestImportType to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestImportType. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestImportType.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestImportType') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestImportType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestImportType <- function(TestImportTypeID, CreatedTime = F, DelimiterType = F, FileType = F, IsSkywardTestImportType = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestImportTypeIDClonedFrom = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestImportTypeID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestImportType", objectId = TestImportTypeID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestImportType
+	#'
+	#' This function deletes a TestImportType
+	#' @param TestImportTypeID The ID of the TestImportType to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestImportTypeID of the deleted TestImportType.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestImportType <- function(TestImportTypeID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestImportType", objectId = TestImportTypeID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestImportType
+	#'
+	#' This function creates a TestImportType
+	#' @param fieldNames The field values to give the created TestImportType. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestImportType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestImportType <- function(DelimiterType = NULL, FileType = NULL, Name = NULL, TestImportTypeIDClonedFrom = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestImportType", body = list(DataObject = body), searchFields = append("TestImportTypeID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestImportType
+	#'
+	#' This function modifies a TestImportType
+	#' @param fieldNames The field values to give the modified TestImportType. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestImportType
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestImportType <- function(TestImportTypeID, DelimiterType = NULL, FileType = NULL, Name = NULL, TestImportTypeIDClonedFrom = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestImportType", objectId = TestImportTypeID, body = list(DataObject = body), searchFields = append("TestImportTypeID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestRows
+	#'
+	#' This function returns a dataframe or json object of TestRows
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestRows. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestRows.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestRow') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestRows
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestRows <- function(searchConditionsList = NULL, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestFieldTypeIDDefault = F, TestRowID = F, TestRowIDClonedFrom = F, TestSectionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UsesPublishedTestField = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestRow", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestRow
+	#'
+	#' This function returns a dataframe or json object of a TestRow
+	#' @param TestRowID The ID of the TestRow to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestRow. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestRow.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestRow') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestRow
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestRow <- function(TestRowID, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestFieldTypeIDDefault = F, TestRowIDClonedFrom = F, TestSectionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UsesPublishedTestField = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestRowID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestRow", objectId = TestRowID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestRow
+	#'
+	#' This function deletes a TestRow
+	#' @param TestRowID The ID of the TestRow to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestRowID of the deleted TestRow.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestRow <- function(TestRowID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestRow", objectId = TestRowID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestRow
+	#'
+	#' This function creates a TestRow
+	#' @param fieldNames The field values to give the created TestRow. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestRow
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestRow <- function(DisplayOrder = NULL, Name = NULL, TestFieldTypeIDDefault = NULL, TestRowIDClonedFrom = NULL, TestSectionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestRow", body = list(DataObject = body), searchFields = append("TestRowID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestRow
+	#'
+	#' This function modifies a TestRow
+	#' @param fieldNames The field values to give the modified TestRow. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestRow
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestRow <- function(TestRowID, DisplayOrder = NULL, Name = NULL, TestFieldTypeIDDefault = NULL, TestRowIDClonedFrom = NULL, TestSectionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestRow", objectId = TestRowID, body = list(DataObject = body), searchFields = append("TestRowID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestSections
+	#'
+	#' This function returns a dataframe or json object of TestSections
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestSections. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestSections.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestSection') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestSections
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestSections <- function(searchConditionsList = NULL, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestSectionID = F, TestSectionIDClonedFrom = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestSection", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestSection
+	#'
+	#' This function returns a dataframe or json object of a TestSection
+	#' @param TestSectionID The ID of the TestSection to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestSection. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestSection.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestSection') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestSection
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestSection <- function(TestSectionID, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, Name = F, SkywardHash = F, SkywardID = F, TestSectionIDClonedFrom = F, TestVersionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestSectionID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestSection", objectId = TestSectionID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestSection
+	#'
+	#' This function deletes a TestSection
+	#' @param TestSectionID The ID of the TestSection to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestSectionID of the deleted TestSection.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestSection <- function(TestSectionID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestSection", objectId = TestSectionID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestSection
+	#'
+	#' This function creates a TestSection
+	#' @param fieldNames The field values to give the created TestSection. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestSection
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestSection <- function(DisplayOrder = NULL, Name = NULL, TestSectionIDClonedFrom = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestSection", body = list(DataObject = body), searchFields = append("TestSectionID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestSection
+	#'
+	#' This function modifies a TestSection
+	#' @param fieldNames The field values to give the modified TestSection. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestSection
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestSection <- function(TestSectionID, DisplayOrder = NULL, Name = NULL, TestSectionIDClonedFrom = NULL, TestVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestSection", objectId = TestSectionID, body = list(DataObject = body), searchFields = append("TestSectionID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestVersions
+	#'
+	#' This function returns a dataframe or json object of TestVersions
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestVersions. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestVersions.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestVersion') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestVersions
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestVersions <- function(searchConditionsList = NULL, CreatedTime = F, DisplayOrder = F, IsPublished = F, IsSkywardTestVersion = F, ModifiedTime = F, Name = F, PublishedReleaseVersion = F, ShowScoresInFamilyAccess = F, ShowScoresInTeacherAccess = F, SkywardHash = F, SkywardID = F, TestID = F, TestVersionID = F, TestVersionIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestVersion", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestVersion
+	#'
+	#' This function returns a dataframe or json object of a TestVersion
+	#' @param TestVersionID The ID of the TestVersion to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestVersion. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestVersion.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestVersion') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestVersion
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestVersion <- function(TestVersionID, CreatedTime = F, DisplayOrder = F, IsPublished = F, IsSkywardTestVersion = F, ModifiedTime = F, Name = F, PublishedReleaseVersion = F, ShowScoresInFamilyAccess = F, ShowScoresInTeacherAccess = F, SkywardHash = F, SkywardID = F, TestID = F, TestVersionIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestVersionID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestVersion", objectId = TestVersionID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestVersion
+	#'
+	#' This function deletes a TestVersion
+	#' @param TestVersionID The ID of the TestVersion to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestVersionID of the deleted TestVersion.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestVersion <- function(TestVersionID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestVersion", objectId = TestVersionID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestVersion
+	#'
+	#' This function creates a TestVersion
+	#' @param fieldNames The field values to give the created TestVersion. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestVersion
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestVersion <- function(DisplayOrder = NULL, IsPublished = NULL, Name = NULL, PublishedReleaseVersion = NULL, ShowScoresInFamilyAccess = NULL, ShowScoresInTeacherAccess = NULL, TestID = NULL, TestVersionIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestVersion", body = list(DataObject = body), searchFields = append("TestVersionID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestVersion
+	#'
+	#' This function modifies a TestVersion
+	#' @param fieldNames The field values to give the modified TestVersion. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestVersion
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestVersion <- function(TestVersionID, DisplayOrder = NULL, IsPublished = NULL, Name = NULL, PublishedReleaseVersion = NULL, ShowScoresInFamilyAccess = NULL, ShowScoresInTeacherAccess = NULL, TestID = NULL, TestVersionIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestVersion", objectId = TestVersionID, body = list(DataObject = body), searchFields = append("TestVersionID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TestVersionFields
+	#'
+	#' This function returns a dataframe or json object of TestVersionFields
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestVersionFields. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestVersionFields.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestVersionField') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A list of TestVersionFields
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTestVersionFields <- function(searchConditionsList = NULL, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, TestColumnID = F, TestFieldID = F, TestFieldTypeID = F, TestRowID = F, TestSectionID = F, TestVersionFieldID = F, TestVersionFieldIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Assessment", objectName = "TestVersionField", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TestVersionField
+	#'
+	#' This function returns a dataframe or json object of a TestVersionField
+	#' @param TestVersionFieldID The ID of the TestVersionField to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TestVersionField. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TestVersionField.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TestVersionField') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A dataframe or of TestVersionField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTestVersionField <- function(TestVersionFieldID, CreatedTime = F, DisplayOrder = F, ModifiedTime = F, SkywardHash = F, SkywardID = F, TestColumnID = F, TestFieldID = F, TestFieldTypeID = F, TestRowID = F, TestSectionID = F, TestVersionFieldIDClonedFrom = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TestVersionFieldID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Assessment", objectName = "TestVersionField", objectId = TestVersionFieldID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TestVersionField
+	#'
+	#' This function deletes a TestVersionField
+	#' @param TestVersionFieldID The ID of the TestVersionField to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The TestVersionFieldID of the deleted TestVersionField.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTestVersionField <- function(TestVersionFieldID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Assessment", objectName = "TestVersionField", objectId = TestVersionFieldID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TestVersionField
+	#'
+	#' This function creates a TestVersionField
+	#' @param fieldNames The field values to give the created TestVersionField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return A newly created TestVersionField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTestVersionField <- function(DisplayOrder = NULL, TestColumnID = NULL, TestFieldID = NULL, TestFieldTypeID = NULL, TestRowID = NULL, TestSectionID = NULL, TestVersionFieldIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Assessment", objectName = "TestVersionField", body = list(DataObject = body), searchFields = append("TestVersionFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TestVersionField
+	#'
+	#' This function modifies a TestVersionField
+	#' @param fieldNames The field values to give the modified TestVersionField. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Assessment
+	#' @return The modified TestVersionField
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTestVersionField <- function(TestVersionFieldID, DisplayOrder = NULL, TestColumnID = NULL, TestFieldID = NULL, TestFieldTypeID = NULL, TestRowID = NULL, TestSectionID = NULL, TestVersionFieldIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Assessment", objectName = "TestVersionField", objectId = TestVersionFieldID, body = list(DataObject = body), searchFields = append("TestVersionFieldID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}

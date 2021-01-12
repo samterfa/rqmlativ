@@ -6,13 +6,13 @@
 \usage{
 listSurveyInstances(
   searchConditionsList = NULL,
-  SurveyInstanceID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SurveyID = F,
+  SurveyInstanceID = F,
   SystemVersion = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifySpringSportsTeam(
   SpringSportsTeamID,
-  SpringSportID = NULL,
-  SchoolYearID = NULL,
-  Lettered = NULL,
   Captain = NULL,
+  Lettered = NULL,
+  SchoolYearID = NULL,
+  SpringSportID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

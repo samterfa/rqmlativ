@@ -6,9 +6,9 @@
 \usage{
 modifyOnlineFormReportableReport(
   OnlineFormReportableReportID,
-  ReportID = NULL,
-  OnlineFormID = NULL,
   ElementID = NULL,
+  OnlineFormID = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

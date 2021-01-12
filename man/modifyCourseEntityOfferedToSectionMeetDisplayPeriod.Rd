@@ -7,11 +7,11 @@
 modifyCourseEntityOfferedToSectionMeetDisplayPeriod(
   CourseEntityOfferedToSectionMeetDisplayPeriodID,
   CourseEntityOfferedToSectionID = NULL,
-  MeetID = NULL,
+  CourseEntityOfferedToSectionMeetDisplayPeriodIDClonedFrom = NULL,
   DisplayPeriodID = NULL,
   HideMeetDisplayPeriod = NULL,
   IsPrimary = NULL,
-  CourseEntityOfferedToSectionMeetDisplayPeriodIDClonedFrom = NULL,
+  MeetID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

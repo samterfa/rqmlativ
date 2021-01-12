@@ -6,8 +6,8 @@
 \usage{
 modifyFTPProcessType(
   FTPProcessTypeID,
-  ModuleName = NULL,
   Description = NULL,
+  ModuleName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

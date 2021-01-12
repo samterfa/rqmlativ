@@ -6,15 +6,15 @@
 \usage{
 listDisabilityMNS(
   searchConditionsList = NULL,
+  CreatedTime = F,
   DisabilityMNID = F,
+  DisabilityRank = F,
   EnrollmentMNID = F,
+  ModifiedTime = F,
   Rank = F,
   StateDisabilityCodeMNID = F,
-  DisabilityRank = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

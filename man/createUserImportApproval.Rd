@@ -5,8 +5,8 @@
 \title{Create an UserImportApproval}
 \usage{
 createUserImportApproval(
-  UserID = NULL,
   ApprovalDate = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

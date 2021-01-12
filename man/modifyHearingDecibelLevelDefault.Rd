@@ -7,8 +7,8 @@
 modifyHearingDecibelLevelDefault(
   HearingDecibelLevelDefaultID,
   Code = NULL,
-  Description = NULL,
   DecibelLevel = NULL,
+  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

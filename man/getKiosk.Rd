@@ -6,14 +6,14 @@
 \usage{
 getKiosk(
   KioskID,
-  Name = F,
+  CreatedTime = F,
   IPAddress = F,
   IsTardyKiosk = F,
+  ModifiedTime = F,
+  Name = F,
   PrinterType = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

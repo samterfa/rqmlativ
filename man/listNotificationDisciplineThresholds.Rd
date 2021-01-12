@@ -6,13 +6,13 @@
 \usage{
 listNotificationDisciplineThresholds(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  DisciplineThresholdID = F,
+  ModifiedTime = F,
   NotificationDisciplineThresholdID = F,
   NotificationID = F,
-  DisciplineThresholdID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

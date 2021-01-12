@@ -6,10 +6,10 @@
 \usage{
 modifyEntityGroupSetup(
   EntityGroupSetupID,
-  EntityIDPrimary = NULL,
   EntityGroupID = NULL,
-  SchoolYearID = NULL,
+  EntityIDPrimary = NULL,
   NewGroupName = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

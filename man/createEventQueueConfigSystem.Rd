@@ -5,8 +5,8 @@
 \title{Create an EventQueueConfigSystem}
 \usage{
 createEventQueueConfigSystem(
-  IsEnabled = NULL,
   DaysToStoreEvents = NULL,
+  IsEnabled = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

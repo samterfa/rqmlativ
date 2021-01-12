@@ -6,11 +6,11 @@
 \usage{
 listGASBBalanceSheetTotalViews(
   searchConditionsList = NULL,
-  GASBBalanceSheetTotalViewID = F,
-  TotalFunds = F,
   BalanceSheetTotalType = F,
-  GASBExtractRunID = F,
   DisplayOrder = F,
+  GASBBalanceSheetTotalViewID = F,
+  GASBExtractRunID = F,
+  TotalFunds = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

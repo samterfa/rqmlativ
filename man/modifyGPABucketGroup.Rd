@@ -7,9 +7,9 @@
 modifyGPABucketGroup(
   GPABucketGroupID,
   EntityGroupKey = NULL,
-  GPABucketID = NULL,
-  GPABucketGroupSummaryID = NULL,
   GPABucketGroupIDClonedFrom = NULL,
+  GPABucketGroupSummaryID = NULL,
+  GPABucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

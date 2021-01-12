@@ -6,9 +6,10 @@
 \usage{
 modifyW2YearPayType(
   W2YearPayTypeID,
-  W2YearID = NULL,
-  PayTypeID = NULL,
   FederalW2BoxID = NULL,
+  PayTypeID = NULL,
+  W2YearBox14SetID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

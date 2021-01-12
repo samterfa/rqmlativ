@@ -5,9 +5,9 @@
 \title{Create an AvailabilityFilterCourseStudentStudent}
 \usage{
 createAvailabilityFilterCourseStudentStudent(
+  ArenaSchedulingStatus = NULL,
   AvailabilityFilterCourseStudentID = NULL,
   StudentID = NULL,
-  ArenaSchedulingStatus = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

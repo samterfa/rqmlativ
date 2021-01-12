@@ -6,11 +6,11 @@
 \usage{
 modifyTempMassAddSpecialProgramField(
   TempMassAddSpecialProgramFieldID,
-  TempMassAddSpecialProgramID = NULL,
   FieldName = NULL,
-  FriendlyFieldName = NULL,
   FieldValue = NULL,
+  FriendlyFieldName = NULL,
   FriendlyFieldValue = NULL,
+  TempMassAddSpecialProgramID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

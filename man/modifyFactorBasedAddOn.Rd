@@ -6,11 +6,11 @@
 \usage{
 modifyFactorBasedAddOn(
   FactorBasedAddOnID,
+  Factor = NULL,
+  FactorBasedAddOnIDClonedFrom = NULL,
   GPABucketEntityID = NULL,
   GradeReferenceID = NULL,
-  Factor = NULL,
   GradingEndDateCutoffForCumulative = NULL,
-  FactorBasedAddOnIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

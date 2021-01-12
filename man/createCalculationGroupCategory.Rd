@@ -5,10 +5,10 @@
 \title{Create a CalculationGroupCategory}
 \usage{
 createCalculationGroupCategory(
+  CalculationGroupCategoryIDClonedFrom = NULL,
   CalculationGroupID = NULL,
   CategoryID = NULL,
   EntityGroupKey = NULL,
-  CalculationGroupCategoryIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

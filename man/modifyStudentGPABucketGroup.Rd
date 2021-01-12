@@ -6,11 +6,11 @@
 \usage{
 modifyStudentGPABucketGroup(
   StudentGPABucketGroupID,
-  StudentID = NULL,
-  SchoolYearID = NULL,
   GPABucketID = NULL,
   GPAMethodID = NULL,
   GradReqRankGPABreakdown = NULL,
+  SchoolYearID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

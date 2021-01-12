@@ -5,9 +5,9 @@
 \title{Create an UserProfileTabStatus}
 \usage{
 createUserProfileTabStatus(
-  UserID = NULL,
   ProfileID = NULL,
   ProfileScreenIDLastTab = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

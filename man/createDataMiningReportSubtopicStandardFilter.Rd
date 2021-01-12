@@ -5,8 +5,8 @@
 \title{Create a DataMiningReportSubtopicStandardFilter}
 \usage{
 createDataMiningReportSubtopicStandardFilter(
-  IsEnabled = NULL,
   DataMiningReportID = NULL,
+  IsEnabled = NULL,
   SubtopicStandardFilterID = NULL,
   entityId = 1,
   query = NULL,

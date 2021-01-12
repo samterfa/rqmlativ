@@ -5,9 +5,9 @@
 \title{Create a TempStepError}
 \usage{
 createTempStepError(
-  TempStepID = NULL,
-  ErrorMessage = NULL,
   Error = NULL,
+  ErrorMessage = NULL,
+  TempStepID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

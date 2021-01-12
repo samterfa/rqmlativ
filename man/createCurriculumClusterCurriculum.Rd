@@ -7,8 +7,8 @@
 createCurriculumClusterCurriculum(
   CurriculumClusterID = NULL,
   CurriculumID = NULL,
-  GradYearLow = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
   IsAdvancedCredit = NULL,
   entityId = 1,
   query = NULL,

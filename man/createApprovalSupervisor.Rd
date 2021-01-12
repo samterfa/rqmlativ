@@ -5,9 +5,9 @@
 \title{Create an ApprovalSupervisor}
 \usage{
 createApprovalSupervisor(
-  OrganizationChartRelationshipID = NULL,
-  ApprovalType = NULL,
   ApprovalObjectID = NULL,
+  ApprovalType = NULL,
+  OrganizationChartRelationshipID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyJobTitleMA(
   JobTitleMAID,
-  Title = NULL,
   StaffID = NULL,
+  Title = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

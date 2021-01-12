@@ -6,12 +6,12 @@
 \usage{
 getScoliosisScreeningObservation(
   ScoliosisScreeningObservationID,
-  ScoliosisScreeningID = F,
-  ScoliosisObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  ScoliosisObservationID = F,
+  ScoliosisScreeningID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

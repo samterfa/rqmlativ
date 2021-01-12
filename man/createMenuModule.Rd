@@ -5,13 +5,13 @@
 \title{Create a MenuModule}
 \usage{
 createMenuModule(
+  Description = NULL,
   DisplayName = NULL,
   DisplayOrder = NULL,
-  Description = NULL,
-  SkywardDescription = NULL,
-  IsEnabled = NULL,
   Image = NULL,
+  IsEnabled = NULL,
   ModuleSkywardID = NULL,
+  SkywardDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

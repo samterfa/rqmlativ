@@ -6,9 +6,9 @@
 \usage{
 modifyTempFailedPortalAccessSecurityUser(
   TempFailedPortalAccessSecurityUserID,
-  UserName = NULL,
-  Note = NULL,
   FullNameLFM = NULL,
+  Note = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

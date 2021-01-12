@@ -6,13 +6,13 @@
 \usage{
 modifyTempTeacherAccessSecurityUser(
   TempTeacherAccessSecurityUserID,
-  UserName = NULL,
+  AllowTeacherAccess = NULL,
+  EmailAddress = NULL,
   Group = NULL,
   StaffID = NULL,
   StaffNameLFM = NULL,
   StaffNumber = NULL,
-  AllowTeacherAccess = NULL,
-  EmailAddress = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

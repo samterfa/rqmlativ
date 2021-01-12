@@ -6,13 +6,13 @@
 \usage{
 getSectionCorequisiteGroupSection(
   SectionCorequisiteGroupSectionID,
-  SectionCorequisiteGroupID = F,
-  SectionID = F,
-  SectionCorequisiteGroupSectionIDClonedFrom = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SectionCorequisiteGroupID = F,
+  SectionCorequisiteGroupSectionIDClonedFrom = F,
+  SectionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

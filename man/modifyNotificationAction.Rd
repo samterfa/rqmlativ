@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationAction(
   NotificationActionID,
-  NotificationID = NULL,
   ActionID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

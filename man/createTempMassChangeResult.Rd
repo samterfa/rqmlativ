@@ -5,10 +5,10 @@
 \title{Create a TempMassChangeResult}
 \usage{
 createTempMassChangeResult(
-  Type = NULL,
-  ObjectIdentifier = NULL,
   Message = NULL,
+  ObjectIdentifier = NULL,
   Result = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

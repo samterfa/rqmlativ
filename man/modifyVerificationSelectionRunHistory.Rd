@@ -6,12 +6,12 @@
 \usage{
 modifyVerificationSelectionRunHistory(
   VerificationSelectionRunHistoryID,
-  SchoolYearID = NULL,
   DistrictID = NULL,
   NumberOfAvailableApplications = NULL,
   NumberOfSelectedApplications = NULL,
   ReplaceLastRanDate = NULL,
   SampleSelectionMethod = NULL,
+  SchoolYearID = NULL,
   SelectionTime = NULL,
   entityId = 1,
   query = NULL,

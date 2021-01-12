@@ -5,9 +5,9 @@
 \title{Create a TempCourseMasterMassUpdateErrorDetail}
 \usage{
 createTempCourseMasterMassUpdateErrorDetail(
-  TempCourseMasterMassUpdateErrorID = NULL,
-  ErrorName = NULL,
   Error = NULL,
+  ErrorName = NULL,
+  TempCourseMasterMassUpdateErrorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,16 +5,16 @@
 \title{Create a StudentGuardian}
 \usage{
 createStudentGuardian(
-  StudentID = NULL,
-  NameIDGuardian = NULL,
-  IsCustodialGuardian = NULL,
-  AllowStudentPickup = NULL,
-  RelationshipID = NULL,
   AllowFamilyAccess = NULL,
-  OverrideFeeOnlinePaymentAccess = NULL,
+  AllowStudentPickup = NULL,
   FeeOnlinePaymentOverrideType = NULL,
-  OverrideFoodOnlinePaymentAccess = NULL,
   FoodOnlinePaymentOverrideType = NULL,
+  IsCustodialGuardian = NULL,
+  NameIDGuardian = NULL,
+  OverrideFeeOnlinePaymentAccess = NULL,
+  OverrideFoodOnlinePaymentAccess = NULL,
+  RelationshipID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

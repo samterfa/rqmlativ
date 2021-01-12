@@ -5,10 +5,10 @@
 \title{Create a GradeReportRowColumn}
 \usage{
 createGradeReportRowColumn(
-  GradeReportRowID = NULL,
-  GradeReportColumnGroupColumnID = NULL,
-  GradeMarkID = NULL,
   DisplayValue = NULL,
+  GradeMarkID = NULL,
+  GradeReportColumnGroupColumnID = NULL,
+  GradeReportRowID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

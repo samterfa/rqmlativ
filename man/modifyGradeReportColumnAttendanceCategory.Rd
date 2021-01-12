@@ -6,9 +6,9 @@
 \usage{
 modifyGradeReportColumnAttendanceCategory(
   GradeReportColumnAttendanceCategoryID,
-  GradeReportColumnGroupColumnID = NULL,
   Category = NULL,
   GradeReportColumnAttendanceCategoryIDClonedFrom = NULL,
+  GradeReportColumnGroupColumnID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

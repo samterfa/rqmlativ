@@ -6,14 +6,14 @@
 \usage{
 listLockMakes(
   searchConditionsList = NULL,
-  LockMakeID = F,
   Code = F,
-  Description = F,
   CodeDescription = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  LockMakeID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

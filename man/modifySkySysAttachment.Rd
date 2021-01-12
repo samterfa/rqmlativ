@@ -6,11 +6,11 @@
 \usage{
 modifySkySysAttachment(
   AttachmentID,
+  AttachmentTypeID = NULL,
+  Comment = NULL,
+  MediaID = NULL,
   ObjectID = NULL,
   SourceID = NULL,
-  AttachmentTypeID = NULL,
-  MediaID = NULL,
-  Comment = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

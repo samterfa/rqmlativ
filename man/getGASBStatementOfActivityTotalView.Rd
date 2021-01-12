@@ -6,13 +6,13 @@
 \usage{
 getGASBStatementOfActivityTotalView(
   GASBStatementOfActivityTotalViewID,
+  DisplayOrder = F,
+  Expenses = F,
+  GASBExtractRunID = F,
   GovernmentalNetAmount = F,
   ProprietaryNetAmount = F,
-  TotalNetAmount = F,
-  Expenses = F,
   StatementOfActivityTotalType = F,
-  GASBExtractRunID = F,
-  DisplayOrder = F,
+  TotalNetAmount = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

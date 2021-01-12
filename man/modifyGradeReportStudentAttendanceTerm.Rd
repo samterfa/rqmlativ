@@ -6,14 +6,14 @@
 \usage{
 modifyGradeReportStudentAttendanceTerm(
   GradeReportStudentAttendanceTermID,
-  GradeReportAcademicSessionID = NULL,
   AttendanceTermCode = NULL,
-  SortNumber = NULL,
   DaysAbsent = NULL,
   DaysExcused = NULL,
-  DaysUnexcused = NULL,
-  DaysTardy = NULL,
   DaysOther = NULL,
+  DaysTardy = NULL,
+  DaysUnexcused = NULL,
+  GradeReportAcademicSessionID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

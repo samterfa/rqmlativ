@@ -5,8 +5,8 @@
 \title{Create a TempLoginHistory}
 \usage{
 createTempLoginHistory(
-  DeviceType = NULL,
   BrowserType = NULL,
+  DeviceType = NULL,
   OperatingSystemType = NULL,
   SuccesfulNumberOfLogins = NULL,
   entityId = 1,

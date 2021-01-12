@@ -6,10 +6,10 @@
 \usage{
 modifySecurityLocationReportSet(
   SecurityLocationReportSetID,
-  SecurityLocationID = NULL,
   DataObjectID = NULL,
   Name = NULL,
   PrimaryKeySource = NULL,
+  SecurityLocationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

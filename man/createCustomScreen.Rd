@@ -5,11 +5,11 @@
 \title{Create a CustomScreen}
 \usage{
 createCustomScreen(
-  ObjectID = NULL,
+  HasPendingChanges = NULL,
   Name = NULL,
+  ObjectID = NULL,
   Portal = NULL,
   Type = NULL,
-  HasPendingChanges = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 listTempBrowseViewColumns(
   searchConditionsList = NULL,
-  TempBrowseViewColumnID = F,
-  FieldName = F,
   ColumnHeaderText = F,
   ColumnIndex = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FieldName = F,
   ModifiedTime = F,
+  TempBrowseViewColumnID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

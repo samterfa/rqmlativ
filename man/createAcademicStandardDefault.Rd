@@ -5,16 +5,16 @@
 \title{Create an AcademicStandardDefault}
 \usage{
 createAcademicStandardDefault(
-  Level = NULL,
-  Description = NULL,
-  Key = NULL,
-  ParentGuid = NULL,
-  IsHighFrequencyWord = NULL,
-  LetterAndSoundType = NULL,
-  LetterType = NULL,
   AcademicStandardDefaultIDParent = NULL,
   AcademicStandardGradeRangeDefaultID = NULL,
+  Description = NULL,
+  IsHighFrequencyWord = NULL,
+  Key = NULL,
   Language = NULL,
+  LetterAndSoundType = NULL,
+  LetterType = NULL,
+  Level = NULL,
+  ParentGuid = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

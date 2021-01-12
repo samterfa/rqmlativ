@@ -6,12 +6,8 @@
 \usage{
 getUnitedStatesConstitution(
   UnitedStatesConstitutionID,
-  StudentTestID = F,
   DatePassed = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  StudentTestID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

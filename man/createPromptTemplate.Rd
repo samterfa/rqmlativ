@@ -5,12 +5,12 @@
 \title{Create a PromptTemplate}
 \usage{
 createPromptTemplate(
-  EntityID = NULL,
-  UserIDOwner = NULL,
-  ReportID = NULL,
-  Name = NULL,
   Description = NULL,
+  EntityID = NULL,
+  Name = NULL,
   Published = NULL,
+  ReportID = NULL,
+  UserIDOwner = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

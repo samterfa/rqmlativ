@@ -5,16 +5,16 @@
 \title{Create a SchemaHistory}
 \usage{
 createSchemaHistory(
-  Module = NULL,
-  Object = NULL,
+  ChangeType = NULL,
   Field = NULL,
   Index = NULL,
-  ReleaseVersion = NULL,
-  ChangeType = NULL,
-  PreviousModule = NULL,
-  PreviousObject = NULL,
+  Module = NULL,
+  Object = NULL,
   PreviousField = NULL,
   PreviousIndex = NULL,
+  PreviousModule = NULL,
+  PreviousObject = NULL,
+  ReleaseVersion = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

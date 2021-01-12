@@ -5,8 +5,8 @@
 \title{Create a TempBrowseViewColumn}
 \usage{
 createTempBrowseViewColumn(
-  FieldName = NULL,
   ColumnHeaderText = NULL,
+  FieldName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

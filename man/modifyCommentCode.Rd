@@ -7,10 +7,10 @@
 modifyCommentCode(
   CommentCodeID,
   Code = NULL,
+  CommentCodeIDClonedFrom = NULL,
+  CommentSetID = NULL,
   Description = NULL,
   EntityGroupKey = NULL,
-  CommentSetID = NULL,
-  CommentCodeIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

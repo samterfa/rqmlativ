@@ -6,15 +6,15 @@
 \usage{
 getGiftedAndTalentedMN(
   GiftedAndTalentedMNID,
+  CreatedTime = F,
   DistrictID = F,
-  StartDate = F,
   EndDate = F,
   IsActive = F,
+  ModifiedTime = F,
+  StartDate = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

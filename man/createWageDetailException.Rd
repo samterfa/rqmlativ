@@ -5,15 +5,15 @@
 \title{Create a WageDetailException}
 \usage{
 createWageDetailException(
-  WageDetailExtractRunID = NULL,
-  EmployerID = NULL,
   EmployeeID = NULL,
-  UnemploymentInsuranceUnitLocationNumber = NULL,
-  Source = NULL,
+  EmployerID = NULL,
   IsFatal = NULL,
-  Type = NULL,
   Message = NULL,
   PreserveException = NULL,
+  Source = NULL,
+  Type = NULL,
+  UnemploymentInsuranceUnitLocationNumber = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

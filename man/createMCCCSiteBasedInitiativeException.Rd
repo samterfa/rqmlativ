@@ -5,18 +5,18 @@
 \title{Create a MCCCSiteBasedInitiativeException}
 \usage{
 createMCCCSiteBasedInitiativeException(
-  MCCCSiteBasedInitiativeV1ID = NULL,
-  SchoolID = NULL,
   CourseID = NULL,
   CurriculumYearID = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
+  MCCCSiteBasedInitiativeV1ID = NULL,
   MCCCSubmissionID = NULL,
   MCCCSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
+  SchoolID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

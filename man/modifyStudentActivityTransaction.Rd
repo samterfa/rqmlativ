@@ -6,9 +6,9 @@
 \usage{
 modifyStudentActivityTransaction(
   StudentActivityTransactionID,
-  StudentActivityID = NULL,
-  ParticipationStartDate = NULL,
   ParticipationEndDate = NULL,
+  ParticipationStartDate = NULL,
+  StudentActivityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

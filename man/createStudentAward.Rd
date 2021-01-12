@@ -5,10 +5,10 @@
 \title{Create a StudentAward}
 \usage{
 createStudentAward(
-  AwardCategoryID = NULL,
-  AwardTypeID = NULL,
-  AwardHardwareID = NULL,
   ActivityID = NULL,
+  AwardCategoryID = NULL,
+  AwardHardwareID = NULL,
+  AwardTypeID = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,

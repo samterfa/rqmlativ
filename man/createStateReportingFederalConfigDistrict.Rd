@@ -5,13 +5,14 @@
 \title{Create a StateReportingFederalConfigDistrict}
 \usage{
 createStateReportingFederalConfigDistrict(
-  DistrictID = NULL,
-  FirstYearTeacherYearsExperienceLow = NULL,
-  FirstYearTeacherYearsExperienceHigh = NULL,
-  SecondYearTeacherYearsExperienceLow = NULL,
-  SecondYearTeacherYearsExperienceHigh = NULL,
   CRDCFTEType = NULL,
   CreateLocalityFiles = NULL,
+  DistrictID = NULL,
+  FirstYearTeacherYearsExperienceHigh = NULL,
+  FirstYearTeacherYearsExperienceLow = NULL,
+  PlanStartMonth = NULL,
+  SecondYearTeacherYearsExperienceHigh = NULL,
+  SecondYearTeacherYearsExperienceLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

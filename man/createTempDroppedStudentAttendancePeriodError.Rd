@@ -5,8 +5,8 @@
 \title{Create a TempDroppedStudentAttendancePeriodError}
 \usage{
 createTempDroppedStudentAttendancePeriodError(
-  ErrorNumber = NULL,
   ErrorDescription = NULL,
+  ErrorNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

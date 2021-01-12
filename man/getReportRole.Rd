@@ -6,12 +6,12 @@
 \usage{
 getReportRole(
   ReportRoleID,
+  CreatedTime = F,
+  ModifiedTime = F,
   ReportID = F,
   RoleID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

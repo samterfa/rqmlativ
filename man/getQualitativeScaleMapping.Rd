@@ -6,13 +6,13 @@
 \usage{
 getQualitativeScaleMapping(
   QualitativeScaleMappingID,
-  QualitativeScaleID = F,
-  Value = F,
-  NumericValue = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  NumericValue = F,
+  QualitativeScaleID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  Value = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

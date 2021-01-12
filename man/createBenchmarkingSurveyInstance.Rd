@@ -5,11 +5,11 @@
 \title{Create a BenchmarkingSurveyInstance}
 \usage{
 createBenchmarkingSurveyInstance(
-  UserIDOwner = NULL,
   BenchmarkingSurveyID = NULL,
   Comment = NULL,
   ContactEmail = NULL,
   TakenOnMobile = NULL,
+  UserIDOwner = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

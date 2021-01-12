@@ -6,11 +6,11 @@
 \usage{
 listGASBRevenueAndExpenditureTotalViews(
   searchConditionsList = NULL,
-  GASBRevenueAndExpenditureTotalViewID = F,
-  TotalFunds = F,
-  RevenueAndExpenditureTotalType = F,
-  GASBExtractRunID = F,
   DisplayOrder = F,
+  GASBExtractRunID = F,
+  GASBRevenueAndExpenditureTotalViewID = F,
+  RevenueAndExpenditureTotalType = F,
+  TotalFunds = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

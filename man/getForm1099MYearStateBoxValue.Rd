@@ -6,11 +6,11 @@
 \usage{
 getForm1099MYearStateBoxValue(
   Form1099MYearStateBoxValueID,
-  Form1099MYearID = F,
-  StateID = F,
+  Amount = F,
   BoxNumber = F,
   Description = F,
-  Amount = F,
+  Form1099MYearID = F,
+  StateID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

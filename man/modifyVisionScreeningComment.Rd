@@ -6,8 +6,8 @@
 \usage{
 modifyVisionScreeningComment(
   VisionScreeningCommentID,
-  VisionScreeningID = NULL,
   VisionCommentID = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

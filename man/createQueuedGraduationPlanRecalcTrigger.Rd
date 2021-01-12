@@ -5,14 +5,14 @@
 \title{Create a QueuedGraduationPlanRecalcTrigger}
 \usage{
 createQueuedGraduationPlanRecalcTrigger(
-  SourceObject = NULL,
-  SourceID = NULL,
-  Status = NULL,
-  StartTime = NULL,
   EndTime = NULL,
   HostName = NULL,
-  ThreadName = NULL,
   ProcessID = NULL,
+  SourceID = NULL,
+  SourceObject = NULL,
+  StartTime = NULL,
+  Status = NULL,
+  ThreadName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

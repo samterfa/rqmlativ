@@ -5,8 +5,8 @@
 \title{Create a CalendarYear}
 \usage{
 createCalendarYear(
-  NumericYear = NULL,
   Description = NULL,
+  NumericYear = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

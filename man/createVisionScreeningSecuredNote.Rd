@@ -5,8 +5,8 @@
 \title{Create a VisionScreeningSecuredNote}
 \usage{
 createVisionScreeningSecuredNote(
-  VisionScreeningID = NULL,
   Note = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

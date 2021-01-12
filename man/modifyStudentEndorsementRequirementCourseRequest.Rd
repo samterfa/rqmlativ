@@ -6,13 +6,13 @@
 \usage{
 modifyStudentEndorsementRequirementCourseRequest(
   StudentEndorsementRequirementCourseRequestID,
-  StudentEndorsementRequirementID = NULL,
-  StudentEndorsementRequirementCurriculumID = NULL,
-  StudentCourseRequestID = NULL,
-  EndorsementRequirementCurriculumID = NULL,
-  AppliedOverallCredits = NULL,
   AppliedAdvancedCredits = NULL,
+  AppliedOverallCredits = NULL,
   ApplyToType = NULL,
+  EndorsementRequirementCurriculumID = NULL,
+  StudentCourseRequestID = NULL,
+  StudentEndorsementRequirementCurriculumID = NULL,
+  StudentEndorsementRequirementID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

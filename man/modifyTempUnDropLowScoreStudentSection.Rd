@@ -6,11 +6,11 @@
 \usage{
 modifyTempUnDropLowScoreStudentSection(
   TempUnDropLowScoreStudentSectionID,
-  StudentName = NULL,
-  StudentDisplaySortCode = NULL,
-  StudentSectionID = NULL,
-  OriginalGrade = NULL,
   NewGrade = NULL,
+  OriginalGrade = NULL,
+  StudentDisplaySortCode = NULL,
+  StudentName = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 createCarlPerkinsMN(
   DistrictID = NULL,
-  SchoolYearID = NULL,
-  IsTeenParent = NULL,
   IsDisplacedHomemaker = NULL,
+  IsTeenParent = NULL,
+  SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

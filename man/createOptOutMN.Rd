@@ -6,11 +6,11 @@
 \usage{
 createOptOutMN(
   DistrictID = NULL,
+  EndDate = NULL,
   EntryComment = NULL,
   ExitComment = NULL,
   IsMinnesotaHealthCareOptOut = NULL,
   StartDate = NULL,
-  EndDate = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

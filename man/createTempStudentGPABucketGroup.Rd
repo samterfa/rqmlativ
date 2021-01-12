@@ -5,10 +5,10 @@
 \title{Create a TempStudentGPABucketGroup}
 \usage{
 createTempStudentGPABucketGroup(
-  StudentID = NULL,
   GPABucketID = NULL,
   GPAMethodID = NULL,
   SchoolYearID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

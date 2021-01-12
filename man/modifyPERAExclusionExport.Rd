@@ -6,8 +6,8 @@
 \usage{
 modifyPERAExclusionExport(
   PERAExclusionExportID,
-  PERAExclusionExtractRunID = NULL,
   MediaID = NULL,
+  PERAExclusionExtractRunID = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

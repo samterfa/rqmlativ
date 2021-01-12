@@ -6,12 +6,12 @@
 \usage{
 modifyHearingScreeningThreshold(
   HearingScreeningThresholdID,
+  HearingDecibelLevelIDLeftEar = NULL,
+  HearingDecibelLevelIDRightEar = NULL,
+  HearingHertzLevelID = NULL,
   HearingScreeningID = NULL,
   LeftEarPassed = NULL,
   RightEarPassed = NULL,
-  HearingHertzLevelID = NULL,
-  HearingDecibelLevelIDLeftEar = NULL,
-  HearingDecibelLevelIDRightEar = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

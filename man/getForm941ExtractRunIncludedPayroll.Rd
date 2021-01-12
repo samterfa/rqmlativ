@@ -6,12 +6,12 @@
 \usage{
 getForm941ExtractRunIncludedPayroll(
   Form941ExtractRunIncludedPayrollID,
+  CreatedTime = F,
   Form941ExtractRunID = F,
+  ModifiedTime = F,
   PayrollRunID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

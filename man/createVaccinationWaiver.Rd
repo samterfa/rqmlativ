@@ -5,9 +5,9 @@
 \title{Create a VaccinationWaiver}
 \usage{
 createVaccinationWaiver(
-  WaiverID = NULL,
-  VaccinationID = NULL,
   CountsForCompliance = NULL,
+  VaccinationID = NULL,
+  WaiverID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

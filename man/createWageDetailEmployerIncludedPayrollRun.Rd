@@ -5,10 +5,10 @@
 \title{Create a WageDetailEmployerIncludedPayrollRun}
 \usage{
 createWageDetailEmployerIncludedPayrollRun(
-  WageDetailExtractRunID = NULL,
-  PayrollRunID = NULL,
   EmployerID = NULL,
   Month = NULL,
+  PayrollRunID = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

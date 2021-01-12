@@ -5,9 +5,9 @@
 \title{Create a TempMassAssignCTEIndicatorTXException}
 \usage{
 createTempMassAssignCTEIndicatorTXException(
-  TempMassAssignCTEIndicatorTXID = NULL,
-  StudentID = NULL,
   Note = NULL,
+  StudentID = NULL,
+  TempMassAssignCTEIndicatorTXID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

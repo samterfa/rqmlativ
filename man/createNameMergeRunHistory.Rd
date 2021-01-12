@@ -5,12 +5,12 @@
 \title{Create a NameMergeRunHistory}
 \usage{
 createNameMergeRunHistory(
-  NameIDFrom = NULL,
-  FullNameLFMFrom = NULL,
-  NameIDTo = NULL,
-  FullNameLFMTo = NULL,
   BirthDateFrom = NULL,
   BirthDateTo = NULL,
+  FullNameLFMFrom = NULL,
+  FullNameLFMTo = NULL,
+  NameIDFrom = NULL,
+  NameIDTo = NULL,
   NameUsedByFrom = NULL,
   NameUsedByTo = NULL,
   entityId = 1,

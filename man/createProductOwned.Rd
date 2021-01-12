@@ -5,11 +5,11 @@
 \title{Create a ProductOwned}
 \usage{
 createProductOwned(
-  RMSID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
   ExpirationDate = NULL,
   ProductID = NULL,
+  RMSID = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

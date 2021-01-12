@@ -6,14 +6,14 @@
 \usage{
 listNextStudentNumbers(
   searchConditionsList = NULL,
-  NextStudentNumberID = F,
+  CreatedTime = F,
+  IsForStateID = F,
   MaskPrefix = F,
+  ModifiedTime = F,
+  NextStudentNumberID = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  IsForStateID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

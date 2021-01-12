@@ -6,13 +6,13 @@
 \usage{
 listNotificationScheduleIsAvailableSectionLengths(
   searchConditionsList = NULL,
-  NotificationScheduleIsAvailableSectionLengthID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NotificationID = F,
+  NotificationScheduleIsAvailableSectionLengthID = F,
   SectionLengthID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

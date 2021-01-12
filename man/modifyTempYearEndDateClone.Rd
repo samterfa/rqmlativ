@@ -7,8 +7,8 @@
 modifyTempYearEndDateClone(
   TempYearEndDateCloneID,
   SourceDate = NULL,
-  TargetDate = NULL,
   SourceDateUsedBy = NULL,
+  TargetDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

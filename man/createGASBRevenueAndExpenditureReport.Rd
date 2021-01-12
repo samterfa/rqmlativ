@@ -5,8 +5,8 @@
 \title{Create a GASBRevenueAndExpenditureReport}
 \usage{
 createGASBRevenueAndExpenditureReport(
-  GASBFundClassification = NULL,
   GASBExtractRunID = NULL,
+  GASBFundClassification = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

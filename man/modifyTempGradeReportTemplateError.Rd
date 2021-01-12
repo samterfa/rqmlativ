@@ -6,9 +6,9 @@
 \usage{
 modifyTempGradeReportTemplateError(
   TempGradeReportTemplateErrorID,
-  TempGradeReportTemplateID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempGradeReportTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

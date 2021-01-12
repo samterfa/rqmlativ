@@ -6,9 +6,9 @@
 \usage{
 modifyWageDetailEmployerV1(
   WageDetailEmployerV1ID,
-  WageDetailExtractRunID = NULL,
   EmployerID = NULL,
   UnemploymentInsuranceAccountNumber = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

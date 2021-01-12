@@ -6,13 +6,13 @@
 \usage{
 getDataMiningReportSubtopicStandardFilter(
   DataMiningReportSubtopicStandardFilterID,
-  IsEnabled = F,
+  CreatedTime = F,
   DataMiningReportID = F,
+  IsEnabled = F,
+  ModifiedTime = F,
   SubtopicStandardFilterID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

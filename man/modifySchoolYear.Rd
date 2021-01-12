@@ -6,8 +6,8 @@
 \usage{
 modifySchoolYear(
   SchoolYearID,
-  NumericYear = NULL,
   Description = NULL,
+  NumericYear = NULL,
   StudentAwardID = NULL,
   entityId = 1,
   query = NULL,

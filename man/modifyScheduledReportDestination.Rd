@@ -6,8 +6,8 @@
 \usage{
 modifyScheduledReportDestination(
   ScheduledReportDestinationID,
-  ScheduledReportID = NULL,
   FileDestinationID = NULL,
+  ScheduledReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

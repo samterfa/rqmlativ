@@ -5,14 +5,14 @@
 \title{Create a QueuedStudentPlanCourseworkApplication}
 \usage{
 createQueuedStudentPlanCourseworkApplication(
-  StudentPlanID = NULL,
   DistrictID = NULL,
-  Status = NULL,
-  StartTime = NULL,
   EndTime = NULL,
   HostName = NULL,
-  ThreadName = NULL,
   ProcessID = NULL,
+  StartTime = NULL,
+  Status = NULL,
+  StudentPlanID = NULL,
+  ThreadName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

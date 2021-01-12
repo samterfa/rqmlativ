@@ -7,9 +7,9 @@
 createNoteType(
   Code = NULL,
   Description = NULL,
-  IsParentalConsent = NULL,
   IndicatorID = NULL,
   IsActive = NULL,
+  IsParentalConsent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyComplianceScheduleRule(
   ComplianceScheduleRuleID,
-  ComplianceScheduleID = NULL,
   Code = NULL,
+  ComplianceScheduleID = NULL,
   Description = NULL,
-  Rule = NULL,
   GracePeriodDays = NULL,
+  Rule = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 createCounty(
   Name = NULL,
-  StateID = NULL,
   StateCountyMNID = NULL,
+  StateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

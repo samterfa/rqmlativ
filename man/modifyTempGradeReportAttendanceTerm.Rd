@@ -6,13 +6,13 @@
 \usage{
 modifyTempGradeReportAttendanceTerm(
   TempGradeReportAttendanceTermID,
-  AttendanceTermID = NULL,
   AttendanceTermCode = NULL,
+  AttendanceTermID = NULL,
+  CalendarDescription = NULL,
+  EndDate = NULL,
   EntityName = NULL,
   SchoolYearDescription = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  CalendarDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

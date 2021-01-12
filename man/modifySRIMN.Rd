@@ -6,8 +6,8 @@
 \usage{
 modifySRIMN(
   SRIMNID,
-  StudentTestID = NULL,
   ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

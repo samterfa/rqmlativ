@@ -6,13 +6,13 @@
 \usage{
 getBlockPeriodDisplayPeriod(
   BlockPeriodDisplayPeriodID,
-  BlockPeriodID = F,
-  DisplayPeriodID = F,
   BlockPeriodDisplayPeriodIDClonedFrom = F,
-  UserIDCreatedBy = F,
+  BlockPeriodID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayPeriodID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

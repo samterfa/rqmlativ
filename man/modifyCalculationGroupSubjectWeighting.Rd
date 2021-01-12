@@ -6,12 +6,12 @@
 \usage{
 modifyCalculationGroupSubjectWeighting(
   CalculationGroupSubjectWeightingID,
-  CalculationGroupSubjectGradeBucketID = NULL,
-  CategoryIDToWeight = NULL,
   AcademicStandardIDToWeight = NULL,
-  WeightPercent = NULL,
-  EntityGroupKey = NULL,
+  CalculationGroupSubjectGradeBucketID = NULL,
   CalculationGroupSubjectWeightingIDClonedFrom = NULL,
+  CategoryIDToWeight = NULL,
+  EntityGroupKey = NULL,
+  WeightPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

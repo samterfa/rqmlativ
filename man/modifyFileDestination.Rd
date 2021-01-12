@@ -6,11 +6,11 @@
 \usage{
 modifyFileDestination(
   FileDestinationID,
-  Name = NULL,
-  DistrictID = NULL,
   AllowRead = NULL,
   AllowWrite = NULL,
+  DistrictID = NULL,
   FTPConnectionID = NULL,
+  Name = NULL,
   UNCPathID = NULL,
   entityId = 1,
   query = NULL,

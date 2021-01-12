@@ -5,13 +5,13 @@
 \title{Create a SkylertAttendanceExportSetting}
 \usage{
 createSkylertAttendanceExportSetting(
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  ParentNotifiedOption = NULL,
-  MinimumPeriodsAbsent = NULL,
-  AttendancePeriodIDLow = NULL,
   AttendancePeriodIDHigh = NULL,
+  AttendancePeriodIDLow = NULL,
+  EntityID = NULL,
   FileSequence = NULL,
+  MinimumPeriodsAbsent = NULL,
+  ParentNotifiedOption = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

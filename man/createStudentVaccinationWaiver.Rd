@@ -5,10 +5,10 @@
 \title{Create a StudentVaccinationWaiver}
 \usage{
 createStudentVaccinationWaiver(
-  VaccinationWaiverID = NULL,
-  StudentID = NULL,
   ClaimDate = NULL,
   ExpirationDate = NULL,
+  StudentID = NULL,
+  VaccinationWaiverID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

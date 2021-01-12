@@ -6,14 +6,14 @@
 \usage{
 getPrerequisiteCurriculumCourse(
   PrerequisiteCurriculumCourseID,
-  PrerequisiteCurriculumID = F,
-  PrerequisiteID = F,
+  CourseID = F,
   CurriculumIDFor = F,
   CurriculumIDRequired = F,
-  CourseID = F,
-  SchoolYearID = F,
   EntityID = F,
   NumericYear = F,
+  PrerequisiteCurriculumID = F,
+  PrerequisiteID = F,
+  SchoolYearID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

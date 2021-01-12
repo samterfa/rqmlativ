@@ -7,11 +7,11 @@
 getTeacherSectionStandardsDisplayAcademicStandardSetting(
   TeacherSectionStandardsDisplayAcademicStandardSettingID,
   AcademicStandardID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   TeacherSectionStandardsDisplayGradeBucketSettingID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

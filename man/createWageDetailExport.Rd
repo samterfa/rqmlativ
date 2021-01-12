@@ -5,9 +5,9 @@
 \title{Create a WageDetailExport}
 \usage{
 createWageDetailExport(
-  WageDetailExtractRunID = NULL,
   MediaID = NULL,
   Status = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

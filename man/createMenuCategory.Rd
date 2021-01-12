@@ -5,12 +5,12 @@
 \title{Create a MenuCategory}
 \usage{
 createMenuCategory(
-  MenuModuleID = NULL,
   DisplayName = NULL,
   DisplayOrder = NULL,
   IsDefault = NULL,
-  SkywardIsDefault = NULL,
   IsEnabled = NULL,
+  MenuModuleID = NULL,
+  SkywardIsDefault = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

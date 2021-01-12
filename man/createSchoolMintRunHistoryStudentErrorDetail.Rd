@@ -5,11 +5,11 @@
 \title{Create a SchoolMintRunHistoryStudentErrorDetail}
 \usage{
 createSchoolMintRunHistoryStudentErrorDetail(
-  SchoolMintRunHistoryStudentErrorID = NULL,
-  ObjectName = NULL,
-  FieldValue = NULL,
   FieldName = NULL,
+  FieldValue = NULL,
   Message = NULL,
+  ObjectName = NULL,
+  SchoolMintRunHistoryStudentErrorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

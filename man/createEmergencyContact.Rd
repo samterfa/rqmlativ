@@ -5,11 +5,11 @@
 \title{Create an EmergencyContact}
 \usage{
 createEmergencyContact(
+  AllowPickUp = NULL,
+  Comment = NULL,
   NameID = NULL,
   NameIDEmergencyContact = NULL,
   Rank = NULL,
-  AllowPickUp = NULL,
-  Comment = NULL,
   RelationshipID = NULL,
   entityId = 1,
   query = NULL,

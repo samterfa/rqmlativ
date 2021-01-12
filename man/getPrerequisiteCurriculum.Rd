@@ -6,12 +6,12 @@
 \usage{
 getPrerequisiteCurriculum(
   PrerequisiteCurriculumID,
+  CreatedTime = F,
   CurriculumIDRequired = F,
+  ModifiedTime = F,
   PrerequisiteID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

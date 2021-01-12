@@ -6,10 +6,10 @@
 \usage{
 modifyCategoryGradeBucketType(
   CategoryGradeBucketTypeID,
-  CategoryID = NULL,
-  GradeBucketTypeID = NULL,
-  EntityGroupKey = NULL,
   CategoryGradeBucketTypeIDClonedFrom = NULL,
+  CategoryID = NULL,
+  EntityGroupKey = NULL,
+  GradeBucketTypeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

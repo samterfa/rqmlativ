@@ -7,9 +7,9 @@
 getCurrentSportsSelections(
   CurrentSportsSelectionsID,
   FallSportID = F,
-  WinterSportID = F,
   SpringSportID = F,
   StudentID = F,
+  WinterSportID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

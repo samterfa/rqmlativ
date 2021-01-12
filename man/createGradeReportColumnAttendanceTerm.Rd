@@ -6,8 +6,8 @@
 \usage{
 createGradeReportColumnAttendanceTerm(
   AttendanceTermID = NULL,
-  GradeReportColumnGroupColumnID = NULL,
   GradeReportColumnAttendanceTermIDClonedFrom = NULL,
+  GradeReportColumnGroupColumnID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

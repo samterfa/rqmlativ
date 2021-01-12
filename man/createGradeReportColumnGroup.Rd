@@ -5,10 +5,10 @@
 \title{Create a GradeReportColumnGroup}
 \usage{
 createGradeReportColumnGroup(
+  AlwaysDisplayGradingColumns = NULL,
   ConfigDistrictYearID = NULL,
   Description = NULL,
   GradeReportColumnGroupIDClonedFrom = NULL,
-  AlwaysDisplayGradingColumns = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifySeatingChart(
   SeatingChartID,
-  RoomLayoutID = NULL,
   Description = NULL,
+  RoomLayoutID = NULL,
   SeatingChartType = NULL,
   entityId = 1,
   query = NULL,

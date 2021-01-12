@@ -6,9 +6,9 @@
 \usage{
 modifyTempEntityForClone(
   TempEntityForCloneID,
-  Selected = NULL,
-  EntityName = NULL,
   EntityCode = NULL,
+  EntityName = NULL,
+  Selected = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

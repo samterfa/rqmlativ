@@ -5,8 +5,8 @@
 \title{Create a NameMedicationComment}
 \usage{
 createNameMedicationComment(
-  NameMedicationID = NULL,
   MedicationCommentID = NULL,
+  NameMedicationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

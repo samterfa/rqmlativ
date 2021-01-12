@@ -6,11 +6,11 @@
 \usage{
 modifyTempGradebookGroupError(
   TempGradebookGroupErrorID,
-  EntityID = NULL,
   CalculationGroupID = NULL,
-  GradingScaleGroupID = NULL,
   Description = NULL,
+  EntityID = NULL,
   ErrorText = NULL,
+  GradingScaleGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

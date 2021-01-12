@@ -6,10 +6,10 @@
 \usage{
 modifyPSAE(
   PSAEID,
-  StudentTestID = NULL,
-  ReadingScaleScore = NULL,
   MathScaleScore = NULL,
+  ReadingScaleScore = NULL,
   ScienceScaleScore = NULL,
+  StudentTestID = NULL,
   WritingScaleScore = NULL,
   entityId = 1,
   query = NULL,

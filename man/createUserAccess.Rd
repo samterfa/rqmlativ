@@ -5,17 +5,17 @@
 \title{Create an UserAccess}
 \usage{
 createUserAccess(
+  APIType = NULL,
+  AttendanceConfigID = NULL,
+  AuthenticationTypeOverride = NULL,
   Description = NULL,
-  IsActive = NULL,
   EffectiveDate = NULL,
   ExpirationDate = NULL,
-  APIType = NULL,
-  AuthenticationTypeOverride = NULL,
-  UserID = NULL,
-  TimeTrackingConfigID = NULL,
   IdentificationConfigID = NULL,
+  IsActive = NULL,
   OneRosterConfigID = NULL,
-  AttendanceConfigID = NULL,
+  TimeTrackingConfigID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,9 @@
 \title{Create an EndorsementRequirementAssessmentDefault}
 \usage{
 createEndorsementRequirementAssessmentDefault(
-  EndorsementRequirementDefaultID = NULL,
-  TestType = NULL,
-  TestVersion = NULL,
   ClusterType = NULL,
+  EndorsementRequirementDefaultID = NULL,
+  TestVersionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

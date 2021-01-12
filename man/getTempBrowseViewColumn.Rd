@@ -6,13 +6,13 @@
 \usage{
 getTempBrowseViewColumn(
   TempBrowseViewColumnID,
-  FieldName = F,
   ColumnHeaderText = F,
   ColumnIndex = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FieldName = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

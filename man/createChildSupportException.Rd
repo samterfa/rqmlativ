@@ -5,13 +5,13 @@
 \title{Create a ChildSupportException}
 \usage{
 createChildSupportException(
-  ChildSupportExtractRunID = NULL,
   ChildSupportDetailV1ID = NULL,
+  ChildSupportExtractRunID = NULL,
   EmployeeID = NULL,
   IsFatal = NULL,
-  Type = NULL,
   Message = NULL,
   PreserveException = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

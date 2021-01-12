@@ -6,9 +6,9 @@
 \usage{
 modifyTempHonorRollGradeMarkMethodRangeGradeMark(
   TempHonorRollGradeMarkMethodRangeGradeMarkID,
+  GradeMarkID = NULL,
   HonorRollGradeMarkMethodRangeGradeMarkID = NULL,
   TempHonorRollGradeMarkMethodRangeID = NULL,
-  GradeMarkID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

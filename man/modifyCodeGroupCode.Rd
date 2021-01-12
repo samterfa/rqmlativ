@@ -6,8 +6,8 @@
 \usage{
 modifyCodeGroupCode(
   CodeGroupCodeID,
-  CodeGroupID = NULL,
   Code = NULL,
+  CodeGroupID = NULL,
   Description = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getCalculationGroupCourse(
   CalculationGroupCourseID,
+  CalculationGroupCourseIDClonedFrom = F,
   CalculationGroupID = F,
   CourseID = F,
-  CalculationGroupCourseIDClonedFrom = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

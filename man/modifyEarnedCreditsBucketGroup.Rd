@@ -6,10 +6,10 @@
 \usage{
 modifyEarnedCreditsBucketGroup(
   EarnedCreditsBucketGroupID,
+  EarnedCreditsBucketGroupIDClonedFrom = NULL,
   EntityGroupKey = NULL,
   GradingPeriodSetID = NULL,
   SectionLengthID = NULL,
-  EarnedCreditsBucketGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

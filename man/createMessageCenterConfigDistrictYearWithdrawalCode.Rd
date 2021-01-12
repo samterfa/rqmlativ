@@ -6,8 +6,8 @@
 \usage{
 createMessageCenterConfigDistrictYearWithdrawalCode(
   ConfigDistrictYearID = NULL,
-  WithdrawalCodeID = NULL,
   ConfigDistrictYearWithdrawalCodeIDClonedFrom = NULL,
+  WithdrawalCodeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

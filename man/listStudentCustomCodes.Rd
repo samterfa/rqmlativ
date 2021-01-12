@@ -6,13 +6,13 @@
 \usage{
 listStudentCustomCodes(
   searchConditionsList = NULL,
-  StudentCustomCodeID = F,
+  CreatedTime = F,
   CustomCodeID = F,
+  ModifiedTime = F,
+  StudentCustomCodeID = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,9 +5,9 @@
 \title{Create a TransportationCategory}
 \usage{
 createTransportationCategory(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   SchoolYearID = NULL,
   StateTransportationCategoryCodeMNID = NULL,
   entityId = 1,

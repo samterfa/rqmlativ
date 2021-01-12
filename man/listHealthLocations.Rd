@@ -6,13 +6,13 @@
 \usage{
 listHealthLocations(
   searchConditionsList = NULL,
-  LocationID = F,
   Code = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  LocationID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

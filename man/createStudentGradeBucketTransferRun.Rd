@@ -5,9 +5,9 @@
 \title{Create a StudentGradeBucketTransferRun}
 \usage{
 createStudentGradeBucketTransferRun(
-  StudentGradeBucketID = NULL,
-  RunTime = NULL,
   Percent = NULL,
+  RunTime = NULL,
+  StudentGradeBucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

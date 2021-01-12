@@ -6,10 +6,10 @@
 \usage{
 modifyCourseCorequisiteGroupCourse(
   CourseCorequisiteGroupCourseID,
+  CourseCorequisiteGroupCourseIDClonedFrom = NULL,
   CourseCorequisiteGroupID = NULL,
   CourseID = NULL,
   EntityGroupKey = NULL,
-  CourseCorequisiteGroupCourseIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

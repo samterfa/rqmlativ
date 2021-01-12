@@ -5,15 +5,15 @@
 \title{Create a MapElement}
 \usage{
 createMapElement(
-  ReportEvents = NULL,
-  MapID = NULL,
-  MapElementIDParent = NULL,
-  Name = NULL,
-  Type = NULL,
-  IsRequired = NULL,
   ArrayRelationshipPath = NULL,
   CodeGroupID = NULL,
   HasValue = NULL,
+  IsRequired = NULL,
+  MapElementIDParent = NULL,
+  MapID = NULL,
+  Name = NULL,
+  ReportEvents = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

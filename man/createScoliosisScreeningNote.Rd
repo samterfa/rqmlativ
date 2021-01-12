@@ -5,8 +5,8 @@
 \title{Create a ScoliosisScreeningNote}
 \usage{
 createScoliosisScreeningNote(
-  ScoliosisScreeningID = NULL,
   Note = NULL,
+  ScoliosisScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

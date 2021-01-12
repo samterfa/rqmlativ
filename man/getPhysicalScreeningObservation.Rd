@@ -6,12 +6,12 @@
 \usage{
 getPhysicalScreeningObservation(
   PhysicalScreeningObservationID,
-  PhysicalScreeningID = F,
-  PhysicalObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PhysicalObservationID = F,
+  PhysicalScreeningID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

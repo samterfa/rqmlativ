@@ -5,8 +5,8 @@
 \title{Create an ECFERegistrationV1RegisteringPersonV1}
 \usage{
 createECFERegistrationV1RegisteringPersonV1(
-  ECFERegistrationV1ID = NULL,
   ECFERegisteringPersonV1ID = NULL,
+  ECFERegistrationV1ID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getStudentGradeBucketTransferRun(
   StudentGradeBucketTransferRunID,
-  StudentGradeBucketID = F,
-  RunTime = F,
-  Percent = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Percent = F,
+  RunTime = F,
+  StudentGradeBucketID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

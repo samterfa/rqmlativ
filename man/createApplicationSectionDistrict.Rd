@@ -6,11 +6,11 @@
 \usage{
 createApplicationSectionDistrict(
   ApplicationSectionID = NULL,
+  DescriptionOverride = NULL,
   DistrictID = NULL,
-  UseInstructionOverride = NULL,
   InstructionOverride = NULL,
   UseDescriptionOverride = NULL,
-  DescriptionOverride = NULL,
+  UseInstructionOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

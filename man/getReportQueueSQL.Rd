@@ -6,12 +6,12 @@
 \usage{
 getReportQueueSQL(
   ReportQueueSQLID,
-  ReportQueueID = F,
-  ExecutedQuery = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ExecutedQuery = F,
   ModifiedTime = F,
+  ReportQueueID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getCloseoutCheck(
   CloseoutCheckID,
-  CloseoutTransactionID = F,
-  CheckNumber = F,
   Amount = F,
-  UserIDCreatedBy = F,
+  CheckNumber = F,
+  CloseoutTransactionID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

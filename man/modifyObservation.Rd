@@ -6,12 +6,12 @@
 \usage{
 modifyObservation(
   ObservationID,
-  StudentID = NULL,
   AreaOfConcernID = NULL,
+  DateMethod = NULL,
+  EndDate = NULL,
   Note = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  DateMethod = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

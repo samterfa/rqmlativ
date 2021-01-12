@@ -7,8 +7,8 @@
 createNewHireSubmission(
   DistrictID = NULL,
   FiscalYearID = NULL,
-  HireDateLow = NULL,
   HireDateHigh = NULL,
+  HireDateLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

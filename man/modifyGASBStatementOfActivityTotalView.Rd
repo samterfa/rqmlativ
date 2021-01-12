@@ -6,13 +6,13 @@
 \usage{
 modifyGASBStatementOfActivityTotalView(
   GASBStatementOfActivityTotalViewID,
+  DisplayOrder = NULL,
+  Expenses = NULL,
+  GASBExtractRunID = NULL,
   GovernmentalNetAmount = NULL,
   ProprietaryNetAmount = NULL,
-  TotalNetAmount = NULL,
-  Expenses = NULL,
   StatementOfActivityTotalType = NULL,
-  GASBExtractRunID = NULL,
-  DisplayOrder = NULL,
+  TotalNetAmount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

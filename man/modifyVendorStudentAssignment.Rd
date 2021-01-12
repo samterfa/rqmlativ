@@ -6,8 +6,8 @@
 \usage{
 modifyVendorStudentAssignment(
   VendorStudentAssignmentID,
-  StudentAssignmentID = NULL,
   OneRosterVendorID = NULL,
+  StudentAssignmentID = NULL,
   VendorSourceID = NULL,
   entityId = 1,
   query = NULL,

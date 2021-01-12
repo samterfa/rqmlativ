@@ -5,10 +5,10 @@
 \title{Create a TempGradeMarkError}
 \usage{
 createTempGradeMarkError(
-  GradeMarkID = NULL,
-  GradeMarkCode = NULL,
-  SectionID = NULL,
   DisplayOrder = NULL,
+  GradeMarkCode = NULL,
+  GradeMarkID = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

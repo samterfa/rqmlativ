@@ -5,15 +5,15 @@
 \title{Create a PointSetEntity}
 \usage{
 createPointSetEntity(
-  EntityGroupKey = NULL,
-  PointSetID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  DisplayOrder = NULL,
-  IsDefault = NULL,
   ApplyFactorBasedAddOn = NULL,
-  PointSetEntityIDClonedFrom = NULL,
+  DisplayOrder = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  IsDefault = NULL,
   IsWeighted = NULL,
+  PointSetEntityIDClonedFrom = NULL,
+  PointSetID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create a TempStudentInterventionReferralError}
 \usage{
 createTempStudentInterventionReferralError(
-  TempStudentInterventionReferralID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempStudentInterventionReferralID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

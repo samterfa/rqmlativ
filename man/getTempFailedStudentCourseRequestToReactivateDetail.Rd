@@ -6,12 +6,12 @@
 \usage{
 getTempFailedStudentCourseRequestToReactivateDetail(
   TempFailedStudentCourseRequestToReactivateDetailID,
-  TempRecordToReactivatePrimaryKeyValue = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  TempRecordToReactivatePrimaryKeyValue = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,9 +6,9 @@
 \usage{
 modifyEndorsementRequirementAssessmentCluster(
   EndorsementRequirementAssessmentClusterID,
-  EndorsementRequirementAssessmentID = NULL,
-  EndorsementRequirementAssessmentClusterDefaultID = NULL,
   ClusterScoreType = NULL,
+  EndorsementRequirementAssessmentClusterDefaultID = NULL,
+  EndorsementRequirementAssessmentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

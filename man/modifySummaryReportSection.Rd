@@ -6,11 +6,11 @@
 \usage{
 modifySummaryReportSection(
   SummaryReportSectionID,
-  ReportQueueID = NULL,
-  Path = NULL,
   DisplayName = NULL,
-  Order = NULL,
   HiddenType = NULL,
+  Order = NULL,
+  Path = NULL,
+  ReportQueueID = NULL,
   SummaryReportSectionIDParent = NULL,
   entityId = 1,
   query = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyEntityCloneRun(
   EntityCloneRunID,
-  Status = NULL,
   EntityIDSource = NULL,
-  SchoolYearIDSource = NULL,
   MediaID = NULL,
+  SchoolYearIDSource = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

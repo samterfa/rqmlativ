@@ -5,8 +5,8 @@
 \title{Create a StudentOfficeVisitNote}
 \usage{
 createStudentOfficeVisitNote(
-  StudentOfficeVisitID = NULL,
   Note = NULL,
+  StudentOfficeVisitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

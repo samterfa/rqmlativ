@@ -6,13 +6,13 @@
 \usage{
 listDisciplineLetterRunHistoryOffenses(
   searchConditionsList = NULL,
-  DisciplineLetterRunHistoryOffenseID = F,
+  CreatedTime = F,
   DisciplineLetterRunHistoryID = F,
+  DisciplineLetterRunHistoryOffenseID = F,
+  ModifiedTime = F,
   OffenseID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

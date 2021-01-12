@@ -6,12 +6,12 @@
 \usage{
 createACAYearALEMemberMonthV1(
   ACAYearID = NULL,
-  OffersMinimumEssentialCoverage = NULL,
   FullTimeEmployeeCount = NULL,
-  TotalEmployeeCount = NULL,
   IsAggregatedGroup = NULL,
-  Section4980HTransitionRelief = NULL,
   Month = NULL,
+  OffersMinimumEssentialCoverage = NULL,
+  Section4980HTransitionRelief = NULL,
+  TotalEmployeeCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

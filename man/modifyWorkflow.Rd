@@ -6,8 +6,8 @@
 \usage{
 modifyWorkflow(
   WorkflowID,
-  Name = NULL,
   Module = NULL,
+  Name = NULL,
   Object = NULL,
   WorkflowVersionID = NULL,
   entityId = 1,

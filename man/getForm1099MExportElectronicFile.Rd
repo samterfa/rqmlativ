@@ -6,14 +6,14 @@
 \usage{
 getForm1099MExportElectronicFile(
   Form1099MExportElectronicFileID,
+  CreatedTime = F,
   Form1099MYearID = F,
-  TransmitterControlCode = F,
   IsCombinedStateFederal = F,
   IsTestFile = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  TransmitterControlCode = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 createStateCourseCodeMN(
   Code = NULL,
-  Description = NULL,
   CourseClassificationType = NULL,
+  Description = NULL,
   GradeRange = NULL,
-  IsUndefinedSubject = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  IsUndefinedSubject = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

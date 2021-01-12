@@ -5,13 +5,13 @@
 \title{Create a CourseLength}
 \usage{
 createCourseLength(
-  EntityGroupKey = NULL,
   Code = NULL,
-  Description = NULL,
+  CourseLengthIDClonedFrom = NULL,
   DefaultEarnedCredits = NULL,
+  Description = NULL,
+  EntityGroupKey = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  CourseLengthIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

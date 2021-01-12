@@ -5,9 +5,9 @@
 \title{Create a TempSpecialtyAccessGroup}
 \usage{
 createTempSpecialtyAccessGroup(
-  Selected = NULL,
   GroupName = NULL,
   Identifier = NULL,
+  Selected = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

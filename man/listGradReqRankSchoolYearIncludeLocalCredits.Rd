@@ -6,13 +6,13 @@
 \usage{
 listGradReqRankSchoolYearIncludeLocalCredits(
   searchConditionsList = NULL,
-  GradReqRankSchoolYearIncludeLocalCreditID = F,
+  CreatedTime = F,
   GPAMethodID = F,
+  GradReqRankSchoolYearIncludeLocalCreditID = F,
+  ModifiedTime = F,
   SchoolYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

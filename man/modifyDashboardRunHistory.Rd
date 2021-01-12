@@ -6,13 +6,13 @@
 \usage{
 modifyDashboardRunHistory(
   DashboardRunHistoryID,
-  SchoolYearID = NULL,
   DistrictID = NULL,
-  StartDateTime = NULL,
   EndDateTime = NULL,
-  Type = NULL,
   MediaID = NULL,
+  SchoolYearID = NULL,
+  StartDateTime = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

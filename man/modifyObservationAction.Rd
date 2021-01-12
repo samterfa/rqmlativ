@@ -6,13 +6,13 @@
 \usage{
 modifyObservationAction(
   ObservationActionID,
+  DateMethod = NULL,
+  Description = NULL,
+  EndDate = NULL,
   ObservationID = NULL,
   OutcomeID = NULL,
   OutcomeNote = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  Description = NULL,
-  DateMethod = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a BrowseViewLastUsed}
 \usage{
 createBrowseViewLastUsed(
-  UserID = NULL,
   BrowseViewID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

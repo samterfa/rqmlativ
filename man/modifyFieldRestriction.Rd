@@ -6,11 +6,11 @@
 \usage{
 modifyFieldRestriction(
   FieldRestrictionID,
+  FieldID = NULL,
   Name = NULL,
   RestrictionType = NULL,
-  FieldID = NULL,
-  ScreenSetType = NULL,
   RoleSetType = NULL,
+  ScreenSetType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

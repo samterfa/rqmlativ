@@ -6,13 +6,13 @@
 \usage{
 listNotificationUnrecordedClassAttendances(
   searchConditionsList = NULL,
-  NotificationUnrecordedClassAttendanceID = F,
-  NotificationID = F,
-  DisplayPeriodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayPeriodID = F,
   ModifiedTime = F,
+  NotificationID = F,
+  NotificationUnrecordedClassAttendanceID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

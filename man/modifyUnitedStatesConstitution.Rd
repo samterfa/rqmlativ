@@ -6,8 +6,8 @@
 \usage{
 modifyUnitedStatesConstitution(
   UnitedStatesConstitutionID,
-  StudentTestID = NULL,
   DatePassed = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

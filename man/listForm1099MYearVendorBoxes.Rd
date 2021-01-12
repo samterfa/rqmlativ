@@ -6,14 +6,14 @@
 \usage{
 listForm1099MYearVendorBoxes(
   searchConditionsList = NULL,
+  Amount = F,
+  CreatedTime = F,
   Form1099MYearVendorBoxID = F,
   Form1099MYearVendorID = F,
   Form1099TypeID = F,
-  Amount = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

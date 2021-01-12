@@ -5,13 +5,13 @@
 \title{Create a CourseGPAMethod}
 \usage{
 createCourseGPAMethod(
-  EntityGroupKey = NULL,
-  GPAMethodEntityID = NULL,
+  CourseGPAMethodIDClonedFrom = NULL,
   CourseID = NULL,
+  EntityGroupKey = NULL,
+  GPACredit = NULL,
+  GPAMethodEntityID = NULL,
   PointSetEntityID = NULL,
   UseOverride = NULL,
-  GPACredit = NULL,
-  CourseGPAMethodIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

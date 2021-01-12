@@ -6,9 +6,9 @@
 \usage{
 modifyKiosk(
   KioskID,
-  Name = NULL,
   IPAddress = NULL,
   IsTardyKiosk = NULL,
+  Name = NULL,
   PrinterType = NULL,
   entityId = 1,
   query = NULL,

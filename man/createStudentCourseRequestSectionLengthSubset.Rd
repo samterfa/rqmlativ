@@ -5,8 +5,8 @@
 \title{Create a StudentCourseRequestSectionLengthSubset}
 \usage{
 createStudentCourseRequestSectionLengthSubset(
-  StudentCourseRequestID = NULL,
   SectionLengthSubsetID = NULL,
+  StudentCourseRequestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

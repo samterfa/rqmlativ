@@ -5,16 +5,16 @@
 \title{Create a CRDCSchoolTeacherV1}
 \usage{
 createCRDCSchoolTeacherV1(
-  FTETotal = NULL,
   CertifiedFTETotal = NULL,
-  NotCertifiedFTETotal = NULL,
-  FirstYearFTETotal = NULL,
-  SecondYearFTETotal = NULL,
-  CurrentYearCount = NULL,
-  PreviousYearCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
+  CurrentYearCount = NULL,
   FederalNCESSchoolID = NULL,
+  FirstYearFTETotal = NULL,
+  FTETotal = NULL,
+  NotCertifiedFTETotal = NULL,
+  PreviousYearCount = NULL,
+  SecondYearFTETotal = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

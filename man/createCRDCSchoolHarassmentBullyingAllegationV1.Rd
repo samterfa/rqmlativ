@@ -5,14 +5,14 @@
 \title{Create a CRDCSchoolHarassmentBullyingAllegationV1}
 \usage{
 createCRDCSchoolHarassmentBullyingAllegationV1(
-  SexBasedAllegationCount = NULL,
-  RaceBasedAllegationCount = NULL,
-  DisabilityBasedAllegationCount = NULL,
-  OrientationBasedAllegationCount = NULL,
-  ReligionBasedAllegationCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
+  DisabilityBasedAllegationCount = NULL,
   FederalNCESSchoolID = NULL,
+  OrientationBasedAllegationCount = NULL,
+  RaceBasedAllegationCount = NULL,
+  ReligionBasedAllegationCount = NULL,
+  SexBasedAllegationCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

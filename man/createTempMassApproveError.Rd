@@ -5,9 +5,9 @@
 \title{Create a TempMassApproveError}
 \usage{
 createTempMassApproveError(
-  ErrorMessage = NULL,
-  DataObjectID = NULL,
   ApprovalObjectDescription = NULL,
+  DataObjectID = NULL,
+  ErrorMessage = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

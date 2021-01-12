@@ -6,11 +6,11 @@
 \usage{
 modifyAdvancedPlacement(
   AdvancedPlacementID,
-  StudentTestID = NULL,
-  AdvancedPlacementNumber = NULL,
   AdministrationYear = NULL,
-  Exam = NULL,
-  ExamGrade = NULL,
+  AdvancedPlacementNumber = NULL,
+  ExamCode = NULL,
+  ExamGradeCode = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

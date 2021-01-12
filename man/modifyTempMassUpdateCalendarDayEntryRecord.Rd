@@ -6,12 +6,12 @@
 \usage{
 modifyTempMassUpdateCalendarDayEntryRecord(
   TempMassUpdateCalendarDayEntryRecordID,
-  Date = NULL,
   AddUpdateDate = NULL,
-  CountAs = NULL,
   Comment = NULL,
-  ShowCommentOnCalendar = NULL,
+  CountAs = NULL,
+  Date = NULL,
   HasFailureReasons = NULL,
+  ShowCommentOnCalendar = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

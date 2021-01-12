@@ -5,12 +5,12 @@
 \title{Create a MCCCAcademicYearImport}
 \usage{
 createMCCCAcademicYearImport(
-  SchoolYearID = NULL,
+  Code = NULL,
+  Description = NULL,
   DistrictID = NULL,
   MCCCSubmissionID = NULL,
   MCCCSubmissionRunHistoryID = NULL,
-  Code = NULL,
-  Description = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,15 +6,15 @@
 \usage{
 getPointSet(
   PointSetID,
+  CreatedTime = F,
+  Description = F,
   DistrictGroupKey = F,
   DistrictID = F,
+  ModifiedTime = F,
   Name = F,
-  Description = F,
   NameDescription = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

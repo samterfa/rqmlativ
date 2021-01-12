@@ -6,14 +6,14 @@
 \usage{
 getStandardFilterPrompt(
   StandardFilterPromptID,
+  CreatedTime = F,
+  ModifiedTime = F,
   PromptID = F,
+  SkywardHash = F,
+  SkywardID = F,
   StandardFilterID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  SkywardID = F,
-  SkywardHash = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

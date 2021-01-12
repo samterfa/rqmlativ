@@ -5,10 +5,10 @@
 \title{Create a CourseCorequisiteGroupCourse}
 \usage{
 createCourseCorequisiteGroupCourse(
+  CourseCorequisiteGroupCourseIDClonedFrom = NULL,
   CourseCorequisiteGroupID = NULL,
   CourseID = NULL,
   EntityGroupKey = NULL,
-  CourseCorequisiteGroupCourseIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -7,10 +7,10 @@
 modifyEntitySchool(
   EntitySchoolID,
   EntityID = NULL,
-  SchoolID = NULL,
-  IsDefaultSchoolForEntity = NULL,
-  IsDefaultEntityForSchool = NULL,
   EntitySchoolIDClonedFrom = NULL,
+  IsDefaultEntityForSchool = NULL,
+  IsDefaultSchoolForEntity = NULL,
+  SchoolID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

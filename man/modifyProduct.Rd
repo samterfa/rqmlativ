@@ -6,8 +6,8 @@
 \usage{
 modifyProduct(
   ProductID,
-  RMSID = NULL,
   Name = NULL,
+  RMSID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

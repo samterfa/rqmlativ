@@ -6,12 +6,12 @@
 \usage{
 modifyElectronicTranscriptLicensureNoteV1(
   ElectronicTranscriptLicensureNoteV1ID,
+  ElectronicTranscriptRunHistoryID = NULL,
+  EntityID = NULL,
   LicensureName = NULL,
   LicensurePassageDate = NULL,
   NoteMessage = NULL,
   OrganizationName = NULL,
-  ElectronicTranscriptRunHistoryID = NULL,
-  EntityID = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,

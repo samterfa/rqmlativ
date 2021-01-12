@@ -6,12 +6,12 @@
 \usage{
 listWinterSportsTeams(
   searchConditionsList = NULL,
-  WinterSportsTeamID = F,
-  SchoolYearID = F,
-  WinterSportID = F,
-  Lettered = F,
   Captain = F,
+  Lettered = F,
+  SchoolYearID = F,
   StudentID = F,
+  WinterSportID = F,
+  WinterSportsTeamID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

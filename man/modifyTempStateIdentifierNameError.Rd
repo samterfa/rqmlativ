@@ -6,11 +6,11 @@
 \usage{
 modifyTempStateIdentifierNameError(
   TempStateIdentifierNameErrorID,
-  StateIdentifierNameID = NULL,
-  LegalLastName = NULL,
-  LegalFirstName = NULL,
-  LegalMiddleName = NULL,
   FailureReason = NULL,
+  LegalFirstName = NULL,
+  LegalLastName = NULL,
+  LegalMiddleName = NULL,
+  StateIdentifierNameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

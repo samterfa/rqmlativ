@@ -6,8 +6,8 @@
 \usage{
 modifyStudentCourseRequestSectionLengthSubset(
   StudentCourseRequestSectionLengthSubsetID,
-  StudentCourseRequestID = NULL,
   SectionLengthSubsetID = NULL,
+  StudentCourseRequestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

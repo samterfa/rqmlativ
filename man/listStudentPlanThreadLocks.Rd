@@ -6,13 +6,13 @@
 \usage{
 listStudentPlanThreadLocks(
   searchConditionsList = NULL,
-  StudentPlanThreadLockID = F,
-  StudentPlanID = F,
-  DistrictID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DistrictID = F,
   ModifiedTime = F,
+  StudentPlanID = F,
+  StudentPlanThreadLockID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

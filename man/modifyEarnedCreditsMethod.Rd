@@ -6,10 +6,10 @@
 \usage{
 modifyEarnedCreditsMethod(
   EarnedCreditsMethodID,
+  Description = NULL,
   DistrictGroupKey = NULL,
   DistrictID = NULL,
   Name = NULL,
-  Description = NULL,
   SortNumber = NULL,
   entityId = 1,
   query = NULL,

@@ -5,8 +5,8 @@
 \title{Create a TempIncidentOffenseNameDrug}
 \usage{
 createTempIncidentOffenseNameDrug(
-  TempIncidentOffenseNameID = NULL,
   DrugID = NULL,
+  TempIncidentOffenseNameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 getWatchlistThresholdGradeLevel(
   WatchlistThresholdGradeLevelID,
-  WatchlistThresholdID = F,
-  GradeLevelID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeLevelID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  WatchlistThresholdID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

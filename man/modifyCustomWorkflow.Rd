@@ -6,9 +6,9 @@
 \usage{
 modifyCustomWorkflow(
   CustomWorkflowID,
-  Name = NULL,
   Description = NULL,
   Module = NULL,
+  Name = NULL,
   Object = NULL,
   ObjectIDRoot = NULL,
   entityId = 1,

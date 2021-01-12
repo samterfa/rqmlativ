@@ -6,9 +6,9 @@
 \usage{
 modifyStudentHealthConditionNote(
   StudentHealthConditionNoteID,
-  StudentHealthConditionID = NULL,
   Note = NULL,
   NoteEnteredByType = NULL,
+  StudentHealthConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

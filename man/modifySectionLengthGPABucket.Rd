@@ -6,11 +6,11 @@
 \usage{
 modifySectionLengthGPABucket(
   SectionLengthGPABucketID,
-  SectionLengthID = NULL,
-  GPABucketEntityID = NULL,
   EntityGroupKey = NULL,
+  GPABucketEntityID = NULL,
   IsUpToDate = NULL,
   SectionLengthGPABucketIDClonedFrom = NULL,
+  SectionLengthID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

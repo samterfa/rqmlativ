@@ -5,15 +5,15 @@
 \title{Create a TempInterventionPlanStaff}
 \usage{
 createTempInterventionPlanStaff(
-  StaffNameLFM = NULL,
-  NewIsProvidedBy = NULL,
-  NewIsActive = NULL,
-  OldIsProvidedBy = NULL,
-  OldIsActive = NULL,
-  StudentNameLFM = NULL,
-  StudentNumber = NULL,
   AreaOfConcern = NULL,
   ErrorMessage = NULL,
+  NewIsActive = NULL,
+  NewIsProvidedBy = NULL,
+  OldIsActive = NULL,
+  OldIsProvidedBy = NULL,
+  StaffNameLFM = NULL,
+  StudentNameLFM = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

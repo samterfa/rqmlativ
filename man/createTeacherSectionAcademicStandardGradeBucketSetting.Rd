@@ -5,11 +5,11 @@
 \title{Create a TeacherSectionAcademicStandardGradeBucketSetting}
 \usage{
 createTeacherSectionAcademicStandardGradeBucketSetting(
-  TeacherSectionSettingID = NULL,
-  GradingPeriodGradeBucketID = NULL,
   AcademicStandardID = NULL,
-  IsExpanded = NULL,
   Display = NULL,
+  GradingPeriodGradeBucketID = NULL,
+  IsExpanded = NULL,
+  TeacherSectionSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

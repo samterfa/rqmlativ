@@ -6,10 +6,10 @@
 \usage{
 createGPABucketGroupSummary(
   EntityGroupKey = NULL,
+  GPABucketGroupSummaryIDClonedFrom = NULL,
+  GPABucketSetID = NULL,
   GradingPeriodSetID = NULL,
   SectionLengthID = NULL,
-  GPABucketSetID = NULL,
-  GPABucketGroupSummaryIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

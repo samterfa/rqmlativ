@@ -6,8 +6,8 @@
 \usage{
 modifyRoomLayout(
   RoomLayoutID,
-  RoomID = NULL,
   Description = NULL,
+  RoomID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

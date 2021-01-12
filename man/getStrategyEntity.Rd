@@ -6,12 +6,12 @@
 \usage{
 getStrategyEntity(
   StrategyEntityID,
-  StrategyID = F,
-  EntityID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityID = F,
   ModifiedTime = F,
+  StrategyID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

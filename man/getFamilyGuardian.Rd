@@ -6,14 +6,14 @@
 \usage{
 getFamilyGuardian(
   FamilyGuardianID,
-  NameID = F,
+  CreatedTime = F,
   FamilyID = F,
+  HasActiveStudentGuardianRestrictedAccess = F,
+  ModifiedTime = F,
+  NameID = F,
   Rank = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  HasActiveStudentGuardianRestrictedAccess = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

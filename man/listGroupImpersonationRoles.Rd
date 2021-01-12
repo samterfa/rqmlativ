@@ -6,14 +6,14 @@
 \usage{
 listGroupImpersonationRoles(
   searchConditionsList = NULL,
-  GroupImpersonationRoleID = F,
+  CreatedTime = F,
   GroupID = F,
+  GroupImpersonationRoleID = F,
+  IsReadOnly = F,
+  ModifiedTime = F,
   RoleID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  IsReadOnly = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

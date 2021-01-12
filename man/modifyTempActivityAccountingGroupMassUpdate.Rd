@@ -6,13 +6,13 @@
 \usage{
 modifyTempActivityAccountingGroupMassUpdate(
   TempActivityAccountingGroupMassUpdateID,
-  UpdateType = NULL,
-  ActivityAccountingGroupIDOld = NULL,
-  ActivityAccountingGroupOld = NULL,
   ActivityAccountingGroupIDNew = NULL,
+  ActivityAccountingGroupIDOld = NULL,
   ActivityAccountingGroupNew = NULL,
-  UpdateObjectID = NULL,
+  ActivityAccountingGroupOld = NULL,
   UpdateObjectDescription = NULL,
+  UpdateObjectID = NULL,
+  UpdateType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create a CRDCSchoolSupportStaffV1}
 \usage{
 createCRDCSchoolSupportStaffV1(
-  CounselorFTETotal = NULL,
-  OfficerFTETotal = NULL,
-  SecurityGuardFTETotal = NULL,
-  NurseFTETotal = NULL,
-  PsychologistFTETotal = NULL,
-  SocialWorkerFTETotal = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
+  CounselorFTETotal = NULL,
   FederalNCESSchoolID = NULL,
+  NurseFTETotal = NULL,
+  OfficerFTETotal = NULL,
+  PsychologistFTETotal = NULL,
+  SecurityGuardFTETotal = NULL,
+  SocialWorkerFTETotal = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

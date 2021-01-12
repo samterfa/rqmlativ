@@ -5,13 +5,13 @@
 \title{Create a Department}
 \usage{
 createDepartment(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  EntityGroupKey = NULL,
   Code = NULL,
-  Description = NULL,
-  StaffIDDepartmentHead = NULL,
   DepartmentIDClonedFrom = NULL,
+  Description = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
+  StaffIDDepartmentHead = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

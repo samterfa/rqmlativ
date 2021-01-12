@@ -5,8 +5,8 @@
 \title{Create a Page}
 \usage{
 createPage(
-  ReportQueueID = NULL,
   PageNumber = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

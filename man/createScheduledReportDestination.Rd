@@ -5,8 +5,8 @@
 \title{Create a ScheduledReportDestination}
 \usage{
 createScheduledReportDestination(
-  ScheduledReportID = NULL,
   FileDestinationID = NULL,
+  ScheduledReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

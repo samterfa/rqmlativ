@@ -18,7 +18,7 @@
 	#' @return A list of DataMigrationManagers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDataMigrationManagers <- function(searchConditionsList = NULL, DataMigrationManagerID = F, ProcessedTime = F, MigrationType = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Label = F, SecondaryType = F, MediaID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDataMigrationManagers <- function(searchConditionsList = NULL, CreatedTime = F, DataMigrationManagerID = F, Label = F, MediaID = F, MigrationType = F, ModifiedTime = F, ProcessedTime = F, ProcessType = F, SecondaryType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of DataMigrationManager
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDataMigrationManager <- function(DataMigrationManagerID, ProcessedTime = F, MigrationType = F, ProcessType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Label = F, SecondaryType = F, MediaID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDataMigrationManager <- function(DataMigrationManagerID, CreatedTime = F, Label = F, MediaID = F, MigrationType = F, ModifiedTime = F, ProcessedTime = F, ProcessType = F, SecondaryType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DataMigrationManagerID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created DataMigrationManager
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDataMigrationManager <- function(ProcessedTime = NULL, MigrationType = NULL, ProcessType = NULL, Label = NULL, SecondaryType = NULL, MediaID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDataMigrationManager <- function(Label = NULL, MediaID = NULL, MigrationType = NULL, ProcessedTime = NULL, ProcessType = NULL, SecondaryType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified DataMigrationManager
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDataMigrationManager <- function(DataMigrationManagerID, ProcessedTime = NULL, MigrationType = NULL, ProcessType = NULL, Label = NULL, SecondaryType = NULL, MediaID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDataMigrationManager <- function(DataMigrationManagerID, Label = NULL, MediaID = NULL, MigrationType = NULL, ProcessedTime = NULL, ProcessType = NULL, SecondaryType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of DataMigrationManagerExceptions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDataMigrationManagerExceptions <- function(searchConditionsList = NULL, DataMigrationManagerExceptionID = F, DataMigrationManagerID = F, SourcePrimaryKey = F, Object = F, Identifier = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExceptionType = F, Category = F, Col1 = F, Col2 = F, Col3 = F, Col4 = F, Col5 = F, Col6 = F, Col7 = F, Col8 = F, Col9 = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDataMigrationManagerExceptions <- function(searchConditionsList = NULL, Category = F, Col1 = F, Col2 = F, Col3 = F, Col4 = F, Col5 = F, Col6 = F, Col7 = F, Col8 = F, Col9 = F, CreatedTime = F, DataMigrationManagerExceptionID = F, DataMigrationManagerID = F, ExceptionType = F, Identifier = F, Message = F, ModifiedTime = F, Object = F, SourcePrimaryKey = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of DataMigrationManagerException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDataMigrationManagerException <- function(DataMigrationManagerExceptionID, DataMigrationManagerID = F, SourcePrimaryKey = F, Object = F, Identifier = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ExceptionType = F, Category = F, Col1 = F, Col2 = F, Col3 = F, Col4 = F, Col5 = F, Col6 = F, Col7 = F, Col8 = F, Col9 = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDataMigrationManagerException <- function(DataMigrationManagerExceptionID, Category = F, Col1 = F, Col2 = F, Col3 = F, Col4 = F, Col5 = F, Col6 = F, Col7 = F, Col8 = F, Col9 = F, CreatedTime = F, DataMigrationManagerID = F, ExceptionType = F, Identifier = F, Message = F, ModifiedTime = F, Object = F, SourcePrimaryKey = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DataMigrationManagerExceptionID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created DataMigrationManagerException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDataMigrationManagerException <- function(DataMigrationManagerID = NULL, SourcePrimaryKey = NULL, Object = NULL, Identifier = NULL, Message = NULL, ExceptionType = NULL, Category = NULL, Col1 = NULL, Col2 = NULL, Col3 = NULL, Col4 = NULL, Col5 = NULL, Col6 = NULL, Col7 = NULL, Col8 = NULL, Col9 = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDataMigrationManagerException <- function(Category = NULL, Col1 = NULL, Col2 = NULL, Col3 = NULL, Col4 = NULL, Col5 = NULL, Col6 = NULL, Col7 = NULL, Col8 = NULL, Col9 = NULL, DataMigrationManagerID = NULL, ExceptionType = NULL, Identifier = NULL, Message = NULL, Object = NULL, SourcePrimaryKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified DataMigrationManagerException
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDataMigrationManagerException <- function(DataMigrationManagerExceptionID, DataMigrationManagerID = NULL, SourcePrimaryKey = NULL, Object = NULL, Identifier = NULL, Message = NULL, ExceptionType = NULL, Category = NULL, Col1 = NULL, Col2 = NULL, Col3 = NULL, Col4 = NULL, Col5 = NULL, Col6 = NULL, Col7 = NULL, Col8 = NULL, Col9 = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDataMigrationManagerException <- function(DataMigrationManagerExceptionID, Category = NULL, Col1 = NULL, Col2 = NULL, Col3 = NULL, Col4 = NULL, Col5 = NULL, Col6 = NULL, Col7 = NULL, Col8 = NULL, Col9 = NULL, DataMigrationManagerID = NULL, ExceptionType = NULL, Identifier = NULL, Message = NULL, Object = NULL, SourcePrimaryKey = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

@@ -6,13 +6,13 @@
 \usage{
 listGradebookLockGradeBuckets(
   searchConditionsList = NULL,
-  GradebookLockGradeBucketID = F,
   ConfigEntityGroupYearID = F,
-  GradingPeriodGradeBucketID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradebookLockGradeBucketID = F,
+  GradingPeriodGradeBucketID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

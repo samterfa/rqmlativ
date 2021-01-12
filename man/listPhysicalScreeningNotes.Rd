@@ -6,13 +6,13 @@
 \usage{
 listPhysicalScreeningNotes(
   searchConditionsList = NULL,
-  PhysicalScreeningNoteID = F,
-  PhysicalScreeningID = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  PhysicalScreeningID = F,
+  PhysicalScreeningNoteID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

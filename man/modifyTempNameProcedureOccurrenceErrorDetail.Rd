@@ -6,9 +6,9 @@
 \usage{
 modifyTempNameProcedureOccurrenceErrorDetail(
   TempNameProcedureOccurrenceErrorDetailID,
-  TempNameProcedureOccurrenceID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameProcedureOccurrenceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a VaccineContent}
 \usage{
 createVaccineContent(
-  VaccineID = NULL,
-  VaccinationID = NULL,
-  LowDate = NULL,
   HighDate = NULL,
+  LowDate = NULL,
+  VaccinationID = NULL,
+  VaccineID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

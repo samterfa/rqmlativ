@@ -6,9 +6,9 @@
 \usage{
 modifyWageDetailExport(
   WageDetailExportID,
-  WageDetailExtractRunID = NULL,
   MediaID = NULL,
   Status = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

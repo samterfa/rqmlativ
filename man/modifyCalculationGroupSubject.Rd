@@ -7,10 +7,10 @@
 modifyCalculationGroupSubject(
   CalculationGroupSubjectID,
   CalculationGroupID = NULL,
-  SubjectID = NULL,
-  EntityGroupKey = NULL,
   CalculationGroupSubjectIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
   Order = NULL,
+  SubjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

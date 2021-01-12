@@ -5,9 +5,9 @@
 \title{Create a StudentHealthConditionNote}
 \usage{
 createStudentHealthConditionNote(
-  StudentHealthConditionID = NULL,
   Note = NULL,
   NoteEnteredByType = NULL,
+  StudentHealthConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,16 +5,16 @@
 \title{Create a STARException}
 \usage{
 createSTARException(
-  STARExtractRunID = NULL,
-  STAREmployeeV1ID = NULL,
-  STARLicensedStaffEmploymentV1ID = NULL,
-  STARLicensedStaffAssignmentV1ID = NULL,
-  STARNonLicensedStaffV1ID = NULL,
-  Source = NULL,
   IsFatal = NULL,
-  Type = NULL,
   Message = NULL,
   PreserveException = NULL,
+  Source = NULL,
+  STAREmployeeV1ID = NULL,
+  STARExtractRunID = NULL,
+  STARLicensedStaffAssignmentV1ID = NULL,
+  STARLicensedStaffEmploymentV1ID = NULL,
+  STARNonLicensedStaffV1ID = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

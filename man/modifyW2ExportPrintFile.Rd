@@ -6,8 +6,8 @@
 \usage{
 modifyW2ExportPrintFile(
   W2ExportPrintFileID,
-  W2YearID = NULL,
   MediaID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

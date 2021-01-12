@@ -7,9 +7,9 @@
 modifyFederalSubjectType(
   FederalSubjectTypeID,
   Description = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

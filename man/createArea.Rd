@@ -5,12 +5,12 @@
 \title{Create an Area}
 \usage{
 createArea(
-  PlanID = NULL,
   Description = NULL,
-  TotalCredits = NULL,
   DisplayOrder = NULL,
-  IsElective = NULL,
   GradReqRankGPARequiredCourseRuleOverride = NULL,
+  IsElective = NULL,
+  PlanID = NULL,
+  TotalCredits = NULL,
   UseGradReqSubjectType = NULL,
   entityId = 1,
   query = NULL,

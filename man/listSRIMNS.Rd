@@ -6,13 +6,9 @@
 \usage{
 listSRIMNS(
   searchConditionsList = NULL,
+  ScaleScore = F,
   SRIMNID = F,
   StudentTestID = F,
-  ScaleScore = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

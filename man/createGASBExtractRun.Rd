@@ -6,12 +6,12 @@
 \usage{
 createGASBExtractRun(
   FiscalYearID = NULL,
-  HasStatementOfNetAssets = NULL,
-  HasStatementOfActivities = NULL,
+  GASBFundClassification = NULL,
   HasBalanceSheet = NULL,
   HasRevenueAndExpenditure = NULL,
   HasRevenueAndExpenditureComparison = NULL,
-  GASBFundClassification = NULL,
+  HasStatementOfActivities = NULL,
+  HasStatementOfNetAssets = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

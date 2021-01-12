@@ -5,11 +5,11 @@
 \title{Create a TempFailedStudentSubAreaWaiver}
 \usage{
 createTempFailedStudentSubAreaWaiver(
-  StudentSubAreaID = NULL,
+  ActionType = NULL,
   AreaSubAreaDescription = NULL,
   Credits = NULL,
   Note = NULL,
-  ActionType = NULL,
+  StudentSubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

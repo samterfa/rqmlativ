@@ -6,12 +6,12 @@
 \usage{
 getScoliosisScreeningSecuredNote(
   ScoliosisScreeningSecuredNoteID,
-  ScoliosisScreeningID = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  ScoliosisScreeningID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

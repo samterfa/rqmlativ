@@ -5,10 +5,10 @@
 \title{Create a ChangeRequest}
 \usage{
 createChangeRequest(
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  NameID = NULL,
   Area = NULL,
+  EntityID = NULL,
+  NameID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

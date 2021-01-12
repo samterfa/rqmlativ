@@ -6,14 +6,14 @@
 \usage{
 modifyCRDCLEAHarassmentV1(
   CRDCLEAHarassmentV1ID,
+  CivilRightsDataCollectionID = NULL,
+  CivilRightsDataCollectionRunHistoryID = NULL,
   DistrictID = NULL,
   DistrictSchoolYearID = NULL,
+  HarassmentPolicyWebLink = NULL,
   HasDesegregationPlan = NULL,
   HasHarassmentPolicy = NULL,
   HasHarassmentPolicyWebLink = NULL,
-  HarassmentPolicyWebLink = NULL,
-  CivilRightsDataCollectionID = NULL,
-  CivilRightsDataCollectionRunHistoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

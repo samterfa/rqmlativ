@@ -6,9 +6,9 @@
 \usage{
 modifyTransportationCategory(
   TransportationCategoryID,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   SchoolYearID = NULL,
   StateTransportationCategoryCodeMNID = NULL,
   entityId = 1,

@@ -6,9 +6,9 @@
 \usage{
 modifyFeederSchool(
   FeederSchoolID,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

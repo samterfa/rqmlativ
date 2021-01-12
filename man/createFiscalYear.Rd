@@ -6,10 +6,10 @@
 \usage{
 createFiscalYear(
   Description = NULL,
-  StartDate = NULL,
-  EndDate = NULL,
   DistrictID = NULL,
+  EndDate = NULL,
   IsLockedByHR = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

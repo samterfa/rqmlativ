@@ -5,15 +5,15 @@
 \title{Create a TempGradingPeriodError}
 \usage{
 createTempGradingPeriodError(
-  CourseDescription = NULL,
-  SectionNumber = NULL,
-  TeacherName = NULL,
+  AcademicStandard = NULL,
   AssignmentName = NULL,
   Category = NULL,
+  CourseDescription = NULL,
   DueDate = NULL,
   Error = NULL,
-  Subject = NULL,
-  AcademicStandard = NULL,
+  SectionNumber = NULL,
+  SubjectCode = NULL,
+  TeacherName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

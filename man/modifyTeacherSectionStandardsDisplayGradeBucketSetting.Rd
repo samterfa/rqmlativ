@@ -6,9 +6,9 @@
 \usage{
 modifyTeacherSectionStandardsDisplayGradeBucketSetting(
   TeacherSectionStandardsDisplayGradeBucketSettingID,
-  TeacherSectionSettingID = NULL,
   CalculationGroupGradeBucketID = NULL,
   ShowBucket = NULL,
+  TeacherSectionSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

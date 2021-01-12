@@ -6,14 +6,14 @@
 \usage{
 listSectionSchedulingTeams(
   searchConditionsList = NULL,
-  SectionSchedulingTeamID = F,
-  SectionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingTeamID = F,
+  SectionID = F,
+  SectionSchedulingTeamID = F,
   SectionSchedulingTeamIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

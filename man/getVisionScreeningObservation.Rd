@@ -6,12 +6,12 @@
 \usage{
 getVisionScreeningObservation(
   VisionScreeningObservationID,
-  VisionScreeningID = F,
-  VisionObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VisionObservationID = F,
+  VisionScreeningID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

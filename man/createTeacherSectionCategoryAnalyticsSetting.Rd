@@ -5,9 +5,9 @@
 \title{Create a TeacherSectionCategoryAnalyticsSetting}
 \usage{
 createTeacherSectionCategoryAnalyticsSetting(
+  AnalysisType = NULL,
   CategoryID = NULL,
   TeacherSectionSettingID = NULL,
-  AnalysisType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

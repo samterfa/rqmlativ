@@ -6,12 +6,12 @@
 \usage{
 getStudentPlanThreadLock(
   StudentPlanThreadLockID,
-  StudentPlanID = F,
-  DistrictID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DistrictID = F,
   ModifiedTime = F,
+  StudentPlanID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

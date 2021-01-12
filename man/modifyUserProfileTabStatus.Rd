@@ -6,9 +6,9 @@
 \usage{
 modifyUserProfileTabStatus(
   UserProfileTabStatusID,
-  UserID = NULL,
   ProfileID = NULL,
   ProfileScreenIDLastTab = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

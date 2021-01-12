@@ -5,15 +5,15 @@
 \title{Create an ItemPrice}
 \usage{
 createItemPrice(
-  ItemID = NULL,
-  DistrictGroupKey = NULL,
-  ItemLimit = NULL,
-  IsGovernmentFunded = NULL,
-  EligibilityCategoryID = NULL,
-  PriceCategoryID = NULL,
-  EffectiveTime = NULL,
-  PurchaseAmount = NULL,
   AdditionalPurchaseAmount = NULL,
+  DistrictGroupKey = NULL,
+  EffectiveTime = NULL,
+  EligibilityCategoryID = NULL,
+  IsGovernmentFunded = NULL,
+  ItemID = NULL,
+  ItemLimit = NULL,
+  PriceCategoryID = NULL,
+  PurchaseAmount = NULL,
   StopAdditionalPurchases = NULL,
   entityId = 1,
   query = NULL,

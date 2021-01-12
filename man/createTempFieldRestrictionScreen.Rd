@@ -5,8 +5,8 @@
 \title{Create a TempFieldRestrictionScreen}
 \usage{
 createTempFieldRestrictionScreen(
-  SecurityLocationID = NULL,
   DisplayText = NULL,
+  SecurityLocationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

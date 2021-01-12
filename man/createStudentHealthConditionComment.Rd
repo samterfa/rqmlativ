@@ -5,8 +5,8 @@
 \title{Create a StudentHealthConditionComment}
 \usage{
 createStudentHealthConditionComment(
-  StudentHealthConditionID = NULL,
   HealthConditionCommentID = NULL,
+  StudentHealthConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

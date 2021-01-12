@@ -6,12 +6,12 @@
 \usage{
 modifyAttendancePeriod(
   AttendancePeriodID,
+  AttendancePeriodIDClonedFrom = NULL,
+  Code = NULL,
+  DisplayOrder = NULL,
   EntityGroupKey = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  Code = NULL,
-  DisplayOrder = NULL,
-  AttendancePeriodIDClonedFrom = NULL,
   UseForSchoolTrakPositiveAttendance = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 listScheduledReportDestinations(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  FileDestinationID = F,
+  ModifiedTime = F,
   ScheduledReportDestinationID = F,
   ScheduledReportID = F,
-  FileDestinationID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

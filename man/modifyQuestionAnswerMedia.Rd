@@ -6,9 +6,9 @@
 \usage{
 modifyQuestionAnswerMedia(
   QuestionAnswerMediaID,
-  QuestionAnswerID = NULL,
-  MediaID = NULL,
   DisplayFor = NULL,
+  MediaID = NULL,
+  QuestionAnswerID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyGroupMembership(
   GroupMembershipID,
-  GroupIDParent = NULL,
-  UserIDMember = NULL,
-  ExternalUniqueIdentifier = NULL,
   EntityID = NULL,
+  ExternalUniqueIdentifier = NULL,
+  GroupIDParent = NULL,
   MembershipSource = NULL,
+  UserIDMember = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

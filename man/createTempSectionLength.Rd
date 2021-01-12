@@ -5,14 +5,14 @@
 \title{Create a TempSectionLength}
 \usage{
 createTempSectionLength(
-  SectionLengthID = NULL,
   Code = NULL,
-  StartDate = NULL,
-  EndDate = NULL,
-  OriginalStartDate = NULL,
-  OriginalEndDate = NULL,
   CourseLengthCode = NULL,
+  EndDate = NULL,
+  OriginalEndDate = NULL,
+  OriginalStartDate = NULL,
   ProcessAction = NULL,
+  SectionLengthID = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

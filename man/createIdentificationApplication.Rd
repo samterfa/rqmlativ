@@ -5,8 +5,8 @@
 \title{Create an IdentificationApplication}
 \usage{
 createIdentificationApplication(
-  Name = NULL,
   Description = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

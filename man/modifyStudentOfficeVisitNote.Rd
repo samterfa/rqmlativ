@@ -6,8 +6,8 @@
 \usage{
 modifyStudentOfficeVisitNote(
   StudentOfficeVisitNoteID,
-  StudentOfficeVisitID = NULL,
   Note = NULL,
+  StudentOfficeVisitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

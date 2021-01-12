@@ -5,8 +5,8 @@
 \title{Create an ElectronicTranscriptAgencyIdentifierV1}
 \usage{
 createElectronicTranscriptAgencyIdentifierV1(
-  AgencyAssignedID = NULL,
   Agency = NULL,
+  AgencyAssignedID = NULL,
   AgencyName = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,

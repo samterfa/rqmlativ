@@ -6,13 +6,13 @@
 \usage{
 modifyVehicle(
   VehicleID,
-  PermitNumber = NULL,
-  PermitDate = NULL,
-  Year = NULL,
-  MakeModel = NULL,
   Color = NULL,
   LicensePlateNumber = NULL,
+  MakeModel = NULL,
+  PermitDate = NULL,
+  PermitNumber = NULL,
   VIN = NULL,
+  Year = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

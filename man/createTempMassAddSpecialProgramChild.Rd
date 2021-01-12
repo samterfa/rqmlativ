@@ -5,11 +5,11 @@
 \title{Create a TempMassAddSpecialProgramChild}
 \usage{
 createTempMassAddSpecialProgramChild(
-  TempMassAddSpecialProgramIDParent = NULL,
-  RecordType = NULL,
-  SpecialProgramIDField = NULL,
   CodeIDField = NULL,
   CodeIDValues = NULL,
+  RecordType = NULL,
+  SpecialProgramIDField = NULL,
+  TempMassAddSpecialProgramIDParent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

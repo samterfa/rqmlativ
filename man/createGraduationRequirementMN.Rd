@@ -5,15 +5,15 @@
 \title{Create a GraduationRequirementMN}
 \usage{
 createGraduationRequirementMN(
+  DistrictID = NULL,
+  EndDate = NULL,
   EntryComment = NULL,
   ExitComment = NULL,
-  StateGraduationRequirementMNID = NULL,
-  StateGraduationRequirementMethodMNID = NULL,
   MetGraduationRequirement = NULL,
   StartDate = NULL,
-  EndDate = NULL,
+  StateGraduationRequirementMethodMNID = NULL,
+  StateGraduationRequirementMNID = NULL,
   StudentID = NULL,
-  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

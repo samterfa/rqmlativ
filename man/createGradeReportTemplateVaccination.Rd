@@ -6,8 +6,8 @@
 \usage{
 createGradeReportTemplateVaccination(
   GradeReportTemplateID = NULL,
-  VaccinationID = NULL,
   GradeReportTemplateVaccinationIDClonedFrom = NULL,
+  VaccinationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

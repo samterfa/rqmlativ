@@ -6,12 +6,12 @@
 \usage{
 modifyScheduleRestorePoint(
   ScheduleRestorePointID,
-  Name = NULL,
   Description = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
-  RestorePointDateTime = NULL,
+  Name = NULL,
   ReportQueueID = NULL,
+  RestorePointDateTime = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

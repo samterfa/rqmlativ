@@ -6,10 +6,10 @@
 \usage{
 modifySiteBasedInitiativeMN(
   SiteBasedInitiativeMNID,
-  StateSiteBasedInitiativeMNID = NULL,
-  StateImplementationStatusMNID = NULL,
   CurriculumYearID = NULL,
   SiteBasedInitiativeMNIDClonedFrom = NULL,
+  StateImplementationStatusMNID = NULL,
+  StateSiteBasedInitiativeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

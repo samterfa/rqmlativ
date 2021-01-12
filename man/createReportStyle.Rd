@@ -5,8 +5,8 @@
 \title{Create a ReportStyle}
 \usage{
 createReportStyle(
-  Name = NULL,
   IsPublic = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

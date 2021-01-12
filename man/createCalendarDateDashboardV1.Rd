@@ -5,13 +5,13 @@
 \title{Create a CalendarDateDashboardV1}
 \usage{
 createCalendarDateDashboardV1(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  Date = NULL,
-  EdFiCalendarEventID = NULL,
-  CalendarEventCode = NULL,
   AssociatedCampusIDs = NULL,
+  CalendarEventCode = NULL,
   DashboardRunHistoryID = NULL,
+  Date = NULL,
+  DistrictID = NULL,
+  EdFiCalendarEventID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

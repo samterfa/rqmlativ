@@ -6,10 +6,10 @@
 \usage{
 modifyGASBStatementOfActivityViewCell(
   GASBStatementOfActivityViewCellID,
-  StatementOfActivityTotalType = NULL,
-  GASBExtractRunID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBExtractRunID = NULL,
+  StatementOfActivityTotalType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

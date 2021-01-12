@@ -6,11 +6,11 @@
 \usage{
 createSubArea(
   AreaID = NULL,
-  Description = NULL,
   Credits = NULL,
+  Description = NULL,
   DisplayOrder = NULL,
-  IsElective = NULL,
   GradReqRankGPARequiredCourseRuleOverride = NULL,
+  IsElective = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

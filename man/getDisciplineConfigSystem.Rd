@@ -6,14 +6,14 @@
 \usage{
 getDisciplineConfigSystem(
   DisciplineConfigSystemID,
-  ConfigSystemID = F,
   AllowIncidentSuppression = F,
-  UserIDCreatedBy = F,
+  AllowUpdateHistoricalData = F,
+  ConfigSystemID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
   ReportIDDisciplineLetter = F,
-  AllowUpdateHistoricalData = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,13 +5,13 @@
 \title{Create a GradeReportGradingScale}
 \usage{
 createGradeReportGradingScale(
-  SortNumber = NULL,
   DisplayType = NULL,
-  GradeMarkCode = NULL,
-  RangeLow = NULL,
-  RangeHigh = NULL,
   FreeformText = NULL,
+  GradeMarkCode = NULL,
   GradeReportStudentID = NULL,
+  RangeHigh = NULL,
+  RangeLow = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

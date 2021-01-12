@@ -5,12 +5,12 @@
 \title{Create a GradeReportRowDetail}
 \usage{
 createGradeReportRowDetail(
+  DetailData = NULL,
   GradeReportRowID = NULL,
-  SortNumber = NULL,
+  GradingPeriodLabel = NULL,
   GradingPeriodSortNumber = NULL,
   Label = NULL,
-  DetailData = NULL,
-  GradingPeriodLabel = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

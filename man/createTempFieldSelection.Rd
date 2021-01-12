@@ -6,9 +6,9 @@
 \usage{
 createTempFieldSelection(
   FieldID = NULL,
+  FieldName = NULL,
   ModuleName = NULL,
   ObjectName = NULL,
-  FieldName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

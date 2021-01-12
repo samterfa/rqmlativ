@@ -6,9 +6,9 @@
 \usage{
 modifyCommonTempError(
   TempErrorID,
-  ParentObjectID = NULL,
   ErrorNumber = NULL,
   Message = NULL,
+  ParentObjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

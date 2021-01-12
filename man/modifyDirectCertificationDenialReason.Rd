@@ -6,8 +6,8 @@
 \usage{
 modifyDirectCertificationDenialReason(
   DirectCertificationDenialReasonID,
-  DirectCertificationID = NULL,
   DenialReasonID = NULL,
+  DirectCertificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationGradeMark(
   NotificationGradeMarkID,
-  NotificationID = NULL,
   GradeMarkID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 createCodeGroupCodeCrossReferenceOverride(
   CodeGroupCodeCrossReferenceID = NULL,
-  CodeGroupID = NULL,
   CodeGroupCodeID = NULL,
+  CodeGroupID = NULL,
+  OverrideType = NULL,
   PluginID = NULL,
   Value = NULL,
-  OverrideType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

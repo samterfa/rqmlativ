@@ -6,14 +6,14 @@
 \usage{
 getStudentCommentBucket(
   StudentCommentBucketID,
-  GradingPeriodID = F,
-  StudentSectionID = F,
   CommentBucketID = F,
   CommentCodeID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradingPeriodID = F,
   ModifiedTime = F,
+  StudentSectionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

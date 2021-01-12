@@ -7,9 +7,9 @@
 modifyApplicationSection(
   ApplicationSectionID,
   ApplicationStepID = NULL,
+  Description = NULL,
   DisplayOrder = NULL,
   Instruction = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

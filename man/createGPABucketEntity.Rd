@@ -5,15 +5,15 @@
 \title{Create a GPABucketEntity}
 \usage{
 createGPABucketEntity(
-  EntityGroupKey = NULL,
-  GPABucketID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   DisplayOrder = NULL,
-  UseForFamilyAccess = NULL,
-  FamilyAccessDisplayGradYearLow = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
   FamilyAccessDisplayGradYearHigh = NULL,
+  FamilyAccessDisplayGradYearLow = NULL,
   GPABucketEntityIDClonedFrom = NULL,
+  GPABucketID = NULL,
+  SchoolYearID = NULL,
+  UseForFamilyAccess = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

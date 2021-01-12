@@ -6,8 +6,8 @@
 \usage{
 createDisciplineConfigSystem(
   AllowIncidentSuppression = NULL,
-  ReportIDDisciplineLetter = NULL,
   AllowUpdateHistoricalData = NULL,
+  ReportIDDisciplineLetter = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyUserReportPrompt(
   UserReportPromptID,
-  ReportID = NULL,
   EntityID = NULL,
   PromptTemplateID = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

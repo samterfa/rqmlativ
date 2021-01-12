@@ -6,10 +6,10 @@
 \usage{
 createGPAMethodGradeBucketFlagGPAPointsOverride(
   GPAMethodID = NULL,
-  GradeBucketFlagID = NULL,
   GPAPoints = NULL,
-  Rank = NULL,
   GPAPointsOverrideOption = NULL,
+  GradeBucketFlagID = NULL,
+  Rank = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

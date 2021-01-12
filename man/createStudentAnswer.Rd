@@ -5,8 +5,8 @@
 \title{Create a StudentAnswer}
 \usage{
 createStudentAnswer(
-  StudentQuestionID = NULL,
   QuestionAnswerID = NULL,
+  StudentQuestionID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

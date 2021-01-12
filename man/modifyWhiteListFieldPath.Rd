@@ -6,8 +6,8 @@
 \usage{
 modifyWhiteListFieldPath(
   WhiteListFieldPathID,
-  FriendlyName = NULL,
   Description = NULL,
+  FriendlyName = NULL,
   UsedForType = NULL,
   entityId = 1,
   query = NULL,

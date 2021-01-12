@@ -5,14 +5,14 @@
 \title{Create a DisciplineIncidentAssociationDashboardV1}
 \usage{
 createDisciplineIncidentAssociationDashboardV1(
-  SchoolYearID = NULL,
+  DashboardRunHistoryID = NULL,
   EntityID = NULL,
-  StudentID = NULL,
   IncidentID = NULL,
   IncidentIdentifier = NULL,
-  StudentUniqueID = NULL,
+  SchoolYearID = NULL,
+  StudentID = NULL,
   StudentParticipationCode = NULL,
-  DashboardRunHistoryID = NULL,
+  StudentUniqueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

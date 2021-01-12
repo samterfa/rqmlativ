@@ -6,13 +6,13 @@
 \usage{
 listVerificationSelectionRunHistorySchools(
   searchConditionsList = NULL,
-  VerificationSelectionRunHistorySchoolID = F,
-  SchoolID = F,
-  VerificationSelectionRunHistoryID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SchoolID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VerificationSelectionRunHistoryID = F,
+  VerificationSelectionRunHistorySchoolID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

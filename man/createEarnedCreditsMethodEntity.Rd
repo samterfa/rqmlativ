@@ -5,11 +5,11 @@
 \title{Create an EarnedCreditsMethodEntity}
 \usage{
 createEarnedCreditsMethodEntity(
-  EntityGroupKey = NULL,
+  EarnedCreditsMethodEntityIDClonedFrom = NULL,
   EarnedCreditsMethodID = NULL,
+  EntityGroupKey = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  EarnedCreditsMethodEntityIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

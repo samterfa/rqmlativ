@@ -6,13 +6,13 @@
 \usage{
 getStudentEndorsementRequirementAssessment(
   StudentEndorsementRequirementAssessmentID,
-  StudentEndorsementRequirementID = F,
+  CreatedTime = F,
   EndorsementRequirementAssessmentID = F,
   IsComplete = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  StudentEndorsementRequirementID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,9 +6,9 @@
 \usage{
 createCourseEntityOfferedToSectionStaffMeet(
   CourseEntityOfferedToSectionID = NULL,
+  CourseEntityOfferedToSectionStaffMeetIDClonedFrom = NULL,
   MeetID = NULL,
   StaffID = NULL,
-  CourseEntityOfferedToSectionStaffMeetIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

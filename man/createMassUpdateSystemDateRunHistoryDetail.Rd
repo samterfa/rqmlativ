@@ -5,15 +5,15 @@
 \title{Create a MassUpdateSystemDateRunHistoryDetail}
 \usage{
 createMassUpdateSystemDateRunHistoryDetail(
-  MassUpdateSystemDateRunHistoryID = NULL,
-  SortNumber = NULL,
-  TableType = NULL,
-  StartDateRecordsProcessedCount = NULL,
-  StartDateSuccessCount = NULL,
-  StartDateFailedCount = NULL,
+  EndDateFailedCount = NULL,
   EndDateRecordsProcessedCount = NULL,
   EndDateSuccessCount = NULL,
-  EndDateFailedCount = NULL,
+  MassUpdateSystemDateRunHistoryID = NULL,
+  SortNumber = NULL,
+  StartDateFailedCount = NULL,
+  StartDateRecordsProcessedCount = NULL,
+  StartDateSuccessCount = NULL,
+  TableType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

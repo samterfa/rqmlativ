@@ -5,15 +5,15 @@
 \title{Create a TempStudentVaccine}
 \usage{
 createTempStudentVaccine(
-  StudentVaccineID = NULL,
-  StudentName = NULL,
-  VaccineCode = NULL,
   CVXCode = NULL,
-  NewVaccineCode = NULL,
-  NewCVXCode = NULL,
-  NewVaccineID = NULL,
   Date = NULL,
   IsDuplicate = NULL,
+  NewCVXCode = NULL,
+  NewVaccineCode = NULL,
+  NewVaccineID = NULL,
+  StudentName = NULL,
+  StudentVaccineID = NULL,
+  VaccineCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

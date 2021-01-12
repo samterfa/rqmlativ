@@ -5,9 +5,9 @@
 \title{Create a TempNameEmailError}
 \usage{
 createTempNameEmailError(
-  ErrorText = NULL,
   ErrorField = NULL,
   ErrorNumber = NULL,
+  ErrorText = NULL,
   TempNameEmailID = NULL,
   entityId = 1,
   query = NULL,

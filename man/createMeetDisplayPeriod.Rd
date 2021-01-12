@@ -5,13 +5,13 @@
 \title{Create a MeetDisplayPeriod}
 \usage{
 createMeetDisplayPeriod(
-  MeetID = NULL,
   DisplayPeriodID = NULL,
-  IsPrimary = NULL,
   HideMeetDisplayPeriod = NULL,
+  IsPrimary = NULL,
   LockDisplayPeriod = NULL,
-  ScheduledBySectionScheduler = NULL,
   MeetDisplayPeriodIDClonedFrom = NULL,
+  MeetID = NULL,
+  ScheduledBySectionScheduler = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

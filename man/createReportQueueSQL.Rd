@@ -5,8 +5,8 @@
 \title{Create a ReportQueueSQL}
 \usage{
 createReportQueueSQL(
-  ReportQueueID = NULL,
   ExecutedQuery = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

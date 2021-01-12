@@ -6,8 +6,8 @@
 \usage{
 getRaisersEdgeObjectMA(
   RaisersEdgeObjectMAID,
-  RaisersEdgeID = F,
   NameID = F,
+  RaisersEdgeID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 listTempDayPaymentSummaries(
   searchConditionsList = NULL,
-  TempDayPaymentSummaryID = F,
-  Day = F,
-  PaymentTotal = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Day = F,
   ModifiedTime = F,
+  PaymentTotal = F,
+  TempDayPaymentSummaryID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

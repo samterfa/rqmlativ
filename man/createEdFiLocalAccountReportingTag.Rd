@@ -5,8 +5,8 @@
 \title{Create an EdFiLocalAccountReportingTag}
 \usage{
 createEdFiLocalAccountReportingTag(
-  EdFiLocalAccountID = NULL,
   Descriptor = NULL,
+  EdFiLocalAccountID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

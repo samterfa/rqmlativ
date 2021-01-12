@@ -6,13 +6,13 @@
 \usage{
 getWageDetailEmployerV1(
   WageDetailEmployerV1ID,
-  WageDetailExtractRunID = F,
+  CreatedTime = F,
   EmployerID = F,
+  ModifiedTime = F,
   UnemploymentInsuranceAccountNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  WageDetailExtractRunID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

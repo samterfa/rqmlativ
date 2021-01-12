@@ -6,13 +6,13 @@
 \usage{
 getESSAExclusion(
   ESSAExclusionID,
-  DistrictID = F,
+  CreatedTime = F,
   Description = F,
+  DistrictID = F,
+  ModifiedTime = F,
   Type = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

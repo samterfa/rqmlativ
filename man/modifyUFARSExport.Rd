@@ -6,9 +6,9 @@
 \usage{
 modifyUFARSExport(
   UFARSExportID,
-  UFARSExtractRunID = NULL,
   MediaID = NULL,
   Status = NULL,
+  UFARSExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

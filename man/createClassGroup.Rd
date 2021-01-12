@@ -5,8 +5,8 @@
 \title{Create a ClassGroup}
 \usage{
 createClassGroup(
-  Name = NULL,
   EntityID = NULL,
+  Name = NULL,
   SchoolYearID = NULL,
   StaffID = NULL,
   entityId = 1,

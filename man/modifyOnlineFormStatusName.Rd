@@ -6,9 +6,9 @@
 \usage{
 modifyOnlineFormStatusName(
   OnlineFormStatusNameID,
-  OnlineFormStatusID = NULL,
-  NameID = NULL,
   ElementID = NULL,
+  NameID = NULL,
+  OnlineFormStatusID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

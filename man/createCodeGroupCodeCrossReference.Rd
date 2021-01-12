@@ -5,8 +5,8 @@
 \title{Create a CodeGroupCodeCrossReference}
 \usage{
 createCodeGroupCodeCrossReference(
-  CodeGroupID = NULL,
   CodeGroupCodeID = NULL,
+  CodeGroupID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

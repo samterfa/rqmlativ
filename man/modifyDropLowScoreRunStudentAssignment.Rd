@@ -6,9 +6,9 @@
 \usage{
 modifyDropLowScoreRunStudentAssignment(
   DropLowScoreRunStudentAssignmentID,
+  DropActionType = NULL,
   DropLowScoreRunID = NULL,
   StudentAssignmentID = NULL,
-  DropActionType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

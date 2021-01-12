@@ -6,13 +6,13 @@
 \usage{
 listGASBBalanceSheetReports(
   searchConditionsList = NULL,
-  GASBBalanceSheetReportID = F,
-  GASBFundClassification = F,
-  GASBExtractRunID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GASBBalanceSheetReportID = F,
+  GASBExtractRunID = F,
+  GASBFundClassification = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

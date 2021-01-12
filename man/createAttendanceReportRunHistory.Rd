@@ -5,16 +5,16 @@
 \title{Create an AttendanceReportRunHistory}
 \usage{
 createAttendanceReportRunHistory(
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  RunDescription = NULL,
+  AttachmentDisplayName = NULL,
   Date = NULL,
+  EntityID = NULL,
   FilterType = NULL,
   GracePeriod = NULL,
   IsActive = NULL,
-  ReportRunInfoID = NULL,
   PostToFASA = NULL,
-  AttachmentDisplayName = NULL,
+  ReportRunInfoID = NULL,
+  RunDescription = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

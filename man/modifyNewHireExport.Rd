@@ -6,8 +6,8 @@
 \usage{
 modifyNewHireExport(
   NewHireExportID,
-  NewHireExtractRunID = NULL,
   MediaID = NULL,
+  NewHireExtractRunID = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

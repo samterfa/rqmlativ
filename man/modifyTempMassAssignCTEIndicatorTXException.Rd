@@ -6,9 +6,9 @@
 \usage{
 modifyTempMassAssignCTEIndicatorTXException(
   TempMassAssignCTEIndicatorTXExceptionID,
-  TempMassAssignCTEIndicatorTXID = NULL,
-  StudentID = NULL,
   Note = NULL,
+  StudentID = NULL,
+  TempMassAssignCTEIndicatorTXID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

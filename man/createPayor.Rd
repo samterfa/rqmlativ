@@ -5,9 +5,9 @@
 \title{Create a Payor}
 \usage{
 createPayor(
-  NameID = NULL,
   DistrictID = NULL,
   IsActive = NULL,
+  NameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

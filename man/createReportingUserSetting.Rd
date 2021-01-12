@@ -5,11 +5,11 @@
 \title{Create a ReportingUserSetting}
 \usage{
 createReportingUserSetting(
-  ShowSideBar = NULL,
-  SideBarWidth = NULL,
-  DataMiningShowLeftFieldSelectionPanel = NULL,
   DataMiningLeftFieldSelectionPanelWidth = NULL,
   DataMiningMiddleFieldSelectionPanelWidth = NULL,
+  DataMiningShowLeftFieldSelectionPanel = NULL,
+  ShowSideBar = NULL,
+  SideBarWidth = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyCodeGroupCodeCrossReference(
   CodeGroupCodeCrossReferenceID,
-  CodeGroupID = NULL,
   CodeGroupCodeID = NULL,
+  CodeGroupID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

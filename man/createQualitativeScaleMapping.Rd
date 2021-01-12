@@ -5,9 +5,9 @@
 \title{Create a QualitativeScaleMapping}
 \usage{
 createQualitativeScaleMapping(
+  NumericValue = NULL,
   QualitativeScaleID = NULL,
   Value = NULL,
-  NumericValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

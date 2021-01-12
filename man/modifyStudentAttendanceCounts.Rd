@@ -6,12 +6,12 @@
 \usage{
 modifyStudentAttendanceCounts(
   StudentAttendanceCountsID,
-  DaysExcused = NULL,
-  DaysUnexcused = NULL,
-  DaysOther = NULL,
-  TardyCount = NULL,
   DaysAbsent = NULL,
   DaysEnrolled = NULL,
+  DaysExcused = NULL,
+  DaysOther = NULL,
+  DaysUnexcused = NULL,
+  TardyCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

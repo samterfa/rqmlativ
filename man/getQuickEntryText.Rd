@@ -6,13 +6,13 @@
 \usage{
 getQuickEntryText(
   QuickEntryTextID,
-  Entry = F,
-  Type = F,
-  UserIDOwner = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Entry = F,
   ModifiedTime = F,
+  Type = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserIDOwner = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

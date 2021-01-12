@@ -6,10 +6,10 @@
 \usage{
 modifyUserPreference(
   UserPreferenceID,
-  UserIDSecurity = NULL,
-  ThemeID = NULL,
   AccountSelection = NULL,
+  ThemeID = NULL,
   UseEmailMultifactorAuthentication = NULL,
+  UserIDSecurity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

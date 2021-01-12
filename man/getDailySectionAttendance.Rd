@@ -6,13 +6,13 @@
 \usage{
 getDailySectionAttendance(
   DailySectionAttendanceID,
-  CalendarDayID = F,
-  MeetID = F,
   AttendancePeriodID = F,
-  UserIDCreatedBy = F,
+  CalendarDayID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MeetID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

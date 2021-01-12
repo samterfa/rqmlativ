@@ -6,14 +6,14 @@
 \usage{
 getGASBRevenueAndExpenditureComparisonReport(
   GASBRevenueAndExpenditureComparisonReportID,
+  CreatedTime = F,
   FundBeginningBalance = F,
   FundEndingBalance = F,
-  GASBFundClassification = F,
   GASBExtractRunID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
+  GASBFundClassification = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

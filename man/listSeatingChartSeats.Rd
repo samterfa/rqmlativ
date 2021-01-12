@@ -6,14 +6,14 @@
 \usage{
 listSeatingChartSeats(
   searchConditionsList = NULL,
-  SeatingChartSeatID = F,
-  SeatingChartID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   RoomLayoutObjectID = F,
+  SeatingChartID = F,
+  SeatingChartSeatID = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,13 +6,13 @@
 \usage{
 listEntityGroupSetupEntities(
   searchConditionsList = NULL,
-  EntityGroupSetupEntityID = F,
-  EntityID = F,
-  EntityGroupSetupID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityGroupSetupEntityID = F,
+  EntityGroupSetupID = F,
+  EntityID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

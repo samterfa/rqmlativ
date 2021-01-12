@@ -5,14 +5,14 @@
 \title{Create a TempRollUnappliedPayment}
 \usage{
 createTempRollUnappliedPayment(
+  CreateCustomerEntityYear = NULL,
   CustomerID = NULL,
   CustomerName = NULL,
-  UnappliedAmount = NULL,
-  ExceptionReason = NULL,
-  RollType = NULL,
-  PayorID = NULL,
-  CreateCustomerEntityYear = NULL,
   ErrorCount = NULL,
+  ExceptionReason = NULL,
+  PayorID = NULL,
+  RollType = NULL,
+  UnappliedAmount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

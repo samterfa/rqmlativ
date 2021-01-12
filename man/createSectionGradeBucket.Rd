@@ -5,10 +5,10 @@
 \title{Create a SectionGradeBucket}
 \usage{
 createSectionGradeBucket(
-  SectionID = NULL,
   CalculationGroupGradeBucketID = NULL,
-  IsCalculationTypeOverridden = NULL,
   CalculationType = NULL,
+  IsCalculationTypeOverridden = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

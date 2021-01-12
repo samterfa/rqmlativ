@@ -5,15 +5,15 @@
 \title{Create a StudentParentAssociationDashboardV1}
 \usage{
 createStudentParentAssociationDashboardV1(
+  DashboardRunHistoryID = NULL,
   DistrictID = NULL,
+  EdFiRelationTypeID = NULL,
+  IsEmergencyContact = NULL,
+  IsPrimaryContact = NULL,
+  NameIDParent = NULL,
+  RelationTypeCode = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  NameIDParent = NULL,
-  EdFiRelationTypeID = NULL,
-  RelationTypeCode = NULL,
-  IsPrimaryContact = NULL,
-  IsEmergencyContact = NULL,
-  DashboardRunHistoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

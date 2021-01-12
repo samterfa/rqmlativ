@@ -5,8 +5,8 @@
 \title{Create an OnlineFormClearance}
 \usage{
 createOnlineFormClearance(
-  OnlineFormID = NULL,
   GroupIDSecurity = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

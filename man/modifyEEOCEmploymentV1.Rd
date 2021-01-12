@@ -6,12 +6,12 @@
 \usage{
 modifyEEOCEmploymentV1(
   EEOCEmploymentV1ID,
-  EEOCEmployeeV1ID = NULL,
   AnnualSalary = NULL,
-  IsFullTime = NULL,
-  IsNewHire = NULL,
+  EEOCEmployeeV1ID = NULL,
   FederalEEOCJobCategoryID = NULL,
   FederalEEOCJobCategoryValue = NULL,
+  IsFullTime = NULL,
+  IsNewHire = NULL,
   PositionTypeDescription = NULL,
   entityId = 1,
   query = NULL,

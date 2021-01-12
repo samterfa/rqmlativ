@@ -6,9 +6,9 @@
 \usage{
 createSchoolMintRunHistoryStudentError(
   SchoolMintRunHistoryID = NULL,
+  SchoolName = NULL,
   StudentIdentifier = NULL,
   StudentNameLFM = NULL,
-  SchoolName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

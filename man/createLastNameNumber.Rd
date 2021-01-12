@@ -5,8 +5,8 @@
 \title{Create a LastNameNumber}
 \usage{
 createLastNameNumber(
-  NameNumber = NULL,
   ConfigSystemID = NULL,
+  NameNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

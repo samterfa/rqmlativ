@@ -5,11 +5,11 @@
 \title{Create a VaccinationYearComplianceScheduleRule}
 \usage{
 createVaccinationYearComplianceScheduleRule(
-  VaccinationYearComplianceScheduleID = NULL,
   ComplianceScheduleRuleID = NULL,
-  VaccinationYearComplianceScheduleRuleIDClonedFrom = NULL,
   DoseIntervalID = NULL,
   RuleType = NULL,
+  VaccinationYearComplianceScheduleID = NULL,
+  VaccinationYearComplianceScheduleRuleIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,11 +5,11 @@
 \title{Create a DirectCertificationContactHistory}
 \usage{
 createDirectCertificationContactHistory(
+  Comment = NULL,
+  ContactMethod = NULL,
+  ContactTime = NULL,
   DirectCertificationID = NULL,
   NameID = NULL,
-  ContactTime = NULL,
-  ContactMethod = NULL,
-  Comment = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

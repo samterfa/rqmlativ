@@ -5,14 +5,14 @@
 \title{Create an OpenPeriodAnalysisStudent}
 \usage{
 createOpenPeriodAnalysisStudent(
+  FirstName = NULL,
+  GradeLevelCode = NULL,
+  IsActive = NULL,
+  LastName = NULL,
+  MiddleName = NULL,
   OpenPeriodAnalysisID = NULL,
   StudentID = NULL,
-  FirstName = NULL,
-  MiddleName = NULL,
-  LastName = NULL,
-  GradeLevelCode = NULL,
   StudentNumber = NULL,
-  IsActive = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

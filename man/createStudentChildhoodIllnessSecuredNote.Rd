@@ -5,8 +5,8 @@
 \title{Create a StudentChildhoodIllnessSecuredNote}
 \usage{
 createStudentChildhoodIllnessSecuredNote(
-  StudentChildhoodIllnessID = NULL,
   Note = NULL,
+  StudentChildhoodIllnessID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

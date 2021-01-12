@@ -6,13 +6,13 @@
 \usage{
 listDiabetesCareLogSecuredNotes(
   searchConditionsList = NULL,
-  DiabetesCareLogSecuredNoteID = F,
+  CreatedTime = F,
   DiabetesCareLogID = F,
+  DiabetesCareLogSecuredNoteID = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

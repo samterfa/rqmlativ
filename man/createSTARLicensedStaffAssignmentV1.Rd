@@ -5,6 +5,9 @@
 \title{Create a STARLicensedStaffAssignmentV1}
 \usage{
 createSTARLicensedStaffAssignmentV1(
+  LengthOfPeriod = NULL,
+  PeriodsPerWeek = NULL,
+  SchoolNumber = NULL,
   STARLicensedStaffEmploymentV1ID = NULL,
   StateSTARAssignmentCodeMNID = NULL,
   StateSTARAssignmentCodeMNValue = NULL,
@@ -12,9 +15,6 @@ createSTARLicensedStaffAssignmentV1(
   StateSTARGradeLevelMNValue = NULL,
   StateSTARModeOfTeachingMNID = NULL,
   StateSTARModeOfTeachingMNValue = NULL,
-  SchoolNumber = NULL,
-  PeriodsPerWeek = NULL,
-  LengthOfPeriod = NULL,
   TotalNumberOfPupils = NULL,
   entityId = 1,
   query = NULL,

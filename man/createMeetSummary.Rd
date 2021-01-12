@@ -5,14 +5,14 @@
 \title{Create a MeetSummary}
 \usage{
 createMeetSummary(
-  MeetID = NULL,
-  Period = NULL,
-  IsPrimary = NULL,
+  CalendarID = NULL,
   Days = NULL,
   EntityIDViewing = NULL,
-  CalendarID = NULL,
-  IsDefaultCalendar = NULL,
   HasOnlyHiddenDetails = NULL,
+  IsDefaultCalendar = NULL,
+  IsPrimary = NULL,
+  MeetID = NULL,
+  Period = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

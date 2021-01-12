@@ -6,14 +6,14 @@
 \usage{
 getCRDCSchoolTeacherAbsenteeismV1(
   CRDCSchoolTeacherAbsenteeismV1ID,
-  FTE = F,
   CivilRightsDataCollectionID = F,
   CivilRightsDataCollectionRunHistoryID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   FederalNCESSchoolID = F,
+  FTE = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

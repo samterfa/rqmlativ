@@ -6,8 +6,8 @@
 \usage{
 modifyStudentPlanThreadLock(
   StudentPlanThreadLockID,
-  StudentPlanID = NULL,
   DistrictID = NULL,
+  StudentPlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

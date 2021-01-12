@@ -6,9 +6,9 @@
 \usage{
 createNameWebsite(
   NameID = NULL,
+  Note = NULL,
   Rank = NULL,
   URL = NULL,
-  Note = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

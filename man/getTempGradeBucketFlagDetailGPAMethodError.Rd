@@ -6,12 +6,12 @@
 \usage{
 getTempGradeBucketFlagDetailGPAMethodError(
   TempGradeBucketFlagDetailGPAMethodErrorID,
-  GradeBucketFlagDetailGPAMethod = F,
-  ErrorString = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorString = F,
+  GradeBucketFlagDetailGPAMethod = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

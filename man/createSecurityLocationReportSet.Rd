@@ -5,10 +5,10 @@
 \title{Create a SecurityLocationReportSet}
 \usage{
 createSecurityLocationReportSet(
-  SecurityLocationID = NULL,
   DataObjectID = NULL,
   Name = NULL,
   PrimaryKeySource = NULL,
+  SecurityLocationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

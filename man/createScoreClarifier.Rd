@@ -7,11 +7,11 @@
 createScoreClarifier(
   Code = NULL,
   Description = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
   IsMissing = NULL,
   NoCount = NULL,
-  EntityID = NULL,
   SchoolYearID = NULL,
-  EntityGroupKey = NULL,
   ScoreClarifierIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

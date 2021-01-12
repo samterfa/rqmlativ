@@ -5,9 +5,9 @@
 \title{Create a TempImportPreviewResultRow}
 \usage{
 createTempImportPreviewResultRow(
-  ResultType = NULL,
-  ImportFileRowNumber = NULL,
   ErrorMessage = NULL,
+  ImportFileRowNumber = NULL,
+  ResultType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

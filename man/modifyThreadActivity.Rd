@@ -6,12 +6,12 @@
 \usage{
 modifyThreadActivity(
   ThreadActivityID,
-  ThreadName = NULL,
-  ServiceName = NULL,
-  ServerName = NULL,
-  ThreadQueue = NULL,
   LastSuccess = NULL,
+  ServerName = NULL,
+  ServiceName = NULL,
   StartTime = NULL,
+  ThreadName = NULL,
+  ThreadQueue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

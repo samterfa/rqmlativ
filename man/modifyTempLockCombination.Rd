@@ -6,10 +6,10 @@
 \usage{
 modifyTempLockCombination(
   TempLockCombinationID,
-  TempLockerID = NULL,
   Combination = NULL,
   CombinationNumber = NULL,
   FailureReason = NULL,
+  TempLockerID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

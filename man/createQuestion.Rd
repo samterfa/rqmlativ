@@ -5,11 +5,11 @@
 \title{Create a Question}
 \usage{
 createQuestion(
-  StaffID = NULL,
+  AllowStudentAttachments = NULL,
   Description = NULL,
   Instructions = NULL,
+  StaffID = NULL,
   Type = NULL,
-  AllowStudentAttachments = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

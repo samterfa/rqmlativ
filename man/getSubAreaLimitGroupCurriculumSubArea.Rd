@@ -6,12 +6,12 @@
 \usage{
 getSubAreaLimitGroupCurriculumSubArea(
   SubAreaLimitGroupCurriculumSubAreaID,
-  SubAreaLimitGroupID = F,
-  CurriculumSubAreaID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  CurriculumSubAreaID = F,
   ModifiedTime = F,
+  SubAreaLimitGroupID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

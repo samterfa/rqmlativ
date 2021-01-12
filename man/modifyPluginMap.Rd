@@ -6,9 +6,9 @@
 \usage{
 modifyPluginMap(
   PluginMapID,
-  ReportEvents = NULL,
-  PluginID = NULL,
   MapID = NULL,
+  PluginID = NULL,
+  ReportEvents = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

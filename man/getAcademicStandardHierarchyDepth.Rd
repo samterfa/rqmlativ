@@ -6,14 +6,14 @@
 \usage{
 getAcademicStandardHierarchyDepth(
   AcademicStandardHierarchyDepthID,
-  DistrictGroupKey = F,
   AcademicStandardID = F,
-  HierarchyDepthID = F,
   AcademicStandardIDAtLevel = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DistrictGroupKey = F,
+  HierarchyDepthID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

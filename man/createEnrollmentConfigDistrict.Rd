@@ -5,12 +5,12 @@
 \title{Create an EnrollmentConfigDistrict}
 \usage{
 createEnrollmentConfigDistrict(
+  AllowDualEnrollment = NULL,
   DistrictID = NULL,
   EntryDaysBeforeCalendarStart = NULL,
-  WithdrawalDaysAfterCalendarEnd = NULL,
   NumberDaysBackdateEntry = NULL,
   NumberDaysBackdateWithdrawal = NULL,
-  AllowDualEnrollment = NULL,
+  WithdrawalDaysAfterCalendarEnd = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

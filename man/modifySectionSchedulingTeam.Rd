@@ -6,8 +6,8 @@
 \usage{
 modifySectionSchedulingTeam(
   SectionSchedulingTeamID,
-  SectionID = NULL,
   SchedulingTeamID = NULL,
+  SectionID = NULL,
   SectionSchedulingTeamIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

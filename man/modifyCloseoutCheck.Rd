@@ -6,9 +6,9 @@
 \usage{
 modifyCloseoutCheck(
   CloseoutCheckID,
-  CloseoutTransactionID = NULL,
-  CheckNumber = NULL,
   Amount = NULL,
+  CheckNumber = NULL,
+  CloseoutTransactionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

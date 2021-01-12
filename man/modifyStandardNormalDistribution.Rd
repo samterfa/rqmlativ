@@ -6,8 +6,8 @@
 \usage{
 modifyStandardNormalDistribution(
   StandardNormalDistributionID,
-  ZScore = NULL,
   Probability = NULL,
+  ZScore = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

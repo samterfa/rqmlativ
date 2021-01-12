@@ -6,15 +6,15 @@
 \usage{
 getBenchmarkingSurveyInstance(
   BenchmarkingSurveyInstanceID,
-  UserIDOwner = F,
   BenchmarkingSurveyID = F,
   Comment = F,
   ContactEmail = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
   TakenOnMobile = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserIDOwner = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

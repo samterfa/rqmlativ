@@ -5,14 +5,14 @@
 \title{Create a TempStudentThresholdPeriodRecord}
 \usage{
 createTempStudentThresholdPeriodRecord(
-  TempStudentDisciplineThresholdAttendanceReportRunHistoryRecordID = NULL,
-  StudentAttendancePeriodID = NULL,
+  AttendancePeriodID = NULL,
   AttendanceTypeID = NULL,
   CalendarDayID = NULL,
-  AttendancePeriodID = NULL,
-  StudentSectionID = NULL,
-  SectionID = NULL,
   Date = NULL,
+  SectionID = NULL,
+  StudentAttendancePeriodID = NULL,
+  StudentSectionID = NULL,
+  TempStudentDisciplineThresholdAttendanceReportRunHistoryRecordID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

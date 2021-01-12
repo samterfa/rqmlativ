@@ -6,9 +6,9 @@
 \usage{
 listWinterSports(
   searchConditionsList = NULL,
-  WinterSportID = F,
   Code = F,
   WinterSport = F,
+  WinterSportID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

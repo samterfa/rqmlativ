@@ -6,8 +6,8 @@
 \usage{
 modifyInjuryOccurrenceNote(
   InjuryOccurrenceNoteID,
-  Note = NULL,
   InjuryOccurrenceID = NULL,
+  Note = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

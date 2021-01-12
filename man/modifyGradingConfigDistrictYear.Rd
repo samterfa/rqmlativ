@@ -6,11 +6,11 @@
 \usage{
 modifyGradingConfigDistrictYear(
   ConfigDistrictYearID,
+  ConfigDistrictYearIDClonedFrom = NULL,
   DistrictID = NULL,
   SchoolYearID = NULL,
-  ConfigDistrictYearIDClonedFrom = NULL,
-  UseStudentSectionLinkCourseType = NULL,
   StudentSectionLinkOption = NULL,
+  UseStudentSectionLinkCourseType = NULL,
   UseStudentSectionLinking = NULL,
   entityId = 1,
   query = NULL,

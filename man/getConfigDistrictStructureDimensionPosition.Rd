@@ -7,11 +7,11 @@
 getConfigDistrictStructureDimensionPosition(
   ConfigDistrictStructureDimensionPositionID,
   ConfigDistrictID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Position = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

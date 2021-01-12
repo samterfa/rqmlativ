@@ -6,9 +6,9 @@
 \usage{
 listEthnicityMAS(
   searchConditionsList = NULL,
-  EthnicityMAID = F,
   Code = F,
   Ethnicity = F,
+  EthnicityMAID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

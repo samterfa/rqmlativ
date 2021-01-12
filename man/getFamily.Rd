@@ -6,13 +6,13 @@
 \usage{
 getFamily(
   FamilyID,
-  LanguageIDHome = F,
   AttachmentCount = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   HasStudentInSpecificDistrict = F,
+  LanguageIDHome = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

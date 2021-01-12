@@ -5,8 +5,8 @@
 \title{Create a StudentGroupAssignment}
 \usage{
 createStudentGroupAssignment(
-  StudentGroupID = NULL,
   AssignmentID = NULL,
+  StudentGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

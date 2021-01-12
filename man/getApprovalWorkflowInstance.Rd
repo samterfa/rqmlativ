@@ -6,14 +6,14 @@
 \usage{
 getApprovalWorkflowInstance(
   ApprovalWorkflowInstanceID,
+  ApprovalObjectID = F,
   ApprovalType = F,
   ApprovalTypeCode = F,
-  ApprovalObjectID = F,
-  WorkflowInstanceID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  WorkflowInstanceID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

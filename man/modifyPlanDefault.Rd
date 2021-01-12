@@ -6,10 +6,10 @@
 \usage{
 modifyPlanDefault(
   PlanDefaultID,
-  PlanID = NULL,
   EntityID = NULL,
-  GradYearLow = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
+  PlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyFamilyGuardian(
   FamilyGuardianID,
-  NameID = NULL,
   FamilyID = NULL,
+  NameID = NULL,
   Rank = NULL,
   entityId = 1,
   query = NULL,

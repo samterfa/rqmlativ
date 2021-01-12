@@ -6,8 +6,8 @@
 \usage{
 modifySectionSchedulerDayRotationForMeet(
   SectionSchedulerDayRotationForMeetID,
-  MeetID = NULL,
   DayRotationID = NULL,
+  MeetID = NULL,
   SectionSchedulerDayRotationForMeetIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

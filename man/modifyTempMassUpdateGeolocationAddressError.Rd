@@ -6,9 +6,9 @@
 \usage{
 modifyTempMassUpdateGeolocationAddressError(
   TempMassUpdateGeolocationAddressErrorID,
-  ErrorText = NULL,
   ErrorField = NULL,
   ErrorNumber = NULL,
+  ErrorText = NULL,
   TempMassUpdateGeolocationAddressID = NULL,
   entityId = 1,
   query = NULL,

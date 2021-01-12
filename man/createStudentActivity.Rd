@@ -5,11 +5,11 @@
 \title{Create a StudentActivity}
 \usage{
 createStudentActivity(
-  StudentID = NULL,
   ActivityID = NULL,
   CourseID = NULL,
   IsActive = NULL,
   StudentActivityIDClonedFrom = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

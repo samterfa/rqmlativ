@@ -6,13 +6,13 @@
 \usage{
 modifyRoleAttachmentType(
   RoleAttachmentTypeID,
-  RoleID = NULL,
-  AttachmentTypeID = NULL,
-  Portal = NULL,
-  AllowRead = NULL,
-  AllowUpdate = NULL,
   AllowCreate = NULL,
   AllowDelete = NULL,
+  AllowRead = NULL,
+  AllowUpdate = NULL,
+  AttachmentTypeID = NULL,
+  Portal = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

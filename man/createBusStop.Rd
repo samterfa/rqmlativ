@@ -5,13 +5,13 @@
 \title{Create a BusStop}
 \usage{
 createBusStop(
-  ArrivalTime = NULL,
-  DepartureTime = NULL,
   AddressID = NULL,
-  Description = NULL,
-  StopNumber = NULL,
+  ArrivalTime = NULL,
   BusRouteID = NULL,
   BusStopIDClonedFrom = NULL,
+  DepartureTime = NULL,
+  Description = NULL,
+  StopNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

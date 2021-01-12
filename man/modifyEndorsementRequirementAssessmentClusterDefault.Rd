@@ -6,8 +6,8 @@
 \usage{
 modifyEndorsementRequirementAssessmentClusterDefault(
   EndorsementRequirementAssessmentClusterDefaultID,
-  EndorsementRequirementAssessmentDefaultID = NULL,
   ClusterScoreType = NULL,
+  EndorsementRequirementAssessmentDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

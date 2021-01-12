@@ -5,10 +5,10 @@
 \title{Create a SchedulingPeriodDisplayPeriod}
 \usage{
 createSchedulingPeriodDisplayPeriod(
-  SchedulingPeriodID = NULL,
   DisplayPeriodID = NULL,
   EntityGroupKey = NULL,
   SchedulingPeriodDisplayPeriodIDClonedFrom = NULL,
+  SchedulingPeriodID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

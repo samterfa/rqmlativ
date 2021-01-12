@@ -6,11 +6,11 @@
 \usage{
 modifyAtRiskWithdrawalRecordCriteria(
   AtRiskWithdrawalRecordCriteriaID,
-  WithdrawalDateHigh = NULL,
-  WithdrawalDateLow = NULL,
-  WithdrawalCodeID = NULL,
   AtRiskIdentificationCriterionID = NULL,
   CriteriaLevel = NULL,
+  WithdrawalCodeID = NULL,
+  WithdrawalDateHigh = NULL,
+  WithdrawalDateLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

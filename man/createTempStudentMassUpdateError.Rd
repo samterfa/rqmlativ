@@ -5,9 +5,9 @@
 \title{Create a TempStudentMassUpdateError}
 \usage{
 createTempStudentMassUpdateError(
+  FailureReason = NULL,
   FullNameLFM = NULL,
   Type = NULL,
-  FailureReason = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

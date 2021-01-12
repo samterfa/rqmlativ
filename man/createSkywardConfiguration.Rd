@@ -5,9 +5,10 @@
 \title{Create a SkywardConfiguration}
 \usage{
 createSkywardConfiguration(
-  EncryptionKey = NULL,
-  AppPoolValidationKey = NULL,
   AppPoolDecryptionKey = NULL,
+  AppPoolValidationKey = NULL,
+  EncryptionKey = NULL,
+  SkywardVersion = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

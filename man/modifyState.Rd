@@ -7,8 +7,8 @@
 modifyState(
   StateID,
   Code = NULL,
-  DisplayName = NULL,
   CountryCode = NULL,
+  DisplayName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

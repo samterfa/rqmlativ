@@ -6,12 +6,12 @@
 \usage{
 listGASBStatementOfNetAssetsTotalViews(
   searchConditionsList = NULL,
+  DisplayOrder = F,
+  GASBExtractRunID = F,
   GovernmentalNetAmount = F,
   ProprietaryNetAmount = F,
-  TotalNetAmount = F,
   StatementOfNetAssetsTotalType = F,
-  GASBExtractRunID = F,
-  DisplayOrder = F,
+  TotalNetAmount = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

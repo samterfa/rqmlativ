@@ -5,14 +5,14 @@
 \title{Create a GraduationRequirementsConfigDistrict}
 \usage{
 createGraduationRequirementsConfigDistrict(
-  DistrictID = NULL,
   CourseWorkAppliedByType = NULL,
-  IncludeInProgressCredit = NULL,
-  IncludeFutureCredit = NULL,
-  TurnOffAutomaticCalculation = NULL,
+  DistrictID = NULL,
   GradingPeriodEndDateLastCheckedDate = NULL,
-  UsePriorToLastGradeLevel = NULL,
+  IncludeFutureCredit = NULL,
+  IncludeInProgressCredit = NULL,
+  TurnOffAutomaticCalculation = NULL,
   TurnOffAutomaticEndorsementCalculation = NULL,
+  UsePriorToLastGradeLevel = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

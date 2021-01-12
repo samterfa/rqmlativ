@@ -5,13 +5,13 @@
 \title{Create a LocationDashboardV1}
 \usage{
 createLocationDashboardV1(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  SchoolID = NULL,
   ClassroomIdentificationCode = NULL,
+  DashboardRunHistoryID = NULL,
+  DistrictID = NULL,
   MaximumNumberOfSeats = NULL,
   OptimalNumberOfSeats = NULL,
-  DashboardRunHistoryID = NULL,
+  SchoolID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

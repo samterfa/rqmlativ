@@ -6,13 +6,13 @@
 \usage{
 getTempYearEndDateClone(
   TempYearEndDateCloneID,
-  SourceDate = F,
-  TargetDate = F,
-  SourceDateUsedBy = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SourceDate = F,
+  SourceDateUsedBy = F,
+  TargetDate = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

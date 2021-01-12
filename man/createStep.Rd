@@ -5,13 +5,13 @@
 \title{Create a Step}
 \usage{
 createStep(
-  OnlineFormID = NULL,
-  Name = NULL,
-  Message = NULL,
-  IsRequired = NULL,
   IsActive = NULL,
-  Order = NULL,
   IsReadOnlyForNonPrimaryFamily = NULL,
+  IsRequired = NULL,
+  Message = NULL,
+  Name = NULL,
+  OnlineFormID = NULL,
+  Order = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

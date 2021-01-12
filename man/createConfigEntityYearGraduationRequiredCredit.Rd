@@ -6,9 +6,9 @@
 \usage{
 createConfigEntityYearGraduationRequiredCredit(
   ConfigEntityYearID = NULL,
-  GradYearLow = NULL,
-  GradYearHigh = NULL,
   CreditsRequired = NULL,
+  GradYearHigh = NULL,
+  GradYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

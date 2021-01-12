@@ -6,14 +6,14 @@
 \usage{
 modifyACAEmployerMonthV2(
   ACAEmployerMonthV2ID,
-  ACATransmissionID = NULL,
+  ACAMonth = NULL,
   ACASubmissionRunHistoryID = NULL,
+  ACATransmissionID = NULL,
   DistrictID = NULL,
   EmployerID = NULL,
-  ACAMonth = NULL,
+  IsAggregatedGroup = NULL,
   OffersMinimumEssentialCoverage = NULL,
   TotalEmployeeCount = NULL,
-  IsAggregatedGroup = NULL,
   UniqueExportIdentifierParent = NULL,
   UniqueExportIdentifierSelf = NULL,
   entityId = 1,

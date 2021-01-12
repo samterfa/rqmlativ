@@ -6,14 +6,14 @@
 \usage{
 modifyIncidentOffenseNameWeapon(
   IncidentOffenseNameWeaponID,
+  GunFoundInTrunk = NULL,
+  GunWasInCase = NULL,
+  GunWasLoaded = NULL,
   IncidentOffenseNameID = NULL,
-  WeaponID = NULL,
   MeetsFederalStatuteOfDangerousWeapon = NULL,
   MeetsStateStatuteOfDangerousWeapon = NULL,
-  GunWasLoaded = NULL,
-  GunWasInCase = NULL,
-  GunFoundInTrunk = NULL,
   WeaponCount = NULL,
+  WeaponID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

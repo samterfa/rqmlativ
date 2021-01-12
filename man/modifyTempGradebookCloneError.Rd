@@ -7,11 +7,11 @@
 modifyTempGradebookCloneError(
   TempGradebookCloneErrorID,
   CalculationGroupGradeBucketID = NULL,
-  SectionID = NULL,
   Field = NULL,
-  Message = NULL,
   GradeBucketLabel = NULL,
+  Message = NULL,
   RecordType = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

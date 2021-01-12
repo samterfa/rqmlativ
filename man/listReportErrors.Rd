@@ -6,13 +6,13 @@
 \usage{
 listReportErrors(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ErrorMessage = F,
+  ModifiedTime = F,
   ReportErrorID = F,
   ReportID = F,
-  ErrorMessage = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

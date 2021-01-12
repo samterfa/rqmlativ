@@ -6,15 +6,15 @@
 \usage{
 modifySectionSchedulerProposedMeetConflict(
   SectionSchedulerProposedMeetConflictID,
-  SectionSchedulerProposedMeetID = NULL,
   ConflictType = NULL,
+  CourseID = NULL,
   Description = NULL,
   Name = NULL,
-  Severity = NULL,
-  CourseID = NULL,
   NumberOfActualConflicts = NULL,
   NumberOfCommonRequests = NULL,
   NumberOfEstimatedConflicts = NULL,
+  SectionSchedulerProposedMeetID = NULL,
+  Severity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

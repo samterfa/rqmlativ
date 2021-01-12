@@ -6,15 +6,15 @@
 \usage{
 getSortGroup(
   SortGroupID,
-  ObjectID = F,
+  CreatedTime = F,
   IsDefault = F,
+  ModifiedTime = F,
   Name = F,
+  ObjectID = F,
   SkywardHash = F,
   SkywardID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

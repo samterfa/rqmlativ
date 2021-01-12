@@ -5,12 +5,12 @@
 \title{Create a TempStudentTransportation}
 \usage{
 createTempStudentTransportation(
+  Exceptions = NULL,
+  StartDate = NULL,
+  StudentID = NULL,
   StudentNameLFM = NULL,
   StudentNumber = NULL,
   TransportationCategoryDescription = NULL,
-  StartDate = NULL,
-  Exceptions = NULL,
-  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

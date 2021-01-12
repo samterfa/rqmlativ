@@ -5,8 +5,8 @@
 \title{Create an InjuryOccurrenceBodyPartInjury}
 \usage{
 createInjuryOccurrenceBodyPartInjury(
-  InjuryOccurrenceBodyPartID = NULL,
   InjuryID = NULL,
+  InjuryOccurrenceBodyPartID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

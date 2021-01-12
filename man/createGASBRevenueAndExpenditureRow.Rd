@@ -5,11 +5,11 @@
 \title{Create a GASBRevenueAndExpenditureRow}
 \usage{
 createGASBRevenueAndExpenditureRow(
-  GASBRevenueAndExpenditureReportID = NULL,
-  TotalFunds = NULL,
   FundBalanceType = NULL,
   GASBExtractRunID = NULL,
+  GASBRevenueAndExpenditureReportID = NULL,
   RowDescription = NULL,
+  TotalFunds = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

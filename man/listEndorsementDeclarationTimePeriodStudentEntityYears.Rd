@@ -6,13 +6,13 @@
 \usage{
 listEndorsementDeclarationTimePeriodStudentEntityYears(
   searchConditionsList = NULL,
-  EndorsementDeclarationTimePeriodStudentEntityYearID = F,
+  CreatedTime = F,
   EndorsementDeclarationTimePeriodID = F,
+  EndorsementDeclarationTimePeriodStudentEntityYearID = F,
+  ModifiedTime = F,
   StudentEntityYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

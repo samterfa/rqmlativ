@@ -5,12 +5,12 @@
 \title{Create a LanguageSchoolYear}
 \usage{
 createLanguageSchoolYear(
-  StateLanguageCodeMNID = NULL,
-  LanguageID = NULL,
-  SchoolYearID = NULL,
   EdFiLanguageID = NULL,
+  LanguageID = NULL,
   LanguageSchoolYearIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   StateHeadStartLanguageMNID = NULL,
+  StateLanguageCodeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

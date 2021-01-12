@@ -5,16 +5,16 @@
 \title{Create a DoseMinimumAge}
 \usage{
 createDoseMinimumAge(
-  ComplianceScheduleDetailID = NULL,
-  DoseNumber = NULL,
   Age = NULL,
   AgeUnitType = NULL,
+  ComplianceScheduleDetailID = NULL,
+  DoseMinimumAgeIDClonedFrom = NULL,
+  DoseNumber = NULL,
   GracePeriodType = NULL,
   GraceValue = NULL,
-  VaccineDateLow = NULL,
-  VaccineDateHigh = NULL,
   IsRequired = NULL,
-  DoseMinimumAgeIDClonedFrom = NULL,
+  VaccineDateHigh = NULL,
+  VaccineDateLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

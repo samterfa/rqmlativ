@@ -5,10 +5,10 @@
 \title{Create a StudentCommentBucket}
 \usage{
 createStudentCommentBucket(
-  GradingPeriodID = NULL,
-  StudentSectionID = NULL,
   CommentBucketID = NULL,
   CommentCodeID = NULL,
+  GradingPeriodID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

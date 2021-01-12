@@ -6,9 +6,9 @@
 \usage{
 modifyGradeReportAcademicSessionTemplateCourse(
   GradeReportAcademicSessionTemplateCourseID,
-  GradeReportAcademicSessionTemplateID = NULL,
   CourseID = NULL,
   GradeReportAcademicSessionTemplateCourseIDClonedFrom = NULL,
+  GradeReportAcademicSessionTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

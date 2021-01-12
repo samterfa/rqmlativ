@@ -6,9 +6,9 @@
 \usage{
 createCourseGPAMethodGradeReferenceOverride(
   CourseGPAMethodID = NULL,
+  GPACredits = NULL,
   GradeReferenceID = NULL,
   PointSetEntityID = NULL,
-  GPACredits = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyBudgetPublicationDetailV1(
   BudgetPublicationDetailV1ID,
-  BudgetPublicationExtractRunID = NULL,
-  CellRow = NULL,
-  CellColumn = NULL,
   Amount = NULL,
+  BudgetPublicationExtractRunID = NULL,
+  CellColumn = NULL,
+  CellRow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

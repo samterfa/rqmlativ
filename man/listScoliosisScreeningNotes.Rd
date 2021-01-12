@@ -6,13 +6,13 @@
 \usage{
 listScoliosisScreeningNotes(
   searchConditionsList = NULL,
-  ScoliosisScreeningNoteID = F,
-  ScoliosisScreeningID = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  ScoliosisScreeningID = F,
+  ScoliosisScreeningNoteID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

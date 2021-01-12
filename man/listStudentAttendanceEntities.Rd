@@ -6,8 +6,8 @@
 \usage{
 listStudentAttendanceEntities(
   searchConditionsList = NULL,
-  StudentAttendanceID = F,
   EntityID = F,
+  StudentAttendanceID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

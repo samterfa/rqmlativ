@@ -5,12 +5,12 @@
 \title{Create a MARSSSubmissionRunHistory}
 \usage{
 createMARSSSubmissionRunHistory(
-  MARSSSubmissionID = NULL,
-  StartDateTime = NULL,
   EndDateTime = NULL,
-  Type = NULL,
+  MARSSSubmissionID = NULL,
   MediaID = NULL,
+  StartDateTime = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

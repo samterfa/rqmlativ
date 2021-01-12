@@ -7,8 +7,8 @@
 modifyMeetSummaryDetail(
   MeetSummaryDetailID,
   DisplayPeriodID = NULL,
-  MeetSummaryID = NULL,
   IsPrimary = NULL,
+  MeetSummaryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

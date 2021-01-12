@@ -6,12 +6,12 @@
 \usage{
 getStrategyTier(
   StrategyTierID,
+  CreatedTime = F,
+  ModifiedTime = F,
   StrategyID = F,
   TierID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

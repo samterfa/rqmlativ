@@ -5,10 +5,10 @@
 \title{Create a CommunityServiceHours}
 \usage{
 createCommunityServiceHours(
-  DistrictID = NULL,
-  Date = NULL,
-  Hours = NULL,
   Comment = NULL,
+  Date = NULL,
+  DistrictID = NULL,
+  Hours = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

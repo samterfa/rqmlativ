@@ -6,14 +6,14 @@
 \usage{
 listTempDroppedStudentAttendancePeriodErrors(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ErrorDescription = F,
+  ErrorNumber = F,
+  ModifiedTime = F,
   TempDroppedStudentAttendancePeriodErrorID = F,
   TempDroppedStudentAttendancePeriodRecordID = F,
-  ErrorNumber = F,
-  ErrorDescription = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

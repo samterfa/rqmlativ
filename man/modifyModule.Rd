@@ -6,8 +6,8 @@
 \usage{
 modifyModule(
   ModuleID,
-  PendingName = NULL,
   CurrentName = NULL,
+  PendingName = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getUserImportApproval(
   UserImportApprovalID,
-  UserID = F,
   ApprovalDate = F,
-  IsExpired = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  IsExpired = F,
   ModifiedTime = F,
+  UserID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

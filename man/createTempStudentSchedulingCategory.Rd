@@ -5,13 +5,13 @@
 \title{Create a TempStudentSchedulingCategory}
 \usage{
 createTempStudentSchedulingCategory(
-  StudentNameLFM = NULL,
-  SourceStudentEntityYearID = NULL,
-  SourceCategoriesDisplayValue = NULL,
-  TargetStudentEntityYearID = NULL,
-  TargetCategoriesDisplayValue = NULL,
-  ProposedCategoriesDisplayValue = NULL,
   Message = NULL,
+  ProposedCategoriesDisplayValue = NULL,
+  SourceCategoriesDisplayValue = NULL,
+  SourceStudentEntityYearID = NULL,
+  StudentNameLFM = NULL,
+  TargetCategoriesDisplayValue = NULL,
+  TargetStudentEntityYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

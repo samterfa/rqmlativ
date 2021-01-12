@@ -7,10 +7,10 @@
 modifyMonthlyClaimExclusion(
   MonthlyClaimExclusionID,
   CustomerID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
   ExcludeFromBreakfast = NULL,
   ExcludeFromLunch = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

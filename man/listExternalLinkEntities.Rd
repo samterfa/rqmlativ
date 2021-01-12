@@ -6,13 +6,13 @@
 \usage{
 listExternalLinkEntities(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  EntityID = F,
   ExternalLinkEntityID = F,
   ExternalLinkID = F,
-  EntityID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,13 +6,13 @@
 \usage{
 listNotificationAttendanceTypes(
   searchConditionsList = NULL,
+  AttendanceTypeID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NotificationAttendanceTypeID = F,
   NotificationID = F,
-  AttendanceTypeID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,9 +6,9 @@
 \usage{
 createForm1099MExportElectronicFile(
   Form1099MYearID = NULL,
-  TransmitterControlCode = NULL,
   IsCombinedStateFederal = NULL,
   IsTestFile = NULL,
+  TransmitterControlCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

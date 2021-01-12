@@ -5,9 +5,9 @@
 \title{Create a SystemEmailTypeConfig}
 \usage{
 createSystemEmailTypeConfig(
+  EmailRecipientType = NULL,
   EmailTypeID = NULL,
   Rank = NULL,
-  EmailRecipientType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

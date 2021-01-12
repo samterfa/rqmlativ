@@ -6,10 +6,10 @@
 \usage{
 modifyOnlineFormReportableObject(
   OnlineFormReportableObjectID,
-  ObjectID = NULL,
-  OnlineFormID = NULL,
   DeleteOrder = NULL,
   ElementID = NULL,
+  ObjectID = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

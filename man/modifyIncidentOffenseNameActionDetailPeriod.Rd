@@ -6,8 +6,8 @@
 \usage{
 modifyIncidentOffenseNameActionDetailPeriod(
   IncidentOffenseNameActionDetailPeriodID,
-  IncidentOffenseNameActionDetailID = NULL,
   AttendancePeriodID = NULL,
+  IncidentOffenseNameActionDetailID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

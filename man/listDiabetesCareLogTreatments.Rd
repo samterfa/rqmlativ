@@ -6,13 +6,13 @@
 \usage{
 listDiabetesCareLogTreatments(
   searchConditionsList = NULL,
-  DiabetesCareLogTreatmentID = F,
-  DiabetesCareLogID = F,
-  DiabetesTreatmentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DiabetesCareLogID = F,
+  DiabetesCareLogTreatmentID = F,
+  DiabetesTreatmentID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

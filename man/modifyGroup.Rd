@@ -6,12 +6,12 @@
 \usage{
 modifyGroup(
   GroupID,
-  Name = NULL,
-  Description = NULL,
-  IsActive = NULL,
-  EdFiStaffClassificationID = NULL,
-  PositionTitleOverride = NULL,
   AutoAddToUserType = NULL,
+  Description = NULL,
+  EdFiStaffClassificationID = NULL,
+  IsActive = NULL,
+  Name = NULL,
+  PositionTitleOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

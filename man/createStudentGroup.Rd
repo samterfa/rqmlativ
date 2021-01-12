@@ -5,10 +5,10 @@
 \title{Create a StudentGroup}
 \usage{
 createStudentGroup(
-  SectionID = NULL,
-  Name = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  Name = NULL,
+  SectionID = NULL,
+  StartDate = NULL,
   StudentGroupSyncKey = NULL,
   entityId = 1,
   query = NULL,

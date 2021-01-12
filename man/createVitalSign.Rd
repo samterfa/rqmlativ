@@ -5,15 +5,15 @@
 \title{Create a VitalSign}
 \usage{
 createVitalSign(
-  PhysicalScreeningID = NULL,
-  BloodPressureSystolic = NULL,
   BloodPressureDiastolic = NULL,
+  BloodPressureSystolic = NULL,
+  NameOfficeVisitID = NULL,
+  PhysicalScreeningID = NULL,
   PulseRate = NULL,
   Respiration = NULL,
+  SaturationOfPeripheralOxygen = NULL,
   Temperature = NULL,
   TimeTaken = NULL,
-  SaturationOfPeripheralOxygen = NULL,
-  NameOfficeVisitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

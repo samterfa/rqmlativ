@@ -6,14 +6,14 @@
 \usage{
 listCalendarDayBellScheduleGroupBellSchedules(
   searchConditionsList = NULL,
+  BellScheduleGroupBellScheduleID = F,
+  BellScheduleGroupID = F,
   CalendarDayBellScheduleGroupBellScheduleID = F,
   CalendarDayID = F,
-  BellScheduleGroupID = F,
-  BellScheduleGroupBellScheduleID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

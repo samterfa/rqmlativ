@@ -6,14 +6,14 @@
 \usage{
 listNameTitles(
   searchConditionsList = NULL,
-  NameTitleID = F,
   Code = F,
-  Description = F,
   CodeDescription = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  NameTitleID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

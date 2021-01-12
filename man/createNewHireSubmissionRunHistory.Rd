@@ -5,12 +5,12 @@
 \title{Create a NewHireSubmissionRunHistory}
 \usage{
 createNewHireSubmissionRunHistory(
+  EndDateTime = NULL,
+  MediaID = NULL,
   NewHireSubmissionID = NULL,
   StartDateTime = NULL,
-  EndDateTime = NULL,
-  Type = NULL,
-  MediaID = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

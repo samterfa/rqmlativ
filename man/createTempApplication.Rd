@@ -5,13 +5,13 @@
 \title{Create a TempApplication}
 \usage{
 createTempApplication(
-  ApplicationNumber = NULL,
   ApplicationID = NULL,
-  FullNameLFM = NULL,
+  ApplicationNumber = NULL,
   EffectiveDate = NULL,
   ExceptionMessage = NULL,
-  HasExceptions = NULL,
   ExceptionStatus = NULL,
+  FullNameLFM = NULL,
+  HasExceptions = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

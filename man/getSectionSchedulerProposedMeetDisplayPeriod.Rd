@@ -6,12 +6,12 @@
 \usage{
 getSectionSchedulerProposedMeetDisplayPeriod(
   SectionSchedulerProposedMeetDisplayPeriodID,
-  SectionSchedulerProposedMeetID = F,
-  DisplayPeriodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayPeriodID = F,
   ModifiedTime = F,
+  SectionSchedulerProposedMeetID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

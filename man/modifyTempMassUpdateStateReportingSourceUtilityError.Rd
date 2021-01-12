@@ -6,8 +6,8 @@
 \usage{
 modifyTempMassUpdateStateReportingSourceUtilityError(
   TempMassUpdateStateReportingSourceUtilityErrorID,
-  RecordIdentifier = NULL,
   FailureReason = NULL,
+  RecordIdentifier = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,11 +5,11 @@
 \title{Create a GASBStatementOfNetAssetsTotalView}
 \usage{
 createGASBStatementOfNetAssetsTotalView(
+  DisplayOrder = NULL,
   GovernmentalNetAmount = NULL,
   ProprietaryNetAmount = NULL,
-  TotalNetAmount = NULL,
   StatementOfNetAssetsTotalType = NULL,
-  DisplayOrder = NULL,
+  TotalNetAmount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

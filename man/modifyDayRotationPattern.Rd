@@ -6,10 +6,10 @@
 \usage{
 modifyDayRotationPattern(
   DayRotationPatternID,
-  EntityGroupKey = NULL,
-  DayRotationID = NULL,
   DayNumber = NULL,
+  DayRotationID = NULL,
   DayRotationPatternIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

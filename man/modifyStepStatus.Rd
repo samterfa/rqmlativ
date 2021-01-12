@@ -6,10 +6,10 @@
 \usage{
 modifyStepStatus(
   StepStatusID,
-  OnlineFormStatusID = NULL,
-  StepID = NULL,
-  StatusType = NULL,
   DenialMessage = NULL,
+  OnlineFormStatusID = NULL,
+  StatusType = NULL,
+  StepID = NULL,
   ValidationMessage = NULL,
   entityId = 1,
   query = NULL,

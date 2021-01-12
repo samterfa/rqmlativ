@@ -5,12 +5,12 @@
 \title{Create a GradeReportAcademicSessionTemplate}
 \usage{
 createGradeReportAcademicSessionTemplate(
+  BreakBySchoolYear = NULL,
+  CourseFilter = NULL,
   GradeReportAcademicSessionTemplateGroupID = NULL,
   HeaderDescription = NULL,
   IncludeNonCreditEarningCourses = NULL,
   SortNumber = NULL,
-  CourseFilter = NULL,
-  BreakBySchoolYear = NULL,
   UseSchoolYearDescending = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getCourseAlternate(
   CourseAlternateID,
-  CourseIDPrimary = F,
-  CourseIDAlternate = F,
   CourseAlternateIDClonedFrom = F,
-  UserIDCreatedBy = F,
+  CourseIDAlternate = F,
+  CourseIDPrimary = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

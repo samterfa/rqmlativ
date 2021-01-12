@@ -6,14 +6,14 @@
 \usage{
 modifySubmissionSummary(
   SubmissionSummaryID,
-  Interchange = NULL,
   ComplexType = NULL,
   FatalErrorCount = NULL,
+  Interchange = NULL,
+  SecondaryRecordCount = NULL,
   SkywardFatalErrorCount = NULL,
   SpecialWarningCount = NULL,
-  WarningCount = NULL,
   TotalErrorCount = NULL,
-  SecondaryRecordCount = NULL,
+  WarningCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

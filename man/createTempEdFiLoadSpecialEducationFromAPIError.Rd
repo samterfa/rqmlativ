@@ -5,11 +5,11 @@
 \title{Create a TempEdFiLoadSpecialEducationFromAPIError}
 \usage{
 createTempEdFiLoadSpecialEducationFromAPIError(
-  StudentID = NULL,
-  LastName = NULL,
-  FirstName = NULL,
-  MiddleName = NULL,
   FailureReason = NULL,
+  FirstName = NULL,
+  LastName = NULL,
+  MiddleName = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

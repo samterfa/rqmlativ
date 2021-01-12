@@ -6,13 +6,13 @@
 \usage{
 listStandardPlacementMNS(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  CurriculumYearID = F,
+  ModifiedTime = F,
   StandardPlacementMNID = F,
   StateStandardCodeMNID = F,
-  CurriculumYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

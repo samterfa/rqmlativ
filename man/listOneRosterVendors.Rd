@@ -6,12 +6,12 @@
 \usage{
 listOneRosterVendors(
   searchConditionsList = NULL,
-  OneRosterVendorID = F,
-  Name = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Name = F,
+  OneRosterVendorID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,15 +5,15 @@
 \title{Create a DisplayPeriod}
 \usage{
 createDisplayPeriod(
-  DayRotationID = NULL,
-  SortNumber = NULL,
-  Code = NULL,
-  Description = NULL,
   AttendancePeriodID = NULL,
-  EntityGroupKey = NULL,
+  Code = NULL,
+  DayRotationID = NULL,
+  Description = NULL,
   DisplayPeriodIDClonedFrom = NULL,
-  IsOutsideRegularSchoolDay = NULL,
+  EntityGroupKey = NULL,
   IsLunchPeriod = NULL,
+  IsOutsideRegularSchoolDay = NULL,
+  SortNumber = NULL,
   TeachingHourEquivalent = NULL,
   entityId = 1,
   query = NULL,

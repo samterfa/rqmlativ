@@ -6,14 +6,14 @@
 \usage{
 listTempMassAssignCTEIndicatorTXExceptions(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  Note = F,
+  StudentID = F,
   TempMassAssignCTEIndicatorTXExceptionID = F,
   TempMassAssignCTEIndicatorTXID = F,
-  StudentID = F,
-  Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

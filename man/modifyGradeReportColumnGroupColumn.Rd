@@ -6,13 +6,13 @@
 \usage{
 modifyGradeReportColumnGroupColumn(
   GradeReportColumnGroupColumnID,
-  GradeReportColumnGroupID = NULL,
-  SortNumber = NULL,
-  ColumnType = NULL,
+  AttendanceOption = NULL,
   ColumnHeader = NULL,
+  ColumnType = NULL,
   ContinueIfBlank = NULL,
   GradeReportColumnGroupColumnIDClonedFrom = NULL,
-  AttendanceOption = NULL,
+  GradeReportColumnGroupID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

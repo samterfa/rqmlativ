@@ -6,8 +6,8 @@
 \usage{
 modifyBellScheduleGroupBellSchedule(
   BellScheduleGroupBellScheduleID,
-  BellScheduleID = NULL,
   BellScheduleGroupID = NULL,
+  BellScheduleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

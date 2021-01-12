@@ -5,13 +5,13 @@
 \title{Create a CalendarEvent}
 \usage{
 createCalendarEvent(
-  EntityID = NULL,
-  SchoolYearID = NULL,
+  CalendarEventIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
-  EdFiCalendarEventID = NULL,
-  CalendarEventIDClonedFrom = NULL,
   EdFiCalendarEventDescriptorID = NULL,
+  EdFiCalendarEventID = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

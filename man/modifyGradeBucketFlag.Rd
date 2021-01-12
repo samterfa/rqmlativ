@@ -6,11 +6,11 @@
 \usage{
 modifyGradeBucketFlag(
   GradeBucketFlagID,
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
   DisplayOrder = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

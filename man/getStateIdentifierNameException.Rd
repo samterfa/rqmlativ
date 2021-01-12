@@ -6,14 +6,14 @@
 \usage{
 getStateIdentifierNameException(
   StateIdentifierNameExceptionID,
+  CreatedTime = F,
+  Message = F,
+  MessageType = F,
+  ModifiedTime = F,
   StateIdentifierNameID = F,
   StateIdentifierRunHistoryID = F,
-  MessageType = F,
-  Message = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,11 +6,11 @@
 \usage{
 modifyESSASchoolV1(
   ESSASchoolV1ID,
-  ESSAExpenditureID = NULL,
-  SchoolName = NULL,
   Enrollment = NULL,
+  ESSAExpenditureID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
+  SchoolName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

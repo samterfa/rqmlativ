@@ -6,13 +6,13 @@
 \usage{
 getNewHireEmployerV1IncludedPayrollRun(
   NewHireEmployerV1IncludedPayrollRunID,
-  NewHireExtractRunID = F,
+  CreatedTime = F,
   EmployerID = F,
+  ModifiedTime = F,
+  NewHireExtractRunID = F,
   PayrollRunID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

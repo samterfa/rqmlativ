@@ -6,12 +6,12 @@
 \usage{
 listCustomerTransactions(
   searchConditionsList = NULL,
-  CustomerID = F,
-  PurchaseDetailID = F,
-  PaymentID = F,
-  Time = F,
   Amount = F,
   Balance = F,
+  CustomerID = F,
+  PaymentID = F,
+  PurchaseDetailID = F,
+  Time = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

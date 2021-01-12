@@ -6,14 +6,14 @@
 \usage{
 getUserPreference(
   UserPreferenceID,
-  UserIDSecurity = F,
-  ThemeID = F,
   AccountSelection = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  ThemeID = F,
   UseEmailMultifactorAuthentication = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserIDSecurity = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

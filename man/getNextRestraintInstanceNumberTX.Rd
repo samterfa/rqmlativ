@@ -6,13 +6,13 @@
 \usage{
 getNextRestraintInstanceNumberTX(
   NextRestraintInstanceNumberTXID,
+  CreatedTime = F,
   DistrictID = F,
+  ModifiedTime = F,
   SchoolYearID = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,10 +5,10 @@
 \title{Create a GASBRevenueAndExpenditureCell}
 \usage{
 createGASBRevenueAndExpenditureCell(
-  GASBRevenueAndExpenditureRowID = NULL,
-  GASBExtractRunID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBExtractRunID = NULL,
+  GASBRevenueAndExpenditureRowID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

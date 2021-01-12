@@ -6,12 +6,12 @@
 \usage{
 listGASBStatementOfNetAssetsReports(
   searchConditionsList = NULL,
-  GASBStatementOfNetAssetsReportID = F,
-  GASBExtractRunID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GASBExtractRunID = F,
+  GASBStatementOfNetAssetsReportID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

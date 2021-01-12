@@ -5,12 +5,6 @@
 \title{Create a DataMigrationManagerException}
 \usage{
 createDataMigrationManagerException(
-  DataMigrationManagerID = NULL,
-  SourcePrimaryKey = NULL,
-  Object = NULL,
-  Identifier = NULL,
-  Message = NULL,
-  ExceptionType = NULL,
   Category = NULL,
   Col1 = NULL,
   Col2 = NULL,
@@ -21,6 +15,12 @@ createDataMigrationManagerException(
   Col7 = NULL,
   Col8 = NULL,
   Col9 = NULL,
+  DataMigrationManagerID = NULL,
+  ExceptionType = NULL,
+  Identifier = NULL,
+  Message = NULL,
+  Object = NULL,
+  SourcePrimaryKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

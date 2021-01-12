@@ -7,11 +7,11 @@
 modifyRepairGradingSetupRunHistory(
   RepairGradingSetupRunHistoryID,
   Description = NULL,
-  ErrorMessage = NULL,
+  EndTime = NULL,
   EntityID = NULL,
+  ErrorMessage = NULL,
   SchoolYearID = NULL,
   StartTime = NULL,
-  EndTime = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

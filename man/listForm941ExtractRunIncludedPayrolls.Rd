@@ -6,13 +6,13 @@
 \usage{
 listForm941ExtractRunIncludedPayrolls(
   searchConditionsList = NULL,
-  Form941ExtractRunIncludedPayrollID = F,
+  CreatedTime = F,
   Form941ExtractRunID = F,
+  Form941ExtractRunIncludedPayrollID = F,
+  ModifiedTime = F,
   PayrollRunID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

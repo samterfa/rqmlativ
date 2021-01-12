@@ -5,8 +5,8 @@
 \title{Create a SeatingChartSeat}
 \usage{
 createSeatingChartSeat(
-  SeatingChartID = NULL,
   RoomLayoutObjectID = NULL,
+  SeatingChartID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

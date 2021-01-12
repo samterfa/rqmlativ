@@ -6,13 +6,13 @@
 \usage{
 modifyHonorRollRunLevel(
   HonorRollRunLevelID,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
   HonorRollRunID = NULL,
+  HonorRollRunLevelIDClonedFrom = NULL,
   Name = NULL,
   Order = NULL,
-  EntityID = NULL,
   SchoolYearID = NULL,
-  EntityGroupKey = NULL,
-  HonorRollRunLevelIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

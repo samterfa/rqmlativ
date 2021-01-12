@@ -5,13 +5,13 @@
 \title{Create a TempStudentBusStop}
 \usage{
 createTempStudentBusStop(
-  StudentNameLFM = NULL,
-  StudentNumber = NULL,
-  BusStopDescription = NULL,
   BusStopArrivalTime = NULL,
+  BusStopDescription = NULL,
   BusStopFullAddress = NULL,
   Exceptions = NULL,
   IsAccepted = NULL,
+  StudentNameLFM = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

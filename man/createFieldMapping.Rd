@@ -5,12 +5,12 @@
 \title{Create a FieldMapping}
 \usage{
 createFieldMapping(
-  FieldID = NULL,
-  ValueSourceID = NULL,
-  ImportDataObjectSourceID = NULL,
   ActionIfSourceValueIsBlank = NULL,
-  MappingTypeCode = NULL,
+  FieldID = NULL,
+  ImportDataObjectSourceID = NULL,
   ImportDataObjectSourceIDMappedValue = NULL,
+  MappingTypeCode = NULL,
+  ValueSourceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

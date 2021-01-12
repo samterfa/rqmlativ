@@ -6,11 +6,11 @@
 \usage{
 getWinterSportsTeam(
   WinterSportsTeamID,
-  SchoolYearID = F,
-  WinterSportID = F,
-  Lettered = F,
   Captain = F,
+  Lettered = F,
+  SchoolYearID = F,
   StudentID = F,
+  WinterSportID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

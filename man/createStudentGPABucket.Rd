@@ -5,16 +5,16 @@
 \title{Create a StudentGPABucket}
 \usage{
 createStudentGPABucket(
-  StudentGradeBucketID = NULL,
-  StudentSectionGPABucketGroupID = NULL,
+  BonusGPAPoints = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
   GPACredits = NULL,
   GPAPoints = NULL,
-  UseOverride = NULL,
-  BonusGPAPoints = NULL,
   GradReqRankGPAStatus = NULL,
   PointsAndCreditsMultiplier = NULL,
+  SchoolYearID = NULL,
+  StudentGradeBucketID = NULL,
+  StudentSectionGPABucketGroupID = NULL,
+  UseOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

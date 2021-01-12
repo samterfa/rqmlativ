@@ -6,10 +6,10 @@
 \usage{
 modifyInterventionTeam(
   InterventionTeamID,
-  Name = NULL,
   Description = NULL,
-  IsActive = NULL,
   DistrictID = NULL,
+  IsActive = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

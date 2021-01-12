@@ -6,10 +6,10 @@
 \usage{
 createElectronicTranscriptPhoneV1(
   AreaCityCode = NULL,
-  PhoneNumber = NULL,
-  NamePhoneID = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  NamePhoneID = NULL,
+  PhoneNumber = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,

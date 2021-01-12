@@ -5,9 +5,9 @@
 \title{Create a SecurityLocationReportSetReportRunInfo}
 \usage{
 createSecurityLocationReportSetReportRunInfo(
-  SecurityLocationReportSetID = NULL,
-  ReportRunInfoID = NULL,
   IsSkywardLoaded = NULL,
+  ReportRunInfoID = NULL,
+  SecurityLocationReportSetID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyAcademicStandardSubjectDefault(
   AcademicStandardSubjectDefaultID,
+  AcademicStandardSetDefaultID = NULL,
   Code = NULL,
   Description = NULL,
   Key = NULL,
-  AcademicStandardSetDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

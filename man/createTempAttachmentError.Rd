@@ -5,9 +5,9 @@
 \title{Create a TempAttachmentError}
 \usage{
 createTempAttachmentError(
+  ErrorMessage = NULL,
   MediaID = NULL,
   Name = NULL,
-  ErrorMessage = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

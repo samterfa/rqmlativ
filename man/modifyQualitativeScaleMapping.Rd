@@ -6,9 +6,9 @@
 \usage{
 modifyQualitativeScaleMapping(
   QualitativeScaleMappingID,
+  NumericValue = NULL,
   QualitativeScaleID = NULL,
   Value = NULL,
-  NumericValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

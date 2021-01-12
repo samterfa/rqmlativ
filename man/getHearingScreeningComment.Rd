@@ -6,12 +6,12 @@
 \usage{
 getHearingScreeningComment(
   HearingScreeningCommentID,
-  HearingScreeningID = F,
-  HearingCommentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  HearingCommentID = F,
+  HearingScreeningID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

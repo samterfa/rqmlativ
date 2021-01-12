@@ -6,14 +6,14 @@
 \usage{
 listNameSuffixes(
   searchConditionsList = NULL,
-  NameSuffixID = F,
   Code = F,
-  Description = F,
   CodeDescription = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  NameSuffixID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

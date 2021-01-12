@@ -5,9 +5,9 @@
 \title{Create a SectionGradingPeriodData}
 \usage{
 createSectionGradingPeriodData(
-  SectionID = NULL,
   GradingPeriodID = NULL,
   IsCompleted = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

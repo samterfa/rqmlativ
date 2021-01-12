@@ -6,12 +6,12 @@
 \usage{
 createEdFiLocalAccount(
   AccountFiscalYearID = NULL,
-  EdFiID = NULL,
-  Name = NULL,
   EdFiChartOfAccountID = NULL,
+  EdFiID = NULL,
   EducationOrganizationID = NULL,
   LocalActualAmount = NULL,
   LocalBudgetAmount = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

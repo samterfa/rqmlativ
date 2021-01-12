@@ -6,14 +6,14 @@
 \usage{
 modifyNewHireEmployerException(
   NewHireEmployerExceptionID,
-  NewHireEmployerV1ID = NULL,
   EmployerName = NULL,
+  Message = NULL,
+  MessageType = NULL,
+  NewHireEmployerV1ID = NULL,
   NewHireSubmissionID = NULL,
   NewHireSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
-  Message = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

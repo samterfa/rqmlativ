@@ -6,12 +6,12 @@
 \usage{
 getSurveyInstance(
   SurveyInstanceID,
+  CreatedTime = F,
+  ModifiedTime = F,
   SurveyID = F,
   SystemVersion = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

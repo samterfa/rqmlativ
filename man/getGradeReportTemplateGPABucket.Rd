@@ -6,13 +6,13 @@
 \usage{
 getGradeReportTemplateGPABucket(
   GradeReportTemplateGPABucketID,
-  GradeReportTemplateID = F,
-  GPABucketID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  GPABucketID = F,
   GradeReportTemplateGPABucketIDClonedFrom = F,
+  GradeReportTemplateID = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,11 +6,11 @@
 \usage{
 createFederalEEOCSalaryRange(
   Code = NULL,
-  SalaryLow = NULL,
-  SalaryHigh = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  SalaryHigh = NULL,
+  SalaryLow = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,11 +5,11 @@
 \title{Create a Form1099MYearStateBoxValue}
 \usage{
 createForm1099MYearStateBoxValue(
-  Form1099MYearID = NULL,
-  StateID = NULL,
+  Amount = NULL,
   BoxNumber = NULL,
   Description = NULL,
-  Amount = NULL,
+  Form1099MYearID = NULL,
+  StateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

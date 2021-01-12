@@ -6,11 +6,11 @@
 \usage{
 modifyDataMiningReportSortBreak(
   DataMiningReportSortBreakID,
-  DataMiningReportFieldSortID = NULL,
-  SortBreakID = NULL,
   BreakType = NULL,
-  HasSeparator = NULL,
+  DataMiningReportFieldSortID = NULL,
   HasDoubleUnderline = NULL,
+  HasSeparator = NULL,
+  SortBreakID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyFallSportsTeam(
   FallSportsTeamID,
-  SchoolYearID = NULL,
+  Captain = NULL,
   FallSportID = NULL,
   Lettered = NULL,
-  Captain = NULL,
+  SchoolYearID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

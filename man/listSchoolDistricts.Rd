@@ -6,9 +6,9 @@
 \usage{
 listSchoolDistricts(
   searchConditionsList = NULL,
-  SchoolDistrictID = F,
   Code = F,
   Description = F,
+  SchoolDistrictID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

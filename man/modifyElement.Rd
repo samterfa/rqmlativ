@@ -6,12 +6,12 @@
 \usage{
 modifyElement(
   ElementID,
-  StepID = NULL,
-  MediaID = NULL,
   FieldID = NULL,
-  Type = NULL,
-  ParameterData = NULL,
+  MediaID = NULL,
   Order = NULL,
+  ParameterData = NULL,
+  StepID = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

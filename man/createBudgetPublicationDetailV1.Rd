@@ -5,10 +5,10 @@
 \title{Create a BudgetPublicationDetailV1}
 \usage{
 createBudgetPublicationDetailV1(
-  BudgetPublicationExtractRunID = NULL,
-  CellRow = NULL,
-  CellColumn = NULL,
   Amount = NULL,
+  BudgetPublicationExtractRunID = NULL,
+  CellColumn = NULL,
+  CellRow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

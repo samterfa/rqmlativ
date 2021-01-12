@@ -5,6 +5,7 @@
 \title{Create a StaffMeetLastScored}
 \usage{
 createStaffMeetLastScored(
+  GradebookLastAccessedTime = NULL,
   StaffMeetID = NULL,
   StudentAssignmentIDLastScored = NULL,
   TimeLastScored = NULL,

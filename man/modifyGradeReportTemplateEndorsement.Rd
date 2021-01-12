@@ -6,10 +6,10 @@
 \usage{
 modifyGradeReportTemplateEndorsement(
   GradeReportTemplateEndorsementID,
-  GradeReportTemplateID = NULL,
   EndorsementID = NULL,
-  GradYearLow = NULL,
+  GradeReportTemplateID = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
   OrderNumber = NULL,
   entityId = 1,
   query = NULL,

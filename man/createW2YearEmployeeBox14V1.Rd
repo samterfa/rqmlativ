@@ -5,14 +5,14 @@
 \title{Create a W2YearEmployeeBox14V1}
 \usage{
 createW2YearEmployeeBox14V1(
-  W2YearEmployeeV1ID = NULL,
-  W2YearBox14SetID = NULL,
-  Description = NULL,
   Amount = NULL,
-  IsOriginalExtractedValue = NULL,
-  FederalW2BoxID = NULL,
   Code = NULL,
+  Description = NULL,
+  FederalW2BoxID = NULL,
+  IsOriginalExtractedValue = NULL,
   OregonTransitTaxWages = NULL,
+  W2YearBox14SetID = NULL,
+  W2YearEmployeeV1ID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

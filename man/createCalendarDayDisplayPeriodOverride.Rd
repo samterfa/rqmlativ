@@ -7,8 +7,8 @@
 createCalendarDayDisplayPeriodOverride(
   CalendarDayID = NULL,
   DisplayPeriodID = NULL,
-  RemovePeriod = NULL,
   LengthMinutes = NULL,
+  RemovePeriod = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

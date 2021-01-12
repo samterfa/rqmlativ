@@ -5,10 +5,10 @@
 \title{Create a SectionGradingScaleGroup}
 \usage{
 createSectionGradingScaleGroup(
-  SectionID = NULL,
   GradingPeriodGradeBucketID = NULL,
-  SectionGradingScaleGroupIDClonedFrom = NULL,
   GradingScaleGroupID = NULL,
+  SectionGradingScaleGroupIDClonedFrom = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

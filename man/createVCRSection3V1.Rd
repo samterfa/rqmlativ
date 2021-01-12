@@ -5,15 +5,15 @@
 \title{Create a VCRSection3V1}
 \usage{
 createVCRSection3V1(
-  SNAPCertifiedCount = NULL,
+  CertifiedFreeMedicaidCount = NULL,
+  CertifiedReducedMedicaidCount = NULL,
+  DistrictID = NULL,
   OtherCertifiedCount = NULL,
+  SchoolYearID = NULL,
+  SNAPCertifiedCount = NULL,
   SNAPLetterCertifiedCount = NULL,
   VCRSubmissionID = NULL,
   VCRSubmissionRunHistoryID = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  CertifiedFreeMedicaidCount = NULL,
-  CertifiedReducedMedicaidCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

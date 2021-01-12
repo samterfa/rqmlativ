@@ -6,10 +6,10 @@
 \usage{
 modifyScoliosisResult(
   ScoliosisResultID,
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   Type = NULL,
   entityId = 1,

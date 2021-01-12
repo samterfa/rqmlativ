@@ -6,14 +6,14 @@
 \usage{
 getSubjectSecurityLocation(
   SubjectSecurityLocationID,
-  SkywardID = F,
-  SubjectID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SecurityLocationID = F,
   SkywardHash = F,
+  SkywardID = F,
+  SubjectID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

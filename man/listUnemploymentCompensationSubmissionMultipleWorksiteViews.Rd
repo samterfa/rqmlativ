@@ -6,14 +6,14 @@
 \usage{
 listUnemploymentCompensationSubmissionMultipleWorksiteViews(
   searchConditionsList = NULL,
-  UnemploymentCompensationSubmissionMultipleWorksiteViewID = F,
-  UnemploymentCompensationSubmissionID = F,
-  Worksite = F,
   BuildingID = F,
   PaidFor12thDayOfMonth1EmployeeCount = F,
   PaidFor12thDayOfMonth2EmployeeCount = F,
   PaidFor12thDayOfMonth3EmployeeCount = F,
   TotalQuarterlyWages = F,
+  UnemploymentCompensationSubmissionID = F,
+  UnemploymentCompensationSubmissionMultipleWorksiteViewID = F,
+  Worksite = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

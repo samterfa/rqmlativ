@@ -6,14 +6,14 @@
 \usage{
 getTempNameProcedureScheduleError(
   TempNameProcedureScheduleErrorID,
+  CreatedTime = F,
   Description = F,
-  StartDate = F,
   EndDate = F,
   ErrorCount = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  StartDate = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

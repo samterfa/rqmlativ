@@ -5,12 +5,12 @@
 \title{Create an Objective}
 \usage{
 createObjective(
+  AreaOfConcernID = NULL,
   Code = NULL,
   Description = NULL,
-  ObjectiveType = NULL,
-  AreaOfConcernID = NULL,
   DistrictID = NULL,
   IsActive = NULL,
+  ObjectiveType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 modifyIdentificationEnrollment(
   IdentificationEnrollmentID,
-  UserID = NULL,
-  IdentificationApplicationID = NULL,
-  Type = NULL,
-  Group = NULL,
-  DataType = NULL,
   AuthenticationData = NULL,
   BiometricData = NULL,
+  DataType = NULL,
+  Group = NULL,
+  IdentificationApplicationID = NULL,
+  Type = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

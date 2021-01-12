@@ -5,8 +5,8 @@
 \title{Create a HearingScreeningObservation}
 \usage{
 createHearingScreeningObservation(
-  HearingScreeningID = NULL,
   HearingObservationID = NULL,
+  HearingScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

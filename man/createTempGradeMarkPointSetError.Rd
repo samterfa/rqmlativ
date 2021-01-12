@@ -5,10 +5,10 @@
 \title{Create a TempGradeMarkPointSetError}
 \usage{
 createTempGradeMarkPointSetError(
+  ErrorString = NULL,
+  GPAMethodName = NULL,
   GradeMarkCode = NULL,
   PointSetName = NULL,
-  GPAMethodName = NULL,
-  ErrorString = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a SeatingChartUsedLast}
 \usage{
 createSeatingChartUsedLast(
-  StaffID = NULL,
-  RoomID = NULL,
   DisplayPeriodID = NULL,
+  RoomID = NULL,
   SeatingChartID = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

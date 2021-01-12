@@ -5,9 +5,9 @@
 \title{Create a ThresholdRule}
 \usage{
 createThresholdRule(
+  NumberOfOccurrences = NULL,
   ThresholdID = NULL,
   ThresholdRuleGroupID = NULL,
-  NumberOfOccurrences = NULL,
   ThresholdRuleIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

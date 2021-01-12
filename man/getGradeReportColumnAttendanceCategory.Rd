@@ -6,13 +6,13 @@
 \usage{
 getGradeReportColumnAttendanceCategory(
   GradeReportColumnAttendanceCategoryID,
-  GradeReportColumnGroupColumnID = F,
   Category = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   GradeReportColumnAttendanceCategoryIDClonedFrom = F,
+  GradeReportColumnGroupColumnID = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

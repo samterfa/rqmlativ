@@ -5,8 +5,8 @@
 \title{Create a GradReqRankGPACourseType}
 \usage{
 createGradReqRankGPACourseType(
-  GradReqRankGPAMethodEntityID = NULL,
   CourseTypeID = NULL,
+  GradReqRankGPAMethodEntityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

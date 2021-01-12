@@ -18,7 +18,7 @@
 	#' @return A list of TempStudentActivities
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentActivities <- function(searchConditionsList = NULL, TempStudentActivityID = F, ActivityID = F, Code = F, Description = F, StudentID = F, StudentName = F, StartDate = F, EndDate = F, Age = F, GradeLevel = F, ParticipationStartDate = F, ParticipationEndDate = F, FullNameLFM = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentNumber = F, GradYear = F, GenderCodeAndGender = F, EntityCode = F, IsActive = F, ErrorNumber = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentActivities <- function(searchConditionsList = NULL, ActivityID = F, Age = F, Code = F, CreatedTime = F, Description = F, EndDate = F, EntityCode = F, ErrorNumber = F, FullNameLFM = F, GenderCodeAndGender = F, GradeLevel = F, GradYear = F, IsActive = F, IsSelected = F, ModifiedTime = F, ParticipationEndDate = F, ParticipationStartDate = F, StartDate = F, StudentActivityID = F, StudentActivityIDClonedFrom = F, StudentID = F, StudentName = F, StudentNumber = F, TempActivityRecordID = F, TempStudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of TempStudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentActivity <- function(TempStudentActivityID, ActivityID = F, Code = F, Description = F, StudentID = F, StudentName = F, StartDate = F, EndDate = F, Age = F, GradeLevel = F, ParticipationStartDate = F, ParticipationEndDate = F, FullNameLFM = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentNumber = F, GradYear = F, GenderCodeAndGender = F, EntityCode = F, IsActive = F, ErrorNumber = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentActivity <- function(TempStudentActivityID, ActivityID = F, Age = F, Code = F, CreatedTime = F, Description = F, EndDate = F, EntityCode = F, ErrorNumber = F, FullNameLFM = F, GenderCodeAndGender = F, GradeLevel = F, GradYear = F, IsActive = F, IsSelected = F, ModifiedTime = F, ParticipationEndDate = F, ParticipationStartDate = F, StartDate = F, StudentActivityID = F, StudentActivityIDClonedFrom = F, StudentID = F, StudentName = F, StudentNumber = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentActivityID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created TempStudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentActivity <- function(ActivityID = NULL, Code = NULL, Description = NULL, StudentID = NULL, StudentName = NULL, StartDate = NULL, EndDate = NULL, Age = NULL, GradeLevel = NULL, ParticipationStartDate = NULL, ParticipationEndDate = NULL, FullNameLFM = NULL, StudentNumber = NULL, GradYear = NULL, GenderCodeAndGender = NULL, EntityCode = NULL, IsActive = NULL, ErrorNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentActivity <- function(ActivityID = NULL, Age = NULL, Code = NULL, Description = NULL, EndDate = NULL, EntityCode = NULL, ErrorNumber = NULL, FullNameLFM = NULL, GenderCodeAndGender = NULL, GradeLevel = NULL, GradYear = NULL, IsActive = NULL, IsSelected = NULL, ParticipationEndDate = NULL, ParticipationStartDate = NULL, StartDate = NULL, StudentActivityID = NULL, StudentActivityIDClonedFrom = NULL, StudentID = NULL, StudentName = NULL, StudentNumber = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified TempStudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentActivity <- function(TempStudentActivityID, ActivityID = NULL, Code = NULL, Description = NULL, StudentID = NULL, StudentName = NULL, StartDate = NULL, EndDate = NULL, Age = NULL, GradeLevel = NULL, ParticipationStartDate = NULL, ParticipationEndDate = NULL, FullNameLFM = NULL, StudentNumber = NULL, GradYear = NULL, GenderCodeAndGender = NULL, EntityCode = NULL, IsActive = NULL, ErrorNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentActivity <- function(TempStudentActivityID, ActivityID = NULL, Age = NULL, Code = NULL, Description = NULL, EndDate = NULL, EntityCode = NULL, ErrorNumber = NULL, FullNameLFM = NULL, GenderCodeAndGender = NULL, GradeLevel = NULL, GradYear = NULL, IsActive = NULL, IsSelected = NULL, ParticipationEndDate = NULL, ParticipationStartDate = NULL, StartDate = NULL, StudentActivityID = NULL, StudentActivityIDClonedFrom = NULL, StudentID = NULL, StudentName = NULL, StudentNumber = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of TempActivityRecords
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempActivityRecords <- function(searchConditionsList = NULL, TempActivityRecordID = F, ActivityID = F, Code = F, Description = F, NewStartDate = F, NewEndDate = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempActivityRecords <- function(searchConditionsList = NULL, ActivityID = F, ActivityIDClonedFrom = F, ActivityTypeID = F, Code = F, CreatedTime = F, CreateRecord = F, Description = F, ModifiedTime = F, NewEndDate = F, NewStartDate = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of TempActivityRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempActivityRecord <- function(TempActivityRecordID, ActivityID = F, Code = F, Description = F, NewStartDate = F, NewEndDate = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempActivityRecord <- function(TempActivityRecordID, ActivityID = F, ActivityIDClonedFrom = F, ActivityTypeID = F, Code = F, CreatedTime = F, CreateRecord = F, Description = F, ModifiedTime = F, NewEndDate = F, NewStartDate = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityRecordID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created TempActivityRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempActivityRecord <- function(ActivityID = NULL, Code = NULL, Description = NULL, NewStartDate = NULL, NewEndDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempActivityRecord <- function(ActivityID = NULL, ActivityIDClonedFrom = NULL, ActivityTypeID = NULL, Code = NULL, CreateRecord = NULL, Description = NULL, NewEndDate = NULL, NewStartDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified TempActivityRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempActivityRecord <- function(TempActivityRecordID, ActivityID = NULL, Code = NULL, Description = NULL, NewStartDate = NULL, NewEndDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempActivityRecord <- function(TempActivityRecordID, ActivityID = NULL, ActivityIDClonedFrom = NULL, ActivityTypeID = NULL, Code = NULL, CreateRecord = NULL, Description = NULL, NewEndDate = NULL, NewStartDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of TempStudentActivityTransactionRecords
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentActivityTransactionRecords <- function(searchConditionsList = NULL, TempStudentActivityTransactionRecordID = F, ActivityID = F, StudentActivityTransactionID = F, StudentFullNameLFM = F, NewStartDate = F, NewEndDate = F, IsValidTransaction = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentActivityTransactionRecords <- function(searchConditionsList = NULL, ActivityCode = F, ActivityDescription = F, ActivityID = F, CreatedTime = F, IsValidTransaction = F, ModifiedTime = F, NewEndDate = F, NewStartDate = F, StudentActivityTransactionID = F, StudentFullNameLFM = F, TempStudentActivityTransactionRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of TempStudentActivityTransactionRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentActivityTransactionRecord <- function(TempStudentActivityTransactionRecordID, ActivityID = F, StudentActivityTransactionID = F, StudentFullNameLFM = F, NewStartDate = F, NewEndDate = F, IsValidTransaction = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentActivityTransactionRecord <- function(TempStudentActivityTransactionRecordID, ActivityCode = F, ActivityDescription = F, ActivityID = F, CreatedTime = F, IsValidTransaction = F, ModifiedTime = F, NewEndDate = F, NewStartDate = F, StudentActivityTransactionID = F, StudentFullNameLFM = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentActivityTransactionRecordID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created TempStudentActivityTransactionRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentActivityTransactionRecord <- function(ActivityID = NULL, StudentActivityTransactionID = NULL, StudentFullNameLFM = NULL, NewStartDate = NULL, NewEndDate = NULL, IsValidTransaction = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentActivityTransactionRecord <- function(ActivityCode = NULL, ActivityDescription = NULL, ActivityID = NULL, IsValidTransaction = NULL, NewEndDate = NULL, NewStartDate = NULL, StudentActivityTransactionID = NULL, StudentFullNameLFM = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified TempStudentActivityTransactionRecord
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentActivityTransactionRecord <- function(TempStudentActivityTransactionRecordID, ActivityID = NULL, StudentActivityTransactionID = NULL, StudentFullNameLFM = NULL, NewStartDate = NULL, NewEndDate = NULL, IsValidTransaction = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentActivityTransactionRecord <- function(TempStudentActivityTransactionRecordID, ActivityCode = NULL, ActivityDescription = NULL, ActivityID = NULL, IsValidTransaction = NULL, NewEndDate = NULL, NewStartDate = NULL, StudentActivityTransactionID = NULL, StudentFullNameLFM = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of ActivityEvents
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityEvents <- function(searchConditionsList = NULL, ActivityEventID = F, ActivityID = F, EventTypeID = F, Summary = F, Description = F, CodeSummary = F, Cost = F, Status = F, NameIDContact = F, StartTime = F, EndTime = F, LocationID = F, VisibleTo = F, ContactType = F, DisplayOnDistrictCalendar = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Date = F, DescriptionSummary = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityEvents <- function(searchConditionsList = NULL, ActivityEventID = F, ActivityEventIDClonedFrom = F, ActivityID = F, CodeSummary = F, ContactType = F, Cost = F, CreatedTime = F, Date = F, Description = F, DescriptionSummary = F, DisplayOnDistrictCalendar = F, EndTime = F, EventTypeID = F, LocationID = F, ModifiedTime = F, NameIDContact = F, StartTime = F, Status = F, Summary = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VisibleTo = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of ActivityEvent
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityEvent <- function(ActivityEventID, ActivityID = F, EventTypeID = F, Summary = F, Description = F, CodeSummary = F, Cost = F, Status = F, NameIDContact = F, StartTime = F, EndTime = F, LocationID = F, VisibleTo = F, ContactType = F, DisplayOnDistrictCalendar = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, Date = F, DescriptionSummary = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityEvent <- function(ActivityEventID, ActivityEventIDClonedFrom = F, ActivityID = F, CodeSummary = F, ContactType = F, Cost = F, CreatedTime = F, Date = F, Description = F, DescriptionSummary = F, DisplayOnDistrictCalendar = F, EndTime = F, EventTypeID = F, LocationID = F, ModifiedTime = F, NameIDContact = F, StartTime = F, Status = F, Summary = F, UserIDCreatedBy = F, UserIDModifiedBy = F, VisibleTo = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityEventID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created ActivityEvent
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createActivityEvent <- function(ActivityID = NULL, EventTypeID = NULL, Summary = NULL, Description = NULL, Cost = NULL, Status = NULL, NameIDContact = NULL, StartTime = NULL, EndTime = NULL, LocationID = NULL, VisibleTo = NULL, ContactType = NULL, DisplayOnDistrictCalendar = NULL, Date = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createActivityEvent <- function(ActivityEventIDClonedFrom = NULL, ActivityID = NULL, ContactType = NULL, Cost = NULL, Date = NULL, Description = NULL, DisplayOnDistrictCalendar = NULL, EndTime = NULL, EventTypeID = NULL, LocationID = NULL, NameIDContact = NULL, StartTime = NULL, Status = NULL, Summary = NULL, VisibleTo = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified ActivityEvent
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyActivityEvent <- function(ActivityEventID, ActivityID = NULL, EventTypeID = NULL, Summary = NULL, Description = NULL, Cost = NULL, Status = NULL, NameIDContact = NULL, StartTime = NULL, EndTime = NULL, LocationID = NULL, VisibleTo = NULL, ContactType = NULL, DisplayOnDistrictCalendar = NULL, Date = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyActivityEvent <- function(ActivityEventID, ActivityEventIDClonedFrom = NULL, ActivityID = NULL, ContactType = NULL, Cost = NULL, Date = NULL, Description = NULL, DisplayOnDistrictCalendar = NULL, EndTime = NULL, EventTypeID = NULL, LocationID = NULL, NameIDContact = NULL, StartTime = NULL, Status = NULL, Summary = NULL, VisibleTo = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of EventTypes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEventTypes <- function(searchConditionsList = NULL, EventTypeID = F, Code = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEventTypes <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EventTypeID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of EventType
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEventType <- function(EventTypeID, Code = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEventType <- function(EventTypeID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EventTypeID")
 
@@ -588,7 +588,7 @@
 	#' @return A list of StudentActivityTransactions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentActivityTransactions <- function(searchConditionsList = NULL, StudentActivityTransactionID = F, StudentActivityID = F, ParticipationStartDate = F, ParticipationEndDate = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentActivityTransactions <- function(searchConditionsList = NULL, CreatedTime = F, IsLastStudentActivityTransaction = F, ModifiedTime = F, ParticipationEndDate = F, ParticipationStartDate = F, StudentActivityID = F, StudentActivityTransactionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of StudentActivityTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentActivityTransaction <- function(StudentActivityTransactionID, StudentActivityID = F, ParticipationStartDate = F, ParticipationEndDate = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentActivityTransaction <- function(StudentActivityTransactionID, CreatedTime = F, IsLastStudentActivityTransaction = F, ModifiedTime = F, ParticipationEndDate = F, ParticipationStartDate = F, StudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentActivityTransactionID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created StudentActivityTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentActivityTransaction <- function(StudentActivityID = NULL, ParticipationStartDate = NULL, ParticipationEndDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentActivityTransaction <- function(ParticipationEndDate = NULL, ParticipationStartDate = NULL, StudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified StudentActivityTransaction
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentActivityTransaction <- function(StudentActivityTransactionID, StudentActivityID = NULL, ParticipationStartDate = NULL, ParticipationEndDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentActivityTransaction <- function(StudentActivityTransactionID, ParticipationEndDate = NULL, ParticipationStartDate = NULL, StudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -702,7 +702,7 @@
 	#' @return A list of Activities
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivities <- function(searchConditionsList = NULL, ActivityID = F, Code = F, Description = F, EntityID = F, SchoolYearID = F, ActivityTypeID = F, StartDate = F, EndDate = F, CodeDescription = F, ActivityIDClonedFrom = F, UseForAthleticEligibilityReporting = F, ActivityLeaderNames = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HideInFamilyAccess = F, SingleSex = F, ActivityIDClonedTo = F, StudentAwardID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivities <- function(searchConditionsList = NULL, ActivityID = F, ActivityIDClonedFrom = F, ActivityIDClonedTo = F, ActivityLeaderNames = F, ActivityTypeID = F, Code = F, CodeDescription = F, CreatedTime = F, CurrentUserIsActivityLeader = F, Description = F, EndDate = F, EntityID = F, HideInFamilyAccess = F, ModifiedTime = F, SchoolYearID = F, SingleSex = F, StartDate = F, StudentAwardID = F, UseForAthleticEligibilityReporting = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of Activity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivity <- function(ActivityID, Code = F, Description = F, EntityID = F, SchoolYearID = F, ActivityTypeID = F, StartDate = F, EndDate = F, CodeDescription = F, ActivityIDClonedFrom = F, UseForAthleticEligibilityReporting = F, ActivityLeaderNames = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HideInFamilyAccess = F, SingleSex = F, ActivityIDClonedTo = F, StudentAwardID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivity <- function(ActivityID, ActivityIDClonedFrom = F, ActivityIDClonedTo = F, ActivityLeaderNames = F, ActivityTypeID = F, Code = F, CodeDescription = F, CreatedTime = F, CurrentUserIsActivityLeader = F, Description = F, EndDate = F, EntityID = F, HideInFamilyAccess = F, ModifiedTime = F, SchoolYearID = F, SingleSex = F, StartDate = F, StudentAwardID = F, UseForAthleticEligibilityReporting = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created Activity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createActivity <- function(Code = NULL, Description = NULL, EntityID = NULL, SchoolYearID = NULL, ActivityTypeID = NULL, StartDate = NULL, EndDate = NULL, ActivityIDClonedFrom = NULL, UseForAthleticEligibilityReporting = NULL, HideInFamilyAccess = NULL, SingleSex = NULL, StudentAwardID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createActivity <- function(ActivityIDClonedFrom = NULL, ActivityTypeID = NULL, Code = NULL, Description = NULL, EndDate = NULL, EntityID = NULL, HideInFamilyAccess = NULL, SchoolYearID = NULL, SingleSex = NULL, StartDate = NULL, StudentAwardID = NULL, UseForAthleticEligibilityReporting = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified Activity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyActivity <- function(ActivityID, Code = NULL, Description = NULL, EntityID = NULL, SchoolYearID = NULL, ActivityTypeID = NULL, StartDate = NULL, EndDate = NULL, ActivityIDClonedFrom = NULL, UseForAthleticEligibilityReporting = NULL, HideInFamilyAccess = NULL, SingleSex = NULL, StudentAwardID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyActivity <- function(ActivityID, ActivityIDClonedFrom = NULL, ActivityTypeID = NULL, Code = NULL, Description = NULL, EndDate = NULL, EntityID = NULL, HideInFamilyAccess = NULL, SchoolYearID = NULL, SingleSex = NULL, StartDate = NULL, StudentAwardID = NULL, UseForAthleticEligibilityReporting = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of ActivityTypes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityTypes <- function(searchConditionsList = NULL, ActivityTypeID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EdFiCohortTypeDescriptorID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityTypes <- function(searchConditionsList = NULL, ActivityTypeID = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EdFiCohortTypeDescriptorID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of ActivityType
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityType <- function(ActivityTypeID, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, EdFiCohortTypeDescriptorID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityType <- function(ActivityTypeID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EdFiCohortTypeDescriptorID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityTypeID")
 
@@ -930,7 +930,7 @@
 	#' @return A list of ActivityPersonnels
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityPersonnels <- function(searchConditionsList = NULL, ActivityPersonnelID = F, ActivityID = F, NameID = F, IsLeader = F, ActivityPersonnelIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityPersonnels <- function(searchConditionsList = NULL, ActivityID = F, ActivityPersonnelID = F, ActivityPersonnelIDClonedFrom = F, CreatedTime = F, IsLeader = F, ModifiedTime = F, NameID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of ActivityPersonnel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityPersonnel <- function(ActivityPersonnelID, ActivityID = F, NameID = F, IsLeader = F, ActivityPersonnelIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityPersonnel <- function(ActivityPersonnelID, ActivityID = F, ActivityPersonnelIDClonedFrom = F, CreatedTime = F, IsLeader = F, ModifiedTime = F, NameID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityPersonnelID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created ActivityPersonnel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createActivityPersonnel <- function(ActivityID = NULL, NameID = NULL, IsLeader = NULL, ActivityPersonnelIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createActivityPersonnel <- function(ActivityID = NULL, ActivityPersonnelIDClonedFrom = NULL, IsLeader = NULL, NameID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified ActivityPersonnel
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyActivityPersonnel <- function(ActivityPersonnelID, ActivityID = NULL, NameID = NULL, IsLeader = NULL, ActivityPersonnelIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyActivityPersonnel <- function(ActivityPersonnelID, ActivityID = NULL, ActivityPersonnelIDClonedFrom = NULL, IsLeader = NULL, NameID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of StudentActivities
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentActivities <- function(searchConditionsList = NULL, StudentActivityID = F, StudentID = F, ActivityID = F, CourseID = F, IsActive = F, StudentActivityIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasParticipation = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentActivities <- function(searchConditionsList = NULL, ActivityID = F, CourseID = F, CreatedTime = F, HasParticipation = F, IsActive = F, ModifiedTime = F, StudentActivityID = F, StudentActivityIDClonedFrom = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of StudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentActivity <- function(StudentActivityID, StudentID = F, ActivityID = F, CourseID = F, IsActive = F, StudentActivityIDClonedFrom = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasParticipation = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentActivity <- function(StudentActivityID, ActivityID = F, CourseID = F, CreatedTime = F, HasParticipation = F, IsActive = F, ModifiedTime = F, StudentActivityIDClonedFrom = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentActivityID")
 
@@ -1109,7 +1109,7 @@
 	#' @return A newly created StudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentActivity <- function(StudentID = NULL, ActivityID = NULL, CourseID = NULL, IsActive = NULL, StudentActivityIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentActivity <- function(ActivityID = NULL, CourseID = NULL, IsActive = NULL, StudentActivityIDClonedFrom = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1130,7 +1130,7 @@
 	#' @return The modified StudentActivity
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentActivity <- function(StudentActivityID, StudentID = NULL, ActivityID = NULL, CourseID = NULL, IsActive = NULL, StudentActivityIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentActivity <- function(StudentActivityID, ActivityID = NULL, CourseID = NULL, IsActive = NULL, StudentActivityIDClonedFrom = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1158,7 +1158,7 @@
 	#' @return A list of TempStudentActivityErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentActivityErrors <- function(searchConditionsList = NULL, TempStudentActivityErrorID = F, TempStudentActivityID = F, ErrorNumber = F, ErrorText = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentActivityErrors <- function(searchConditionsList = NULL, CreatedTime = F, ErrorNumber = F, ErrorText = F, ModifiedTime = F, TempStudentActivityErrorID = F, TempStudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of TempStudentActivityError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentActivityError <- function(TempStudentActivityErrorID, TempStudentActivityID = F, ErrorNumber = F, ErrorText = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentActivityError <- function(TempStudentActivityErrorID, CreatedTime = F, ErrorNumber = F, ErrorText = F, ModifiedTime = F, TempStudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentActivityErrorID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created TempStudentActivityError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentActivityError <- function(TempStudentActivityID = NULL, ErrorNumber = NULL, ErrorText = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentActivityError <- function(ErrorNumber = NULL, ErrorText = NULL, TempStudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified TempStudentActivityError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentActivityError <- function(TempStudentActivityErrorID, TempStudentActivityID = NULL, ErrorNumber = NULL, ErrorText = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentActivityError <- function(TempStudentActivityErrorID, ErrorNumber = NULL, ErrorText = NULL, TempStudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of ActivityConfigDistricts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, DistrictID = F, StructureDimensionID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, CreatedTime = F, DistrictID = F, ModifiedTime = F, StructureDimensionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of ActivityConfigDistrict
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityConfigDistrict <- function(ActivityConfigDistrictID, ConfigDistrictID = F, DistrictID = F, StructureDimensionID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityConfigDistrict <- function(ActivityConfigDistrictID, ConfigDistrictID = F, CreatedTime = F, DistrictID = F, ModifiedTime = F, StructureDimensionID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityConfigDistrictID")
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of ConfigDistrictStructureDimensionPositions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listConfigDistrictStructureDimensionPositions <- function(searchConditionsList = NULL, ConfigDistrictStructureDimensionPositionID = F, ConfigDistrictID = F, Position = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listConfigDistrictStructureDimensionPositions <- function(searchConditionsList = NULL, ConfigDistrictID = F, ConfigDistrictStructureDimensionPositionID = F, CreatedTime = F, ModifiedTime = F, Position = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of ConfigDistrictStructureDimensionPosition
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getConfigDistrictStructureDimensionPosition <- function(ConfigDistrictStructureDimensionPositionID, ConfigDistrictID = F, Position = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getConfigDistrictStructureDimensionPosition <- function(ConfigDistrictStructureDimensionPositionID, ConfigDistrictID = F, CreatedTime = F, ModifiedTime = F, Position = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ConfigDistrictStructureDimensionPositionID")
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of ActivityAccountingGroups
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityAccountingGroups <- function(searchConditionsList = NULL, ActivityAccountingGroupID = F, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountEntityOverlay = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityAccountingGroups <- function(searchConditionsList = NULL, AccountEntityOverlay = F, ActivityAccountingGroupID = F, CreatedTime = F, EntityID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of ActivityAccountingGroup
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityAccountingGroup <- function(ActivityAccountingGroupID, EntityID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AccountEntityOverlay = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityAccountingGroup <- function(ActivityAccountingGroupID, AccountEntityOverlay = F, CreatedTime = F, EntityID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityAccountingGroupID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created ActivityAccountingGroup
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createActivityAccountingGroup <- function(EntityID = NULL, AccountEntityOverlay = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createActivityAccountingGroup <- function(AccountEntityOverlay = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified ActivityAccountingGroup
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyActivityAccountingGroup <- function(ActivityAccountingGroupID, EntityID = NULL, AccountEntityOverlay = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyActivityAccountingGroup <- function(ActivityAccountingGroupID, AccountEntityOverlay = NULL, EntityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of ActivityAccountingGroupClearances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listActivityAccountingGroupClearances <- function(searchConditionsList = NULL, ActivityAccountingGroupClearanceID = F, ActivityAccountingGroupID = F, GroupIDSecurity = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listActivityAccountingGroupClearances <- function(searchConditionsList = NULL, ActivityAccountingGroupClearanceID = F, ActivityAccountingGroupID = F, CreatedTime = F, GroupIDSecurity = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of ActivityAccountingGroupClearance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getActivityAccountingGroupClearance <- function(ActivityAccountingGroupClearanceID, ActivityAccountingGroupID = F, GroupIDSecurity = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getActivityAccountingGroupClearance <- function(ActivityAccountingGroupClearanceID, ActivityAccountingGroupID = F, CreatedTime = F, GroupIDSecurity = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityAccountingGroupClearanceID")
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of TempActivityAccountingGroupMassUpdates
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempActivityAccountingGroupMassUpdates <- function(searchConditionsList = NULL, TempActivityAccountingGroupMassUpdateID = F, UpdateType = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupOld = F, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupNew = F, UpdateObjectID = F, UpdateObjectDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempActivityAccountingGroupMassUpdates <- function(searchConditionsList = NULL, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupNew = F, ActivityAccountingGroupOld = F, CreatedTime = F, ModifiedTime = F, TempActivityAccountingGroupMassUpdateID = F, UpdateObjectDescription = F, UpdateObjectID = F, UpdateType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of TempActivityAccountingGroupMassUpdate
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempActivityAccountingGroupMassUpdate <- function(TempActivityAccountingGroupMassUpdateID, UpdateType = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupOld = F, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupNew = F, UpdateObjectID = F, UpdateObjectDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempActivityAccountingGroupMassUpdate <- function(TempActivityAccountingGroupMassUpdateID, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupNew = F, ActivityAccountingGroupOld = F, CreatedTime = F, ModifiedTime = F, UpdateObjectDescription = F, UpdateObjectID = F, UpdateType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityAccountingGroupMassUpdateID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created TempActivityAccountingGroupMassUpdate
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempActivityAccountingGroupMassUpdate <- function(UpdateType = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupOld = NULL, ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupNew = NULL, UpdateObjectID = NULL, UpdateObjectDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempActivityAccountingGroupMassUpdate <- function(ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupNew = NULL, ActivityAccountingGroupOld = NULL, UpdateObjectDescription = NULL, UpdateObjectID = NULL, UpdateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified TempActivityAccountingGroupMassUpdate
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempActivityAccountingGroupMassUpdate <- function(TempActivityAccountingGroupMassUpdateID, UpdateType = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupOld = NULL, ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupNew = NULL, UpdateObjectID = NULL, UpdateObjectDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempActivityAccountingGroupMassUpdate <- function(TempActivityAccountingGroupMassUpdateID, ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupNew = NULL, ActivityAccountingGroupOld = NULL, UpdateObjectDescription = NULL, UpdateObjectID = NULL, UpdateType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of TempClearances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempClearances <- function(searchConditionsList = NULL, TempClearanceID = F, GroupIDSecurity = F, GroupID = F, GroupDescription = F, EntityName = F, ClearanceType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempClearances <- function(searchConditionsList = NULL, ClearanceType = F, CreatedTime = F, EntityName = F, GroupDescription = F, GroupID = F, GroupIDSecurity = F, ModifiedTime = F, TempClearanceID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of TempClearance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempClearance <- function(TempClearanceID, GroupIDSecurity = F, GroupID = F, GroupDescription = F, EntityName = F, ClearanceType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempClearance <- function(TempClearanceID, ClearanceType = F, CreatedTime = F, EntityName = F, GroupDescription = F, GroupID = F, GroupIDSecurity = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempClearanceID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created TempClearance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempClearance <- function(GroupIDSecurity = NULL, GroupID = NULL, GroupDescription = NULL, EntityName = NULL, ClearanceType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempClearance <- function(ClearanceType = NULL, EntityName = NULL, GroupDescription = NULL, GroupID = NULL, GroupIDSecurity = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified TempClearance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempClearance <- function(TempClearanceID, GroupIDSecurity = NULL, GroupID = NULL, GroupDescription = NULL, EntityName = NULL, ClearanceType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempClearance <- function(TempClearanceID, ClearanceType = NULL, EntityName = NULL, GroupDescription = NULL, GroupID = NULL, GroupIDSecurity = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of TempEntityBalanceErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempEntityBalanceErrors <- function(searchConditionsList = NULL, TempEntityBalanceErrorID = F, FundDimensionID = F, FundDimensionCodeDescription = F, ActivityAccountingGroupID = F, EntityCodeName = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempEntityBalanceErrors <- function(searchConditionsList = NULL, ActivityAccountingGroupID = F, CreatedTime = F, EntityCodeName = F, Error = F, FundDimensionCodeDescription = F, FundDimensionID = F, ModifiedTime = F, TempEntityBalanceErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of TempEntityBalanceError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempEntityBalanceError <- function(TempEntityBalanceErrorID, FundDimensionID = F, FundDimensionCodeDescription = F, ActivityAccountingGroupID = F, EntityCodeName = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempEntityBalanceError <- function(TempEntityBalanceErrorID, ActivityAccountingGroupID = F, CreatedTime = F, EntityCodeName = F, Error = F, FundDimensionCodeDescription = F, FundDimensionID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempEntityBalanceErrorID")
 
@@ -2021,7 +2021,7 @@
 	#' @return A newly created TempEntityBalanceError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempEntityBalanceError <- function(FundDimensionID = NULL, FundDimensionCodeDescription = NULL, ActivityAccountingGroupID = NULL, EntityCodeName = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempEntityBalanceError <- function(ActivityAccountingGroupID = NULL, EntityCodeName = NULL, Error = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2042,7 +2042,7 @@
 	#' @return The modified TempEntityBalanceError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempEntityBalanceError <- function(TempEntityBalanceErrorID, FundDimensionID = NULL, FundDimensionCodeDescription = NULL, ActivityAccountingGroupID = NULL, EntityCodeName = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempEntityBalanceError <- function(TempEntityBalanceErrorID, ActivityAccountingGroupID = NULL, EntityCodeName = NULL, Error = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of TempActivityAccountErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempActivityAccountErrors <- function(searchConditionsList = NULL, TempActivityAccountErrorID = F, AccountID = F, DisplayAccount = F, FundDimensionID = F, FundDimensionCodeDescription = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempActivityAccountErrors <- function(searchConditionsList = NULL, AccountID = F, CreatedTime = F, DisplayAccount = F, Error = F, FundDimensionCodeDescription = F, FundDimensionID = F, ModifiedTime = F, TempActivityAccountErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of TempActivityAccountError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempActivityAccountError <- function(TempActivityAccountErrorID, AccountID = F, DisplayAccount = F, FundDimensionID = F, FundDimensionCodeDescription = F, Error = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempActivityAccountError <- function(TempActivityAccountErrorID, AccountID = F, CreatedTime = F, DisplayAccount = F, Error = F, FundDimensionCodeDescription = F, FundDimensionID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityAccountErrorID")
 
@@ -2135,7 +2135,7 @@
 	#' @return A newly created TempActivityAccountError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempActivityAccountError <- function(AccountID = NULL, DisplayAccount = NULL, FundDimensionID = NULL, FundDimensionCodeDescription = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempActivityAccountError <- function(AccountID = NULL, DisplayAccount = NULL, Error = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2156,7 +2156,7 @@
 	#' @return The modified TempActivityAccountError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempActivityAccountError <- function(TempActivityAccountErrorID, AccountID = NULL, DisplayAccount = NULL, FundDimensionID = NULL, FundDimensionCodeDescription = NULL, Error = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempActivityAccountError <- function(TempActivityAccountErrorID, AccountID = NULL, DisplayAccount = NULL, Error = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2184,7 +2184,7 @@
 	#' @return A list of TempActivityAccounts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempActivityAccounts <- function(searchConditionsList = NULL, TempActivityAccountID = F, AccountID = F, DisplayAccount = F, FundDimensionID = F, FundDimensionCodeDescription = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupIDNew = F, EntityCodeNameOld = F, EntityCodeNameNew = F, ExpenseSummaryIDOld = F, ExpenseSummaryOld = F, ExpenseSummaryIDNew = F, ExpenseSummaryNew = F, RevenueSummaryIDOld = F, RevenueSummaryOld = F, RevenueSummaryIDNew = F, RevenueSummaryNew = F, EncumbranceOffsetIDOld = F, EncumbranceOffsetOld = F, EncumbranceOffsetIDNew = F, EncumbranceOffsetNew = F, ReservedForEncumbranceIDOld = F, ReservedForEncumbranceOld = F, ReservedForEncumbranceIDNew = F, ReservedForEncumbranceNew = F, HasError = F, ErrorCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempActivityAccounts <- function(searchConditionsList = NULL, AccountID = F, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupIDOld = F, CreatedTime = F, DisplayAccount = F, EncumbranceOffsetIDNew = F, EncumbranceOffsetIDOld = F, EncumbranceOffsetNew = F, EncumbranceOffsetOld = F, EntityCodeNameNew = F, EntityCodeNameOld = F, ErrorCount = F, ExpenseSummaryIDNew = F, ExpenseSummaryIDOld = F, ExpenseSummaryNew = F, ExpenseSummaryOld = F, FundDimensionCodeDescription = F, FundDimensionID = F, HasError = F, ModifiedTime = F, ReservedForEncumbranceIDNew = F, ReservedForEncumbranceIDOld = F, ReservedForEncumbranceNew = F, ReservedForEncumbranceOld = F, RevenueSummaryIDNew = F, RevenueSummaryIDOld = F, RevenueSummaryNew = F, RevenueSummaryOld = F, TempActivityAccountID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2209,7 +2209,7 @@
 	#' @return A dataframe or of TempActivityAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempActivityAccount <- function(TempActivityAccountID, AccountID = F, DisplayAccount = F, FundDimensionID = F, FundDimensionCodeDescription = F, ActivityAccountingGroupIDOld = F, ActivityAccountingGroupIDNew = F, EntityCodeNameOld = F, EntityCodeNameNew = F, ExpenseSummaryIDOld = F, ExpenseSummaryOld = F, ExpenseSummaryIDNew = F, ExpenseSummaryNew = F, RevenueSummaryIDOld = F, RevenueSummaryOld = F, RevenueSummaryIDNew = F, RevenueSummaryNew = F, EncumbranceOffsetIDOld = F, EncumbranceOffsetOld = F, EncumbranceOffsetIDNew = F, EncumbranceOffsetNew = F, ReservedForEncumbranceIDOld = F, ReservedForEncumbranceOld = F, ReservedForEncumbranceIDNew = F, ReservedForEncumbranceNew = F, HasError = F, ErrorCount = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempActivityAccount <- function(TempActivityAccountID, AccountID = F, ActivityAccountingGroupIDNew = F, ActivityAccountingGroupIDOld = F, CreatedTime = F, DisplayAccount = F, EncumbranceOffsetIDNew = F, EncumbranceOffsetIDOld = F, EncumbranceOffsetNew = F, EncumbranceOffsetOld = F, EntityCodeNameNew = F, EntityCodeNameOld = F, ErrorCount = F, ExpenseSummaryIDNew = F, ExpenseSummaryIDOld = F, ExpenseSummaryNew = F, ExpenseSummaryOld = F, FundDimensionCodeDescription = F, FundDimensionID = F, HasError = F, ModifiedTime = F, ReservedForEncumbranceIDNew = F, ReservedForEncumbranceIDOld = F, ReservedForEncumbranceNew = F, ReservedForEncumbranceOld = F, RevenueSummaryIDNew = F, RevenueSummaryIDOld = F, RevenueSummaryNew = F, RevenueSummaryOld = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityAccountID")
 
@@ -2249,7 +2249,7 @@
 	#' @return A newly created TempActivityAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempActivityAccount <- function(AccountID = NULL, DisplayAccount = NULL, FundDimensionID = NULL, FundDimensionCodeDescription = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupIDNew = NULL, EntityCodeNameOld = NULL, EntityCodeNameNew = NULL, ExpenseSummaryIDOld = NULL, ExpenseSummaryOld = NULL, ExpenseSummaryIDNew = NULL, ExpenseSummaryNew = NULL, RevenueSummaryIDOld = NULL, RevenueSummaryOld = NULL, RevenueSummaryIDNew = NULL, RevenueSummaryNew = NULL, EncumbranceOffsetIDOld = NULL, EncumbranceOffsetOld = NULL, EncumbranceOffsetIDNew = NULL, EncumbranceOffsetNew = NULL, ReservedForEncumbranceIDOld = NULL, ReservedForEncumbranceOld = NULL, ReservedForEncumbranceIDNew = NULL, ReservedForEncumbranceNew = NULL, HasError = NULL, ErrorCount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempActivityAccount <- function(AccountID = NULL, ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupIDOld = NULL, DisplayAccount = NULL, EncumbranceOffsetIDNew = NULL, EncumbranceOffsetIDOld = NULL, EncumbranceOffsetNew = NULL, EncumbranceOffsetOld = NULL, EntityCodeNameNew = NULL, EntityCodeNameOld = NULL, ErrorCount = NULL, ExpenseSummaryIDNew = NULL, ExpenseSummaryIDOld = NULL, ExpenseSummaryNew = NULL, ExpenseSummaryOld = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, HasError = NULL, ReservedForEncumbranceIDNew = NULL, ReservedForEncumbranceIDOld = NULL, ReservedForEncumbranceNew = NULL, ReservedForEncumbranceOld = NULL, RevenueSummaryIDNew = NULL, RevenueSummaryIDOld = NULL, RevenueSummaryNew = NULL, RevenueSummaryOld = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2270,11 +2270,695 @@
 	#' @return The modified TempActivityAccount
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempActivityAccount <- function(TempActivityAccountID, AccountID = NULL, DisplayAccount = NULL, FundDimensionID = NULL, FundDimensionCodeDescription = NULL, ActivityAccountingGroupIDOld = NULL, ActivityAccountingGroupIDNew = NULL, EntityCodeNameOld = NULL, EntityCodeNameNew = NULL, ExpenseSummaryIDOld = NULL, ExpenseSummaryOld = NULL, ExpenseSummaryIDNew = NULL, ExpenseSummaryNew = NULL, RevenueSummaryIDOld = NULL, RevenueSummaryOld = NULL, RevenueSummaryIDNew = NULL, RevenueSummaryNew = NULL, EncumbranceOffsetIDOld = NULL, EncumbranceOffsetOld = NULL, EncumbranceOffsetIDNew = NULL, EncumbranceOffsetNew = NULL, ReservedForEncumbranceIDOld = NULL, ReservedForEncumbranceOld = NULL, ReservedForEncumbranceIDNew = NULL, ReservedForEncumbranceNew = NULL, HasError = NULL, ErrorCount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempActivityAccount <- function(TempActivityAccountID, AccountID = NULL, ActivityAccountingGroupIDNew = NULL, ActivityAccountingGroupIDOld = NULL, DisplayAccount = NULL, EncumbranceOffsetIDNew = NULL, EncumbranceOffsetIDOld = NULL, EncumbranceOffsetNew = NULL, EncumbranceOffsetOld = NULL, EntityCodeNameNew = NULL, EntityCodeNameOld = NULL, ErrorCount = NULL, ExpenseSummaryIDNew = NULL, ExpenseSummaryIDOld = NULL, ExpenseSummaryNew = NULL, ExpenseSummaryOld = NULL, FundDimensionCodeDescription = NULL, FundDimensionID = NULL, HasError = NULL, ReservedForEncumbranceIDNew = NULL, ReservedForEncumbranceIDOld = NULL, ReservedForEncumbranceNew = NULL, ReservedForEncumbranceOld = NULL, RevenueSummaryIDNew = NULL, RevenueSummaryIDOld = NULL, RevenueSummaryNew = NULL, RevenueSummaryOld = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Activity", objectName = "TempActivityAccount", objectId = TempActivityAccountID, body = list(DataObject = body), searchFields = append("TempActivityAccountID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempActivityPersonnels
+	#'
+	#' This function returns a dataframe or json object of TempActivityPersonnels
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempActivityPersonnels. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempActivityPersonnels.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempActivityPersonnel') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of TempActivityPersonnels
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempActivityPersonnels <- function(searchConditionsList = NULL, ActivityID = F, ActivityPersonnelIDClonedFrom = F, Code = F, CreatedTime = F, Description = F, FullNameLFM = F, IsLeader = F, ModifiedTime = F, NameID = F, TempActivityPersonnelID = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "TempActivityPersonnel", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempActivityPersonnel
+	#'
+	#' This function returns a dataframe or json object of a TempActivityPersonnel
+	#' @param TempActivityPersonnelID The ID of the TempActivityPersonnel to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempActivityPersonnel. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempActivityPersonnel.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempActivityPersonnel') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of TempActivityPersonnel
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempActivityPersonnel <- function(TempActivityPersonnelID, ActivityID = F, ActivityPersonnelIDClonedFrom = F, Code = F, CreatedTime = F, Description = F, FullNameLFM = F, IsLeader = F, ModifiedTime = F, NameID = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityPersonnelID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "TempActivityPersonnel", objectId = TempActivityPersonnelID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempActivityPersonnel
+	#'
+	#' This function deletes a TempActivityPersonnel
+	#' @param TempActivityPersonnelID The ID of the TempActivityPersonnel to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The TempActivityPersonnelID of the deleted TempActivityPersonnel.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempActivityPersonnel <- function(TempActivityPersonnelID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "TempActivityPersonnel", objectId = TempActivityPersonnelID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempActivityPersonnel
+	#'
+	#' This function creates a TempActivityPersonnel
+	#' @param fieldNames The field values to give the created TempActivityPersonnel. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created TempActivityPersonnel
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempActivityPersonnel <- function(ActivityID = NULL, ActivityPersonnelIDClonedFrom = NULL, Code = NULL, Description = NULL, FullNameLFM = NULL, IsLeader = NULL, NameID = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "TempActivityPersonnel", body = list(DataObject = body), searchFields = append("TempActivityPersonnelID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempActivityPersonnel
+	#'
+	#' This function modifies a TempActivityPersonnel
+	#' @param fieldNames The field values to give the modified TempActivityPersonnel. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified TempActivityPersonnel
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempActivityPersonnel <- function(TempActivityPersonnelID, ActivityID = NULL, ActivityPersonnelIDClonedFrom = NULL, Code = NULL, Description = NULL, FullNameLFM = NULL, IsLeader = NULL, NameID = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "TempActivityPersonnel", objectId = TempActivityPersonnelID, body = list(DataObject = body), searchFields = append("TempActivityPersonnelID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempGeneralActivityErrors
+	#'
+	#' This function returns a dataframe or json object of TempGeneralActivityErrors
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempGeneralActivityErrors. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempGeneralActivityErrors.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempGeneralActivityError') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of TempGeneralActivityErrors
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempGeneralActivityErrors <- function(searchConditionsList = NULL, Code = F, CreatedTime = F, Description = F, ErrorNumber = F, ErrorObjectType = F, ErrorText = F, ModifiedTime = F, RelatedObjectID = F, TempGeneralActivityErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "TempGeneralActivityError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempGeneralActivityError
+	#'
+	#' This function returns a dataframe or json object of a TempGeneralActivityError
+	#' @param TempGeneralActivityErrorID The ID of the TempGeneralActivityError to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempGeneralActivityError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempGeneralActivityError.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempGeneralActivityError') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of TempGeneralActivityError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempGeneralActivityError <- function(TempGeneralActivityErrorID, Code = F, CreatedTime = F, Description = F, ErrorNumber = F, ErrorObjectType = F, ErrorText = F, ModifiedTime = F, RelatedObjectID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempGeneralActivityErrorID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "TempGeneralActivityError", objectId = TempGeneralActivityErrorID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempGeneralActivityError
+	#'
+	#' This function deletes a TempGeneralActivityError
+	#' @param TempGeneralActivityErrorID The ID of the TempGeneralActivityError to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The TempGeneralActivityErrorID of the deleted TempGeneralActivityError.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempGeneralActivityError <- function(TempGeneralActivityErrorID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "TempGeneralActivityError", objectId = TempGeneralActivityErrorID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempGeneralActivityError
+	#'
+	#' This function creates a TempGeneralActivityError
+	#' @param fieldNames The field values to give the created TempGeneralActivityError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created TempGeneralActivityError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempGeneralActivityError <- function(Code = NULL, Description = NULL, ErrorNumber = NULL, ErrorObjectType = NULL, ErrorText = NULL, RelatedObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "TempGeneralActivityError", body = list(DataObject = body), searchFields = append("TempGeneralActivityErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempGeneralActivityError
+	#'
+	#' This function modifies a TempGeneralActivityError
+	#' @param fieldNames The field values to give the modified TempGeneralActivityError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified TempGeneralActivityError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempGeneralActivityError <- function(TempGeneralActivityErrorID, Code = NULL, Description = NULL, ErrorNumber = NULL, ErrorObjectType = NULL, ErrorText = NULL, RelatedObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "TempGeneralActivityError", objectId = TempGeneralActivityErrorID, body = list(DataObject = body), searchFields = append("TempGeneralActivityErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempActivityEvents
+	#'
+	#' This function returns a dataframe or json object of TempActivityEvents
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempActivityEvents. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempActivityEvents.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempActivityEvent') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of TempActivityEvents
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempActivityEvents <- function(searchConditionsList = NULL, ActivityEventIDClonedFrom = F, ActivityID = F, Code = F, CreatedTime = F, Date = F, Description = F, EndTime = F, IsSelected = F, ModifiedTime = F, PreviousYearDate = F, StartTime = F, Summary = F, TempActivityEventID = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "TempActivityEvent", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempActivityEvent
+	#'
+	#' This function returns a dataframe or json object of a TempActivityEvent
+	#' @param TempActivityEventID The ID of the TempActivityEvent to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempActivityEvent. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempActivityEvent.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempActivityEvent') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of TempActivityEvent
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempActivityEvent <- function(TempActivityEventID, ActivityEventIDClonedFrom = F, ActivityID = F, Code = F, CreatedTime = F, Date = F, Description = F, EndTime = F, IsSelected = F, ModifiedTime = F, PreviousYearDate = F, StartTime = F, Summary = F, TempActivityRecordID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempActivityEventID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "TempActivityEvent", objectId = TempActivityEventID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempActivityEvent
+	#'
+	#' This function deletes a TempActivityEvent
+	#' @param TempActivityEventID The ID of the TempActivityEvent to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The TempActivityEventID of the deleted TempActivityEvent.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempActivityEvent <- function(TempActivityEventID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "TempActivityEvent", objectId = TempActivityEventID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempActivityEvent
+	#'
+	#' This function creates a TempActivityEvent
+	#' @param fieldNames The field values to give the created TempActivityEvent. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created TempActivityEvent
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempActivityEvent <- function(ActivityEventIDClonedFrom = NULL, ActivityID = NULL, Code = NULL, Date = NULL, Description = NULL, EndTime = NULL, IsSelected = NULL, PreviousYearDate = NULL, StartTime = NULL, Summary = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "TempActivityEvent", body = list(DataObject = body), searchFields = append("TempActivityEventID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempActivityEvent
+	#'
+	#' This function modifies a TempActivityEvent
+	#' @param fieldNames The field values to give the modified TempActivityEvent. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified TempActivityEvent
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempActivityEvent <- function(TempActivityEventID, ActivityEventIDClonedFrom = NULL, ActivityID = NULL, Code = NULL, Date = NULL, Description = NULL, EndTime = NULL, IsSelected = NULL, PreviousYearDate = NULL, StartTime = NULL, Summary = NULL, TempActivityRecordID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "TempActivityEvent", objectId = TempActivityEventID, body = list(DataObject = body), searchFields = append("TempActivityEventID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List StudentActivityAwards
+	#'
+	#' This function returns a dataframe or json object of StudentActivityAwards
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StudentActivityAwards. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StudentActivityAwards.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StudentActivityAward') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of StudentActivityAwards
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listStudentActivityAwards <- function(searchConditionsList = NULL, AwardID = F, Comment = F, CreatedTime = F, ModifiedTime = F, StudentActivityAwardID = F, StudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "StudentActivityAward", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a StudentActivityAward
+	#'
+	#' This function returns a dataframe or json object of a StudentActivityAward
+	#' @param StudentActivityAwardID The ID of the StudentActivityAward to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given StudentActivityAward. Defaults to FALSE for all return fields which, for convenience, returns all fields for the StudentActivityAward.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('StudentActivityAward') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of StudentActivityAward
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getStudentActivityAward <- function(StudentActivityAwardID, AwardID = F, Comment = F, CreatedTime = F, ModifiedTime = F, StudentActivityID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentActivityAwardID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "StudentActivityAward", objectId = StudentActivityAwardID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a StudentActivityAward
+	#'
+	#' This function deletes a StudentActivityAward
+	#' @param StudentActivityAwardID The ID of the StudentActivityAward to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The StudentActivityAwardID of the deleted StudentActivityAward.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteStudentActivityAward <- function(StudentActivityAwardID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "StudentActivityAward", objectId = StudentActivityAwardID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a StudentActivityAward
+	#'
+	#' This function creates a StudentActivityAward
+	#' @param fieldNames The field values to give the created StudentActivityAward. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created StudentActivityAward
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createStudentActivityAward <- function(AwardID = NULL, Comment = NULL, StudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "StudentActivityAward", body = list(DataObject = body), searchFields = append("StudentActivityAwardID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a StudentActivityAward
+	#'
+	#' This function modifies a StudentActivityAward
+	#' @param fieldNames The field values to give the modified StudentActivityAward. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified StudentActivityAward
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyStudentActivityAward <- function(StudentActivityAwardID, AwardID = NULL, Comment = NULL, StudentActivityID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "StudentActivityAward", objectId = StudentActivityAwardID, body = list(DataObject = body), searchFields = append("StudentActivityAwardID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List Awards
+	#'
+	#' This function returns a dataframe or json object of Awards
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Awards. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Awards.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Award') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of Awards
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listAwards <- function(searchConditionsList = NULL, AwardID = F, AwardIDClonedFrom = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EntityID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "Award", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get an Award
+	#'
+	#' This function returns a dataframe or json object of an Award
+	#' @param AwardID The ID of the Award to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given Award. Defaults to FALSE for all return fields which, for convenience, returns all fields for the Award.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('Award') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of Award
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getAward <- function(AwardID, AwardIDClonedFrom = F, Code = F, CodeDescription = F, CreatedTime = F, Description = F, EntityID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "AwardID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "Award", objectId = AwardID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete an Award
+	#'
+	#' This function deletes an Award
+	#' @param AwardID The ID of the Award to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The AwardID of the deleted Award.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteAward <- function(AwardID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "Award", objectId = AwardID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create an Award
+	#'
+	#' This function creates an Award
+	#' @param fieldNames The field values to give the created Award. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created Award
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createAward <- function(AwardIDClonedFrom = NULL, Code = NULL, Description = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "Award", body = list(DataObject = body), searchFields = append("AwardID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify an Award
+	#'
+	#' This function modifies an Award
+	#' @param fieldNames The field values to give the modified Award. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified Award
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyAward <- function(AwardID, AwardIDClonedFrom = NULL, Code = NULL, Description = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "Award", objectId = AwardID, body = list(DataObject = body), searchFields = append("AwardID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List ActivityConfigEntityGroupYears
+	#'
+	#' This function returns a dataframe or json object of ActivityConfigEntityGroupYears
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ActivityConfigEntityGroupYears. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ActivityConfigEntityGroupYears.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ActivityConfigEntityGroupYear') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A list of ActivityConfigEntityGroupYears
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listActivityConfigEntityGroupYears <- function(searchConditionsList = NULL, AllowPersonnelToUpdateStudentActivities = F, ConfigEntityGroupYearID = F, ConfigEntityGroupYearIDClonedFrom = F, CreatedTime = F, EntityGroupKey = F, EntityID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Activity", objectName = "ConfigEntityGroupYear", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get an ActivityConfigEntityGroupYear
+	#'
+	#' This function returns a dataframe or json object of an ActivityConfigEntityGroupYear
+	#' @param ActivityConfigEntityGroupYearID The ID of the ActivityConfigEntityGroupYear to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ActivityConfigEntityGroupYear. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ActivityConfigEntityGroupYear.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ActivityConfigEntityGroupYear') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A dataframe or of ActivityConfigEntityGroupYear
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getActivityConfigEntityGroupYear <- function(ActivityConfigEntityGroupYearID, AllowPersonnelToUpdateStudentActivities = F, ConfigEntityGroupYearID = F, ConfigEntityGroupYearIDClonedFrom = F, CreatedTime = F, EntityGroupKey = F, EntityID = F, ModifiedTime = F, SchoolYearID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "ActivityConfigEntityGroupYearID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Activity", objectName = "ConfigEntityGroupYear", objectId = ActivityConfigEntityGroupYearID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete an ActivityConfigEntityGroupYear
+	#'
+	#' This function deletes an ActivityConfigEntityGroupYear
+	#' @param ActivityConfigEntityGroupYearID The ID of the ActivityConfigEntityGroupYear to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The ActivityConfigEntityGroupYearID of the deleted ActivityConfigEntityGroupYear.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteActivityConfigEntityGroupYear <- function(ActivityConfigEntityGroupYearID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Activity", objectName = "ConfigEntityGroupYear", objectId = ActivityConfigEntityGroupYearID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create an ActivityConfigEntityGroupYear
+	#'
+	#' This function creates an ActivityConfigEntityGroupYear
+	#' @param fieldNames The field values to give the created ActivityConfigEntityGroupYear. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return A newly created ActivityConfigEntityGroupYear
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createActivityConfigEntityGroupYear <- function(AllowPersonnelToUpdateStudentActivities = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, EntityGroupKey = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Activity", objectName = "ConfigEntityGroupYear", body = list(DataObject = body), searchFields = append("ConfigEntityGroupYearID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify an ActivityConfigEntityGroupYear
+	#'
+	#' This function modifies an ActivityConfigEntityGroupYear
+	#' @param fieldNames The field values to give the modified ActivityConfigEntityGroupYear. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Activity
+	#' @return The modified ActivityConfigEntityGroupYear
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyActivityConfigEntityGroupYear <- function(ConfigEntityGroupYearID, AllowPersonnelToUpdateStudentActivities = NULL, ConfigEntityGroupYearIDClonedFrom = NULL, EntityGroupKey = NULL, EntityID = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Activity", objectName = "ConfigEntityGroupYear", objectId = ConfigEntityGroupYearID, body = list(DataObject = body), searchFields = append("ConfigEntityGroupYearID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}

@@ -6,8 +6,8 @@
 \usage{
 modifyIdentificationApplicationAdmin(
   IdentificationApplicationAdminID,
-  UserID = NULL,
   IdentificationApplicationID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

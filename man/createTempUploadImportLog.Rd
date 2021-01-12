@@ -6,9 +6,9 @@
 \usage{
 createTempUploadImportLog(
   FileName = NULL,
+  LogID = NULL,
   Message = NULL,
   ResultCode = NULL,
-  LogID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

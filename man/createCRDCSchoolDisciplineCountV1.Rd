@@ -5,14 +5,14 @@
 \title{Create a CRDCSchoolDisciplineCountV1}
 \usage{
 createCRDCSchoolDisciplineCountV1(
-  WithDisabilityCorporalCount = NULL,
-  WithoutDisabilityCorporalCount = NULL,
-  WithoutDisabilityOutOfSchoolCount = NULL,
-  IDEAOutOfSchoolCount = NULL,
-  Section504OutOfSchoolCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  IDEAOutOfSchoolCount = NULL,
+  Section504OutOfSchoolCount = NULL,
+  WithDisabilityCorporalCount = NULL,
+  WithoutDisabilityCorporalCount = NULL,
+  WithoutDisabilityOutOfSchoolCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

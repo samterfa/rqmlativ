@@ -5,13 +5,13 @@
 \title{Create an ImportDataObjectSource}
 \usage{
 createImportDataObjectSource(
-  ImportID = NULL,
-  ObjectID = NULL,
-  IsPrimary = NULL,
-  Name = NULL,
   Action = NULL,
+  ImportID = NULL,
+  IsPrimary = NULL,
   MatchActionCode = NULL,
+  Name = NULL,
   NoMatchAction = NULL,
+  ObjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

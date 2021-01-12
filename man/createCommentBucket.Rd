@@ -5,13 +5,13 @@
 \title{Create a CommentBucket}
 \usage{
 createCommentBucket(
-  Name = NULL,
+  CommentBucketIDClonedFrom = NULL,
+  CommentSetID = NULL,
   DisplayOrder = NULL,
-  IsLimitedByCourse = NULL,
   EntityGroupKey = NULL,
   GradingPeriodID = NULL,
-  CommentSetID = NULL,
-  CommentBucketIDClonedFrom = NULL,
+  IsLimitedByCourse = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

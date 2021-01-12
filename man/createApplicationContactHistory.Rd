@@ -6,11 +6,11 @@
 \usage{
 createApplicationContactHistory(
   ApplicationID = NULL,
-  NameID = NULL,
-  ContactTime = NULL,
-  ContactMethod = NULL,
   Comment = NULL,
+  ContactMethod = NULL,
   ContactReason = NULL,
+  ContactTime = NULL,
+  NameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

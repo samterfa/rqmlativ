@@ -6,14 +6,14 @@
 \usage{
 getCivilRightsDataCollection(
   CivilRightsDataCollectionID,
+  CreatedTime = F,
   DistrictID = F,
   HasLEAFile = F,
   HasSchoolFile = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
   NumericYear = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

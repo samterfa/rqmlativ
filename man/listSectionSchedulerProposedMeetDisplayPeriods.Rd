@@ -6,13 +6,13 @@
 \usage{
 listSectionSchedulerProposedMeetDisplayPeriods(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  DisplayPeriodID = F,
+  ModifiedTime = F,
   SectionSchedulerProposedMeetDisplayPeriodID = F,
   SectionSchedulerProposedMeetID = F,
-  DisplayPeriodID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

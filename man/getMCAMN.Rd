@@ -6,14 +6,10 @@
 \usage{
 getMCAMN(
   MCAMNID,
-  StudentTestID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
-  ScaleScore = F,
   IsPassingScaleScore = F,
-  Subject = F,
+  ScaleScore = F,
+  StudentTestID = F,
+  SubjectCode = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

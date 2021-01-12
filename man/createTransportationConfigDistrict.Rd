@@ -6,8 +6,10 @@
 \usage{
 createTransportationConfigDistrict(
   DistrictID = NULL,
-  TransportationImportFileName = NULL,
   FileDestinationIDTransportationImport = NULL,
+  ImportFileType = NULL,
+  RowsToSkip = NULL,
+  TransportationImportFileName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

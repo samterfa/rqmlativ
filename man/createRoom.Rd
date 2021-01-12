@@ -5,16 +5,16 @@
 \title{Create a Room}
 \usage{
 createRoom(
-  RoomNumber = NULL,
   BuildingID = NULL,
   Description = NULL,
   MaxConcurrentSections = NULL,
-  PhoneNumber = NULL,
-  PhoneExtension = NULL,
-  PhoneNumberIsInternational = NULL,
   MaxSeats = NULL,
-  SquareFootage = NULL,
+  PhoneExtension = NULL,
+  PhoneNumber = NULL,
+  PhoneNumberIsInternational = NULL,
+  RoomNumber = NULL,
   RoomTypeID = NULL,
+  SquareFootage = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

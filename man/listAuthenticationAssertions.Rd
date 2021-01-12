@@ -6,14 +6,14 @@
 \usage{
 listAuthenticationAssertions(
   searchConditionsList = NULL,
-  AuthenticationAssertionID = F,
   AssertionGuid = F,
+  AuthenticationAssertionID = F,
   AuthenticationMethodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   MobileDevice = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

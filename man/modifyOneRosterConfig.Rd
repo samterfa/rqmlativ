@@ -6,12 +6,12 @@
 \usage{
 modifyOneRosterConfig(
   OneRosterConfigID,
-  OneRosterVendorID = NULL,
   AllowGradePassBack = NULL,
   Code = NULL,
+  DefaultCategoryCode = NULL,
   Description = NULL,
   DistrictID = NULL,
-  DefaultCategoryCode = NULL,
+  OneRosterVendorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

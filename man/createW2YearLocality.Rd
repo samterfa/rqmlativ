@@ -5,11 +5,11 @@
 \title{Create a W2YearLocality}
 \usage{
 createW2YearLocality(
-  W2YearID = NULL,
+  Box20LocalityName = NULL,
   Code = NULL,
   Description = NULL,
-  Box20LocalityName = NULL,
   LocalTaxID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

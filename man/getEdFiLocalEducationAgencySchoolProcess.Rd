@@ -6,13 +6,13 @@
 \usage{
 getEdFiLocalEducationAgencySchoolProcess(
   EdFiLocalEducationAgencySchoolProcessID,
+  CreatedTime = F,
   EdFiApplicationID = F,
+  ModifiedTime = F,
   Process = F,
   SendOption = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,10 +5,10 @@
 \title{Create a Procedure}
 \usage{
 createProcedure(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   TreatmentID = NULL,
   entityId = 1,

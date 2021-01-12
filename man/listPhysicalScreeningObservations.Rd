@@ -6,13 +6,13 @@
 \usage{
 listPhysicalScreeningObservations(
   searchConditionsList = NULL,
-  PhysicalScreeningObservationID = F,
-  PhysicalScreeningID = F,
-  PhysicalObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PhysicalObservationID = F,
+  PhysicalScreeningID = F,
+  PhysicalScreeningObservationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

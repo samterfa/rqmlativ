@@ -6,13 +6,13 @@
 \usage{
 getDropLowScoreRunStudentAssignment(
   DropLowScoreRunStudentAssignmentID,
+  CreatedTime = F,
+  DropActionType = F,
   DropLowScoreRunID = F,
+  ModifiedTime = F,
   StudentAssignmentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  DropActionType = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

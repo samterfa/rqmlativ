@@ -6,8 +6,8 @@
 \usage{
 modifyTempDeletedPortalAccessSecurityUser(
   TempDeletedPortalAccessSecurityUserID,
-  UserName = NULL,
   FullNameLFM = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

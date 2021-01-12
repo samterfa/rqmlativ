@@ -6,8 +6,8 @@
 \usage{
 getJobTitleMA(
   JobTitleMAID,
-  Title = F,
   StaffID = F,
+  Title = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

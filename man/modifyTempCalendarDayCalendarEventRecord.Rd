@@ -6,11 +6,11 @@
 \usage{
 modifyTempCalendarDayCalendarEventRecord(
   TempCalendarDayCalendarEventRecordID,
-  CalendarDayID = NULL,
-  CalendarEventID = NULL,
-  CalendarEvent = NULL,
-  Date = NULL,
   Calendar = NULL,
+  CalendarDayID = NULL,
+  CalendarEvent = NULL,
+  CalendarEventID = NULL,
+  Date = NULL,
   FailureReason = NULL,
   entityId = 1,
   query = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyGroupLDAPSynchronization(
   GroupLDAPSynchronizationID,
-  GroupID = NULL,
-  EntityID = NULL,
   CommonName = NULL,
   DistinguishedName = NULL,
+  EntityID = NULL,
+  GroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

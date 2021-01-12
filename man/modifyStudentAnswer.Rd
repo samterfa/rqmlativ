@@ -6,8 +6,8 @@
 \usage{
 modifyStudentAnswer(
   StudentAnswerID,
-  StudentQuestionID = NULL,
   QuestionAnswerID = NULL,
+  StudentQuestionID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

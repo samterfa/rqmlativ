@@ -5,9 +5,9 @@
 \title{Create a TempInterventionPlanError}
 \usage{
 createTempInterventionPlanError(
-  TempInterventionPlanID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempInterventionPlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

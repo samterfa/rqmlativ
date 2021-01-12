@@ -5,14 +5,14 @@
 \title{Create a DataMiningReportFieldSort}
 \usage{
 createDataMiningReportFieldSort(
+  BreakType = NULL,
+  DataMiningReportID = NULL,
+  Length = NULL,
+  ShowCount = NULL,
+  ShowSubtotals = NULL,
   SortDirection = NULL,
   SortOrder = NULL,
-  ShowCount = NULL,
   SubtopicFieldID = NULL,
-  DataMiningReportID = NULL,
-  ShowSubtotals = NULL,
-  BreakType = NULL,
-  Length = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

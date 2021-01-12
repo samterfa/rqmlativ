@@ -6,10 +6,10 @@
 \usage{
 createDataMigrationHistory(
   MigrationNumber = NULL,
-  Summary = NULL,
+  OnlineInstall = NULL,
   Skipped = NULL,
   SkywardVersion = NULL,
-  OnlineInstall = NULL,
+  Summary = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

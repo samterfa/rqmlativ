@@ -5,15 +5,15 @@
 \title{Create an InterventionPlanMeeting}
 \usage{
 createInterventionPlanMeeting(
-  InterventionPlanStrategyID = NULL,
   Date = NULL,
-  Time = NULL,
-  Measurement = NULL,
-  InterventionPlanStaffID = NULL,
-  Note = NULL,
-  MeetingType = NULL,
   DidNotMeet = NULL,
+  InterventionPlanStaffID = NULL,
+  InterventionPlanStrategyID = NULL,
+  Measurement = NULL,
+  MeetingType = NULL,
+  Note = NULL,
   QualitativeScaleMappingID = NULL,
+  Time = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

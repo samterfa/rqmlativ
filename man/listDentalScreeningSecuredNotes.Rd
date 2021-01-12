@@ -6,13 +6,13 @@
 \usage{
 listDentalScreeningSecuredNotes(
   searchConditionsList = NULL,
-  DentalScreeningSecuredNoteID = F,
+  CreatedTime = F,
   DentalScreeningID = F,
+  DentalScreeningSecuredNoteID = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

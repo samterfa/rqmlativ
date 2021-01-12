@@ -5,11 +5,11 @@
 \title{Create a ComplianceScheduleDetailBooster}
 \usage{
 createComplianceScheduleDetailBooster(
+  ComplianceScheduleDetailBoosterIDClonedFrom = NULL,
   ComplianceScheduleDetailID = NULL,
-  VaccineID = NULL,
   IntervalTime = NULL,
   IntervalTimeUnit = NULL,
-  ComplianceScheduleDetailBoosterIDClonedFrom = NULL,
+  VaccineID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

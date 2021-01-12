@@ -5,13 +5,13 @@
 \title{Create a CustomerCategory}
 \usage{
 createCustomerCategory(
-  CustomerID = NULL,
-  EligibilityCategoryID = NULL,
-  PriceCategoryID = NULL,
-  Note = NULL,
-  EffectiveTime = NULL,
-  DirectCertificationID = NULL,
   ApplicationMemberID = NULL,
+  CustomerID = NULL,
+  DirectCertificationID = NULL,
+  EffectiveTime = NULL,
+  EligibilityCategoryID = NULL,
+  Note = NULL,
+  PriceCategoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

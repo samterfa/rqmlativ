@@ -6,12 +6,12 @@
 \usage{
 getStaffContact(
   StaffContactID,
+  CreatedTime = F,
+  ModifiedTime = F,
   OnlineFormID = F,
   StaffID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

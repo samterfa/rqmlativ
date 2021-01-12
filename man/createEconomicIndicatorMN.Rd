@@ -6,12 +6,12 @@
 \usage{
 createEconomicIndicatorMN(
   DistrictID = NULL,
-  StateEconomicIndicatorCodeMNID = NULL,
+  EndDate = NULL,
   EntryComment = NULL,
   ExitComment = NULL,
   SchoolYearID = NULL,
   StartDate = NULL,
-  EndDate = NULL,
+  StateEconomicIndicatorCodeMNID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

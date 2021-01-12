@@ -5,8 +5,8 @@
 \title{Create a SectionCategory}
 \usage{
 createSectionCategory(
-  SectionGradeBucketID = NULL,
   CategoryID = NULL,
+  SectionGradeBucketID = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

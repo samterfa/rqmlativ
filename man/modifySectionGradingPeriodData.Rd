@@ -6,9 +6,9 @@
 \usage{
 modifySectionGradingPeriodData(
   SectionGradingPeriodDataID,
-  SectionID = NULL,
   GradingPeriodID = NULL,
   IsCompleted = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

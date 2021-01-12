@@ -6,12 +6,12 @@
 \usage{
 listForm1099MYearStateBoxValues(
   searchConditionsList = NULL,
-  Form1099MYearStateBoxValueID = F,
-  Form1099MYearID = F,
-  StateID = F,
+  Amount = F,
   BoxNumber = F,
   Description = F,
-  Amount = F,
+  Form1099MYearID = F,
+  Form1099MYearStateBoxValueID = F,
+  StateID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

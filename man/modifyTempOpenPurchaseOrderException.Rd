@@ -6,12 +6,12 @@
 \usage{
 modifyTempOpenPurchaseOrderException(
   TempOpenPurchaseOrderExceptionID,
-  PurchaseOrderNumber = NULL,
-  VendorName = NULL,
   Description = NULL,
-  OriginalPurchaseOrderAmount = NULL,
-  RemainingEncumbrance = NULL,
   ExceptionReason = NULL,
+  OriginalPurchaseOrderAmount = NULL,
+  PurchaseOrderNumber = NULL,
+  RemainingEncumbrance = NULL,
+  VendorName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

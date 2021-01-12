@@ -6,9 +6,9 @@
 \usage{
 modifyStudentGradeBucketFlag(
   StudentGradeBucketFlagID,
-  StudentGradeBucketID = NULL,
   GradeBucketFlagID = NULL,
   IsManual = NULL,
+  StudentGradeBucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

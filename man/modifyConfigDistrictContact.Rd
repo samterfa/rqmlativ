@@ -6,12 +6,12 @@
 \usage{
 modifyConfigDistrictContact(
   ConfigDistrictContactID,
+  ConfigDistrictID = NULL,
+  DisplayEmail = NULL,
+  DisplayPhone = NULL,
+  EmailTypeID = NULL,
   Module = NULL,
   NameID = NULL,
-  ConfigDistrictID = NULL,
-  DisplayPhone = NULL,
-  DisplayEmail = NULL,
-  EmailTypeID = NULL,
   PhoneTypeID = NULL,
   entityId = 1,
   query = NULL,

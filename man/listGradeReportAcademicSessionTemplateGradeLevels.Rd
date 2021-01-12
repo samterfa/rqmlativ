@@ -6,13 +6,13 @@
 \usage{
 listGradeReportAcademicSessionTemplateGradeLevels(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeLevelID = F,
   GradeReportAcademicSessionTemplateGradeLevelID = F,
   GradeReportAcademicSessionTemplateID = F,
-  GradeLevelID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

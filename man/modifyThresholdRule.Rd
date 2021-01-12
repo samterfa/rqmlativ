@@ -6,9 +6,9 @@
 \usage{
 modifyThresholdRule(
   ThresholdRuleID,
+  NumberOfOccurrences = NULL,
   ThresholdID = NULL,
   ThresholdRuleGroupID = NULL,
-  NumberOfOccurrences = NULL,
   ThresholdRuleIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

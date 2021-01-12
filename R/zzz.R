@@ -123,7 +123,7 @@ loadSkyModules <- function(){
   
   modules <- NULL
   for(page in 1:100000){
-    
+   
     endpoint <- glue::glue('/{api}/{entityId}/{module}/{objectName}/{page}/{format(pageSize, scientific = F)}')
     
     searchObject <- createSearchObject(SearchConditionsList = SearchConditionsList)
@@ -131,6 +131,11 @@ loadSkyModules <- function(){
     requestText <- glue::glue('httr::{method}("{Sys.getenv("SkywardBaseUrl")}{endpoint}", body = searchObject, encode = "json", query = queryParams, config = httr::config(token = getSkywardToken()))') 
     
     response <- eval(parse(text = requestText))
+    
+    if(response$status_code == 403){
+      file.remove(response$request$auth_token$cache_path)
+      response <- eval(parse(text = requestText))
+    }
     
     newResults <- httr::content(response) %>% purrr::pluck('Objects') %>% jsonlite::toJSON(auto_unbox = T) %>% jsonlite::fromJSON(flatten = T) %>% unlistItems()
     
@@ -577,13 +582,13 @@ getSchemaForObjects <- function(seedObjectNames, maxDepth = 2){
 #' @export
 listSearchConditionTypes <- function(){
   
-  c('Less', 'LessEqual', 'Equal', 'NotEqual', 'GreaterEqual', 'Greater', 'BetweenInclusive', 'BetweenExclusive', 'Null', 'NotNull', 'List', 'NotList', 'Like', 'NotLike', 'Begins', 'NotBegins', 'Contains', 'NotContains', 'Ends', 'NotEnds')
+  c('Equal', 'NotEqual', 'Less', 'LessEqual', 'Greater', 'GreaterEqual', 'BetweenInclusive', 'NotBetwenInclusive', 'BetweenExclusive', 'NotBetwenExclusive', 'Null', 'NotNull', 'List', 'NotList', 'Like', 'NotLike', 'Begins', 'NotBegins', 'Contains', 'NotContains', 'Ends', 'NotEnds')
 }
 
 
 generateObjectFunctions <- function(modules = skyModules, deleteAllFiles = T){
   
-  if(deleteAllFiles) for(file in list.files('R') %>% purrr::discard(~.x %in% c('data.R', 'zzz.R', 'utils-pipe.R'))) file.remove(glue::glue('R/{file}'))
+  if(deleteAllFiles) for(file in list.files('R') %>% purrr::discard(~.x %in% c('data.R', 'zzz.R', 'utils-pipe.R', 'sysdata.rda'))) file.remove(glue::glue('R/{file}'))
   
   for(i in 1:nrow(modules)){
     
@@ -603,8 +608,8 @@ generateObjectFunctions <- function(modules = skyModules, deleteAllFiles = T){
       
       object <- objects %>% dplyr::slice(j)
       
-      fields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(FieldName) %>% unique()
-      editableFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID, UserCanEdit == T) %>% dplyr::pull(FieldName) %>% unique()
+      fields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID) %>% dplyr::pull(FieldName) %>% unique() %>% sort()
+      editableFields <- skyFields %>% dplyr::filter(ObjectID == object$ObjectID, UserCanEdit == T) %>% dplyr::pull(FieldName) %>% unique() %>% sort()
       
       #### Generate LIST functions
       functionName <- glue::glue('list{pluralize::pluralize(object$ObjectName)}')

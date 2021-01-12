@@ -7,9 +7,9 @@
 modifyActivityPersonnel(
   ActivityPersonnelID,
   ActivityID = NULL,
-  NameID = NULL,
-  IsLeader = NULL,
   ActivityPersonnelIDClonedFrom = NULL,
+  IsLeader = NULL,
+  NameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

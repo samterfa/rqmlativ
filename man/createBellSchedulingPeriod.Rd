@@ -6,10 +6,10 @@
 \usage{
 createBellSchedulingPeriod(
   BellScheduleID = NULL,
+  BellSchedulingPeriodIDClonedFrom = NULL,
+  EndTime = NULL,
   SchedulingPeriodID = NULL,
   StartTime = NULL,
-  EndTime = NULL,
-  BellSchedulingPeriodIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyRoomObject(
   RoomObjectID,
+  IsStudentSeat = NULL,
   Label = NULL,
   Parameters = NULL,
-  IsStudentSeat = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

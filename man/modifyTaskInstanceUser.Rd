@@ -6,10 +6,10 @@
 \usage{
 modifyTaskInstanceUser(
   TaskInstanceUserID,
-  UserID = NULL,
+  Description = NULL,
   TaskInstanceID = NULL,
   Type = NULL,
-  Description = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

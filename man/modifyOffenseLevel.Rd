@@ -6,11 +6,11 @@
 \usage{
 modifyOffenseLevel(
   OffenseLevelID,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   OffenseLevelIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

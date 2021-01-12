@@ -5,11 +5,11 @@
 \title{Create a CacheInitialization}
 \usage{
 createCacheInitialization(
-  CacheName = NULL,
-  HostName = NULL,
   Application = NULL,
-  InitializationTimeMilliseconds = NULL,
+  CacheName = NULL,
   CacheVersionCount = NULL,
+  HostName = NULL,
+  InitializationTimeMilliseconds = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyStrategyEntity(
   StrategyEntityID,
-  StrategyID = NULL,
   EntityID = NULL,
+  StrategyID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

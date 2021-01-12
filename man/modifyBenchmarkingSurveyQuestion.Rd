@@ -6,8 +6,8 @@
 \usage{
 modifyBenchmarkingSurveyQuestion(
   BenchmarkingSurveyQuestionID,
-  BenchmarkingSurveyID = NULL,
   BenchmarkingQuestionID = NULL,
+  BenchmarkingSurveyID = NULL,
   Order = NULL,
   entityId = 1,
   query = NULL,

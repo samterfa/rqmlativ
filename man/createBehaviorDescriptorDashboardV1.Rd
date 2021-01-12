@@ -5,15 +5,15 @@
 \title{Create a BehaviorDescriptorDashboardV1}
 \usage{
 createBehaviorDescriptorDashboardV1(
-  SchoolYearID = NULL,
-  EntityID = NULL,
+  CategoryCode = NULL,
   Code = NULL,
-  ShortDescription = NULL,
+  DashboardRunHistoryID = NULL,
   Description = NULL,
   EdFiBehaviorCategoryTypeID = NULL,
-  CategoryCode = NULL,
+  EntityID = NULL,
   SchoolCode = NULL,
-  DashboardRunHistoryID = NULL,
+  SchoolYearID = NULL,
+  ShortDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyImpersonation(
   ImpersonationID,
+  ImpersonationEnded = NULL,
   UserIDImpersonated = NULL,
   UserIDImpersonator = NULL,
-  ImpersonationEnded = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

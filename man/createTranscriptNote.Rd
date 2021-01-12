@@ -5,9 +5,9 @@
 \title{Create a TranscriptNote}
 \usage{
 createTranscriptNote(
+  DateAdded = NULL,
   Note = NULL,
   StudentID = NULL,
-  DateAdded = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

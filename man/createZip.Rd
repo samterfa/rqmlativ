@@ -5,14 +5,14 @@
 \title{Create a Zip}
 \usage{
 createZip(
-  ZipCode = NULL,
   City = NULL,
-  StateID = NULL,
-  IsPreferredByUSPS = NULL,
   CountryCode = NULL,
+  EdFiCountryID = NULL,
   FreeFormCountry = NULL,
   FreeFormState = NULL,
-  EdFiCountryID = NULL,
+  IsPreferredByUSPS = NULL,
+  StateID = NULL,
+  ZipCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

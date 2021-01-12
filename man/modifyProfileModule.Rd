@@ -6,12 +6,12 @@
 \usage{
 modifyProfileModule(
   ProfileModuleID,
-  ProfileID = NULL,
   DisplayName = NULL,
-  SkywardDisplayName = NULL,
   DisplayOrder = NULL,
-  SkywardDisplayOrder = NULL,
   IsEnabled = NULL,
+  ProfileID = NULL,
+  SkywardDisplayName = NULL,
+  SkywardDisplayOrder = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

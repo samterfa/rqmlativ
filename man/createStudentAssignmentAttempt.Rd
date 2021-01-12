@@ -5,12 +5,12 @@
 \title{Create a StudentAssignmentAttempt}
 \usage{
 createStudentAssignmentAttempt(
-  StudentAssignmentID = NULL,
-  Score = NULL,
   Comments = NULL,
-  IsUsed = NULL,
-  GradeMarkID = NULL,
   DateAttempted = NULL,
+  GradeMarkID = NULL,
+  IsUsed = NULL,
+  Score = NULL,
+  StudentAssignmentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

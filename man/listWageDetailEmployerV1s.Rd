@@ -6,14 +6,14 @@
 \usage{
 listWageDetailEmployerV1s(
   searchConditionsList = NULL,
-  WageDetailEmployerV1ID = F,
-  WageDetailExtractRunID = F,
+  CreatedTime = F,
   EmployerID = F,
+  ModifiedTime = F,
   UnemploymentInsuranceAccountNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  WageDetailEmployerV1ID = F,
+  WageDetailExtractRunID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

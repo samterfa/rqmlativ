@@ -6,13 +6,13 @@
 \usage{
 getSurvey(
   SurveyID,
-  Name = F,
-  SkywardID = F,
-  SkywardHash = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Name = F,
+  SkywardHash = F,
+  SkywardID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

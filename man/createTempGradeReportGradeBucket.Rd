@@ -5,9 +5,9 @@
 \title{Create a TempGradeReportGradeBucket}
 \usage{
 createTempGradeReportGradeBucket(
+  EntityName = NULL,
   GradeBucketLabel = NULL,
   GradingPeriodGradeBucketID = NULL,
-  EntityName = NULL,
   SchoolYearDescription = NULL,
   SectionLengthDescription = NULL,
   entityId = 1,

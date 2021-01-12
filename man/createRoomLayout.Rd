@@ -5,8 +5,8 @@
 \title{Create a RoomLayout}
 \usage{
 createRoomLayout(
-  RoomID = NULL,
   Description = NULL,
+  RoomID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

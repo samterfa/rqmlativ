@@ -6,12 +6,12 @@
 \usage{
 getNotificationGradeMark(
   NotificationGradeMarkID,
-  NotificationID = F,
-  GradeMarkID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeMarkID = F,
   ModifiedTime = F,
+  NotificationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

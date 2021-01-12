@@ -5,8 +5,8 @@
 \title{Create a GradeReportAcademicSessionTemplateGradeLevel}
 \usage{
 createGradeReportAcademicSessionTemplateGradeLevel(
-  GradeReportAcademicSessionTemplateID = NULL,
   GradeLevelID = NULL,
+  GradeReportAcademicSessionTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

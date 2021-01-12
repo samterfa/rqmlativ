@@ -5,13 +5,13 @@
 \title{Create a TempGradeReportAttendanceTerm}
 \usage{
 createTempGradeReportAttendanceTerm(
-  AttendanceTermID = NULL,
   AttendanceTermCode = NULL,
+  AttendanceTermID = NULL,
+  CalendarDescription = NULL,
+  EndDate = NULL,
   EntityName = NULL,
   SchoolYearDescription = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  CalendarDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

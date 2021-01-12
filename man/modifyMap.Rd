@@ -6,12 +6,12 @@
 \usage{
 modifyMap(
   MapID,
-  ReportEvents = NULL,
-  Name = NULL,
   Description = NULL,
-  PluginCategory = NULL,
-  SkywardIDObject = NULL,
+  Name = NULL,
   ObjectIDBase = NULL,
+  PluginCategory = NULL,
+  ReportEvents = NULL,
+  SkywardIDObject = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listForm1099MExportPrintFiles(
   searchConditionsList = NULL,
+  CreatedTime = F,
   Form1099MExportPrintFileID = F,
   Form1099MYearID = F,
   MediaID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

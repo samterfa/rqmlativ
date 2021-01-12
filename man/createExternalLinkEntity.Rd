@@ -5,8 +5,8 @@
 \title{Create an ExternalLinkEntity}
 \usage{
 createExternalLinkEntity(
-  ExternalLinkID = NULL,
   EntityID = NULL,
+  ExternalLinkID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

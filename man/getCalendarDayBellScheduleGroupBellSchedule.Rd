@@ -6,13 +6,13 @@
 \usage{
 getCalendarDayBellScheduleGroupBellSchedule(
   CalendarDayBellScheduleGroupBellScheduleID,
-  CalendarDayID = F,
-  BellScheduleGroupID = F,
   BellScheduleGroupBellScheduleID = F,
-  UserIDCreatedBy = F,
+  BellScheduleGroupID = F,
+  CalendarDayID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

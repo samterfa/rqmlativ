@@ -6,8 +6,8 @@
 \usage{
 getSectionEnrollmentTotalForSectionLengthSubsetAndEntity(
   SectionEnrollmentTotalForSectionLengthSubsetAndEntityID,
-  SectionID = F,
   EntityIDCountsAs = F,
+  SectionID = F,
   SectionLengthSubsetID = F,
   TotalEnrollmentCount = F,
   fieldPaths = NULL,

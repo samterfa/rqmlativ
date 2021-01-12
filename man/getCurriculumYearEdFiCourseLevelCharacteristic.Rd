@@ -6,13 +6,13 @@
 \usage{
 getCurriculumYearEdFiCourseLevelCharacteristic(
   CurriculumYearEdFiCourseLevelCharacteristicID,
+  CreatedTime = F,
+  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F,
   CurriculumYearID = F,
   EdFiCourseLevelCharacteristicID = F,
-  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

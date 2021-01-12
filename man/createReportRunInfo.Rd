@@ -5,8 +5,8 @@
 \title{Create a ReportRunInfo}
 \usage{
 createReportRunInfo(
-  ReportID = NULL,
   ObjectID = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

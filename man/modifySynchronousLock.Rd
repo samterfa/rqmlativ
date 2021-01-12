@@ -6,10 +6,10 @@
 \usage{
 modifySynchronousLock(
   SynchronousLockID,
-  WorkflowID = NULL,
-  WorkflowInstanceID = NULL,
   LockingKey = NULL,
   Waiting = NULL,
+  WorkflowID = NULL,
+  WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

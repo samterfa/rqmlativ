@@ -6,12 +6,12 @@
 \usage{
 getTemplateLastUsed(
   TemplateLastUsedID,
+  CreatedTime = F,
+  ModifiedTime = F,
   TemplateID = F,
   UserID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

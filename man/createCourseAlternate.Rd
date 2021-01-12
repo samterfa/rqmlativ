@@ -5,9 +5,9 @@
 \title{Create a CourseAlternate}
 \usage{
 createCourseAlternate(
-  CourseIDPrimary = NULL,
-  CourseIDAlternate = NULL,
   CourseAlternateIDClonedFrom = NULL,
+  CourseIDAlternate = NULL,
+  CourseIDPrimary = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

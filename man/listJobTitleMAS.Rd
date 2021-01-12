@@ -7,8 +7,8 @@
 listJobTitleMAS(
   searchConditionsList = NULL,
   JobTitleMAID = F,
-  Title = F,
   StaffID = F,
+  Title = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

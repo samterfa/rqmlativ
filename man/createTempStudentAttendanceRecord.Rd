@@ -6,14 +6,14 @@
 \usage{
 createTempStudentAttendanceRecord(
   AffectedPrimaryKey = NULL,
-  StudentName = NULL,
-  StudentNumber = NULL,
+  AttendanceTakenByPeriod = NULL,
   Date = NULL,
   DayOfTheWeek = NULL,
-  DayRotationID = NULL,
   DayRotation = NULL,
+  DayRotationID = NULL,
   GuardianNotified = NULL,
-  AttendanceTakenByPeriod = NULL,
+  StudentName = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

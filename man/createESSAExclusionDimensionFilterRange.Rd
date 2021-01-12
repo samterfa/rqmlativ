@@ -6,9 +6,9 @@
 \usage{
 createESSAExclusionDimensionFilterRange(
   ESSAExclusionID = NULL,
-  StructureDimensionID = NULL,
-  FilterLow = NULL,
   FilterHigh = NULL,
+  FilterLow = NULL,
+  StructureDimensionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

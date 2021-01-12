@@ -6,14 +6,14 @@
 \usage{
 listNextPINS(
   searchConditionsList = NULL,
-  NextPINID = F,
+  CreatedTime = F,
   DistrictID = F,
   Length = F,
+  ModifiedTime = F,
+  NextPINID = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

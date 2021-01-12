@@ -6,9 +6,9 @@
 \usage{
 modifyTempStudentErrorMessage(
   TempStudentErrorMessageID,
-  TempStudentErrorID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempStudentErrorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

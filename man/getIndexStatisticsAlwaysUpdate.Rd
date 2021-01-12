@@ -7,9 +7,9 @@
 getIndexStatisticsAlwaysUpdate(
   IndexStatisticsAlwaysUpdateID,
   SchemaName = F,
-  TableName = F,
-  SkywardID = F,
   SkywardHash = F,
+  SkywardID = F,
+  TableName = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

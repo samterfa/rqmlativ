@@ -5,14 +5,14 @@
 \title{Create a WatchlistThreshold}
 \usage{
 createWatchlistThreshold(
-  EntityID = NULL,
-  SchoolYearID = NULL,
   AreaOfConcernID = NULL,
-  Name = NULL,
   Description = NULL,
-  RunStartDate = NULL,
-  RunEndDate = NULL,
+  EntityID = NULL,
   IsActive = NULL,
+  Name = NULL,
+  RunEndDate = NULL,
+  RunStartDate = NULL,
+  SchoolYearID = NULL,
   WatchlistThresholdIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

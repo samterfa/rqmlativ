@@ -5,14 +5,14 @@
 \title{Create a PurchaseDetail}
 \usage{
 createPurchaseDetail(
-  PurchaseID = NULL,
-  PayorID = NULL,
   AccountingUpdateID = NULL,
-  PaymentType = NULL,
-  Status = NULL,
-  PurchaseType = NULL,
   Amount = NULL,
   Note = NULL,
+  PaymentType = NULL,
+  PayorID = NULL,
+  PurchaseID = NULL,
+  PurchaseType = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

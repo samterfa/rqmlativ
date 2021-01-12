@@ -5,14 +5,14 @@
 \title{Create a GASBRevenueAndExpenditureIncludedAccount}
 \usage{
 createGASBRevenueAndExpenditureIncludedAccount(
-  GASBRevenueAndExpenditureRowID = NULL,
   AccountFiscalYearID = NULL,
-  YearToDateActivity = NULL,
-  Debit = NULL,
-  Credit = NULL,
-  OriginalBudget = NULL,
   BeginningBalance = NULL,
+  Credit = NULL,
+  Debit = NULL,
   EndingBalance = NULL,
+  GASBRevenueAndExpenditureRowID = NULL,
+  OriginalBudget = NULL,
+  YearToDateActivity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

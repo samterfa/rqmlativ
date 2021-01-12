@@ -6,11 +6,11 @@
 \usage{
 modifyStaffConfigSystem(
   ConfigSystemID,
+  AutoGenerateSecurityUser = NULL,
+  NewTeacherAccessUserMessageContent = NULL,
+  NewTeacherAccessUserMessageSubject = NULL,
   StaffNumberMask = NULL,
   StaffNumberStartValue = NULL,
-  AutoGenerateSecurityUser = NULL,
-  NewTeacherAccessUserMessageSubject = NULL,
-  NewTeacherAccessUserMessageContent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

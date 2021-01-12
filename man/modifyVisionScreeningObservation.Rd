@@ -6,8 +6,8 @@
 \usage{
 modifyVisionScreeningObservation(
   VisionScreeningObservationID,
-  VisionScreeningID = NULL,
   VisionObservationID = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

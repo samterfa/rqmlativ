@@ -5,10 +5,10 @@
 \title{Create a GuidanceOfficeVisitGuardianResponse}
 \usage{
 createGuidanceOfficeVisitGuardianResponse(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   entityId = 1,
   query = NULL,

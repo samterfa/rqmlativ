@@ -6,10 +6,10 @@
 \usage{
 modifyImportResultRow(
   ImportResultRowID,
-  ImportResultID = NULL,
-  ImportFileRowNumber = NULL,
-  FailedRowFileRowNumber = NULL,
   ErrorMessage = NULL,
+  FailedRowFileRowNumber = NULL,
+  ImportFileRowNumber = NULL,
+  ImportResultID = NULL,
   ResultType = NULL,
   entityId = 1,
   query = NULL,

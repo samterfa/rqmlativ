@@ -6,10 +6,10 @@
 \usage{
 modifyTempMedia(
   TempMediaID,
-  ProcessID = NULL,
+  MediaID = NULL,
   ModuleID = NULL,
   ObjectID = NULL,
-  MediaID = NULL,
+  ProcessID = NULL,
   ProcessIndicator = NULL,
   entityId = 1,
   query = NULL,

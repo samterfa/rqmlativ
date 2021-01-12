@@ -6,13 +6,9 @@
 \usage{
 listUnitedStatesConstitutions(
   searchConditionsList = NULL,
-  UnitedStatesConstitutionID = F,
-  StudentTestID = F,
   DatePassed = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  StudentTestID = F,
+  UnitedStatesConstitutionID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

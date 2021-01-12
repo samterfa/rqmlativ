@@ -5,17 +5,17 @@
 \title{Create a ReimbursementMonthlyClaimBySchool}
 \usage{
 createReimbursementMonthlyClaimBySchool(
-  DistrictID = NULL,
   ApprovedCountFree = NULL,
   ApprovedCountReduced = NULL,
+  DistrictID = NULL,
+  MealType = NULL,
   PaidEligible = NULL,
   ReimbursementMonthID = NULL,
-  MealType = NULL,
   ServedCountFree = NULL,
-  ServedCountReduced = NULL,
-  ServedCountPaid = NULL,
-  ServedCountTotal = NULL,
   ServedCountOther = NULL,
+  ServedCountPaid = NULL,
+  ServedCountReduced = NULL,
+  ServedCountTotal = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

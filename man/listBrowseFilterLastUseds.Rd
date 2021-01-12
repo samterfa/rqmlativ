@@ -6,13 +6,13 @@
 \usage{
 listBrowseFilterLastUseds(
   searchConditionsList = NULL,
-  BrowseFilterLastUsedID = F,
   BrowseFilterID = F,
+  BrowseFilterLastUsedID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   UserID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

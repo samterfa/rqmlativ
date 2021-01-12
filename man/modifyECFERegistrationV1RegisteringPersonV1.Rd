@@ -6,8 +6,8 @@
 \usage{
 modifyECFERegistrationV1RegisteringPersonV1(
   ECFERegistrationV1RegisteringPersonV1ID,
-  ECFERegistrationV1ID = NULL,
   ECFERegisteringPersonV1ID = NULL,
+  ECFERegistrationV1ID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyTempAdjustedCategory(
   TempAdjustedCategoryID,
-  TempSectionCategoryID = NULL,
   CategoryID = NULL,
+  TempSectionCategoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

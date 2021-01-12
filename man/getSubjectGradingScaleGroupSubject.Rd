@@ -6,14 +6,14 @@
 \usage{
 getSubjectGradingScaleGroupSubject(
   SubjectGradingScaleGroupSubjectID,
-  SubjectGradingScaleGroupID = F,
   CalculationGroupSubjectID = F,
-  EntityGroupKey = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityGroupKey = F,
   ModifiedTime = F,
+  SubjectGradingScaleGroupID = F,
   SubjectGradingScaleGroupSubjectIDClonedFrom = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

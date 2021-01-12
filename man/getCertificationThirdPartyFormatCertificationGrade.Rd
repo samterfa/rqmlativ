@@ -6,13 +6,13 @@
 \usage{
 getCertificationThirdPartyFormatCertificationGrade(
   CertificationThirdPartyFormatCertificationGradeID,
-  CertificationThirdPartyFormatID = F,
   CertificationGradeID = F,
-  ImportValue = F,
-  UserIDCreatedBy = F,
+  CertificationThirdPartyFormatID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ImportValue = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

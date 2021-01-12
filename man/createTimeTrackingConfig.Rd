@@ -5,11 +5,11 @@
 \title{Create a TimeTrackingConfig}
 \usage{
 createTimeTrackingConfig(
-  DistrictID = NULL,
   BuildingID = NULL,
-  IPAddress = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
+  IPAddress = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

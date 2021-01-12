@@ -6,9 +6,9 @@
 \usage{
 modifyTemplatePreviousValue(
   TemplatePreviousValueID,
+  Data = NULL,
   TemplateID = NULL,
   UserID = NULL,
-  Data = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

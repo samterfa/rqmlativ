@@ -6,12 +6,12 @@
 \usage{
 getSkylertAttendanceExportSettingScheduledTask(
   SkylertAttendanceExportSettingScheduledTaskID,
-  SkylertAttendanceExportSettingID = F,
-  ScheduledTaskID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  ScheduledTaskID = F,
+  SkylertAttendanceExportSettingID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

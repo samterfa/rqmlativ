@@ -6,8 +6,8 @@
 \usage{
 modifyReportQueueSQL(
   ReportQueueSQLID,
-  ReportQueueID = NULL,
   ExecutedQuery = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,6 +6,7 @@
 \usage{
 modifyStaffMeetLastScored(
   StaffMeetLastScoredID,
+  GradebookLastAccessedTime = NULL,
   StaffMeetID = NULL,
   StudentAssignmentIDLastScored = NULL,
   TimeLastScored = NULL,

@@ -6,10 +6,10 @@
 \usage{
 listFamilyStudentAccounts(
   searchConditionsList = NULL,
-  FamilyStudentAccountsID = F,
-  ReligionID = F,
-  PlaceOfWorship = F,
   FamilyID = F,
+  FamilyStudentAccountsID = F,
+  PlaceOfWorship = F,
+  ReligionID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

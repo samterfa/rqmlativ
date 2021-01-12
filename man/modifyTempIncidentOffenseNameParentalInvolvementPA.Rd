@@ -6,9 +6,9 @@
 \usage{
 modifyTempIncidentOffenseNameParentalInvolvementPA(
   TempIncidentOffenseNameParentalInvolvementPAID,
-  TempIncidentOffenseNameID = NULL,
-  StateParentalInvolvementPAID = NULL,
   Comment = NULL,
+  StateParentalInvolvementPAID = NULL,
+  TempIncidentOffenseNameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

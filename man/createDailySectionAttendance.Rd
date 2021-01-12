@@ -5,9 +5,9 @@
 \title{Create a DailySectionAttendance}
 \usage{
 createDailySectionAttendance(
+  AttendancePeriodID = NULL,
   CalendarDayID = NULL,
   MeetID = NULL,
-  AttendancePeriodID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyTempDayRotation(
   TempDayRotationID,
-  DayRotationID = NULL,
   Code = NULL,
+  DayRotationID = NULL,
+  Note = NULL,
   ObjectIsDirty = NULL,
   ObjectName = NULL,
-  Note = NULL,
   RecordsUpdated = NULL,
   entityId = 1,
   query = NULL,

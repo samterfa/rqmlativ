@@ -5,8 +5,8 @@
 \title{Create a ScoliosisScreeningObservation}
 \usage{
 createScoliosisScreeningObservation(
-  ScoliosisScreeningID = NULL,
   ScoliosisObservationID = NULL,
+  ScoliosisScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

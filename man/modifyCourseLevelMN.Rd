@@ -7,11 +7,11 @@
 modifyCourseLevelMN(
   CourseLevelMNID,
   Code = NULL,
-  StateCollegeCourseLevelMNID = NULL,
   Credits = NULL,
-  Title = NULL,
   CurriculumYearID = NULL,
   InstitutionID = NULL,
+  StateCollegeCourseLevelMNID = NULL,
+  Title = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

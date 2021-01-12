@@ -5,16 +5,16 @@
 \title{Create an UserStudentCalendarPreference}
 \usage{
 createUserStudentCalendarPreference(
-  UserIDOwner = NULL,
-  StudentID = NULL,
+  AbsencesAndTardiesBackgroundColor = NULL,
+  AssignmentBackgroundColor = NULL,
+  ShowAbsencesAndTardies = NULL,
   ShowAssignments = NULL,
   ShowStudentActivityEvents = NULL,
-  AssignmentBackgroundColor = NULL,
-  StudentActivityEventBackgroundColor = NULL,
-  ShowAbsencesAndTardies = NULL,
-  AbsencesAndTardiesBackgroundColor = NULL,
   ShowStudentNotes = NULL,
+  StudentActivityEventBackgroundColor = NULL,
+  StudentID = NULL,
   StudentNoteBackgroundColor = NULL,
+  UserIDOwner = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

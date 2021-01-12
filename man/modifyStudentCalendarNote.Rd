@@ -6,11 +6,11 @@
 \usage{
 modifyStudentCalendarNote(
   StudentCalendarNoteID,
-  StudentID = NULL,
   Date = NULL,
-  Note = NULL,
   Description = NULL,
+  Note = NULL,
   PriorityType = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

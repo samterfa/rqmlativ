@@ -6,10 +6,10 @@
 \usage{
 modifyMTASMN(
   MTASMNID,
-  StudentTestID = NULL,
-  ScaleScore = NULL,
   IsPassingScaleScore = NULL,
-  Subject = NULL,
+  ScaleScore = NULL,
+  StudentTestID = NULL,
+  SubjectCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

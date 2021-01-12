@@ -6,13 +6,13 @@
 \usage{
 getTempCourseMasterMassUpdateErrorDetail(
   TempCourseMasterMassUpdateErrorDetailID,
-  TempCourseMasterMassUpdateErrorID = F,
-  ErrorName = F,
-  Error = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Error = F,
+  ErrorName = F,
   ModifiedTime = F,
+  TempCourseMasterMassUpdateErrorID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

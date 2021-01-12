@@ -5,9 +5,9 @@
 \title{Create a LineCloseout}
 \usage{
 createLineCloseout(
+  CloseoutTime = NULL,
   LineID = NULL,
   StartTime = NULL,
-  CloseoutTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

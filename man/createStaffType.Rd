@@ -5,12 +5,12 @@
 \title{Create a StaffType}
 \usage{
 createStaffType(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
+  EdFiStaffClassificationDescriptorID = NULL,
   SchoolYearID = NULL,
   StaffTypeIDClonedFrom = NULL,
-  EdFiStaffClassificationDescriptorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getObjectWorkflowTrigger(
   ObjectWorkflowTriggerID,
-  WorkflowID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectID = F,
   ObjectSaveMode = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  WorkflowID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

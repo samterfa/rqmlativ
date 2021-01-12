@@ -6,12 +6,12 @@
 \usage{
 modifyTempACHAccount(
   TempACHAccountID,
-  ACHAccountID = NULL,
-  Name = NULL,
   AccountType = NULL,
+  ACHAccountID = NULL,
+  ACHAccountNumber = NULL,
   IsEmployeeNetPayrollACH = NULL,
   IsVendorAccountsPayableACH = NULL,
-  ACHAccountNumber = NULL,
+  Name = NULL,
   RoutingNumber = NULL,
   UseTaxAddenda = NULL,
   entityId = 1,

@@ -6,11 +6,11 @@
 \usage{
 listCourseCorequisites(
   searchConditionsList = NULL,
-  CourseCorequisiteID = F,
-  CourseIDParent = F,
-  CourseCorequisiteGroupID = F,
-  CourseIDMember = F,
   AutomaticRequestSetting = F,
+  CourseCorequisiteGroupID = F,
+  CourseCorequisiteID = F,
+  CourseIDMember = F,
+  CourseIDParent = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

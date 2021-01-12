@@ -6,15 +6,15 @@
 \usage{
 modifyTempReportRole(
   TempReportRoleID,
-  ReportRoleID = NULL,
   ReportID = NULL,
+  ReportIsSkywardMaintained = NULL,
+  ReportIsWSIPCMaintained = NULL,
   ReportName = NULL,
   ReportPortalCode = NULL,
   ReportPrimaryMenuModuleDisplayName = NULL,
   ReportReportTypeCode = NULL,
-  ReportIsSkywardMaintained = NULL,
+  ReportRoleID = NULL,
   RoleID = NULL,
-  ReportIsWSIPCMaintained = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

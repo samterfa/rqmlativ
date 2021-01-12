@@ -5,14 +5,14 @@
 \title{Create a StudentSectionGPABucketGroup}
 \usage{
 createStudentSectionGPABucketGroup(
-  StudentSectionID = NULL,
-  StudentGPABucketGroupID = NULL,
-  UseGPATotalOverride = NULL,
-  TotalGPACredits = NULL,
-  TotalGPAPoints = NULL,
-  TotalAddOnPoints = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
+  StudentGPABucketGroupID = NULL,
+  StudentSectionID = NULL,
+  TotalAddOnPoints = NULL,
+  TotalGPACredits = NULL,
+  TotalGPAPoints = NULL,
+  UseGPATotalOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

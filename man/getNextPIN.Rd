@@ -6,13 +6,13 @@
 \usage{
 getNextPIN(
   NextPINID,
+  CreatedTime = F,
   DistrictID = F,
   Length = F,
+  ModifiedTime = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

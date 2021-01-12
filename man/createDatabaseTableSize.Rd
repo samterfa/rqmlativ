@@ -6,12 +6,12 @@
 \usage{
 createDatabaseTableSize(
   DatabaseTableID = NULL,
-  Records = NULL,
-  ReservedKB = NULL,
-  UsedKB = NULL,
   DataKB = NULL,
   IndexKB = NULL,
+  Records = NULL,
+  ReservedKB = NULL,
   UnusedKB = NULL,
+  UsedKB = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

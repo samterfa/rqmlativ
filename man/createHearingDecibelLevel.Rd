@@ -5,12 +5,12 @@
 \title{Create a HearingDecibelLevel}
 \usage{
 createHearingDecibelLevel(
-  DistrictID = NULL,
   Code = NULL,
-  Description = NULL,
   DecibelLevel = NULL,
-  IsActive = NULL,
+  Description = NULL,
+  DistrictID = NULL,
   HearingDecibelLevelDefaultID = NULL,
+  IsActive = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,11 +5,11 @@
 \title{Create an EdFiSchool}
 \usage{
 createEdFiSchool(
+  Code = NULL,
   EdFiDistrictID = NULL,
   EdFiID = NULL,
-  Code = NULL,
-  Name = NULL,
   IsInvalid = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

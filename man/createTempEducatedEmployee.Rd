@@ -5,13 +5,13 @@
 \title{Create a TempEducatedEmployee}
 \usage{
 createTempEducatedEmployee(
-  EmployeeID = NULL,
-  StateSTARHighestEducationLevelMNID = NULL,
-  EmployeeFullNameFML = NULL,
-  CurrentLane = NULL,
   CurrentCredits = NULL,
-  STARHighestEducationLevelOverride = NULL,
+  CurrentLane = NULL,
+  EmployeeFullNameFML = NULL,
+  EmployeeID = NULL,
   EmployeeNumber = NULL,
+  STARHighestEducationLevelOverride = NULL,
+  StateSTARHighestEducationLevelMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

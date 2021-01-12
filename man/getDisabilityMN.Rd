@@ -6,14 +6,14 @@
 \usage{
 getDisabilityMN(
   DisabilityMNID,
+  CreatedTime = F,
+  DisabilityRank = F,
   EnrollmentMNID = F,
+  ModifiedTime = F,
   Rank = F,
   StateDisabilityCodeMNID = F,
-  DisabilityRank = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

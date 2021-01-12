@@ -6,13 +6,13 @@
 \usage{
 modifySchedulingGroup(
   SchedulingGroupID,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  EntityID = NULL,
   GradeReferenceID = NULL,
   HomeroomID = NULL,
   SchedulingGroupIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

@@ -5,9 +5,9 @@
 \title{Create a SubjectGradingScaleGroupSubject}
 \usage{
 createSubjectGradingScaleGroupSubject(
-  SubjectGradingScaleGroupID = NULL,
   CalculationGroupSubjectID = NULL,
   EntityGroupKey = NULL,
+  SubjectGradingScaleGroupID = NULL,
   SubjectGradingScaleGroupSubjectIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getUnemploymentCompensationSubmissionMultipleWorksiteView(
   UnemploymentCompensationSubmissionMultipleWorksiteViewID,
-  UnemploymentCompensationSubmissionID = F,
-  Worksite = F,
   BuildingID = F,
   PaidFor12thDayOfMonth1EmployeeCount = F,
   PaidFor12thDayOfMonth2EmployeeCount = F,
   PaidFor12thDayOfMonth3EmployeeCount = F,
   TotalQuarterlyWages = F,
+  UnemploymentCompensationSubmissionID = F,
+  Worksite = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyStudentVaccinationYearStatusStudentVaccine(
   StudentVaccinationYearStatusStudentVaccineID,
+  InvalidDoseReason = NULL,
+  IsValidDose = NULL,
   StudentVaccinationYearStatusID = NULL,
   StudentVaccineID = NULL,
-  IsValidDose = NULL,
-  InvalidDoseReason = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

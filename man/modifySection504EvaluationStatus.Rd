@@ -6,12 +6,12 @@
 \usage{
 modifySection504EvaluationStatus(
   Section504EvaluationStatusID,
-  DistrictID = NULL,
-  IsIneligible = NULL,
   Code = NULL,
   Description = NULL,
-  ValidYearLow = NULL,
+  DistrictID = NULL,
+  IsIneligible = NULL,
   ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

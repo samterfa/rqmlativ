@@ -6,12 +6,12 @@
 \usage{
 modifyWeapon(
   WeaponID,
-  StateWeaponTypeMNID = NULL,
-  StatePelletGunTypeMNID = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
+  SchoolYearID = NULL,
+  StatePelletGunTypeMNID = NULL,
+  StateWeaponTypeMNID = NULL,
   WeaponIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

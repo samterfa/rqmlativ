@@ -6,11 +6,11 @@
 \usage{
 modifyTempMassSpecialProgramUtilityError(
   TempMassSpecialProgramUtilityErrorID,
-  SourceDescription = NULL,
-  RecordTypeFriendlyName = NULL,
-  StudentID = NULL,
-  StudentFullName = NULL,
   FailureReason = NULL,
+  RecordTypeFriendlyName = NULL,
+  SourceDescription = NULL,
+  StudentFullName = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

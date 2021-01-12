@@ -18,7 +18,7 @@
 	#' @return A list of Buses
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBuses <- function(searchConditionsList = NULL, BusID = F, DistrictID = F, Code = F, Description = F, Capacity = F, IsActive = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasHistoricBusRoutes = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBuses <- function(searchConditionsList = NULL, BusID = F, Capacity = F, Code = F, CreatedTime = F, Description = F, DistrictID = F, HasHistoricBusRoutes = F, IsActive = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of Bus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBus <- function(BusID, DistrictID = F, Code = F, Description = F, Capacity = F, IsActive = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasHistoricBusRoutes = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBus <- function(BusID, Capacity = F, Code = F, CreatedTime = F, Description = F, DistrictID = F, HasHistoricBusRoutes = F, IsActive = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BusID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created Bus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBus <- function(DistrictID = NULL, Code = NULL, Description = NULL, Capacity = NULL, IsActive = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBus <- function(Capacity = NULL, Code = NULL, Description = NULL, DistrictID = NULL, IsActive = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified Bus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBus <- function(BusID, DistrictID = NULL, Code = NULL, Description = NULL, Capacity = NULL, IsActive = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBus <- function(BusID, Capacity = NULL, Code = NULL, Description = NULL, DistrictID = NULL, IsActive = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of TransportationCategories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTransportationCategories <- function(searchConditionsList = NULL, TransportationCategoryID = F, DistrictID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SchoolYearID = F, TransportationCategoryIDClonedFrom = F, TransportationCategoryMNID = F, StateTransportationCategoryCodeMNID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTransportationCategories <- function(searchConditionsList = NULL, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, ModifiedTime = F, SchoolYearID = F, StateTransportationCategoryCodeMNID = F, TransportationCategoryID = F, TransportationCategoryIDClonedFrom = F, TransportationCategoryMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of TransportationCategory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTransportationCategory <- function(TransportationCategoryID, DistrictID = F, Code = F, Description = F, CodeDescription = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, SchoolYearID = F, TransportationCategoryIDClonedFrom = F, TransportationCategoryMNID = F, StateTransportationCategoryCodeMNID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTransportationCategory <- function(TransportationCategoryID, Code = F, CodeDescription = F, CreatedTime = F, Description = F, DistrictID = F, ModifiedTime = F, SchoolYearID = F, StateTransportationCategoryCodeMNID = F, TransportationCategoryIDClonedFrom = F, TransportationCategoryMNID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TransportationCategoryID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created TransportationCategory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTransportationCategory <- function(DistrictID = NULL, Code = NULL, Description = NULL, SchoolYearID = NULL, StateTransportationCategoryCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTransportationCategory <- function(Code = NULL, Description = NULL, DistrictID = NULL, SchoolYearID = NULL, StateTransportationCategoryCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified TransportationCategory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTransportationCategory <- function(TransportationCategoryID, DistrictID = NULL, Code = NULL, Description = NULL, SchoolYearID = NULL, StateTransportationCategoryCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTransportationCategory <- function(TransportationCategoryID, Code = NULL, Description = NULL, DistrictID = NULL, SchoolYearID = NULL, StateTransportationCategoryCodeMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of BusRoutes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBusRoutes <- function(searchConditionsList = NULL, Mileage = F, BusRouteID = F, NameIDDriver = F, DepartureTime = F, ArrivalTime = F, BusID = F, RouteType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasBusStops = F, SchoolYearID = F, Description = F, BusRouteIDClonedFrom = F, StudentCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBusRoutes <- function(searchConditionsList = NULL, ArrivalTime = F, BusID = F, BusRouteID = F, BusRouteIDClonedFrom = F, CreatedTime = F, DepartureTime = F, Description = F, HasBusStops = F, Mileage = F, ModifiedTime = F, NameIDDriver = F, RouteType = F, SchoolYearID = F, StudentCount = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of BusRoute
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBusRoute <- function(BusRouteID, Mileage = F, NameIDDriver = F, DepartureTime = F, ArrivalTime = F, BusID = F, RouteType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasBusStops = F, SchoolYearID = F, Description = F, BusRouteIDClonedFrom = F, StudentCount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBusRoute <- function(BusRouteID, ArrivalTime = F, BusID = F, BusRouteIDClonedFrom = F, CreatedTime = F, DepartureTime = F, Description = F, HasBusStops = F, Mileage = F, ModifiedTime = F, NameIDDriver = F, RouteType = F, SchoolYearID = F, StudentCount = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BusRouteID")
 
@@ -311,7 +311,7 @@
 	#' @return A newly created BusRoute
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBusRoute <- function(Mileage = NULL, NameIDDriver = NULL, DepartureTime = NULL, ArrivalTime = NULL, BusID = NULL, RouteType = NULL, SchoolYearID = NULL, Description = NULL, BusRouteIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBusRoute <- function(ArrivalTime = NULL, BusID = NULL, BusRouteIDClonedFrom = NULL, DepartureTime = NULL, Description = NULL, Mileage = NULL, NameIDDriver = NULL, RouteType = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -332,7 +332,7 @@
 	#' @return The modified BusRoute
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBusRoute <- function(BusRouteID, Mileage = NULL, NameIDDriver = NULL, DepartureTime = NULL, ArrivalTime = NULL, BusID = NULL, RouteType = NULL, SchoolYearID = NULL, Description = NULL, BusRouteIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBusRoute <- function(BusRouteID, ArrivalTime = NULL, BusID = NULL, BusRouteIDClonedFrom = NULL, DepartureTime = NULL, Description = NULL, Mileage = NULL, NameIDDriver = NULL, RouteType = NULL, SchoolYearID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -360,7 +360,7 @@
 	#' @return A list of StudentTransportations
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentTransportations <- function(searchConditionsList = NULL, StudentTransportationID = F, DistrictID = F, SchoolYearID = F, StartDate = F, EndDate = F, Transported = F, Miles = F, TransportationCategoryID = F, StudentID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentTransportationMNID = F, StateDistrictMNID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentTransportations <- function(searchConditionsList = NULL, CreatedTime = F, DistrictID = F, EndDate = F, Miles = F, ModifiedTime = F, SchoolYearID = F, StartDate = F, StateDistrictMNID = F, StudentID = F, StudentTransportationID = F, StudentTransportationMNID = F, TransportationCategoryID = F, Transported = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of StudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentTransportation <- function(StudentTransportationID, DistrictID = F, SchoolYearID = F, StartDate = F, EndDate = F, Transported = F, Miles = F, TransportationCategoryID = F, StudentID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentTransportationMNID = F, StateDistrictMNID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentTransportation <- function(StudentTransportationID, CreatedTime = F, DistrictID = F, EndDate = F, Miles = F, ModifiedTime = F, SchoolYearID = F, StartDate = F, StateDistrictMNID = F, StudentID = F, StudentTransportationMNID = F, TransportationCategoryID = F, Transported = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentTransportationID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created StudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentTransportation <- function(DistrictID = NULL, SchoolYearID = NULL, StartDate = NULL, EndDate = NULL, Transported = NULL, Miles = NULL, TransportationCategoryID = NULL, StudentID = NULL, StateDistrictMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentTransportation <- function(DistrictID = NULL, EndDate = NULL, Miles = NULL, SchoolYearID = NULL, StartDate = NULL, StateDistrictMNID = NULL, StudentID = NULL, TransportationCategoryID = NULL, Transported = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified StudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentTransportation <- function(StudentTransportationID, DistrictID = NULL, SchoolYearID = NULL, StartDate = NULL, EndDate = NULL, Transported = NULL, Miles = NULL, TransportationCategoryID = NULL, StudentID = NULL, StateDistrictMNID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentTransportation <- function(StudentTransportationID, DistrictID = NULL, EndDate = NULL, Miles = NULL, SchoolYearID = NULL, StartDate = NULL, StateDistrictMNID = NULL, StudentID = NULL, TransportationCategoryID = NULL, Transported = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of BusStops
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listBusStops <- function(searchConditionsList = NULL, BusStopID = F, ArrivalTime = F, DepartureTime = F, AddressID = F, Description = F, StopNumber = F, BusRouteID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, BusStopIDClonedFrom = F, ArrivalTimeFormatted = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listBusStops <- function(searchConditionsList = NULL, AddressID = F, ArrivalTime = F, ArrivalTimeFormatted = F, BusRouteID = F, BusStopID = F, BusStopIDClonedFrom = F, CreatedTime = F, DepartureTime = F, Description = F, ModifiedTime = F, StopNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of BusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getBusStop <- function(BusStopID, ArrivalTime = F, DepartureTime = F, AddressID = F, Description = F, StopNumber = F, BusRouteID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, BusStopIDClonedFrom = F, ArrivalTimeFormatted = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getBusStop <- function(BusStopID, AddressID = F, ArrivalTime = F, ArrivalTimeFormatted = F, BusRouteID = F, BusStopIDClonedFrom = F, CreatedTime = F, DepartureTime = F, Description = F, ModifiedTime = F, StopNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "BusStopID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created BusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createBusStop <- function(ArrivalTime = NULL, DepartureTime = NULL, AddressID = NULL, Description = NULL, StopNumber = NULL, BusRouteID = NULL, BusStopIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createBusStop <- function(AddressID = NULL, ArrivalTime = NULL, BusRouteID = NULL, BusStopIDClonedFrom = NULL, DepartureTime = NULL, Description = NULL, StopNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified BusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyBusStop <- function(BusStopID, ArrivalTime = NULL, DepartureTime = NULL, AddressID = NULL, Description = NULL, StopNumber = NULL, BusRouteID = NULL, BusStopIDClonedFrom = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyBusStop <- function(BusStopID, AddressID = NULL, ArrivalTime = NULL, BusRouteID = NULL, BusStopIDClonedFrom = NULL, DepartureTime = NULL, Description = NULL, StopNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of StudentBusStops
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listStudentBusStops <- function(searchConditionsList = NULL, StudentBusStopID = F, BusStopID = F, StudentID = F, StopType = F, IsSunday = F, IsMonday = F, IsTuesday = F, IsWednesday = F, IsThursday = F, IsFriday = F, IsSaturday = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasCurrentDayOfWeek = F, IsCurrentOrFutureTransported = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listStudentBusStops <- function(searchConditionsList = NULL, BusStopID = F, CreatedTime = F, HasCurrentDayOfWeek = F, IsCurrentOrFutureTransported = F, IsFriday = F, IsMonday = F, IsSaturday = F, IsSunday = F, IsThursday = F, IsTuesday = F, IsWednesday = F, ModifiedTime = F, StopType = F, StudentBusStopID = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of StudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getStudentBusStop <- function(StudentBusStopID, BusStopID = F, StudentID = F, StopType = F, IsSunday = F, IsMonday = F, IsTuesday = F, IsWednesday = F, IsThursday = F, IsFriday = F, IsSaturday = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, HasCurrentDayOfWeek = F, IsCurrentOrFutureTransported = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getStudentBusStop <- function(StudentBusStopID, BusStopID = F, CreatedTime = F, HasCurrentDayOfWeek = F, IsCurrentOrFutureTransported = F, IsFriday = F, IsMonday = F, IsSaturday = F, IsSunday = F, IsThursday = F, IsTuesday = F, IsWednesday = F, ModifiedTime = F, StopType = F, StudentID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "StudentBusStopID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created StudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createStudentBusStop <- function(BusStopID = NULL, StudentID = NULL, StopType = NULL, IsSunday = NULL, IsMonday = NULL, IsTuesday = NULL, IsWednesday = NULL, IsThursday = NULL, IsFriday = NULL, IsSaturday = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createStudentBusStop <- function(BusStopID = NULL, IsFriday = NULL, IsMonday = NULL, IsSaturday = NULL, IsSunday = NULL, IsThursday = NULL, IsTuesday = NULL, IsWednesday = NULL, StopType = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified StudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyStudentBusStop <- function(StudentBusStopID, BusStopID = NULL, StudentID = NULL, StopType = NULL, IsSunday = NULL, IsMonday = NULL, IsTuesday = NULL, IsWednesday = NULL, IsThursday = NULL, IsFriday = NULL, IsSaturday = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyStudentBusStop <- function(StudentBusStopID, BusStopID = NULL, IsFriday = NULL, IsMonday = NULL, IsSaturday = NULL, IsSunday = NULL, IsThursday = NULL, IsTuesday = NULL, IsWednesday = NULL, StopType = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -702,7 +702,7 @@
 	#' @return A list of TempStudentBusStops
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentBusStops <- function(searchConditionsList = NULL, TempStudentBusStopID = F, StudentBusStopID = F, StudentNameLFM = F, StudentNumber = F, BusStopDescription = F, BusStopArrivalTime = F, BusStopFullAddress = F, HasExceptions = F, Exceptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, BusStopID = F, StudentID = F, IsAccepted = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentBusStops <- function(searchConditionsList = NULL, BusStopArrivalTime = F, BusStopDescription = F, BusStopFullAddress = F, BusStopID = F, CreatedTime = F, Exceptions = F, HasExceptions = F, IsAccepted = F, ModifiedTime = F, StudentBusStopID = F, StudentID = F, StudentNameLFM = F, StudentNumber = F, TempStudentBusStopID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of TempStudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentBusStop <- function(TempStudentBusStopID, StudentBusStopID = F, StudentNameLFM = F, StudentNumber = F, BusStopDescription = F, BusStopArrivalTime = F, BusStopFullAddress = F, HasExceptions = F, Exceptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, BusStopID = F, StudentID = F, IsAccepted = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentBusStop <- function(TempStudentBusStopID, BusStopArrivalTime = F, BusStopDescription = F, BusStopFullAddress = F, BusStopID = F, CreatedTime = F, Exceptions = F, HasExceptions = F, IsAccepted = F, ModifiedTime = F, StudentBusStopID = F, StudentID = F, StudentNameLFM = F, StudentNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentBusStopID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created TempStudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentBusStop <- function(StudentNameLFM = NULL, StudentNumber = NULL, BusStopDescription = NULL, BusStopArrivalTime = NULL, BusStopFullAddress = NULL, Exceptions = NULL, IsAccepted = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentBusStop <- function(BusStopArrivalTime = NULL, BusStopDescription = NULL, BusStopFullAddress = NULL, Exceptions = NULL, IsAccepted = NULL, StudentNameLFM = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified TempStudentBusStop
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentBusStop <- function(TempStudentBusStopID, StudentNameLFM = NULL, StudentNumber = NULL, BusStopDescription = NULL, BusStopArrivalTime = NULL, BusStopFullAddress = NULL, Exceptions = NULL, IsAccepted = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentBusStop <- function(TempStudentBusStopID, BusStopArrivalTime = NULL, BusStopDescription = NULL, BusStopFullAddress = NULL, Exceptions = NULL, IsAccepted = NULL, StudentNameLFM = NULL, StudentNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of TransportationConfigDistricts
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTransportationConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, DistrictID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TransportationImportFileName = F, FileDestinationIDTransportationImport = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTransportationConfigDistricts <- function(searchConditionsList = NULL, ConfigDistrictID = F, CreatedTime = F, DistrictID = F, FileDestinationIDTransportationImport = F, ImportFileType = F, ModifiedTime = F, RowsToSkip = F, TransportationImportFileName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of TransportationConfigDistrict
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTransportationConfigDistrict <- function(TransportationConfigDistrictID, ConfigDistrictID = F, DistrictID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, TransportationImportFileName = F, FileDestinationIDTransportationImport = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTransportationConfigDistrict <- function(TransportationConfigDistrictID, ConfigDistrictID = F, CreatedTime = F, DistrictID = F, FileDestinationIDTransportationImport = F, ImportFileType = F, ModifiedTime = F, RowsToSkip = F, TransportationImportFileName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TransportationConfigDistrictID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created TransportationConfigDistrict
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTransportationConfigDistrict <- function(DistrictID = NULL, TransportationImportFileName = NULL, FileDestinationIDTransportationImport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTransportationConfigDistrict <- function(DistrictID = NULL, FileDestinationIDTransportationImport = NULL, ImportFileType = NULL, RowsToSkip = NULL, TransportationImportFileName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified TransportationConfigDistrict
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTransportationConfigDistrict <- function(ConfigDistrictID, DistrictID = NULL, TransportationImportFileName = NULL, FileDestinationIDTransportationImport = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTransportationConfigDistrict <- function(ConfigDistrictID, DistrictID = NULL, FileDestinationIDTransportationImport = NULL, ImportFileType = NULL, RowsToSkip = NULL, TransportationImportFileName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of TempStudentTransportations
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempStudentTransportations <- function(searchConditionsList = NULL, TempStudentTransportationID = F, StudentTransportationID = F, StudentNameLFM = F, StudentNumber = F, TransportationCategoryDescription = F, StartDate = F, HasExceptions = F, Exceptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempStudentTransportations <- function(searchConditionsList = NULL, CreatedTime = F, Exceptions = F, HasExceptions = F, ModifiedTime = F, StartDate = F, StudentID = F, StudentNameLFM = F, StudentNumber = F, StudentTransportationID = F, TempStudentTransportationID = F, TransportationCategoryDescription = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of TempStudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempStudentTransportation <- function(TempStudentTransportationID, StudentTransportationID = F, StudentNameLFM = F, StudentNumber = F, TransportationCategoryDescription = F, StartDate = F, HasExceptions = F, Exceptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, StudentID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempStudentTransportation <- function(TempStudentTransportationID, CreatedTime = F, Exceptions = F, HasExceptions = F, ModifiedTime = F, StartDate = F, StudentID = F, StudentNameLFM = F, StudentNumber = F, StudentTransportationID = F, TransportationCategoryDescription = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempStudentTransportationID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created TempStudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempStudentTransportation <- function(StudentNameLFM = NULL, StudentNumber = NULL, TransportationCategoryDescription = NULL, StartDate = NULL, Exceptions = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempStudentTransportation <- function(Exceptions = NULL, StartDate = NULL, StudentID = NULL, StudentNameLFM = NULL, StudentNumber = NULL, TransportationCategoryDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified TempStudentTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempStudentTransportation <- function(TempStudentTransportationID, StudentNameLFM = NULL, StudentNumber = NULL, TransportationCategoryDescription = NULL, StartDate = NULL, Exceptions = NULL, StudentID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempStudentTransportation <- function(TempStudentTransportationID, Exceptions = NULL, StartDate = NULL, StudentID = NULL, StudentNameLFM = NULL, StudentNumber = NULL, TransportationCategoryDescription = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of TempTransportations
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempTransportations <- function(searchConditionsList = NULL, TempTransportationID = F, HasExceptions = F, Exceptions = F, StudentNumber = F, FirstName = F, LastName = F, StudentAddress = F, School = F, GradeLevel = F, TransportationCategory = F, Bus = F, BusRoute = F, Driver = F, BusStop = F, BusStopAddress = F, Days = F, StopType = F, ArrivalTime = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempTransportations <- function(searchConditionsList = NULL, ArrivalTime = F, Bus = F, BusRoute = F, BusStop = F, BusStopAddress = F, CreatedTime = F, Days = F, Driver = F, Exceptions = F, FirstName = F, GradeLevel = F, HasExceptions = F, LastName = F, ModifiedTime = F, School = F, StopType = F, StudentAddress = F, StudentNumber = F, TempTransportationID = F, TransportationCategory = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of TempTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempTransportation <- function(TempTransportationID, HasExceptions = F, Exceptions = F, StudentNumber = F, FirstName = F, LastName = F, StudentAddress = F, School = F, GradeLevel = F, TransportationCategory = F, Bus = F, BusRoute = F, Driver = F, BusStop = F, BusStopAddress = F, Days = F, StopType = F, ArrivalTime = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempTransportation <- function(TempTransportationID, ArrivalTime = F, Bus = F, BusRoute = F, BusStop = F, BusStopAddress = F, CreatedTime = F, Days = F, Driver = F, Exceptions = F, FirstName = F, GradeLevel = F, HasExceptions = F, LastName = F, ModifiedTime = F, School = F, StopType = F, StudentAddress = F, StudentNumber = F, TransportationCategory = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempTransportationID")
 
@@ -1109,7 +1109,7 @@
 	#' @return A newly created TempTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempTransportation <- function(HasExceptions = NULL, Exceptions = NULL, StudentNumber = NULL, FirstName = NULL, LastName = NULL, StudentAddress = NULL, School = NULL, GradeLevel = NULL, TransportationCategory = NULL, Bus = NULL, BusRoute = NULL, Driver = NULL, BusStop = NULL, BusStopAddress = NULL, Days = NULL, StopType = NULL, ArrivalTime = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempTransportation <- function(ArrivalTime = NULL, Bus = NULL, BusRoute = NULL, BusStop = NULL, BusStopAddress = NULL, Days = NULL, Driver = NULL, Exceptions = NULL, FirstName = NULL, GradeLevel = NULL, HasExceptions = NULL, LastName = NULL, School = NULL, StopType = NULL, StudentAddress = NULL, StudentNumber = NULL, TransportationCategory = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1130,11 +1130,125 @@
 	#' @return The modified TempTransportation
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempTransportation <- function(TempTransportationID, HasExceptions = NULL, Exceptions = NULL, StudentNumber = NULL, FirstName = NULL, LastName = NULL, StudentAddress = NULL, School = NULL, GradeLevel = NULL, TransportationCategory = NULL, Bus = NULL, BusRoute = NULL, Driver = NULL, BusStop = NULL, BusStopAddress = NULL, Days = NULL, StopType = NULL, ArrivalTime = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempTransportation <- function(TempTransportationID, ArrivalTime = NULL, Bus = NULL, BusRoute = NULL, BusStop = NULL, BusStopAddress = NULL, Days = NULL, Driver = NULL, Exceptions = NULL, FirstName = NULL, GradeLevel = NULL, HasExceptions = NULL, LastName = NULL, School = NULL, StopType = NULL, StudentAddress = NULL, StudentNumber = NULL, TransportationCategory = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Transportation", objectName = "TempTransportation", objectId = TempTransportationID, body = list(DataObject = body), searchFields = append("TempTransportationID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List ImportColumns
+	#'
+	#' This function returns a dataframe or json object of ImportColumns
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportColumns. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportColumns.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportColumn') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Transportation
+	#' @return A list of ImportColumns
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listImportColumns <- function(searchConditionsList = NULL, ColumnNumber = F, ConfigDistrictID = F, CreatedTime = F, DefaultValue = F, FieldMapping = F, ImportColumnID = F, ModifiedTime = F, StopNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Transportation", objectName = "ImportColumn", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get an ImportColumn
+	#'
+	#' This function returns a dataframe or json object of an ImportColumn
+	#' @param ImportColumnID The ID of the ImportColumn to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given ImportColumn. Defaults to FALSE for all return fields which, for convenience, returns all fields for the ImportColumn.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('ImportColumn') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Transportation
+	#' @return A dataframe or of ImportColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getImportColumn <- function(ImportColumnID, ColumnNumber = F, ConfigDistrictID = F, CreatedTime = F, DefaultValue = F, FieldMapping = F, ModifiedTime = F, StopNumber = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "ImportColumnID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Transportation", objectName = "ImportColumn", objectId = ImportColumnID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete an ImportColumn
+	#'
+	#' This function deletes an ImportColumn
+	#' @param ImportColumnID The ID of the ImportColumn to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Transportation
+	#' @return The ImportColumnID of the deleted ImportColumn.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteImportColumn <- function(ImportColumnID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Transportation", objectName = "ImportColumn", objectId = ImportColumnID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create an ImportColumn
+	#'
+	#' This function creates an ImportColumn
+	#' @param fieldNames The field values to give the created ImportColumn. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Transportation
+	#' @return A newly created ImportColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createImportColumn <- function(ColumnNumber = NULL, ConfigDistrictID = NULL, DefaultValue = NULL, FieldMapping = NULL, StopNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Transportation", objectName = "ImportColumn", body = list(DataObject = body), searchFields = append("ImportColumnID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify an ImportColumn
+	#'
+	#' This function modifies an ImportColumn
+	#' @param fieldNames The field values to give the modified ImportColumn. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Transportation
+	#' @return The modified ImportColumn
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyImportColumn <- function(ImportColumnID, ColumnNumber = NULL, ConfigDistrictID = NULL, DefaultValue = NULL, FieldMapping = NULL, StopNumber = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Transportation", objectName = "ImportColumn", objectId = ImportColumnID, body = list(DataObject = body), searchFields = append("ImportColumnID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}

@@ -5,8 +5,8 @@
 \title{Create an InjuryOccurrenceNote}
 \usage{
 createInjuryOccurrenceNote(
-  Note = NULL,
   InjuryOccurrenceID = NULL,
+  Note = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

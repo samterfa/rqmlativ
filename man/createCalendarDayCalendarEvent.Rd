@@ -5,8 +5,8 @@
 \title{Create a CalendarDayCalendarEvent}
 \usage{
 createCalendarDayCalendarEvent(
-  CalendarEventID = NULL,
   CalendarDayID = NULL,
+  CalendarEventID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

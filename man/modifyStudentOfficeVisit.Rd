@@ -6,12 +6,12 @@
 \usage{
 modifyStudentOfficeVisit(
   StudentOfficeVisitID,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  SchoolID = NULL,
-  StudentID = NULL,
-  OfficeVisitCommentID = NULL,
   DocumentationIsComplete = NULL,
+  EntityID = NULL,
+  OfficeVisitCommentID = NULL,
+  SchoolID = NULL,
+  SchoolYearID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

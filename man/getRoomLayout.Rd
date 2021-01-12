@@ -6,12 +6,12 @@
 \usage{
 getRoomLayout(
   RoomLayoutID,
-  RoomID = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  RoomID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

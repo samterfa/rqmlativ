@@ -5,12 +5,12 @@
 \title{Create an Explore}
 \usage{
 createExplore(
-  StudentTestID = NULL,
+  CompositeScore = NULL,
   EnglishScaleScore = NULL,
   MathScaleScore = NULL,
   ReadingScaleScore = NULL,
   ScienceScaleScore = NULL,
-  CompositeScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 createImportResult(
   ImportID = NULL,
-  Status = NULL,
-  MediaIDOriginalImportedData = NULL,
   MediaIDFailedRows = NULL,
+  MediaIDOriginalImportedData = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

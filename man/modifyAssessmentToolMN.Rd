@@ -6,10 +6,10 @@
 \usage{
 modifyAssessmentToolMN(
   AssessmentToolMNID,
+  AssessmentToolMNIDClonedFrom = NULL,
+  CurriculumYearID = NULL,
   StateAssessmentToolMNID = NULL,
   StateImplementationStatusMNID = NULL,
-  CurriculumYearID = NULL,
-  AssessmentToolMNIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

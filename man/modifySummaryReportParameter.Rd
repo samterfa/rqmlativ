@@ -7,9 +7,9 @@
 modifySummaryReportParameter(
   SummaryReportParameterID,
   Name = NULL,
-  Value = NULL,
-  UsedBy = NULL,
   ReportQueueID = NULL,
+  UsedBy = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

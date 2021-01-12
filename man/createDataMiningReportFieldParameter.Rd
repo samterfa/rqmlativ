@@ -5,10 +5,10 @@
 \title{Create a DataMiningReportFieldParameter}
 \usage{
 createDataMiningReportFieldParameter(
-  ParameterName = NULL,
-  IsPrompt = NULL,
-  PromptLabel = NULL,
   DataMiningReportID = NULL,
+  IsPrompt = NULL,
+  ParameterName = NULL,
+  PromptLabel = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

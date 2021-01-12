@@ -5,10 +5,10 @@
 \title{Create a SynchronousLock}
 \usage{
 createSynchronousLock(
-  WorkflowID = NULL,
-  WorkflowInstanceID = NULL,
   LockingKey = NULL,
   Waiting = NULL,
+  WorkflowID = NULL,
+  WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

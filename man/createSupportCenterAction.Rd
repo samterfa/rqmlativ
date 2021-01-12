@@ -5,16 +5,16 @@
 \title{Create a SupportCenterAction}
 \usage{
 createSupportCenterAction(
+  Description = NULL,
+  EmailFrom = NULL,
+  EmailTo = NULL,
   ProjectID = NULL,
   RMSActionID = NULL,
   RMSEmailID = NULL,
-  Type = NULL,
-  EmailTo = NULL,
-  EmailFrom = NULL,
-  Summary = NULL,
-  Description = NULL,
   StartTime = NULL,
   StopTime = NULL,
+  Summary = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a ThresholdRuleGroup}
 \usage{
 createThresholdRuleGroup(
-  Name = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
+  Name = NULL,
   RuleType = NULL,
+  SchoolYearID = NULL,
   ThresholdRuleGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getTempStudentMergeObject(
   TempStudentMergeObjectID,
-  FieldToShow = F,
-  RecordType = F,
-  HandlingType = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FieldToShow = F,
+  HandlingType = F,
   ModifiedTime = F,
+  RecordType = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

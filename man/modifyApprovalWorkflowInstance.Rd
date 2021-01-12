@@ -6,8 +6,8 @@
 \usage{
 modifyApprovalWorkflowInstance(
   ApprovalWorkflowInstanceID,
-  ApprovalType = NULL,
   ApprovalObjectID = NULL,
+  ApprovalType = NULL,
   WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,

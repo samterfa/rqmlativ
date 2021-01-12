@@ -5,14 +5,14 @@
 \title{Create a TechnologyAtHome}
 \usage{
 createTechnologyAtHome(
-  StudentFamilyID = NULL,
-  SurveyedDate = NULL,
+  DeviceAccessID = NULL,
+  DeviceAccessSourceID = NULL,
+  DeviceID = NULL,
   InternetAccessID = NULL,
   InternetAccessTypeID = NULL,
   InternetPerformanceID = NULL,
-  DeviceID = NULL,
-  DeviceAccessID = NULL,
-  DeviceAccessSourceID = NULL,
+  StudentFamilyID = NULL,
+  SurveyedDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

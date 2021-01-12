@@ -6,13 +6,13 @@
 \usage{
 getApplySchemaChangeRun(
   ApplySchemaChangeRunID,
-  ExecutedTime = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ExecutedTime = F,
   ModifiedTime = F,
-  StatusCode = F,
   Status = F,
+  StatusCode = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

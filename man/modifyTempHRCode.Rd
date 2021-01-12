@@ -6,12 +6,12 @@
 \usage{
 modifyTempHRCode(
   TempHRCodeID,
+  Code = NULL,
+  HasException = NULL,
+  HRCodePrimaryKey = NULL,
+  Message = NULL,
   ModuleName = NULL,
   ObjectName = NULL,
-  Code = NULL,
-  HRCodePrimaryKey = NULL,
-  HasException = NULL,
-  Message = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

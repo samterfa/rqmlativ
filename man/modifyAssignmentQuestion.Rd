@@ -6,11 +6,11 @@
 \usage{
 modifyAssignmentQuestion(
   AssignmentQuestionID,
-  AssignmentID = NULL,
-  QuestionID = NULL,
-  PointsAllowed = NULL,
   AllowPartialCredit = NULL,
+  AssignmentID = NULL,
   DisplayOrder = NULL,
+  PointsAllowed = NULL,
+  QuestionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

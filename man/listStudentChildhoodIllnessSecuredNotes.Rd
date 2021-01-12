@@ -6,13 +6,13 @@
 \usage{
 listStudentChildhoodIllnessSecuredNotes(
   searchConditionsList = NULL,
-  StudentChildhoodIllnessSecuredNoteID = F,
-  StudentChildhoodIllnessID = F,
-  Note = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Note = F,
+  StudentChildhoodIllnessID = F,
+  StudentChildhoodIllnessSecuredNoteID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

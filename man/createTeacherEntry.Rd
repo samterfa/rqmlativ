@@ -5,13 +5,13 @@
 \title{Create a TeacherEntry}
 \usage{
 createTeacherEntry(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  EntityGroupKey = NULL,
-  Label = NULL,
-  DisplayOrder = NULL,
-  TeacherEntryIDClonedFrom = NULL,
   BackgroundColor = NULL,
+  DisplayOrder = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  Label = NULL,
+  SchoolYearID = NULL,
+  TeacherEntryIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

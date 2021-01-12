@@ -6,12 +6,12 @@
 \usage{
 createDataMiningReportSubtopic(
   DataMiningReportID = NULL,
-  SubtopicID = NULL,
   HasRecord = NULL,
-  ShowSubtotals = NULL,
   OnlyShowTotals = NULL,
   ShowCount = NULL,
+  ShowSubtotals = NULL,
   SingleLineRecordCount = NULL,
+  SubtopicID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

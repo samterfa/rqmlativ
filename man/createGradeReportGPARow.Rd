@@ -5,12 +5,6 @@
 \title{Create a GradeReportGPARow}
 \usage{
 createGradeReportGPARow(
-  GradeReportAcademicSessionID = NULL,
-  GPABucketID = NULL,
-  GPAMethodID = NULL,
-  GPABucketDescription = NULL,
-  GPAMethodDescription = NULL,
-  SortNumber = NULL,
   DataColumn1 = NULL,
   DataColumn2 = NULL,
   DataColumn3 = NULL,
@@ -18,7 +12,13 @@ createGradeReportGPARow(
   DataColumn5 = NULL,
   DataColumn6 = NULL,
   DataColumn7 = NULL,
+  GPABucketDescription = NULL,
+  GPABucketID = NULL,
+  GPAMethodDescription = NULL,
+  GPAMethodID = NULL,
+  GradeReportAcademicSessionID = NULL,
   GradeReportAcademicSessionSortNumber = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,12 +5,12 @@
 \title{Create a LockerArea}
 \usage{
 createLockerArea(
+  AllowCoedLocker = NULL,
+  BuildingID = NULL,
   Code = NULL,
   Description = NULL,
   HasBuiltInLockDefault = NULL,
   MaximumStudentsPerLocker = NULL,
-  AllowCoedLocker = NULL,
-  BuildingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getTempStudentMassUpdateError(
   TempStudentMassUpdateErrorID,
-  FullNameLFM = F,
-  Type = F,
-  FailureReason = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FailureReason = F,
+  FullNameLFM = F,
   ModifiedTime = F,
+  Type = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

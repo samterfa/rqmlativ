@@ -7,8 +7,8 @@
 createCustomScreenElement(
   CustomScreenID = NULL,
   DisplayOrder = NULL,
-  Type = NULL,
   IsReadOnly = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

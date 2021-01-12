@@ -6,13 +6,13 @@
 \usage{
 createESSADefaultExclusion(
   Description = NULL,
-  Type = NULL,
-  StructureDimensionID = NULL,
-  FilterLow = NULL,
   FilterHigh = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
+  FilterLow = NULL,
   IsInvalid = NULL,
+  StructureDimensionID = NULL,
+  Type = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

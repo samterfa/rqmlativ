@@ -6,8 +6,8 @@
 \usage{
 modifyPERAExtractRunIncludedPayrollRun(
   PERAExtractRunIncludedPayrollRunID,
-  PERAExtractRunID = NULL,
   PayrollRunID = NULL,
+  PERAExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

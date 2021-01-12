@@ -6,8 +6,8 @@
 \usage{
 modifyCertificationThirdPartyFormatCertificationGrade(
   CertificationThirdPartyFormatCertificationGradeID,
-  CertificationThirdPartyFormatID = NULL,
   CertificationGradeID = NULL,
+  CertificationThirdPartyFormatID = NULL,
   ImportValue = NULL,
   entityId = 1,
   query = NULL,

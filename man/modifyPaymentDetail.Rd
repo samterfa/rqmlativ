@@ -6,10 +6,10 @@
 \usage{
 modifyPaymentDetail(
   PaymentDetailID,
-  PaymentID = NULL,
   Amount = NULL,
-  TransactionConfirmationNumber = NULL,
   ComponentConfirmationNumber = NULL,
+  PaymentID = NULL,
+  TransactionConfirmationNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

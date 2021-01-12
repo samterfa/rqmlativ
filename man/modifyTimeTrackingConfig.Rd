@@ -6,11 +6,11 @@
 \usage{
 modifyTimeTrackingConfig(
   TimeTrackingConfigID,
-  DistrictID = NULL,
   BuildingID = NULL,
-  IPAddress = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
+  IPAddress = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

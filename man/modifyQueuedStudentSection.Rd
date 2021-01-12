@@ -6,9 +6,9 @@
 \usage{
 modifyQueuedStudentSection(
   QueuedStudentSectionID,
-  StudentSectionID = NULL,
   IsComplete = NULL,
   SourceProcess = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

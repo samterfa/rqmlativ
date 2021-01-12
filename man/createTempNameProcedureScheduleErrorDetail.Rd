@@ -5,9 +5,9 @@
 \title{Create a TempNameProcedureScheduleErrorDetail}
 \usage{
 createTempNameProcedureScheduleErrorDetail(
-  TempNameProcedureScheduleErrorID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameProcedureScheduleErrorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

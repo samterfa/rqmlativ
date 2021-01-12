@@ -6,13 +6,13 @@
 \usage{
 listTempAdjustedCategories(
   searchConditionsList = NULL,
+  CategoryID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   TempAdjustedCategoryID = F,
   TempSectionCategoryID = F,
-  CategoryID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

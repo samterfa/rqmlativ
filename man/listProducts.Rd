@@ -6,13 +6,13 @@
 \usage{
 listProducts(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  Name = F,
   ProductID = F,
   RMSID = F,
-  Name = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,11 +6,11 @@
 \usage{
 modifyMARSSSubmission(
   MARSSSubmissionID,
+  CloseDate = NULL,
+  Collection = NULL,
   Description = NULL,
   OpenDate = NULL,
-  CloseDate = NULL,
   SchoolYearID = NULL,
-  Collection = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyStudentType(
   StudentTypeID,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

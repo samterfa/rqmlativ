@@ -18,7 +18,7 @@
 	#' @return A list of DatabaseTableSizes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDatabaseTableSizes <- function(searchConditionsList = NULL, DatabaseTableSizeID = F, DatabaseTableID = F, Records = F, ReservedKB = F, UsedKB = F, DataKB = F, IndexKB = F, RemainingFreeSpaceKB = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, UnusedKB = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDatabaseTableSizes <- function(searchConditionsList = NULL, CreatedTime = F, DatabaseTableID = F, DatabaseTableSizeID = F, DataKB = F, IndexKB = F, ModifiedTime = F, Records = F, RemainingFreeSpaceKB = F, ReservedKB = F, UnusedKB = F, UsedKB = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of DatabaseTableSize
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDatabaseTableSize <- function(DatabaseTableSizeID, DatabaseTableID = F, Records = F, ReservedKB = F, UsedKB = F, DataKB = F, IndexKB = F, RemainingFreeSpaceKB = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, UnusedKB = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDatabaseTableSize <- function(DatabaseTableSizeID, CreatedTime = F, DatabaseTableID = F, DataKB = F, IndexKB = F, ModifiedTime = F, Records = F, RemainingFreeSpaceKB = F, ReservedKB = F, UnusedKB = F, UsedKB = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DatabaseTableSizeID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created DatabaseTableSize
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDatabaseTableSize <- function(DatabaseTableID = NULL, Records = NULL, ReservedKB = NULL, UsedKB = NULL, DataKB = NULL, IndexKB = NULL, UnusedKB = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDatabaseTableSize <- function(DatabaseTableID = NULL, DataKB = NULL, IndexKB = NULL, Records = NULL, ReservedKB = NULL, UnusedKB = NULL, UsedKB = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified DatabaseTableSize
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDatabaseTableSize <- function(DatabaseTableSizeID, DatabaseTableID = NULL, Records = NULL, ReservedKB = NULL, UsedKB = NULL, DataKB = NULL, IndexKB = NULL, UnusedKB = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDatabaseTableSize <- function(DatabaseTableSizeID, DatabaseTableID = NULL, DataKB = NULL, IndexKB = NULL, Records = NULL, ReservedKB = NULL, UnusedKB = NULL, UsedKB = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of DatabaseTables
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDatabaseTables <- function(searchConditionsList = NULL, DatabaseTableID = F, Schema = F, Name = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDatabaseTables <- function(searchConditionsList = NULL, CreatedTime = F, DatabaseTableID = F, ModifiedTime = F, Name = F, Schema = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of DatabaseTable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDatabaseTable <- function(DatabaseTableID, Schema = F, Name = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDatabaseTable <- function(DatabaseTableID, CreatedTime = F, ModifiedTime = F, Name = F, Schema = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DatabaseTableID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created DatabaseTable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDatabaseTable <- function(Schema = NULL, Name = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDatabaseTable <- function(Name = NULL, Schema = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified DatabaseTable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDatabaseTable <- function(DatabaseTableID, Schema = NULL, Name = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDatabaseTable <- function(DatabaseTableID, Name = NULL, Schema = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of DatabaseFileSizes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDatabaseFileSizes <- function(searchConditionsList = NULL, DatabaseFileSizeID = F, DatabaseFileID = F, TotalMB = F, UsedMB = F, RemainingFreeSpaceMB = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDatabaseFileSizes <- function(searchConditionsList = NULL, CreatedTime = F, DatabaseFileID = F, DatabaseFileSizeID = F, ModifiedTime = F, RemainingFreeSpaceMB = F, TotalMB = F, UsedMB = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of DatabaseFileSize
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDatabaseFileSize <- function(DatabaseFileSizeID, DatabaseFileID = F, TotalMB = F, UsedMB = F, RemainingFreeSpaceMB = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDatabaseFileSize <- function(DatabaseFileSizeID, CreatedTime = F, DatabaseFileID = F, ModifiedTime = F, RemainingFreeSpaceMB = F, TotalMB = F, UsedMB = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DatabaseFileSizeID")
 
@@ -360,7 +360,7 @@
 	#' @return A list of DatabaseFiles
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDatabaseFiles <- function(searchConditionsList = NULL, DatabaseFileID = F, Name = F, MaxSizeMB = F, PhysicalPath = F, GrowthRate = F, GrowthRateConcat = F, DatabaseType = F, GrowthType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDatabaseFiles <- function(searchConditionsList = NULL, CreatedTime = F, DatabaseFileID = F, DatabaseType = F, GrowthRate = F, GrowthRateConcat = F, GrowthType = F, MaxSizeMB = F, ModifiedTime = F, Name = F, PhysicalPath = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of DatabaseFile
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDatabaseFile <- function(DatabaseFileID, Name = F, MaxSizeMB = F, PhysicalPath = F, GrowthRate = F, GrowthRateConcat = F, DatabaseType = F, GrowthType = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDatabaseFile <- function(DatabaseFileID, CreatedTime = F, DatabaseType = F, GrowthRate = F, GrowthRateConcat = F, GrowthType = F, MaxSizeMB = F, ModifiedTime = F, Name = F, PhysicalPath = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DatabaseFileID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created DatabaseFile
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createDatabaseFile <- function(Name = NULL, MaxSizeMB = NULL, PhysicalPath = NULL, GrowthRate = NULL, DatabaseType = NULL, GrowthType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createDatabaseFile <- function(DatabaseType = NULL, GrowthRate = NULL, GrowthType = NULL, MaxSizeMB = NULL, Name = NULL, PhysicalPath = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified DatabaseFile
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyDatabaseFile <- function(DatabaseFileID, Name = NULL, MaxSizeMB = NULL, PhysicalPath = NULL, GrowthRate = NULL, DatabaseType = NULL, GrowthType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyDatabaseFile <- function(DatabaseFileID, DatabaseType = NULL, GrowthRate = NULL, GrowthType = NULL, MaxSizeMB = NULL, Name = NULL, PhysicalPath = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of MonitorThresholds
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMonitorThresholds <- function(searchConditionsList = NULL, MonitorThresholdID = F, Name = F, RelatedMonitorID = F, WarningRange = F, ErrorRange = F, XMLFilter = F, Type = F, WarningRangeConcat = F, ErrorRangeConcat = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMonitorThresholds <- function(searchConditionsList = NULL, CreatedTime = F, ErrorRange = F, ErrorRangeConcat = F, ModifiedTime = F, MonitorThresholdID = F, Name = F, RelatedMonitorID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WarningRange = F, WarningRangeConcat = F, XMLFilter = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of MonitorThreshold
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMonitorThreshold <- function(MonitorThresholdID, Name = F, RelatedMonitorID = F, WarningRange = F, ErrorRange = F, XMLFilter = F, Type = F, WarningRangeConcat = F, ErrorRangeConcat = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMonitorThreshold <- function(MonitorThresholdID, CreatedTime = F, ErrorRange = F, ErrorRangeConcat = F, ModifiedTime = F, Name = F, RelatedMonitorID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WarningRange = F, WarningRangeConcat = F, XMLFilter = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MonitorThresholdID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created MonitorThreshold
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMonitorThreshold <- function(Name = NULL, RelatedMonitorID = NULL, WarningRange = NULL, ErrorRange = NULL, XMLFilter = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMonitorThreshold <- function(ErrorRange = NULL, Name = NULL, RelatedMonitorID = NULL, Type = NULL, WarningRange = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified MonitorThreshold
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMonitorThreshold <- function(MonitorThresholdID, Name = NULL, RelatedMonitorID = NULL, WarningRange = NULL, ErrorRange = NULL, XMLFilter = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMonitorThreshold <- function(MonitorThresholdID, ErrorRange = NULL, Name = NULL, RelatedMonitorID = NULL, Type = NULL, WarningRange = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of MonitorThresholdHistories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listMonitorThresholdHistories <- function(searchConditionsList = NULL, MonitorThresholdHistoryID = F, MonitorThresholdID = F, WarningRange = F, ErrorRange = F, CurrentValue = F, Status = F, XMLFilter = F, WarningRangeConcat = F, ErrorRangeConcat = F, CurrentValueConcat = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listMonitorThresholdHistories <- function(searchConditionsList = NULL, CreatedTime = F, CurrentValue = F, CurrentValueConcat = F, ErrorRange = F, ErrorRangeConcat = F, ModifiedTime = F, MonitorThresholdHistoryID = F, MonitorThresholdID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WarningRange = F, WarningRangeConcat = F, XMLFilter = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of MonitorThresholdHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getMonitorThresholdHistory <- function(MonitorThresholdHistoryID, MonitorThresholdID = F, WarningRange = F, ErrorRange = F, CurrentValue = F, Status = F, XMLFilter = F, WarningRangeConcat = F, ErrorRangeConcat = F, CurrentValueConcat = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getMonitorThresholdHistory <- function(MonitorThresholdHistoryID, CreatedTime = F, CurrentValue = F, CurrentValueConcat = F, ErrorRange = F, ErrorRangeConcat = F, ModifiedTime = F, MonitorThresholdID = F, Status = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WarningRange = F, WarningRangeConcat = F, XMLFilter = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "MonitorThresholdHistoryID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created MonitorThresholdHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createMonitorThresholdHistory <- function(MonitorThresholdID = NULL, WarningRange = NULL, ErrorRange = NULL, CurrentValue = NULL, Status = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createMonitorThresholdHistory <- function(CurrentValue = NULL, ErrorRange = NULL, MonitorThresholdID = NULL, Status = NULL, WarningRange = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified MonitorThresholdHistory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyMonitorThresholdHistory <- function(MonitorThresholdHistoryID, MonitorThresholdID = NULL, WarningRange = NULL, ErrorRange = NULL, CurrentValue = NULL, Status = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyMonitorThresholdHistory <- function(MonitorThresholdHistoryID, CurrentValue = NULL, ErrorRange = NULL, MonitorThresholdID = NULL, Status = NULL, WarningRange = NULL, XMLFilter = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

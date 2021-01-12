@@ -6,12 +6,12 @@
 \usage{
 getOnlineFormClearance(
   OnlineFormClearanceID,
-  OnlineFormID = F,
-  GroupIDSecurity = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GroupIDSecurity = F,
   ModifiedTime = F,
+  OnlineFormID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

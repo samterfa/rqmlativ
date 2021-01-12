@@ -6,14 +6,14 @@
 \usage{
 listDataMiningReportSubtopicStandardFilters(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  DataMiningReportID = F,
   DataMiningReportSubtopicStandardFilterID = F,
   IsEnabled = F,
-  DataMiningReportID = F,
+  ModifiedTime = F,
   SubtopicStandardFilterID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,9 +5,9 @@
 \title{Create a WageDetailEmployerV1}
 \usage{
 createWageDetailEmployerV1(
-  WageDetailExtractRunID = NULL,
   EmployerID = NULL,
   UnemploymentInsuranceAccountNumber = NULL,
+  WageDetailExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

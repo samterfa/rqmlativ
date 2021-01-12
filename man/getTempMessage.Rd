@@ -6,14 +6,14 @@
 \usage{
 getTempMessage(
   TempMessageID,
+  CreatedTime = F,
+  ModifiedTime = F,
   RecipientName = F,
-  StudentName = F,
   Relationship = F,
   SectionInfo = F,
+  StudentName = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

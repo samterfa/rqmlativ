@@ -6,14 +6,14 @@
 \usage{
 getGradeReportStudentTranscriptSealOfBiliteracyIL(
   GradeReportStudentTranscriptSealOfBiliteracyILID,
+  CreatedTime = F,
   Description = F,
   GradeReportStudentID = F,
-  SealOfBiliteracyILID = F,
   MediaIDTranscriptSealOfBiliteracyIL = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SealOfBiliteracyILID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

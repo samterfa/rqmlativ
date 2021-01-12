@@ -6,13 +6,13 @@
 \usage{
 getTempEducatedEmployeeException(
   TempEducatedEmployeeExceptionID,
-  EmployeeFullNameFML = F,
-  Error = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  EmployeeFullNameFML = F,
   EmployeeNumber = F,
+  Error = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyStudentFamily(
   StudentFamilyID,
-  StudentID = NULL,
   FamilyID = NULL,
   Rank = NULL,
   ReceivesForms = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

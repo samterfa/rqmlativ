@@ -7,10 +7,10 @@
 createPINDefault(
   ConfigEntityGroupYearID = NULL,
   EntityGroupKey = NULL,
-  PINLength = NULL,
   GradeLevelIDHigh = NULL,
   GradeLevelIDLow = NULL,
   PINDefaultIDClonedFrom = NULL,
+  PINLength = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

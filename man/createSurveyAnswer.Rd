@@ -5,9 +5,9 @@
 \title{Create a SurveyAnswer}
 \usage{
 createSurveyAnswer(
-  Value = NULL,
-  SurveyQuestionID = NULL,
   SurveyInstanceID = NULL,
+  SurveyQuestionID = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

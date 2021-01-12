@@ -5,12 +5,12 @@
 \title{Create a DataMigrationManager}
 \usage{
 createDataMigrationManager(
-  ProcessedTime = NULL,
-  MigrationType = NULL,
-  ProcessType = NULL,
   Label = NULL,
-  SecondaryType = NULL,
   MediaID = NULL,
+  MigrationType = NULL,
+  ProcessedTime = NULL,
+  ProcessType = NULL,
+  SecondaryType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a TempSecurityImportPreview}
 \usage{
 createTempSecurityImportPreview(
-  Object = NULL,
   Identifier = NULL,
+  Object = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

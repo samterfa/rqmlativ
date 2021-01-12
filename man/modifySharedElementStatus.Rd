@@ -6,12 +6,12 @@
 \usage{
 modifySharedElementStatus(
   SharedElementStatusID,
-  SchoolYearID = NULL,
-  SecondaryID = NULL,
-  NameID = NULL,
-  MediaIDAttachment = NULL,
   ElementType = NULL,
   FieldGroupType = NULL,
+  MediaIDAttachment = NULL,
+  NameID = NULL,
+  SchoolYearID = NULL,
+  SecondaryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

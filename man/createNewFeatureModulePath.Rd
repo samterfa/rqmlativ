@@ -5,10 +5,10 @@
 \title{Create a NewFeatureModulePath}
 \usage{
 createNewFeatureModulePath(
-  NewFeatureID = NULL,
   Module = NULL,
-  Object = NULL,
   Name = NULL,
+  NewFeatureID = NULL,
+  Object = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

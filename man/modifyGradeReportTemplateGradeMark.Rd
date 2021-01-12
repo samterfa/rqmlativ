@@ -6,10 +6,10 @@
 \usage{
 modifyGradeReportTemplateGradeMark(
   GradeReportTemplateGradeMarkID,
-  GradeReportTemplateID = NULL,
   GradeMarkID = NULL,
-  Type = NULL,
   GradeReportTemplateGradeMarkIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

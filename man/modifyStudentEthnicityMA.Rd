@@ -6,8 +6,8 @@
 \usage{
 modifyStudentEthnicityMA(
   StudentEthnicityMAID,
-  StudentID = NULL,
   EthnicityMAID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

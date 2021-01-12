@@ -6,11 +6,11 @@
 \usage{
 modifyStudentActivity(
   StudentActivityID,
-  StudentID = NULL,
   ActivityID = NULL,
   CourseID = NULL,
   IsActive = NULL,
   StudentActivityIDClonedFrom = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

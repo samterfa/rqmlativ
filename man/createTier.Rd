@@ -7,8 +7,8 @@
 createTier(
   Code = NULL,
   Description = NULL,
-  Level = NULL,
   DistrictID = NULL,
+  Level = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

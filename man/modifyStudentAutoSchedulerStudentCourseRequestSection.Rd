@@ -6,11 +6,11 @@
 \usage{
 modifyStudentAutoSchedulerStudentCourseRequestSection(
   StudentAutoSchedulerStudentCourseRequestSectionID,
-  StudentAutoSchedulerStudentCourseRequestID = NULL,
-  StudentAutoSchedulerSectionID = NULL,
-  SequenceNumber = NULL,
-  SeatsRemaining = NULL,
   PeriodDaySummary = NULL,
+  SeatsRemaining = NULL,
+  SequenceNumber = NULL,
+  StudentAutoSchedulerSectionID = NULL,
+  StudentAutoSchedulerStudentCourseRequestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

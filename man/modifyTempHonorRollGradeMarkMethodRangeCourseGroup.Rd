@@ -6,10 +6,10 @@
 \usage{
 modifyTempHonorRollGradeMarkMethodRangeCourseGroup(
   TempHonorRollGradeMarkMethodRangeCourseGroupID,
+  CourseGroupID = NULL,
   HonorRollGradeMarkMethodRangeCourseGroupID = NULL,
   HonorRollGradeMarkMethodRangeID = NULL,
   TempHonorRollGradeMarkMethodRangeID = NULL,
-  CourseGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listStudentSectionGradingScaleGradeBuckets(
   searchConditionsList = NULL,
-  StudentSectionGradingScaleGradeBucketID = F,
-  GradingPeriodGradeBucketID = F,
-  StudentGradingScaleGroupStudentSectionID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradingPeriodGradeBucketID = F,
   ModifiedTime = F,
+  StudentGradingScaleGroupStudentSectionID = F,
+  StudentSectionGradingScaleGradeBucketID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,11 +5,11 @@
 \title{Create a TempGradingUtilityError}
 \usage{
 createTempGradingUtilityError(
+  Error = NULL,
+  Grade = NULL,
   HonorRollName = NULL,
   StudentName = NULL,
-  Grade = NULL,
   Value = NULL,
-  Error = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyStudentAutoSchedulerStudentCourseRequestSectionDetail(
   StudentAutoSchedulerStudentCourseRequestSectionDetailID,
-  StudentAutoSchedulerStudentCourseRequestSectionID = NULL,
   SectionConflictReason = NULL,
   SectionConflictReasonText = NULL,
+  StudentAutoSchedulerStudentCourseRequestSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyCareerPlanDeclarationTimePeriod(
   CareerPlanDeclarationTimePeriodID,
+  EndTime = NULL,
   EntityID = NULL,
+  FilterOption = NULL,
   SchoolYearID = NULL,
   StartTime = NULL,
-  EndTime = NULL,
-  FilterOption = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

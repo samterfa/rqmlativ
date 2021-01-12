@@ -5,8 +5,8 @@
 \title{Create an EndorsementRequirementAssessmentClusterDefault}
 \usage{
 createEndorsementRequirementAssessmentClusterDefault(
-  EndorsementRequirementAssessmentDefaultID = NULL,
   ClusterScoreType = NULL,
+  EndorsementRequirementAssessmentDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

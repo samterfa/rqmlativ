@@ -5,14 +5,14 @@
 \title{Create an ElectronicSignature}
 \usage{
 createElectronicSignature(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
-  IsForPurchasing = NULL,
-  MediaID = NULL,
+  DistrictID = NULL,
   EntityID = NULL,
   IsForGrading = NULL,
+  IsForPurchasing = NULL,
   IsForStateReporting = NULL,
+  MediaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

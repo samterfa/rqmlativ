@@ -7,8 +7,8 @@
 createOnlineFormType(
   Code = NULL,
   Description = NULL,
-  LimitUsersToOneFormOfThisTypePerYear = NULL,
   DistrictID = NULL,
+  LimitUsersToOneFormOfThisTypePerYear = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

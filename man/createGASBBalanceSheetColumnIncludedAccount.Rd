@@ -5,9 +5,9 @@
 \title{Create a GASBBalanceSheetColumnIncludedAccount}
 \usage{
 createGASBBalanceSheetColumnIncludedAccount(
+  Description = NULL,
   GASBBalanceSheetIncludedAccountID = NULL,
   GASBColumnID = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

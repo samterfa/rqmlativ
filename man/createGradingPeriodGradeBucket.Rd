@@ -5,15 +5,15 @@
 \title{Create a GradingPeriodGradeBucket}
 \usage{
 createGradingPeriodGradeBucket(
-  GradingPeriodIDStart = NULL,
-  GradingPeriodIDEnd = NULL,
-  GradeBucketID = NULL,
   EntityGroupKey = NULL,
   FactorBasedGPACountAs = NULL,
-  IsUpToDate = NULL,
+  GradeBucketID = NULL,
   GradingPeriodGradeBucketIDClonedFrom = NULL,
-  StateETranscriptSessionTypeID = NULL,
+  GradingPeriodIDEnd = NULL,
+  GradingPeriodIDStart = NULL,
   IsGradeBucketForETranscript = NULL,
+  IsUpToDate = NULL,
+  StateETranscriptSessionTypeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

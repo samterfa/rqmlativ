@@ -6,9 +6,9 @@
 \usage{
 modifyCrossReference(
   CrossReferenceID,
-  ValueSourceID = NULL,
   FileValue = NULL,
   ImportValue = NULL,
+  ValueSourceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

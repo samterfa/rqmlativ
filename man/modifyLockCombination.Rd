@@ -7,8 +7,8 @@
 modifyLockCombination(
   LockCombinationID,
   Combination = NULL,
-  IsCurrentCombination = NULL,
   CombinationNumber = NULL,
+  IsCurrentCombination = NULL,
   LockID = NULL,
   entityId = 1,
   query = NULL,

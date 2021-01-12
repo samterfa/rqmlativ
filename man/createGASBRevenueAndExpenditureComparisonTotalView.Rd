@@ -5,14 +5,14 @@
 \title{Create a GASBRevenueAndExpenditureComparisonTotalView}
 \usage{
 createGASBRevenueAndExpenditureComparisonTotalView(
-  OriginalBudget = NULL,
-  FinalBudget = NULL,
   ActualBudget = NULL,
-  OriginalToFinalVariance = NULL,
-  FinalToActualVariance = NULL,
-  RevenueAndExpenditureComparisonTotalType = NULL,
-  GASBExtractRunID = NULL,
   DisplayOrder = NULL,
+  FinalBudget = NULL,
+  FinalToActualVariance = NULL,
+  GASBExtractRunID = NULL,
+  OriginalBudget = NULL,
+  OriginalToFinalVariance = NULL,
+  RevenueAndExpenditureComparisonTotalType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

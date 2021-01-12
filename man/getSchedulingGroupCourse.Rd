@@ -6,14 +6,14 @@
 \usage{
 getSchedulingGroupCourse(
   SchedulingGroupCourseID,
-  SchedulingGroupID = F,
   CourseID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingGroupCourseIDClonedFrom = F,
   SchedulingGroupCourseIDClonedTo = F,
+  SchedulingGroupID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

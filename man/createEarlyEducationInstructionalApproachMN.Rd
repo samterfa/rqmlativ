@@ -5,10 +5,10 @@
 \title{Create an EarlyEducationInstructionalApproachMN}
 \usage{
 createEarlyEducationInstructionalApproachMN(
-  StateEarlyEducationInstructionalApproachMNID = NULL,
-  StateImplementationStatusMNID = NULL,
   CurriculumYearID = NULL,
   EarlyEducationInstructionalApproachMNIDClonedFrom = NULL,
+  StateEarlyEducationInstructionalApproachMNID = NULL,
+  StateImplementationStatusMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

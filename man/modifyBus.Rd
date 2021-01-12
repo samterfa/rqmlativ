@@ -6,10 +6,10 @@
 \usage{
 modifyBus(
   BusID,
-  DistrictID = NULL,
+  Capacity = NULL,
   Code = NULL,
   Description = NULL,
-  Capacity = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   entityId = 1,
   query = NULL,

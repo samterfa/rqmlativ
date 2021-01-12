@@ -5,10 +5,10 @@
 \title{Create a TaskInstanceUser}
 \usage{
 createTaskInstanceUser(
-  UserID = NULL,
+  Description = NULL,
   TaskInstanceID = NULL,
   Type = NULL,
-  Description = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

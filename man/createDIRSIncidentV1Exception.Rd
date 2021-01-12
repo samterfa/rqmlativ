@@ -5,16 +5,16 @@
 \title{Create a DIRSIncidentV1Exception}
 \usage{
 createDIRSIncidentV1Exception(
-  EntityID = NULL,
-  SchoolYearID = NULL,
   DIRSIncidentV1ID = NULL,
-  IncidentID = NULL,
   DIRSSubmissionID = NULL,
   DIRSSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
+  EntityID = NULL,
+  IncidentID = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

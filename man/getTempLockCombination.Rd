@@ -6,14 +6,14 @@
 \usage{
 getTempLockCombination(
   TempLockCombinationID,
-  TempLockerID = F,
   Combination = F,
   CombinationNumber = F,
-  FailureReason = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FailureReason = F,
   ModifiedTime = F,
+  TempLockerID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

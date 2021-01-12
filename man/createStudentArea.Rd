@@ -5,8 +5,8 @@
 \title{Create a StudentArea}
 \usage{
 createStudentArea(
-  StudentPlanID = NULL,
   AreaID = NULL,
+  StudentPlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

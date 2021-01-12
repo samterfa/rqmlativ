@@ -6,8 +6,8 @@
 \usage{
 modifyTempFailedStudentCourseRequestToReactivateDetail(
   TempFailedStudentCourseRequestToReactivateDetailID,
-  TempRecordToReactivatePrimaryKeyValue = NULL,
   Note = NULL,
+  TempRecordToReactivatePrimaryKeyValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

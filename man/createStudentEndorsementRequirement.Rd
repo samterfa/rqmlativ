@@ -5,9 +5,9 @@
 \title{Create a StudentEndorsementRequirement}
 \usage{
 createStudentEndorsementRequirement(
-  StudentEndorsementOptionID = NULL,
   EndorsementRequirementID = NULL,
   IsComplete = NULL,
+  StudentEndorsementOptionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

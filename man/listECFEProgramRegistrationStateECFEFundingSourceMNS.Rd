@@ -6,13 +6,13 @@
 \usage{
 listECFEProgramRegistrationStateECFEFundingSourceMNS(
   searchConditionsList = NULL,
-  ECFEProgramRegistrationStateECFEFundingSourceMNID = F,
+  CreatedTime = F,
   ECFEProgramRegistrationMNID = F,
+  ECFEProgramRegistrationStateECFEFundingSourceMNID = F,
+  ModifiedTime = F,
   StateECFEFundingSourceMNID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,8 +6,8 @@
 \usage{
 modifyTempFieldRestrictionScreen(
   TempFieldRestrictionScreenID,
-  SecurityLocationID = NULL,
   DisplayText = NULL,
+  SecurityLocationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

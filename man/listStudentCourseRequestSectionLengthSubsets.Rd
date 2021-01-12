@@ -6,13 +6,13 @@
 \usage{
 listStudentCourseRequestSectionLengthSubsets(
   searchConditionsList = NULL,
-  StudentCourseRequestSectionLengthSubsetID = F,
-  StudentCourseRequestID = F,
-  SectionLengthSubsetID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SectionLengthSubsetID = F,
+  StudentCourseRequestID = F,
+  StudentCourseRequestSectionLengthSubsetID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

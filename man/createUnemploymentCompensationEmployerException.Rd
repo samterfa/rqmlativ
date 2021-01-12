@@ -5,14 +5,14 @@
 \title{Create an UnemploymentCompensationEmployerException}
 \usage{
 createUnemploymentCompensationEmployerException(
-  UnemploymentCompensationEmployerV1ID = NULL,
   EmployerName = NULL,
+  Message = NULL,
+  MessageType = NULL,
+  ProcessType = NULL,
+  RuleNumber = NULL,
+  UnemploymentCompensationEmployerV1ID = NULL,
   UnemploymentCompensationSubmissionID = NULL,
   UnemploymentCompensationSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
-  Message = NULL,
-  ProcessType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create an AcademicStandardSubject}
 \usage{
 createAcademicStandardSubject(
-  DistrictGroupKey = NULL,
   AcademicStandardSetID = NULL,
+  AcademicStandardSubjectDefaultID = NULL,
   Code = NULL,
   Description = NULL,
-  Year = NULL,
-  Sequence = NULL,
+  DistrictGroupKey = NULL,
   EnteredByDistrict = NULL,
   Key = NULL,
-  AcademicStandardSubjectDefaultID = NULL,
+  Sequence = NULL,
+  Year = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

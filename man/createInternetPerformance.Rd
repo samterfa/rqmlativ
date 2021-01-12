@@ -5,11 +5,11 @@
 \title{Create an InternetPerformance}
 \usage{
 createInternetPerformance(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
-  StateInternetPerformanceID = NULL,
+  DistrictID = NULL,
   InternetPerformanceIDClonedFrom = NULL,
+  SchoolYearID = NULL,
+  StateInternetPerformanceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

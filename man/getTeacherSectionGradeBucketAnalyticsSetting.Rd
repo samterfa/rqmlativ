@@ -6,13 +6,13 @@
 \usage{
 getTeacherSectionGradeBucketAnalyticsSetting(
   TeacherSectionGradeBucketAnalyticsSettingID,
-  CalculationGroupGradeBucketID = F,
-  TeacherSectionSettingID = F,
   AnalysisType = F,
-  UserIDCreatedBy = F,
+  CalculationGroupGradeBucketID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  TeacherSectionSettingID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

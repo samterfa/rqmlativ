@@ -6,11 +6,11 @@
 \usage{
 getRestAPIRequest(
   RestAPIRequestID,
+  CreatedTime = F,
+  ModifiedTime = F,
   Nonce = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

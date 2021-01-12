@@ -5,11 +5,11 @@
 \title{Create a CRDCSchoolCreditRecoveryV1}
 \usage{
 createCRDCSchoolCreditRecoveryV1(
-  HasProgram = NULL,
-  StudentCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  HasProgram = NULL,
+  StudentCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

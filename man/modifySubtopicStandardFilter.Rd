@@ -6,10 +6,10 @@
 \usage{
 modifySubtopicStandardFilter(
   SubtopicStandardFilterID,
-  Path = NULL,
-  SubtopicID = NULL,
-  StandardFilterID = NULL,
   IsRequired = NULL,
+  Path = NULL,
+  StandardFilterID = NULL,
+  SubtopicID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

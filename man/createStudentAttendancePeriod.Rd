@@ -5,15 +5,15 @@
 \title{Create a StudentAttendancePeriod}
 \usage{
 createStudentAttendancePeriod(
-  StudentAttendanceID = NULL,
-  AttendanceTypeID = NULL,
   AttendancePeriodID = NULL,
   AttendanceReasonID = NULL,
+  AttendanceTypeID = NULL,
   Comment = NULL,
-  StudentSectionID = NULL,
-  IncidentOffenseNameActionDetailID = NULL,
-  EntityIDCourse = NULL,
   EntityIDAttendancePeriod = NULL,
+  EntityIDCourse = NULL,
+  IncidentOffenseNameActionDetailID = NULL,
+  StudentAttendanceID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

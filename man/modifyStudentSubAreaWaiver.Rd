@@ -6,9 +6,9 @@
 \usage{
 modifyStudentSubAreaWaiver(
   StudentSubAreaWaiverID,
-  StudentSubAreaID = NULL,
-  Credits = NULL,
   Comment = NULL,
+  Credits = NULL,
+  StudentSubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

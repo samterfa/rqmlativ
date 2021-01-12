@@ -6,13 +6,13 @@
 \usage{
 listNotificationOffenses(
   searchConditionsList = NULL,
-  NotificationOffenseID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NotificationID = F,
+  NotificationOffenseID = F,
   OffenseID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

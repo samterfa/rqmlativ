@@ -6,11 +6,11 @@
 \usage{
 createMassUpdateStateReportingSourceRunHistory(
   DistrictID = NULL,
+  EndTime = NULL,
+  FilterParameters = NULL,
+  RecordParameters = NULL,
   RunReason = NULL,
   StartTime = NULL,
-  EndTime = NULL,
-  RecordParameters = NULL,
-  FilterParameters = NULL,
   Status = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,

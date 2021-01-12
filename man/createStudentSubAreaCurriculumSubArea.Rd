@@ -5,16 +5,16 @@
 \title{Create a StudentSubAreaCurriculumSubArea}
 \usage{
 createStudentSubAreaCurriculumSubArea(
-  CurriculumSubAreaID = NULL,
-  StudentSubAreaID = NULL,
-  StudentCourseRequestID = NULL,
-  EntryMethod = NULL,
   AppliedOrder = NULL,
-  CompletedCredits = NULL,
-  InProgressCredits = NULL,
-  FutureCredits = NULL,
   AttemptedCredits = NULL,
+  CompletedCredits = NULL,
+  CurriculumSubAreaID = NULL,
+  EntryMethod = NULL,
+  FutureCredits = NULL,
+  InProgressCredits = NULL,
   PlannedCredits = NULL,
+  StudentCourseRequestID = NULL,
+  StudentSubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

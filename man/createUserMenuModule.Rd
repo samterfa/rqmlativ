@@ -5,9 +5,9 @@
 \title{Create an UserMenuModule}
 \usage{
 createUserMenuModule(
-  UserID = NULL,
-  MenuModuleID = NULL,
   DisplayOrder = NULL,
+  MenuModuleID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

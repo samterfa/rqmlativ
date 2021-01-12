@@ -6,14 +6,14 @@
 \usage{
 getStudentVaccinationYearStatusStudentVaccine(
   StudentVaccinationYearStatusStudentVaccineID,
+  CreatedTime = F,
+  InvalidDoseReason = F,
+  IsValidDose = F,
+  ModifiedTime = F,
   StudentVaccinationYearStatusID = F,
   StudentVaccineID = F,
-  IsValidDose = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  InvalidDoseReason = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

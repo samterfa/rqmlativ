@@ -6,14 +6,14 @@
 \usage{
 getForm1099MExportElectronicFileMedia(
   Form1099MExportElectronicFileMediaID,
+  CreatedTime = F,
   Form1099MExportElectronicFileID = F,
   MediaID = F,
+  ModifiedTime = F,
   StateID = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

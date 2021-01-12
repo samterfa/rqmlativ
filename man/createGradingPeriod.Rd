@@ -5,15 +5,15 @@
 \title{Create a GradingPeriod}
 \usage{
 createGradingPeriod(
-  EntityGroupKey = NULL,
+  DateOverrideTeacherGracePeriod = NULL,
   Description = NULL,
-  SectionLengthID = NULL,
+  EndDate = NULL,
+  EntityGroupKey = NULL,
+  GradingPeriodIDClonedFrom = NULL,
   GradingPeriodSetID = NULL,
   Number = NULL,
+  SectionLengthID = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  DateOverrideTeacherGracePeriod = NULL,
-  GradingPeriodIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

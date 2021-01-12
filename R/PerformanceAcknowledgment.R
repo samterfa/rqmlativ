@@ -18,7 +18,7 @@
 	#' @return A list of TempCertificationLicensures
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempCertificationLicensures <- function(searchConditionsList = NULL, TempCertificationLicensureID = F, CertificationLicensureID = F, DistrictID = F, StudentID = F, StudentNameLFMS = F, CertificationLicensureDescriptionID = F, CertificationLicensureDescription = F, MetDate = F, WillUpdateExistingRecord = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempCertificationLicensures <- function(searchConditionsList = NULL, CertificationLicensureDescription = F, CertificationLicensureDescriptionID = F, CertificationLicensureID = F, CreatedTime = F, DistrictID = F, MetDate = F, ModifiedTime = F, StudentID = F, StudentNameLFMS = F, TempCertificationLicensureID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WillUpdateExistingRecord = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of TempCertificationLicensure
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempCertificationLicensure <- function(TempCertificationLicensureID, CertificationLicensureID = F, DistrictID = F, StudentID = F, StudentNameLFMS = F, CertificationLicensureDescriptionID = F, CertificationLicensureDescription = F, MetDate = F, WillUpdateExistingRecord = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempCertificationLicensure <- function(TempCertificationLicensureID, CertificationLicensureDescription = F, CertificationLicensureDescriptionID = F, CertificationLicensureID = F, CreatedTime = F, DistrictID = F, MetDate = F, ModifiedTime = F, StudentID = F, StudentNameLFMS = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WillUpdateExistingRecord = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempCertificationLicensureID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created TempCertificationLicensure
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempCertificationLicensure <- function(CertificationLicensureID = NULL, DistrictID = NULL, StudentID = NULL, StudentNameLFMS = NULL, CertificationLicensureDescriptionID = NULL, CertificationLicensureDescription = NULL, MetDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempCertificationLicensure <- function(CertificationLicensureDescription = NULL, CertificationLicensureDescriptionID = NULL, CertificationLicensureID = NULL, DistrictID = NULL, MetDate = NULL, StudentID = NULL, StudentNameLFMS = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified TempCertificationLicensure
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempCertificationLicensure <- function(TempCertificationLicensureID, CertificationLicensureID = NULL, DistrictID = NULL, StudentID = NULL, StudentNameLFMS = NULL, CertificationLicensureDescriptionID = NULL, CertificationLicensureDescription = NULL, MetDate = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempCertificationLicensure <- function(TempCertificationLicensureID, CertificationLicensureDescription = NULL, CertificationLicensureDescriptionID = NULL, CertificationLicensureID = NULL, DistrictID = NULL, MetDate = NULL, StudentID = NULL, StudentNameLFMS = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

@@ -6,8 +6,8 @@
 \usage{
 createSectionSchedulerPatternExcludedForMeetRequirement(
   MeetRequirementID = NULL,
-  SectionSchedulerPatternID = NULL,
   SectionSchedulerPatternExcludedForMeetRequirementIDClonedFrom = NULL,
+  SectionSchedulerPatternID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

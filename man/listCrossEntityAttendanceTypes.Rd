@@ -6,15 +6,15 @@
 \usage{
 listCrossEntityAttendanceTypes(
   searchConditionsList = NULL,
-  CrossEntityAttendanceTypeID = F,
   AttendanceTypeIDFrom = F,
   AttendanceTypeIDTo = F,
+  CreatedTime = F,
+  CrossEntityAttendanceTypeID = F,
   EntityIDTo = F,
+  ModifiedTime = F,
   SchoolYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

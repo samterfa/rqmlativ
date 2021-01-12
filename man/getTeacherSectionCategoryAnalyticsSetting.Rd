@@ -6,13 +6,13 @@
 \usage{
 getTeacherSectionCategoryAnalyticsSetting(
   TeacherSectionCategoryAnalyticsSettingID,
-  CategoryID = F,
-  TeacherSectionSettingID = F,
   AnalysisType = F,
-  UserIDCreatedBy = F,
+  CategoryID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  TeacherSectionSettingID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

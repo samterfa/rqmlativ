@@ -5,10 +5,10 @@
 \title{Create a CurriculumProgramMN}
 \usage{
 createCurriculumProgramMN(
+  CurriculumProgramMNIDClonedFrom = NULL,
+  CurriculumYearID = NULL,
   StateCurriculumProgramMNID = NULL,
   StateImplementationStatusMNID = NULL,
-  CurriculumYearID = NULL,
-  CurriculumProgramMNIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

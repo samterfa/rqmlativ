@@ -6,10 +6,10 @@
 \usage{
 modifySchedulingTeamGradeReference(
   SchedulingTeamGradeReferenceID,
-  SchedulingTeamID = NULL,
   GradeReferenceID = NULL,
-  SchedulingTeamGradeReferenceIDClonedFrom = NULL,
   MaximumStudentCount = NULL,
+  SchedulingTeamGradeReferenceIDClonedFrom = NULL,
+  SchedulingTeamID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

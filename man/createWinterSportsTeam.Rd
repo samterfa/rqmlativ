@@ -5,11 +5,11 @@
 \title{Create a WinterSportsTeam}
 \usage{
 createWinterSportsTeam(
-  SchoolYearID = NULL,
-  WinterSportID = NULL,
-  Lettered = NULL,
   Captain = NULL,
+  Lettered = NULL,
+  SchoolYearID = NULL,
   StudentID = NULL,
+  WinterSportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

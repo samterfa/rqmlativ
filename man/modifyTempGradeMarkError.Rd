@@ -6,10 +6,10 @@
 \usage{
 modifyTempGradeMarkError(
   TempGradeMarkErrorID,
-  GradeMarkID = NULL,
-  GradeMarkCode = NULL,
-  SectionID = NULL,
   DisplayOrder = NULL,
+  GradeMarkCode = NULL,
+  GradeMarkID = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 modifyEasyIEPRunHistory(
   EasyIEPRunHistoryID,
-  SchoolYearID = NULL,
   DistrictID = NULL,
-  StartTime = NULL,
   EndTime = NULL,
-  ProcessType = NULL,
   ImportType = NULL,
+  ProcessType = NULL,
+  SchoolYearID = NULL,
+  StartTime = NULL,
   Status = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,

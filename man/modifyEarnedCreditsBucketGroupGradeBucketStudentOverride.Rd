@@ -7,9 +7,9 @@
 modifyEarnedCreditsBucketGroupGradeBucketStudentOverride(
   EarnedCreditsBucketGroupGradeBucketStudentOverrideID,
   EarnedCreditsBucketGroupGradeBucketID = NULL,
+  Percent = NULL,
   StudentSectionID = NULL,
   UseOverride = NULL,
-  Percent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

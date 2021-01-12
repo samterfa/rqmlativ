@@ -6,13 +6,13 @@
 \usage{
 listThresholdResetRangeAttendancePeriods(
   searchConditionsList = NULL,
-  ThresholdResetRangeAttendancePeriodID = F,
   AttendancePeriodID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
+  ThresholdResetRangeAttendancePeriodID = F,
   ThresholdResetRangeID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

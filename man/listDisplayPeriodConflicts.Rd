@@ -6,14 +6,14 @@
 \usage{
 listDisplayPeriodConflicts(
   searchConditionsList = NULL,
+  CreatedTime = F,
   DisplayPeriodConflictID = F,
   DisplayPeriodIDBase = F,
   DisplayPeriodIDConflicting = F,
   EntityGroupKey = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

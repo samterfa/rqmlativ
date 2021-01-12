@@ -6,8 +6,8 @@
 \usage{
 modifyStudentInterventionReferralObservation(
   StudentInterventionReferralObservationID,
-  StudentInterventionReferralID = NULL,
   ObservationID = NULL,
+  StudentInterventionReferralID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

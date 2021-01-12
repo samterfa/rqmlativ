@@ -6,8 +6,8 @@
 \usage{
 modifyUserImportApproval(
   UserImportApprovalID,
-  UserID = NULL,
   ApprovalDate = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

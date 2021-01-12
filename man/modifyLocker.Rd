@@ -6,12 +6,12 @@
 \usage{
 modifyLocker(
   LockerID,
-  LockerNumber = NULL,
+  Comment = NULL,
+  HasBuiltInLock = NULL,
   IsActive = NULL,
   IsDamaged = NULL,
-  HasBuiltInLock = NULL,
-  Comment = NULL,
   LockerAreaID = NULL,
+  LockerNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

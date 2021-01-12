@@ -6,12 +6,12 @@
 \usage{
 getCurriculumSubjectAcademicStandard(
   CurriculumSubjectAcademicStandardID,
+  CreatedTime = F,
   CurriculumAcademicStandardID = F,
   CurriculumSubjectID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

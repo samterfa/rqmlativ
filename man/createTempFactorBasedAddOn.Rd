@@ -5,12 +5,12 @@
 \title{Create a TempFactorBasedAddOn}
 \usage{
 createTempFactorBasedAddOn(
-  TempFactorBasedAddOnClonedFromID = NULL,
-  OriginalGradingEndDateCutoffForCumulative = NULL,
-  GradingEndDateCutoffForCumulative = NULL,
-  GradeReferenceDisplayName = NULL,
-  GPABucketEntityDisplayName = NULL,
   Factor = NULL,
+  GPABucketEntityDisplayName = NULL,
+  GradeReferenceDisplayName = NULL,
+  GradingEndDateCutoffForCumulative = NULL,
+  OriginalGradingEndDateCutoffForCumulative = NULL,
+  TempFactorBasedAddOnClonedFromID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

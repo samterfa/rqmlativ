@@ -6,12 +6,12 @@
 \usage{
 getECFERegistrationV1RegisteringPersonV1(
   ECFERegistrationV1RegisteringPersonV1ID,
-  ECFERegistrationV1ID = F,
-  ECFERegisteringPersonV1ID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ECFERegisteringPersonV1ID = F,
+  ECFERegistrationV1ID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

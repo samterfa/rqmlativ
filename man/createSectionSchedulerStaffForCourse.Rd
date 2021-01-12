@@ -6,8 +6,8 @@
 \usage{
 createSectionSchedulerStaffForCourse(
   CourseID = NULL,
-  StaffID = NULL,
   SectionSchedulerStaffForCourseIDClonedFrom = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

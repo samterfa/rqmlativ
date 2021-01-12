@@ -5,17 +5,17 @@
 \title{Create a StudentChildhoodIllness}
 \usage{
 createStudentChildhoodIllness(
-  ChildhoodIllnessID = NULL,
   AgeDiagnosed = NULL,
+  ChildhoodIllnessID = NULL,
+  DistrictID = NULL,
   HealthProfessionalIDExaminedBy = NULL,
-  StudentID = NULL,
-  ScreeningDate = NULL,
-  SchoolYearID = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  SchoolYearID = NULL,
+  ScreeningDate = NULL,
+  StudentID = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
-  DistrictID = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

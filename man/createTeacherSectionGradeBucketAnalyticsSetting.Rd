@@ -5,9 +5,9 @@
 \title{Create a TeacherSectionGradeBucketAnalyticsSetting}
 \usage{
 createTeacherSectionGradeBucketAnalyticsSetting(
+  AnalysisType = NULL,
   CalculationGroupGradeBucketID = NULL,
   TeacherSectionSettingID = NULL,
-  AnalysisType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

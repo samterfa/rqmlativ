@@ -6,10 +6,10 @@
 \usage{
 getGASBBalanceSheetTotalView(
   GASBBalanceSheetTotalViewID,
-  TotalFunds = F,
   BalanceSheetTotalType = F,
-  GASBExtractRunID = F,
   DisplayOrder = F,
+  GASBExtractRunID = F,
+  TotalFunds = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

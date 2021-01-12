@@ -6,13 +6,13 @@
 \usage{
 modifyNameProcedureScheduleDay(
   NameProcedureScheduleDayID,
-  NameProcedureScheduleID = NULL,
   DayOfTheWeek = NULL,
   IsActive = NULL,
-  UseScheduledStartTimeOverride = NULL,
+  NameIDPerformedByOverride = NULL,
+  NameProcedureScheduleID = NULL,
   ScheduledStartTimeOverride = NULL,
   UsePerformedByNameOverride = NULL,
-  NameIDPerformedByOverride = NULL,
+  UseScheduledStartTimeOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -7,8 +7,8 @@
 modifyNameWellnessScreeningQuestion(
   NameWellnessScreeningQuestionID,
   NameWellnessScreeningID = NULL,
-  WellnessScreeningQuestionID = NULL,
   Response = NULL,
+  WellnessScreeningQuestionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

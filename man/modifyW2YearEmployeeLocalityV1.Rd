@@ -6,11 +6,11 @@
 \usage{
 modifyW2YearEmployeeLocalityV1(
   W2YearEmployeeLocalityV1ID,
-  W2YearEmployeeV1ID = NULL,
-  W2YearLocalityID = NULL,
   Box18LocalWages = NULL,
   Box19LocalIncomeTax = NULL,
   IsOriginalExtractedValue = NULL,
+  W2YearEmployeeV1ID = NULL,
+  W2YearLocalityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

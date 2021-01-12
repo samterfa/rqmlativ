@@ -5,9 +5,9 @@
 \title{Create a CrossReference}
 \usage{
 createCrossReference(
-  ValueSourceID = NULL,
   FileValue = NULL,
   ImportValue = NULL,
+  ValueSourceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

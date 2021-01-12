@@ -6,13 +6,13 @@
 \usage{
 getIncidentOffenseNameDrug(
   IncidentOffenseNameDrugID,
-  IncidentOffenseNameID = F,
-  DrugID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  DrugID = F,
+  IncidentOffenseNameID = F,
   IsReadOnlyHistoricalRecord = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

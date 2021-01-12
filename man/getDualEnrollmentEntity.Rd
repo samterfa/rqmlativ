@@ -6,12 +6,12 @@
 \usage{
 getDualEnrollmentEntity(
   DualEnrollmentEntityID,
-  EntityIDTarget = F,
-  EntityIDAllowDualEnrollment = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityIDAllowDualEnrollment = F,
+  EntityIDTarget = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

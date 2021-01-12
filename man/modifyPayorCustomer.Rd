@@ -6,10 +6,10 @@
 \usage{
 modifyPayorCustomer(
   PayorCustomerID,
-  PayorID = NULL,
   CustomerID = NULL,
   DistributionPercent = NULL,
   IsPrimaryPayor = NULL,
+  PayorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

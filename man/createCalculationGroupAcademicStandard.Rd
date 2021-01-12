@@ -5,15 +5,15 @@
 \title{Create a CalculationGroupAcademicStandard}
 \usage{
 createCalculationGroupAcademicStandard(
-  CalculationGroupID = NULL,
   AcademicStandardID = NULL,
-  EntityGroupKey = NULL,
-  CalculationGroupAcademicStandardIDClonedFrom = NULL,
-  Order = NULL,
-  Level = NULL,
-  CalculationGroupAcademicStandardIDParent = NULL,
-  DisplayOnReportCard = NULL,
   CalculateForSingleBucket = NULL,
+  CalculationGroupAcademicStandardIDClonedFrom = NULL,
+  CalculationGroupAcademicStandardIDParent = NULL,
+  CalculationGroupID = NULL,
+  DisplayOnReportCard = NULL,
+  EntityGroupKey = NULL,
+  Level = NULL,
+  Order = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

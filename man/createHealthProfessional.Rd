@@ -5,15 +5,15 @@
 \title{Create a HealthProfessional}
 \usage{
 createHealthProfessional(
-  NameID = NULL,
-  DistrictID = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   HealthProfessionalTypeID = NULL,
   IsActive = NULL,
-  NamePhoneIDDisplayPhone = NULL,
-  NameEmailIDDisplayEmail = NULL,
-  IsPrimaryPhysician = NULL,
   IsDentist = NULL,
+  IsPrimaryPhysician = NULL,
+  NameEmailIDDisplayEmail = NULL,
+  NameID = NULL,
+  NamePhoneIDDisplayPhone = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

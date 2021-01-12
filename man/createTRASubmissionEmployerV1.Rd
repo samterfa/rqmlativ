@@ -5,11 +5,11 @@
 \title{Create a TRASubmissionEmployerV1}
 \usage{
 createTRASubmissionEmployerV1(
+  DistrictID = NULL,
   EmployerID = NULL,
   TRACountyGroupNumber = NULL,
   TRADistrictUnitNumber = NULL,
   TRASubmissionID = NULL,
-  DistrictID = NULL,
   TRASubmissionRunHistoryID = NULL,
   entityId = 1,
   query = NULL,

@@ -5,12 +5,12 @@
 \title{Create a BellSchedule}
 \usage{
 createBellSchedule(
-  EntityID = NULL,
-  SchoolYearID = NULL,
+  BellScheduleIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
+  EntityID = NULL,
   IsDefault = NULL,
-  BellScheduleIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

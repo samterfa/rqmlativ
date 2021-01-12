@@ -6,8 +6,8 @@
 \usage{
 createBenchmarkingSurveyDelay(
   BenchmarkingSurveyID = NULL,
-  UserIDOwner = NULL,
   ResumeTime = NULL,
+  UserIDOwner = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

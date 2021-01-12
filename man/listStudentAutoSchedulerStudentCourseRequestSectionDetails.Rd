@@ -6,14 +6,14 @@
 \usage{
 listStudentAutoSchedulerStudentCourseRequestSectionDetails(
   searchConditionsList = NULL,
-  StudentAutoSchedulerStudentCourseRequestSectionDetailID = F,
-  StudentAutoSchedulerStudentCourseRequestSectionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SectionConflictReason = F,
   SectionConflictReasonText = F,
+  StudentAutoSchedulerStudentCourseRequestSectionDetailID = F,
+  StudentAutoSchedulerStudentCourseRequestSectionID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -7,9 +7,9 @@
 modifyCustomTaskAssignedTo(
   CustomTaskAssignedToID,
   CustomTaskID = NULL,
-  UserIDAssignedTo = NULL,
-  GroupIDSecurity = NULL,
   FieldIDToApplyUserTaskAccess = NULL,
+  GroupIDSecurity = NULL,
+  UserIDAssignedTo = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

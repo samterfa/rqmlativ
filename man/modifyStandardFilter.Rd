@@ -6,9 +6,9 @@
 \usage{
 modifyStandardFilter(
   StandardFilterID,
-  Name = NULL,
   DataModule = NULL,
   DataObject = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

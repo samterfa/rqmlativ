@@ -5,13 +5,13 @@
 \title{Create a PaymentNoticeLog}
 \usage{
 createPaymentNoticeLog(
+  ComponentConfirmationNumber = NULL,
+  FailureReason = NULL,
   OnlinePaymentLogID = NULL,
-  UserIDPaidBy = NULL,
   PaymentDetailIDFeeManagement = NULL,
   PaymentDetailIDFoodService = NULL,
   TransactionConfirmationNumber = NULL,
-  ComponentConfirmationNumber = NULL,
-  FailureReason = NULL,
+  UserIDPaidBy = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

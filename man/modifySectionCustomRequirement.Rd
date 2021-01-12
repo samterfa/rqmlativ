@@ -6,9 +6,9 @@
 \usage{
 modifySectionCustomRequirement(
   SectionCustomRequirementID,
-  SectionID = NULL,
   CustomRequirementID = NULL,
   SectionCustomRequirementIDClonedFrom = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

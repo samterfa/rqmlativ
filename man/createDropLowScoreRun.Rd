@@ -5,10 +5,10 @@
 \title{Create a DropLowScoreRun}
 \usage{
 createDropLowScoreRun(
-  RunTime = NULL,
-  IsEffective = NULL,
-  SectionID = NULL,
   CalculationGroupGradeBucketID = NULL,
+  IsEffective = NULL,
+  RunTime = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 createTempNameProcedureScheduleError(
   Description = NULL,
-  StartDate = NULL,
   EndDate = NULL,
   ErrorCount = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

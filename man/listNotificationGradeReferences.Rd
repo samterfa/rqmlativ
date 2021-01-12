@@ -6,13 +6,13 @@
 \usage{
 listNotificationGradeReferences(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeReferenceID = F,
+  ModifiedTime = F,
   NotificationGradeReferenceID = F,
   NotificationID = F,
-  GradeReferenceID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

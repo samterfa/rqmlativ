@@ -7,9 +7,9 @@
 modifyElectronicTranscriptAPITransaction(
   ElectronicTranscriptAPITransactionID,
   ElectronicTranscriptRunHistoryID = NULL,
-  StudentID = NULL,
-  Message = NULL,
   IsError = NULL,
+  Message = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

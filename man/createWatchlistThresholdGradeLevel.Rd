@@ -5,8 +5,8 @@
 \title{Create a WatchlistThresholdGradeLevel}
 \usage{
 createWatchlistThresholdGradeLevel(
-  WatchlistThresholdID = NULL,
   GradeLevelID = NULL,
+  WatchlistThresholdID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

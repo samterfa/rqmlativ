@@ -6,13 +6,13 @@
 \usage{
 listReportQueueSQLS(
   searchConditionsList = NULL,
-  ReportQueueSQLID = F,
-  ReportQueueID = F,
-  ExecutedQuery = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ExecutedQuery = F,
   ModifiedTime = F,
+  ReportQueueID = F,
+  ReportQueueSQLID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

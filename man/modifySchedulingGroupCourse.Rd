@@ -6,9 +6,9 @@
 \usage{
 modifySchedulingGroupCourse(
   SchedulingGroupCourseID,
-  SchedulingGroupID = NULL,
   CourseID = NULL,
   SchedulingGroupCourseIDClonedFrom = NULL,
+  SchedulingGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

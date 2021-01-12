@@ -5,16 +5,16 @@
 \title{Create a HonorRollRuleGradeMark}
 \usage{
 createHonorRollRuleGradeMark(
-  HonorRollRunLevelRuleID = NULL,
   AllowException = NULL,
-  TotalAllowableExceptions = NULL,
   CourseStandardFilterXML = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
-  HonorRollRuleGradeMarkIDClonedFrom = NULL,
-  InclusionType = NULL,
+  EntityID = NULL,
   ExclusionThreshold = NULL,
+  HonorRollRuleGradeMarkIDClonedFrom = NULL,
+  HonorRollRunLevelRuleID = NULL,
+  InclusionType = NULL,
+  SchoolYearID = NULL,
+  TotalAllowableExceptions = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

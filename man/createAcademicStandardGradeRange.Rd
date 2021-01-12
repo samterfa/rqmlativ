@@ -5,17 +5,17 @@
 \title{Create an AcademicStandardGradeRange}
 \usage{
 createAcademicStandardGradeRange(
-  DistrictGroupKey = NULL,
+  AcademicStandardGradeRangeDefaultID = NULL,
   AcademicStandardSubjectID = NULL,
   Code = NULL,
   Description = NULL,
-  GradeRangeLow = NULL,
-  GradeRangeHigh = NULL,
-  Sequence = NULL,
-  Guid = NULL,
+  DistrictGroupKey = NULL,
   EnteredByDistrict = NULL,
+  GradeRangeHigh = NULL,
+  GradeRangeLow = NULL,
+  Guid = NULL,
   Key = NULL,
-  AcademicStandardGradeRangeDefaultID = NULL,
+  Sequence = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

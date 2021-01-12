@@ -6,14 +6,14 @@
 \usage{
 getSchedulingGroupSection(
   SchedulingGroupSectionID,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingGroupID = F,
-  SectionID = F,
   SchedulingGroupSectionIDClonedFrom = F,
   SchedulingGroupSectionIDClonedTo = F,
+  SectionID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

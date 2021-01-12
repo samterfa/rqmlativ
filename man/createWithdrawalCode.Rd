@@ -5,17 +5,17 @@
 \title{Create a WithdrawalCode}
 \usage{
 createWithdrawalCode(
-  StateStatusEndCodeMNID = NULL,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
-  SchoolYearID = NULL,
-  Type = NULL,
   DistrictGroupKey = NULL,
-  WithdrawalCodeIDClonedFrom = NULL,
-  IsCrossEntityCourseEnrollment = NULL,
+  DistrictID = NULL,
   EdFiExitWithdrawID = NULL,
   EdFiExitWithdrawTypeDescriptorID = NULL,
+  IsCrossEntityCourseEnrollment = NULL,
+  SchoolYearID = NULL,
+  StateStatusEndCodeMNID = NULL,
+  Type = NULL,
+  WithdrawalCodeIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

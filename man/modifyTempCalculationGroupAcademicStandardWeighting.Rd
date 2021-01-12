@@ -7,8 +7,8 @@
 modifyTempCalculationGroupAcademicStandardWeighting(
   TempCalculationGroupAcademicStandardWeightingID,
   CalculationGroupAcademicStandardGradeBucketID = NULL,
-  CategoryID = NULL,
   CategoryDescription = NULL,
+  CategoryID = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

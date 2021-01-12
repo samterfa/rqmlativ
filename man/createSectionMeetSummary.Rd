@@ -5,11 +5,11 @@
 \title{Create a SectionMeetSummary}
 \usage{
 createSectionMeetSummary(
-  SectionID = NULL,
-  EntityIDViewing = NULL,
   CalendarID = NULL,
+  EntityIDViewing = NULL,
   IsDefaultCalendar = NULL,
   PeriodDaySummary = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

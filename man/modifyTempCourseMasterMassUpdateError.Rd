@@ -6,8 +6,8 @@
 \usage{
 modifyTempCourseMasterMassUpdateError(
   TempCourseMasterMassUpdateErrorID,
-  SourceDescription = NULL,
   BaseTableName = NULL,
+  SourceDescription = NULL,
   TableName = NULL,
   entityId = 1,
   query = NULL,

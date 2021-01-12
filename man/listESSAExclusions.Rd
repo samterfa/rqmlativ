@@ -6,14 +6,14 @@
 \usage{
 listESSAExclusions(
   searchConditionsList = NULL,
-  ESSAExclusionID = F,
-  DistrictID = F,
+  CreatedTime = F,
   Description = F,
+  DistrictID = F,
+  ESSAExclusionID = F,
+  ModifiedTime = F,
   Type = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,13 +6,13 @@
 \usage{
 listDualEnrollmentEntities(
   searchConditionsList = NULL,
-  DualEnrollmentEntityID = F,
-  EntityIDTarget = F,
-  EntityIDAllowDualEnrollment = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DualEnrollmentEntityID = F,
+  EntityIDAllowDualEnrollment = F,
+  EntityIDTarget = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

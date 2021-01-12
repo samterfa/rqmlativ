@@ -6,10 +6,10 @@
 \usage{
 modifyPlugin(
   PluginID,
-  Name = NULL,
-  IsEnabled = NULL,
-  ProcessEvents = NULL,
   EdFiApplicationID = NULL,
+  IsEnabled = NULL,
+  Name = NULL,
+  ProcessEvents = NULL,
   TableWatchApplicationID = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 modifyTempCertificationLicensure(
   TempCertificationLicensureID,
+  CertificationLicensureDescription = NULL,
+  CertificationLicensureDescriptionID = NULL,
   CertificationLicensureID = NULL,
   DistrictID = NULL,
+  MetDate = NULL,
   StudentID = NULL,
   StudentNameLFMS = NULL,
-  CertificationLicensureDescriptionID = NULL,
-  CertificationLicensureDescription = NULL,
-  MetDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

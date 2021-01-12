@@ -5,17 +5,17 @@
 \title{Create a NameOfficeVisit}
 \usage{
 createNameOfficeVisit(
+  DocumentationIsComplete = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
-  SchoolID = NULL,
   HealthProfessionalIDExaminedBy = NULL,
-  OfficeVisitCommentID = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  NameID = NULL,
+  OfficeVisitCommentID = NULL,
+  SchoolID = NULL,
+  SchoolYearID = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
-  DocumentationIsComplete = NULL,
-  NameID = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

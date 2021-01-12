@@ -6,12 +6,12 @@
 \usage{
 getInjuryOccurrenceSecuredNote(
   InjuryOccurrenceSecuredNoteID,
-  Note = F,
-  InjuryOccurrenceID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  InjuryOccurrenceID = F,
   ModifiedTime = F,
+  Note = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

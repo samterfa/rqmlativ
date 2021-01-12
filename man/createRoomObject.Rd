@@ -5,9 +5,9 @@
 \title{Create a RoomObject}
 \usage{
 createRoomObject(
+  IsStudentSeat = NULL,
   Label = NULL,
   Parameters = NULL,
-  IsStudentSeat = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

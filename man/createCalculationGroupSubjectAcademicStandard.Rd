@@ -5,11 +5,11 @@
 \title{Create a CalculationGroupSubjectAcademicStandard}
 \usage{
 createCalculationGroupSubjectAcademicStandard(
-  EntityGroupKey = NULL,
-  CalculationGroupID = NULL,
-  SubjectID = NULL,
   AcademicStandardID = NULL,
+  CalculationGroupID = NULL,
   CalculationGroupSubjectAcademicStandardIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
+  SubjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

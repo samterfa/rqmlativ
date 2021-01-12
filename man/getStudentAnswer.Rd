@@ -6,13 +6,13 @@
 \usage{
 getStudentAnswer(
   StudentAnswerID,
-  StudentQuestionID = F,
-  QuestionAnswerID = F,
-  Value = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  QuestionAnswerID = F,
+  StudentQuestionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  Value = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

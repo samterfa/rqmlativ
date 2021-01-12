@@ -5,12 +5,12 @@
 \title{Create an EEOCEmploymentV1}
 \usage{
 createEEOCEmploymentV1(
-  EEOCEmployeeV1ID = NULL,
   AnnualSalary = NULL,
-  IsFullTime = NULL,
-  IsNewHire = NULL,
+  EEOCEmployeeV1ID = NULL,
   FederalEEOCJobCategoryID = NULL,
   FederalEEOCJobCategoryValue = NULL,
+  IsFullTime = NULL,
+  IsNewHire = NULL,
   PositionTypeDescription = NULL,
   entityId = 1,
   query = NULL,

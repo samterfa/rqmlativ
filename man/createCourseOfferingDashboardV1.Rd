@@ -5,16 +5,16 @@
 \title{Create a CourseOfferingDashboardV1}
 \usage{
 createCourseOfferingDashboardV1(
-  SchoolYearID = NULL,
-  EntityID = NULL,
   CourseID = NULL,
+  DashboardRunHistoryID = NULL,
+  EdFiTermTypeID = NULL,
+  EntityID = NULL,
   LocalCourseCode = NULL,
   LocalCourseTitle = NULL,
   SchoolCode = NULL,
   SchoolYearDescription = NULL,
-  EdFiTermTypeID = NULL,
+  SchoolYearID = NULL,
   TermCode = NULL,
-  DashboardRunHistoryID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,12 +5,12 @@
 \title{Create an UnenteredStudentGradeBucket}
 \usage{
 createUnenteredStudentGradeBucket(
-  Percent = NULL,
-  IsAdminOverride = NULL,
-  StudentSectionTransactionStartDate = NULL,
-  StudentSectionTransactionEndDate = NULL,
-  GradingPeriodStartDate = NULL,
   GradingPeriodEndDate = NULL,
+  GradingPeriodStartDate = NULL,
+  IsAdminOverride = NULL,
+  Percent = NULL,
+  StudentSectionTransactionEndDate = NULL,
+  StudentSectionTransactionStartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

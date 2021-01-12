@@ -6,13 +6,13 @@
 \usage{
 getGroupImpersonationRole(
   GroupImpersonationRoleID,
+  CreatedTime = F,
   GroupID = F,
+  IsReadOnly = F,
+  ModifiedTime = F,
   RoleID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  IsReadOnly = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

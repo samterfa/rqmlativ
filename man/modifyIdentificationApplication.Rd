@@ -6,8 +6,8 @@
 \usage{
 modifyIdentificationApplication(
   IdentificationApplicationID,
-  Name = NULL,
   Description = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

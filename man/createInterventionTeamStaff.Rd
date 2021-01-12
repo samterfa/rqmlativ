@@ -6,8 +6,8 @@
 \usage{
 createInterventionTeamStaff(
   InterventionTeamID = NULL,
-  StaffID = NULL,
   IsActive = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

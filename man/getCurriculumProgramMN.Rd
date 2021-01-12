@@ -6,14 +6,14 @@
 \usage{
 getCurriculumProgramMN(
   CurriculumProgramMNID,
+  CreatedTime = F,
+  CurriculumProgramMNIDClonedFrom = F,
+  CurriculumYearID = F,
+  ModifiedTime = F,
   StateCurriculumProgramMNID = F,
   StateImplementationStatusMNID = F,
-  CurriculumYearID = F,
-  CurriculumProgramMNIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,13 +5,13 @@
 \title{Create a StudentMedia}
 \usage{
 createStudentMedia(
-  StudentID = NULL,
-  MediaID = NULL,
-  DisplayName = NULL,
-  DisplayInTeacherAccess = NULL,
   AttachmentTypeID = NULL,
+  DisplayInTeacherAccess = NULL,
+  DisplayName = NULL,
   DisplayOnFamilyAccessPortfolio = NULL,
   DisplayOnStudentAccessPortfolio = NULL,
+  MediaID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

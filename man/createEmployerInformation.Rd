@@ -5,11 +5,11 @@
 \title{Create an EmployerInformation}
 \usage{
 createEmployerInformation(
-  PlaceofEmployment = NULL,
+  FamilyGuardianID = NULL,
   Occupation = NULL,
+  PlaceofEmployment = NULL,
   WorkAddress = NULL,
   WorkPhoneNumber = NULL,
-  FamilyGuardianID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

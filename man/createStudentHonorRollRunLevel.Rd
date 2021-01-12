@@ -5,9 +5,9 @@
 \title{Create a StudentHonorRollRunLevel}
 \usage{
 createStudentHonorRollRunLevel(
-  StudentID = NULL,
-  HonorRollRunLevelHistoryID = NULL,
   GPAValue = NULL,
+  HonorRollRunLevelHistoryID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

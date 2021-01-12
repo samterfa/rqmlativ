@@ -5,9 +5,9 @@
 \title{Create a DisciplineLocation}
 \usage{
 createDisciplineLocation(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   EdFiIncidentLocationID = NULL,
   StateIncidentLocationMNID = NULL,
   entityId = 1,

@@ -5,8 +5,8 @@
 \title{Create a NotificationUnrecordedClassAttendance}
 \usage{
 createNotificationUnrecordedClassAttendance(
-  NotificationID = NULL,
   DisplayPeriodID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

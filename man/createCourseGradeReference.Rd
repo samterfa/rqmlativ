@@ -5,10 +5,10 @@
 \title{Create a CourseGradeReference}
 \usage{
 createCourseGradeReference(
-  CourseID = NULL,
-  GradeReferenceID = NULL,
-  EntityGroupKey = NULL,
   CourseGradeReferenceIDClonedFrom = NULL,
+  CourseID = NULL,
+  EntityGroupKey = NULL,
+  GradeReferenceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

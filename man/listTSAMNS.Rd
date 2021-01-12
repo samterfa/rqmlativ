@@ -6,15 +6,11 @@
 \usage{
 listTSAMNS(
   searchConditionsList = NULL,
-  TSAMNID = F,
-  StudentTestID = F,
   Description = F,
-  ScaleScore = F,
   IsProficient = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  ScaleScore = F,
+  StudentTestID = F,
+  TSAMNID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

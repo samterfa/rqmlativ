@@ -5,10 +5,10 @@
 \title{Create a CustomCode}
 \usage{
 createCustomCode(
-  DistrictGroupKey = NULL,
-  CustomCodeTypeID = NULL,
   Code = NULL,
+  CustomCodeTypeID = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

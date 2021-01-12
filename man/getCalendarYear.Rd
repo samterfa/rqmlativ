@@ -6,12 +6,12 @@
 \usage{
 getCalendarYear(
   CalendarYearID,
-  NumericYear = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  NumericYear = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,12 +6,12 @@
 \usage{
 getRolePortal(
   RolePortalID,
-  RoleID = F,
-  Portal = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Portal = F,
+  RoleID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -7,10 +7,10 @@
 modifyBusinessMigrationHistory(
   BusinessMigrationHistoryID,
   FullClassName = NULL,
-  Summary = NULL,
   HasRun = NULL,
-  SkywardVersion = NULL,
   OnlineInstall = NULL,
+  SkywardVersion = NULL,
+  Summary = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

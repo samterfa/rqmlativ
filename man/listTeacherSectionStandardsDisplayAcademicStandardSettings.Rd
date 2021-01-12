@@ -6,13 +6,13 @@
 \usage{
 listTeacherSectionStandardsDisplayAcademicStandardSettings(
   searchConditionsList = NULL,
-  TeacherSectionStandardsDisplayAcademicStandardSettingID = F,
   AcademicStandardID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
+  TeacherSectionStandardsDisplayAcademicStandardSettingID = F,
   TeacherSectionStandardsDisplayGradeBucketSettingID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

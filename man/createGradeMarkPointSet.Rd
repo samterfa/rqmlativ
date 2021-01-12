@@ -5,13 +5,13 @@
 \title{Create a GradeMarkPointSet}
 \usage{
 createGradeMarkPointSet(
+  AddOnPoints = NULL,
   EntityGroupKey = NULL,
   GPAMethodEntityID = NULL,
   GradeMarkID = NULL,
+  GradeMarkPointSetIDClonedFrom = NULL,
   PointSetEntityID = NULL,
   RegularPoints = NULL,
-  AddOnPoints = NULL,
-  GradeMarkPointSetIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

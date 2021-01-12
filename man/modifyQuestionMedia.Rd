@@ -6,8 +6,8 @@
 \usage{
 modifyQuestionMedia(
   QuestionMediaID,
-  QuestionID = NULL,
   MediaID = NULL,
+  QuestionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

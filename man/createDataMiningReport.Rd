@@ -5,12 +5,12 @@
 \title{Create a DataMiningReport}
 \usage{
 createDataMiningReport(
-  ReportID = NULL,
-  TextQualifier = NULL,
   Delimiter = NULL,
-  SubjectID = NULL,
-  IncludeSectionHeaders = NULL,
   DisplayOnSingleLine = NULL,
+  IncludeSectionHeaders = NULL,
+  ReportID = NULL,
+  SubjectID = NULL,
+  TextQualifier = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listTemplateLastUseds(
   searchConditionsList = NULL,
-  TemplateLastUsedID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   TemplateID = F,
+  TemplateLastUsedID = F,
   UserID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

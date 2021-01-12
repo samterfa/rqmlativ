@@ -5,12 +5,12 @@
 \title{Create a MonitorThreshold}
 \usage{
 createMonitorThreshold(
+  ErrorRange = NULL,
   Name = NULL,
   RelatedMonitorID = NULL,
-  WarningRange = NULL,
-  ErrorRange = NULL,
-  XMLFilter = NULL,
   Type = NULL,
+  WarningRange = NULL,
+  XMLFilter = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

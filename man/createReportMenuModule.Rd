@@ -5,10 +5,10 @@
 \title{Create a ReportMenuModule}
 \usage{
 createReportMenuModule(
-  ReportID = NULL,
-  MenuModuleID = NULL,
   IsPrimary = NULL,
   IsPrimaryOverride = NULL,
+  MenuModuleID = NULL,
+  ReportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

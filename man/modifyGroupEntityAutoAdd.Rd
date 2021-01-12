@@ -6,8 +6,8 @@
 \usage{
 modifyGroupEntityAutoAdd(
   GroupEntityAutoAddID,
-  GroupID = NULL,
   EntityID = NULL,
+  GroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

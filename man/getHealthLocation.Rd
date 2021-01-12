@@ -6,13 +6,13 @@
 \usage{
 getHealthLocation(
   HealthLocationID,
-  LocationID = F,
   Code = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  LocationID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

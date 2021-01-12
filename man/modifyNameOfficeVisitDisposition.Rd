@@ -6,8 +6,8 @@
 \usage{
 modifyNameOfficeVisitDisposition(
   NameOfficeVisitDispositionID,
-  OfficeVisitDispositionID = NULL,
   NameOfficeVisitID = NULL,
+  OfficeVisitDispositionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

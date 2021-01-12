@@ -5,10 +5,10 @@
 \title{Create a ProgramDashboardV1}
 \usage{
 createProgramDashboardV1(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  ProgramType = NULL,
   DashboardRunHistoryID = NULL,
+  DistrictID = NULL,
+  ProgramType = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyUNCPath(
   UNCPathID,
+  Domain = NULL,
   Location = NULL,
   Username = NULL,
-  Domain = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

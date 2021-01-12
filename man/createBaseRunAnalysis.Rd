@@ -5,9 +5,9 @@
 \title{Create a BaseRunAnalysis}
 \usage{
 createBaseRunAnalysis(
-  SchoolYearID = NULL,
   EntityID = NULL,
   RunType = NULL,
+  SchoolYearID = NULL,
   UserIDPerformer = NULL,
   entityId = 1,
   query = NULL,

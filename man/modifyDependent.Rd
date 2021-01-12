@@ -6,8 +6,8 @@
 \usage{
 modifyDependent(
   DependentID,
-  NameIDOwner = NULL,
   NameIDDependent = NULL,
+  NameIDOwner = NULL,
   RelationshipID = NULL,
   entityId = 1,
   query = NULL,

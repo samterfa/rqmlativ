@@ -6,8 +6,8 @@
 \usage{
 modifyStateReportingTempException(
   TempExceptionID,
-  RecordIdentifier = NULL,
   Message = NULL,
+  RecordIdentifier = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

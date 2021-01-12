@@ -6,8 +6,8 @@
 \usage{
 modifyOnlineFormEntity(
   OnlineFormEntityID,
-  OnlineFormID = NULL,
   EntityID = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

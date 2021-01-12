@@ -6,11 +6,11 @@
 \usage{
 createSchoolPathSchool(
   DistrictID = NULL,
-  SchoolYearID = NULL,
-  SchoolPathID = NULL,
-  SchoolID = NULL,
   Order = NULL,
+  SchoolID = NULL,
+  SchoolPathID = NULL,
   SchoolPathSchoolIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

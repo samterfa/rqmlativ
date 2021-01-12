@@ -6,13 +6,13 @@
 \usage{
 modifyTempFailedDayRotation(
   TempFailedDayRotationID,
-  TempDayRotationID = NULL,
-  DayRotationID = NULL,
   Code = NULL,
+  DayRotationID = NULL,
+  Note = NULL,
   ObjectIsDirty = NULL,
   ObjectName = NULL,
-  Note = NULL,
   RecordsUpdated = NULL,
+  TempDayRotationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

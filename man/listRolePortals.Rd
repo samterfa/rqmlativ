@@ -6,13 +6,13 @@
 \usage{
 listRolePortals(
   searchConditionsList = NULL,
-  RolePortalID = F,
-  RoleID = F,
-  Portal = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Portal = F,
+  RoleID = F,
+  RolePortalID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

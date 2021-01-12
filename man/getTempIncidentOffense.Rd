@@ -6,13 +6,13 @@
 \usage{
 getTempIncidentOffense(
   TempIncidentOffenseID,
-  ExistingIncidentID = F,
-  OffenseID = F,
-  IsPrimaryOffense = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ExistingIncidentID = F,
+  IsPrimaryOffense = F,
   ModifiedTime = F,
+  OffenseID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,8 +6,8 @@
 \usage{
 modifyTempDroppedStudentAttendancePeriodError(
   TempDroppedStudentAttendancePeriodErrorID,
-  ErrorNumber = NULL,
   ErrorDescription = NULL,
+  ErrorNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

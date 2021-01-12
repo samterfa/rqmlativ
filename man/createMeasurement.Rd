@@ -7,9 +7,9 @@
 createMeasurement(
   Code = NULL,
   Description = NULL,
-  UseQualitativeMeasurement = NULL,
-  QualitativeScaleID = NULL,
   IsActive = NULL,
+  QualitativeScaleID = NULL,
+  UseQualitativeMeasurement = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

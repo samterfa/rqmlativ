@@ -6,9 +6,9 @@
 \usage{
 modifyGradeReportTemplateCommentSet(
   GradeReportTemplateCommentSetID,
-  GradeReportTemplateID = NULL,
   CommentSetID = NULL,
   GradeReportTemplateCommentSetIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

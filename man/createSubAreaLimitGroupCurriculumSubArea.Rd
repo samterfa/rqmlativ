@@ -5,8 +5,8 @@
 \title{Create a SubAreaLimitGroupCurriculumSubArea}
 \usage{
 createSubAreaLimitGroupCurriculumSubArea(
-  SubAreaLimitGroupID = NULL,
   CurriculumSubAreaID = NULL,
+  SubAreaLimitGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

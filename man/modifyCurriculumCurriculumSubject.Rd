@@ -6,11 +6,11 @@
 \usage{
 modifyCurriculumCurriculumSubject(
   CurriculumSubjectID,
-  DistrictGroupKey = NULL,
   CurriculumID = NULL,
-  SubjectID = NULL,
-  IsDefault = NULL,
   CurriculumSubjectIDClonedFrom = NULL,
+  DistrictGroupKey = NULL,
+  IsDefault = NULL,
+  SubjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

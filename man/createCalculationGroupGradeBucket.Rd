@@ -5,15 +5,15 @@
 \title{Create a CalculationGroupGradeBucket}
 \usage{
 createCalculationGroupGradeBucket(
-  CalculationGroupID = NULL,
-  GradingPeriodGradeBucketID = NULL,
   AllowCalculationTypeOverride = NULL,
   AllowWeightOverride = NULL,
-  CalculationType = NULL,
   CalculationGroupGradeBucketIDClonedFrom = NULL,
-  RoundBucketPercent = NULL,
-  GradeMarkScoringType = NULL,
+  CalculationGroupID = NULL,
+  CalculationType = NULL,
   EntityGroupKey = NULL,
+  GradeMarkScoringType = NULL,
+  GradingPeriodGradeBucketID = NULL,
+  RoundBucketPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

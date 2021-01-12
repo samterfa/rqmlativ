@@ -6,9 +6,9 @@
 \usage{
 modifyCurriculumCluster(
   CurriculumClusterID,
-  DistrictID = NULL,
   CurriculumClusterDefaultID = NULL,
   Description = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

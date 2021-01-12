@@ -5,14 +5,14 @@
 \title{Create a CRDCSchoolInternetV1}
 \usage{
 createCRDCSchoolInternetV1(
-  HasFiberOptic = NULL,
-  HasWiFi = NULL,
   AllowsSchoolDevices = NULL,
   AllowsStudentDevices = NULL,
-  NumberWiFiDevices = NULL,
-  FederalNCESSchoolID = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
+  FederalNCESSchoolID = NULL,
+  HasFiberOptic = NULL,
+  HasWiFi = NULL,
+  NumberWiFiDevices = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

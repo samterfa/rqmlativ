@@ -6,12 +6,12 @@
 \usage{
 getInjuryOccurrenceInjuryOccurrenceComment(
   InjuryOccurrenceInjuryOccurrenceCommentID,
-  InjuryOccurrenceID = F,
-  InjuryOccurrenceCommentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  InjuryOccurrenceCommentID = F,
+  InjuryOccurrenceID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getCustomerItemTypeLimit(
   CustomerItemTypeLimitID,
+  CreatedTime = F,
   CustomerID = F,
   ItemTypeID = F,
+  ModifiedTime = F,
   SpendingLimit = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

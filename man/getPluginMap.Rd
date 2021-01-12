@@ -6,13 +6,13 @@
 \usage{
 getPluginMap(
   PluginMapID,
-  ReportEvents = F,
-  PluginID = F,
-  MapID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MapID = F,
   ModifiedTime = F,
+  PluginID = F,
+  ReportEvents = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

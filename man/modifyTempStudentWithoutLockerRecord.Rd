@@ -6,12 +6,12 @@
 \usage{
 modifyTempStudentWithoutLockerRecord(
   TempStudentWithoutLockerRecordID,
-  StudentID = NULL,
-  FullName = NULL,
-  StudentNumber = NULL,
-  Gender = NULL,
   Age = NULL,
+  FullName = NULL,
+  Gender = NULL,
   GradYear = NULL,
+  StudentID = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

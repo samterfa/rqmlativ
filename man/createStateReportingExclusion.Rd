@@ -6,11 +6,11 @@
 \usage{
 createStateReportingExclusion(
   DistrictID = NULL,
-  StateReportingExclusionTypeID = NULL,
+  EndDate = NULL,
   EntryComment = NULL,
   ExitComment = NULL,
   StartDate = NULL,
-  EndDate = NULL,
+  StateReportingExclusionTypeID = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,14 @@
 \usage{
 getSkywardConfiguration(
   SkywardConfigurationID,
-  EncryptionKey = F,
-  AppPoolValidationKey = F,
   AppPoolDecryptionKey = F,
-  UserIDCreatedBy = F,
+  AppPoolValidationKey = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EncryptionKey = F,
   ModifiedTime = F,
+  SkywardVersion = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

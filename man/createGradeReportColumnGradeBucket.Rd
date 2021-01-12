@@ -5,10 +5,10 @@
 \title{Create a GradeReportColumnGradeBucket}
 \usage{
 createGradeReportColumnGradeBucket(
+  GradeReportColumnGradeBucketIDClonedFrom = NULL,
   GradeReportColumnGroupColumnID = NULL,
   GradingPeriodGradeBucketID = NULL,
   SortNumber = NULL,
-  GradeReportColumnGradeBucketIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

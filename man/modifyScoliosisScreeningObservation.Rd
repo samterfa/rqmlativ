@@ -6,8 +6,8 @@
 \usage{
 modifyScoliosisScreeningObservation(
   ScoliosisScreeningObservationID,
-  ScoliosisScreeningID = NULL,
   ScoliosisObservationID = NULL,
+  ScoliosisScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

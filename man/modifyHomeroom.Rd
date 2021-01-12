@@ -6,12 +6,12 @@
 \usage{
 modifyHomeroom(
   HomeroomID,
-  EntityID = NULL,
   Code = NULL,
-  StaffID = NULL,
+  EntityID = NULL,
+  HomeroomIDClonedFrom = NULL,
   RoomID = NULL,
   SchoolYearID = NULL,
-  HomeroomIDClonedFrom = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

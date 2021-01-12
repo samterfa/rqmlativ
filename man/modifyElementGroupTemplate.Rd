@@ -7,9 +7,9 @@
 modifyElementGroupTemplate(
   ElementGroupTemplateID,
   ElementGroupID = NULL,
-  Type = NULL,
-  ParameterData = NULL,
   Order = NULL,
+  ParameterData = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

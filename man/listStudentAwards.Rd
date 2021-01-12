@@ -6,12 +6,12 @@
 \usage{
 listStudentAwards(
   searchConditionsList = NULL,
-  StudentAwardID = F,
-  AwardCategoryID = F,
-  AwardTypeID = F,
-  AwardHardwareID = F,
   ActivityID = F,
+  AwardCategoryID = F,
+  AwardHardwareID = F,
+  AwardTypeID = F,
   SchoolYearID = F,
+  StudentAwardID = F,
   StudentID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",

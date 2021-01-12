@@ -6,9 +6,9 @@
 \usage{
 modifyDailySectionAttendance(
   DailySectionAttendanceID,
+  AttendancePeriodID = NULL,
   CalendarDayID = NULL,
   MeetID = NULL,
-  AttendancePeriodID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

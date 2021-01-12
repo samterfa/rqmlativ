@@ -6,10 +6,10 @@
 \usage{
 modifyTempStudentSectionFailedUpdate(
   TempStudentSectionFailedUpdateID,
-  StudentNameLFM = NULL,
-  Note = NULL,
   Course = NULL,
+  Note = NULL,
   Section = NULL,
+  StudentNameLFM = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

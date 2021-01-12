@@ -6,11 +6,11 @@
 \usage{
 modifyGradeReportStudentVaccination(
   GradeReportStudentVaccinationID,
+  ComplianceScheduleCode = NULL,
+  DoseDates = NULL,
   GradeReportStudentID = NULL,
   VaccinationCodeDescription = NULL,
   WaiverCodeDescription = NULL,
-  ComplianceScheduleCode = NULL,
-  DoseDates = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

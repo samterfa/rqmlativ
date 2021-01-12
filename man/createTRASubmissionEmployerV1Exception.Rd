@@ -5,15 +5,15 @@
 \title{Create a TRASubmissionEmployerV1Exception}
 \usage{
 createTRASubmissionEmployerV1Exception(
-  EmployerID = NULL,
-  TRASubmissionEmployerV1ID = NULL,
   DistrictID = NULL,
+  EmployerID = NULL,
+  Message = NULL,
+  MessageType = NULL,
+  ProcessType = NULL,
+  RuleNumber = NULL,
+  TRASubmissionEmployerV1ID = NULL,
   TRASubmissionID = NULL,
   TRASubmissionRunHistoryID = NULL,
-  RuleNumber = NULL,
-  MessageType = NULL,
-  Message = NULL,
-  ProcessType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

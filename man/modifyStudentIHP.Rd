@@ -6,14 +6,14 @@
 \usage{
 modifyStudentIHP(
   StudentIHPID,
-  StudentID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
   FormDescription = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  StartDate = NULL,
+  StudentID = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

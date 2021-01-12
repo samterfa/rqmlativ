@@ -6,9 +6,9 @@
 \usage{
 modifyHealthTempException(
   TempExceptionID,
-  ErrorNumber = NULL,
-  ErrorFieldName = NULL,
   ErrorDetail = NULL,
+  ErrorFieldName = NULL,
+  ErrorNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

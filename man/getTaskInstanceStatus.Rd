@@ -6,12 +6,12 @@
 \usage{
 getTaskInstanceStatus(
   TaskInstanceStatusID,
-  TaskInstanceID = F,
   CurrentRecordIdentifier = F,
   CurrentRecordNumber = F,
-  TotalRecordCount = F,
   PercentComplete = F,
   ProcessName = F,
+  TaskInstanceID = F,
+  TotalRecordCount = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getPERAExclusionExport(
   PERAExclusionExportID,
-  PERAExclusionExtractRunID = F,
+  CreatedTime = F,
   MediaID = F,
+  ModifiedTime = F,
+  PERAExclusionExtractRunID = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

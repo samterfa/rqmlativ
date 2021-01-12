@@ -6,8 +6,8 @@
 \usage{
 modifyScoliosisScreeningComment(
   ScoliosisScreeningCommentID,
-  ScoliosisScreeningID = NULL,
   ScoliosisCommentID = NULL,
+  ScoliosisScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

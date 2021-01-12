@@ -6,14 +6,14 @@
 \usage{
 getGradeReportColumnGradeBucket(
   GradeReportColumnGradeBucketID,
+  CreatedTime = F,
+  GradeReportColumnGradeBucketIDClonedFrom = F,
   GradeReportColumnGroupColumnID = F,
   GradingPeriodGradeBucketID = F,
+  ModifiedTime = F,
   SortNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  GradeReportColumnGradeBucketIDClonedFrom = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

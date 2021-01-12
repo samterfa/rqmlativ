@@ -6,13 +6,13 @@
 \usage{
 getMCCCTermGradeBucketMN(
   MCCCTermGradeBucketMNID,
-  SectionLengthID = F,
-  MCCCTermImportID = F,
-  GradeBucketID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeBucketID = F,
+  MCCCTermImportID = F,
   ModifiedTime = F,
+  SectionLengthID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

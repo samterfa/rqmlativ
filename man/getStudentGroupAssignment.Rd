@@ -6,13 +6,13 @@
 \usage{
 getStudentGroupAssignment(
   StudentGroupAssignmentID,
-  StudentGroupID = F,
   AssignmentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   DeleteErrorMessage = F,
+  ModifiedTime = F,
+  StudentGroupID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

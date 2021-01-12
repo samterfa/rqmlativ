@@ -6,11 +6,11 @@
 \usage{
 modifyStrategy(
   StrategyID,
-  Description = NULL,
   AreaOfConcernID = NULL,
+  Description = NULL,
   DistrictID = NULL,
-  Note = NULL,
   IsActive = NULL,
+  Note = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

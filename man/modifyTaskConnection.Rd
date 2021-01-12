@@ -6,9 +6,9 @@
 \usage{
 modifyTaskConnection(
   TaskConnectionID,
-  TaskIDPrevious = NULL,
-  TaskIDNext = NULL,
   IsSkywardTaskConnection = NULL,
+  TaskIDNext = NULL,
+  TaskIDPrevious = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

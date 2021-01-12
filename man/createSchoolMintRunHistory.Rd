@@ -5,14 +5,14 @@
 \title{Create a SchoolMintRunHistory}
 \usage{
 createSchoolMintRunHistory(
-  SchoolYearID = NULL,
-  RunTime = NULL,
-  SuccessCount = NULL,
-  StudentSuccessCount = NULL,
   AddressSuccessCount = NULL,
-  GuardianSuccessCount = NULL,
-  FoodServiceSuccessCount = NULL,
   FailCount = NULL,
+  FoodServiceSuccessCount = NULL,
+  GuardianSuccessCount = NULL,
+  RunTime = NULL,
+  SchoolYearID = NULL,
+  StudentSuccessCount = NULL,
+  SuccessCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

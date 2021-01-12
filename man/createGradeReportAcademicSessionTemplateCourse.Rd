@@ -5,9 +5,9 @@
 \title{Create a GradeReportAcademicSessionTemplateCourse}
 \usage{
 createGradeReportAcademicSessionTemplateCourse(
-  GradeReportAcademicSessionTemplateID = NULL,
   CourseID = NULL,
   GradeReportAcademicSessionTemplateCourseIDClonedFrom = NULL,
+  GradeReportAcademicSessionTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

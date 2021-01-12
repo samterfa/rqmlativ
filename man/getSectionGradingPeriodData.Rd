@@ -6,13 +6,13 @@
 \usage{
 getSectionGradingPeriodData(
   SectionGradingPeriodDataID,
-  SectionID = F,
+  CreatedTime = F,
   GradingPeriodID = F,
   IsCompleted = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SectionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

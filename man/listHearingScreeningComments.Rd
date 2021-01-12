@@ -6,13 +6,13 @@
 \usage{
 listHearingScreeningComments(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  HearingCommentID = F,
   HearingScreeningCommentID = F,
   HearingScreeningID = F,
-  HearingCommentID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

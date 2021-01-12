@@ -6,13 +6,13 @@
 \usage{
 modifyAttendanceReason(
   AttendanceReasonID,
+  AttendanceReasonIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
-  SchoolYearID = NULL,
-  EntityID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
   TeacherEntryID = NULL,
-  AttendanceReasonIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,8 @@
 \usage{
 getSRIMN(
   SRIMNID,
-  StudentTestID = F,
   ScaleScore = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  StudentTestID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

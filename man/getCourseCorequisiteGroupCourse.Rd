@@ -6,14 +6,14 @@
 \usage{
 getCourseCorequisiteGroupCourse(
   CourseCorequisiteGroupCourseID,
+  CourseCorequisiteGroupCourseIDClonedFrom = F,
   CourseCorequisiteGroupID = F,
   CourseID = F,
-  EntityGroupKey = F,
-  CourseCorequisiteGroupCourseIDClonedFrom = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityGroupKey = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

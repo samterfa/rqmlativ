@@ -5,11 +5,11 @@
 \title{Create a MaximumTeachingHourOverride}
 \usage{
 createMaximumTeachingHourOverride(
-  StaffEntityYearID = NULL,
   DayRotationID = NULL,
   MaximumConsecutiveTeachingHours = NULL,
-  MaximumTotalTeachingHours = NULL,
   MaximumTeachingHourOverrideIDClonedFrom = NULL,
+  MaximumTotalTeachingHours = NULL,
+  StaffEntityYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

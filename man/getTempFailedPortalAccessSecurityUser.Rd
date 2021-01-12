@@ -6,13 +6,13 @@
 \usage{
 getTempFailedPortalAccessSecurityUser(
   TempFailedPortalAccessSecurityUserID,
-  UserName = F,
-  Note = F,
-  FullNameLFM = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FullNameLFM = F,
   ModifiedTime = F,
+  Note = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  UserName = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

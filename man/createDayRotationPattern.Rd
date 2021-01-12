@@ -5,10 +5,10 @@
 \title{Create a DayRotationPattern}
 \usage{
 createDayRotationPattern(
-  EntityGroupKey = NULL,
-  DayRotationID = NULL,
   DayNumber = NULL,
+  DayRotationID = NULL,
   DayRotationPatternIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

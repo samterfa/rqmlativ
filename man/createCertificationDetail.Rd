@@ -5,16 +5,16 @@
 \title{Create a CertificationDetail}
 \usage{
 createCertificationDetail(
+  CertificationCompetencyID = NULL,
+  CertificationGradeIDHigh = NULL,
+  CertificationGradeIDLow = NULL,
   CertificationID = NULL,
   CertificationLevelID = NULL,
   CertificationSubjectID = NULL,
-  IsHighlyQualified = NULL,
-  CertificationCompetencyID = NULL,
-  IssueDate = NULL,
-  ExpirationDate = NULL,
   CertificationThirdPartyImportID = NULL,
-  CertificationGradeIDLow = NULL,
-  CertificationGradeIDHigh = NULL,
+  ExpirationDate = NULL,
+  IsHighlyQualified = NULL,
+  IssueDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

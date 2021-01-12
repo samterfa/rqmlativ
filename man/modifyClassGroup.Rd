@@ -6,8 +6,8 @@
 \usage{
 modifyClassGroup(
   ClassGroupID,
-  Name = NULL,
   EntityID = NULL,
+  Name = NULL,
   SchoolYearID = NULL,
   StaffID = NULL,
   entityId = 1,

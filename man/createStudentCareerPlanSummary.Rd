@@ -5,13 +5,13 @@
 \title{Create a StudentCareerPlanSummary}
 \usage{
 createStudentCareerPlanSummary(
-  StudentID = NULL,
   DistrictID = NULL,
-  IsSignedByStudent = NULL,
-  IsSignedByGuardian = NULL,
-  StudentSignedTime = NULL,
   GuardianSignedTime = NULL,
+  IsSignedByGuardian = NULL,
+  IsSignedByStudent = NULL,
   NameIDGuardianSignedBy = NULL,
+  StudentID = NULL,
+  StudentSignedTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

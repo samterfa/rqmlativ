@@ -6,13 +6,13 @@
 \usage{
 listStudentChildhoodIllnessObservations(
   searchConditionsList = NULL,
-  StudentChildhoodIllnessObservationID = F,
-  StudentChildhoodIllnessID = F,
   ChildhoodIllnessObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  StudentChildhoodIllnessID = F,
+  StudentChildhoodIllnessObservationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

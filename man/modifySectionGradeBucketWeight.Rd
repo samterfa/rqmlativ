@@ -6,8 +6,8 @@
 \usage{
 modifySectionGradeBucketWeight(
   SectionGradeBucketWeightID,
-  SectionGradeBucketIDFeeder = NULL,
   SectionGradeBucketIDComposite = NULL,
+  SectionGradeBucketIDFeeder = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

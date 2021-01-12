@@ -7,11 +7,11 @@
 modifyMethodOfInstruction(
   MethodOfInstructionID,
   DistrictID = NULL,
-  MethodOfInstructionOfferingID = NULL,
+  EndDate = NULL,
   EntryComment = NULL,
   ExitComment = NULL,
+  MethodOfInstructionOfferingID = NULL,
   StartDate = NULL,
-  EndDate = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

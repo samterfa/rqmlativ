@@ -5,11 +5,11 @@
 \title{Create a MapElementDetail}
 \usage{
 createMapElementDetail(
-  ReportEvents = NULL,
-  MapElementID = NULL,
   IndexNumber = NULL,
-  ValueType = NULL,
+  MapElementID = NULL,
+  ReportEvents = NULL,
   Value = NULL,
+  ValueType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 getCrossReference(
   CrossReferenceID,
-  ValueSourceID = F,
+  CreatedTime = F,
   FileValue = F,
   ImportValue = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  ValueSourceID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,9 +5,9 @@
 \title{Create a NelcoFormField}
 \usage{
 createNelcoFormField(
-  NelcoFormID = NULL,
   Code = NULL,
   Description = NULL,
+  NelcoFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

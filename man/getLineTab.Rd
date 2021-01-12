@@ -6,13 +6,13 @@
 \usage{
 getLineTab(
   LineTabID,
-  LineID = F,
-  TabID = F,
-  Order = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  LineID = F,
   ModifiedTime = F,
+  Order = F,
+  TabID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

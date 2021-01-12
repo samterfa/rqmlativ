@@ -5,11 +5,11 @@
 \title{Create an InternetAccessType}
 \usage{
 createInternetAccessType(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
-  StateInternetAccessTypeID = NULL,
+  DistrictID = NULL,
   InternetAccessTypeIDClonedFrom = NULL,
+  SchoolYearID = NULL,
+  StateInternetAccessTypeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

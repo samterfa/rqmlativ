@@ -5,8 +5,8 @@
 \title{Create an OnlinePaymentVendorEntity}
 \usage{
 createOnlinePaymentVendorEntity(
-  OnlinePaymentVendorID = NULL,
   EntityID = NULL,
+  OnlinePaymentVendorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

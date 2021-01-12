@@ -5,8 +5,8 @@
 \title{Create a TRASubmissionPayrollRun}
 \usage{
 createTRASubmissionPayrollRun(
-  TRASubmissionID = NULL,
   PayrollRunID = NULL,
+  TRASubmissionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

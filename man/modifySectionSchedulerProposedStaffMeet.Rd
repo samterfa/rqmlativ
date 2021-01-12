@@ -6,11 +6,11 @@
 \usage{
 modifySectionSchedulerProposedStaffMeet(
   SectionSchedulerProposedStaffMeetID,
+  EffectiveEndDate = NULL,
+  EffectiveStartDate = NULL,
+  IsPrimary = NULL,
   SectionSchedulerProposedMeetID = NULL,
   StaffID = NULL,
-  EffectiveStartDate = NULL,
-  EffectiveEndDate = NULL,
-  IsPrimary = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

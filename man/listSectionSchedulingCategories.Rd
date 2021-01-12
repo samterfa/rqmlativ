@@ -6,14 +6,14 @@
 \usage{
 listSectionSchedulingCategories(
   searchConditionsList = NULL,
-  SectionSchedulingCategoryID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingCategoryID = F,
   SectionID = F,
+  SectionSchedulingCategoryID = F,
   SectionSchedulingCategoryIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

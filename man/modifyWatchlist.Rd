@@ -6,10 +6,10 @@
 \usage{
 modifyWatchlist(
   WatchlistID,
+  IsActive = NULL,
+  LastActiveDate = NULL,
   StudentID = NULL,
   ThresholdID = NULL,
-  LastActiveDate = NULL,
-  IsActive = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

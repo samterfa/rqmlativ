@@ -6,13 +6,13 @@
 \usage{
 listSubAreaLimitGroupCurriculumSubAreas(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  CurriculumSubAreaID = F,
+  ModifiedTime = F,
   SubAreaLimitGroupCurriculumSubAreaID = F,
   SubAreaLimitGroupID = F,
-  CurriculumSubAreaID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

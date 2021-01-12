@@ -5,11 +5,11 @@
 \title{Create a MonitorThresholdHistory}
 \usage{
 createMonitorThresholdHistory(
-  MonitorThresholdID = NULL,
-  WarningRange = NULL,
-  ErrorRange = NULL,
   CurrentValue = NULL,
+  ErrorRange = NULL,
+  MonitorThresholdID = NULL,
   Status = NULL,
+  WarningRange = NULL,
   XMLFilter = NULL,
   entityId = 1,
   query = NULL,

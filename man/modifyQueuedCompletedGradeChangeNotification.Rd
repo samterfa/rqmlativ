@@ -6,13 +6,13 @@
 \usage{
 modifyQueuedCompletedGradeChangeNotification(
   QueuedCompletedGradeChangeNotificationID,
-  NotificationID = NULL,
-  StudentGradeBucketID = NULL,
-  GradeMarkIDPrevious = NULL,
-  GradeMarkIDCurrent = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
+  GradeMarkIDCurrent = NULL,
+  GradeMarkIDPrevious = NULL,
   IsSent = NULL,
+  NotificationID = NULL,
+  SchoolYearID = NULL,
+  StudentGradeBucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

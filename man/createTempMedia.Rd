@@ -5,10 +5,10 @@
 \title{Create a TempMedia}
 \usage{
 createTempMedia(
-  ProcessID = NULL,
+  MediaID = NULL,
   ModuleID = NULL,
   ObjectID = NULL,
-  MediaID = NULL,
+  ProcessID = NULL,
   ProcessIndicator = NULL,
   entityId = 1,
   query = NULL,

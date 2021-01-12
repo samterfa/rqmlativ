@@ -6,11 +6,11 @@
 \usage{
 modifyStudentDistrict(
   StudentDistrictID,
-  StudentID = NULL,
   DistrictID = NULL,
   FeederSchoolID = NULL,
-  NameID = NULL,
   Grade = NULL,
+  NameID = NULL,
+  StudentID = NULL,
   StudentNumber = NULL,
   entityId = 1,
   query = NULL,

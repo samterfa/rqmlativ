@@ -6,10 +6,10 @@
 \usage{
 modifyBenchmarkingQuestionAnswer(
   BenchmarkingQuestionAnswerID,
-  BenchmarkingSurveyInstanceID = NULL,
   BenchmarkingQuestionID = NULL,
-  NumericValue = NULL,
+  BenchmarkingSurveyInstanceID = NULL,
   Comment = NULL,
+  NumericValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

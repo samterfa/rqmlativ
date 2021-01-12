@@ -5,14 +5,14 @@
 \title{Create a HonorRollRunLevelRule}
 \usage{
 createHonorRollRunLevelRule(
-  HonorRollRunLevelID = NULL,
-  ParameterDescription = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
+  HonorRollRunLevelID = NULL,
   HonorRollRunLevelRuleIDClonedFrom = NULL,
-  RuleType = NULL,
   Order = NULL,
+  ParameterDescription = NULL,
+  RuleType = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

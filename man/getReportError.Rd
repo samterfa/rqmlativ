@@ -6,12 +6,12 @@
 \usage{
 getReportError(
   ReportErrorID,
-  ReportID = F,
-  ErrorMessage = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorMessage = F,
   ModifiedTime = F,
+  ReportID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,9 +5,9 @@
 \title{Create a DropLowScoreRunStudentAssignment}
 \usage{
 createDropLowScoreRunStudentAssignment(
+  DropActionType = NULL,
   DropLowScoreRunID = NULL,
   StudentAssignmentID = NULL,
-  DropActionType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

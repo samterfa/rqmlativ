@@ -6,11 +6,11 @@
 \usage{
 modifyRepairGradingSetupRunHistoryProcess(
   RepairGradingSetupRunHistoryProcessID,
+  EndTime = NULL,
+  ProcessType = NULL,
   RepairGradingSetupRunHistoryID = NULL,
   StartTime = NULL,
-  EndTime = NULL,
   Status = NULL,
-  ProcessType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

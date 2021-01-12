@@ -7,8 +7,8 @@
 modifyECFEProgramRegistrationStateECFEProgramNameMN(
   ECFEProgramRegistrationStateECFEProgramNameMNID,
   ECFEProgramRegistrationMNID = NULL,
-  StateECFEProgramNameMNID = NULL,
   ProgramReferred = NULL,
+  StateECFEProgramNameMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

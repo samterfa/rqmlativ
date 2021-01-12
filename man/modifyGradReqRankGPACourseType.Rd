@@ -6,8 +6,8 @@
 \usage{
 modifyGradReqRankGPACourseType(
   GradReqRankGPACourseTypeID,
-  GradReqRankGPAMethodEntityID = NULL,
   CourseTypeID = NULL,
+  GradReqRankGPAMethodEntityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

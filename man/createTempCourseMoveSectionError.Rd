@@ -6,9 +6,9 @@
 \usage{
 createTempCourseMoveSectionError(
   CourseID = NULL,
-  SectionID = NULL,
-  SectionCode = NULL,
   ErrorMessage = NULL,
+  SectionCode = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

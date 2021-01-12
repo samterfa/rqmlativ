@@ -5,13 +5,13 @@
 \title{Create a StaffStaffType}
 \usage{
 createStaffStaffType(
-  StaffTypeID = NULL,
-  StaffID = NULL,
-  IsPrimary = NULL,
-  StartDate = NULL,
   EndDate = NULL,
-  StaffStaffTypeIDClonedFrom = NULL,
+  IsPrimary = NULL,
   PositionDescription = NULL,
+  StaffID = NULL,
+  StaffStaffTypeIDClonedFrom = NULL,
+  StaffTypeID = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

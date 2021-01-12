@@ -6,11 +6,11 @@
 \usage{
 modifyStudentQuestion(
   StudentQuestionID,
-  StudentAssignmentID = NULL,
   AssignmentQuestionID = NULL,
-  Score = NULL,
   Order = NULL,
+  Score = NULL,
   Status = NULL,
+  StudentAssignmentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

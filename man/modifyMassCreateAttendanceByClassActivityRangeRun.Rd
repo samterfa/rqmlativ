@@ -6,11 +6,11 @@
 \usage{
 modifyMassCreateAttendanceByClassActivityRangeRun(
   MassCreateAttendanceByClassActivityRangeRunID,
-  RunTime = NULL,
-  IsActive = NULL,
-  UserIDRunBy = NULL,
   EntityID = NULL,
+  IsActive = NULL,
+  RunTime = NULL,
   SchoolYearID = NULL,
+  UserIDRunBy = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,17 +5,17 @@
 \title{Create a MCCCStaffV1Exception}
 \usage{
 createMCCCStaffV1Exception(
-  MCCCStaffV1ID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   CourseID = NULL,
-  StaffID = NULL,
+  EntityID = NULL,
+  MCCCStaffV1ID = NULL,
   MCCCSubmissionID = NULL,
   MCCCSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
+  SchoolYearID = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

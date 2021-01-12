@@ -6,13 +6,13 @@
 \usage{
 listGradReqRankGPACourseTypes(
   searchConditionsList = NULL,
+  CourseTypeID = F,
+  CreatedTime = F,
   GradReqRankGPACourseTypeID = F,
   GradReqRankGPAMethodEntityID = F,
-  CourseTypeID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

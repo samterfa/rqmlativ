@@ -5,16 +5,16 @@
 \title{Create a TempMassUpdateGeolocationAddress}
 \usage{
 createTempMassUpdateGeolocationAddress(
-  FullAddress = NULL,
-  PreviousWasAPILoaded = NULL,
   ConfidenceRating = NULL,
+  CurrentGeoID = NULL,
   CurrentLatitude = NULL,
   CurrentLongitude = NULL,
-  CurrentGeoID = NULL,
+  FullAddress = NULL,
+  HasError = NULL,
+  PreviousWasAPILoaded = NULL,
+  UpdatedGeoID = NULL,
   UpdatedLatitude = NULL,
   UpdatedLongitude = NULL,
-  UpdatedGeoID = NULL,
-  HasError = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

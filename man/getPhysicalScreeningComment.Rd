@@ -6,12 +6,12 @@
 \usage{
 getPhysicalScreeningComment(
   PhysicalScreeningCommentID,
-  PhysicalScreeningID = F,
-  PhysicalCommentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  PhysicalCommentID = F,
+  PhysicalScreeningID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

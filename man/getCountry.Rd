@@ -6,12 +6,12 @@
 \usage{
 getCountry(
   CountryID,
-  Name = F,
-  EdFiCountryID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EdFiCountryID = F,
   ModifiedTime = F,
+  Name = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,15 +5,15 @@
 \title{Create a GradeLevel}
 \usage{
 createGradeLevel(
-  DistrictID = NULL,
   Code = NULL,
-  Description = NULL,
-  NumericValue = NULL,
-  DistrictGroupKey = NULL,
-  FederalGradeLevel = NULL,
   CommonEducationDataStandardsGradeLevelID = NULL,
-  IlluminateOverride = NULL,
+  Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   EdFiGradeLevelDescriptorID = NULL,
+  FederalGradeLevel = NULL,
+  IlluminateOverride = NULL,
+  NumericValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

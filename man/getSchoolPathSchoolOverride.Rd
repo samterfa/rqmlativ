@@ -6,13 +6,13 @@
 \usage{
 getSchoolPathSchoolOverride(
   SchoolPathSchoolOverrideID,
-  StudentID = F,
-  SchoolID = F,
-  Order = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  Order = F,
+  SchoolID = F,
+  StudentID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

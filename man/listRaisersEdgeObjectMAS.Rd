@@ -6,9 +6,9 @@
 \usage{
 listRaisersEdgeObjectMAS(
   searchConditionsList = NULL,
-  RaisersEdgeObjectMAID = F,
-  RaisersEdgeID = F,
   NameID = F,
+  RaisersEdgeID = F,
+  RaisersEdgeObjectMAID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

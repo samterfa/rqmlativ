@@ -6,10 +6,10 @@
 \usage{
 getFallSportsTeam(
   FallSportsTeamID,
-  SchoolYearID = F,
+  Captain = F,
   FallSportID = F,
   Lettered = F,
-  Captain = F,
+  SchoolYearID = F,
   StudentID = F,
   fieldPaths = NULL,
   entityId = 1,

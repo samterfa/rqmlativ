@@ -6,9 +6,9 @@
 \usage{
 modifyGradeReportTemplateGPABucket(
   GradeReportTemplateGPABucketID,
-  GradeReportTemplateID = NULL,
   GPABucketID = NULL,
   GradeReportTemplateGPABucketIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

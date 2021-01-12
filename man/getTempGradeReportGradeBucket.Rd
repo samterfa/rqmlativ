@@ -6,15 +6,15 @@
 \usage{
 getTempGradeReportGradeBucket(
   TempGradeReportGradeBucketID,
+  CreatedTime = F,
+  EntityName = F,
   GradeBucketLabel = F,
   GradingPeriodGradeBucketID = F,
-  EntityName = F,
+  ModifiedTime = F,
   SchoolYearDescription = F,
   SectionLengthDescription = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

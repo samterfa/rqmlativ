@@ -6,12 +6,12 @@
 \usage{
 modifyDatabaseFile(
   DatabaseFileID,
-  Name = NULL,
-  MaxSizeMB = NULL,
-  PhysicalPath = NULL,
-  GrowthRate = NULL,
   DatabaseType = NULL,
+  GrowthRate = NULL,
   GrowthType = NULL,
+  MaxSizeMB = NULL,
+  Name = NULL,
+  PhysicalPath = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

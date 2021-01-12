@@ -5,10 +5,10 @@
 \title{Create a TSAMN}
 \usage{
 createTSAMN(
-  StudentTestID = NULL,
   Description = NULL,
-  ScaleScore = NULL,
   IsProficient = NULL,
+  ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

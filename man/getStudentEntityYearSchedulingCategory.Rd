@@ -6,12 +6,12 @@
 \usage{
 getStudentEntityYearSchedulingCategory(
   StudentEntityYearSchedulingCategoryID,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingCategoryID = F,
   StudentEntityYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

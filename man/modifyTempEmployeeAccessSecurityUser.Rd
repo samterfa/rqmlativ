@@ -6,13 +6,13 @@
 \usage{
 modifyTempEmployeeAccessSecurityUser(
   TempEmployeeAccessSecurityUserID,
-  UserName = NULL,
-  Group = NULL,
+  AllowEmployeeAccess = NULL,
+  EmailAddress = NULL,
   EmployeeID = NULL,
   EmployeeNameLFM = NULL,
   EmployeeNumber = NULL,
-  AllowEmployeeAccess = NULL,
-  EmailAddress = NULL,
+  Group = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

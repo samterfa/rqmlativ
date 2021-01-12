@@ -6,14 +6,14 @@
 \usage{
 listCustomerAlertMessages(
   searchConditionsList = NULL,
+  AlertMessageID = F,
+  CreatedTime = F,
   CustomerAlertMessageID = F,
   CustomerID = F,
-  AlertMessageID = F,
   IsCritical = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

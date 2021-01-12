@@ -6,9 +6,9 @@
 \usage{
 listFallSports(
   searchConditionsList = NULL,
-  FallSportID = F,
   Code = F,
   FallSport = F,
+  FallSportID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

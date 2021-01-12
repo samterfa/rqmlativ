@@ -6,8 +6,8 @@
 \usage{
 modifyReportQueueDestinationResult(
   ReportQueueDestinationResultID,
-  ReportQueueID = NULL,
   FileDestinationResultID = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

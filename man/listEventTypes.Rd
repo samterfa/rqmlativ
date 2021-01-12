@@ -6,13 +6,14 @@
 \usage{
 listEventTypes(
   searchConditionsList = NULL,
-  EventTypeID = F,
   Code = F,
-  Description = F,
-  UserIDCreatedBy = F,
+  CodeDescription = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  EventTypeID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyStudentEndorsementRequirementAssessmentScore(
   StudentEndorsementRequirementAssessmentScoreID,
-  EndorsementRequirementAssessmentScoreID = NULL,
-  StudentEndorsementRequirementAssessmentID = NULL,
   AssessmentScore = NULL,
+  EndorsementRequirementAssessmentScoreID = NULL,
   IsPassingScore = NULL,
+  StudentEndorsementRequirementAssessmentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

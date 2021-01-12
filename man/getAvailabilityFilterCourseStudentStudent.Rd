@@ -6,13 +6,13 @@
 \usage{
 getAvailabilityFilterCourseStudentStudent(
   AvailabilityFilterCourseStudentStudentID,
+  ArenaSchedulingStatus = F,
   AvailabilityFilterCourseStudentID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  ArenaSchedulingStatus = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

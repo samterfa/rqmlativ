@@ -6,11 +6,11 @@
 \usage{
 createMassPrintStaffScheduleRunHistory(
   EntityID = NULL,
-  SchoolYearID = NULL,
-  RunDescription = NULL,
   MediaID = NULL,
-  WorkflowInstanceID = NULL,
+  RunDescription = NULL,
+  SchoolYearID = NULL,
   SendMessageOnComplete = NULL,
+  WorkflowInstanceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

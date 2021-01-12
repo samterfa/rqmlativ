@@ -6,8 +6,8 @@
 \usage{
 getStudentAttendanceEntity(
   StudentAttendanceEntityID,
-  StudentAttendanceID = F,
   EntityID = F,
+  StudentAttendanceID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

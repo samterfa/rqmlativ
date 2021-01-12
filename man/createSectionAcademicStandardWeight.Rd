@@ -5,8 +5,8 @@
 \title{Create a SectionAcademicStandardWeight}
 \usage{
 createSectionAcademicStandardWeight(
-  SectionGradeBucketID = NULL,
   AcademicStandardID = NULL,
+  SectionGradeBucketID = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

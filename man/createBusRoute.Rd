@@ -5,15 +5,15 @@
 \title{Create a BusRoute}
 \usage{
 createBusRoute(
-  Mileage = NULL,
-  NameIDDriver = NULL,
-  DepartureTime = NULL,
   ArrivalTime = NULL,
   BusID = NULL,
+  BusRouteIDClonedFrom = NULL,
+  DepartureTime = NULL,
+  Description = NULL,
+  Mileage = NULL,
+  NameIDDriver = NULL,
   RouteType = NULL,
   SchoolYearID = NULL,
-  Description = NULL,
-  BusRouteIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

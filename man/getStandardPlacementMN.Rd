@@ -6,12 +6,12 @@
 \usage{
 getStandardPlacementMN(
   StandardPlacementMNID,
-  StateStandardCodeMNID = F,
-  CurriculumYearID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  CurriculumYearID = F,
   ModifiedTime = F,
+  StateStandardCodeMNID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

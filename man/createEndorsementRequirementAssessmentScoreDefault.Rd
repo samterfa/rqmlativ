@@ -5,12 +5,12 @@
 \title{Create an EndorsementRequirementAssessmentScoreDefault}
 \usage{
 createEndorsementRequirementAssessmentScoreDefault(
-  ScoreType = NULL,
-  ScoreLocation = NULL,
-  PassingScore = NULL,
-  PassingScoreLow = NULL,
-  PassingScoreHigh = NULL,
   EndorsementRequirementAssessmentClusterDefaultID = NULL,
+  PassingScore = NULL,
+  PassingScoreHigh = NULL,
+  PassingScoreLow = NULL,
+  ScoreLocation = NULL,
+  ScoreType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

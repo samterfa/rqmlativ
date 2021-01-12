@@ -7,8 +7,8 @@
 createGradeReportStudentHighlightIN(
   GradeReportStudentID = NULL,
   HighlightType = NULL,
-  Title = NULL,
   SchoolYear = NULL,
+  Title = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

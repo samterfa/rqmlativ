@@ -5,11 +5,11 @@
 \title{Create an Institution}
 \usage{
 createInstitution(
-  NameID = NULL,
   CEEBCode = NULL,
-  StateID = NULL,
-  MCCCCollegeCode = NULL,
   InstitutionDefaultID = NULL,
+  MCCCCollegeCode = NULL,
+  NameID = NULL,
+  StateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

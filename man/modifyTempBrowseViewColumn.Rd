@@ -6,8 +6,8 @@
 \usage{
 modifyTempBrowseViewColumn(
   TempBrowseViewColumnID,
-  FieldName = NULL,
   ColumnHeaderText = NULL,
+  FieldName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationDisciplineThreshold(
   NotificationDisciplineThresholdID,
-  NotificationID = NULL,
   DisciplineThresholdID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

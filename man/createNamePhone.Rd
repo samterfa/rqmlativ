@@ -5,15 +5,15 @@
 \title{Create a NamePhone}
 \usage{
 createNamePhone(
-  NameID = NULL,
-  Rank = NULL,
-  PhoneTypeID = NULL,
-  IsInternational = NULL,
-  IsConfidential = NULL,
-  PhoneNumber = NULL,
   Extension = NULL,
-  Note = NULL,
+  IsConfidential = NULL,
   IsFax = NULL,
+  IsInternational = NULL,
+  NameID = NULL,
+  Note = NULL,
+  PhoneNumber = NULL,
+  PhoneTypeID = NULL,
+  Rank = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

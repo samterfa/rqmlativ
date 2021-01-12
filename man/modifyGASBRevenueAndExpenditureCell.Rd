@@ -6,10 +6,10 @@
 \usage{
 modifyGASBRevenueAndExpenditureCell(
   GASBRevenueAndExpenditureCellID,
-  GASBRevenueAndExpenditureRowID = NULL,
-  GASBExtractRunID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBExtractRunID = NULL,
+  GASBRevenueAndExpenditureRowID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

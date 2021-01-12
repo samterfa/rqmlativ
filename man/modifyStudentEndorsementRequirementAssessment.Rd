@@ -6,9 +6,9 @@
 \usage{
 modifyStudentEndorsementRequirementAssessment(
   StudentEndorsementRequirementAssessmentID,
-  StudentEndorsementRequirementID = NULL,
   EndorsementRequirementAssessmentID = NULL,
   IsComplete = NULL,
+  StudentEndorsementRequirementID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

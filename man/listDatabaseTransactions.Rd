@@ -6,11 +6,11 @@
 \usage{
 listDatabaseTransactions(
   searchConditionsList = NULL,
-  TransactionID = F,
   Name = F,
   TransactionBeginTime = F,
-  TransactionType = F,
+  TransactionID = F,
   TransactionState = F,
+  TransactionType = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

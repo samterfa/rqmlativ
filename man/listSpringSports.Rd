@@ -6,9 +6,9 @@
 \usage{
 listSpringSports(
   searchConditionsList = NULL,
-  SpringSportID = F,
   Code = F,
   SpringSport = F,
+  SpringSportID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

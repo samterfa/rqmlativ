@@ -5,9 +5,10 @@
 \title{Create a W2YearPayType}
 \usage{
 createW2YearPayType(
-  W2YearID = NULL,
-  PayTypeID = NULL,
   FederalW2BoxID = NULL,
+  PayTypeID = NULL,
+  W2YearBox14SetID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

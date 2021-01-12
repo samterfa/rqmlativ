@@ -5,14 +5,14 @@
 \title{Create a ScheduledImport}
 \usage{
 createScheduledImport(
-  Name = NULL,
-  ScheduledTaskID = NULL,
-  ImportID = NULL,
   EntityID = NULL,
-  PromptsAreUpToDate = NULL,
-  FileHasHeaderRow = NULL,
   FileDestinationID = NULL,
+  FileHasHeaderRow = NULL,
   FileName = NULL,
+  ImportID = NULL,
+  Name = NULL,
+  PromptsAreUpToDate = NULL,
+  ScheduledTaskID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

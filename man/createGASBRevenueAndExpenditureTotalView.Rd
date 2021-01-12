@@ -5,10 +5,10 @@
 \title{Create a GASBRevenueAndExpenditureTotalView}
 \usage{
 createGASBRevenueAndExpenditureTotalView(
-  TotalFunds = NULL,
-  RevenueAndExpenditureTotalType = NULL,
-  GASBExtractRunID = NULL,
   DisplayOrder = NULL,
+  GASBExtractRunID = NULL,
+  RevenueAndExpenditureTotalType = NULL,
+  TotalFunds = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

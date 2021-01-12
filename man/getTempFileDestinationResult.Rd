@@ -6,13 +6,13 @@
 \usage{
 getTempFileDestinationResult(
   TempFileDestinationResultID,
-  DestinationPath = F,
-  TestType = F,
-  ErrorMessage = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DestinationPath = F,
+  ErrorMessage = F,
   ModifiedTime = F,
+  TestTypeCode = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

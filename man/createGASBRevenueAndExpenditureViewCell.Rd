@@ -5,10 +5,10 @@
 \title{Create a GASBRevenueAndExpenditureViewCell}
 \usage{
 createGASBRevenueAndExpenditureViewCell(
-  RevenueAndExpenditureTotalType = NULL,
-  GASBExtractRunID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBColumnID = NULL,
+  GASBExtractRunID = NULL,
+  RevenueAndExpenditureTotalType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create an IdentificationApplicationAdmin}
 \usage{
 createIdentificationApplicationAdmin(
-  UserID = NULL,
   IdentificationApplicationID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

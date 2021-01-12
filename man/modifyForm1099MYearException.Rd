@@ -6,13 +6,13 @@
 \usage{
 modifyForm1099MYearException(
   Form1099MYearExceptionID,
-  Form1099MYearID = NULL,
-  VendorID = NULL,
-  IsFatalException = NULL,
-  ExceptionType = NULL,
   Description = NULL,
-  SourceType = NULL,
+  ExceptionType = NULL,
+  Form1099MYearID = NULL,
+  IsFatalException = NULL,
   PreserveException = NULL,
+  SourceType = NULL,
+  VendorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

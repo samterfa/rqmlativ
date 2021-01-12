@@ -6,13 +6,13 @@
 \usage{
 listHearingScreeningSecuredNotes(
   searchConditionsList = NULL,
-  HearingScreeningSecuredNoteID = F,
+  CreatedTime = F,
   HearingScreeningID = F,
+  HearingScreeningSecuredNoteID = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

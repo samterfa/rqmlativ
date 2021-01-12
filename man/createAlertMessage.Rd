@@ -7,8 +7,8 @@
 createAlertMessage(
   Code = NULL,
   Description = NULL,
-  DistrictID = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsCritical = NULL,
   entityId = 1,
   query = NULL,

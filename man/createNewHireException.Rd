@@ -5,14 +5,14 @@
 \title{Create a NewHireException}
 \usage{
 createNewHireException(
-  NewHireExtractRunID = NULL,
-  EmployerID = NULL,
   EmployeeID = NULL,
-  Source = NULL,
+  EmployerID = NULL,
   IsFatal = NULL,
-  Type = NULL,
   Message = NULL,
+  NewHireExtractRunID = NULL,
   PreserveException = NULL,
+  Source = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

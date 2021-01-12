@@ -6,9 +6,9 @@
 \usage{
 modifySeatingChartMeet(
   SeatingChartMeetID,
-  SeatingChartID = NULL,
-  MeetID = NULL,
   IsCurrent = NULL,
+  MeetID = NULL,
+  SeatingChartID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

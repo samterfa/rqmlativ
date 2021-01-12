@@ -5,8 +5,8 @@
 \title{Create a SchedulingPeriod}
 \usage{
 createSchedulingPeriod(
-  DayRotationID = NULL,
   CodeNumber = NULL,
+  DayRotationID = NULL,
   EntityGroupKey = NULL,
   SchedulingPeriodIDClonedFrom = NULL,
   entityId = 1,

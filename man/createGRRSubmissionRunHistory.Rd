@@ -5,16 +5,16 @@
 \title{Create a GRRSubmissionRunHistory}
 \usage{
 createGRRSubmissionRunHistory(
-  GRRSubmissionID = NULL,
   DistrictID = NULL,
+  EndDateTime = NULL,
+  GRRSubmissionID = NULL,
+  IsFinalized = NULL,
+  MediaID = NULL,
   SchoolYearID = NULL,
   StartDateTime = NULL,
-  EndDateTime = NULL,
-  Type = NULL,
-  MediaID = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
-  IsFinalized = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

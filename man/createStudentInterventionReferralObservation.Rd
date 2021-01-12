@@ -5,8 +5,8 @@
 \title{Create a StudentInterventionReferralObservation}
 \usage{
 createStudentInterventionReferralObservation(
-  StudentInterventionReferralID = NULL,
   ObservationID = NULL,
+  StudentInterventionReferralID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

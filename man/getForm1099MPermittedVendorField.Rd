@@ -6,13 +6,13 @@
 \usage{
 getForm1099MPermittedVendorField(
   Form1099MPermittedVendorFieldID,
-  FieldName = F,
-  SkywardID = F,
-  SkywardHash = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  FieldName = F,
   ModifiedTime = F,
+  SkywardHash = F,
+  SkywardID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

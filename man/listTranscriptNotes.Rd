@@ -6,14 +6,14 @@
 \usage{
 listTranscriptNotes(
   searchConditionsList = NULL,
-  TranscriptNoteID = F,
+  CreatedTime = F,
+  DateAdded = F,
+  ModifiedTime = F,
   Note = F,
   StudentID = F,
-  DateAdded = F,
+  TranscriptNoteID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

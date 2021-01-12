@@ -7,10 +7,10 @@
 modifyTempUsageHistory(
   TempUsageHistoryID,
   AverageServerResponseTime = NULL,
-  UsageHistoryRecordTotal = NULL,
   Module = NULL,
   Object = NULL,
   Screen = NULL,
+  UsageHistoryRecordTotal = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

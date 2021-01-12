@@ -7,9 +7,9 @@
 modifyCalendarDaySchedulingPeriodTimesOverride(
   CalendarDaySchedulingPeriodTimesOverrideID,
   CalendarDayID = NULL,
+  EndTime = NULL,
   SchedulingPeriodID = NULL,
   StartTime = NULL,
-  EndTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

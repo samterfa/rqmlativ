@@ -6,9 +6,9 @@
 \usage{
 modifyCalendarDayBellScheduleGroupBellSchedule(
   CalendarDayBellScheduleGroupBellScheduleID,
-  CalendarDayID = NULL,
-  BellScheduleGroupID = NULL,
   BellScheduleGroupBellScheduleID = NULL,
+  BellScheduleGroupID = NULL,
+  CalendarDayID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,16 +5,16 @@
 \title{Create a TempStudentEndorsementError}
 \usage{
 createTempStudentEndorsementError(
-  FirstName = NULL,
-  LastName = NULL,
-  MiddleName = NULL,
   BirthDate = NULL,
-  Gender = NULL,
-  StudentNumber = NULL,
   EndorsementCode = NULL,
-  StateID = NULL,
   EndorsementOptionCode = NULL,
+  FirstName = NULL,
+  Gender = NULL,
+  LastName = NULL,
   Message = NULL,
+  MiddleName = NULL,
+  StateID = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

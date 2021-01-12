@@ -5,8 +5,8 @@
 \title{Create an IncidentOffenseNameDrug}
 \usage{
 createIncidentOffenseNameDrug(
-  IncidentOffenseNameID = NULL,
   DrugID = NULL,
+  IncidentOffenseNameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

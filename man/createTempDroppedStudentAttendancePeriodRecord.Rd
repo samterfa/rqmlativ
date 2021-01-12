@@ -6,12 +6,12 @@
 \usage{
 createTempDroppedStudentAttendancePeriodRecord(
   AffectedPrimaryKey = NULL,
-  StudentName = NULL,
-  Date = NULL,
-  CourseDescription = NULL,
-  AttendanceTypeCode = NULL,
   AttendancePeriodCode = NULL,
+  AttendanceTypeCode = NULL,
+  CourseDescription = NULL,
+  Date = NULL,
   ErrorCount = NULL,
+  StudentName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

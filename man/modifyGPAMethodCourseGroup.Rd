@@ -6,8 +6,8 @@
 \usage{
 modifyGPAMethodCourseGroup(
   GPAMethodCourseGroupID,
-  GPAMethodID = NULL,
   CourseGroupID = NULL,
+  GPAMethodID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyUnemploymentCompensationSubmissionMultipleWorksiteView(
   UnemploymentCompensationSubmissionMultipleWorksiteViewID,
+  BuildingID = NULL,
   UnemploymentCompensationSubmissionID = NULL,
   Worksite = NULL,
-  BuildingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

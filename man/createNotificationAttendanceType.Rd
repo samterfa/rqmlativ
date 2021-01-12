@@ -5,8 +5,8 @@
 \title{Create a NotificationAttendanceType}
 \usage{
 createNotificationAttendanceType(
-  NotificationID = NULL,
   AttendanceTypeID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

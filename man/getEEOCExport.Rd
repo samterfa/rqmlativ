@@ -6,13 +6,13 @@
 \usage{
 getEEOCExport(
   EEOCExportID,
+  CreatedTime = F,
   EEOCExtractRunID = F,
   MediaID = F,
+  ModifiedTime = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

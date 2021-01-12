@@ -6,10 +6,10 @@
 \usage{
 modifyUserProfileData(
   UserProfileDataID,
-  UserID = NULL,
-  Module = NULL,
   BrowseObject = NULL,
+  Module = NULL,
   RelatedRecord = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 createCustomTask(
   CustomWorkflowID = NULL,
-  Name = NULL,
-  Description = NULL,
-  Order = NULL,
-  NextButtonText = NULL,
-  TaskType = NULL,
   DataXML = NULL,
+  Description = NULL,
+  Name = NULL,
+  NextButtonText = NULL,
+  Order = NULL,
+  TaskType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

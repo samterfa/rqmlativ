@@ -6,13 +6,13 @@
 \usage{
 listInjuryOccurrenceNotes(
   searchConditionsList = NULL,
-  InjuryOccurrenceNoteID = F,
-  Note = F,
-  InjuryOccurrenceID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  InjuryOccurrenceID = F,
+  InjuryOccurrenceNoteID = F,
   ModifiedTime = F,
+  Note = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

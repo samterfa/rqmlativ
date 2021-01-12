@@ -5,10 +5,10 @@
 \title{Create a W2YearBenefit}
 \usage{
 createW2YearBenefit(
-  W2YearID = NULL,
   BenefitID = NULL,
   FederalW2BoxID = NULL,
   W2YearBox14SetID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 modifyBellScheduleGroup(
   BellScheduleGroupID,
+  BellScheduleGroupIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
-  SchoolYearID = NULL,
   EntityID = NULL,
   IsDefault = NULL,
-  BellScheduleGroupIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyHealthCondition(
   HealthConditionID,
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   IsSecuredIndicator = NULL,
   VaccinationGroupContraindication = NULL,

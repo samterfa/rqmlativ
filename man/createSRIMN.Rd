@@ -5,8 +5,8 @@
 \title{Create a SRIMN}
 \usage{
 createSRIMN(
-  StudentTestID = NULL,
   ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

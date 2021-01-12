@@ -6,13 +6,13 @@
 \usage{
 listNotificationGradeBuckets(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeBucketID = F,
+  ModifiedTime = F,
   NotificationGradeBucketID = F,
   NotificationID = F,
-  GradeBucketID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

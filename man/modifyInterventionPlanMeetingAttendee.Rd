@@ -6,8 +6,8 @@
 \usage{
 modifyInterventionPlanMeetingAttendee(
   InterventionPlanMeetingAttendeeID,
-  NameID = NULL,
   InterventionPlanMeetingID = NULL,
+  NameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

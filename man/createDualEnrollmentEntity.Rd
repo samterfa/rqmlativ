@@ -5,8 +5,8 @@
 \title{Create a DualEnrollmentEntity}
 \usage{
 createDualEnrollmentEntity(
-  EntityIDTarget = NULL,
   EntityIDAllowDualEnrollment = NULL,
+  EntityIDTarget = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

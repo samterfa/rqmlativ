@@ -5,8 +5,8 @@
 \title{Create a VisionScreeningObservation}
 \usage{
 createVisionScreeningObservation(
-  VisionScreeningID = NULL,
   VisionObservationID = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

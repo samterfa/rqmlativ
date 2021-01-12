@@ -6,12 +6,12 @@
 \usage{
 modifyMeetRequirement(
   MeetRequirementID,
-  DaysPerRotation = NULL,
-  MinutesPerDay = NULL,
   AllowMultiplePeriodsPerDayRotation = NULL,
+  CourseID = NULL,
+  DaysPerRotation = NULL,
   ForceConsecutivePeriods = NULL,
   MeetRequirementIDClonedFrom = NULL,
-  CourseID = NULL,
+  MinutesPerDay = NULL,
   TimeSpanAnalysisType = NULL,
   entityId = 1,
   query = NULL,

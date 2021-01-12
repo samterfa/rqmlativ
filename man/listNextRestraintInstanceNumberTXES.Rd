@@ -6,14 +6,14 @@
 \usage{
 listNextRestraintInstanceNumberTXES(
   searchConditionsList = NULL,
-  NextRestraintInstanceNumberTXID = F,
+  CreatedTime = F,
   DistrictID = F,
+  ModifiedTime = F,
+  NextRestraintInstanceNumberTXID = F,
   SchoolYearID = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

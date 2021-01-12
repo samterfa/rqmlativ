@@ -5,8 +5,8 @@
 \title{Create a Product}
 \usage{
 createProduct(
-  RMSID = NULL,
   Name = NULL,
+  RMSID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create an ESSAExclusion}
 \usage{
 createESSAExclusion(
-  DistrictID = NULL,
   Description = NULL,
+  DistrictID = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

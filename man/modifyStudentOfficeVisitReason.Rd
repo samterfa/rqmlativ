@@ -6,8 +6,8 @@
 \usage{
 modifyStudentOfficeVisitReason(
   StudentOfficeVisitReasonID,
-  StudentOfficeVisitID = NULL,
   OfficeVisitReasonID = NULL,
+  StudentOfficeVisitID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

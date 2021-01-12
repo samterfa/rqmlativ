@@ -5,12 +5,12 @@
 \title{Create a NameOfficeVisitNotification}
 \usage{
 createNameOfficeVisitNotification(
-  NameOfficeVisitID = NULL,
-  OfficeVisitGuardianResponseID = NULL,
-  NotificationTime = NULL,
-  NotificationMethodID = NULL,
   NameID = NULL,
+  NameOfficeVisitID = NULL,
   Note = NULL,
+  NotificationMethodID = NULL,
+  NotificationTime = NULL,
+  OfficeVisitGuardianResponseID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

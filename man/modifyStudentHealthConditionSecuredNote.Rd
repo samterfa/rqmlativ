@@ -6,8 +6,8 @@
 \usage{
 modifyStudentHealthConditionSecuredNote(
   StudentHealthConditionSecuredNoteID,
-  StudentHealthConditionID = NULL,
   Note = NULL,
+  StudentHealthConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

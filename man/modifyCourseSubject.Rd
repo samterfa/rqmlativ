@@ -7,11 +7,11 @@
 modifyCourseSubject(
   CourseSubjectID,
   Code = NULL,
+  CourseSubjectIDClonedFrom = NULL,
   Description = NULL,
+  EntityGroupKey = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  EntityGroupKey = NULL,
-  CourseSubjectIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

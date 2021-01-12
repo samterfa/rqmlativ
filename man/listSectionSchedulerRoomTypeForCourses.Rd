@@ -6,15 +6,15 @@
 \usage{
 listSectionSchedulerRoomTypeForCourses(
   searchConditionsList = NULL,
-  SectionSchedulerRoomTypeForCourseID = F,
   CourseID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   RoomTypeID = F,
+  SectionSchedulerRoomTypeForCourseID = F,
   SectionSchedulerRoomTypeForCourseIDClonedFrom = F,
   SectionSchedulerRoomTypeForCourseIDClonedTo = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

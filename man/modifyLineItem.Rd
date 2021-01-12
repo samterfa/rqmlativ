@@ -6,8 +6,8 @@
 \usage{
 modifyLineItem(
   LineItemID,
-  ResultValueMin = NULL,
   ResultValueMax = NULL,
+  ResultValueMin = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

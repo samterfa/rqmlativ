@@ -6,14 +6,14 @@
 \usage{
 getProfile(
   ProfileID,
-  SkywardID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Module = F,
   Object = F,
   SkywardHash = F,
+  SkywardID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

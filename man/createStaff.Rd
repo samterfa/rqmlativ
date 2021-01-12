@@ -5,11 +5,11 @@
 \title{Create a Staff}
 \usage{
 createStaff(
+  DistrictID = NULL,
   FileFolderNumber = NULL,
   NameID = NULL,
-  StaffWebsite = NULL,
-  DistrictID = NULL,
   StaffNumber = NULL,
+  StaffWebsite = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

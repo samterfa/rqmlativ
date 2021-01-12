@@ -5,14 +5,14 @@
 \title{Create an ElectronicTranscriptAcademicAwardV1}
 \usage{
 createElectronicTranscriptAcademicAwardV1(
-  AcademicAwardLevel = NULL,
   AcademicAwardDate = NULL,
+  AcademicAwardLevel = NULL,
   AcademicAwardTitle = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  OrganizationName = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  OrganizationName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

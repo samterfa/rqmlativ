@@ -6,12 +6,12 @@
 \usage{
 modifyGradingPeriodSet(
   GradingPeriodSetID,
-  EntityGroupKey = NULL,
   Code = NULL,
-  Description = NULL,
   CourseLengthID = NULL,
-  IsDefault = NULL,
+  Description = NULL,
+  EntityGroupKey = NULL,
   GradingPeriodSetIDClonedFrom = NULL,
+  IsDefault = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

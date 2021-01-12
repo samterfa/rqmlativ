@@ -5,11 +5,11 @@
 \title{Create a W2YearEmployeeBox12V1}
 \usage{
 createW2YearEmployeeBox12V1(
-  W2YearEmployeeV1ID = NULL,
-  FederalW2BoxID = NULL,
-  Code = NULL,
   Amount = NULL,
+  Code = NULL,
+  FederalW2BoxID = NULL,
   IsOriginalExtractedValue = NULL,
+  W2YearEmployeeV1ID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

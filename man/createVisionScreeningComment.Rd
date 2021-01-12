@@ -5,8 +5,8 @@
 \title{Create a VisionScreeningComment}
 \usage{
 createVisionScreeningComment(
-  VisionScreeningID = NULL,
   VisionCommentID = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

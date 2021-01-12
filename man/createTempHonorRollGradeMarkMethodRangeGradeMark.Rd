@@ -5,9 +5,9 @@
 \title{Create a TempHonorRollGradeMarkMethodRangeGradeMark}
 \usage{
 createTempHonorRollGradeMarkMethodRangeGradeMark(
+  GradeMarkID = NULL,
   HonorRollGradeMarkMethodRangeGradeMarkID = NULL,
   TempHonorRollGradeMarkMethodRangeID = NULL,
-  GradeMarkID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

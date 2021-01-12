@@ -5,9 +5,9 @@
 \title{Create a GradeReportTemplateGPAMethod}
 \usage{
 createGradeReportTemplateGPAMethod(
-  GradeReportTemplateID = NULL,
   GPAMethodID = NULL,
   GradeReportTemplateGPAMethodIDClonedFrom = NULL,
+  GradeReportTemplateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

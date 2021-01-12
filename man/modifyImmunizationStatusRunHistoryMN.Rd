@@ -6,14 +6,14 @@
 \usage{
 modifyImmunizationStatusRunHistoryMN(
   ImmunizationStatusRunHistoryMNID,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   ComplianceDate = NULL,
-  StartDateTime = NULL,
+  DistrictID = NULL,
   EndDateTime = NULL,
-  Type = NULL,
   MediaID = NULL,
+  SchoolYearID = NULL,
+  StartDateTime = NULL,
   Status = NULL,
+  Type = NULL,
   UserIDCanceledBy = NULL,
   entityId = 1,
   query = NULL,

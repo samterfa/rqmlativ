@@ -5,6 +5,7 @@
 \title{Create a CommentBucketCourse}
 \usage{
 createCommentBucketCourse(
+  CommentBucketCourseIDClonedFrom = NULL,
   CommentBucketID = NULL,
   CourseID = NULL,
   EntityGroupKey = NULL,

@@ -6,13 +6,13 @@
 \usage{
 getUserMenuModule(
   UserMenuModuleID,
-  UserID = F,
-  MenuModuleID = F,
-  DisplayOrder = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayOrder = F,
+  MenuModuleID = F,
   ModifiedTime = F,
+  UserID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

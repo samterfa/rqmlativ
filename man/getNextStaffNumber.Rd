@@ -6,12 +6,12 @@
 \usage{
 getNextStaffNumber(
   NextStaffNumberID,
+  CreatedTime = F,
   MaskPrefix = F,
+  ModifiedTime = F,
   SequenceNumber = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

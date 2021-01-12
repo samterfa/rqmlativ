@@ -5,12 +5,12 @@
 \title{Create an OpenPeriodAnalysis}
 \usage{
 createOpenPeriodAnalysis(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  UserIDPerformer = NULL,
-  Status = NULL,
-  StartTime = NULL,
   EndTime = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
+  StartTime = NULL,
+  Status = NULL,
+  UserIDPerformer = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

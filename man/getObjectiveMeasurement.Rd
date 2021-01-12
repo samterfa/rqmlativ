@@ -6,12 +6,12 @@
 \usage{
 getObjectiveMeasurement(
   ObjectiveMeasurementID,
-  ObjectiveID = F,
-  MeasurementID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MeasurementID = F,
   ModifiedTime = F,
+  ObjectiveID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

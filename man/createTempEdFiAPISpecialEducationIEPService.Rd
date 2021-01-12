@@ -5,12 +5,12 @@
 \title{Create a TempEdFiAPISpecialEducationIEPService}
 \usage{
 createTempEdFiAPISpecialEducationIEPService(
-  UpdateType = NULL,
-  StartDate = NULL,
   EndDate = NULL,
-  SpecialEducationSettingDescriptor = NULL,
-  ReasonExitedDescriptor = NULL,
   FapeResponsibleSchool = NULL,
+  ReasonExitedDescriptor = NULL,
+  SpecialEducationSettingDescriptor = NULL,
+  StartDate = NULL,
+  UpdateType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

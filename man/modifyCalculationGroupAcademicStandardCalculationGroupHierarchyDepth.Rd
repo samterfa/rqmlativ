@@ -6,11 +6,11 @@
 \usage{
 modifyCalculationGroupAcademicStandardCalculationGroupHierarchyDepth(
   CalculationGroupAcademicStandardCalculationGroupHierarchyDepthID,
-  EntityGroupKey = NULL,
-  CalculationGroupAcademicStandardID = NULL,
-  CalculationGroupHierarchyDepthID = NULL,
-  CalculationGroupAcademicStandardIDAtLevel = NULL,
   CalculationGroupAcademicStandardCalculationGroupHierarchyDepthIDClonedFrom = NULL,
+  CalculationGroupAcademicStandardID = NULL,
+  CalculationGroupAcademicStandardIDAtLevel = NULL,
+  CalculationGroupHierarchyDepthID = NULL,
+  EntityGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

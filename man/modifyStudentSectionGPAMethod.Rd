@@ -6,10 +6,10 @@
 \usage{
 modifyStudentSectionGPAMethod(
   StudentSectionGPAMethodID,
-  StudentSectionID = NULL,
+  GPACredits = NULL,
   GPAMethodEntityID = NULL,
   PointSetEntityID = NULL,
-  GPACredits = NULL,
+  StudentSectionID = NULL,
   UseOverride = NULL,
   entityId = 1,
   query = NULL,

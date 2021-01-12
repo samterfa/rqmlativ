@@ -5,9 +5,9 @@
 \title{Create an OnlinePaymentVendor}
 \usage{
 createOnlinePaymentVendor(
-  Name = NULL,
-  Module = NULL,
   FeeManagementOnlinePaymentCodeDefault = NULL,
+  Module = NULL,
+  Name = NULL,
   URL = NULL,
   URLDisplayText = NULL,
   UserAccessID = NULL,

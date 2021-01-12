@@ -6,8 +6,8 @@
 \usage{
 createSectionCorequisiteGroupSection(
   SectionCorequisiteGroupID = NULL,
-  SectionID = NULL,
   SectionCorequisiteGroupSectionIDClonedFrom = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

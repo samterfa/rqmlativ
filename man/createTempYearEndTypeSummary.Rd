@@ -6,13 +6,13 @@
 \usage{
 createTempYearEndTypeSummary(
   DisplayName = NULL,
-  SourceRecordsFound = NULL,
-  TargetRecordsFound = NULL,
   EstimatedRecordsToProcess = NULL,
-  RecordsProcessedCount = NULL,
-  SuccessCount = NULL,
   FailureCount = NULL,
+  RecordsProcessedCount = NULL,
   SkywardIDObject = NULL,
+  SourceRecordsFound = NULL,
+  SuccessCount = NULL,
+  TargetRecordsFound = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

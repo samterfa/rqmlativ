@@ -7,8 +7,8 @@
 modifySectionDefault(
   SectionDefaultID,
   CourseID = NULL,
-  MinimumStudentCount = NULL,
   MaximumStudentCount = NULL,
+  MinimumStudentCount = NULL,
   OptimalStudentCount = NULL,
   SectionDefaultIDClonedFrom = NULL,
   entityId = 1,

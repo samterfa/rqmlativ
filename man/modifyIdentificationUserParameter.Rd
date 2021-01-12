@@ -6,9 +6,9 @@
 \usage{
 modifyIdentificationUserParameter(
   IdentificationUserParameterID,
-  UserID = NULL,
   IdentificationApplicationID = NULL,
   Name = NULL,
+  UserID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

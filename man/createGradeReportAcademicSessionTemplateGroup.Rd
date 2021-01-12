@@ -5,15 +5,15 @@
 \title{Create a GradeReportAcademicSessionTemplateGroup}
 \usage{
 createGradeReportAcademicSessionTemplateGroup(
-  DistrictID = NULL,
   Description = NULL,
-  GPAMethodID = NULL,
+  DistrictID = NULL,
+  EarnedCreditsMethodIDDefaultOverride = NULL,
   GPABucketID = NULL,
   GPAField = NULL,
-  IncludeGPA = NULL,
+  GPAMethodID = NULL,
   IncludeEarnedCredits = NULL,
+  IncludeGPA = NULL,
   IncludeSchoolYearDescription = NULL,
-  EarnedCreditsMethodIDDefaultOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

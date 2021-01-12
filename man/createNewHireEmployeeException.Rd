@@ -5,16 +5,16 @@
 \title{Create a NewHireEmployeeException}
 \usage{
 createNewHireEmployeeException(
-  NewHireEmployeeV1ID = NULL,
   FirstName = NULL,
   LastName = NULL,
+  Message = NULL,
+  MessageType = NULL,
   MiddleName = NULL,
+  NewHireEmployeeV1ID = NULL,
   NewHireSubmissionID = NULL,
   NewHireSubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
-  Message = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create a CurriculumSubArea}
 \usage{
 createCurriculumSubArea(
-  CurriculumID = NULL,
-  SubAreaID = NULL,
-  StudentID = NULL,
-  SchoolYearLow = NULL,
-  SchoolYearHigh = NULL,
-  ApplicationOrder = NULL,
-  MaximumPercentOfCourseCredit = NULL,
   AllowReuseOfPreviouslyAppliedCredits = NULL,
+  ApplicationOrder = NULL,
+  CurriculumID = NULL,
   IsGradReqRankGPAWaiver = NULL,
+  MaximumPercentOfCourseCredit = NULL,
+  SchoolYearHigh = NULL,
+  SchoolYearLow = NULL,
+  StudentID = NULL,
+  SubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

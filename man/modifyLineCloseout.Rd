@@ -6,9 +6,9 @@
 \usage{
 modifyLineCloseout(
   LineCloseoutID,
+  CloseoutTime = NULL,
   LineID = NULL,
   StartTime = NULL,
-  CloseoutTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyOnlinePaymentVendor(
   OnlinePaymentVendorID,
-  Name = NULL,
-  Module = NULL,
   FeeManagementOnlinePaymentCodeDefault = NULL,
+  Module = NULL,
+  Name = NULL,
   URL = NULL,
   URLDisplayText = NULL,
   UserAccessID = NULL,

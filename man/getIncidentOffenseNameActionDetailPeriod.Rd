@@ -6,13 +6,13 @@
 \usage{
 getIncidentOffenseNameActionDetailPeriod(
   IncidentOffenseNameActionDetailPeriodID,
-  IncidentOffenseNameActionDetailID = F,
   AttendancePeriodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  IncidentOffenseNameActionDetailID = F,
   IsReadOnlyHistoricalRecord = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

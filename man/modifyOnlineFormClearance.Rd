@@ -6,8 +6,8 @@
 \usage{
 modifyOnlineFormClearance(
   OnlineFormClearanceID,
-  OnlineFormID = NULL,
   GroupIDSecurity = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

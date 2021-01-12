@@ -6,8 +6,8 @@
 \usage{
 modifyGPABucket(
   GPABucketID,
-  DistrictGroupKey = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
   GPABucketTypeID = NULL,
   Name = NULL,
   entityId = 1,

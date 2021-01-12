@@ -5,12 +5,14 @@
 \title{Create a TempStudentActivityTransactionRecord}
 \usage{
 createTempStudentActivityTransactionRecord(
+  ActivityCode = NULL,
+  ActivityDescription = NULL,
   ActivityID = NULL,
+  IsValidTransaction = NULL,
+  NewEndDate = NULL,
+  NewStartDate = NULL,
   StudentActivityTransactionID = NULL,
   StudentFullNameLFM = NULL,
-  NewStartDate = NULL,
-  NewEndDate = NULL,
-  IsValidTransaction = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a DemographicsTempException}
 \usage{
 createDemographicsTempException(
-  Message = NULL,
   LineNumber = NULL,
+  Message = NULL,
   NameLFM = NULL,
   entityId = 1,
   query = NULL,

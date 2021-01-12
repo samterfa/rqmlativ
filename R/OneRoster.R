@@ -18,7 +18,7 @@
 	#' @return A list of OneRosterUsers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listOneRosterUsers <- function(searchConditionsList = NULL, UserID = F, StaffID = F, StudentID = F, Status = F, Username = F, EnabledUser = F, GivenName = F, FamilyName = F, MiddleName = F, Identifier = F, Email = F, PhoneNumber = F, Org = F, Grade = F, SourcedID = F, ModifiedTime = F, Role = F, NameID = F, UserIDs = F, OrgSourcedIDs = F, SMS = F, AgentSourcedIDs = F, Password = F, OneRosterID = F, DateLastModified = F, GuardianID = F, Agent = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listOneRosterUsers <- function(searchConditionsList = NULL, Agent = F, AgentSourcedIDs = F, DateLastModified = F, Email = F, EnabledUser = F, FamilyName = F, GivenName = F, Grade = F, GuardianID = F, Identifier = F, MiddleName = F, ModifiedTime = F, NameID = F, OneRosterID = F, Org = F, OrgSourcedIDs = F, Password = F, PhoneNumber = F, Role = F, SMS = F, SourcedID = F, StaffID = F, Status = F, StudentID = F, UserID = F, UserIDs = F, Username = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of OneRosterUser
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getOneRosterUser <- function(OneRosterUserID, UserID = F, StaffID = F, StudentID = F, Status = F, Username = F, EnabledUser = F, GivenName = F, FamilyName = F, MiddleName = F, Identifier = F, Email = F, PhoneNumber = F, Org = F, Grade = F, SourcedID = F, ModifiedTime = F, Role = F, NameID = F, UserIDs = F, OrgSourcedIDs = F, SMS = F, AgentSourcedIDs = F, Password = F, OneRosterID = F, DateLastModified = F, GuardianID = F, Agent = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getOneRosterUser <- function(OneRosterUserID, Agent = F, AgentSourcedIDs = F, DateLastModified = F, Email = F, EnabledUser = F, FamilyName = F, GivenName = F, Grade = F, GuardianID = F, Identifier = F, MiddleName = F, ModifiedTime = F, NameID = F, OneRosterID = F, Org = F, OrgSourcedIDs = F, Password = F, PhoneNumber = F, Role = F, SMS = F, SourcedID = F, StaffID = F, Status = F, StudentID = F, UserID = F, UserIDs = F, Username = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "OneRosterUserID")
 
@@ -90,7 +90,7 @@
 	#' @return A list of AcademicSessions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listAcademicSessions <- function(searchConditionsList = NULL, AcademicSessionID = F, SectionLengthID = F, GradingPeriodID = F, Title = F, StartDate = F, EndDate = F, SchoolYear = F, Parent = F, Children = F, SourcedID = F, ModifiedTime = F, SchoolYearID = F, SessionType = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listAcademicSessions <- function(searchConditionsList = NULL, AcademicSessionID = F, Children = F, DateLastModified = F, EndDate = F, GradingPeriodID = F, ModifiedTime = F, OneRosterID = F, Parent = F, SchoolYear = F, SchoolYearID = F, SectionLengthID = F, SessionType = F, SourcedID = F, StartDate = F, Status = F, Title = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -115,7 +115,7 @@
 	#' @return A dataframe or of AcademicSession
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getAcademicSession <- function(AcademicSessionID, SectionLengthID = F, GradingPeriodID = F, Title = F, StartDate = F, EndDate = F, SchoolYear = F, Parent = F, Children = F, SourcedID = F, ModifiedTime = F, SchoolYearID = F, SessionType = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getAcademicSession <- function(AcademicSessionID, Children = F, DateLastModified = F, EndDate = F, GradingPeriodID = F, ModifiedTime = F, OneRosterID = F, Parent = F, SchoolYear = F, SchoolYearID = F, SectionLengthID = F, SessionType = F, SourcedID = F, StartDate = F, Status = F, Title = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "AcademicSessionID")
 
@@ -162,7 +162,7 @@
 	#' @return A list of Enrollments
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listEnrollments <- function(searchConditionsList = NULL, EnrollmentID = F, StudentSectionTransactionID = F, StaffMeetID = F, ClassSourcedID = F, SchoolSourcedID = F, UserSourcedID = F, IsPrimary = F, BeginDate = F, EndDate = F, SourcedID = F, ModifiedTime = F, Role = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listEnrollments <- function(searchConditionsList = NULL, BeginDate = F, ClassSourcedID = F, DateLastModified = F, EndDate = F, EnrollmentID = F, IsPrimary = F, ModifiedTime = F, OneRosterID = F, Role = F, SchoolSourcedID = F, SourcedID = F, StaffMeetID = F, Status = F, StudentSectionTransactionID = F, UserSourcedID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -187,7 +187,7 @@
 	#' @return A dataframe or of Enrollment
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getEnrollment <- function(EnrollmentID, StudentSectionTransactionID = F, StaffMeetID = F, ClassSourcedID = F, SchoolSourcedID = F, UserSourcedID = F, IsPrimary = F, BeginDate = F, EndDate = F, SourcedID = F, ModifiedTime = F, Role = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getEnrollment <- function(EnrollmentID, BeginDate = F, ClassSourcedID = F, DateLastModified = F, EndDate = F, IsPrimary = F, ModifiedTime = F, OneRosterID = F, Role = F, SchoolSourcedID = F, SourcedID = F, StaffMeetID = F, Status = F, StudentSectionTransactionID = F, UserSourcedID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "EnrollmentID")
 
@@ -234,7 +234,7 @@
 	#' @return A list of Orgs
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listOrgs <- function(searchConditionsList = NULL, OrgID = F, EntityID = F, DepartmentID = F, Name = F, Identifier = F, Parent = F, Children = F, SourcedID = F, ModifiedTime = F, SubType = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listOrgs <- function(searchConditionsList = NULL, Children = F, DateLastModified = F, DepartmentID = F, EntityID = F, Identifier = F, ModifiedTime = F, Name = F, OneRosterID = F, OrgID = F, Parent = F, SourcedID = F, Status = F, SubType = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -259,7 +259,7 @@
 	#' @return A dataframe or of Org
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getOrg <- function(OrgID, EntityID = F, DepartmentID = F, Name = F, Identifier = F, Parent = F, Children = F, SourcedID = F, ModifiedTime = F, SubType = F, Status = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getOrg <- function(OrgID, Children = F, DateLastModified = F, DepartmentID = F, EntityID = F, Identifier = F, ModifiedTime = F, Name = F, OneRosterID = F, Parent = F, SourcedID = F, Status = F, SubType = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "OrgID")
 
@@ -306,7 +306,7 @@
 	#' @return A list of Classes
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listClasses <- function(searchConditionsList = NULL, ClassID = F, SectionID = F, Title = F, ClassCode = F, ClassType = F, Location = F, Grades = F, Subjects = F, Course = F, School = F, Terms = F, Periods = F, SubjectCodes = F, Resources = F, SourcedID = F, Status = F, ModifiedTime = F, CourseSourcedID = F, SchoolSourcedID = F, TermSourcedIds = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listClasses <- function(searchConditionsList = NULL, ClassCode = F, ClassID = F, ClassType = F, Course = F, CourseSourcedID = F, DateLastModified = F, Grades = F, Location = F, ModifiedTime = F, OneRosterID = F, Periods = F, Resources = F, School = F, SchoolSourcedID = F, SectionID = F, SourcedID = F, Status = F, SubjectCodes = F, Subjects = F, Terms = F, TermSourcedIds = F, Title = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -331,7 +331,7 @@
 	#' @return A dataframe or of Class
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getClass <- function(ClassID, SectionID = F, Title = F, ClassCode = F, ClassType = F, Location = F, Grades = F, Subjects = F, Course = F, School = F, Terms = F, Periods = F, SubjectCodes = F, Resources = F, SourcedID = F, Status = F, ModifiedTime = F, CourseSourcedID = F, SchoolSourcedID = F, TermSourcedIds = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getClass <- function(ClassID, ClassCode = F, ClassType = F, Course = F, CourseSourcedID = F, DateLastModified = F, Grades = F, Location = F, ModifiedTime = F, OneRosterID = F, Periods = F, Resources = F, School = F, SchoolSourcedID = F, SectionID = F, SourcedID = F, Status = F, SubjectCodes = F, Subjects = F, Terms = F, TermSourcedIds = F, Title = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ClassID")
 
@@ -378,7 +378,7 @@
 	#' @return A list of OneRosterCourses
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listOneRosterCourses <- function(searchConditionsList = NULL, CourseID = F, Title = F, SchoolYear = F, CourseCode = F, Grades = F, Subjects = F, Org = F, SubjectCodes = F, Resources = F, SourcedID = F, Status = F, ModifiedTime = F, SchoolYearSourcedID = F, OrgSourcedID = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listOneRosterCourses <- function(searchConditionsList = NULL, CourseCode = F, CourseID = F, DateLastModified = F, Grades = F, ModifiedTime = F, OneRosterID = F, Org = F, OrgSourcedID = F, Resources = F, SchoolYear = F, SchoolYearSourcedID = F, SourcedID = F, Status = F, SubjectCodes = F, Subjects = F, Title = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -403,7 +403,7 @@
 	#' @return A dataframe or of OneRosterCourse
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getOneRosterCourse <- function(OneRosterCourseID, CourseID = F, Title = F, SchoolYear = F, CourseCode = F, Grades = F, Subjects = F, Org = F, SubjectCodes = F, Resources = F, SourcedID = F, Status = F, ModifiedTime = F, SchoolYearSourcedID = F, OrgSourcedID = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getOneRosterCourse <- function(OneRosterCourseID, CourseCode = F, CourseID = F, DateLastModified = F, Grades = F, ModifiedTime = F, OneRosterID = F, Org = F, OrgSourcedID = F, Resources = F, SchoolYear = F, SchoolYearSourcedID = F, SourcedID = F, Status = F, SubjectCodes = F, Subjects = F, Title = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "OneRosterCourseID")
 
@@ -450,7 +450,7 @@
 	#' @return A list of Demographics
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listDemographics <- function(searchConditionsList = NULL, DemographicID = F, StaffID = F, StudentID = F, BirthDate = F, Sex = F, AmericanIndianOrAlaskaNative = F, Asian = F, BlackOrAfricanAmerican = F, NativeHawaiianOrOtherPacificIslander = F, White = F, DemographicRaceTwoOrMoreRaces = F, HispanicOrLatinoEthnicity = F, CountryOfBirthCode = F, StateOfBirthAbbreviation = F, CityOfBirth = F, PublicSchoolResidenceStatus = F, SourcedID = F, Status = F, ModifiedTime = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listDemographics <- function(searchConditionsList = NULL, AmericanIndianOrAlaskaNative = F, Asian = F, BirthDate = F, BlackOrAfricanAmerican = F, CityOfBirth = F, CountryOfBirthCode = F, DateLastModified = F, DemographicID = F, DemographicRaceTwoOrMoreRaces = F, HispanicOrLatinoEthnicity = F, ModifiedTime = F, NativeHawaiianOrOtherPacificIslander = F, OneRosterID = F, PublicSchoolResidenceStatus = F, Sex = F, SourcedID = F, StaffID = F, StateOfBirthAbbreviation = F, Status = F, StudentID = F, White = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -475,7 +475,7 @@
 	#' @return A dataframe or of Demographic
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getDemographic <- function(DemographicID, StaffID = F, StudentID = F, BirthDate = F, Sex = F, AmericanIndianOrAlaskaNative = F, Asian = F, BlackOrAfricanAmerican = F, NativeHawaiianOrOtherPacificIslander = F, White = F, DemographicRaceTwoOrMoreRaces = F, HispanicOrLatinoEthnicity = F, CountryOfBirthCode = F, StateOfBirthAbbreviation = F, CityOfBirth = F, PublicSchoolResidenceStatus = F, SourcedID = F, Status = F, ModifiedTime = F, OneRosterID = F, DateLastModified = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getDemographic <- function(DemographicID, AmericanIndianOrAlaskaNative = F, Asian = F, BirthDate = F, BlackOrAfricanAmerican = F, CityOfBirth = F, CountryOfBirthCode = F, DateLastModified = F, DemographicRaceTwoOrMoreRaces = F, HispanicOrLatinoEthnicity = F, ModifiedTime = F, NativeHawaiianOrOtherPacificIslander = F, OneRosterID = F, PublicSchoolResidenceStatus = F, Sex = F, SourcedID = F, StaffID = F, StateOfBirthAbbreviation = F, Status = F, StudentID = F, White = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "DemographicID")
 
@@ -522,7 +522,7 @@
 	#' @return A list of Results
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listResults <- function(searchConditionsList = NULL, ResultID = F, Comment = F, Score = F, ScoreDate = F, ScoreStatus = F, LineItemSourcedID = F, ClassSourcedID = F, StudentSourcedID = F, AssignmentID = F, StudentAssignmentID = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, VendorSourceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listResults <- function(searchConditionsList = NULL, AssignmentID = F, ClassSourcedID = F, Comment = F, DateLastModified = F, LineItemSourcedID = F, ModifiedTime = F, OneRosterID = F, ResultID = F, Score = F, ScoreDate = F, ScoreStatus = F, SourcedID = F, Status = F, StudentAssignmentID = F, StudentSourcedID = F, VendorSourceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -547,7 +547,7 @@
 	#' @return A dataframe or of Result
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getResult <- function(ResultID, Comment = F, Score = F, ScoreDate = F, ScoreStatus = F, LineItemSourcedID = F, ClassSourcedID = F, StudentSourcedID = F, AssignmentID = F, StudentAssignmentID = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, VendorSourceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getResult <- function(ResultID, AssignmentID = F, ClassSourcedID = F, Comment = F, DateLastModified = F, LineItemSourcedID = F, ModifiedTime = F, OneRosterID = F, Score = F, ScoreDate = F, ScoreStatus = F, SourcedID = F, Status = F, StudentAssignmentID = F, StudentSourcedID = F, VendorSourceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ResultID")
 
@@ -594,7 +594,7 @@
 	#' @return A list of LineItems
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listLineItems <- function(searchConditionsList = NULL, LineItemID = F, AssignmentID = F, Title = F, Description = F, AssignDate = F, DueDate = F, ClassSourcedID = F, CategorySourcedID = F, GradingPeriodSourcedID = F, ResultValueMin = F, ResultValueMax = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, VendorSourceID = F, SectionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listLineItems <- function(searchConditionsList = NULL, AssignDate = F, AssignmentID = F, CategorySourcedID = F, ClassSourcedID = F, DateLastModified = F, Description = F, DueDate = F, GradingPeriodSourcedID = F, LineItemID = F, ModifiedTime = F, OneRosterID = F, ResultValueMax = F, ResultValueMin = F, SectionID = F, SourcedID = F, Status = F, Title = F, VendorSourceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -619,7 +619,7 @@
 	#' @return A dataframe or of LineItem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getLineItem <- function(LineItemID, AssignmentID = F, Title = F, Description = F, AssignDate = F, DueDate = F, ClassSourcedID = F, CategorySourcedID = F, GradingPeriodSourcedID = F, ResultValueMin = F, ResultValueMax = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, VendorSourceID = F, SectionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getLineItem <- function(LineItemID, AssignDate = F, AssignmentID = F, CategorySourcedID = F, ClassSourcedID = F, DateLastModified = F, Description = F, DueDate = F, GradingPeriodSourcedID = F, ModifiedTime = F, OneRosterID = F, ResultValueMax = F, ResultValueMin = F, SectionID = F, SourcedID = F, Status = F, Title = F, VendorSourceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "LineItemID")
 
@@ -659,7 +659,7 @@
 	#' @return A newly created LineItem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createLineItem <- function(ResultValueMin = NULL, ResultValueMax = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createLineItem <- function(ResultValueMax = NULL, ResultValueMin = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -680,7 +680,7 @@
 	#' @return The modified LineItem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyLineItem <- function(LineItemID, ResultValueMin = NULL, ResultValueMax = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyLineItem <- function(LineItemID, ResultValueMax = NULL, ResultValueMin = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -708,7 +708,7 @@
 	#' @return A list of OneRosterCategories
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listOneRosterCategories <- function(searchConditionsList = NULL, CategoryID = F, OneRosterCategoryID = F, Title = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, DistrictID = F, SchoolYearID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listOneRosterCategories <- function(searchConditionsList = NULL, CategoryID = F, DateLastModified = F, DistrictID = F, ModifiedTime = F, OneRosterCategoryID = F, OneRosterID = F, SchoolYearID = F, SourcedID = F, Status = F, Title = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -733,7 +733,7 @@
 	#' @return A dataframe or of OneRosterCategory
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getOneRosterCategory <- function(OneRosterCategoryID, CategoryID = F, Title = F, SourcedID = F, Status = F, OneRosterID = F, DateLastModified = F, ModifiedTime = F, DistrictID = F, SchoolYearID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getOneRosterCategory <- function(OneRosterCategoryID, CategoryID = F, DateLastModified = F, DistrictID = F, ModifiedTime = F, OneRosterID = F, SchoolYearID = F, SourcedID = F, Status = F, Title = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "OneRosterCategoryID")
 

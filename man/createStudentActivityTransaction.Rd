@@ -5,9 +5,9 @@
 \title{Create a StudentActivityTransaction}
 \usage{
 createStudentActivityTransaction(
-  StudentActivityID = NULL,
-  ParticipationStartDate = NULL,
   ParticipationEndDate = NULL,
+  ParticipationStartDate = NULL,
+  StudentActivityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -7,8 +7,8 @@
 createCrossEntityCalendarDisplayPeriod(
   CalendarDisplayPeriodIDFrom = NULL,
   CalendarDisplayPeriodIDTo = NULL,
-  IsAutoCreated = NULL,
   CrossEntityCalendarDisplayPeriodIDClonedFrom = NULL,
+  IsAutoCreated = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

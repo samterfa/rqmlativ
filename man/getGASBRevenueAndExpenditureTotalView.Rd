@@ -6,10 +6,10 @@
 \usage{
 getGASBRevenueAndExpenditureTotalView(
   GASBRevenueAndExpenditureTotalViewID,
-  TotalFunds = F,
-  RevenueAndExpenditureTotalType = F,
-  GASBExtractRunID = F,
   DisplayOrder = F,
+  GASBExtractRunID = F,
+  RevenueAndExpenditureTotalType = F,
+  TotalFunds = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

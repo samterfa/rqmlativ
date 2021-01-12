@@ -5,8 +5,8 @@
 \title{Create a StudentEarnedCreditsBucketGroup}
 \usage{
 createStudentEarnedCreditsBucketGroup(
-  StudentID = NULL,
   EarnedCreditsMethodID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

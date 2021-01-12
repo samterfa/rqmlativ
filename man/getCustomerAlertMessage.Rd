@@ -6,13 +6,13 @@
 \usage{
 getCustomerAlertMessage(
   CustomerAlertMessageID,
-  CustomerID = F,
   AlertMessageID = F,
-  IsCritical = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  CustomerID = F,
+  IsCritical = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

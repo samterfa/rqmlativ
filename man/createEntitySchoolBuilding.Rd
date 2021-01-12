@@ -6,10 +6,10 @@
 \usage{
 createEntitySchoolBuilding(
   BuildingID = NULL,
-  SchoolYearID = NULL,
+  EntitySchoolBuildingIDClonedFrom = NULL,
   EntitySchoolID = NULL,
   IsPrimary = NULL,
-  EntitySchoolBuildingIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

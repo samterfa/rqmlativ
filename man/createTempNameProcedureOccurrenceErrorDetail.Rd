@@ -5,9 +5,9 @@
 \title{Create a TempNameProcedureOccurrenceErrorDetail}
 \usage{
 createTempNameProcedureOccurrenceErrorDetail(
-  TempNameProcedureOccurrenceID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameProcedureOccurrenceID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create a TempFamilyAccessSecurityUser}
 \usage{
 createTempFamilyAccessSecurityUser(
-  UserName = NULL,
-  StudentGuardianID = NULL,
-  GuardianNameLFM = NULL,
-  EmailAddress = NULL,
   AddToFamilyAccess = NULL,
-  RemoveFromFamilyAccess = NULL,
-  StudentNameLFM = NULL,
-  IsSelected = NULL,
+  EmailAddress = NULL,
   EntityCodeName = NULL,
+  GuardianNameLFM = NULL,
+  IsSelected = NULL,
+  RemoveFromFamilyAccess = NULL,
+  StudentGuardianID = NULL,
+  StudentNameLFM = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create a StudentFreeFormCommentBucket}
 \usage{
 createStudentFreeFormCommentBucket(
-  StudentSectionID = NULL,
-  GradingPeriodID = NULL,
   Comment = NULL,
+  GradingPeriodID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

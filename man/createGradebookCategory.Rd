@@ -5,16 +5,16 @@
 \title{Create a GradebookCategory}
 \usage{
 createGradebookCategory(
+  BackgroundColor = NULL,
+  CategoryIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   DistrictGroupKey = NULL,
-  BackgroundColor = NULL,
+  DistrictID = NULL,
+  EdFiGradebookEntryTypeDescriptorID = NULL,
+  SchoolYearID = NULL,
   TextColor = NULL,
   UseForSpecificGradeBucketType = NULL,
-  CategoryIDClonedFrom = NULL,
-  EdFiGradebookEntryTypeDescriptorID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a CustomerAlertMessage}
 \usage{
 createCustomerAlertMessage(
-  CustomerID = NULL,
   AlertMessageID = NULL,
+  CustomerID = NULL,
   IsCritical = NULL,
   entityId = 1,
   query = NULL,

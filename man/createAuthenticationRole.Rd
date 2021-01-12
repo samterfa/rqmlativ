@@ -5,10 +5,10 @@
 \title{Create an AuthenticationRole}
 \usage{
 createAuthenticationRole(
-  Name = NULL,
+  AllowSkywardCredentials = NULL,
   DisplayText = NULL,
   MediaID = NULL,
-  AllowSkywardCredentials = NULL,
+  Name = NULL,
   Priority = NULL,
   entityId = 1,
   query = NULL,

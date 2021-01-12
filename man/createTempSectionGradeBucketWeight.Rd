@@ -5,13 +5,13 @@
 \title{Create a TempSectionGradeBucketWeight}
 \usage{
 createTempSectionGradeBucketWeight(
-  CalculationGroupGradeBucketIDFeeder = NULL,
-  CalculationGroupGradeBucketIDComposite = NULL,
-  SectionID = NULL,
-  WeightPercent = NULL,
-  CanClone = NULL,
   AcademicStandardIDToWeight = NULL,
+  CalculationGroupGradeBucketIDComposite = NULL,
+  CalculationGroupGradeBucketIDFeeder = NULL,
+  CanClone = NULL,
+  SectionID = NULL,
   SubjectIDToWeight = NULL,
+  WeightPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

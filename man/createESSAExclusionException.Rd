@@ -5,14 +5,14 @@
 \title{Create an ESSAExclusionException}
 \usage{
 createESSAExclusionException(
-  ESSAExclusionV1ID = NULL,
   ESSAExclusionID = NULL,
+  ESSAExclusionV1ID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

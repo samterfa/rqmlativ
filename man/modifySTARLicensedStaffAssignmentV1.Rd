@@ -6,6 +6,9 @@
 \usage{
 modifySTARLicensedStaffAssignmentV1(
   STARLicensedStaffAssignmentV1ID,
+  LengthOfPeriod = NULL,
+  PeriodsPerWeek = NULL,
+  SchoolNumber = NULL,
   STARLicensedStaffEmploymentV1ID = NULL,
   StateSTARAssignmentCodeMNID = NULL,
   StateSTARAssignmentCodeMNValue = NULL,
@@ -13,9 +16,6 @@ modifySTARLicensedStaffAssignmentV1(
   StateSTARGradeLevelMNValue = NULL,
   StateSTARModeOfTeachingMNID = NULL,
   StateSTARModeOfTeachingMNValue = NULL,
-  SchoolNumber = NULL,
-  PeriodsPerWeek = NULL,
-  LengthOfPeriod = NULL,
   TotalNumberOfPupils = NULL,
   entityId = 1,
   query = NULL,

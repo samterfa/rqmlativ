@@ -6,13 +6,13 @@
 \usage{
 listTempFailedStudentCourseRequestToReactivateDetails(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  Note = F,
   TempFailedStudentCourseRequestToReactivateDetailID = F,
   TempRecordToReactivatePrimaryKeyValue = F,
-  Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

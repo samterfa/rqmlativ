@@ -6,14 +6,10 @@
 \usage{
 getTSAMN(
   TSAMNID,
-  StudentTestID = F,
   Description = F,
-  ScaleScore = F,
   IsProficient = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  ScaleScore = F,
+  StudentTestID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -7,9 +7,9 @@
 modifyGRRSubmission(
   GRRSubmissionID,
   Description = NULL,
-  TestTakenByDate = NULL,
-  SubmissionDate = NULL,
   SchoolYearID = NULL,
+  SubmissionDate = NULL,
+  TestTakenByDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

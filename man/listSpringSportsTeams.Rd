@@ -6,11 +6,11 @@
 \usage{
 listSpringSportsTeams(
   searchConditionsList = NULL,
-  SpringSportsTeamID = F,
-  SpringSportID = F,
-  SchoolYearID = F,
-  Lettered = F,
   Captain = F,
+  Lettered = F,
+  SchoolYearID = F,
+  SpringSportID = F,
+  SpringSportsTeamID = F,
   StudentID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",

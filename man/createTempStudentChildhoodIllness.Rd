@@ -5,17 +5,17 @@
 \title{Create a TempStudentChildhoodIllness}
 \usage{
 createTempStudentChildhoodIllness(
-  StudentChildhoodIllnessID = NULL,
-  StudentName = NULL,
-  SchoolYear = NULL,
-  ScreeningDate = NULL,
   AgeDiagnosed = NULL,
-  IsVoid = NULL,
   ChildhoodIllnessCode = NULL,
   ChildhoodIllnessDescription = NULL,
-  NewChildhoodIllnessID = NULL,
+  IsVoid = NULL,
   NewChildhoodIllnessCode = NULL,
   NewChildhoodIllnessDescription = NULL,
+  NewChildhoodIllnessID = NULL,
+  SchoolYear = NULL,
+  ScreeningDate = NULL,
+  StudentChildhoodIllnessID = NULL,
+  StudentName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

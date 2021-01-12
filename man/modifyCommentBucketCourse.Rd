@@ -6,6 +6,7 @@
 \usage{
 modifyCommentBucketCourse(
   CommentBucketCourseID,
+  CommentBucketCourseIDClonedFrom = NULL,
   CommentBucketID = NULL,
   CourseID = NULL,
   EntityGroupKey = NULL,

@@ -6,9 +6,9 @@
 \usage{
 createChildSupportExport(
   ChildSupportExtractRunID = NULL,
-  Type = NULL,
   MediaID = NULL,
   Status = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

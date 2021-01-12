@@ -5,11 +5,11 @@
 \title{Create a Device}
 \usage{
 createDevice(
+  Code = NULL,
+  DeviceIDClonedFrom = NULL,
   DistrictID = NULL,
   SchoolYearID = NULL,
-  Code = NULL,
   StateDeviceID = NULL,
-  DeviceIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

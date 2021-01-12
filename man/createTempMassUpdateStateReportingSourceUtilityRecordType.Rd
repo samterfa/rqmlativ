@@ -5,12 +5,12 @@
 \title{Create a TempMassUpdateStateReportingSourceUtilityRecordType}
 \usage{
 createTempMassUpdateStateReportingSourceUtilityRecordType(
+  FilterType = NULL,
+  ModuleFriendlyName = NULL,
   RecordType = NULL,
   RecordTypeFriendlyName = NULL,
   StateReportingSourceDBTableName = NULL,
   StateReportingSourceID = NULL,
-  ModuleFriendlyName = NULL,
-  FilterType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyVaccineContent(
   VaccineContentID,
-  VaccineID = NULL,
-  VaccinationID = NULL,
-  LowDate = NULL,
   HighDate = NULL,
+  LowDate = NULL,
+  VaccinationID = NULL,
+  VaccineID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

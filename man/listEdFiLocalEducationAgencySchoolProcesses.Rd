@@ -6,14 +6,14 @@
 \usage{
 listEdFiLocalEducationAgencySchoolProcesses(
   searchConditionsList = NULL,
-  EdFiLocalEducationAgencySchoolProcessID = F,
+  CreatedTime = F,
   EdFiApplicationID = F,
+  EdFiLocalEducationAgencySchoolProcessID = F,
+  ModifiedTime = F,
   Process = F,
   SendOption = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

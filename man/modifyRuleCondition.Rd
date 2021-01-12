@@ -6,11 +6,11 @@
 \usage{
 modifyRuleCondition(
   RuleConditionID,
-  ThresholdRuleGroupID = NULL,
-  WatchlistConditionID = NULL,
-  Value = NULL,
   OperationType = NULL,
   RuleConditionIDClonedFrom = NULL,
+  ThresholdRuleGroupID = NULL,
+  Value = NULL,
+  WatchlistConditionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

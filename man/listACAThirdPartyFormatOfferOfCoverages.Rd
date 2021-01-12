@@ -6,14 +6,14 @@
 \usage{
 listACAThirdPartyFormatOfferOfCoverages(
   searchConditionsList = NULL,
-  ACAThirdPartyFormatOfferOfCoverageID = F,
   ACAThirdPartyFormatID = F,
+  ACAThirdPartyFormatOfferOfCoverageID = F,
+  CreatedTime = F,
   FederalACAOfferAndCoverageID = F,
   ImportValue = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

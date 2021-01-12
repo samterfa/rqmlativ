@@ -5,8 +5,8 @@
 \title{Create a PERAExtractRun}
 \usage{
 createPERAExtractRun(
-  EntityID = NULL,
   Description = NULL,
+  EntityID = NULL,
   Version = NULL,
   entityId = 1,
   query = NULL,

@@ -6,12 +6,12 @@
 \usage{
 getObjectWorkflowTriggerSecurityGroup(
   ObjectWorkflowTriggerSecurityGroupID,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectWorkflowTriggerID = F,
   SecurityGroupIDAssigned = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

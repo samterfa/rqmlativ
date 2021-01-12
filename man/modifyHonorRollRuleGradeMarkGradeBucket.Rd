@@ -6,12 +6,12 @@
 \usage{
 modifyHonorRollRuleGradeMarkGradeBucket(
   HonorRollRuleGradeMarkGradeBucketID,
-  HonorRollRuleGradeMarkID = NULL,
-  GradeBucketID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
+  GradeBucketID = NULL,
   HonorRollRuleGradeMarkGradeBucketIDClonedFrom = NULL,
+  HonorRollRuleGradeMarkID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

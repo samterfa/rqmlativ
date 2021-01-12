@@ -5,11 +5,11 @@
 \title{Create an AffordableCareActExtractRun}
 \usage{
 createAffordableCareActExtractRun(
-  Version = NULL,
   Description = NULL,
   DistrictID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  StartDate = NULL,
+  Version = NULL,
   XMLFilter = NULL,
   entityId = 1,
   query = NULL,

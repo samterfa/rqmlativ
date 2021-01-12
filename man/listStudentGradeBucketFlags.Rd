@@ -6,14 +6,14 @@
 \usage{
 listStudentGradeBucketFlags(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeBucketFlagID = F,
+  IsManual = F,
+  ModifiedTime = F,
   StudentGradeBucketFlagID = F,
   StudentGradeBucketID = F,
-  GradeBucketFlagID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  IsManual = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

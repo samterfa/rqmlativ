@@ -6,10 +6,10 @@
 \usage{
 createImportResultRowDetail(
   ActionType = NULL,
-  ObjectPrimaryKey = NULL,
-  ObjectID = NULL,
-  ImportResultRowID = NULL,
   BeforeImportModifiedTime = NULL,
+  ImportResultRowID = NULL,
+  ObjectID = NULL,
+  ObjectPrimaryKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a Module}
 \usage{
 createModule(
-  PendingName = NULL,
   CurrentName = NULL,
+  PendingName = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

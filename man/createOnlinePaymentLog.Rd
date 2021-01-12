@@ -5,10 +5,10 @@
 \title{Create an OnlinePaymentLog}
 \usage{
 createOnlinePaymentLog(
-  UserAccessID = NULL,
+  Endpoint = NULL,
   RequestXML = NULL,
   ResponseXML = NULL,
-  Endpoint = NULL,
+  UserAccessID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

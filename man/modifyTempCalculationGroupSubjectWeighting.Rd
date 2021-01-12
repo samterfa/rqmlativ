@@ -6,13 +6,13 @@
 \usage{
 modifyTempCalculationGroupSubjectWeighting(
   TempCalculationGroupSubjectWeightingID,
-  CalculationGroupSubjectGradeBucketID = NULL,
-  CategoryID = NULL,
-  CategoryDescription = NULL,
-  WeightPercent = NULL,
-  AcademicStandardID = NULL,
   AcademicStandardDescription = NULL,
   AcademicStandardFullKey = NULL,
+  AcademicStandardID = NULL,
+  CalculationGroupSubjectGradeBucketID = NULL,
+  CategoryDescription = NULL,
+  CategoryID = NULL,
+  WeightPercent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

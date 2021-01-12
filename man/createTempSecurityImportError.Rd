@@ -5,8 +5,8 @@
 \title{Create a TempSecurityImportError}
 \usage{
 createTempSecurityImportError(
-  ErrorObject = NULL,
   ErrorMessage = NULL,
+  ErrorObject = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 createACAYearEmployeeOfferAndCoverageV1(
   ACAYearEmployeeV1ID = NULL,
-  FederalACAOfferAndCoverageID = NULL,
-  FederalACAOfferAndCoverageCode = NULL,
-  FederalACASafeHarborID = NULL,
-  FederalACASafeHarborCode = NULL,
   EmployeeShareOfLowestCostMonthlyPremium = NULL,
+  FederalACAOfferAndCoverageCode = NULL,
+  FederalACAOfferAndCoverageID = NULL,
+  FederalACASafeHarborCode = NULL,
+  FederalACASafeHarborID = NULL,
   Month = NULL,
   entityId = 1,
   query = NULL,

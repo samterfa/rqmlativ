@@ -6,10 +6,10 @@
 \usage{
 modifyThresholdRuleGroup(
   ThresholdRuleGroupID,
-  Name = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
+  Name = NULL,
   RuleType = NULL,
+  SchoolYearID = NULL,
   ThresholdRuleGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

@@ -5,16 +5,16 @@
 \title{Create a RankMethod}
 \usage{
 createRankMethod(
-  Name = NULL,
+  DistrictGroupKey = NULL,
   GPABucketID = NULL,
   GPAMethodID = NULL,
-  ValueRangeType = NULL,
-  ValueRangeLow = NULL,
-  ValueRangeHigh = NULL,
-  IncludeNonRankedStudents = NULL,
-  DistrictGroupKey = NULL,
-  IsActive = NULL,
   GPAType = NULL,
+  IncludeNonRankedStudents = NULL,
+  IsActive = NULL,
+  Name = NULL,
+  ValueRangeHigh = NULL,
+  ValueRangeLow = NULL,
+  ValueRangeType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyScheduleBlockerDisplayPeriod(
   ScheduleBlockerDisplayPeriodID,
-  ScheduleBlockerID = NULL,
   DisplayPeriodID = NULL,
+  ScheduleBlockerID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

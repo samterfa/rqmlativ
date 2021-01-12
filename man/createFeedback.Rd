@@ -5,11 +5,11 @@
 \title{Create a Feedback}
 \usage{
 createFeedback(
+  Comment = NULL,
   Module = NULL,
   Object = NULL,
   Screen = NULL,
   SubScreen = NULL,
-  Comment = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

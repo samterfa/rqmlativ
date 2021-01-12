@@ -7,9 +7,9 @@
 modifyCurrentSportsSelections(
   CurrentSportsSelectionsID,
   FallSportID = NULL,
-  WinterSportID = NULL,
   SpringSportID = NULL,
   StudentID = NULL,
+  WinterSportID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

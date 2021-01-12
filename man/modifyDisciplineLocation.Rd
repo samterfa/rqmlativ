@@ -6,9 +6,9 @@
 \usage{
 modifyDisciplineLocation(
   LocationID,
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   EdFiIncidentLocationID = NULL,
   StateIncidentLocationMNID = NULL,
   entityId = 1,

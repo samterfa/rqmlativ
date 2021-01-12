@@ -6,13 +6,14 @@
 \usage{
 getStaffMeetLastScored(
   StaffMeetLastScoredID,
+  CreatedTime = F,
+  GradebookLastAccessedTime = F,
+  ModifiedTime = F,
   StaffMeetID = F,
   StudentAssignmentIDLastScored = F,
   TimeLastScored = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

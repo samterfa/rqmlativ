@@ -5,8 +5,8 @@
 \title{Create an ApprovalWorkflowLock}
 \usage{
 createApprovalWorkflowLock(
-  ApprovalType = NULL,
   ApprovalObjectID = NULL,
+  ApprovalType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

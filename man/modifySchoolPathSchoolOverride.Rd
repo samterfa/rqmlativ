@@ -6,9 +6,9 @@
 \usage{
 modifySchoolPathSchoolOverride(
   SchoolPathSchoolOverrideID,
-  StudentID = NULL,
-  SchoolID = NULL,
   Order = NULL,
+  SchoolID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create an OnlineFormEntity}
 \usage{
 createOnlineFormEntity(
-  OnlineFormID = NULL,
   EntityID = NULL,
+  OnlineFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

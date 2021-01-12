@@ -5,10 +5,10 @@
 \title{Create a HealthCondition}
 \usage{
 createHealthCondition(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   IsSecuredIndicator = NULL,
   VaccinationGroupContraindication = NULL,

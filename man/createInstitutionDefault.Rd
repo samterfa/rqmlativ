@@ -5,10 +5,10 @@
 \title{Create an InstitutionDefault}
 \usage{
 createInstitutionDefault(
+  CEEBCode = NULL,
   MCCCCollegeCode = NULL,
   Name = NULL,
   StateID = NULL,
-  CEEBCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

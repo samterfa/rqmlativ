@@ -5,10 +5,10 @@
 \title{Create a STARExtractRun}
 \usage{
 createSTARExtractRun(
+  DistrictNumber = NULL,
   EmployerID = NULL,
   FiscalYearID = NULL,
   SnapshotDate = NULL,
-  DistrictNumber = NULL,
   StateDistrictTypeCodeMNID = NULL,
   StateDistrictTypeCodeMNValue = NULL,
   Version = NULL,

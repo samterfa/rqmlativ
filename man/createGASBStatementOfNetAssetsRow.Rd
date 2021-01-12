@@ -5,12 +5,12 @@
 \title{Create a GASBStatementOfNetAssetsRow}
 \usage{
 createGASBStatementOfNetAssetsRow(
+  GASBExtractRunID = NULL,
+  GASBStatementOfNetAssetsReportID = NULL,
+  RowDescription = NULL,
+  TotalFunds = NULL,
   TotalGovernmentalFunds = NULL,
   TotalProprietaryFunds = NULL,
-  TotalFunds = NULL,
-  GASBExtractRunID = NULL,
-  RowDescription = NULL,
-  GASBStatementOfNetAssetsReportID = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

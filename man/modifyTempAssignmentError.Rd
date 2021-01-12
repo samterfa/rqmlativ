@@ -6,9 +6,9 @@
 \usage{
 modifyTempAssignmentError(
   TempAssignmentErrorID,
+  ErrorNumber = NULL,
   ErrorText = NULL,
   TempSectionAssignmentID = NULL,
-  ErrorNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

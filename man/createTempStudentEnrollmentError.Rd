@@ -6,8 +6,8 @@
 \usage{
 createTempStudentEnrollmentError(
   Error = NULL,
-  ErrorDetail = NULL,
   ErrorCount = NULL,
+  ErrorDetail = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

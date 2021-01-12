@@ -6,13 +6,13 @@
 \usage{
 getPOSSession(
   POSSessionID,
-  UserID = F,
-  LineID = F,
-  LastPingTime = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  LastPingTime = F,
+  LineID = F,
   ModifiedTime = F,
+  UserID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

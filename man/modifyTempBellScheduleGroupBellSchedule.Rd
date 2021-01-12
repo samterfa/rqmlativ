@@ -6,12 +6,12 @@
 \usage{
 modifyTempBellScheduleGroupBellSchedule(
   TempBellScheduleGroupBellScheduleID,
-  ShouldUpdate = NULL,
-  BellScheduleGroupID = NULL,
-  BellScheduleID = NULL,
   BellScheduleGroupBellScheduleID = NULL,
   BellScheduleGroupCodeDescription = NULL,
+  BellScheduleGroupID = NULL,
+  BellScheduleID = NULL,
   IsDefault = NULL,
+  ShouldUpdate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

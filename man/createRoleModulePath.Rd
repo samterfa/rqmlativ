@@ -5,15 +5,15 @@
 \title{Create a RoleModulePath}
 \usage{
 createRoleModulePath(
-  RoleID = NULL,
-  ModulePath = NULL,
-  AllowRead = NULL,
   AllowCreate = NULL,
-  AllowUpdate = NULL,
   AllowDelete = NULL,
   AllowMassCreate = NULL,
-  AllowMassUpdate = NULL,
   AllowMassDelete = NULL,
+  AllowMassUpdate = NULL,
+  AllowRead = NULL,
+  AllowUpdate = NULL,
+  ModulePath = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

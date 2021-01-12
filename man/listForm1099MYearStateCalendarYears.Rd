@@ -6,9 +6,11 @@
 \usage{
 listForm1099MYearStateCalendarYears(
   searchConditionsList = NULL,
-  Form1099MYearStateCalendarYearID = F,
   Form1099MYearID = F,
+  Form1099MYearStateCalendarYearID = F,
   StateCalendarYearID = F,
+  StateID = F,
+  TaxStateID = F,
   Vendors = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",

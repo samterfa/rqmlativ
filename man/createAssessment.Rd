@@ -5,13 +5,13 @@
 \title{Create an Assessment}
 \usage{
 createAssessment(
-  SectionID = NULL,
-  CategoryID = NULL,
   AssignedDate = NULL,
-  DueDate = NULL,
-  Name = NULL,
+  CategoryID = NULL,
   Description = NULL,
+  DueDate = NULL,
   IsDeleted = NULL,
+  Name = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

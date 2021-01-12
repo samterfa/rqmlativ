@@ -6,9 +6,9 @@
 \usage{
 modifyNelcoFormField(
   NelcoFormFieldID,
-  NelcoFormID = NULL,
   Code = NULL,
   Description = NULL,
+  NelcoFormID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

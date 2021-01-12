@@ -6,9 +6,9 @@
 \usage{
 modifyFamilyStudentAccounts(
   FamilyStudentAccountsID,
-  ReligionID = NULL,
-  PlaceOfWorship = NULL,
   FamilyID = NULL,
+  PlaceOfWorship = NULL,
+  ReligionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

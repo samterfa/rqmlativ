@@ -6,12 +6,12 @@
 \usage{
 getNameMedicationComment(
   NameMedicationCommentID,
-  NameMedicationID = F,
-  MedicationCommentID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MedicationCommentID = F,
   ModifiedTime = F,
+  NameMedicationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

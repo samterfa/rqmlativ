@@ -6,9 +6,9 @@
 \usage{
 modifyWorkflowParameterMapping(
   WorkflowParameterMappingID,
+  DataSource = NULL,
   ObjectWorkflowTriggerID = NULL,
   ParameterName = NULL,
-  DataSource = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

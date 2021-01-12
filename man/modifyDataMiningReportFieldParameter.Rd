@@ -6,10 +6,10 @@
 \usage{
 modifyDataMiningReportFieldParameter(
   DataMiningReportFieldParameterID,
-  ParameterName = NULL,
-  IsPrompt = NULL,
-  PromptLabel = NULL,
   DataMiningReportID = NULL,
+  IsPrompt = NULL,
+  ParameterName = NULL,
+  PromptLabel = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

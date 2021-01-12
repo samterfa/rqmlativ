@@ -18,7 +18,7 @@
 	#' @return A list of TempIDListItems
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempIDListItems <- function(searchConditionsList = NULL, TempIDListItemID = F, ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempIDListItems <- function(searchConditionsList = NULL, CreatedTime = F, ID = F, ModifiedTime = F, TempIDListItemID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of TempIDListItem
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempIDListItem <- function(TempIDListItemID, ID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempIDListItem <- function(TempIDListItemID, CreatedTime = F, ID = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempIDListItemID")
 
@@ -90,7 +90,7 @@
 	#' @return A list of CommonTempErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCommonTempErrors <- function(searchConditionsList = NULL, TempErrorID = F, ParentObjectID = F, ErrorNumber = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCommonTempErrors <- function(searchConditionsList = NULL, CreatedTime = F, ErrorNumber = F, Message = F, ModifiedTime = F, ParentObjectID = F, TempErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -115,7 +115,7 @@
 	#' @return A dataframe or of CommonTempError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCommonTempError <- function(CommonTempErrorID, TempErrorID = F, ParentObjectID = F, ErrorNumber = F, Message = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCommonTempError <- function(CommonTempErrorID, CreatedTime = F, ErrorNumber = F, Message = F, ModifiedTime = F, ParentObjectID = F, TempErrorID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CommonTempErrorID")
 
@@ -155,7 +155,7 @@
 	#' @return A newly created CommonTempError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCommonTempError <- function(ParentObjectID = NULL, ErrorNumber = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCommonTempError <- function(ErrorNumber = NULL, Message = NULL, ParentObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -176,7 +176,7 @@
 	#' @return The modified CommonTempError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCommonTempError <- function(TempErrorID, ParentObjectID = NULL, ErrorNumber = NULL, Message = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCommonTempError <- function(TempErrorID, ErrorNumber = NULL, Message = NULL, ParentObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 

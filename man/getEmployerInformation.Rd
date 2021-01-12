@@ -6,11 +6,11 @@
 \usage{
 getEmployerInformation(
   EmployerInformationID,
-  PlaceofEmployment = F,
+  FamilyGuardianID = F,
   Occupation = F,
+  PlaceofEmployment = F,
   WorkAddress = F,
   WorkPhoneNumber = F,
-  FamilyGuardianID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

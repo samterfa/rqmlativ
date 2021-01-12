@@ -5,8 +5,8 @@
 \title{Create a StandardNormalDistribution}
 \usage{
 createStandardNormalDistribution(
-  ZScore = NULL,
   Probability = NULL,
+  ZScore = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

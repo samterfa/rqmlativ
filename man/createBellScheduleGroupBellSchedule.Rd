@@ -5,8 +5,8 @@
 \title{Create a BellScheduleGroupBellSchedule}
 \usage{
 createBellScheduleGroupBellSchedule(
-  BellScheduleID = NULL,
   BellScheduleGroupID = NULL,
+  BellScheduleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

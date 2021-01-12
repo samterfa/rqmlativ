@@ -7,10 +7,10 @@
 createDemographicsRelationship(
   Code = NULL,
   Description = NULL,
-  EdFiRelationTypeID = NULL,
-  RelationshipType = NULL,
-  GrandPeopleMAID = NULL,
   EdFiRelationDescriptorID = NULL,
+  EdFiRelationTypeID = NULL,
+  GrandPeopleMAID = NULL,
+  RelationshipType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

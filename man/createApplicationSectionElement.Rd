@@ -5,15 +5,15 @@
 \title{Create an ApplicationSectionElement}
 \usage{
 createApplicationSectionElement(
-  ApplicationSectionID = NULL,
-  ApplicationSectionElementGroupID = NULL,
   ApplicationSectionDependentElementGroupID = NULL,
+  ApplicationSectionElementGroupID = NULL,
+  ApplicationSectionID = NULL,
+  DefaultValue = NULL,
   DisplayNameOverride = NULL,
-  LineNumber = NULL,
   DisplayOrder = NULL,
   IsHidden = NULL,
   IsReadOnly = NULL,
-  DefaultValue = NULL,
+  LineNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

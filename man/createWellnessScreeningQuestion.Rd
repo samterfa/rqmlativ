@@ -5,11 +5,12 @@
 \title{Create a WellnessScreeningQuestion}
 \usage{
 createWellnessScreeningQuestion(
-  WellnessScreeningID = NULL,
-  Question = NULL,
   AdditionalInformation = NULL,
+  IsActive = NULL,
+  Question = NULL,
   QuestionType = NULL,
   SortOrder = NULL,
+  WellnessScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

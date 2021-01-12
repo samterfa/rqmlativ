@@ -6,13 +6,13 @@
 \usage{
 listRoleIPRanges(
   searchConditionsList = NULL,
-  RoleIPRangeID = F,
-  IPRangeID = F,
-  RoleID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  IPRangeID = F,
   ModifiedTime = F,
+  RoleID = F,
+  RoleIPRangeID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

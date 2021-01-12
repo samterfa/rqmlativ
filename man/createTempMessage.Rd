@@ -6,9 +6,9 @@
 \usage{
 createTempMessage(
   RecipientName = NULL,
-  StudentName = NULL,
   Relationship = NULL,
   SectionInfo = NULL,
+  StudentName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

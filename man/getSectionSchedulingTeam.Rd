@@ -6,13 +6,13 @@
 \usage{
 getSectionSchedulingTeam(
   SectionSchedulingTeamID,
-  SectionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingTeamID = F,
+  SectionID = F,
   SectionSchedulingTeamIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

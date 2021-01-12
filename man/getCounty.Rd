@@ -6,14 +6,14 @@
 \usage{
 getCounty(
   CountyID,
+  CountyMNID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Name = F,
+  StateCountyMNID = F,
   StateID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
-  CountyMNID = F,
-  StateCountyMNID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

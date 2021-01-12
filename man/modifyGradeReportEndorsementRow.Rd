@@ -6,12 +6,12 @@
 \usage{
 modifyGradeReportEndorsementRow(
   GradeReportEndorsementRowID,
-  GradeReportStudentID = NULL,
   Description = NULL,
-  Status = NULL,
+  GradeReportStudentID = NULL,
   IsDistrictDefined = NULL,
   Sort1 = NULL,
   Sort2 = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

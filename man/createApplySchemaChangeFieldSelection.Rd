@@ -5,12 +5,12 @@
 \title{Create an ApplySchemaChangeFieldSelection}
 \usage{
 createApplySchemaChangeFieldSelection(
+  FieldChangeType = NULL,
+  FieldCurrentName = NULL,
+  FieldHasChangedRelationships = NULL,
+  FieldPendingName = NULL,
   ModulePendingName = NULL,
   ObjectPendingName = NULL,
-  FieldCurrentName = NULL,
-  FieldPendingName = NULL,
-  FieldChangeType = NULL,
-  FieldHasChangedRelationships = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyTRASubmissionPayrollRun(
   TRASubmissionPayrollRunID,
-  TRASubmissionID = NULL,
   PayrollRunID = NULL,
+  TRASubmissionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

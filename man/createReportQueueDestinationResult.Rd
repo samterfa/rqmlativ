@@ -5,8 +5,8 @@
 \title{Create a ReportQueueDestinationResult}
 \usage{
 createReportQueueDestinationResult(
-  ReportQueueID = NULL,
   FileDestinationResultID = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

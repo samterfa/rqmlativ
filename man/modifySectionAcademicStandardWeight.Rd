@@ -6,8 +6,8 @@
 \usage{
 modifySectionAcademicStandardWeight(
   SectionAcademicStandardWeightID,
-  SectionGradeBucketID = NULL,
   AcademicStandardID = NULL,
+  SectionGradeBucketID = NULL,
   WeightPercent = NULL,
   entityId = 1,
   query = NULL,

@@ -6,10 +6,10 @@
 \usage{
 modifyStaffDepartment(
   StaffDepartmentID,
-  StaffID = NULL,
   DepartmentID = NULL,
   IsDefaultDepartment = NULL,
   StaffDepartmentIDClonedFrom = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

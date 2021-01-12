@@ -5,10 +5,10 @@
 \title{Create a ReportQueueBurstAction}
 \usage{
 createReportQueueBurstAction(
-  ReportQueueID = NULL,
   BurstActionID = NULL,
-  Status = NULL,
   LogID = NULL,
+  ReportQueueID = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

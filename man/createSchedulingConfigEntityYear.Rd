@@ -5,12 +5,12 @@
 \title{Create a SchedulingConfigEntityYear}
 \usage{
 createSchedulingConfigEntityYear(
+  ArenaSchedulingConfirmationScreenMessage = NULL,
+  ConfigEntityYearIDClonedFrom = NULL,
+  EnableArenaSchedulingConfirmationScreen = NULL,
+  EnableValidationOfRoomCapacityDuringStudentSectionEnrollment = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  ConfigEntityYearIDClonedFrom = NULL,
-  EnableValidationOfRoomCapacityDuringStudentSectionEnrollment = NULL,
-  EnableArenaSchedulingConfirmationScreen = NULL,
-  ArenaSchedulingConfirmationScreenMessage = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

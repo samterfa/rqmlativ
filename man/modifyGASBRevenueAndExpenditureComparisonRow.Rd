@@ -6,11 +6,11 @@
 \usage{
 modifyGASBRevenueAndExpenditureComparisonRow(
   GASBRevenueAndExpenditureComparisonRowID,
+  ActualBudget = NULL,
+  FinalBudget = NULL,
+  GASBExtractRunID = NULL,
   GASBRevenueAndExpenditureComparisonReportID = NULL,
   OriginalBudget = NULL,
-  FinalBudget = NULL,
-  ActualBudget = NULL,
-  GASBExtractRunID = NULL,
   RowDescription = NULL,
   Type = NULL,
   entityId = 1,

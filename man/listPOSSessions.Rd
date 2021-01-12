@@ -6,14 +6,14 @@
 \usage{
 listPOSSessions(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  LastPingTime = F,
+  LineID = F,
+  ModifiedTime = F,
   POSSessionID = F,
   UserID = F,
-  LineID = F,
-  LastPingTime = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

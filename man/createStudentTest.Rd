@@ -5,12 +5,11 @@
 \title{Create a StudentTest}
 \usage{
 createStudentTest(
-  StudentID = NULL,
+  DateTaken = NULL,
   EntityID = NULL,
   GradeReferenceID = NULL,
-  TestType = NULL,
-  TestVersion = NULL,
-  DateTaken = NULL,
+  StudentID = NULL,
+  TestVersionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

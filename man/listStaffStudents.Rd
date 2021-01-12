@@ -6,10 +6,10 @@
 \usage{
 listStaffStudents(
   searchConditionsList = NULL,
-  StudentID = F,
-  StaffID = F,
   EntityID = F,
   SchoolYearID = F,
+  StaffID = F,
+  StudentID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

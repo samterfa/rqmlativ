@@ -5,13 +5,13 @@
 \title{Create a FileDestinationResult}
 \usage{
 createFileDestinationResult(
-  Status = NULL,
-  TransmissionType = NULL,
-  Message = NULL,
-  MediaIDDownload = NULL,
   FileDestinationID = NULL,
   FileName = NULL,
   LogID = NULL,
+  MediaIDDownload = NULL,
+  Message = NULL,
+  Status = NULL,
+  TransmissionType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 getTempSectionGradingScale(
   TempSectionGradingScaleID,
-  SectionID = F,
   CanClone = F,
-  ErrorMessage = F,
   ChildGradeBuckets = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorMessage = F,
   ModifiedTime = F,
+  SectionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

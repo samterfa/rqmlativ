@@ -5,11 +5,11 @@
 \title{Create a NameEmail}
 \usage{
 createNameEmail(
-  NameID = NULL,
-  Rank = NULL,
-  EmailTypeID = NULL,
   EmailAddress = NULL,
+  EmailTypeID = NULL,
+  NameID = NULL,
   Note = NULL,
+  Rank = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

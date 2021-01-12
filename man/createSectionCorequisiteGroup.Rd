@@ -5,11 +5,11 @@
 \title{Create a SectionCorequisiteGroup}
 \usage{
 createSectionCorequisiteGroup(
-  Name = NULL,
-  Description = NULL,
-  EntityID = NULL,
   AutomaticRequestSetting = NULL,
   AutomaticScheduleSetting = NULL,
+  Description = NULL,
+  EntityID = NULL,
+  Name = NULL,
   ScheduleAllSectionsInGroupOrNone = NULL,
   entityId = 1,
   query = NULL,

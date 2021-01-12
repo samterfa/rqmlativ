@@ -5,16 +5,16 @@
 \title{Create a HonorRollRuleGPA}
 \usage{
 createHonorRollRuleGPA(
-  HonorRollRunLevelRuleID = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
   GPABucketID = NULL,
   GPAMethodID = NULL,
-  MinimumGPA = NULL,
-  MaximumGPA = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  EntityGroupKey = NULL,
-  HonorRollRuleGPAIDClonedFrom = NULL,
   GPAType = NULL,
+  HonorRollRuleGPAIDClonedFrom = NULL,
+  HonorRollRunLevelRuleID = NULL,
+  MaximumGPA = NULL,
+  MinimumGPA = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

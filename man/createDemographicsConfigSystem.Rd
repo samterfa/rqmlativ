@@ -5,10 +5,10 @@
 \title{Create a DemographicsConfigSystem}
 \usage{
 createDemographicsConfigSystem(
-  DefaultCaseNameType = NULL,
   DefaultCaseAddressType = NULL,
-  UseSyncedNameNumber = NULL,
+  DefaultCaseNameType = NULL,
   NameNumberLength = NULL,
+  UseSyncedNameNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

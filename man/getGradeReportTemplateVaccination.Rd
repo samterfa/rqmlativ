@@ -6,13 +6,13 @@
 \usage{
 getGradeReportTemplateVaccination(
   GradeReportTemplateVaccinationID,
-  GradeReportTemplateID = F,
-  VaccinationID = F,
-  GradeReportTemplateVaccinationIDClonedFrom = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeReportTemplateID = F,
+  GradeReportTemplateVaccinationIDClonedFrom = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VaccinationID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

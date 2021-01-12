@@ -5,14 +5,14 @@
 \title{Create a PERAExtractRunException}
 \usage{
 createPERAExtractRunException(
-  PERAExtractRunID = NULL,
-  EmployeeID = NULL,
   DistrictID = NULL,
-  PERAExtractEmployeeContributionV1ID = NULL,
-  Message = NULL,
+  EmployeeID = NULL,
   IsFatal = NULL,
-  Type = NULL,
+  Message = NULL,
+  PERAExtractEmployeeContributionV1ID = NULL,
+  PERAExtractRunID = NULL,
   PreserveException = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

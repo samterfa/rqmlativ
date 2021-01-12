@@ -6,12 +6,12 @@
 \usage{
 listTempDiagnostics(
   searchConditionsList = NULL,
-  TempDiagnosticID = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  TempDiagnosticID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

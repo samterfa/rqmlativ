@@ -5,8 +5,8 @@
 \title{Create a ScoliosisScreeningComment}
 \usage{
 createScoliosisScreeningComment(
-  ScoliosisScreeningID = NULL,
   ScoliosisCommentID = NULL,
+  ScoliosisScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,12 +5,12 @@
 \title{Create a HearingHertzLevel}
 \usage{
 createHearingHertzLevel(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
+  HearingHertzLevelDefaultID = NULL,
   HertzLevel = NULL,
   IsActive = NULL,
-  HearingHertzLevelDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

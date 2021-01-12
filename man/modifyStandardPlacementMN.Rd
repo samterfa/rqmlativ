@@ -6,8 +6,8 @@
 \usage{
 modifyStandardPlacementMN(
   StandardPlacementMNID,
-  StateStandardCodeMNID = NULL,
   CurriculumYearID = NULL,
+  StateStandardCodeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

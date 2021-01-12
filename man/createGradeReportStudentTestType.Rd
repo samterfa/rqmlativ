@@ -6,10 +6,9 @@
 \usage{
 createGradeReportStudentTestType(
   GradeReportStudentID = NULL,
-  TestType = NULL,
-  TestVersion = NULL,
   SortNumber = NULL,
   TestColumnHeader1 = NULL,
+  TestColumnHeader10 = NULL,
   TestColumnHeader2 = NULL,
   TestColumnHeader3 = NULL,
   TestColumnHeader4 = NULL,
@@ -18,7 +17,10 @@ createGradeReportStudentTestType(
   TestColumnHeader7 = NULL,
   TestColumnHeader8 = NULL,
   TestColumnHeader9 = NULL,
-  TestColumnHeader10 = NULL,
+  TestID = NULL,
+  TestName = NULL,
+  TestVersionID = NULL,
+  TestVersionName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

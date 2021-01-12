@@ -5,9 +5,9 @@
 \title{Create a CurriculumYearEdFiCourseLevelCharacteristic}
 \usage{
 createCurriculumYearEdFiCourseLevelCharacteristic(
+  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL,
   CurriculumYearID = NULL,
   EdFiCourseLevelCharacteristicID = NULL,
-  CurriculumYearEdFiCourseLevelCharacteristicIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listClassGroupSections(
   searchConditionsList = NULL,
-  ClassGroupSectionID = F,
   ClassGroupID = F,
+  ClassGroupSectionID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SectionID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,14 +6,14 @@
 \usage{
 getTempSpecialtyAccessGroup(
   TempSpecialtyAccessGroupID,
-  Selected = F,
+  CreatedTime = F,
   GroupName = F,
   Identifier = F,
+  ModifiedTime = F,
+  Selected = F,
   SpecialtyAccessGroupPrimaryKey = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

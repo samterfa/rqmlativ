@@ -5,8 +5,8 @@
 \title{Create an ObjectiveMeasurement}
 \usage{
 createObjectiveMeasurement(
-  ObjectiveID = NULL,
   MeasurementID = NULL,
+  ObjectiveID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

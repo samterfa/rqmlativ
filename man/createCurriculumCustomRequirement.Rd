@@ -5,11 +5,11 @@
 \title{Create a CurriculumCustomRequirement}
 \usage{
 createCurriculumCustomRequirement(
-  CustomRequirementID = NULL,
   CurriculumID = NULL,
-  SchoolYearLow = NULL,
-  SchoolYearHigh = NULL,
+  CustomRequirementID = NULL,
   DistrictGroupKey = NULL,
+  SchoolYearHigh = NULL,
+  SchoolYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

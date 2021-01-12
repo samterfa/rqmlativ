@@ -6,8 +6,8 @@
 \usage{
 modifyVisionScreeningNote(
   VisionScreeningNoteID,
-  VisionScreeningID = NULL,
   Note = NULL,
+  VisionScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

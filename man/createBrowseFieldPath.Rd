@@ -7,8 +7,8 @@
 createBrowseFieldPath(
   BrowseID = NULL,
   FieldPath = NULL,
-  RoleID = NULL,
   GuidFieldPath = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

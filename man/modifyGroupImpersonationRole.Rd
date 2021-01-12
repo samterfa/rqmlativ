@@ -7,8 +7,8 @@
 modifyGroupImpersonationRole(
   GroupImpersonationRoleID,
   GroupID = NULL,
-  RoleID = NULL,
   IsReadOnly = NULL,
+  RoleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

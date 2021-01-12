@@ -5,11 +5,11 @@
 \title{Create a BlockPeriod}
 \usage{
 createBlockPeriod(
-  Code = NULL,
   BlockPeriodIDClonedFrom = NULL,
+  Code = NULL,
+  Description = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

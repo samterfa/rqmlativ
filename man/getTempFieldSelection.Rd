@@ -6,14 +6,14 @@
 \usage{
 getTempFieldSelection(
   TempFieldSelectionID,
+  CreatedTime = F,
   FieldID = F,
+  FieldName = F,
+  ModifiedTime = F,
   ModuleName = F,
   ObjectName = F,
-  FieldName = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

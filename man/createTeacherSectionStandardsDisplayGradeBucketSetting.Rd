@@ -5,9 +5,9 @@
 \title{Create a TeacherSectionStandardsDisplayGradeBucketSetting}
 \usage{
 createTeacherSectionStandardsDisplayGradeBucketSetting(
-  TeacherSectionSettingID = NULL,
   CalculationGroupGradeBucketID = NULL,
   ShowBucket = NULL,
+  TeacherSectionSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

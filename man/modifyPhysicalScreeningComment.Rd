@@ -6,8 +6,8 @@
 \usage{
 modifyPhysicalScreeningComment(
   PhysicalScreeningCommentID,
-  PhysicalScreeningID = NULL,
   PhysicalCommentID = NULL,
+  PhysicalScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

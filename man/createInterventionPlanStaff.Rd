@@ -6,10 +6,10 @@
 \usage{
 createInterventionPlanStaff(
   InterventionPlanID = NULL,
-  StaffID = NULL,
   InterventionTeamStaffID = NULL,
   IsActive = NULL,
   IsProvidedBy = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

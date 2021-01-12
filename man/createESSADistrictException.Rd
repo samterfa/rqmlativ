@@ -5,14 +5,14 @@
 \title{Create an ESSADistrictException}
 \usage{
 createESSADistrictException(
-  ESSADistrictV1ID = NULL,
   DistrictName = NULL,
+  ESSADistrictV1ID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
-  MessageType = NULL,
-  RuleNumber = NULL,
   Message = NULL,
+  MessageType = NULL,
   ProcessType = NULL,
+  RuleNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

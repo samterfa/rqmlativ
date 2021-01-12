@@ -5,8 +5,8 @@
 \title{Create a NewHireExport}
 \usage{
 createNewHireExport(
-  NewHireExtractRunID = NULL,
   MediaID = NULL,
+  NewHireExtractRunID = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

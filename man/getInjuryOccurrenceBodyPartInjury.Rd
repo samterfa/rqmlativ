@@ -6,13 +6,13 @@
 \usage{
 getInjuryOccurrenceBodyPartInjury(
   InjuryOccurrenceBodyPartInjuryID,
-  InjuryOccurrenceBodyPartID = F,
+  CreatedTime = F,
   InjuryID = F,
+  InjuryOccurrenceBodyPartID = F,
+  ModifiedTime = F,
   Treatments = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

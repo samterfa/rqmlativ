@@ -5,10 +5,10 @@
 \title{Create a CRDCSchoolTeacherAbsenteeismV1}
 \usage{
 createCRDCSchoolTeacherAbsenteeismV1(
-  FTE = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  FTE = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create an IdentificationConfig}
 \usage{
 createIdentificationConfig(
-  IdentificationApplicationID = NULL,
   BiometricDataMaxBytes = NULL,
   Code = NULL,
   Description = NULL,
+  IdentificationApplicationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

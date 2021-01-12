@@ -5,12 +5,12 @@
 \title{Create a Drug}
 \usage{
 createDrug(
-  StateDrugTypeMNID = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   DrugIDClonedFrom = NULL,
+  SchoolYearID = NULL,
+  StateDrugTypeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

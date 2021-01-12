@@ -6,9 +6,9 @@
 \usage{
 listPaymentPlanMAS(
   searchConditionsList = NULL,
-  PaymentPlanMAID = F,
   Code = F,
   Description = F,
+  PaymentPlanMAID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,17 +5,17 @@
 \title{Create a TempDegree}
 \usage{
 createTempDegree(
-  DegreeID = NULL,
-  EmployeeID = NULL,
-  DegreeTypeID = NULL,
-  InstitutionID = NULL,
-  ReceivedDate = NULL,
+  AdditionalCredits = NULL,
   ApprovedDate = NULL,
   Credits = NULL,
+  DegreeID = NULL,
+  DegreeTypeID = NULL,
+  EmployeeID = NULL,
   GPA = NULL,
-  AdditionalCredits = NULL,
+  InstitutionID = NULL,
   IsDelete = NULL,
   OnScreenCount = NULL,
+  ReceivedDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

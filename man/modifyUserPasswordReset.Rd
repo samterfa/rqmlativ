@@ -7,9 +7,9 @@
 modifyUserPasswordReset(
   UserPasswordResetID,
   ExpirationTime = NULL,
-  UserID = NULL,
   HostAddressRequestedFrom = NULL,
   Used = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

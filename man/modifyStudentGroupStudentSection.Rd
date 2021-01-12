@@ -6,10 +6,10 @@
 \usage{
 modifyStudentGroupStudentSection(
   StudentGroupStudentSectionID,
+  EndDate = NULL,
+  StartDate = NULL,
   StudentGroupID = NULL,
   StudentSectionID = NULL,
-  StartDate = NULL,
-  EndDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

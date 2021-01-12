@@ -6,13 +6,13 @@
 \usage{
 getDependent(
   DependentID,
-  NameIDOwner = F,
-  NameIDDependent = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  NameIDDependent = F,
+  NameIDOwner = F,
   RelationshipID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

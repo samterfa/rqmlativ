@@ -5,14 +5,14 @@
 \title{Create a GraduationPlanDashboardV1}
 \usage{
 createGraduationPlanDashboardV1(
-  EntityID = NULL,
+  DashboardRunHistoryID = NULL,
   EdFiGraduationPlanID = NULL,
+  EntityID = NULL,
   GraduationPlanTypeCode = NULL,
   IsIndividualPlan = NULL,
-  TotalCreditsRequired = NULL,
   SchoolCode = NULL,
-  DashboardRunHistoryID = NULL,
   SchoolYearID = NULL,
+  TotalCreditsRequired = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

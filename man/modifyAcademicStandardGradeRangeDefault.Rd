@@ -6,10 +6,10 @@
 \usage{
 modifyAcademicStandardGradeRangeDefault(
   AcademicStandardGradeRangeDefaultID,
+  AcademicStandardSubjectDefaultID = NULL,
   Code = NULL,
   Description = NULL,
   Key = NULL,
-  AcademicStandardSubjectDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

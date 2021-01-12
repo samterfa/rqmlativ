@@ -5,9 +5,9 @@
 \title{Create a NextStudentNumber}
 \usage{
 createNextStudentNumber(
+  IsForStateID = NULL,
   MaskPrefix = NULL,
   SequenceNumber = NULL,
-  IsForStateID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

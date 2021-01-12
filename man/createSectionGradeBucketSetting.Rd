@@ -5,10 +5,10 @@
 \title{Create a SectionGradeBucketSetting}
 \usage{
 createSectionGradeBucketSetting(
-  SectionID = NULL,
   GradingPeriodGradeBucketID = NULL,
-  UseMaxExtraCredit = NULL,
   MaxExtraCredit = NULL,
+  SectionID = NULL,
+  UseMaxExtraCredit = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 listScheduleBlockerDisplayPeriods(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  DisplayPeriodID = F,
+  ModifiedTime = F,
   ScheduleBlockerDisplayPeriodID = F,
   ScheduleBlockerID = F,
-  DisplayPeriodID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

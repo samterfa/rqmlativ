@@ -6,13 +6,13 @@
 \usage{
 listNameOfficeVisitTreatments(
   searchConditionsList = NULL,
-  NameOfficeVisitTreatmentID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NameOfficeVisitID = F,
+  NameOfficeVisitTreatmentID = F,
   TreatmentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

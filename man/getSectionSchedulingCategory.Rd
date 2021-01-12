@@ -6,13 +6,13 @@
 \usage{
 getSectionSchedulingCategory(
   SectionSchedulingCategoryID,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingCategoryID = F,
   SectionID = F,
   SectionSchedulingCategoryIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

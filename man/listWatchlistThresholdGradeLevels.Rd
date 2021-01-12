@@ -6,13 +6,13 @@
 \usage{
 listWatchlistThresholdGradeLevels(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  GradeLevelID = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   WatchlistThresholdGradeLevelID = F,
   WatchlistThresholdID = F,
-  GradeLevelID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

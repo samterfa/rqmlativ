@@ -5,10 +5,10 @@
 \title{Create a GASBRowDimensionFilterRange}
 \usage{
 createGASBRowDimensionFilterRange(
+  FilterHigh = NULL,
+  FilterLow = NULL,
   GASBRowID = NULL,
   StructureDimensionID = NULL,
-  FilterLow = NULL,
-  FilterHigh = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

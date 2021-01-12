@@ -6,8 +6,8 @@
 \usage{
 modifySubjectSecurityLocation(
   SubjectSecurityLocationID,
-  SubjectID = NULL,
   SecurityLocationID = NULL,
+  SubjectID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

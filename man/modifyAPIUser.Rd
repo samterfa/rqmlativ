@@ -6,11 +6,11 @@
 \usage{
 modifyAPIUser(
   UserID,
-  Name = NULL,
-  ConsumerKey = NULL,
-  UserIDSecurity = NULL,
-  IsActive = NULL,
   AuthenticationType = NULL,
+  ConsumerKey = NULL,
+  IsActive = NULL,
+  Name = NULL,
+  UserIDSecurity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create an EarlyEducationProgramMN}
 \usage{
 createEarlyEducationProgramMN(
-  StateEarlyEducationProgramMNID = NULL,
   CurriculumYearID = NULL,
   EarlyEducationProgramMNIDClonedFrom = NULL,
+  StateEarlyEducationProgramMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

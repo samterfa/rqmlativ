@@ -5,9 +5,9 @@
 \title{Create a TempAssignmentError}
 \usage{
 createTempAssignmentError(
+  ErrorNumber = NULL,
   ErrorText = NULL,
   TempSectionAssignmentID = NULL,
-  ErrorNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

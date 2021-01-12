@@ -6,11 +6,11 @@
 \usage{
 createConfigEntityGroupYearStaffDirectory(
   ConfigEntityGroupYearID = NULL,
-  StaffTypeID = NULL,
-  EmailTypeID = NULL,
-  PhoneTypeID = NULL,
   DisplayEmail = NULL,
   DisplayPhone = NULL,
+  EmailTypeID = NULL,
+  PhoneTypeID = NULL,
+  StaffTypeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

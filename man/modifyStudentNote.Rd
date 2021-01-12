@@ -6,11 +6,11 @@
 \usage{
 modifyStudentNote(
   StudentNoteID,
-  StudentID = NULL,
+  Description = NULL,
+  EndDate = NULL,
   NoteTypeID = NULL,
   StartDate = NULL,
-  EndDate = NULL,
-  Description = NULL,
+  StudentID = NULL,
   StudentTransportationID = NULL,
   entityId = 1,
   query = NULL,

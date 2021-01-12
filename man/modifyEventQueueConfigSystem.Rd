@@ -6,8 +6,8 @@
 \usage{
 modifyEventQueueConfigSystem(
   ConfigSystemID,
-  IsEnabled = NULL,
   DaysToStoreEvents = NULL,
+  IsEnabled = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

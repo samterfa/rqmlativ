@@ -6,13 +6,13 @@
 \usage{
 listGPAMethodCourseGroups(
   searchConditionsList = NULL,
+  CourseGroupID = F,
+  CreatedTime = F,
   GPAMethodCourseGroupID = F,
   GPAMethodID = F,
-  CourseGroupID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

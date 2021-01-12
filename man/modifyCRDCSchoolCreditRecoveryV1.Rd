@@ -6,11 +6,11 @@
 \usage{
 modifyCRDCSchoolCreditRecoveryV1(
   CRDCSchoolCreditRecoveryV1ID,
-  HasProgram = NULL,
-  StudentCount = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  HasProgram = NULL,
+  StudentCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

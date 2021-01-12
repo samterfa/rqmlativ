@@ -6,12 +6,12 @@
 \usage{
 modifyPERAExport(
   PERAExportID,
-  PERAExtractRunID = NULL,
-  MediaID = NULL,
   EmployerNumber = NULL,
-  PaidDate = NULL,
-  Status = NULL,
   ExportType = NULL,
+  MediaID = NULL,
+  PaidDate = NULL,
+  PERAExtractRunID = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

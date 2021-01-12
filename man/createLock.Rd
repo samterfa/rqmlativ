@@ -5,13 +5,13 @@
 \title{Create a Lock}
 \usage{
 createLock(
-  SerialNumber = NULL,
-  OwnedBySchool = NULL,
+  BuildingID = NULL,
   IsBuiltInLock = NULL,
   LockerID = NULL,
-  StudentID = NULL,
   LockMakeID = NULL,
-  BuildingID = NULL,
+  OwnedBySchool = NULL,
+  SerialNumber = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a StudentGroupTeacherSectionSetting}
 \usage{
 createStudentGroupTeacherSectionSetting(
+  Color = NULL,
+  Display = NULL,
   StudentGroupID = NULL,
   TeacherSectionSettingID = NULL,
-  Display = NULL,
-  Color = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

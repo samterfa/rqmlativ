@@ -6,12 +6,12 @@
 \usage{
 modifyMassDeleteSpecialProgramsRunHistory(
   MassDeleteSpecialProgramsRunHistoryID,
-  SchoolYearID = NULL,
   DistrictID = NULL,
-  StartTime = NULL,
   EndTime = NULL,
   FilterParameters = NULL,
   RunReason = NULL,
+  SchoolYearID = NULL,
+  StartTime = NULL,
   Status = NULL,
   UserIDCanceledBy = NULL,
   ValueParameters = NULL,

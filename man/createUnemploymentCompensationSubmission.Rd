@@ -5,8 +5,8 @@
 \title{Create an UnemploymentCompensationSubmission}
 \usage{
 createUnemploymentCompensationSubmission(
-  DistrictID = NULL,
   CalendarYearID = NULL,
+  DistrictID = NULL,
   Quarter = NULL,
   entityId = 1,
   query = NULL,

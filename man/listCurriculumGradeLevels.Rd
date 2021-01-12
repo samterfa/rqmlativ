@@ -6,14 +6,14 @@
 \usage{
 listCurriculumGradeLevels(
   searchConditionsList = NULL,
+  CreatedTime = F,
   CurriculumGradeLevelID = F,
   CurriculumID = F,
-  GradeLevelID = F,
   DistrictGroupKey = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeLevelID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

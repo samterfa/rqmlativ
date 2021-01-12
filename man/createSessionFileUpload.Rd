@@ -5,8 +5,8 @@
 \title{Create a SessionFileUpload}
 \usage{
 createSessionFileUpload(
-  SessionID = NULL,
   FilePath = NULL,
+  SessionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

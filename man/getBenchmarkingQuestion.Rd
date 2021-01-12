@@ -6,13 +6,13 @@
 \usage{
 getBenchmarkingQuestion(
   BenchmarkingQuestionID,
-  SkywardID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SkywardHash = F,
+  SkywardID = F,
   Text = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

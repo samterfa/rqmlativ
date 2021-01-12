@@ -5,8 +5,8 @@
 \title{Create a WhiteListFieldPath}
 \usage{
 createWhiteListFieldPath(
-  FriendlyName = NULL,
   Description = NULL,
+  FriendlyName = NULL,
   UsedForType = NULL,
   entityId = 1,
   query = NULL,

@@ -6,12 +6,12 @@
 \usage{
 getForm1099MExportPrintFile(
   Form1099MExportPrintFileID,
+  CreatedTime = F,
   Form1099MYearID = F,
   MediaID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

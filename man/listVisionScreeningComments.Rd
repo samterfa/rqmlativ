@@ -6,13 +6,13 @@
 \usage{
 listVisionScreeningComments(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VisionCommentID = F,
   VisionScreeningCommentID = F,
   VisionScreeningID = F,
-  VisionCommentID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

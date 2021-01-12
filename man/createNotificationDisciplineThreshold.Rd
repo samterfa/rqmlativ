@@ -5,8 +5,8 @@
 \title{Create a NotificationDisciplineThreshold}
 \usage{
 createNotificationDisciplineThreshold(
-  NotificationID = NULL,
   DisciplineThresholdID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

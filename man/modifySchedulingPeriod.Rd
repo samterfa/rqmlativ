@@ -6,8 +6,8 @@
 \usage{
 modifySchedulingPeriod(
   SchedulingPeriodID,
-  DayRotationID = NULL,
   CodeNumber = NULL,
+  DayRotationID = NULL,
   EntityGroupKey = NULL,
   SchedulingPeriodIDClonedFrom = NULL,
   entityId = 1,

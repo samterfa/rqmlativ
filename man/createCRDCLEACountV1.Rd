@@ -5,13 +5,13 @@
 \title{Create a CRDCLEACountV1}
 \usage{
 createCRDCLEACountV1(
+  CivilRightsDataCollectionID = NULL,
+  CivilRightsDataCollectionRunHistoryID = NULL,
   DistrictID = NULL,
   DistrictSchoolYearID = NULL,
   NCESIDCode = NULL,
   SchoolCount = NULL,
   StudentNonLEACount = NULL,
-  CivilRightsDataCollectionID = NULL,
-  CivilRightsDataCollectionRunHistoryID = NULL,
   StudentOverallCount = NULL,
   entityId = 1,
   query = NULL,

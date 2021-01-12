@@ -5,12 +5,12 @@
 \title{Create a ScheduledTaskInstance}
 \usage{
 createScheduledTaskInstance(
-  Name = NULL,
   ExecutionTime = NULL,
   IsPaused = NULL,
+  Name = NULL,
+  ScheduledTaskID = NULL,
   Status = NULL,
   WorkflowID = NULL,
-  ScheduledTaskID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

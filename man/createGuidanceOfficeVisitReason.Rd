@@ -5,10 +5,10 @@
 \title{Create a GuidanceOfficeVisitReason}
 \usage{
 createGuidanceOfficeVisitReason(
-  DistrictID = NULL,
-  DistrictGroupKey = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictGroupKey = NULL,
+  DistrictID = NULL,
   IsActive = NULL,
   entityId = 1,
   query = NULL,

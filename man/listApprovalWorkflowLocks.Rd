@@ -6,14 +6,14 @@
 \usage{
 listApprovalWorkflowLocks(
   searchConditionsList = NULL,
-  ApprovalWorkflowLockID = F,
+  ApprovalObjectID = F,
   ApprovalType = F,
   ApprovalTypeCode = F,
-  ApprovalObjectID = F,
-  UserIDCreatedBy = F,
+  ApprovalWorkflowLockID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

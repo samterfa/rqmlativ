@@ -5,10 +5,10 @@
 \title{Create an UserPreference}
 \usage{
 createUserPreference(
-  UserIDSecurity = NULL,
-  ThemeID = NULL,
   AccountSelection = NULL,
+  ThemeID = NULL,
   UseEmailMultifactorAuthentication = NULL,
+  UserIDSecurity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 modifyFederalCRDCStaffType(
   FederalCRDCStaffTypeID,
-  Description = NULL,
-  IsTotalPersonnel = NULL,
   CRDCStaffCategoryType = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
+  Description = NULL,
   IsInvalid = NULL,
+  IsTotalPersonnel = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyApplySchemaChangeAllChangesConfirmation(
   ApplySchemaChangeAllChangesConfirmationID,
+  ChangeType = NULL,
+  FieldPendingName = NULL,
   ModulePendingName = NULL,
   ObjectPendingName = NULL,
-  FieldPendingName = NULL,
   RelationshipPendingName = NULL,
-  ChangeType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create a BlockPeriodDisplayPeriod}
 \usage{
 createBlockPeriodDisplayPeriod(
+  BlockPeriodDisplayPeriodIDClonedFrom = NULL,
   BlockPeriodID = NULL,
   DisplayPeriodID = NULL,
-  BlockPeriodDisplayPeriodIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

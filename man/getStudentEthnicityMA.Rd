@@ -6,8 +6,8 @@
 \usage{
 getStudentEthnicityMA(
   StudentEthnicityMAID,
-  StudentID = F,
   EthnicityMAID = F,
+  StudentID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

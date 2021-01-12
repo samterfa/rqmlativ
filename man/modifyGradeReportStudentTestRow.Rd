@@ -6,10 +6,11 @@
 \usage{
 modifyGradeReportStudentTestRow(
   GradeReportStudentTestRowID,
-  GradeReportStudentTestTypeID = NULL,
   DateTaken = NULL,
+  GradeReportStudentTestTypeID = NULL,
   SortNumber = NULL,
   TestColumn1 = NULL,
+  TestColumn10 = NULL,
   TestColumn2 = NULL,
   TestColumn3 = NULL,
   TestColumn4 = NULL,
@@ -18,7 +19,6 @@ modifyGradeReportStudentTestRow(
   TestColumn7 = NULL,
   TestColumn8 = NULL,
   TestColumn9 = NULL,
-  TestColumn10 = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

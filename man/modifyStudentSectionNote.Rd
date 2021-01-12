@@ -6,10 +6,10 @@
 \usage{
 modifyStudentSectionNote(
   StudentSectionNoteID,
-  StudentSectionID = NULL,
+  LimitToThisSection = NULL,
   Note = NULL,
   OtherTeachersHaveAccess = NULL,
-  LimitToThisSection = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

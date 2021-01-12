@@ -6,12 +6,12 @@
 \usage{
 createDataMiningReportField(
   DataMiningReportID = NULL,
-  Label = NULL,
-  Width = NULL,
-  SubtopicFieldID = NULL,
   DisplayOrder = NULL,
+  Label = NULL,
   ShowTotal = NULL,
   StartPosition = NULL,
+  SubtopicFieldID = NULL,
+  Width = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

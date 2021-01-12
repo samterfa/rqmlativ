@@ -7,9 +7,9 @@
 modifyChangeRequestDetailApproval(
   ChangeRequestDetailApprovalID,
   ChangeRequestDetailID = NULL,
-  UserIDApprover = NULL,
   Comment = NULL,
   Status = NULL,
+  UserIDApprover = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

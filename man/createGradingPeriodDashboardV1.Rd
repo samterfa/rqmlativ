@@ -5,15 +5,15 @@
 \title{Create a GradingPeriodDashboardV1}
 \usage{
 createGradingPeriodDashboardV1(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  EdFiGradingPeriodID = NULL,
-  GradingPeriodCode = NULL,
-  BeginDate = NULL,
-  EndDate = NULL,
-  TotalInstructionalDays = NULL,
   AssociatedCampusIDs = NULL,
+  BeginDate = NULL,
   DashboardRunHistoryID = NULL,
+  DistrictID = NULL,
+  EdFiGradingPeriodID = NULL,
+  EndDate = NULL,
+  GradingPeriodCode = NULL,
+  SchoolYearID = NULL,
+  TotalInstructionalDays = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 modifyClassPeriodDashboardV1(
   ClassPeriodDashboardV1ID,
-  SchoolYearID = NULL,
-  DistrictID = NULL,
   ClassPeriodName = NULL,
   DashboardRunHistoryID = NULL,
+  DistrictID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

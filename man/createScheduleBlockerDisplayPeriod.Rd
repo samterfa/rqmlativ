@@ -5,8 +5,8 @@
 \title{Create a ScheduleBlockerDisplayPeriod}
 \usage{
 createScheduleBlockerDisplayPeriod(
-  ScheduleBlockerID = NULL,
   DisplayPeriodID = NULL,
+  ScheduleBlockerID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create a TeacherSchoolAssociationDashboardV1}
 \usage{
 createTeacherSchoolAssociationDashboardV1(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  StaffID = NULL,
-  StaffUniqueID = NULL,
-  SchoolCode = NULL,
-  ProgramAssignment = NULL,
-  GradeLevels = NULL,
   AcademicSubjects = NULL,
   DashboardRunHistoryID = NULL,
+  EntityID = NULL,
+  GradeLevels = NULL,
+  ProgramAssignment = NULL,
+  SchoolCode = NULL,
+  SchoolYearID = NULL,
+  StaffID = NULL,
+  StaffUniqueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

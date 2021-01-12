@@ -6,8 +6,8 @@
 \usage{
 modifyGradeReportRunHistoryAttachment(
   GradeReportRunHistoryAttachmentID,
-  GradeReportRunHistoryID = NULL,
   AttachmentID = NULL,
+  GradeReportRunHistoryID = NULL,
   GuardianSignedTime = NULL,
   NameIDGuardianSignedBy = NULL,
   StudentID = NULL,

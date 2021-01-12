@@ -6,8 +6,8 @@
 \usage{
 modifyHealthConfigDistrictGroup(
   ConfigDistrictGroupID,
-  DistrictID = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
   UseNationalChartForBodyMassIndexPercentile = NULL,
   entityId = 1,
   query = NULL,

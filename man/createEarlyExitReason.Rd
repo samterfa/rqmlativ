@@ -5,13 +5,13 @@
 \title{Create an EarlyExitReason}
 \usage{
 createEarlyExitReason(
-  EntityID = NULL,
-  EntityGroupKey = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
   EarlyExitReasonIDClonedFrom = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
   IsConsideredDrop = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

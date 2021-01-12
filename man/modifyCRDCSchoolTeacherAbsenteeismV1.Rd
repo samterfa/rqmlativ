@@ -6,10 +6,10 @@
 \usage{
 modifyCRDCSchoolTeacherAbsenteeismV1(
   CRDCSchoolTeacherAbsenteeismV1ID,
-  FTE = NULL,
   CivilRightsDataCollectionID = NULL,
   CivilRightsDataCollectionRunHistoryID = NULL,
   FederalNCESSchoolID = NULL,
+  FTE = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,9 +5,9 @@
 \title{Create a CurriculumCluster}
 \usage{
 createCurriculumCluster(
-  DistrictID = NULL,
   CurriculumClusterDefaultID = NULL,
   Description = NULL,
+  DistrictID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

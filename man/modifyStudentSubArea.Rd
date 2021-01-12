@@ -6,9 +6,9 @@
 \usage{
 modifyStudentSubArea(
   StudentSubAreaID,
-  SubAreaID = NULL,
-  StudentPlanID = NULL,
   StudentAreaID = NULL,
+  StudentPlanID = NULL,
+  SubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

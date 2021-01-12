@@ -5,14 +5,14 @@
 \title{Create a WorkflowInstance}
 \usage{
 createWorkflowInstance(
-  WorkflowVersionID = NULL,
-  WorkflowInstanceIDRoot = NULL,
+  AbortInitiated = NULL,
   LogID = NULL,
+  ScheduledTaskInstanceID = NULL,
   Status = NULL,
   Success = NULL,
   ValidationFailureBehaviorCode = NULL,
-  ScheduledTaskInstanceID = NULL,
-  AbortInitiated = NULL,
+  WorkflowInstanceIDRoot = NULL,
+  WorkflowVersionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

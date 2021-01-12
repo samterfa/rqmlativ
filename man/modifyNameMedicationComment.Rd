@@ -6,8 +6,8 @@
 \usage{
 modifyNameMedicationComment(
   NameMedicationCommentID,
-  NameMedicationID = NULL,
   MedicationCommentID = NULL,
+  NameMedicationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

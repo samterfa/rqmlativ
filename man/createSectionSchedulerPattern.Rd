@@ -5,11 +5,11 @@
 \title{Create a SectionSchedulerPattern}
 \usage{
 createSectionSchedulerPattern(
+  Code = NULL,
+  DayRotationSummary = NULL,
+  Description = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  Code = NULL,
-  Description = NULL,
-  DayRotationSummary = NULL,
   SectionSchedulerPatternIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

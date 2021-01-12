@@ -6,14 +6,14 @@
 \usage{
 listGASBBalanceSheetColumnIncludedAccounts(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  Description = F,
   GASBBalanceSheetColumnIncludedAccountID = F,
   GASBBalanceSheetIncludedAccountID = F,
   GASBColumnID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
-  Description = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

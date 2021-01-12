@@ -6,14 +6,14 @@
 \usage{
 getEarnedCreditsBucketGroupGradeBucketStudentOverride(
   EarnedCreditsBucketGroupGradeBucketStudentOverrideID,
+  CreatedTime = F,
   EarnedCreditsBucketGroupGradeBucketID = F,
+  ModifiedTime = F,
+  Percent = F,
   StudentSectionID = F,
   UseOverride = F,
-  Percent = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

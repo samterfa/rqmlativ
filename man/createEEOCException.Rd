@@ -5,14 +5,14 @@
 \title{Create an EEOCException}
 \usage{
 createEEOCException(
-  EEOCExtractRunID = NULL,
-  EEOCEmploymentV1ID = NULL,
-  Source = NULL,
-  IsFatal = NULL,
-  Type = NULL,
-  Message = NULL,
   EEOCEmployeeV1ID = NULL,
+  EEOCEmploymentV1ID = NULL,
+  EEOCExtractRunID = NULL,
+  IsFatal = NULL,
+  Message = NULL,
   PreserveException = NULL,
+  Source = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

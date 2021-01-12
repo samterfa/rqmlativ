@@ -6,12 +6,12 @@
 \usage{
 modifyTaskInstanceStatus(
   TaskInstanceStatusID,
-  TaskInstanceID = NULL,
   CurrentRecordIdentifier = NULL,
   CurrentRecordNumber = NULL,
-  TotalRecordCount = NULL,
   PercentComplete = NULL,
   ProcessName = NULL,
+  TaskInstanceID = NULL,
+  TotalRecordCount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

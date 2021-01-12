@@ -6,10 +6,10 @@
 \usage{
 modifySeatingChartUsedLast(
   SeatingChartUsedLastID,
-  StaffID = NULL,
-  RoomID = NULL,
   DisplayPeriodID = NULL,
+  RoomID = NULL,
   SeatingChartID = NULL,
+  StaffID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

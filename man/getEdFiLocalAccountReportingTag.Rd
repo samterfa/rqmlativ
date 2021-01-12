@@ -6,13 +6,13 @@
 \usage{
 getEdFiLocalAccountReportingTag(
   EdFiLocalAccountReportingTagID,
-  EdFiLocalAccountID = F,
-  Descriptor = F,
-  Value = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Descriptor = F,
+  EdFiLocalAccountID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  Value = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,11 +6,11 @@
 \usage{
 modifyIncomeEligibilityAmount(
   IncomeEligibilityAmountID,
-  IncomeEligibilityID = NULL,
-  FamilySize = NULL,
-  EligibilityCategoryType = NULL,
-  TimePeriodType = NULL,
   Amount = NULL,
+  EligibilityCategoryType = NULL,
+  FamilySize = NULL,
+  IncomeEligibilityID = NULL,
+  TimePeriodType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

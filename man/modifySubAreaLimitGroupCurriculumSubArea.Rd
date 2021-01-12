@@ -6,8 +6,8 @@
 \usage{
 modifySubAreaLimitGroupCurriculumSubArea(
   SubAreaLimitGroupCurriculumSubAreaID,
-  SubAreaLimitGroupID = NULL,
   CurriculumSubAreaID = NULL,
+  SubAreaLimitGroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

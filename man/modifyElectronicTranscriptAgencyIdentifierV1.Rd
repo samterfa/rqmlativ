@@ -6,8 +6,8 @@
 \usage{
 modifyElectronicTranscriptAgencyIdentifierV1(
   ElectronicTranscriptAgencyIdentifierV1ID,
-  AgencyAssignedID = NULL,
   Agency = NULL,
+  AgencyAssignedID = NULL,
   AgencyName = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,

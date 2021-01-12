@@ -6,14 +6,14 @@
 \usage{
 listCloseoutChecks(
   searchConditionsList = NULL,
+  Amount = F,
+  CheckNumber = F,
   CloseoutCheckID = F,
   CloseoutTransactionID = F,
-  CheckNumber = F,
-  Amount = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

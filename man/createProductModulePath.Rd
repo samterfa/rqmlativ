@@ -5,11 +5,11 @@
 \title{Create a ProductModulePath}
 \usage{
 createProductModulePath(
-  ProductID = NULL,
-  Module = NULL,
   Controller = NULL,
-  Screen = NULL,
+  Module = NULL,
+  ProductID = NULL,
   RMSSecurityLocationSkywardID = NULL,
+  Screen = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

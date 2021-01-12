@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationGradeBucket(
   NotificationGradeBucketID,
-  NotificationID = NULL,
   GradeBucketID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

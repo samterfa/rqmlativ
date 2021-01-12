@@ -6,13 +6,13 @@
 \usage{
 getTempImportPreviewResultRow(
   TempImportPreviewResultRowID,
-  ResultType = F,
-  ImportFileRowNumber = F,
-  ErrorMessage = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorMessage = F,
+  ImportFileRowNumber = F,
   ModifiedTime = F,
+  ResultType = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

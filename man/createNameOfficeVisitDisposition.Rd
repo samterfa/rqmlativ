@@ -5,8 +5,8 @@
 \title{Create a NameOfficeVisitDisposition}
 \usage{
 createNameOfficeVisitDisposition(
-  OfficeVisitDispositionID = NULL,
   NameOfficeVisitID = NULL,
+  OfficeVisitDispositionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

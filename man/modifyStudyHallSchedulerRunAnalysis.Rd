@@ -7,11 +7,11 @@
 modifyStudyHallSchedulerRunAnalysis(
   StudyHallSchedulerRunAnalysisID,
   BaseRunAnalysisID = NULL,
-  StartTimeAnalysis = NULL,
   EndTimeAnalysis = NULL,
-  StartTimeFinalize = NULL,
   EndTimeFinalize = NULL,
   RunInformation = NULL,
+  StartTimeAnalysis = NULL,
+  StartTimeFinalize = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

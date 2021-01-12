@@ -6,11 +6,11 @@
 \usage{
 modifyDisplayPeriodRotationDisplayPeriod(
   DisplayPeriodRotationDisplayPeriodID,
-  DisplayPeriodRotationID = NULL,
   DisplayPeriodID = NULL,
-  IsPrimary = NULL,
-  HideMeetDisplayPeriod = NULL,
   DisplayPeriodRotationDisplayPeriodIDClonedFrom = NULL,
+  DisplayPeriodRotationID = NULL,
+  HideMeetDisplayPeriod = NULL,
+  IsPrimary = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

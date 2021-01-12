@@ -7,10 +7,10 @@
 createStateAidCategoryCodeMN(
   Code = NULL,
   Description = NULL,
-  StateAid = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  StateAid = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

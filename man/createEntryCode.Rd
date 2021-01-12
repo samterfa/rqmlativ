@@ -5,15 +5,15 @@
 \title{Create an EntryCode}
 \usage{
 createEntryCode(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
-  SchoolYearID = NULL,
-  Type = NULL,
   DistrictGroupKey = NULL,
+  DistrictID = NULL,
+  EdFiEntryTypeDescriptorID = NULL,
   EntryCodeIDClonedFrom = NULL,
   IsCrossEntityCourseEnrollment = NULL,
-  EdFiEntryTypeDescriptorID = NULL,
+  SchoolYearID = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 modifyUFARSGeneralLedgerV1IncludedAccount(
   UFARSGeneralLedgerV1IncludedAccountID,
-  UFARSGeneralLedgerV1ID = NULL,
   AccountFiscalYearID = NULL,
-  FiscalYearBeginningBalance = NULL,
-  FiscalYearDebits = NULL,
-  FiscalYearCredits = NULL,
   ExcludeFromExport = NULL,
+  FiscalYearBeginningBalance = NULL,
+  FiscalYearCredits = NULL,
+  FiscalYearDebits = NULL,
+  UFARSGeneralLedgerV1ID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

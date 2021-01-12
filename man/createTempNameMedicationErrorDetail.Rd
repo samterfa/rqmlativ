@@ -5,9 +5,9 @@
 \title{Create a TempNameMedicationErrorDetail}
 \usage{
 createTempNameMedicationErrorDetail(
-  TempNameMedicationID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameMedicationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a DirectCertificationDenialReason}
 \usage{
 createDirectCertificationDenialReason(
-  DirectCertificationID = NULL,
   DenialReasonID = NULL,
+  DirectCertificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,13 @@
 \usage{
 modifyEdFiDistrict(
   EdFiDistrictID,
-  SchoolYearID = NULL,
-  EdFiID = NULL,
   Code = NULL,
-  Name = NULL,
-  Type = NULL,
+  EdFiID = NULL,
+  EdFiLocalEducationAgencyCategoryDescriptorID = NULL,
   IsInvalid = NULL,
+  Name = NULL,
+  SchoolYearID = NULL,
+  Type = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

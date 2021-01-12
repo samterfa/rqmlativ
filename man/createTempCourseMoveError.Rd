@@ -5,11 +5,11 @@
 \title{Create a TempCourseMoveError}
 \usage{
 createTempCourseMoveError(
-  SectionID = NULL,
   BucketLabel = NULL,
   ErrorCode = NULL,
   ErrorMessage = NULL,
   ErrorType = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

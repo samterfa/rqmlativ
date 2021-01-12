@@ -5,10 +5,10 @@
 \title{Create a StudentFamily}
 \usage{
 createStudentFamily(
-  StudentID = NULL,
   FamilyID = NULL,
   Rank = NULL,
   ReceivesForms = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

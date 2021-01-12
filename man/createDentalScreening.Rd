@@ -5,17 +5,17 @@
 \title{Create a DentalScreening}
 \usage{
 createDentalScreening(
-  HealthProfessionalIDExaminedBy = NULL,
   DentalScreeningResultID = NULL,
   DentalTreatmentID = NULL,
-  ScreeningDate = NULL,
-  SchoolYearID = NULL,
+  DistrictID = NULL,
+  HealthProfessionalIDExaminedBy = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  NameID = NULL,
+  SchoolYearID = NULL,
+  ScreeningDate = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
-  NameID = NULL,
-  DistrictID = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

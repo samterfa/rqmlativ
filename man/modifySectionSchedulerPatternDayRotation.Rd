@@ -6,9 +6,9 @@
 \usage{
 modifySectionSchedulerPatternDayRotation(
   SectionSchedulerPatternDayRotationID,
-  SectionSchedulerPatternID = NULL,
   DayRotationID = NULL,
   SectionSchedulerPatternDayRotationIDClonedFrom = NULL,
+  SectionSchedulerPatternID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

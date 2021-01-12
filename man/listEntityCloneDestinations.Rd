@@ -6,14 +6,14 @@
 \usage{
 listEntityCloneDestinations(
   searchConditionsList = NULL,
+  CreatedTime = F,
   EntityCloneDestinationID = F,
   EntityCloneRunID = F,
   EntityID = F,
+  ModifiedTime = F,
   SchoolYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

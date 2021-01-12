@@ -5,13 +5,13 @@
 \title{Create a TempStudentHonorRollRunLevel}
 \usage{
 createTempStudentHonorRollRunLevel(
-  StudentID = NULL,
+  GPAValue = NULL,
+  Grade = NULL,
   HonorRollRunLevelID = NULL,
   HonorRollRunLevelName = NULL,
   HonorRollRunLevelOrder = NULL,
+  StudentID = NULL,
   StudentName = NULL,
-  Grade = NULL,
-  GPAValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

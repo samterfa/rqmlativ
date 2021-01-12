@@ -6,13 +6,13 @@
 \usage{
 listCareerPlanDeclarationTimePeriodStudentEntityYears(
   searchConditionsList = NULL,
-  CareerPlanDeclarationTimePeriodStudentEntityYearID = F,
   CareerPlanDeclarationTimePeriodID = F,
+  CareerPlanDeclarationTimePeriodStudentEntityYearID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   StudentEntityYearID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

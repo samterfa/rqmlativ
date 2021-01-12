@@ -5,14 +5,14 @@
 \title{Create an AvailabilityStudentFilter}
 \usage{
 createAvailabilityStudentFilter(
+  AvailabilityStudentFilterIDClonedFrom = NULL,
   Code = NULL,
   Description = NULL,
-  Filter = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
+  Filter = NULL,
   GradeReferenceIDInclusionList = NULL,
+  SchoolYearID = NULL,
   StudentTypeIDInclusionList = NULL,
-  AvailabilityStudentFilterIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

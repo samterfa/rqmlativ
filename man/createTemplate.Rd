@@ -5,17 +5,17 @@
 \title{Create a Template}
 \usage{
 createTemplate(
-  Name = NULL,
+  Data = NULL,
   Description = NULL,
   DistrictID = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
   FiscalYearID = NULL,
-  UserIDOwner = NULL,
+  Name = NULL,
   Published = NULL,
-  Data = NULL,
-  WorkflowID = NULL,
+  SchoolYearID = NULL,
   TaskName = NULL,
+  UserIDOwner = NULL,
+  WorkflowID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

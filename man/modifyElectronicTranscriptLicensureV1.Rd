@@ -6,13 +6,13 @@
 \usage{
 modifyElectronicTranscriptLicensureV1(
   ElectronicTranscriptLicensureV1ID,
-  LicensureName = NULL,
-  LicensurePassageDate = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  LicensureName = NULL,
+  LicensurePassageDate = NULL,
+  OrganizationName = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  OrganizationName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

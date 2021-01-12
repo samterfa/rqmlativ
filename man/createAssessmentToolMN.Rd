@@ -5,10 +5,10 @@
 \title{Create an AssessmentToolMN}
 \usage{
 createAssessmentToolMN(
+  AssessmentToolMNIDClonedFrom = NULL,
+  CurriculumYearID = NULL,
   StateAssessmentToolMNID = NULL,
   StateImplementationStatusMNID = NULL,
-  CurriculumYearID = NULL,
-  AssessmentToolMNIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyInternetAccess(
   InternetAccessID,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
-  StateInternetAccessID = NULL,
+  DistrictID = NULL,
   InternetAccessIDClonedFrom = NULL,
+  SchoolYearID = NULL,
+  StateInternetAccessID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

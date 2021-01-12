@@ -6,14 +6,14 @@
 \usage{
 getMobileSSO(
   MobileSSOID,
+  CreatedTime = F,
+  MobileDevice = F,
+  ModifiedTime = F,
   SSOToken = F,
   SSOTokenExpirationDate = F,
   UserID = F,
-  MobileDevice = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

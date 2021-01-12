@@ -6,13 +6,13 @@
 \usage{
 getStudentSubAreaWaiver(
   StudentSubAreaWaiverID,
-  StudentSubAreaID = F,
-  Credits = F,
   Comment = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Credits = F,
   ModifiedTime = F,
+  StudentSubAreaID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

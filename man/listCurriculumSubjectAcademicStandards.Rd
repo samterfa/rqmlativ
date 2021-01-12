@@ -6,13 +6,13 @@
 \usage{
 listCurriculumSubjectAcademicStandards(
   searchConditionsList = NULL,
-  CurriculumSubjectAcademicStandardID = F,
-  CurriculumAcademicStandardID = F,
-  CurriculumSubjectID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  CurriculumAcademicStandardID = F,
+  CurriculumSubjectAcademicStandardID = F,
+  CurriculumSubjectID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

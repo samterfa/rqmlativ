@@ -5,9 +5,9 @@
 \title{Create an UnemploymentCompensationSubmissionMultipleWorksiteView}
 \usage{
 createUnemploymentCompensationSubmissionMultipleWorksiteView(
+  BuildingID = NULL,
   UnemploymentCompensationSubmissionID = NULL,
   Worksite = NULL,
-  BuildingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

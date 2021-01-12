@@ -7,10 +7,10 @@
 modifyGPABucketGroupGradeBucketStudentOverride(
   GPABucketGroupGradeBucketStudentOverrideID,
   GPABucketGroupGradeBucketID = NULL,
-  UseOverride = NULL,
+  GradeRequiredForGPABucket = NULL,
   Percent = NULL,
   StudentSectionID = NULL,
-  GradeRequiredForGPABucket = NULL,
+  UseOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

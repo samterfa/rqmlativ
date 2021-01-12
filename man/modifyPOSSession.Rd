@@ -6,9 +6,9 @@
 \usage{
 modifyPOSSession(
   POSSessionID,
-  UserID = NULL,
-  LineID = NULL,
   LastPingTime = NULL,
+  LineID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

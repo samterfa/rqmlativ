@@ -6,12 +6,12 @@
 \usage{
 listWorkflowLocks(
   searchConditionsList = NULL,
-  WorkflowLockID = F,
-  WorkflowInstanceID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  WorkflowInstanceID = F,
+  WorkflowLockID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,14 +5,14 @@
 \title{Create a VCRSection5Exception}
 \usage{
 createVCRSection5Exception(
+  DistrictID = NULL,
+  Message = NULL,
+  MessageType = NULL,
+  ProcessType = NULL,
+  SchoolYearID = NULL,
   VCRSection5V1ID = NULL,
   VCRSubmissionID = NULL,
   VCRSubmissionRunHistoryID = NULL,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  MessageType = NULL,
-  Message = NULL,
-  ProcessType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

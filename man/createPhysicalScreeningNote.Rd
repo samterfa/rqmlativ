@@ -5,8 +5,8 @@
 \title{Create a PhysicalScreeningNote}
 \usage{
 createPhysicalScreeningNote(
-  PhysicalScreeningID = NULL,
   Note = NULL,
+  PhysicalScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 getCourseCorequisite(
   CourseCorequisiteID,
-  CourseIDParent = F,
+  AutomaticRequestSetting = F,
   CourseCorequisiteGroupID = F,
   CourseIDMember = F,
-  AutomaticRequestSetting = F,
+  CourseIDParent = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

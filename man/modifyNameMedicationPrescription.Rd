@@ -6,14 +6,14 @@
 \usage{
 modifyNameMedicationPrescription(
   NameMedicationPrescriptionID,
-  NameMedicationID = NULL,
   ExpirationDate = NULL,
-  PrescriptionNumber = NULL,
-  NameIDPharmacy = NULL,
   IsVoid = NULL,
-  VoidNote = NULL,
+  NameIDPharmacy = NULL,
+  NameMedicationID = NULL,
+  PrescriptionNumber = NULL,
   UserIDVoidedBy = NULL,
   VoidedTime = NULL,
+  VoidNote = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,13 +5,13 @@
 \title{Create a StudentGradingScaleGroup}
 \usage{
 createStudentGradingScaleGroup(
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  EntityGroupKey = NULL,
-  Description = NULL,
-  StudentGradingScaleGroupIDClonedFrom = NULL,
-  GradingScaleGroupID = NULL,
   AllowTeachersToModify = NULL,
+  Description = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  GradingScaleGroupID = NULL,
+  SchoolYearID = NULL,
+  StudentGradingScaleGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

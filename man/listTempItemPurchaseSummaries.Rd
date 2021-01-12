@@ -6,13 +6,13 @@
 \usage{
 listTempItemPurchaseSummaries(
   searchConditionsList = NULL,
-  TempItemPurchaseSummaryID = F,
-  ItemDescription = F,
-  PurchaseTotal = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ItemDescription = F,
   ModifiedTime = F,
+  PurchaseTotal = F,
+  TempItemPurchaseSummaryID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

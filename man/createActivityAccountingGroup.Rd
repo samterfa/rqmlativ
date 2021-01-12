@@ -5,8 +5,8 @@
 \title{Create an ActivityAccountingGroup}
 \usage{
 createActivityAccountingGroup(
-  EntityID = NULL,
   AccountEntityOverlay = NULL,
+  EntityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

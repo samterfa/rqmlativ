@@ -6,13 +6,13 @@
 \usage{
 modifyGradeReference(
   GradeReferenceID,
-  GradeLevelID = NULL,
-  GradYear = NULL,
-  SchoolYearID = NULL,
   DistrictGroupKey = NULL,
-  MinutesPresentHalfDay = NULL,
-  MinutesPresentFullDay = NULL,
+  GradeLevelID = NULL,
   GradeReferenceIDClonedFrom = NULL,
+  GradYear = NULL,
+  MinutesPresentFullDay = NULL,
+  MinutesPresentHalfDay = NULL,
+  SchoolYearID = NULL,
   StateSTARGradeLevelMNID = NULL,
   entityId = 1,
   query = NULL,

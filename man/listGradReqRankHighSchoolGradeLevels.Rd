@@ -6,13 +6,13 @@
 \usage{
 listGradReqRankHighSchoolGradeLevels(
   searchConditionsList = NULL,
-  GradReqRankHighSchoolGradeLevelID = F,
+  CreatedTime = F,
   GPAMethodID = F,
   GradeLevelID = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradReqRankHighSchoolGradeLevelID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

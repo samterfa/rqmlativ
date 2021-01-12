@@ -5,13 +5,13 @@
 \title{Create a MCCCTermImport}
 \usage{
 createMCCCTermImport(
-  SchoolYearID = NULL,
+  Code = NULL,
+  Description = NULL,
   DistrictID = NULL,
   MCCCSubmissionID = NULL,
   MCCCSubmissionRunHistoryID = NULL,
+  SchoolYearID = NULL,
   TermType = NULL,
-  Code = NULL,
-  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

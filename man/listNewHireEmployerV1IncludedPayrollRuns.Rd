@@ -6,14 +6,14 @@
 \usage{
 listNewHireEmployerV1IncludedPayrollRuns(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  EmployerID = F,
+  ModifiedTime = F,
   NewHireEmployerV1IncludedPayrollRunID = F,
   NewHireExtractRunID = F,
-  EmployerID = F,
   PayrollRunID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

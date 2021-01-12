@@ -5,13 +5,13 @@
 \title{Create a Subtopic}
 \usage{
 createSubtopic(
+  DisplayOrder = NULL,
+  IsOneToMany = NULL,
+  Name = NULL,
   ObjectID = NULL,
   RelationshipPath = NULL,
-  Name = NULL,
-  IsOneToMany = NULL,
-  DisplayOrder = NULL,
-  SubtopicIDParent = NULL,
   SubjectID = NULL,
+  SubtopicIDParent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

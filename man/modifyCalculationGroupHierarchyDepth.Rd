@@ -6,12 +6,12 @@
 \usage{
 modifyCalculationGroupHierarchyDepth(
   CalculationGroupHierarchyDepthID,
-  EntityGroupKey = NULL,
+  CalculationGroupHierarchyDepthIDClonedFrom = NULL,
   CalculationGroupID = NULL,
   Code = NULL,
-  Description = NULL,
   DepthLevel = NULL,
-  CalculationGroupHierarchyDepthIDClonedFrom = NULL,
+  Description = NULL,
+  EntityGroupKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,15 +5,15 @@
 \title{Create a StudentSectionEarnedCreditsBucketGroup}
 \usage{
 createStudentSectionEarnedCreditsBucketGroup(
-  StudentEarnedCreditsBucketGroupID = NULL,
-  StudentSectionID = NULL,
-  StudentID = NULL,
   EarnedCreditsMethodID = NULL,
   EntityID = NULL,
   SchoolYearID = NULL,
-  UseEarnedCreditsTotalOverride = NULL,
+  StudentEarnedCreditsBucketGroupID = NULL,
+  StudentID = NULL,
+  StudentSectionID = NULL,
   TotalEarnedCreditsOverride = NULL,
   TotalFailedCreditsOverride = NULL,
+  UseEarnedCreditsTotalOverride = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

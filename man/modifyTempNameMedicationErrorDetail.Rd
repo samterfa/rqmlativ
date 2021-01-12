@@ -6,9 +6,9 @@
 \usage{
 modifyTempNameMedicationErrorDetail(
   TempNameMedicationErrorDetailID,
-  TempNameMedicationID = NULL,
   Error = NULL,
   ErrorDetail = NULL,
+  TempNameMedicationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

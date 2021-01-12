@@ -6,12 +6,12 @@
 \usage{
 getDirectCertificationDenialReason(
   DirectCertificationDenialReasonID,
-  DirectCertificationID = F,
-  DenialReasonID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DenialReasonID = F,
+  DirectCertificationID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

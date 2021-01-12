@@ -6,10 +6,10 @@
 \usage{
 modifyAddressRangeImportSchool(
   AddressRangeImportSchoolID,
+  AddressRangeImportSchoolIDClonedFrom = NULL,
+  Description = NULL,
   ImportSchoolCode = NULL,
   SchoolID = NULL,
-  Description = NULL,
-  AddressRangeImportSchoolIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

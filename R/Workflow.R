@@ -18,7 +18,7 @@
 	#' @return A list of TempMassApproveErrors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempMassApproveErrors <- function(searchConditionsList = NULL, TempMassApproveErrorID = F, ErrorMessage = F, DataObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ApprovalObjectDescription = F, Type = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempMassApproveErrors <- function(searchConditionsList = NULL, ApprovalObjectDescription = F, CreatedTime = F, DataObjectID = F, ErrorMessage = F, ModifiedTime = F, TempMassApproveErrorID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -43,7 +43,7 @@
 	#' @return A dataframe or of TempMassApproveError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempMassApproveError <- function(TempMassApproveErrorID, ErrorMessage = F, DataObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ApprovalObjectDescription = F, Type = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempMassApproveError <- function(TempMassApproveErrorID, ApprovalObjectDescription = F, CreatedTime = F, DataObjectID = F, ErrorMessage = F, ModifiedTime = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempMassApproveErrorID")
 
@@ -83,7 +83,7 @@
 	#' @return A newly created TempMassApproveError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempMassApproveError <- function(ErrorMessage = NULL, DataObjectID = NULL, ApprovalObjectDescription = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempMassApproveError <- function(ApprovalObjectDescription = NULL, DataObjectID = NULL, ErrorMessage = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -104,7 +104,7 @@
 	#' @return The modified TempMassApproveError
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempMassApproveError <- function(TempMassApproveErrorID, ErrorMessage = NULL, DataObjectID = NULL, ApprovalObjectDescription = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempMassApproveError <- function(TempMassApproveErrorID, ApprovalObjectDescription = NULL, DataObjectID = NULL, ErrorMessage = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -132,7 +132,7 @@
 	#' @return A list of WorkflowParameterMappings
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflowParameterMappings <- function(searchConditionsList = NULL, WorkflowParameterMappingID = F, ObjectWorkflowTriggerID = F, ParameterName = F, DataSource = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflowParameterMappings <- function(searchConditionsList = NULL, CreatedTime = F, DataSource = F, ModifiedTime = F, ObjectWorkflowTriggerID = F, ParameterName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowParameterMappingID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -157,7 +157,7 @@
 	#' @return A dataframe or of WorkflowParameterMapping
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflowParameterMapping <- function(WorkflowParameterMappingID, ObjectWorkflowTriggerID = F, ParameterName = F, DataSource = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflowParameterMapping <- function(WorkflowParameterMappingID, CreatedTime = F, DataSource = F, ModifiedTime = F, ObjectWorkflowTriggerID = F, ParameterName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowParameterMappingID")
 
@@ -197,7 +197,7 @@
 	#' @return A newly created WorkflowParameterMapping
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWorkflowParameterMapping <- function(ObjectWorkflowTriggerID = NULL, ParameterName = NULL, DataSource = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWorkflowParameterMapping <- function(DataSource = NULL, ObjectWorkflowTriggerID = NULL, ParameterName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -218,7 +218,7 @@
 	#' @return The modified WorkflowParameterMapping
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWorkflowParameterMapping <- function(WorkflowParameterMappingID, ObjectWorkflowTriggerID = NULL, ParameterName = NULL, DataSource = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWorkflowParameterMapping <- function(WorkflowParameterMappingID, DataSource = NULL, ObjectWorkflowTriggerID = NULL, ParameterName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -246,7 +246,7 @@
 	#' @return A list of ObjectWorkflowTriggerSecurityGroups
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listObjectWorkflowTriggerSecurityGroups <- function(searchConditionsList = NULL, ObjectWorkflowTriggerSecurityGroupID = F, ObjectWorkflowTriggerID = F, SecurityGroupIDAssigned = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listObjectWorkflowTriggerSecurityGroups <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, ObjectWorkflowTriggerID = F, ObjectWorkflowTriggerSecurityGroupID = F, SecurityGroupIDAssigned = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -271,7 +271,7 @@
 	#' @return A dataframe or of ObjectWorkflowTriggerSecurityGroup
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getObjectWorkflowTriggerSecurityGroup <- function(ObjectWorkflowTriggerSecurityGroupID, ObjectWorkflowTriggerID = F, SecurityGroupIDAssigned = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getObjectWorkflowTriggerSecurityGroup <- function(ObjectWorkflowTriggerSecurityGroupID, CreatedTime = F, ModifiedTime = F, ObjectWorkflowTriggerID = F, SecurityGroupIDAssigned = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ObjectWorkflowTriggerSecurityGroupID")
 
@@ -360,7 +360,7 @@
 	#' @return A list of CustomTasks
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCustomTasks <- function(searchConditionsList = NULL, CustomTaskID = F, CustomWorkflowID = F, Name = F, Description = F, Order = F, NextButtonText = F, TaskType = F, DataXML = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCustomTasks <- function(searchConditionsList = NULL, CreatedTime = F, CustomTaskID = F, CustomWorkflowID = F, DataXML = F, Description = F, ModifiedTime = F, Name = F, NextButtonText = F, Order = F, TaskType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -385,7 +385,7 @@
 	#' @return A dataframe or of CustomTask
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCustomTask <- function(CustomTaskID, CustomWorkflowID = F, Name = F, Description = F, Order = F, NextButtonText = F, TaskType = F, DataXML = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCustomTask <- function(CustomTaskID, CreatedTime = F, CustomWorkflowID = F, DataXML = F, Description = F, ModifiedTime = F, Name = F, NextButtonText = F, Order = F, TaskType = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CustomTaskID")
 
@@ -425,7 +425,7 @@
 	#' @return A newly created CustomTask
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCustomTask <- function(CustomWorkflowID = NULL, Name = NULL, Description = NULL, Order = NULL, NextButtonText = NULL, TaskType = NULL, DataXML = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCustomTask <- function(CustomWorkflowID = NULL, DataXML = NULL, Description = NULL, Name = NULL, NextButtonText = NULL, Order = NULL, TaskType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -446,7 +446,7 @@
 	#' @return The modified CustomTask
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCustomTask <- function(CustomTaskID, CustomWorkflowID = NULL, Name = NULL, Description = NULL, Order = NULL, NextButtonText = NULL, TaskType = NULL, DataXML = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCustomTask <- function(CustomTaskID, CustomWorkflowID = NULL, DataXML = NULL, Description = NULL, Name = NULL, NextButtonText = NULL, Order = NULL, TaskType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -474,7 +474,7 @@
 	#' @return A list of CustomTaskAssignedTos
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCustomTaskAssignedTos <- function(searchConditionsList = NULL, CustomTaskAssignedToID = F, CustomTaskID = F, UserIDAssignedTo = F, GroupIDSecurity = F, FieldIDToApplyUserTaskAccess = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCustomTaskAssignedTos <- function(searchConditionsList = NULL, CreatedTime = F, CustomTaskAssignedToID = F, CustomTaskID = F, FieldIDToApplyUserTaskAccess = F, GroupIDSecurity = F, ModifiedTime = F, UserIDAssignedTo = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -499,7 +499,7 @@
 	#' @return A dataframe or of CustomTaskAssignedTo
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCustomTaskAssignedTo <- function(CustomTaskAssignedToID, CustomTaskID = F, UserIDAssignedTo = F, GroupIDSecurity = F, FieldIDToApplyUserTaskAccess = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCustomTaskAssignedTo <- function(CustomTaskAssignedToID, CreatedTime = F, CustomTaskID = F, FieldIDToApplyUserTaskAccess = F, GroupIDSecurity = F, ModifiedTime = F, UserIDAssignedTo = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CustomTaskAssignedToID")
 
@@ -539,7 +539,7 @@
 	#' @return A newly created CustomTaskAssignedTo
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCustomTaskAssignedTo <- function(CustomTaskID = NULL, UserIDAssignedTo = NULL, GroupIDSecurity = NULL, FieldIDToApplyUserTaskAccess = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCustomTaskAssignedTo <- function(CustomTaskID = NULL, FieldIDToApplyUserTaskAccess = NULL, GroupIDSecurity = NULL, UserIDAssignedTo = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -560,7 +560,7 @@
 	#' @return The modified CustomTaskAssignedTo
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCustomTaskAssignedTo <- function(CustomTaskAssignedToID, CustomTaskID = NULL, UserIDAssignedTo = NULL, GroupIDSecurity = NULL, FieldIDToApplyUserTaskAccess = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCustomTaskAssignedTo <- function(CustomTaskAssignedToID, CustomTaskID = NULL, FieldIDToApplyUserTaskAccess = NULL, GroupIDSecurity = NULL, UserIDAssignedTo = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -588,7 +588,7 @@
 	#' @return A list of CustomUITaskElements
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCustomUITaskElements <- function(searchConditionsList = NULL, CustomUITaskElementID = F, CustomTaskID = F, ElementType = F, UITextValue = F, LinkTextValue = F, LinkHref = F, FieldID = F, Order = F, LimitTextField = F, TextFieldOptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCustomUITaskElements <- function(searchConditionsList = NULL, CreatedTime = F, CustomTaskID = F, CustomUITaskElementID = F, ElementType = F, FieldID = F, LimitTextField = F, LinkHref = F, LinkTextValue = F, ModifiedTime = F, Order = F, TextFieldOptions = F, UITextValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -613,7 +613,7 @@
 	#' @return A dataframe or of CustomUITaskElement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCustomUITaskElement <- function(CustomUITaskElementID, CustomTaskID = F, ElementType = F, UITextValue = F, LinkTextValue = F, LinkHref = F, FieldID = F, Order = F, LimitTextField = F, TextFieldOptions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCustomUITaskElement <- function(CustomUITaskElementID, CreatedTime = F, CustomTaskID = F, ElementType = F, FieldID = F, LimitTextField = F, LinkHref = F, LinkTextValue = F, ModifiedTime = F, Order = F, TextFieldOptions = F, UITextValue = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CustomUITaskElementID")
 
@@ -653,7 +653,7 @@
 	#' @return A newly created CustomUITaskElement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCustomUITaskElement <- function(CustomTaskID = NULL, ElementType = NULL, UITextValue = NULL, LinkTextValue = NULL, LinkHref = NULL, FieldID = NULL, Order = NULL, LimitTextField = NULL, TextFieldOptions = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCustomUITaskElement <- function(CustomTaskID = NULL, ElementType = NULL, FieldID = NULL, LimitTextField = NULL, LinkHref = NULL, LinkTextValue = NULL, Order = NULL, TextFieldOptions = NULL, UITextValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -674,7 +674,7 @@
 	#' @return The modified CustomUITaskElement
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCustomUITaskElement <- function(CustomUITaskElementID, CustomTaskID = NULL, ElementType = NULL, UITextValue = NULL, LinkTextValue = NULL, LinkHref = NULL, FieldID = NULL, Order = NULL, LimitTextField = NULL, TextFieldOptions = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCustomUITaskElement <- function(CustomUITaskElementID, CustomTaskID = NULL, ElementType = NULL, FieldID = NULL, LimitTextField = NULL, LinkHref = NULL, LinkTextValue = NULL, Order = NULL, TextFieldOptions = NULL, UITextValue = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -702,7 +702,7 @@
 	#' @return A list of CustomWorkflows
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listCustomWorkflows <- function(searchConditionsList = NULL, CustomWorkflowID = F, Name = F, Description = F, Module = F, Object = F, ObjectIDRoot = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScreenAttribute = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listCustomWorkflows <- function(searchConditionsList = NULL, CreatedTime = F, CustomWorkflowID = F, Description = F, ModifiedTime = F, Module = F, Name = F, Object = F, ObjectIDRoot = F, ScreenAttribute = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -727,7 +727,7 @@
 	#' @return A dataframe or of CustomWorkflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getCustomWorkflow <- function(CustomWorkflowID, Name = F, Description = F, Module = F, Object = F, ObjectIDRoot = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, ScreenAttribute = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getCustomWorkflow <- function(CustomWorkflowID, CreatedTime = F, Description = F, ModifiedTime = F, Module = F, Name = F, Object = F, ObjectIDRoot = F, ScreenAttribute = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "CustomWorkflowID")
 
@@ -767,7 +767,7 @@
 	#' @return A newly created CustomWorkflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createCustomWorkflow <- function(Name = NULL, Description = NULL, Module = NULL, Object = NULL, ObjectIDRoot = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createCustomWorkflow <- function(Description = NULL, Module = NULL, Name = NULL, Object = NULL, ObjectIDRoot = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -788,7 +788,7 @@
 	#' @return The modified CustomWorkflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyCustomWorkflow <- function(CustomWorkflowID, Name = NULL, Description = NULL, Module = NULL, Object = NULL, ObjectIDRoot = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyCustomWorkflow <- function(CustomWorkflowID, Description = NULL, Module = NULL, Name = NULL, Object = NULL, ObjectIDRoot = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -816,7 +816,7 @@
 	#' @return A list of TaskActionData
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTaskActionData <- function(searchConditionsList = NULL, TaskActionDataID = F, Order = F, ClassName = F, TaskID = F, Data = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTaskActionData <- function(searchConditionsList = NULL, ClassName = F, CreatedTime = F, Data = F, ModifiedTime = F, Order = F, TaskActionDataID = F, TaskID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -841,7 +841,7 @@
 	#' @return A dataframe or of TaskActionData
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTaskActionData <- function(TaskActionDataID, Order = F, ClassName = F, TaskID = F, Data = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTaskActionData <- function(TaskActionDataID, ClassName = F, CreatedTime = F, Data = F, ModifiedTime = F, Order = F, TaskID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskActionDataID")
 
@@ -881,7 +881,7 @@
 	#' @return A newly created TaskActionData
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTaskActionData <- function(Order = NULL, ClassName = NULL, TaskID = NULL, Data = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTaskActionData <- function(ClassName = NULL, Data = NULL, Order = NULL, TaskID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -902,7 +902,7 @@
 	#' @return The modified TaskActionData
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTaskActionData <- function(TaskActionDataID, Order = NULL, ClassName = NULL, TaskID = NULL, Data = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTaskActionData <- function(TaskActionDataID, ClassName = NULL, Data = NULL, Order = NULL, TaskID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -930,7 +930,7 @@
 	#' @return A list of ObjectWorkflowTriggers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listObjectWorkflowTriggers <- function(searchConditionsList = NULL, ObjectWorkflowTriggerID = F, WorkflowID = F, ObjectID = F, ObjectSaveMode = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listObjectWorkflowTriggers <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, ObjectID = F, ObjectSaveMode = F, ObjectWorkflowTriggerID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -955,7 +955,7 @@
 	#' @return A dataframe or of ObjectWorkflowTrigger
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getObjectWorkflowTrigger <- function(ObjectWorkflowTriggerID, WorkflowID = F, ObjectID = F, ObjectSaveMode = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getObjectWorkflowTrigger <- function(ObjectWorkflowTriggerID, CreatedTime = F, ModifiedTime = F, ObjectID = F, ObjectSaveMode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ObjectWorkflowTriggerID")
 
@@ -995,7 +995,7 @@
 	#' @return A newly created ObjectWorkflowTrigger
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createObjectWorkflowTrigger <- function(WorkflowID = NULL, ObjectID = NULL, ObjectSaveMode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createObjectWorkflowTrigger <- function(ObjectID = NULL, ObjectSaveMode = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1016,7 +1016,7 @@
 	#' @return The modified ObjectWorkflowTrigger
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyObjectWorkflowTrigger <- function(ObjectWorkflowTriggerID, WorkflowID = NULL, ObjectID = NULL, ObjectSaveMode = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyObjectWorkflowTrigger <- function(ObjectWorkflowTriggerID, ObjectID = NULL, ObjectSaveMode = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1044,7 +1044,7 @@
 	#' @return A list of TaskInstanceStatuses
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTaskInstanceStatuses <- function(searchConditionsList = NULL, TaskInstanceStatusID = F, TaskInstanceID = F, CurrentRecordIdentifier = F, CurrentRecordNumber = F, TotalRecordCount = F, PercentComplete = F, ProcessName = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTaskInstanceStatuses <- function(searchConditionsList = NULL, CurrentRecordIdentifier = F, CurrentRecordNumber = F, PercentComplete = F, ProcessName = F, TaskInstanceID = F, TaskInstanceStatusID = F, TotalRecordCount = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1069,7 +1069,7 @@
 	#' @return A dataframe or of TaskInstanceStatus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTaskInstanceStatus <- function(TaskInstanceStatusID, TaskInstanceID = F, CurrentRecordIdentifier = F, CurrentRecordNumber = F, TotalRecordCount = F, PercentComplete = F, ProcessName = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTaskInstanceStatus <- function(TaskInstanceStatusID, CurrentRecordIdentifier = F, CurrentRecordNumber = F, PercentComplete = F, ProcessName = F, TaskInstanceID = F, TotalRecordCount = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskInstanceStatusID")
 
@@ -1109,7 +1109,7 @@
 	#' @return A newly created TaskInstanceStatus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTaskInstanceStatus <- function(TaskInstanceID = NULL, CurrentRecordIdentifier = NULL, CurrentRecordNumber = NULL, TotalRecordCount = NULL, PercentComplete = NULL, ProcessName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTaskInstanceStatus <- function(CurrentRecordIdentifier = NULL, CurrentRecordNumber = NULL, PercentComplete = NULL, ProcessName = NULL, TaskInstanceID = NULL, TotalRecordCount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1130,7 +1130,7 @@
 	#' @return The modified TaskInstanceStatus
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTaskInstanceStatus <- function(TaskInstanceStatusID, TaskInstanceID = NULL, CurrentRecordIdentifier = NULL, CurrentRecordNumber = NULL, TotalRecordCount = NULL, PercentComplete = NULL, ProcessName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTaskInstanceStatus <- function(TaskInstanceStatusID, CurrentRecordIdentifier = NULL, CurrentRecordNumber = NULL, PercentComplete = NULL, ProcessName = NULL, TaskInstanceID = NULL, TotalRecordCount = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1158,7 +1158,7 @@
 	#' @return A list of TaskConnections
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTaskConnections <- function(searchConditionsList = NULL, TaskConnectionID = F, TaskIDPrevious = F, TaskIDNext = F, IsSkywardTaskConnection = F, Condition = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTaskConnections <- function(searchConditionsList = NULL, Condition = F, CreatedTime = F, IsSkywardTaskConnection = F, ModifiedTime = F, TaskConnectionID = F, TaskIDNext = F, TaskIDPrevious = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1183,7 +1183,7 @@
 	#' @return A dataframe or of TaskConnection
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTaskConnection <- function(TaskConnectionID, TaskIDPrevious = F, TaskIDNext = F, IsSkywardTaskConnection = F, Condition = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTaskConnection <- function(TaskConnectionID, Condition = F, CreatedTime = F, IsSkywardTaskConnection = F, ModifiedTime = F, TaskIDNext = F, TaskIDPrevious = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskConnectionID")
 
@@ -1223,7 +1223,7 @@
 	#' @return A newly created TaskConnection
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTaskConnection <- function(TaskIDPrevious = NULL, TaskIDNext = NULL, IsSkywardTaskConnection = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTaskConnection <- function(IsSkywardTaskConnection = NULL, TaskIDNext = NULL, TaskIDPrevious = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1244,7 +1244,7 @@
 	#' @return The modified TaskConnection
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTaskConnection <- function(TaskConnectionID, TaskIDPrevious = NULL, TaskIDNext = NULL, IsSkywardTaskConnection = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTaskConnection <- function(TaskConnectionID, IsSkywardTaskConnection = NULL, TaskIDNext = NULL, TaskIDPrevious = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1272,7 +1272,7 @@
 	#' @return A list of TaskInstanceUsers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTaskInstanceUsers <- function(searchConditionsList = NULL, TaskInstanceUserID = F, UserID = F, TaskInstanceID = F, Type = F, TypeCode = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTaskInstanceUsers <- function(searchConditionsList = NULL, CreatedTime = F, Description = F, ModifiedTime = F, TaskInstanceID = F, TaskInstanceUserID = F, Type = F, TypeCode = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1297,7 +1297,7 @@
 	#' @return A dataframe or of TaskInstanceUser
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTaskInstanceUser <- function(TaskInstanceUserID, UserID = F, TaskInstanceID = F, Type = F, TypeCode = F, Description = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTaskInstanceUser <- function(TaskInstanceUserID, CreatedTime = F, Description = F, ModifiedTime = F, TaskInstanceID = F, Type = F, TypeCode = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskInstanceUserID")
 
@@ -1337,7 +1337,7 @@
 	#' @return A newly created TaskInstanceUser
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTaskInstanceUser <- function(UserID = NULL, TaskInstanceID = NULL, Type = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTaskInstanceUser <- function(Description = NULL, TaskInstanceID = NULL, Type = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1358,7 +1358,7 @@
 	#' @return The modified TaskInstanceUser
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTaskInstanceUser <- function(TaskInstanceUserID, UserID = NULL, TaskInstanceID = NULL, Type = NULL, Description = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTaskInstanceUser <- function(TaskInstanceUserID, Description = NULL, TaskInstanceID = NULL, Type = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1386,7 +1386,7 @@
 	#' @return A list of TaskInstances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTaskInstances <- function(searchConditionsList = NULL, TaskInstanceID = F, TaskID = F, WorkflowInstanceID = F, QueueCode = F, Queue = F, QueueTime = F, QueuedDuration = F, StatusCode = F, Status = F, StartTime = F, StopTime = F, ProcessDuration = F, Variables = F, PreviousWarningHashes = F, TaskActionXml = F, Application = F, Hostname = F, ThreadName = F, QueueDescription = F, ProcessID = F, UserIDPerformer = F, UserIDImpersonator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LastActivity = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTaskInstances <- function(searchConditionsList = NULL, Application = F, CreatedTime = F, Hostname = F, LastActivity = F, ModifiedTime = F, PreviousWarningHashes = F, ProcessDuration = F, ProcessID = F, Queue = F, QueueCode = F, QueuedDuration = F, QueueDescription = F, QueueTime = F, StartTime = F, Status = F, StatusCode = F, StopTime = F, TaskActionXml = F, TaskID = F, TaskInstanceID = F, ThreadName = F, UserIDCreatedBy = F, UserIDImpersonator = F, UserIDModifiedBy = F, UserIDPerformer = F, Variables = F, WorkflowInstanceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1411,7 +1411,7 @@
 	#' @return A dataframe or of TaskInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTaskInstance <- function(TaskInstanceID, TaskID = F, WorkflowInstanceID = F, QueueCode = F, Queue = F, QueueTime = F, QueuedDuration = F, StatusCode = F, Status = F, StartTime = F, StopTime = F, ProcessDuration = F, Variables = F, PreviousWarningHashes = F, TaskActionXml = F, Application = F, Hostname = F, ThreadName = F, QueueDescription = F, ProcessID = F, UserIDPerformer = F, UserIDImpersonator = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, LastActivity = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTaskInstance <- function(TaskInstanceID, Application = F, CreatedTime = F, Hostname = F, LastActivity = F, ModifiedTime = F, PreviousWarningHashes = F, ProcessDuration = F, ProcessID = F, Queue = F, QueueCode = F, QueuedDuration = F, QueueDescription = F, QueueTime = F, StartTime = F, Status = F, StatusCode = F, StopTime = F, TaskActionXml = F, TaskID = F, ThreadName = F, UserIDCreatedBy = F, UserIDImpersonator = F, UserIDModifiedBy = F, UserIDPerformer = F, Variables = F, WorkflowInstanceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskInstanceID")
 
@@ -1451,7 +1451,7 @@
 	#' @return A newly created TaskInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTaskInstance <- function(TaskID = NULL, WorkflowInstanceID = NULL, Queue = NULL, QueueTime = NULL, Status = NULL, StartTime = NULL, StopTime = NULL, Application = NULL, Hostname = NULL, ThreadName = NULL, QueueDescription = NULL, ProcessID = NULL, UserIDPerformer = NULL, LastActivity = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTaskInstance <- function(Application = NULL, Hostname = NULL, LastActivity = NULL, ProcessID = NULL, Queue = NULL, QueueDescription = NULL, QueueTime = NULL, StartTime = NULL, Status = NULL, StopTime = NULL, TaskID = NULL, ThreadName = NULL, UserIDPerformer = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1472,7 +1472,7 @@
 	#' @return The modified TaskInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTaskInstance <- function(TaskInstanceID, TaskID = NULL, WorkflowInstanceID = NULL, Queue = NULL, QueueTime = NULL, Status = NULL, StartTime = NULL, StopTime = NULL, Application = NULL, Hostname = NULL, ThreadName = NULL, QueueDescription = NULL, ProcessID = NULL, UserIDPerformer = NULL, LastActivity = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTaskInstance <- function(TaskInstanceID, Application = NULL, Hostname = NULL, LastActivity = NULL, ProcessID = NULL, Queue = NULL, QueueDescription = NULL, QueueTime = NULL, StartTime = NULL, Status = NULL, StopTime = NULL, TaskID = NULL, ThreadName = NULL, UserIDPerformer = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1500,7 +1500,7 @@
 	#' @return A list of Tasks
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTasks <- function(searchConditionsList = NULL, TaskID = F, Name = F, Description = F, NavigationGroup = F, Queue = F, Type = F, TaskButtonCondition = F, AllowNextCondition = F, AllowNext = F, AllowPreviousCondition = F, AllowPrevious = F, AllowCancelCondition = F, AllowCancel = F, IsSkywardTask = F, ScreenXML = F, RemoveValidationContainerForUITask = F, WorkflowVersionID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DisableScreenValidationForUITask = F, ExpirationDurationOverrideCode = F, ExpirationDurationOverrideCustomDays = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTasks <- function(searchConditionsList = NULL, AllowCancel = F, AllowCancelCondition = F, AllowNext = F, AllowNextCondition = F, AllowPrevious = F, AllowPreviousCondition = F, CreatedTime = F, Description = F, DisableScreenValidationForUITask = F, ExpirationDurationOverrideCode = F, ExpirationDurationOverrideCustomDays = F, IsSkywardTask = F, ModifiedTime = F, Name = F, NavigationGroup = F, Queue = F, RemoveValidationContainerForUITask = F, ScreenXML = F, TaskButtonCondition = F, TaskID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowVersionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1525,7 +1525,7 @@
 	#' @return A dataframe or of Task
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTask <- function(TaskID, Name = F, Description = F, NavigationGroup = F, Queue = F, Type = F, TaskButtonCondition = F, AllowNextCondition = F, AllowNext = F, AllowPreviousCondition = F, AllowPrevious = F, AllowCancelCondition = F, AllowCancel = F, IsSkywardTask = F, ScreenXML = F, RemoveValidationContainerForUITask = F, WorkflowVersionID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, DisableScreenValidationForUITask = F, ExpirationDurationOverrideCode = F, ExpirationDurationOverrideCustomDays = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTask <- function(TaskID, AllowCancel = F, AllowCancelCondition = F, AllowNext = F, AllowNextCondition = F, AllowPrevious = F, AllowPreviousCondition = F, CreatedTime = F, Description = F, DisableScreenValidationForUITask = F, ExpirationDurationOverrideCode = F, ExpirationDurationOverrideCustomDays = F, IsSkywardTask = F, ModifiedTime = F, Name = F, NavigationGroup = F, Queue = F, RemoveValidationContainerForUITask = F, ScreenXML = F, TaskButtonCondition = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowVersionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TaskID")
 
@@ -1565,7 +1565,7 @@
 	#' @return A newly created Task
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTask <- function(Name = NULL, Description = NULL, NavigationGroup = NULL, Queue = NULL, Type = NULL, IsSkywardTask = NULL, WorkflowVersionID = NULL, ExpirationDurationOverrideCode = NULL, ExpirationDurationOverrideCustomDays = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTask <- function(Description = NULL, ExpirationDurationOverrideCode = NULL, ExpirationDurationOverrideCustomDays = NULL, IsSkywardTask = NULL, Name = NULL, NavigationGroup = NULL, Queue = NULL, Type = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1586,7 +1586,7 @@
 	#' @return The modified Task
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTask <- function(TaskID, Name = NULL, Description = NULL, NavigationGroup = NULL, Queue = NULL, Type = NULL, IsSkywardTask = NULL, WorkflowVersionID = NULL, ExpirationDurationOverrideCode = NULL, ExpirationDurationOverrideCustomDays = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTask <- function(TaskID, Description = NULL, ExpirationDurationOverrideCode = NULL, ExpirationDurationOverrideCustomDays = NULL, IsSkywardTask = NULL, Name = NULL, NavigationGroup = NULL, Queue = NULL, Type = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1614,7 +1614,7 @@
 	#' @return A list of Workflows
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflows <- function(searchConditionsList = NULL, WorkflowID = F, SkywardID = F, SkywardHash = F, Name = F, Module = F, Object = F, WorkflowVersionID = F, FullName = F, SearchableFullName = F, IsSkywardWorkflow = F, HasVersions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflows <- function(searchConditionsList = NULL, CreatedTime = F, FullName = F, HasVersions = F, IsSkywardWorkflow = F, ModifiedTime = F, Module = F, Name = F, Object = F, SearchableFullName = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowID = F, WorkflowVersionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1639,7 +1639,7 @@
 	#' @return A dataframe or of Workflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflow <- function(WorkflowID, SkywardID = F, SkywardHash = F, Name = F, Module = F, Object = F, WorkflowVersionID = F, FullName = F, SearchableFullName = F, IsSkywardWorkflow = F, HasVersions = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflow <- function(WorkflowID, CreatedTime = F, FullName = F, HasVersions = F, IsSkywardWorkflow = F, ModifiedTime = F, Module = F, Name = F, Object = F, SearchableFullName = F, SkywardHash = F, SkywardID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowVersionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowID")
 
@@ -1679,7 +1679,7 @@
 	#' @return A newly created Workflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWorkflow <- function(Name = NULL, Module = NULL, Object = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWorkflow <- function(Module = NULL, Name = NULL, Object = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1700,7 +1700,7 @@
 	#' @return The modified Workflow
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWorkflow <- function(WorkflowID, Name = NULL, Module = NULL, Object = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWorkflow <- function(WorkflowID, Module = NULL, Name = NULL, Object = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1728,7 +1728,7 @@
 	#' @return A list of WorkflowInstances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflowInstances <- function(searchConditionsList = NULL, WorkflowInstanceID = F, WorkflowVersionID = F, WorkflowInstanceIDRoot = F, LogID = F, StatusCode = F, Status = F, Success = F, ValidationFailureBehaviorCode = F, UserIDImpersonator = F, EntityID = F, ScheduledTaskInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AbortInitiated = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflowInstances <- function(searchConditionsList = NULL, AbortInitiated = F, CreatedTime = F, EntityID = F, LogID = F, ModifiedTime = F, ScheduledTaskInstanceID = F, Status = F, StatusCode = F, Success = F, UserIDCreatedBy = F, UserIDImpersonator = F, UserIDModifiedBy = F, ValidationFailureBehaviorCode = F, WorkflowInstanceID = F, WorkflowInstanceIDRoot = F, WorkflowVersionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1753,7 +1753,7 @@
 	#' @return A dataframe or of WorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflowInstance <- function(WorkflowInstanceID, WorkflowVersionID = F, WorkflowInstanceIDRoot = F, LogID = F, StatusCode = F, Status = F, Success = F, ValidationFailureBehaviorCode = F, UserIDImpersonator = F, EntityID = F, ScheduledTaskInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, AbortInitiated = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflowInstance <- function(WorkflowInstanceID, AbortInitiated = F, CreatedTime = F, EntityID = F, LogID = F, ModifiedTime = F, ScheduledTaskInstanceID = F, Status = F, StatusCode = F, Success = F, UserIDCreatedBy = F, UserIDImpersonator = F, UserIDModifiedBy = F, ValidationFailureBehaviorCode = F, WorkflowInstanceIDRoot = F, WorkflowVersionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowInstanceID")
 
@@ -1793,7 +1793,7 @@
 	#' @return A newly created WorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWorkflowInstance <- function(WorkflowVersionID = NULL, WorkflowInstanceIDRoot = NULL, LogID = NULL, Status = NULL, Success = NULL, ValidationFailureBehaviorCode = NULL, ScheduledTaskInstanceID = NULL, AbortInitiated = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWorkflowInstance <- function(AbortInitiated = NULL, LogID = NULL, ScheduledTaskInstanceID = NULL, Status = NULL, Success = NULL, ValidationFailureBehaviorCode = NULL, WorkflowInstanceIDRoot = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1814,7 +1814,7 @@
 	#' @return The modified WorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWorkflowInstance <- function(WorkflowInstanceID, WorkflowVersionID = NULL, WorkflowInstanceIDRoot = NULL, LogID = NULL, Status = NULL, Success = NULL, ValidationFailureBehaviorCode = NULL, ScheduledTaskInstanceID = NULL, AbortInitiated = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWorkflowInstance <- function(WorkflowInstanceID, AbortInitiated = NULL, LogID = NULL, ScheduledTaskInstanceID = NULL, Status = NULL, Success = NULL, ValidationFailureBehaviorCode = NULL, WorkflowInstanceIDRoot = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1842,7 +1842,7 @@
 	#' @return A list of WorkflowInstanceVariables
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflowInstanceVariables <- function(searchConditionsList = NULL, WorkflowInstanceVariableID = F, WorkflowInstanceID = F, ClassName = F, Name = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEncrypted = F, SchemaObjectUniqueID = F, SchemaFieldUniqueID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflowInstanceVariables <- function(searchConditionsList = NULL, ClassName = F, CreatedTime = F, IsEncrypted = F, ModifiedTime = F, Name = F, SchemaFieldUniqueID = F, SchemaObjectUniqueID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Value = F, WorkflowInstanceID = F, WorkflowInstanceVariableID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1867,7 +1867,7 @@
 	#' @return A dataframe or of WorkflowInstanceVariable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflowInstanceVariable <- function(WorkflowInstanceVariableID, WorkflowInstanceID = F, ClassName = F, Name = F, Value = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsEncrypted = F, SchemaObjectUniqueID = F, SchemaFieldUniqueID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflowInstanceVariable <- function(WorkflowInstanceVariableID, ClassName = F, CreatedTime = F, IsEncrypted = F, ModifiedTime = F, Name = F, SchemaFieldUniqueID = F, SchemaObjectUniqueID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Value = F, WorkflowInstanceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowInstanceVariableID")
 
@@ -1907,7 +1907,7 @@
 	#' @return A newly created WorkflowInstanceVariable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWorkflowInstanceVariable <- function(WorkflowInstanceID = NULL, ClassName = NULL, Name = NULL, Value = NULL, IsEncrypted = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWorkflowInstanceVariable <- function(ClassName = NULL, IsEncrypted = NULL, Name = NULL, Value = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1928,7 +1928,7 @@
 	#' @return The modified WorkflowInstanceVariable
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWorkflowInstanceVariable <- function(WorkflowInstanceVariableID, WorkflowInstanceID = NULL, ClassName = NULL, Name = NULL, Value = NULL, IsEncrypted = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWorkflowInstanceVariable <- function(WorkflowInstanceVariableID, ClassName = NULL, IsEncrypted = NULL, Name = NULL, Value = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1956,7 +1956,7 @@
 	#' @return A list of WorkflowVersions
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflowVersions <- function(searchConditionsList = NULL, WorkflowVersionID = F, SkywardHash = F, WorkflowID = F, Description = F, TaskID = F, Notes = F, Queue = F, Variables = F, ScreenAttribute = F, Portal = F, Parameters = F, RefreshScreen = F, Scope = F, AliasModule = F, AliasObject = F, AliasAction = F, FullAlias = F, NavigationGroups = F, IsSkywardWorkflowVersion = F, IsCurrentWorkflowVersion = F, HasWorkflowInstances = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, VariablesForClient = F, ExpirationDurationCode = F, ExpirationDurationCustomDays = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflowVersions <- function(searchConditionsList = NULL, AliasAction = F, AliasModule = F, AliasObject = F, CreatedTime = F, DataObjectDefaultSaveFlags = F, DataObjectPropertyDefaults = F, Description = F, ExpirationDurationCode = F, ExpirationDurationCustomDays = F, FullAlias = F, HasWorkflowInstances = F, IsCurrentWorkflowVersion = F, IsSkywardWorkflowVersion = F, ModifiedTime = F, NavigationGroups = F, Notes = F, Parameters = F, Portal = F, Queue = F, RefreshScreen = F, Scope = F, ScreenAttribute = F, SkywardHash = F, TaskID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Variables = F, VariablesForClient = F, WorkflowID = F, WorkflowVersionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -1981,7 +1981,7 @@
 	#' @return A dataframe or of WorkflowVersion
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflowVersion <- function(WorkflowVersionID, SkywardHash = F, WorkflowID = F, Description = F, TaskID = F, Notes = F, Queue = F, Variables = F, ScreenAttribute = F, Portal = F, Parameters = F, RefreshScreen = F, Scope = F, AliasModule = F, AliasObject = F, AliasAction = F, FullAlias = F, NavigationGroups = F, IsSkywardWorkflowVersion = F, IsCurrentWorkflowVersion = F, HasWorkflowInstances = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, VariablesForClient = F, ExpirationDurationCode = F, ExpirationDurationCustomDays = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflowVersion <- function(WorkflowVersionID, AliasAction = F, AliasModule = F, AliasObject = F, CreatedTime = F, DataObjectDefaultSaveFlags = F, DataObjectPropertyDefaults = F, Description = F, ExpirationDurationCode = F, ExpirationDurationCustomDays = F, FullAlias = F, HasWorkflowInstances = F, IsCurrentWorkflowVersion = F, IsSkywardWorkflowVersion = F, ModifiedTime = F, NavigationGroups = F, Notes = F, Parameters = F, Portal = F, Queue = F, RefreshScreen = F, Scope = F, ScreenAttribute = F, SkywardHash = F, TaskID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Variables = F, VariablesForClient = F, WorkflowID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowVersionID")
 
@@ -2021,7 +2021,7 @@
 	#' @return A newly created WorkflowVersion
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createWorkflowVersion <- function(WorkflowID = NULL, Description = NULL, TaskID = NULL, Notes = NULL, Queue = NULL, Scope = NULL, AliasModule = NULL, AliasObject = NULL, AliasAction = NULL, ExpirationDurationCode = NULL, ExpirationDurationCustomDays = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createWorkflowVersion <- function(AliasAction = NULL, AliasModule = NULL, AliasObject = NULL, Description = NULL, ExpirationDurationCode = NULL, ExpirationDurationCustomDays = NULL, Notes = NULL, Queue = NULL, Scope = NULL, TaskID = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2042,7 +2042,7 @@
 	#' @return The modified WorkflowVersion
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyWorkflowVersion <- function(WorkflowVersionID, WorkflowID = NULL, Description = NULL, TaskID = NULL, Notes = NULL, Queue = NULL, Scope = NULL, AliasModule = NULL, AliasObject = NULL, AliasAction = NULL, ExpirationDurationCode = NULL, ExpirationDurationCustomDays = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyWorkflowVersion <- function(WorkflowVersionID, AliasAction = NULL, AliasModule = NULL, AliasObject = NULL, Description = NULL, ExpirationDurationCode = NULL, ExpirationDurationCustomDays = NULL, Notes = NULL, Queue = NULL, Scope = NULL, TaskID = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2070,7 +2070,7 @@
 	#' @return A list of WorkflowLocks
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listWorkflowLocks <- function(searchConditionsList = NULL, WorkflowLockID = F, WorkflowInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listWorkflowLocks <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowInstanceID = F, WorkflowLockID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2095,7 +2095,7 @@
 	#' @return A dataframe or of WorkflowLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getWorkflowLock <- function(WorkflowLockID, WorkflowInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getWorkflowLock <- function(WorkflowLockID, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowInstanceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "WorkflowLockID")
 
@@ -2184,7 +2184,7 @@
 	#' @return A list of ApprovalTaskIdentifiers
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalTaskIdentifiers <- function(searchConditionsList = NULL, ApprovalTaskIdentifierID = F, TaskID = F, WorkflowVersionID = F, TaskType = F, TaskTypeCode = F, TypedApprovalTaskID = F, ApprovalType = F, ApprovalTypeCode = F, Level = F, Description = F, UseOrganizationChart = F, IsConditional = F, FilterData = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalTaskIdentifiers <- function(searchConditionsList = NULL, ApprovalTaskIdentifierID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, Description = F, FilterData = F, IsConditional = F, Level = F, ModifiedTime = F, TaskID = F, TaskType = F, TaskTypeCode = F, TypedApprovalTaskID = F, UseOrganizationChart = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowVersionID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2209,7 +2209,7 @@
 	#' @return A dataframe or of ApprovalTaskIdentifier
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalTaskIdentifier <- function(ApprovalTaskIdentifierID, TaskID = F, WorkflowVersionID = F, TaskType = F, TaskTypeCode = F, TypedApprovalTaskID = F, ApprovalType = F, ApprovalTypeCode = F, Level = F, Description = F, UseOrganizationChart = F, IsConditional = F, FilterData = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalTaskIdentifier <- function(ApprovalTaskIdentifierID, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, Description = F, FilterData = F, IsConditional = F, Level = F, ModifiedTime = F, TaskID = F, TaskType = F, TaskTypeCode = F, TypedApprovalTaskID = F, UseOrganizationChart = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowVersionID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalTaskIdentifierID")
 
@@ -2249,7 +2249,7 @@
 	#' @return A newly created ApprovalTaskIdentifier
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createApprovalTaskIdentifier <- function(TaskID = NULL, WorkflowVersionID = NULL, TaskType = NULL, TypedApprovalTaskID = NULL, ApprovalType = NULL, Level = NULL, Description = NULL, UseOrganizationChart = NULL, IsConditional = NULL, FilterData = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createApprovalTaskIdentifier <- function(ApprovalType = NULL, Description = NULL, FilterData = NULL, IsConditional = NULL, Level = NULL, TaskID = NULL, TaskType = NULL, TypedApprovalTaskID = NULL, UseOrganizationChart = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2270,7 +2270,7 @@
 	#' @return The modified ApprovalTaskIdentifier
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyApprovalTaskIdentifier <- function(ApprovalTaskIdentifierID, TaskID = NULL, WorkflowVersionID = NULL, TaskType = NULL, TypedApprovalTaskID = NULL, ApprovalType = NULL, Level = NULL, Description = NULL, UseOrganizationChart = NULL, IsConditional = NULL, FilterData = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyApprovalTaskIdentifier <- function(ApprovalTaskIdentifierID, ApprovalType = NULL, Description = NULL, FilterData = NULL, IsConditional = NULL, Level = NULL, TaskID = NULL, TaskType = NULL, TypedApprovalTaskID = NULL, UseOrganizationChart = NULL, WorkflowVersionID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2298,7 +2298,7 @@
 	#' @return A list of ApprovalTaskPresenters
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalTaskPresenters <- function(searchConditionsList = NULL, ApprovalTaskPresenterID = F, UserID = F, TaskInstanceID = F, Type = F, Description = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalTaskPresenters <- function(searchConditionsList = NULL, ApprovalObjectID = F, ApprovalTaskPresenterID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, Description = F, ModifiedTime = F, TaskInstanceID = F, Type = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2323,7 +2323,7 @@
 	#' @return A dataframe or of ApprovalTaskPresenter
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalTaskPresenter <- function(ApprovalTaskPresenterID, UserID = F, TaskInstanceID = F, Type = F, Description = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalTaskPresenter <- function(ApprovalTaskPresenterID, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, Description = F, ModifiedTime = F, TaskInstanceID = F, Type = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalTaskPresenterID")
 
@@ -2363,7 +2363,7 @@
 	#' @return A newly created ApprovalTaskPresenter
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createApprovalTaskPresenter <- function(UserID = NULL, TaskInstanceID = NULL, Type = NULL, Description = NULL, ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createApprovalTaskPresenter <- function(ApprovalObjectID = NULL, ApprovalType = NULL, Description = NULL, TaskInstanceID = NULL, Type = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2384,7 +2384,7 @@
 	#' @return The modified ApprovalTaskPresenter
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyApprovalTaskPresenter <- function(ApprovalTaskPresenterID, UserID = NULL, TaskInstanceID = NULL, Type = NULL, Description = NULL, ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyApprovalTaskPresenter <- function(ApprovalTaskPresenterID, ApprovalObjectID = NULL, ApprovalType = NULL, Description = NULL, TaskInstanceID = NULL, Type = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2412,7 +2412,7 @@
 	#' @return A list of ApprovalWorkflowLocks
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalWorkflowLocks <- function(searchConditionsList = NULL, ApprovalWorkflowLockID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalWorkflowLocks <- function(searchConditionsList = NULL, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalWorkflowLockID = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2437,7 +2437,7 @@
 	#' @return A dataframe or of ApprovalWorkflowLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalWorkflowLock <- function(ApprovalWorkflowLockID, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalWorkflowLock <- function(ApprovalWorkflowLockID, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalWorkflowLockID")
 
@@ -2477,7 +2477,7 @@
 	#' @return A newly created ApprovalWorkflowLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createApprovalWorkflowLock <- function(ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createApprovalWorkflowLock <- function(ApprovalObjectID = NULL, ApprovalType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2498,7 +2498,7 @@
 	#' @return The modified ApprovalWorkflowLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyApprovalWorkflowLock <- function(ApprovalWorkflowLockID, ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyApprovalWorkflowLock <- function(ApprovalWorkflowLockID, ApprovalObjectID = NULL, ApprovalType = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2526,7 +2526,7 @@
 	#' @return A list of ApprovalTaskClearances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalTaskClearances <- function(searchConditionsList = NULL, ApprovalTaskClearanceID = F, ApprovalTaskIdentifierID = F, GroupIDSecurity = F, Type = F, TypeCode = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalTaskClearances <- function(searchConditionsList = NULL, ApprovalTaskClearanceID = F, ApprovalTaskIdentifierID = F, CreatedTime = F, GroupIDSecurity = F, ModifiedTime = F, Type = F, TypeCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2551,7 +2551,7 @@
 	#' @return A dataframe or of ApprovalTaskClearance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalTaskClearance <- function(ApprovalTaskClearanceID, ApprovalTaskIdentifierID = F, GroupIDSecurity = F, Type = F, TypeCode = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalTaskClearance <- function(ApprovalTaskClearanceID, ApprovalTaskIdentifierID = F, CreatedTime = F, GroupIDSecurity = F, ModifiedTime = F, Type = F, TypeCode = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalTaskClearanceID")
 
@@ -2640,7 +2640,7 @@
 	#' @return A list of ApprovalWorkflowInstances
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalWorkflowInstances <- function(searchConditionsList = NULL, ApprovalWorkflowInstanceID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, WorkflowInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalWorkflowInstances <- function(searchConditionsList = NULL, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalWorkflowInstanceID = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowInstanceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2665,7 +2665,7 @@
 	#' @return A dataframe or of ApprovalWorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalWorkflowInstance <- function(ApprovalWorkflowInstanceID, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, WorkflowInstanceID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalWorkflowInstance <- function(ApprovalWorkflowInstanceID, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowInstanceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalWorkflowInstanceID")
 
@@ -2705,7 +2705,7 @@
 	#' @return A newly created ApprovalWorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createApprovalWorkflowInstance <- function(ApprovalType = NULL, ApprovalObjectID = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createApprovalWorkflowInstance <- function(ApprovalObjectID = NULL, ApprovalType = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2726,7 +2726,7 @@
 	#' @return The modified ApprovalWorkflowInstance
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyApprovalWorkflowInstance <- function(ApprovalWorkflowInstanceID, ApprovalType = NULL, ApprovalObjectID = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyApprovalWorkflowInstance <- function(ApprovalWorkflowInstanceID, ApprovalObjectID = NULL, ApprovalType = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2754,7 +2754,7 @@
 	#' @return A list of Templates
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTemplates <- function(searchConditionsList = NULL, TemplateID = F, Name = F, Description = F, DistrictID = F, EntityID = F, SchoolYearID = F, FiscalYearID = F, UserIDOwner = F, Published = F, Data = F, WorkflowID = F, TaskName = F, Controls = F, IsSkywardDefault = F, IsDefault = F, IsVisible = F, IsEditable = F, IsDeleteable = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsClonable = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTemplates <- function(searchConditionsList = NULL, Controls = F, CreatedTime = F, Data = F, Description = F, DistrictID = F, EntityID = F, FiscalYearID = F, IsClonable = F, IsDefault = F, IsDeleteable = F, IsEditable = F, IsSkywardDefault = F, IsVisible = F, ModifiedTime = F, Name = F, Published = F, SchoolYearID = F, TaskName = F, TemplateID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UserIDOwner = F, WorkflowID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2779,7 +2779,7 @@
 	#' @return A dataframe or of Template
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTemplate <- function(TemplateID, Name = F, Description = F, DistrictID = F, EntityID = F, SchoolYearID = F, FiscalYearID = F, UserIDOwner = F, Published = F, Data = F, WorkflowID = F, TaskName = F, Controls = F, IsSkywardDefault = F, IsDefault = F, IsVisible = F, IsEditable = F, IsDeleteable = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, IsClonable = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTemplate <- function(TemplateID, Controls = F, CreatedTime = F, Data = F, Description = F, DistrictID = F, EntityID = F, FiscalYearID = F, IsClonable = F, IsDefault = F, IsDeleteable = F, IsEditable = F, IsSkywardDefault = F, IsVisible = F, ModifiedTime = F, Name = F, Published = F, SchoolYearID = F, TaskName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, UserIDOwner = F, WorkflowID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TemplateID")
 
@@ -2819,7 +2819,7 @@
 	#' @return A newly created Template
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTemplate <- function(Name = NULL, Description = NULL, DistrictID = NULL, EntityID = NULL, SchoolYearID = NULL, FiscalYearID = NULL, UserIDOwner = NULL, Published = NULL, Data = NULL, WorkflowID = NULL, TaskName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTemplate <- function(Data = NULL, Description = NULL, DistrictID = NULL, EntityID = NULL, FiscalYearID = NULL, Name = NULL, Published = NULL, SchoolYearID = NULL, TaskName = NULL, UserIDOwner = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2840,7 +2840,7 @@
 	#' @return The modified Template
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTemplate <- function(TemplateID, Name = NULL, Description = NULL, DistrictID = NULL, EntityID = NULL, SchoolYearID = NULL, FiscalYearID = NULL, UserIDOwner = NULL, Published = NULL, Data = NULL, WorkflowID = NULL, TaskName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTemplate <- function(TemplateID, Data = NULL, Description = NULL, DistrictID = NULL, EntityID = NULL, FiscalYearID = NULL, Name = NULL, Published = NULL, SchoolYearID = NULL, TaskName = NULL, UserIDOwner = NULL, WorkflowID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2868,7 +2868,7 @@
 	#' @return A list of TemplateDefaults
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTemplateDefaults <- function(searchConditionsList = NULL, TemplateDefaultID = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTemplateDefaults <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, TemplateDefaultID = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -2893,7 +2893,7 @@
 	#' @return A dataframe or of TemplateDefault
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTemplateDefault <- function(TemplateDefaultID, TemplateID = F, UserID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTemplateDefault <- function(TemplateDefaultID, CreatedTime = F, ModifiedTime = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TemplateDefaultID")
 
@@ -2982,7 +2982,7 @@
 	#' @return A list of TemplatePreviousValues
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTemplatePreviousValues <- function(searchConditionsList = NULL, TemplatePreviousValueID = F, TemplateID = F, UserID = F, Data = F, Controls = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTemplatePreviousValues <- function(searchConditionsList = NULL, Controls = F, CreatedTime = F, Data = F, ModifiedTime = F, TemplateID = F, TemplatePreviousValueID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3007,7 +3007,7 @@
 	#' @return A dataframe or of TemplatePreviousValue
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTemplatePreviousValue <- function(TemplatePreviousValueID, TemplateID = F, UserID = F, Data = F, Controls = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTemplatePreviousValue <- function(TemplatePreviousValueID, Controls = F, CreatedTime = F, Data = F, ModifiedTime = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TemplatePreviousValueID")
 
@@ -3047,7 +3047,7 @@
 	#' @return A newly created TemplatePreviousValue
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTemplatePreviousValue <- function(TemplateID = NULL, UserID = NULL, Data = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTemplatePreviousValue <- function(Data = NULL, TemplateID = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3068,7 +3068,7 @@
 	#' @return The modified TemplatePreviousValue
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTemplatePreviousValue <- function(TemplatePreviousValueID, TemplateID = NULL, UserID = NULL, Data = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTemplatePreviousValue <- function(TemplatePreviousValueID, Data = NULL, TemplateID = NULL, UserID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3096,7 +3096,7 @@
 	#' @return A list of TemplateLastUseds
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTemplateLastUseds <- function(searchConditionsList = NULL, TemplateLastUsedID = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTemplateLastUseds <- function(searchConditionsList = NULL, CreatedTime = F, ModifiedTime = F, TemplateID = F, TemplateLastUsedID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3121,7 +3121,7 @@
 	#' @return A dataframe or of TemplateLastUsed
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTemplateLastUsed <- function(TemplateLastUsedID, TemplateID = F, UserID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTemplateLastUsed <- function(TemplateLastUsedID, CreatedTime = F, ModifiedTime = F, TemplateID = F, UserID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TemplateLastUsedID")
 
@@ -3210,7 +3210,7 @@
 	#' @return A list of SynchronousLocks
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listSynchronousLocks <- function(searchConditionsList = NULL, SynchronousLockID = F, WorkflowID = F, WorkflowInstanceID = F, LockingKey = F, Waiting = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listSynchronousLocks <- function(searchConditionsList = NULL, CreatedTime = F, LockingKey = F, ModifiedTime = F, SynchronousLockID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Waiting = F, WorkflowID = F, WorkflowInstanceID = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3235,7 +3235,7 @@
 	#' @return A dataframe or of SynchronousLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getSynchronousLock <- function(SynchronousLockID, WorkflowID = F, WorkflowInstanceID = F, LockingKey = F, Waiting = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getSynchronousLock <- function(SynchronousLockID, CreatedTime = F, LockingKey = F, ModifiedTime = F, UserIDCreatedBy = F, UserIDModifiedBy = F, Waiting = F, WorkflowID = F, WorkflowInstanceID = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "SynchronousLockID")
 
@@ -3275,7 +3275,7 @@
 	#' @return A newly created SynchronousLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createSynchronousLock <- function(WorkflowID = NULL, WorkflowInstanceID = NULL, LockingKey = NULL, Waiting = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createSynchronousLock <- function(LockingKey = NULL, Waiting = NULL, WorkflowID = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3296,7 +3296,7 @@
 	#' @return The modified SynchronousLock
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifySynchronousLock <- function(SynchronousLockID, WorkflowID = NULL, WorkflowInstanceID = NULL, LockingKey = NULL, Waiting = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifySynchronousLock <- function(SynchronousLockID, LockingKey = NULL, Waiting = NULL, WorkflowID = NULL, WorkflowInstanceID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3324,7 +3324,7 @@
 	#' @return A list of ApprovalSupervisors
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listApprovalSupervisors <- function(searchConditionsList = NULL, ApprovalSupervisorID = F, OrganizationChartRelationshipID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listApprovalSupervisors <- function(searchConditionsList = NULL, ApprovalObjectID = F, ApprovalSupervisorID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, ModifiedTime = F, OrganizationChartRelationshipID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3349,7 +3349,7 @@
 	#' @return A dataframe or of ApprovalSupervisor
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getApprovalSupervisor <- function(ApprovalSupervisorID, OrganizationChartRelationshipID = F, ApprovalType = F, ApprovalTypeCode = F, ApprovalObjectID = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getApprovalSupervisor <- function(ApprovalSupervisorID, ApprovalObjectID = F, ApprovalType = F, ApprovalTypeCode = F, CreatedTime = F, ModifiedTime = F, OrganizationChartRelationshipID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "ApprovalSupervisorID")
 
@@ -3389,7 +3389,7 @@
 	#' @return A newly created ApprovalSupervisor
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createApprovalSupervisor <- function(OrganizationChartRelationshipID = NULL, ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createApprovalSupervisor <- function(ApprovalObjectID = NULL, ApprovalType = NULL, OrganizationChartRelationshipID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3410,7 +3410,7 @@
 	#' @return The modified ApprovalSupervisor
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyApprovalSupervisor <- function(ApprovalSupervisorID, OrganizationChartRelationshipID = NULL, ApprovalType = NULL, ApprovalObjectID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyApprovalSupervisor <- function(ApprovalSupervisorID, ApprovalObjectID = NULL, ApprovalType = NULL, OrganizationChartRelationshipID = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3438,7 +3438,7 @@
 	#' @return A list of TempTemplateClones
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	listTempTemplateClones <- function(searchConditionsList = NULL, TempTemplateCloneID = F, Name = F, DistrictID = F, EntityID = F, SchoolYearID = F, FiscalYearID = F, District = F, Entity = F, SchoolYear = F, FiscalYear = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+	listTempTemplateClones <- function(searchConditionsList = NULL, CreatedTime = F, District = F, DistrictID = F, Entity = F, EntityID = F, FiscalYear = F, FiscalYearID = F, HasErrors = F, ModifiedTime = F, Name = F, SchoolYear = F, SchoolYearID = F, TaskName = F, TempTemplateCloneID = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowName = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3463,7 +3463,7 @@
 	#' @return A dataframe or of TempTemplateClone
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	getTempTemplateClone <- function(TempTemplateCloneID, Name = F, DistrictID = F, EntityID = F, SchoolYearID = F, FiscalYearID = F, District = F, Entity = F, SchoolYear = F, FiscalYear = F, UserIDCreatedBy = F, CreatedTime = F, UserIDModifiedBy = F, ModifiedTime = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	getTempTemplateClone <- function(TempTemplateCloneID, CreatedTime = F, District = F, DistrictID = F, Entity = F, EntityID = F, FiscalYear = F, FiscalYearID = F, HasErrors = F, ModifiedTime = F, Name = F, SchoolYear = F, SchoolYearID = F, TaskName = F, UserIDCreatedBy = F, UserIDModifiedBy = F, WorkflowName = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempTemplateCloneID")
 
@@ -3503,7 +3503,7 @@
 	#' @return A newly created TempTemplateClone
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	createTempTemplateClone <- function(Name = NULL, DistrictID = NULL, EntityID = NULL, SchoolYearID = NULL, FiscalYearID = NULL, District = NULL, Entity = NULL, SchoolYear = NULL, FiscalYear = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	createTempTemplateClone <- function(District = NULL, DistrictID = NULL, Entity = NULL, EntityID = NULL, FiscalYear = NULL, FiscalYearID = NULL, HasErrors = NULL, Name = NULL, SchoolYear = NULL, SchoolYearID = NULL, TaskName = NULL, WorkflowName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
@@ -3524,11 +3524,125 @@
 	#' @return The modified TempTemplateClone
 	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
 	#' @export
-	modifyTempTemplateClone <- function(TempTemplateCloneID, Name = NULL, DistrictID = NULL, EntityID = NULL, SchoolYearID = NULL, FiscalYearID = NULL, District = NULL, Entity = NULL, SchoolYear = NULL, FiscalYear = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+	modifyTempTemplateClone <- function(TempTemplateCloneID, District = NULL, DistrictID = NULL, Entity = NULL, EntityID = NULL, FiscalYear = NULL, FiscalYearID = NULL, HasErrors = NULL, Name = NULL, SchoolYear = NULL, SchoolYearID = NULL, TaskName = NULL, WorkflowName = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
 
 		params <- as.list(environment())
 
 		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
 
 		modifySkyObject(module = "Workflow", objectName = "TempTemplateClone", objectId = TempTemplateCloneID, body = list(DataObject = body), searchFields = append("TempTemplateCloneID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' List TempTemplateCloneErrors
+	#'
+	#' This function returns a dataframe or json object of TempTemplateCloneErrors
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempTemplateCloneErrors. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempTemplateCloneErrors.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempTemplateCloneError') to get more field paths.
+	#' @param searchConditionsList A list of search conditions to filter results which are joined by the searchConditionsGroupType. Of the form {FieldName} {ConditionType} {SearchCondition}. For example, c('StudentID LessEqual 500', 'LastName Like Ander\%'). Run \code{\link{listSearchConditionTypes}} for a list of ConditionTypes. Defaults to NULL (unfiltered).
+	#' @param searchConditionsGroupType The conjunction which joins multiple searchConditions in the searchConditionsList. Either 'Or' or 'And'. Defaults to 'And'.
+	#' @param searchSortFieldNamesList The list of fields sort results by. Defaults to NULL (unsorted).
+	#' @param searchSortFieldNamesDescendingList A list of T/F values corresponding to whether to sort each field in searchSortFieldNamesList in descending order. Defaults to F for each FieldName in searchSortFieldNamesList.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param page Results are paginated. The page of results to return. Default is 1.
+	#' @param pageSize Results are paginated. The number of records per page to return. Default is 100,000 (essentially all records for most objects).
+	#' @param flatten Whether to flatten results into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Workflow
+	#' @return A list of TempTemplateCloneErrors
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	listTempTemplateCloneErrors <- function(searchConditionsList = NULL, CreatedTime = F, Field = F, Message = F, ModifiedTime = F, TempTemplateCloneErrorID = F, TempTemplateCloneID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, searchConditionsGroupType = "And", searchSortFieldNamesList = NULL, searchSortFieldNamesDescendingList = NULL, entityId = 1, query = NULL, page = 1, pageSize = 100000, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		listSkyObjects(module = "Workflow", objectName = "TempTemplateCloneError", searchFields = searchFields %>% append(fieldPaths), page = page, pageSize = pageSize, SearchConditionsList = searchConditionsList, SearchConditionsGroupType = searchConditionsGroupType, SearchSortFieldNamesList = searchSortFieldNamesList, SearchSortFieldNamesDescendingList = searchSortFieldNamesDescendingList, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Get a TempTemplateCloneError
+	#'
+	#' This function returns a dataframe or json object of a TempTemplateCloneError
+	#' @param TempTemplateCloneErrorID The ID of the TempTemplateCloneError to return.
+	#' @param fieldNames A TRUE or FALSE value determining whether or not to return the field for the given TempTemplateCloneError. Defaults to FALSE for all return fields which, for convenience, returns all fields for the TempTemplateCloneError.
+	#' @param fieldPaths Fields from other objects with 'Many to One' or 'One to One' relationships to the given object listed as text. Run \code{\link{getSchemaForObjects}}('TempTemplateCloneError') to get more field paths.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Workflow
+	#' @return A dataframe or of TempTemplateCloneError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	getTempTemplateCloneError <- function(TempTemplateCloneErrorID, CreatedTime = F, Field = F, Message = F, ModifiedTime = F, TempTemplateCloneID = F, Type = F, UserIDCreatedBy = F, UserIDModifiedBy = F, fieldPaths = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment()) %>% purrr::keep(names(.) != "TempTemplateCloneErrorID")
+
+		searchFields <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper())
+
+		ifelse(!any(searchFields %>% unlist()), searchFields <- searchFields %>% names(), searchFields <- searchFields %>% purrr::keep(~.x) %>% names())
+
+		getSkyObject(module = "Workflow", objectName = "TempTemplateCloneError", objectId = TempTemplateCloneErrorID, searchFields = searchFields, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Delete a TempTemplateCloneError
+	#'
+	#' This function deletes a TempTemplateCloneError
+	#' @param TempTemplateCloneErrorID The ID of the TempTemplateCloneError to delete
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Workflow
+	#' @return The TempTemplateCloneErrorID of the deleted TempTemplateCloneError.
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	deleteTempTemplateCloneError <- function(TempTemplateCloneErrorID, ignoreWarnings = F, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		deleteSkyObject(module = "Workflow", objectName = "TempTemplateCloneError", objectId = TempTemplateCloneErrorID, ignoreWarnings = ignoreWarnings, entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Create a TempTemplateCloneError
+	#'
+	#' This function creates a TempTemplateCloneError
+	#' @param fieldNames The field values to give the created TempTemplateCloneError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Workflow
+	#' @return A newly created TempTemplateCloneError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	createTempTemplateCloneError <- function(Field = NULL, Message = NULL, TempTemplateCloneID = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		createSkyObject(module = "Workflow", objectName = "TempTemplateCloneError", body = list(DataObject = body), searchFields = append("TempTemplateCloneErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
+	}
+
+	#' Modify a TempTemplateCloneError
+	#'
+	#' This function modifies a TempTemplateCloneError
+	#' @param fieldNames The field values to give the modified TempTemplateCloneError. Each defaults to NULL.
+	#' @param entityId The id of the entity (school). Run \code{\link{listEntities}} for a list of entities. Defaults to 1 (district).
+	#' @param query Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.
+	#' @param flatten Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).
+	#' @param returnResponse Whether to return the server response instead of the results. Useful for debugging. Default is FALSE.
+	#' @concept Workflow
+	#' @return The modified TempTemplateCloneError
+	#' \href{https://help.skyward.com/}{Skyward's Knowledge Hub}
+	#' @export
+	modifyTempTemplateCloneError <- function(TempTemplateCloneErrorID, Field = NULL, Message = NULL, TempTemplateCloneID = NULL, Type = NULL, entityId = 1, query = NULL, flatten = T, returnResponse = F){
+
+		params <- as.list(environment())
+
+		body <- params %>% purrr::keep(names(params) %>% stringr::str_sub(1,1) == names(params) %>% stringr::str_sub(1,1) %>% stringr::str_to_upper()) %>% purrr::compact()
+
+		modifySkyObject(module = "Workflow", objectName = "TempTemplateCloneError", objectId = TempTemplateCloneErrorID, body = list(DataObject = body), searchFields = append("TempTemplateCloneErrorID", body %>% names()), entityId = entityId, query = query, flatten = flatten, returnResponse = returnResponse)
 	}

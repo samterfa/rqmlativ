@@ -5,14 +5,14 @@
 \title{Create an AtRiskIdentificationCriterion}
 \usage{
 createAtRiskIdentificationCriterion(
-  CriterionNumber = NULL,
   Code = NULL,
+  CriterionNumber = NULL,
   Description = NULL,
+  IsInvalid = NULL,
   IsStateRequirement = NULL,
   StateAtRiskCriterionTypeCodeID = NULL,
-  ValidYearLow = NULL,
   ValidYearHigh = NULL,
-  IsInvalid = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -8,6 +8,8 @@ modifyForm1099MYearStateCalendarYear(
   Form1099MYearStateCalendarYearID,
   Form1099MYearID = NULL,
   StateCalendarYearID = NULL,
+  StateID = NULL,
+  TaxStateID = NULL,
   Vendors = NULL,
   entityId = 1,
   query = NULL,

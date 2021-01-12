@@ -6,13 +6,13 @@
 \usage{
 listVisionScreeningSecuredNotes(
   searchConditionsList = NULL,
-  VisionScreeningSecuredNoteID = F,
-  VisionScreeningID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  VisionScreeningID = F,
+  VisionScreeningSecuredNoteID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

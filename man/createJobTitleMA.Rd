@@ -5,8 +5,8 @@
 \title{Create a JobTitleMA}
 \usage{
 createJobTitleMA(
-  Title = NULL,
   StaffID = NULL,
+  Title = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyNewHireExtractRun(
   NewHireExtractRunID,
+  EmploymentHireDateHigh = NULL,
+  EmploymentHireDateLow = NULL,
+  NewHireDateType = NULL,
   PostingDate = NULL,
   Version = NULL,
-  EmploymentHireDateLow = NULL,
-  EmploymentHireDateHigh = NULL,
-  NewHireDateType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

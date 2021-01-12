@@ -6,13 +6,13 @@
 \usage{
 modifyTab(
   TabID,
-  DistrictID = NULL,
-  StartTime = NULL,
-  StopTime = NULL,
-  DisplayName = NULL,
   Description = NULL,
+  DisplayName = NULL,
+  DistrictID = NULL,
   NumberOfColumns = NULL,
   NumberOfRows = NULL,
+  StartTime = NULL,
+  StopTime = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

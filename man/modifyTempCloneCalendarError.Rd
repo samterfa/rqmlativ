@@ -6,10 +6,10 @@
 \usage{
 modifyTempCloneCalendarError(
   TempCloneCalendarErrorID,
-  EntityName = NULL,
-  RecordType = NULL,
   Description = NULL,
+  EntityName = NULL,
   FailureReason = NULL,
+  RecordType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,8 +6,8 @@
 \usage{
 modifyCountry(
   CountryID,
-  Name = NULL,
   EdFiCountryID = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,12 +5,12 @@
 \title{Create a PluginEvent}
 \usage{
 createPluginEvent(
+  AuditIDSource = NULL,
+  LogID = NULL,
   PluginID = NULL,
   SchemaName = NULL,
-  TableName = NULL,
-  AuditIDSource = NULL,
   Status = NULL,
-  LogID = NULL,
+  TableName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

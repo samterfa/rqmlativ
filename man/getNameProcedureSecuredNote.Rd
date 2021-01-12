@@ -6,12 +6,12 @@
 \usage{
 getNameProcedureSecuredNote(
   NameProcedureSecuredNoteID,
+  CreatedTime = F,
+  ModifiedTime = F,
   NameProcedureID = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

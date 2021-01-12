@@ -6,13 +6,13 @@
 \usage{
 getTeacherSectionStandardsDisplayGradeBucketSetting(
   TeacherSectionStandardsDisplayGradeBucketSettingID,
-  TeacherSectionSettingID = F,
   CalculationGroupGradeBucketID = F,
-  ShowBucket = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  ShowBucket = F,
+  TeacherSectionSettingID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

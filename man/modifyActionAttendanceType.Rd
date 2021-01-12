@@ -6,10 +6,10 @@
 \usage{
 modifyActionAttendanceType(
   ActionAttendanceTypeID,
+  ActionAttendanceTypeIDClonedFrom = NULL,
   ActionID = NULL,
   AttendanceTypeID = NULL,
   EntityGroupKey = NULL,
-  ActionAttendanceTypeIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

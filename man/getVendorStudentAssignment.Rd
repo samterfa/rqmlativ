@@ -6,13 +6,13 @@
 \usage{
 getVendorStudentAssignment(
   VendorStudentAssignmentID,
-  StudentAssignmentID = F,
-  OneRosterVendorID = F,
-  VendorSourceID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  OneRosterVendorID = F,
+  StudentAssignmentID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VendorSourceID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

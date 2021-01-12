@@ -5,12 +5,12 @@
 \title{Create a StateSchoolClassificationMN}
 \usage{
 createStateSchoolClassificationMN(
+  Classification = NULL,
   Code = NULL,
   Description = NULL,
-  Classification = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

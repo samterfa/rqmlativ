@@ -6,10 +6,10 @@
 \usage{
 createACAYearOtherALEMemberOfAggregatedGroupV1(
   ACAYearID = NULL,
-  EmployerID = NULL,
-  EmployerBusinessNamePrinted = NULL,
   EmployerBusinessNameLine1ElectronicFile = NULL,
   EmployerBusinessNameLine2ElectronicFile = NULL,
+  EmployerBusinessNamePrinted = NULL,
+  EmployerID = NULL,
   EmployerIdentificationNumber = NULL,
   entityId = 1,
   query = NULL,

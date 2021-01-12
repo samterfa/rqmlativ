@@ -6,10 +6,10 @@
 \usage{
 createGASBStatementOfActivityReport(
   GASBExtractRunID = NULL,
-  NetAssetsProprietaryBeginningBalance = NULL,
-  NetAssetsProprietaryEndingBalance = NULL,
   NetAssetsGovernmentalBeginningBalance = NULL,
   NetAssetsGovernmentalEndingBalance = NULL,
+  NetAssetsProprietaryBeginningBalance = NULL,
+  NetAssetsProprietaryEndingBalance = NULL,
   NetAssetsTotalBeginningBalance = NULL,
   NetAssetsTotalEndingBalance = NULL,
   entityId = 1,

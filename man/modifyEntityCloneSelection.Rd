@@ -6,13 +6,13 @@
 \usage{
 modifyEntityCloneSelection(
   EntityCloneSelectionID,
+  Dependencies = NULL,
   EntityCloneRunID = NULL,
+  IsAdding = NULL,
+  IsDeleting = NULL,
+  IsUpdating = NULL,
   ModuleID = NULL,
   ObjectName = NULL,
-  IsAdding = NULL,
-  IsUpdating = NULL,
-  IsDeleting = NULL,
-  Dependencies = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,13 +6,13 @@
 \usage{
 modifyW2YearException(
   W2YearExceptionID,
-  W2YearID = NULL,
-  EmployeeID = NULL,
-  IsFatalException = NULL,
-  ExceptionType = NULL,
   Description = NULL,
+  EmployeeID = NULL,
+  ExceptionType = NULL,
+  IsFatalException = NULL,
   SourceType = NULL,
   W2YearEmployeeV1ID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

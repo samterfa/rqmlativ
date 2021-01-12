@@ -5,11 +5,11 @@
 \title{Create a CalculationGroupAcademicStandardGradeBucket}
 \usage{
 createCalculationGroupAcademicStandardGradeBucket(
+  CalculationGroupAcademicStandardGradeBucketIDClonedFrom = NULL,
   CalculationGroupAcademicStandardID = NULL,
   CalculationGroupGradeBucketID = NULL,
   CalculationType = NULL,
   EntityGroupKey = NULL,
-  CalculationGroupAcademicStandardGradeBucketIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

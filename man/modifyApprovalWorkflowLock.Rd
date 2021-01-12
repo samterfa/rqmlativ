@@ -6,8 +6,8 @@
 \usage{
 modifyApprovalWorkflowLock(
   ApprovalWorkflowLockID,
-  ApprovalType = NULL,
   ApprovalObjectID = NULL,
+  ApprovalType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

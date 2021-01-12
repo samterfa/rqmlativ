@@ -6,14 +6,14 @@
 \usage{
 modifyThreshold(
   ThresholdID,
-  WatchlistThresholdID = NULL,
-  TierID = NULL,
-  Name = NULL,
   Description = NULL,
+  Name = NULL,
   NumberOfRulesToMeet = NULL,
   Rank = NULL,
   RulesToMeet = NULL,
   ThresholdIDClonedFrom = NULL,
+  TierID = NULL,
+  WatchlistThresholdID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

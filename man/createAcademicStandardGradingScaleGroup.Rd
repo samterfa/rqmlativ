@@ -5,12 +5,12 @@
 \title{Create an AcademicStandardGradingScaleGroup}
 \usage{
 createAcademicStandardGradingScaleGroup(
-  GradingScaleGroupID = NULL,
+  AcademicStandardGradingScaleGroupIDClonedFrom = NULL,
   CalculationGroupID = NULL,
   Description = NULL,
   EntityGroupKey = NULL,
+  GradingScaleGroupID = NULL,
   IsDefaultGroup = NULL,
-  AcademicStandardGradingScaleGroupIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

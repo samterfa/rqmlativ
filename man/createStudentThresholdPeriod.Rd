@@ -5,15 +5,15 @@
 \title{Create a StudentThresholdPeriod}
 \usage{
 createStudentThresholdPeriod(
-  StudentDisciplineThresholdAttendanceReportRunHistoryID = NULL,
-  StudentAttendancePeriodID = NULL,
-  StudentSectionID = NULL,
-  SectionID = NULL,
   AttendancePeriodID = NULL,
   AttendanceTypeID = NULL,
   CalendarDayID = NULL,
-  Date = NULL,
   CountsTowardsThreshold = NULL,
+  Date = NULL,
+  SectionID = NULL,
+  StudentAttendancePeriodID = NULL,
+  StudentDisciplineThresholdAttendanceReportRunHistoryID = NULL,
+  StudentSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

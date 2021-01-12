@@ -5,8 +5,8 @@
 \title{Create a StandardPlacementMN}
 \usage{
 createStandardPlacementMN(
-  StateStandardCodeMNID = NULL,
   CurriculumYearID = NULL,
+  StateStandardCodeMNID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

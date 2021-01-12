@@ -6,13 +6,13 @@
 \usage{
 listTaskInstanceStatuses(
   searchConditionsList = NULL,
-  TaskInstanceStatusID = F,
-  TaskInstanceID = F,
   CurrentRecordIdentifier = F,
   CurrentRecordNumber = F,
-  TotalRecordCount = F,
   PercentComplete = F,
   ProcessName = F,
+  TaskInstanceID = F,
+  TaskInstanceStatusID = F,
+  TotalRecordCount = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

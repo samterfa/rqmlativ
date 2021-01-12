@@ -5,12 +5,12 @@
 \title{Create an UFARSExtractRun}
 \usage{
 createUFARSExtractRun(
+  AccountingPeriod = NULL,
+  DistrictNumber = NULL,
+  DistrictType = NULL,
   FiscalYearID = NULL,
   IsAudited = NULL,
   RegionNumber = NULL,
-  DistrictNumber = NULL,
-  DistrictType = NULL,
-  AccountingPeriod = NULL,
   Version = NULL,
   entityId = 1,
   query = NULL,

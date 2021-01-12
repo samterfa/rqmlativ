@@ -7,10 +7,10 @@
 createStateTransportationCategoryCodeMN(
   Code = NULL,
   Description = NULL,
-  IsTransported = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
   IsInvalid = NULL,
+  IsTransported = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

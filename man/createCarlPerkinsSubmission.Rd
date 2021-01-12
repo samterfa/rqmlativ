@@ -5,9 +5,9 @@
 \title{Create a CarlPerkinsSubmission}
 \usage{
 createCarlPerkinsSubmission(
+  CloseDate = NULL,
   Description = NULL,
   OpenDate = NULL,
-  CloseDate = NULL,
   SchoolYearID = NULL,
   entityId = 1,
   query = NULL,

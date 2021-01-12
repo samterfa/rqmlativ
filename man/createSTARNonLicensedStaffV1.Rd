@@ -5,14 +5,14 @@
 \title{Create a STARNonLicensedStaffV1}
 \usage{
 createSTARNonLicensedStaffV1(
-  STAREmployeeV1ID = NULL,
+  HoursWorkedPerWeek = NULL,
   SchoolNumber = NULL,
-  StateSTARNewNonLicensedStaffMNID = NULL,
-  StateSTARNewNonLicensedStaffMNValue = NULL,
+  STAREmployeeV1ID = NULL,
+  STAREmploymentType = NULL,
   StateSTARAssignmentCodeMNID = NULL,
   StateSTARAssignmentCodeMNValue = NULL,
-  HoursWorkedPerWeek = NULL,
-  STAREmploymentType = NULL,
+  StateSTARNewNonLicensedStaffMNID = NULL,
+  StateSTARNewNonLicensedStaffMNValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

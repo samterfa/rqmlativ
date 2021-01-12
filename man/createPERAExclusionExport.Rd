@@ -5,8 +5,8 @@
 \title{Create a PERAExclusionExport}
 \usage{
 createPERAExclusionExport(
-  PERAExclusionExtractRunID = NULL,
   MediaID = NULL,
+  PERAExclusionExtractRunID = NULL,
   Status = NULL,
   entityId = 1,
   query = NULL,

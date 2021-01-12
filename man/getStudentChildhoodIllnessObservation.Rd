@@ -6,12 +6,12 @@
 \usage{
 getStudentChildhoodIllnessObservation(
   StudentChildhoodIllnessObservationID,
-  StudentChildhoodIllnessID = F,
   ChildhoodIllnessObservationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  StudentChildhoodIllnessID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

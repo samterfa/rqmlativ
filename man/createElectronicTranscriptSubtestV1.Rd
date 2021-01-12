@@ -5,16 +5,16 @@
 \title{Create an ElectronicTranscriptSubtestV1}
 \usage{
 createElectronicTranscriptSubtestV1(
-  StudentTestID = NULL,
-  SubtestName = NULL,
+  EducationSubtest = NULL,
+  EducationTest = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  NoteMessage = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  EducationTest = NULL,
+  StudentTestID = NULL,
+  SubtestName = NULL,
   TestDate = NULL,
-  NoteMessage = NULL,
-  EducationSubtest = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

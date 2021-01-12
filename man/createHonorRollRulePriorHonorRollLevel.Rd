@@ -5,12 +5,12 @@
 \title{Create a HonorRollRulePriorHonorRollLevel}
 \usage{
 createHonorRollRulePriorHonorRollLevel(
-  HonorRollRulePriorHonorRollID = NULL,
-  HonorRollRunLevelHistoryID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
+  HonorRollRulePriorHonorRollID = NULL,
   HonorRollRulePriorHonorRollLevelIDClonedFrom = NULL,
+  HonorRollRunLevelHistoryID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

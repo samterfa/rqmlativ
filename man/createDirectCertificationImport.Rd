@@ -6,11 +6,11 @@
 \usage{
 createDirectCertificationImport(
   DistrictID = NULL,
-  SchoolYearID = NULL,
-  EligibilityCategoryIDFree = NULL,
-  MediaID = NULL,
   EffectiveDate = NULL,
+  EligibilityCategoryIDFree = NULL,
   EligibilityCategoryIDReduced = NULL,
+  MediaID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

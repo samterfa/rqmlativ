@@ -6,14 +6,14 @@
 \usage{
 getSectionCustomRequirement(
   SectionCustomRequirementID,
-  SectionID = F,
+  CreatedTime = F,
   CustomRequirementID = F,
+  ModifiedTime = F,
   SectionCustomRequirementIDClonedFrom = F,
   SectionCustomRequirementIDClonedTo = F,
+  SectionID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

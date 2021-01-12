@@ -6,8 +6,8 @@
 \usage{
 modifyNotificationUnrecordedClassAttendance(
   NotificationUnrecordedClassAttendanceID,
-  NotificationID = NULL,
   DisplayPeriodID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

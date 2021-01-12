@@ -6,12 +6,12 @@
 \usage{
 modifyTempMassSpecialProgramUtilityRecordType(
   TempMassSpecialProgramUtilityRecordTypeID,
+  EndDateFieldName = NULL,
+  RecordType = NULL,
   RecordTypeFriendlyName = NULL,
   SpecialProgramDBTableName = NULL,
-  RecordType = NULL,
   SpecialProgramID = NULL,
   StartDateFieldName = NULL,
-  EndDateFieldName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyTeacherSectionCategoryAnalyticsSetting(
   TeacherSectionCategoryAnalyticsSettingID,
+  AnalysisType = NULL,
   CategoryID = NULL,
   TeacherSectionSettingID = NULL,
-  AnalysisType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

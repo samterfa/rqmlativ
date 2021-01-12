@@ -6,8 +6,8 @@
 \usage{
 modifyTempGradeBucketFlagDetailGPAMethodError(
   TempGradeBucketFlagDetailGPAMethodErrorID,
-  GradeBucketFlagDetailGPAMethod = NULL,
   ErrorString = NULL,
+  GradeBucketFlagDetailGPAMethod = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

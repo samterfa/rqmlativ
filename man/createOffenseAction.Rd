@@ -5,10 +5,10 @@
 \title{Create an OffenseAction}
 \usage{
 createOffenseAction(
-  OffenseID = NULL,
   ActionID = NULL,
-  OffenseActionIDClonedFrom = NULL,
   IsReferralAction = NULL,
+  OffenseActionIDClonedFrom = NULL,
+  OffenseID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,14 +6,14 @@
 \usage{
 listCustomerItemTypeLimits(
   searchConditionsList = NULL,
-  CustomerItemTypeLimitID = F,
+  CreatedTime = F,
   CustomerID = F,
+  CustomerItemTypeLimitID = F,
   ItemTypeID = F,
+  ModifiedTime = F,
   SpendingLimit = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

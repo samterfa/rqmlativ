@@ -6,8 +6,8 @@
 \usage{
 createApplicationSectionElementGroup(
   ApplicationSectionID = NULL,
-  LineNumber = NULL,
   DisplayOrder = NULL,
+  LineNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

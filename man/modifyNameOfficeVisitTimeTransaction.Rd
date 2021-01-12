@@ -6,12 +6,12 @@
 \usage{
 modifyNameOfficeVisitTimeTransaction(
   NameOfficeVisitTimeTransactionID,
-  NameOfficeVisitID = NULL,
-  Status = NULL,
-  StartTime = NULL,
-  EndTime = NULL,
-  Note = NULL,
   DisplayOrder = NULL,
+  EndTime = NULL,
+  NameOfficeVisitID = NULL,
+  Note = NULL,
+  StartTime = NULL,
+  Status = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

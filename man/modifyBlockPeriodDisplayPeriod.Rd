@@ -6,9 +6,9 @@
 \usage{
 modifyBlockPeriodDisplayPeriod(
   BlockPeriodDisplayPeriodID,
+  BlockPeriodDisplayPeriodIDClonedFrom = NULL,
   BlockPeriodID = NULL,
   DisplayPeriodID = NULL,
-  BlockPeriodDisplayPeriodIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

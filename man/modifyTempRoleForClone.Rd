@@ -6,9 +6,9 @@
 \usage{
 modifyTempRoleForClone(
   TempRoleForCloneID,
-  Selected = NULL,
-  RoleName = NULL,
   Description = NULL,
+  RoleName = NULL,
+  Selected = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

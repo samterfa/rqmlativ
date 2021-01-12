@@ -6,8 +6,8 @@
 \usage{
 modifyNewHireEmployerV1IncludedPayrollRun(
   NewHireEmployerV1IncludedPayrollRunID,
-  NewHireExtractRunID = NULL,
   EmployerID = NULL,
+  NewHireExtractRunID = NULL,
   PayrollRunID = NULL,
   entityId = 1,
   query = NULL,

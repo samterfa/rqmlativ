@@ -6,12 +6,12 @@
 \usage{
 getNotificationUnrecordedClassAttendance(
   NotificationUnrecordedClassAttendanceID,
-  NotificationID = F,
-  DisplayPeriodID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DisplayPeriodID = F,
   ModifiedTime = F,
+  NotificationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

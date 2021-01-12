@@ -6,14 +6,14 @@
 \usage{
 getOnlinePaymentLog(
   OnlinePaymentLogID,
-  UserAccessID = F,
+  CreatedTime = F,
+  Endpoint = F,
+  ModifiedTime = F,
   RequestXML = F,
   ResponseXML = F,
-  Endpoint = F,
+  UserAccessID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

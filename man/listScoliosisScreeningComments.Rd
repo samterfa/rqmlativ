@@ -6,13 +6,13 @@
 \usage{
 listScoliosisScreeningComments(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  ModifiedTime = F,
+  ScoliosisCommentID = F,
   ScoliosisScreeningCommentID = F,
   ScoliosisScreeningID = F,
-  ScoliosisCommentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

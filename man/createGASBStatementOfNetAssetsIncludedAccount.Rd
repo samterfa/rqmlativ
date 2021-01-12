@@ -5,15 +5,15 @@
 \title{Create a GASBStatementOfNetAssetsIncludedAccount}
 \usage{
 createGASBStatementOfNetAssetsIncludedAccount(
-  GASBStatementOfNetAssetsRowID = NULL,
   AccountFiscalYearID = NULL,
-  Debit = NULL,
-  Credit = NULL,
-  OriginalBudget = NULL,
   BeginningBalance = NULL,
+  Credit = NULL,
+  Debit = NULL,
   EndingBalance = NULL,
+  GASBStatementOfNetAssetsRowID = NULL,
   IsGovernmental = NULL,
   IsProprietary = NULL,
+  OriginalBudget = NULL,
   YearToDateActivity = NULL,
   entityId = 1,
   query = NULL,

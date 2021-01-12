@@ -5,15 +5,15 @@
 \title{Create a StudentRank}
 \usage{
 createStudentRank(
-  StudentID = NULL,
-  RankRunHistoryID = NULL,
-  Value = NULL,
+  IsManualRank = NULL,
+  IsProspectiveRank = NULL,
   NumberInRank = NULL,
   NumberOutOf = NULL,
-  UseOverride = NULL,
-  IsProspectiveRank = NULL,
-  IsManualRank = NULL,
+  RankRunHistoryID = NULL,
   SchoolYearIDCohort = NULL,
+  StudentID = NULL,
+  UseOverride = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

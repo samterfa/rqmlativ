@@ -6,10 +6,10 @@
 \usage{
 modifyClosedGradingPeriodGradeChange(
   ClosedGradingPeriodGradeChangeID,
-  SectionID = NULL,
-  GradingPeriodID = NULL,
   CompletedTime = NULL,
+  GradingPeriodID = NULL,
   Reason = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

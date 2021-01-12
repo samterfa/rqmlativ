@@ -6,15 +6,15 @@
 \usage{
 listGradeReportStudentCTES(
   searchConditionsList = NULL,
+  CreatedTime = F,
   GradeReportStudentCTEID = F,
   GradeReportStudentID = F,
-  ProgramType = F,
+  ModifiedTime = F,
   ProgramName = F,
   ProgramStatus = F,
+  ProgramType = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

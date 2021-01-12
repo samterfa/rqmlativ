@@ -6,8 +6,8 @@
 \usage{
 modifyHearingScreeningObservation(
   HearingScreeningObservationID,
-  HearingScreeningID = NULL,
   HearingObservationID = NULL,
+  HearingScreeningID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

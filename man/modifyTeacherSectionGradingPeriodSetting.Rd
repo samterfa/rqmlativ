@@ -6,12 +6,12 @@
 \usage{
 modifyTeacherSectionGradingPeriodSetting(
   TeacherSectionGradingPeriodSettingID,
-  TeacherSectionSettingID = NULL,
   GradingPeriodID = NULL,
-  ShowGradeBuckets = NULL,
-  ShowAssignments = NULL,
-  ShowAssessments = NULL,
   IncludeMissingAssignments = NULL,
+  ShowAssessments = NULL,
+  ShowAssignments = NULL,
+  ShowGradeBuckets = NULL,
+  TeacherSectionSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

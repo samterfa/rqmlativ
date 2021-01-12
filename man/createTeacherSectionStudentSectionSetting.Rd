@@ -5,9 +5,9 @@
 \title{Create a TeacherSectionStudentSectionSetting}
 \usage{
 createTeacherSectionStudentSectionSetting(
-  TeacherSectionSettingID = NULL,
-  StudentSectionID = NULL,
   DisplayOrder = NULL,
+  StudentSectionID = NULL,
+  TeacherSectionSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

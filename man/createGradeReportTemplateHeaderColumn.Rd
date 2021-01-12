@@ -5,15 +5,15 @@
 \title{Create a GradeReportTemplateHeaderColumn}
 \usage{
 createGradeReportTemplateHeaderColumn(
-  GradeReportTemplateHeaderRowID = NULL,
-  SortNumber = NULL,
   FieldType = NULL,
-  LabelOverride = NULL,
   FreeformText = NULL,
-  RankMethodID = NULL,
-  GPAMethodID = NULL,
   GPABucketID = NULL,
+  GPAMethodID = NULL,
   GradeReportTemplateHeaderColumnIDClonedFrom = NULL,
+  GradeReportTemplateHeaderRowID = NULL,
+  LabelOverride = NULL,
+  RankMethodID = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

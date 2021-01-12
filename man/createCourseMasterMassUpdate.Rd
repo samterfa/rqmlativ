@@ -5,11 +5,11 @@
 \title{Create a CourseMasterMassUpdate}
 \usage{
 createCourseMasterMassUpdate(
-  UserIDRanBy = NULL,
   EntityID = NULL,
-  SchoolYearID = NULL,
-  RunReason = NULL,
   FilterParameters = NULL,
+  RunReason = NULL,
+  SchoolYearID = NULL,
+  UserIDRanBy = NULL,
   ValueParameters = NULL,
   entityId = 1,
   query = NULL,

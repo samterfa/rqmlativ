@@ -5,11 +5,11 @@
 \title{Create a MedicationRoute}
 \usage{
 createMedicationRoute(
-  NCIConceptCode = NULL,
-  FDACode = NULL,
-  Name = NULL,
   Description = NULL,
+  FDACode = NULL,
   IsActive = NULL,
+  Name = NULL,
+  NCIConceptCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

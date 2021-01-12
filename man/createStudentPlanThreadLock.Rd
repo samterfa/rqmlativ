@@ -5,8 +5,8 @@
 \title{Create a StudentPlanThreadLock}
 \usage{
 createStudentPlanThreadLock(
-  StudentPlanID = NULL,
   DistrictID = NULL,
+  StudentPlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

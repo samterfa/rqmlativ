@@ -6,8 +6,8 @@
 \usage{
 createLineTab(
   LineID = NULL,
-  TabID = NULL,
   Order = NULL,
+  TabID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

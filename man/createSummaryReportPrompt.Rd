@@ -5,10 +5,10 @@
 \title{Create a SummaryReportPrompt}
 \usage{
 createSummaryReportPrompt(
-  ReportQueueID = NULL,
   Label = NULL,
-  Value = NULL,
   Order = NULL,
+  ReportQueueID = NULL,
+  Value = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

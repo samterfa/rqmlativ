@@ -7,11 +7,11 @@
 listEmployerInformations(
   searchConditionsList = NULL,
   EmployerInformationID = F,
-  PlaceofEmployment = F,
+  FamilyGuardianID = F,
   Occupation = F,
+  PlaceofEmployment = F,
   WorkAddress = F,
   WorkPhoneNumber = F,
-  FamilyGuardianID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

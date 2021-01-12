@@ -5,16 +5,16 @@
 \title{Create a StudentAttendanceRunHistory}
 \usage{
 createStudentAttendanceRunHistory(
-  StudentAttendanceID = NULL,
-  MassCreateAttendanceByClassActivityRangeRunID = NULL,
+  CalendarDayID = NULL,
   IsActive = NULL,
   IsInsert = NULL,
-  OriginalIsGuardianNotified = NULL,
+  MassCreateAttendanceByClassActivityRangeRunID = NULL,
+  NewComment = NULL,
   NewIsGuardianNotified = NULL,
   OriginalComment = NULL,
-  NewComment = NULL,
+  OriginalIsGuardianNotified = NULL,
+  StudentAttendanceID = NULL,
   StudentID = NULL,
-  CalendarDayID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

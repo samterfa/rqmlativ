@@ -6,9 +6,9 @@
 \usage{
 getFamilyStudentAccounts(
   FamilyStudentAccountsID,
-  ReligionID = F,
-  PlaceOfWorship = F,
   FamilyID = F,
+  PlaceOfWorship = F,
+  ReligionID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

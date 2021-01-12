@@ -6,13 +6,13 @@
 \usage{
 getTempStudentActivityError(
   TempStudentActivityErrorID,
-  TempStudentActivityID = F,
+  CreatedTime = F,
   ErrorNumber = F,
   ErrorText = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  TempStudentActivityID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

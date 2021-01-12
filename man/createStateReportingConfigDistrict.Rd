@@ -6,14 +6,14 @@
 \usage{
 createStateReportingConfigDistrict(
   DistrictID = NULL,
+  EarnedCreditsMethodIDDefaultOverride = NULL,
   EnableEdFiDashboard = NULL,
   HistoricalTranscriptYears = NULL,
   NewHireDateType = NULL,
-  UnemploymentCompensationTaxRate = NULL,
-  UnemploymentCompensationTaxableWageBase = NULL,
-  STARCreditType = NULL,
   PERAExclusionType = NULL,
-  EarnedCreditsMethodIDDefaultOverride = NULL,
+  STARCreditType = NULL,
+  UnemploymentCompensationTaxableWageBase = NULL,
+  UnemploymentCompensationTaxRate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 modifyDisciplineLetterTemplateHeaderColumn(
   DisciplineLetterTemplateHeaderColumnID,
-  DisciplineLetterTemplateHeaderRowID = NULL,
-  SortNumber = NULL,
-  FieldType = NULL,
-  LabelOverride = NULL,
-  FreeformText = NULL,
   DisciplineLetterTemplateHeaderColumnIDClonedFrom = NULL,
+  DisciplineLetterTemplateHeaderRowID = NULL,
+  FieldType = NULL,
+  FreeformText = NULL,
+  LabelOverride = NULL,
+  SortNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

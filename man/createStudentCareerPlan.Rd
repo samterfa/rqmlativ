@@ -5,15 +5,15 @@
 \title{Create a StudentCareerPlan}
 \usage{
 createStudentCareerPlan(
-  CurriculumID = NULL,
-  StudentID = NULL,
-  StudentSubAreaID = NULL,
-  StudentCourseRequestID = NULL,
   CareerPlanGradeLevelID = NULL,
   Credits = NULL,
+  CurriculumID = NULL,
   IsStudentPermittedToChangeGradeLevel = NULL,
   IsStudentPermittedToDelete = NULL,
   StudentCareerPlanSummaryID = NULL,
+  StudentCourseRequestID = NULL,
+  StudentID = NULL,
+  StudentSubAreaID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,12 +5,12 @@
 \title{Create a ComplianceScheduleDetail}
 \usage{
 createComplianceScheduleDetail(
-  VaccinationYearComplianceScheduleID = NULL,
   AgeGradeType = NULL,
-  AgeUnit = NULL,
   AgeGradeValue = NULL,
-  DoseCount = NULL,
+  AgeUnit = NULL,
   ComplianceScheduleDetailIDClonedFrom = NULL,
+  DoseCount = NULL,
+  VaccinationYearComplianceScheduleID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

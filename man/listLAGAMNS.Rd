@@ -6,15 +6,11 @@
 \usage{
 listLAGAMNS(
   searchConditionsList = NULL,
-  LAGAMNID = F,
-  StudentTestID = F,
   Description = F,
-  ScaleScore = F,
   IsPassing = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
-  ModifiedTime = F,
+  LAGAMNID = F,
+  ScaleScore = F,
+  StudentTestID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

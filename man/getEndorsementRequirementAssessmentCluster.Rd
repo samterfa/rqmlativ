@@ -6,13 +6,13 @@
 \usage{
 getEndorsementRequirementAssessmentCluster(
   EndorsementRequirementAssessmentClusterID,
-  EndorsementRequirementAssessmentID = F,
-  EndorsementRequirementAssessmentClusterDefaultID = F,
   ClusterScoreType = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EndorsementRequirementAssessmentClusterDefaultID = F,
+  EndorsementRequirementAssessmentID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

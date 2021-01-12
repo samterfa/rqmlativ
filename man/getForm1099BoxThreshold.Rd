@@ -6,13 +6,13 @@
 \usage{
 getForm1099BoxThreshold(
   Form1099BoxThresholdID,
-  ConfigCalendarYearID = F,
-  Form1099TypeID = F,
   Amount = F,
-  UserIDCreatedBy = F,
+  ConfigCalendarYearID = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Form1099TypeID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

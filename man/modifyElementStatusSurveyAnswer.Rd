@@ -6,10 +6,10 @@
 \usage{
 modifyElementStatusSurveyAnswer(
   ElementStatusSurveyAnswerID,
-  ElementStatusID = NULL,
-  OnlineFormID = NULL,
-  NameID = NULL,
   ColumnName = NULL,
+  ElementStatusID = NULL,
+  NameID = NULL,
+  OnlineFormID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

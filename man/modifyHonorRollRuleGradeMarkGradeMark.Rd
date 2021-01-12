@@ -6,13 +6,13 @@
 \usage{
 modifyHonorRollRuleGradeMarkGradeMark(
   HonorRollRuleGradeMarkGradeMarkID,
-  HonorRollRuleGradeMarkID = NULL,
-  GradeMarkID = NULL,
-  IsException = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
+  GradeMarkID = NULL,
   HonorRollRuleGradeMarkGradeMarkIDClonedFrom = NULL,
+  HonorRollRuleGradeMarkID = NULL,
+  IsException = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

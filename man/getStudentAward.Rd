@@ -6,10 +6,10 @@
 \usage{
 getStudentAward(
   StudentAwardID,
-  AwardCategoryID = F,
-  AwardTypeID = F,
-  AwardHardwareID = F,
   ActivityID = F,
+  AwardCategoryID = F,
+  AwardHardwareID = F,
+  AwardTypeID = F,
   SchoolYearID = F,
   StudentID = F,
   fieldPaths = NULL,

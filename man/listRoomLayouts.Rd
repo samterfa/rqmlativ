@@ -6,13 +6,13 @@
 \usage{
 listRoomLayouts(
   searchConditionsList = NULL,
-  RoomLayoutID = F,
-  RoomID = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  RoomID = F,
+  RoomLayoutID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

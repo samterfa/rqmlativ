@@ -6,11 +6,11 @@
 \usage{
 modifyTempHierarchyDepth(
   TempHierarchyDepthID,
-  Code = NULL,
-  Description = NULL,
-  DepthLevel = NULL,
   AcademicStandardSetCode = NULL,
   AcademicStandardSetDescription = NULL,
+  Code = NULL,
+  DepthLevel = NULL,
+  Description = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

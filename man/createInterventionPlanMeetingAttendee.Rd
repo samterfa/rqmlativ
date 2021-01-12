@@ -5,8 +5,8 @@
 \title{Create an InterventionPlanMeetingAttendee}
 \usage{
 createInterventionPlanMeetingAttendee(
-  NameID = NULL,
   InterventionPlanMeetingID = NULL,
+  NameID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create a CertificationThirdPartyFormatCertificationGrade}
 \usage{
 createCertificationThirdPartyFormatCertificationGrade(
-  CertificationThirdPartyFormatID = NULL,
   CertificationGradeID = NULL,
+  CertificationThirdPartyFormatID = NULL,
   ImportValue = NULL,
   entityId = 1,
   query = NULL,

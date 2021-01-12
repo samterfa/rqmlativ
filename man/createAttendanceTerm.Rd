@@ -5,11 +5,11 @@
 \title{Create an AttendanceTerm}
 \usage{
 createAttendanceTerm(
-  Code = NULL,
-  StartDate = NULL,
-  EndDate = NULL,
-  CalendarID = NULL,
   AttendanceTermIDClonedFrom = NULL,
+  CalendarID = NULL,
+  Code = NULL,
+  EndDate = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

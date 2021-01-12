@@ -5,9 +5,9 @@
 \title{Create an ObjectWorkflowTrigger}
 \usage{
 createObjectWorkflowTrigger(
-  WorkflowID = NULL,
   ObjectID = NULL,
   ObjectSaveMode = NULL,
+  WorkflowID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

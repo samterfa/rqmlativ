@@ -6,14 +6,14 @@
 \usage{
 listGASBStatementOfActivityTotalViews(
   searchConditionsList = NULL,
+  DisplayOrder = F,
+  Expenses = F,
+  GASBExtractRunID = F,
   GASBStatementOfActivityTotalViewID = F,
   GovernmentalNetAmount = F,
   ProprietaryNetAmount = F,
-  TotalNetAmount = F,
-  Expenses = F,
   StatementOfActivityTotalType = F,
-  GASBExtractRunID = F,
-  DisplayOrder = F,
+  TotalNetAmount = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

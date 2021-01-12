@@ -5,8 +5,8 @@
 \title{Create a SectionSchedulingTeam}
 \usage{
 createSectionSchedulingTeam(
-  SectionID = NULL,
   SchedulingTeamID = NULL,
+  SectionID = NULL,
   SectionSchedulingTeamIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,

@@ -5,8 +5,8 @@
 \title{Create a CertificationThirdPartyFormatCertificationCompetency}
 \usage{
 createCertificationThirdPartyFormatCertificationCompetency(
-  CertificationThirdPartyFormatID = NULL,
   CertificationCompetencyID = NULL,
+  CertificationThirdPartyFormatID = NULL,
   ImportValue = NULL,
   entityId = 1,
   query = NULL,

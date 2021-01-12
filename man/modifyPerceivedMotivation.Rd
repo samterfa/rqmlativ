@@ -6,11 +6,11 @@
 \usage{
 modifyPerceivedMotivation(
   PerceivedMotivationID,
-  DistrictID = NULL,
-  SchoolYearID = NULL,
   Code = NULL,
   Description = NULL,
+  DistrictID = NULL,
   PerceivedMotivationIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

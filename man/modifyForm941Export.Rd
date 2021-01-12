@@ -6,8 +6,8 @@
 \usage{
 modifyForm941Export(
   Form941ExportID,
-  Form941ExtractRunID = NULL,
   Form = NULL,
+  Form941ExtractRunID = NULL,
   MediaID = NULL,
   Status = NULL,
   entityId = 1,

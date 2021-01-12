@@ -6,8 +6,8 @@
 \usage{
 modifyPERAExtractRun(
   PERAExtractRunID,
-  EntityID = NULL,
   Description = NULL,
+  EntityID = NULL,
   Version = NULL,
   entityId = 1,
   query = NULL,

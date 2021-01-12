@@ -5,8 +5,8 @@
 \title{Create a TempFailedStudentCourseRequestToReactivateDetail}
 \usage{
 createTempFailedStudentCourseRequestToReactivateDetail(
-  TempRecordToReactivatePrimaryKeyValue = NULL,
   Note = NULL,
+  TempRecordToReactivatePrimaryKeyValue = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

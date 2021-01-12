@@ -5,11 +5,11 @@
 \title{Create a Section504LifeActivity}
 \usage{
 createSection504LifeActivity(
-  DistrictID = NULL,
   Code = NULL,
   Description = NULL,
-  ValidYearLow = NULL,
+  DistrictID = NULL,
   ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

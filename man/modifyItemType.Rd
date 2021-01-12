@@ -6,10 +6,10 @@
 \usage{
 modifyItemType(
   ItemTypeID,
+  AccountID = NULL,
   Code = NULL,
   Description = NULL,
   DistrictID = NULL,
-  AccountID = NULL,
   ReimbursableMealTypeID = NULL,
   entityId = 1,
   query = NULL,

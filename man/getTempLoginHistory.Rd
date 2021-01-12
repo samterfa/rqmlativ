@@ -6,14 +6,14 @@
 \usage{
 getTempLoginHistory(
   TempLoginHistoryID,
-  DeviceType = F,
   BrowserType = F,
+  CreatedTime = F,
+  DeviceType = F,
+  ModifiedTime = F,
   OperatingSystemType = F,
   SuccesfulNumberOfLogins = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

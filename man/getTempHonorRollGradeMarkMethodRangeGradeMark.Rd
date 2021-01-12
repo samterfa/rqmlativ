@@ -6,13 +6,13 @@
 \usage{
 getTempHonorRollGradeMarkMethodRangeGradeMark(
   TempHonorRollGradeMarkMethodRangeGradeMarkID,
-  HonorRollGradeMarkMethodRangeGradeMarkID = F,
-  TempHonorRollGradeMarkMethodRangeID = F,
-  GradeMarkID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GradeMarkID = F,
+  HonorRollGradeMarkMethodRangeGradeMarkID = F,
   ModifiedTime = F,
+  TempHonorRollGradeMarkMethodRangeID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

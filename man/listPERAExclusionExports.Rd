@@ -6,14 +6,14 @@
 \usage{
 listPERAExclusionExports(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  MediaID = F,
+  ModifiedTime = F,
   PERAExclusionExportID = F,
   PERAExclusionExtractRunID = F,
-  MediaID = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -5,8 +5,8 @@
 \title{Create a SMIMN}
 \usage{
 createSMIMN(
-  StudentTestID = NULL,
   ScaleScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,10 +6,10 @@
 \usage{
 getStaffStudent(
   StaffStudentID,
-  StudentID = F,
-  StaffID = F,
   EntityID = F,
   SchoolYearID = F,
+  StaffID = F,
+  StudentID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

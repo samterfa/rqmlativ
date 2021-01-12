@@ -6,13 +6,13 @@
 \usage{
 getQueuedStudentSection(
   QueuedStudentSectionID,
-  StudentSectionID = F,
-  IsComplete = F,
-  SourceProcess = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  IsComplete = F,
   ModifiedTime = F,
+  SourceProcess = F,
+  StudentSectionID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

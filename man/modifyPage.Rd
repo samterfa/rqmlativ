@@ -6,8 +6,8 @@
 \usage{
 modifyPage(
   PageID,
-  ReportQueueID = NULL,
   PageNumber = NULL,
+  ReportQueueID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

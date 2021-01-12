@@ -5,12 +5,12 @@
 \title{Create a ScheduleBlocker}
 \usage{
 createScheduleBlocker(
-  StaffID = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  EntityID = NULL,
   Reason = NULL,
+  SchoolYearID = NULL,
+  StaffID = NULL,
+  StartDate = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

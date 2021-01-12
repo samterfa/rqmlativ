@@ -6,8 +6,8 @@
 \usage{
 modifyESSAExclusion(
   ESSAExclusionID,
-  DistrictID = NULL,
   Description = NULL,
+  DistrictID = NULL,
   Type = NULL,
   entityId = 1,
   query = NULL,

@@ -5,8 +5,8 @@
 \title{Create a NotificationAction}
 \usage{
 createNotificationAction(
-  NotificationID = NULL,
   ActionID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

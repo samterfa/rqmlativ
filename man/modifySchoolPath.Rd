@@ -6,11 +6,11 @@
 \usage{
 modifySchoolPath(
   SchoolPathID,
-  Name = NULL,
   DistrictID = NULL,
-  SchoolYearID = NULL,
-  SchoolPathTypeID = NULL,
+  Name = NULL,
   SchoolPathIDClonedFrom = NULL,
+  SchoolPathTypeID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,14 +5,14 @@
 \title{Create a CRDCLEAExportField}
 \usage{
 createCRDCLEAExportField(
+  Field = NULL,
   Header = NULL,
+  IsInvalid = NULL,
+  Order = NULL,
   Section = NULL,
   Table = NULL,
-  Field = NULL,
-  Order = NULL,
-  ValidYearLow = NULL,
   ValidYearHigh = NULL,
-  IsInvalid = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

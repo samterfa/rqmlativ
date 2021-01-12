@@ -6,9 +6,9 @@
 \usage{
 modifySkylertAttendanceExportAttendanceType(
   SkylertAttendanceExportAttendanceTypeID,
-  SkylertAttendanceExportSettingID = NULL,
-  AttendanceTypeID = NULL,
   AttendanceTypeCodeOverride = NULL,
+  AttendanceTypeID = NULL,
+  SkylertAttendanceExportSettingID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

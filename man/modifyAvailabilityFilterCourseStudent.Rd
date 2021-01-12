@@ -6,12 +6,12 @@
 \usage{
 modifyAvailabilityFilterCourseStudent(
   AvailabilityFilterCourseStudentID,
-  Description = NULL,
   AvailabilityCourseFilterID = NULL,
-  AvailabilityStudentFilterID = NULL,
   AvailabilityFilterCourseStudentIDClonedFrom = NULL,
-  ExcludeAvailabilityListInNightlyUpdateTask = NULL,
+  AvailabilityStudentFilterID = NULL,
+  Description = NULL,
   ExcludeAvailabilityListBoolUpdatedManually = NULL,
+  ExcludeAvailabilityListInNightlyUpdateTask = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

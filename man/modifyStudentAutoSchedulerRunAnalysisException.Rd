@@ -6,13 +6,13 @@
 \usage{
 modifyStudentAutoSchedulerRunAnalysisException(
   StudentAutoSchedulerRunAnalysisExceptionID,
-  StudentAutoSchedulerRunAnalysisID = NULL,
-  StudentAutoSchedulerStudentCourseRequestID = NULL,
-  SeverityType = NULL,
-  Message = NULL,
   CourseCode = NULL,
   CourseDescription = NULL,
+  Message = NULL,
   SectionCode = NULL,
+  SeverityType = NULL,
+  StudentAutoSchedulerRunAnalysisID = NULL,
+  StudentAutoSchedulerStudentCourseRequestID = NULL,
   StudentFullName = NULL,
   StudentNumber = NULL,
   entityId = 1,

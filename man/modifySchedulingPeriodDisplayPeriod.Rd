@@ -6,10 +6,10 @@
 \usage{
 modifySchedulingPeriodDisplayPeriod(
   SchedulingPeriodDisplayPeriodID,
-  SchedulingPeriodID = NULL,
   DisplayPeriodID = NULL,
   EntityGroupKey = NULL,
   SchedulingPeriodDisplayPeriodIDClonedFrom = NULL,
+  SchedulingPeriodID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,12 +6,12 @@
 \usage{
 getOnlineFormEntity(
   OnlineFormEntityID,
-  OnlineFormID = F,
-  EntityID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityID = F,
   ModifiedTime = F,
+  OnlineFormID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,11 +5,11 @@
 \title{Create an Import}
 \usage{
 createImport(
-  Name = NULL,
-  Description = NULL,
-  FileType = NULL,
-  FileHasHeaderRow = NULL,
   DateFormat = NULL,
+  Description = NULL,
+  FileHasHeaderRow = NULL,
+  FileType = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

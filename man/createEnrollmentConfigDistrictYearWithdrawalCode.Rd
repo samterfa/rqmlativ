@@ -6,9 +6,9 @@
 \usage{
 createEnrollmentConfigDistrictYearWithdrawalCode(
   ConfigDistrictYearID = NULL,
-  WithdrawalCodeID = NULL,
-  Type = NULL,
   ConfigDistrictYearWithdrawalCodeIDClonedFrom = NULL,
+  Type = NULL,
+  WithdrawalCodeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

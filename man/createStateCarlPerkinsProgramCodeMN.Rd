@@ -6,12 +6,12 @@
 \usage{
 createStateCarlPerkinsProgramCodeMN(
   Code = NULL,
-  Description = NULL,
   CourseCode = NULL,
   CourseTitle = NULL,
-  ValidYearLow = NULL,
-  ValidYearHigh = NULL,
+  Description = NULL,
   IsInvalid = NULL,
+  ValidYearHigh = NULL,
+  ValidYearLow = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyUserDock(
   UserDockID,
+  DisplayOrder = NULL,
   Module = NULL,
+  Name = NULL,
   Object = NULL,
   Screen = NULL,
-  DisplayOrder = NULL,
-  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

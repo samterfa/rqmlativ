@@ -6,13 +6,13 @@
 \usage{
 listLDAPGroups(
   searchConditionsList = NULL,
-  LDAPGroupID = F,
   CommonName = F,
-  DistinguishedName = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  DistinguishedName = F,
+  LDAPGroupID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

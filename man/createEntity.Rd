@@ -5,16 +5,16 @@
 \title{Create an Entity}
 \usage{
 createEntity(
-  DistrictID = NULL,
-  SchoolYearIDCurrent = NULL,
-  Name = NULL,
-  IsDistrictWide = NULL,
-  IsSystemWide = NULL,
   Code = NULL,
-  ReportToState = NULL,
+  DistrictID = NULL,
+  EdFiSchoolID = NULL,
   EnforceAddressRangeDefaults = NULL,
   IlluminateSiteTypeOverride = NULL,
-  EdFiSchoolID = NULL,
+  IsDistrictWide = NULL,
+  IsSystemWide = NULL,
+  Name = NULL,
+  ReportToState = NULL,
+  SchoolYearIDCurrent = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

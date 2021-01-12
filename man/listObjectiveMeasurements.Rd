@@ -6,13 +6,13 @@
 \usage{
 listObjectiveMeasurements(
   searchConditionsList = NULL,
-  ObjectiveMeasurementID = F,
-  ObjectiveID = F,
-  MeasurementID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MeasurementID = F,
   ModifiedTime = F,
+  ObjectiveID = F,
+  ObjectiveMeasurementID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

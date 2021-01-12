@@ -6,8 +6,8 @@
 \usage{
 createTempFileDestinationResult(
   DestinationPath = NULL,
-  TestType = NULL,
   ErrorMessage = NULL,
+  TestTypeCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,9 +6,9 @@
 \usage{
 modifyTempNameError(
   TempNameErrorID,
-  NameID = NULL,
   FirstName = NULL,
   LastName = NULL,
+  NameID = NULL,
   Note = NULL,
   entityId = 1,
   query = NULL,

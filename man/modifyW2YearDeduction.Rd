@@ -6,10 +6,10 @@
 \usage{
 modifyW2YearDeduction(
   W2YearDeductionID,
-  W2YearID = NULL,
   DeductionID = NULL,
   FederalW2BoxID = NULL,
   W2YearBox14SetID = NULL,
+  W2YearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

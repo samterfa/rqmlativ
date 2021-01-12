@@ -6,14 +6,14 @@
 \usage{
 getApprovalSupervisor(
   ApprovalSupervisorID,
-  OrganizationChartRelationshipID = F,
+  ApprovalObjectID = F,
   ApprovalType = F,
   ApprovalTypeCode = F,
-  ApprovalObjectID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  OrganizationChartRelationshipID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

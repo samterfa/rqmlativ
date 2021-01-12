@@ -5,11 +5,11 @@
 \title{Create an ApplicationSectionDependentElementGroup}
 \usage{
 createApplicationSectionDependentElementGroup(
-  ApplicationSectionID = NULL,
   ApplicationSectionElementGroupID = NULL,
-  ApplicationSectionElementIDShowWhenTrue = NULL,
-  ApplicationSectionElementIDShowWhenFalse = NULL,
   ApplicationSectionElementIDGovernor = NULL,
+  ApplicationSectionElementIDShowWhenFalse = NULL,
+  ApplicationSectionElementIDShowWhenTrue = NULL,
+  ApplicationSectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

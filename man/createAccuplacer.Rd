@@ -5,15 +5,15 @@
 \title{Create an Accuplacer}
 \usage{
 createAccuplacer(
-  StudentTestID = NULL,
-  MathematicsPlacement = NULL,
-  ReadingPlacement = NULL,
-  WritingPlacement = NULL,
-  WriterPlacer2017 = NULL,
   ABEMathematics = NULL,
   ABEReading = NULL,
   ABEWriting = NULL,
   EssayPlacement = NULL,
+  MathematicsPlacement = NULL,
+  ReadingPlacement = NULL,
+  StudentTestID = NULL,
+  WritePlacer = NULL,
+  WritingPlacement = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

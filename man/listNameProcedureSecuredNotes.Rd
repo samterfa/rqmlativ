@@ -6,13 +6,13 @@
 \usage{
 listNameProcedureSecuredNotes(
   searchConditionsList = NULL,
-  NameProcedureSecuredNoteID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   NameProcedureID = F,
+  NameProcedureSecuredNoteID = F,
   Note = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

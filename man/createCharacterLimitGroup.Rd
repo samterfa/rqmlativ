@@ -5,9 +5,9 @@
 \title{Create a CharacterLimitGroup}
 \usage{
 createCharacterLimitGroup(
+  Code = NULL,
   Description = NULL,
   MaxLength = NULL,
-  Code = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

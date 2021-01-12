@@ -6,12 +6,12 @@
 \usage{
 getStudentOfficeVisitReason(
   StudentOfficeVisitReasonID,
-  StudentOfficeVisitID = F,
-  OfficeVisitReasonID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  OfficeVisitReasonID = F,
+  StudentOfficeVisitID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -6,8 +6,8 @@
 \usage{
 modifyDemographicsTempException(
   TempExceptionID,
-  Message = NULL,
   LineNumber = NULL,
+  Message = NULL,
   NameLFM = NULL,
   entityId = 1,
   query = NULL,

@@ -5,11 +5,11 @@
 \title{Create an ESSASchoolV1}
 \usage{
 createESSASchoolV1(
-  ESSAExpenditureID = NULL,
-  SchoolName = NULL,
   Enrollment = NULL,
+  ESSAExpenditureID = NULL,
   ESSASubmissionID = NULL,
   ESSASubmissionRunHistoryID = NULL,
+  SchoolName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

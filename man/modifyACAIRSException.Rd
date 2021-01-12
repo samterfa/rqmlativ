@@ -6,11 +6,11 @@
 \usage{
 modifyACAIRSException(
   ACAIRSExceptionID,
-  ACATransmissionID = NULL,
   ACASubmissionRunHistoryID = NULL,
+  ACATransmissionID = NULL,
+  Message = NULL,
   MessageType = NULL,
   RuleNumber = NULL,
-  Message = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

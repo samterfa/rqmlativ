@@ -6,14 +6,14 @@
 \usage{
 listWageDetailExports(
   searchConditionsList = NULL,
-  WageDetailExportID = F,
-  WageDetailExtractRunID = F,
+  CreatedTime = F,
   MediaID = F,
+  ModifiedTime = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
+  WageDetailExportID = F,
+  WageDetailExtractRunID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

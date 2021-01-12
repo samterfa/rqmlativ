@@ -6,13 +6,13 @@
 \usage{
 modifyStudentMassUpdate(
   StudentMassUpdateID,
-  UserIDRanBy = NULL,
-  SchoolYearID = NULL,
   AsOfDate = NULL,
-  RunReason = NULL,
-  FilterParameters = NULL,
-  ValueParameters = NULL,
   DistrictID = NULL,
+  FilterParameters = NULL,
+  RunReason = NULL,
+  SchoolYearID = NULL,
+  UserIDRanBy = NULL,
+  ValueParameters = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

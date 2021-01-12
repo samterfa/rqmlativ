@@ -6,8 +6,8 @@
 \usage{
 modifyDualEnrollmentEntity(
   DualEnrollmentEntityID,
-  EntityIDTarget = NULL,
   EntityIDAllowDualEnrollment = NULL,
+  EntityIDTarget = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

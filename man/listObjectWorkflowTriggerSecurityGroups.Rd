@@ -6,13 +6,13 @@
 \usage{
 listObjectWorkflowTriggerSecurityGroups(
   searchConditionsList = NULL,
-  ObjectWorkflowTriggerSecurityGroupID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   ObjectWorkflowTriggerID = F,
+  ObjectWorkflowTriggerSecurityGroupID = F,
   SecurityGroupIDAssigned = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

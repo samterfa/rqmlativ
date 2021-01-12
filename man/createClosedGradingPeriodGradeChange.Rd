@@ -5,10 +5,10 @@
 \title{Create a ClosedGradingPeriodGradeChange}
 \usage{
 createClosedGradingPeriodGradeChange(
-  SectionID = NULL,
-  GradingPeriodID = NULL,
   CompletedTime = NULL,
+  GradingPeriodID = NULL,
   Reason = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

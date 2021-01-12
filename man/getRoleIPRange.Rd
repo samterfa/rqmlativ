@@ -6,12 +6,12 @@
 \usage{
 getRoleIPRange(
   RoleIPRangeID,
+  CreatedTime = F,
   IPRangeID = F,
+  ModifiedTime = F,
   RoleID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

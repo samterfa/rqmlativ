@@ -6,13 +6,13 @@
 \usage{
 listTempGradeBucketFlagDetailGPAMethodErrors(
   searchConditionsList = NULL,
-  TempGradeBucketFlagDetailGPAMethodErrorID = F,
-  GradeBucketFlagDetailGPAMethod = F,
-  ErrorString = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorString = F,
+  GradeBucketFlagDetailGPAMethod = F,
   ModifiedTime = F,
+  TempGradeBucketFlagDetailGPAMethodErrorID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

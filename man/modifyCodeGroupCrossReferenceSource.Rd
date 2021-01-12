@@ -6,11 +6,11 @@
 \usage{
 modifyCodeGroupCrossReferenceSource(
   CodeGroupCrossReferenceSourceID,
-  CodeGroupID = NULL,
-  SourceType = NULL,
-  SkywardIDObject = NULL,
-  ObjectIDBase = NULL,
   CodeGroupCodeIDFallback = NULL,
+  CodeGroupID = NULL,
+  ObjectIDBase = NULL,
+  SkywardIDObject = NULL,
+  SourceType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

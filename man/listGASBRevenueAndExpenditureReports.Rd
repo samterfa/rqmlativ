@@ -6,13 +6,13 @@
 \usage{
 listGASBRevenueAndExpenditureReports(
   searchConditionsList = NULL,
-  GASBRevenueAndExpenditureReportID = F,
-  GASBFundClassification = F,
-  GASBExtractRunID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  GASBExtractRunID = F,
+  GASBFundClassification = F,
+  GASBRevenueAndExpenditureReportID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

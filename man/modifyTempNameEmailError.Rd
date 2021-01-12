@@ -6,9 +6,9 @@
 \usage{
 modifyTempNameEmailError(
   TempNameEmailErrorID,
-  ErrorText = NULL,
   ErrorField = NULL,
   ErrorNumber = NULL,
+  ErrorText = NULL,
   TempNameEmailID = NULL,
   entityId = 1,
   query = NULL,

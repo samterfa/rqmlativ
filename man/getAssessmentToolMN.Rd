@@ -6,14 +6,14 @@
 \usage{
 getAssessmentToolMN(
   AssessmentToolMNID,
+  AssessmentToolMNIDClonedFrom = F,
+  CreatedTime = F,
+  CurriculumYearID = F,
+  ModifiedTime = F,
   StateAssessmentToolMNID = F,
   StateImplementationStatusMNID = F,
-  CurriculumYearID = F,
-  AssessmentToolMNIDClonedFrom = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

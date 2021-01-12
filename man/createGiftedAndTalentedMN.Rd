@@ -6,8 +6,8 @@
 \usage{
 createGiftedAndTalentedMN(
   DistrictID = NULL,
-  StartDate = NULL,
   EndDate = NULL,
+  StartDate = NULL,
   StudentID = NULL,
   entityId = 1,
   query = NULL,

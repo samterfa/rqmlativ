@@ -6,13 +6,13 @@
 \usage{
 listStudentEntityYearSchedulingCategories(
   searchConditionsList = NULL,
-  StudentEntityYearSchedulingCategoryID = F,
+  CreatedTime = F,
+  ModifiedTime = F,
   SchedulingCategoryID = F,
   StudentEntityYearID = F,
+  StudentEntityYearSchedulingCategoryID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

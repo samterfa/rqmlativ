@@ -5,14 +5,14 @@
 \title{Create an ACAEmployerMonthV2}
 \usage{
 createACAEmployerMonthV2(
-  ACATransmissionID = NULL,
+  ACAMonth = NULL,
   ACASubmissionRunHistoryID = NULL,
+  ACATransmissionID = NULL,
   DistrictID = NULL,
   EmployerID = NULL,
-  ACAMonth = NULL,
+  IsAggregatedGroup = NULL,
   OffersMinimumEssentialCoverage = NULL,
   TotalEmployeeCount = NULL,
-  IsAggregatedGroup = NULL,
   UniqueExportIdentifierParent = NULL,
   UniqueExportIdentifierSelf = NULL,
   entityId = 1,

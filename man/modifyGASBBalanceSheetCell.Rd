@@ -6,10 +6,10 @@
 \usage{
 modifyGASBBalanceSheetCell(
   GASBBalanceSheetCellID,
-  GASBBalanceSheetRowID = NULL,
-  GASBExtractRunID = NULL,
-  GASBColumnID = NULL,
   Description = NULL,
+  GASBBalanceSheetRowID = NULL,
+  GASBColumnID = NULL,
+  GASBExtractRunID = NULL,
   Value = NULL,
   entityId = 1,
   query = NULL,

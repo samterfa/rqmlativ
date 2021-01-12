@@ -5,16 +5,16 @@
 \title{Create a TempLocker}
 \usage{
 createTempLocker(
-  LockerNumber = NULL,
-  BuildingID = NULL,
   Building = NULL,
-  LockerAreaID = NULL,
-  LockerArea = NULL,
-  FailureReason = NULL,
+  BuildingID = NULL,
   Comment = NULL,
+  FailureReason = NULL,
+  LockerArea = NULL,
+  LockerAreaID = NULL,
+  LockerID = NULL,
+  LockerNumber = NULL,
   LockerNumberDigitLength = NULL,
   NewLockerNumber = NULL,
-  LockerID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

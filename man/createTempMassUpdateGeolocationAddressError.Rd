@@ -5,9 +5,9 @@
 \title{Create a TempMassUpdateGeolocationAddressError}
 \usage{
 createTempMassUpdateGeolocationAddressError(
-  ErrorText = NULL,
   ErrorField = NULL,
   ErrorNumber = NULL,
+  ErrorText = NULL,
   TempMassUpdateGeolocationAddressID = NULL,
   entityId = 1,
   query = NULL,

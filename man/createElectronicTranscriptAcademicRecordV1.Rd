@@ -5,17 +5,17 @@
 \title{Create an ElectronicTranscriptAcademicRecordV1}
 \usage{
 createElectronicTranscriptAcademicRecordV1(
-  StudentLevel = NULL,
+  CEEBACT = NULL,
   CohortGraduationYear = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  HasSchoolOverride = NULL,
+  OrganizationName = NULL,
+  SchoolLevel = NULL,
+  SchoolOverride = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  OrganizationName = NULL,
-  CEEBACT = NULL,
-  HasSchoolOverride = NULL,
-  SchoolOverride = NULL,
-  SchoolLevel = NULL,
+  StudentLevel = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

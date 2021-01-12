@@ -6,8 +6,8 @@
 \usage{
 modifyRaisersEdgeObjectMA(
   RaisersEdgeObjectMAID,
-  RaisersEdgeID = NULL,
   NameID = NULL,
+  RaisersEdgeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

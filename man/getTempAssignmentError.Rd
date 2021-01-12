@@ -6,13 +6,13 @@
 \usage{
 getTempAssignmentError(
   TempAssignmentErrorID,
-  ErrorText = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  ErrorNumber = F,
+  ErrorText = F,
   ModifiedTime = F,
   TempSectionAssignmentID = F,
-  ErrorNumber = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

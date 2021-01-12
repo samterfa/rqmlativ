@@ -6,12 +6,12 @@
 \usage{
 getNotificationWithdrawalCode(
   NotificationWithdrawalCodeID,
-  NotificationID = F,
-  WithdrawalCodeID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  NotificationID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  WithdrawalCodeID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

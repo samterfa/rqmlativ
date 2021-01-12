@@ -6,8 +6,8 @@
 \usage{
 modifyStateCalendarYear(
   StateCalendarYearID,
-  CombinedStateFederalFilingCode = NULL,
   CalendarYear = NULL,
+  CombinedStateFederalFilingCode = NULL,
   StateID = NULL,
   entityId = 1,
   query = NULL,

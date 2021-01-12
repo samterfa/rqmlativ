@@ -6,14 +6,14 @@
 \usage{
 getCourseCustomRequirement(
   CourseCustomRequirementID,
+  CourseCustomRequirementIDClonedFrom = F,
   CourseID = F,
+  CreatedTime = F,
   CustomRequirementID = F,
   EntityGroupKey = F,
-  CourseCustomRequirementIDClonedFrom = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

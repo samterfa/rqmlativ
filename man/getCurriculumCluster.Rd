@@ -6,13 +6,13 @@
 \usage{
 getCurriculumCluster(
   CurriculumClusterID,
-  DistrictID = F,
+  CreatedTime = F,
   CurriculumClusterDefaultID = F,
   Description = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
+  DistrictID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

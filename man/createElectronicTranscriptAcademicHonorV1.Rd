@@ -6,12 +6,12 @@
 \usage{
 createElectronicTranscriptAcademicHonorV1(
   AcademicAwardLevel = NULL,
-  HonorsTitle = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  HonorsTitle = NULL,
+  OrganizationName = NULL,
   SchoolYearID = NULL,
   StudentID = NULL,
-  OrganizationName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

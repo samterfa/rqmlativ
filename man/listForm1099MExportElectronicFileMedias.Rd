@@ -6,15 +6,15 @@
 \usage{
 listForm1099MExportElectronicFileMedias(
   searchConditionsList = NULL,
-  Form1099MExportElectronicFileMediaID = F,
+  CreatedTime = F,
   Form1099MExportElectronicFileID = F,
+  Form1099MExportElectronicFileMediaID = F,
   MediaID = F,
+  ModifiedTime = F,
   StateID = F,
   Status = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -7,8 +7,8 @@
 modifyFTPProcessTypeConnection(
   FTPProcessTypeConnectionID,
   DistrictID = NULL,
-  FTPProcessTypeID = NULL,
   FTPConnectionID = NULL,
+  FTPProcessTypeID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

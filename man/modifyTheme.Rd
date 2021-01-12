@@ -6,9 +6,9 @@
 \usage{
 modifyTheme(
   ThemeID,
-  Name = NULL,
   ImageName = NULL,
   IsDefault = NULL,
+  Name = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

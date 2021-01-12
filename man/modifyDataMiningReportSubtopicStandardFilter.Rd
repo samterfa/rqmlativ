@@ -6,8 +6,8 @@
 \usage{
 modifyDataMiningReportSubtopicStandardFilter(
   DataMiningReportSubtopicStandardFilterID,
-  IsEnabled = NULL,
   DataMiningReportID = NULL,
+  IsEnabled = NULL,
   SubtopicStandardFilterID = NULL,
   entityId = 1,
   query = NULL,

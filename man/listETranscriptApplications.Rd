@@ -6,14 +6,14 @@
 \usage{
 listETranscriptApplications(
   searchConditionsList = NULL,
-  ETranscriptApplicationID = F,
+  CreatedTime = F,
   DistrictID = F,
+  ETranscriptApplicationID = F,
   Key = F,
+  ModifiedTime = F,
   Secret = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

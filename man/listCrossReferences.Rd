@@ -6,14 +6,14 @@
 \usage{
 listCrossReferences(
   searchConditionsList = NULL,
+  CreatedTime = F,
   CrossReferenceID = F,
-  ValueSourceID = F,
   FileValue = F,
   ImportValue = F,
-  UserIDCreatedBy = F,
-  CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  ValueSourceID = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

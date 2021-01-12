@@ -6,13 +6,13 @@
 \usage{
 getSeatingChart(
   SeatingChartID,
-  RoomLayoutID = F,
-  Description = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
   ModifiedTime = F,
+  RoomLayoutID = F,
   SeatingChartType = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

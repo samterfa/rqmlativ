@@ -5,8 +5,8 @@
 \title{Create a NotificationGradeReference}
 \usage{
 createNotificationGradeReference(
-  NotificationID = NULL,
   GradeReferenceID = NULL,
+  NotificationID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

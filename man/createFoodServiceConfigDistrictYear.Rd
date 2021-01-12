@@ -5,15 +5,15 @@
 \title{Create a FoodServiceConfigDistrictYear}
 \usage{
 createFoodServiceConfigDistrictYear(
-  DistrictID = NULL,
-  SchoolYearID = NULL,
-  EligibilityCategoryIDFreeDefault = NULL,
-  EligibilityCategoryIDReducedDefault = NULL,
-  EligibilityCategoryIDPaidDefault = NULL,
-  ReimbursementCountByDefaultEntity = NULL,
-  ConfigDistrictYearIDClonedFrom = NULL,
   AllowOnlineApplicationEntry = NULL,
+  ConfigDistrictYearIDClonedFrom = NULL,
+  DistrictID = NULL,
+  EligibilityCategoryIDFreeDefault = NULL,
+  EligibilityCategoryIDPaidDefault = NULL,
+  EligibilityCategoryIDReducedDefault = NULL,
   OnlineApplicationEntryPermission = NULL,
+  ReimbursementCountByDefaultEntity = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyUserFavorite(
   UserFavoriteID,
+  DisplayOrder = NULL,
+  FriendlyName = NULL,
   Module = NULL,
   Object = NULL,
   Screen = NULL,
-  DisplayOrder = NULL,
-  FriendlyName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

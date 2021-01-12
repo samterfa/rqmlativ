@@ -6,8 +6,8 @@
 \usage{
 createSchedulingGroupSection(
   SchedulingGroupID = NULL,
-  SectionID = NULL,
   SchedulingGroupSectionIDClonedFrom = NULL,
+  SectionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

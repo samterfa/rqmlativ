@@ -7,8 +7,8 @@
 createGASBRevenueAndExpenditureComparisonReport(
   FundBeginningBalance = NULL,
   FundEndingBalance = NULL,
-  GASBFundClassification = NULL,
   GASBExtractRunID = NULL,
+  GASBFundClassification = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

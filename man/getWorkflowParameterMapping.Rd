@@ -6,13 +6,13 @@
 \usage{
 getWorkflowParameterMapping(
   WorkflowParameterMappingID,
+  CreatedTime = F,
+  DataSource = F,
+  ModifiedTime = F,
   ObjectWorkflowTriggerID = F,
   ParameterName = F,
-  DataSource = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

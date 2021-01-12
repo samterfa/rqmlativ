@@ -6,9 +6,9 @@
 \usage{
 modifySTARStudentSubmission(
   STARStudentSubmissionID,
+  CloseDate = NULL,
   Description = NULL,
   OpenDate = NULL,
-  CloseDate = NULL,
   SchoolYearID = NULL,
   SnapshotDate = NULL,
   entityId = 1,

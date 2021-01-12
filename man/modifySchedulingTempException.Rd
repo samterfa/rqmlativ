@@ -6,8 +6,8 @@
 \usage{
 modifySchedulingTempException(
   TempExceptionID,
-  ErrorFieldName = NULL,
   ErrorDetail = NULL,
+  ErrorFieldName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

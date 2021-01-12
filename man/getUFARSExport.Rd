@@ -6,13 +6,13 @@
 \usage{
 getUFARSExport(
   UFARSExportID,
-  UFARSExtractRunID = F,
-  MediaID = F,
-  Status = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MediaID = F,
   ModifiedTime = F,
+  Status = F,
+  UFARSExtractRunID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

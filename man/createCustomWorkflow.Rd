@@ -5,9 +5,9 @@
 \title{Create a CustomWorkflow}
 \usage{
 createCustomWorkflow(
-  Name = NULL,
   Description = NULL,
   Module = NULL,
+  Name = NULL,
   Object = NULL,
   ObjectIDRoot = NULL,
   entityId = 1,

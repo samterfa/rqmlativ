@@ -6,11 +6,10 @@
 \usage{
 modifyEndorsementRequirementAssessment(
   EndorsementRequirementAssessmentID,
-  EndorsementRequirementID = NULL,
-  EndorsementRequirementAssessmentDefaultID = NULL,
-  TestType = NULL,
-  TestVersion = NULL,
   ClusterType = NULL,
+  EndorsementRequirementAssessmentDefaultID = NULL,
+  EndorsementRequirementID = NULL,
+  TestVersionID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

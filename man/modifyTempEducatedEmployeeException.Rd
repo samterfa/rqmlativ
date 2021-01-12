@@ -7,8 +7,8 @@
 modifyTempEducatedEmployeeException(
   TempEducatedEmployeeExceptionID,
   EmployeeFullNameFML = NULL,
-  Error = NULL,
   EmployeeNumber = NULL,
+  Error = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

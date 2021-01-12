@@ -6,13 +6,13 @@
 \usage{
 getSectionSchedulerPatternExcludedForMeetRequirement(
   SectionSchedulerPatternExcludedForMeetRequirementID,
-  MeetRequirementID = F,
-  SectionSchedulerPatternID = F,
-  SectionSchedulerPatternExcludedForMeetRequirementIDClonedFrom = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MeetRequirementID = F,
   ModifiedTime = F,
+  SectionSchedulerPatternExcludedForMeetRequirementIDClonedFrom = F,
+  SectionSchedulerPatternID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

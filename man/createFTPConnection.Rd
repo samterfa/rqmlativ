@@ -5,15 +5,15 @@
 \title{Create a FTPConnection}
 \usage{
 createFTPConnection(
-  Name = NULL,
+  AllowInvalidCertificate = NULL,
   Description = NULL,
-  Protocol = NULL,
   Host = NULL,
+  MediaIDSSHKey = NULL,
+  Name = NULL,
   Port = NULL,
+  Protocol = NULL,
   RemoteDirectory = NULL,
   Username = NULL,
-  AllowInvalidCertificate = NULL,
-  MediaIDSSHKey = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

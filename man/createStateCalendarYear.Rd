@@ -5,8 +5,8 @@
 \title{Create a StateCalendarYear}
 \usage{
 createStateCalendarYear(
-  CombinedStateFederalFilingCode = NULL,
   CalendarYear = NULL,
+  CombinedStateFederalFilingCode = NULL,
   StateID = NULL,
   entityId = 1,
   query = NULL,

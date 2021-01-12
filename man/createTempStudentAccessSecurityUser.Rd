@@ -5,15 +5,15 @@
 \title{Create a TempStudentAccessSecurityUser}
 \usage{
 createTempStudentAccessSecurityUser(
-  UserName = NULL,
+  AddToStudentAccess = NULL,
+  DeleteUserAfterAudit = NULL,
+  EmailAddress = NULL,
   Group = NULL,
+  IsSelected = NULL,
+  RemoveFromStudentAccess = NULL,
   StudentID = NULL,
   StudentNameLFM = NULL,
-  AddToStudentAccess = NULL,
-  RemoveFromStudentAccess = NULL,
-  DeleteUserAfterAudit = NULL,
-  IsSelected = NULL,
-  EmailAddress = NULL,
+  UserName = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

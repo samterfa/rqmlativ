@@ -5,8 +5,8 @@
 \title{Create a GroupEntityAutoAdd}
 \usage{
 createGroupEntityAutoAdd(
-  GroupID = NULL,
   EntityID = NULL,
+  GroupID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

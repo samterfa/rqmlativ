@@ -5,16 +5,16 @@
 \title{Create an ElectronicTranscriptImmunizationV1}
 \usage{
 createElectronicTranscriptImmunizationV1(
-  ImmunizationDate = NULL,
-  ImmunizationCode = NULL,
-  ImmunizationStatus = NULL,
   ElectronicTranscriptRunHistoryID = NULL,
   EntityID = NULL,
+  ImmunizationCode = NULL,
+  ImmunizationDate = NULL,
+  ImmunizationStatus = NULL,
   SchoolYearID = NULL,
-  StudentID = NULL,
-  StudentVaccineID = NULL,
-  StudentVaccinationWaiverID = NULL,
   StudentChildhoodIllnessID = NULL,
+  StudentID = NULL,
+  StudentVaccinationWaiverID = NULL,
+  StudentVaccineID = NULL,
   VaccineID = NULL,
   entityId = 1,
   query = NULL,

@@ -6,11 +6,11 @@
 \usage{
 modifyStudentVaccine(
   StudentVaccineID,
+  Date = NULL,
+  IsFromAPI = NULL,
+  LotNumber = NULL,
   StudentID = NULL,
   VaccineID = NULL,
-  Date = NULL,
-  LotNumber = NULL,
-  IsFromAPI = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -6,11 +6,11 @@
 \usage{
 modifyUserImportResultError(
   UserImportResultErrorID,
-  UserImportResultID = NULL,
   ErrorMessage = NULL,
-  ObjectName = NULL,
   FieldName = NULL,
   FromPreview = NULL,
+  ObjectName = NULL,
+  UserImportResultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

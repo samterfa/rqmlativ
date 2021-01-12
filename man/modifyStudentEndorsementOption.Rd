@@ -6,13 +6,13 @@
 \usage{
 modifyStudentEndorsementOption(
   StudentEndorsementOptionID,
-  StudentEndorsementID = NULL,
-  EndorsementOptionID = NULL,
-  IsDeclared = NULL,
-  IsComplete = NULL,
-  IsReceived = NULL,
   AdminAdded = NULL,
   DateReceived = NULL,
+  EndorsementOptionID = NULL,
+  IsComplete = NULL,
+  IsDeclared = NULL,
+  IsReceived = NULL,
+  StudentEndorsementID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

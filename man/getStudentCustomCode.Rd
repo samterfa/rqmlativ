@@ -6,12 +6,12 @@
 \usage{
 getStudentCustomCode(
   StudentCustomCodeID,
+  CreatedTime = F,
   CustomCodeID = F,
+  ModifiedTime = F,
   StudentID = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

@@ -5,10 +5,10 @@
 \title{Create a MTSSConfigEntity}
 \usage{
 createMTSSConfigEntity(
-  EntityID = NULL,
-  DisplayReferrals = NULL,
   DisplayInterventionPlans = NULL,
+  DisplayReferrals = NULL,
   DisplayWatchlist = NULL,
+  EntityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

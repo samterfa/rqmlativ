@@ -6,12 +6,12 @@
 \usage{
 modifyExplore(
   ExploreID,
-  StudentTestID = NULL,
+  CompositeScore = NULL,
   EnglishScaleScore = NULL,
   MathScaleScore = NULL,
   ReadingScaleScore = NULL,
   ScienceScaleScore = NULL,
-  CompositeScore = NULL,
+  StudentTestID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

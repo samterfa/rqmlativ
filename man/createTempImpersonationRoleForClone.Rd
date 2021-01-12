@@ -5,10 +5,10 @@
 \title{Create a TempImpersonationRoleForClone}
 \usage{
 createTempImpersonationRoleForClone(
-  Selected = NULL,
-  RoleName = NULL,
   Description = NULL,
   IsReadOnly = NULL,
+  RoleName = NULL,
+  Selected = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

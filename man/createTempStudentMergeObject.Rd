@@ -6,8 +6,8 @@
 \usage{
 createTempStudentMergeObject(
   FieldToShow = NULL,
-  RecordType = NULL,
   HandlingType = NULL,
+  RecordType = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

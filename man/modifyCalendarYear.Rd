@@ -6,8 +6,8 @@
 \usage{
 modifyCalendarYear(
   CalendarYearID,
-  NumericYear = NULL,
   Description = NULL,
+  NumericYear = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

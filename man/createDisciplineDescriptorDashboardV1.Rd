@@ -5,13 +5,13 @@
 \title{Create a DisciplineDescriptorDashboardV1}
 \usage{
 createDisciplineDescriptorDashboardV1(
-  SchoolYearID = NULL,
-  EntityID = NULL,
   Code = NULL,
-  ShortDescription = NULL,
-  Description = NULL,
-  SchoolCode = NULL,
   DashboardRunHistoryID = NULL,
+  Description = NULL,
+  EntityID = NULL,
+  SchoolCode = NULL,
+  SchoolYearID = NULL,
+  ShortDescription = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

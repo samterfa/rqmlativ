@@ -6,14 +6,14 @@
 \usage{
 getStudentGroupTeacherSectionSetting(
   StudentGroupTeacherSectionSettingID,
+  Color = F,
+  CreatedTime = F,
+  Display = F,
+  ModifiedTime = F,
   StudentGroupID = F,
   TeacherSectionSettingID = F,
-  Display = F,
-  Color = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

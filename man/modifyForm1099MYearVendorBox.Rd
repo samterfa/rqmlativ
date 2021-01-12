@@ -6,9 +6,9 @@
 \usage{
 modifyForm1099MYearVendorBox(
   Form1099MYearVendorBoxID,
+  Amount = NULL,
   Form1099MYearVendorID = NULL,
   Form1099TypeID = NULL,
-  Amount = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

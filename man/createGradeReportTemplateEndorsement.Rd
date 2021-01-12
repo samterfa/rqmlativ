@@ -5,10 +5,10 @@
 \title{Create a GradeReportTemplateEndorsement}
 \usage{
 createGradeReportTemplateEndorsement(
-  GradeReportTemplateID = NULL,
   EndorsementID = NULL,
-  GradYearLow = NULL,
+  GradeReportTemplateID = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
   OrderNumber = NULL,
   entityId = 1,
   query = NULL,

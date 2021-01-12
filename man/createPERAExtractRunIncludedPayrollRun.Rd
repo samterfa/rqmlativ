@@ -5,8 +5,8 @@
 \title{Create a PERAExtractRunIncludedPayrollRun}
 \usage{
 createPERAExtractRunIncludedPayrollRun(
-  PERAExtractRunID = NULL,
   PayrollRunID = NULL,
+  PERAExtractRunID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,8 +5,8 @@
 \title{Create an AddressRangeDefaultAddress}
 \usage{
 createAddressRangeDefaultAddress(
-  AddressRangeDefaultID = NULL,
   AddressID = NULL,
+  AddressRangeDefaultID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

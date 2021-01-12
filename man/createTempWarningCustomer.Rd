@@ -5,11 +5,11 @@
 \title{Create a TempWarningCustomer}
 \usage{
 createTempWarningCustomer(
-  Note = NULL,
-  FullNameLFM = NULL,
-  StudentNumber = NULL,
-  StaffNumber = NULL,
   Balance = NULL,
+  FullNameLFM = NULL,
+  Note = NULL,
+  StaffNumber = NULL,
+  StudentNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

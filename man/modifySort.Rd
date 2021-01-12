@@ -6,10 +6,10 @@
 \usage{
 modifySort(
   SortID,
-  SortGroupID = NULL,
-  SubtopicFieldID = NULL,
-  SortOrder = NULL,
   SortDirectionCode = NULL,
+  SortGroupID = NULL,
+  SortOrder = NULL,
+  SubtopicFieldID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

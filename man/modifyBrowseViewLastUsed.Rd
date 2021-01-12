@@ -6,8 +6,8 @@
 \usage{
 modifyBrowseViewLastUsed(
   BrowseViewLastUsedID,
-  UserID = NULL,
   BrowseViewID = NULL,
+  UserID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

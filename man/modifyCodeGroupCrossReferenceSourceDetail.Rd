@@ -7,10 +7,10 @@
 modifyCodeGroupCrossReferenceSourceDetail(
   CodeGroupCrossReferenceSourceDetailID,
   CodeGroupCrossReferenceSourceID = NULL,
-  IndexNumberMapping = NULL,
+  DataPath = NULL,
   DisplayOrder = NULL,
   DisplaySortOrder = NULL,
-  DataPath = NULL,
+  IndexNumberMapping = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

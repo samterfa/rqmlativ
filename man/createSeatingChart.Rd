@@ -5,8 +5,8 @@
 \title{Create a SeatingChart}
 \usage{
 createSeatingChart(
-  RoomLayoutID = NULL,
   Description = NULL,
+  RoomLayoutID = NULL,
   SeatingChartType = NULL,
   entityId = 1,
   query = NULL,

@@ -5,9 +5,9 @@
 \title{Create a StudentGradeBucketFlag}
 \usage{
 createStudentGradeBucketFlag(
-  StudentGradeBucketID = NULL,
   GradeBucketFlagID = NULL,
   IsManual = NULL,
+  StudentGradeBucketID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

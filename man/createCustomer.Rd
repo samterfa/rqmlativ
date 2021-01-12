@@ -5,14 +5,14 @@
 \title{Create a Customer}
 \usage{
 createCustomer(
-  NameID = NULL,
-  DistrictID = NULL,
-  IsCurrentActive = NULL,
-  PIN = NULL,
-  StopAllPurchases = NULL,
   AsOfBalanceDate = NULL,
   BalanceAsOfDate = NULL,
+  DistrictID = NULL,
+  IsCurrentActive = NULL,
   IsFutureActive = NULL,
+  NameID = NULL,
+  PIN = NULL,
+  StopAllPurchases = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

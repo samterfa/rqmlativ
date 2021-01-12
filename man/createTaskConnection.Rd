@@ -5,9 +5,9 @@
 \title{Create a TaskConnection}
 \usage{
 createTaskConnection(
-  TaskIDPrevious = NULL,
-  TaskIDNext = NULL,
   IsSkywardTaskConnection = NULL,
+  TaskIDNext = NULL,
+  TaskIDPrevious = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -5,10 +5,10 @@
 \title{Create a PlanDefault}
 \usage{
 createPlanDefault(
-  PlanID = NULL,
   EntityID = NULL,
-  GradYearLow = NULL,
   GradYearHigh = NULL,
+  GradYearLow = NULL,
+  PlanID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

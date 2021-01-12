@@ -6,8 +6,8 @@
 \usage{
 modifyLastNameNumber(
   LastNameNumberID,
-  NameNumber = NULL,
   ConfigSystemID = NULL,
+  NameNumber = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

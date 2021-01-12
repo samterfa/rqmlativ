@@ -7,9 +7,9 @@
 modifyMultifactorAuthentication(
   MultifactorAuthenticationID,
   Code = NULL,
+  DaysToExpiration = NULL,
   Description = NULL,
   IsRequired = NULL,
-  DaysToExpiration = NULL,
   Priority = NULL,
   UsesEmail = NULL,
   UsesSMS = NULL,

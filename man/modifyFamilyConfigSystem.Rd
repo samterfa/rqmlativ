@@ -6,12 +6,12 @@
 \usage{
 modifyFamilyConfigSystem(
   ConfigSystemID,
+  AddressValidationMessage = NULL,
   AllowFamilyAccessDefault = NULL,
-  EnableNewStudentEnrollment = NULL,
+  AllowOutOfRangeAddressesToSubmit = NULL,
   AutoGenerateSecurityUser = NULL,
   EnableAddressValidation = NULL,
-  AllowOutOfRangeAddressesToSubmit = NULL,
-  AddressValidationMessage = NULL,
+  EnableNewStudentEnrollment = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

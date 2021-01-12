@@ -5,10 +5,10 @@
 \title{Create a TranscriptSent}
 \usage{
 createTranscriptSent(
-  StudentID = NULL,
-  InstitutionID = NULL,
-  DateSent = NULL,
   Comment = NULL,
+  DateSent = NULL,
+  InstitutionID = NULL,
+  StudentID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

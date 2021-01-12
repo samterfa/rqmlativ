@@ -6,15 +6,15 @@
 \usage{
 listMobileSSOS(
   searchConditionsList = NULL,
+  CreatedTime = F,
+  MobileDevice = F,
   MobileSSOID = F,
+  ModifiedTime = F,
   SSOToken = F,
   SSOTokenExpirationDate = F,
   UserID = F,
-  MobileDevice = F,
   UserIDCreatedBy = F,
-  CreatedTime = F,
   UserIDModifiedBy = F,
-  ModifiedTime = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -6,14 +6,14 @@
 \usage{
 getAcademicStandardGradingScaleGroupAcademicStandard(
   AcademicStandardGradingScaleGroupAcademicStandardID,
+  AcademicStandardGradingScaleGroupAcademicStandardIDClonedFrom = F,
   AcademicStandardGradingScaleGroupID = F,
   CalculationGroupAcademicStandardID = F,
-  EntityGroupKey = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  EntityGroupKey = F,
   ModifiedTime = F,
-  AcademicStandardGradingScaleGroupAcademicStandardIDClonedFrom = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

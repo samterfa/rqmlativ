@@ -5,11 +5,11 @@
 \title{Create a TempClearance}
 \usage{
 createTempClearance(
-  GroupIDSecurity = NULL,
-  GroupID = NULL,
-  GroupDescription = NULL,
-  EntityName = NULL,
   ClearanceType = NULL,
+  EntityName = NULL,
+  GroupDescription = NULL,
+  GroupID = NULL,
+  GroupIDSecurity = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

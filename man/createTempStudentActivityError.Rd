@@ -5,9 +5,9 @@
 \title{Create a TempStudentActivityError}
 \usage{
 createTempStudentActivityError(
-  TempStudentActivityID = NULL,
   ErrorNumber = NULL,
   ErrorText = NULL,
+  TempStudentActivityID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

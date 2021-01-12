@@ -5,9 +5,9 @@
 \title{Create a CRDCSchoolGradeV1}
 \usage{
 createCRDCSchoolGradeV1(
-  NCESIDCode = NULL,
-  HasPreschool = NULL,
-  HasKindergarten = NULL,
+  CivilRightsDataCollectionID = NULL,
+  CivilRightsDataCollectionRunHistoryID = NULL,
+  FederalNCESSchoolID = NULL,
   HasGrade01 = NULL,
   HasGrade02 = NULL,
   HasGrade03 = NULL,
@@ -20,10 +20,10 @@ createCRDCSchoolGradeV1(
   HasGrade10 = NULL,
   HasGrade11 = NULL,
   HasGrade12 = NULL,
+  HasKindergarten = NULL,
+  HasPreschool = NULL,
   HasUngraded = NULL,
-  CivilRightsDataCollectionID = NULL,
-  CivilRightsDataCollectionRunHistoryID = NULL,
-  FederalNCESSchoolID = NULL,
+  NCESIDCode = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

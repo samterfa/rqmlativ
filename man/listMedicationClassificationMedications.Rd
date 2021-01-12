@@ -6,13 +6,13 @@
 \usage{
 listMedicationClassificationMedications(
   searchConditionsList = NULL,
-  MedicationClassificationMedicationID = F,
-  MedicationClassificationID = F,
-  MedicationID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  MedicationClassificationID = F,
+  MedicationClassificationMedicationID = F,
+  MedicationID = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   searchConditionsGroupType = "And",
   searchSortFieldNamesList = NULL,

@@ -7,8 +7,8 @@
 createEmailType(
   Code = NULL,
   Description = NULL,
-  PreventFamilyStudentAccessUpdates = NULL,
   EdFiElectronicMailTypeDescriptorID = NULL,
+  PreventFamilyStudentAccessUpdates = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

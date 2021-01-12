@@ -5,11 +5,11 @@
 \title{Create a CustomerTransaction}
 \usage{
 createCustomerTransaction(
-  PurchaseDetailID = NULL,
-  PaymentID = NULL,
-  Time = NULL,
   Amount = NULL,
   Balance = NULL,
+  PaymentID = NULL,
+  PurchaseDetailID = NULL,
+  Time = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

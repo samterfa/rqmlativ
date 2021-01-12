@@ -6,14 +6,14 @@
 \usage{
 getCharacterLimitGroup(
   CharacterLimitGroupID,
-  Description = F,
-  MaxLength = F,
   Code = F,
   CodeDescription = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
+  Description = F,
+  MaxLength = F,
   ModifiedTime = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

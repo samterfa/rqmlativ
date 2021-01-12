@@ -5,8 +5,8 @@
 \title{Create a BenchmarkingSurveyQuestion}
 \usage{
 createBenchmarkingSurveyQuestion(
-  BenchmarkingSurveyID = NULL,
   BenchmarkingQuestionID = NULL,
+  BenchmarkingSurveyID = NULL,
   Order = NULL,
   entityId = 1,
   query = NULL,

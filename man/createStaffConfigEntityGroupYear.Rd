@@ -5,10 +5,10 @@
 \title{Create a StaffConfigEntityGroupYear}
 \usage{
 createStaffConfigEntityGroupYear(
-  SchoolYearID = NULL,
-  EntityID = NULL,
-  EntityGroupKey = NULL,
   AllowFoodServiceOnlinePaymentsAccessByDefault = NULL,
+  EntityGroupKey = NULL,
+  EntityID = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

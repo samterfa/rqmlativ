@@ -6,12 +6,12 @@
 \usage{
 getVerificationSelectionRunHistorySchool(
   VerificationSelectionRunHistorySchoolID,
-  SchoolID = F,
-  VerificationSelectionRunHistoryID = F,
-  UserIDCreatedBy = F,
   CreatedTime = F,
-  UserIDModifiedBy = F,
   ModifiedTime = F,
+  SchoolID = F,
+  UserIDCreatedBy = F,
+  UserIDModifiedBy = F,
+  VerificationSelectionRunHistoryID = F,
   fieldPaths = NULL,
   entityId = 1,
   query = NULL,

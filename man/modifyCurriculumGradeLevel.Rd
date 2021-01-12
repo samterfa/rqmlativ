@@ -7,8 +7,8 @@
 modifyCurriculumGradeLevel(
   CurriculumGradeLevelID,
   CurriculumID = NULL,
-  GradeLevelID = NULL,
   DistrictGroupKey = NULL,
+  GradeLevelID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

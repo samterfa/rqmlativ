@@ -8,6 +8,8 @@ getForm1099MYearStateCalendarYear(
   Form1099MYearStateCalendarYearID,
   Form1099MYearID = F,
   StateCalendarYearID = F,
+  StateID = F,
+  TaxStateID = F,
   Vendors = F,
   fieldPaths = NULL,
   entityId = 1,

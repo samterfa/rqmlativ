@@ -5,9 +5,9 @@
 \title{Create a CalculationGroupCourse}
 \usage{
 createCalculationGroupCourse(
+  CalculationGroupCourseIDClonedFrom = NULL,
   CalculationGroupID = NULL,
   CourseID = NULL,
-  CalculationGroupCourseIDClonedFrom = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

@@ -7,10 +7,10 @@
 createSchedulingCategory(
   Code = NULL,
   Description = NULL,
-  EntityID = NULL,
-  SchoolYearID = NULL,
   EntityGroupKey = NULL,
+  EntityID = NULL,
   SchedulingCategoryIDClonedFrom = NULL,
+  SchoolYearID = NULL,
   entityId = 1,
   query = NULL,
   flatten = T,

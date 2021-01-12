@@ -115,28 +115,28 @@
     </div>
 
     <pre class="usage"><span class='fu'>createFoodServiceConfigDistrict</span>(
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NextReceiptNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BankAccountID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AccountIDPrepaidLiability</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UsePIN</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BalanceImportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BankAccountID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculateBalanceByFamily</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CreatePayor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CustomerCategoryImportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FileDesinationIDBalanceImport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FileDestinationIDCustomerCategoryImport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MediaIDOnlineApplicationInstructions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameEmailIDOnlineApplication</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDOnlineApplicationReviewingOfficial</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NextReceiptNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationContactPhoneExtension</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationContactPhoneNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationNonDiscriminationStatementOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationOverrideNonDiscriminationStatement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationStateWebsiteURL</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineApplicationStateWebsiteURLDisplayText</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UseAccountingUpdate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UseConfirmationStepDuringVerification</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CreatePayor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculateBalanceByFamily</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationStateWebsiteURL</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MediaIDOnlineApplicationInstructions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationStateWebsiteURLDisplayText</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDOnlineApplicationReviewingOfficial</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameEmailIDOnlineApplication</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationContactPhoneNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationContactPhoneExtension</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationOverrideNonDiscriminationStatement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineApplicationNonDiscriminationStatementOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FileDesinationIDBalanceImport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BalanceImportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FileDestinationIDCustomerCategoryImport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CustomerCategoryImportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UsePIN</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

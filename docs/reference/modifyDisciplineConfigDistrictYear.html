@@ -116,27 +116,27 @@
 
     <pre class="usage"><span class='fu'>modifyDisciplineConfigDistrictYear</span>(
   <span class='no'>ConfigDistrictYearID</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RestartIncidentNumberThisYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowOnlyOneOffensePerIncident</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultDisciplineScreenDateAndTimes</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultOffenseValueFromPreviousPerson</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultActionValueFromPreviousPerson</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UsePerceivedMotivation</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UseIncidentBuildingAndRoom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ConfigDistrictYearIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowUseOfWarning</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowActionRecommendationsOnReferrals</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayWarningsInFamilyAndStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DaysToDelayDisplayOfIncidentsInFamilyAndStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowActionTypeUpdate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentOffensesForAllEntities</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayInvolvedPersonsFromAllEntities</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowDurationTypeUpdate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultActionStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultGuardianNotifiedOnActionDetailFromAction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowInternalComments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowOnlyOneOffensePerIncident</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowUseOfWarning</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ConfigDistrictYearIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DaysToDelayDisplayOfIncidentsInFamilyAndStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultActionStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultActionValueFromPreviousPerson</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultDisciplineScreenDateAndTimes</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultGuardianNotifiedOnActionDetailFromAction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultOffenseValueFromPreviousPerson</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayInvolvedPersonsFromAllEntities</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentOffensesForAllEntities</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayWarningsInFamilyAndStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RestartIncidentNumberThisYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseIncidentBuildingAndRoom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UsePerceivedMotivation</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -117,19 +117,19 @@
     <pre class="usage"><span class='fu'>getCoursePrerequisite</span>(
   <span class='no'>CoursePrerequisiteID</span>,
   <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericYearCourse</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericYearCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CurriculumID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PrerequisiteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EarnedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearLow</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearHigh</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PrerequisiteCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CurriculumID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasPrequisiteCurriculums</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumericYearCourse</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumericYearCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PrerequisiteCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PrerequisiteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearHigh</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearLow</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -151,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>getCalendarDay</span>(
   <span class='no'>CalendarDayID</span>,
+  <span class='kw'>AttendanceTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BellScheduleGroupSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BellScheduleID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DateWithDayOfWeekAbbreviated</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DayRotationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CountAs</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AttendanceTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DateWithDayOfWeekAbbreviated</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DayOfTheWeek</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DayOfTheWeekNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfCalendarDayEvents</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BellScheduleID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BellScheduleGroupSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FoodServicePurchaseExists</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DynamicRelationshipID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DayRotationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DoNotSendAttendanceToEdFi</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DynamicRelationshipID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FoodServicePurchaseExists</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfCalendarDayEvents</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ShowCommentOnCalendar</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -157,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

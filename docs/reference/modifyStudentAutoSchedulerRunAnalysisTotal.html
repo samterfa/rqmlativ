@@ -116,23 +116,23 @@
 
     <pre class="usage"><span class='fu'>modifyStudentAutoSchedulerRunAnalysisTotal</span>(
   <span class='no'>StudentAutoSchedulerRunAnalysisTotalID</span>,
-  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentsWithConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ConflictPercent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalConflictedStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalScheduledStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndTimeAnalysis</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartTimeAnalysis</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentCourseRequestsConflictedThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentCourseRequestsProcessedThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentCourseRequestsScheduledThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartTimeAnalysis</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndTimeAnalysis</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentsWithConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentsWithOneConflict</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentsWithTwoConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentsWithThreeOrMoreConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentsWithTwoConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TotalAlternateStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalConflictedStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalScheduledStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalStudentCourseRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -145,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

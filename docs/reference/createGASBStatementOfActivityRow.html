@@ -115,15 +115,15 @@
     </div>
 
     <pre class="usage"><span class='fu'>createGASBStatementOfActivityRow</span>(
-  <span class='kw'>GovernmentalNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProprietaryNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GASBExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RowDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GASBStatementOfActivityReportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Expenses</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GASBExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GASBStatementOfActivityReportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GovernmentalNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsGovernmental</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsProprietary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProprietaryNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RowDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalNetAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -137,6 +137,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

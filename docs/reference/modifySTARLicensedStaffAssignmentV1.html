@@ -116,6 +116,9 @@
 
     <pre class="usage"><span class='fu'>modifySTARLicensedStaffAssignmentV1</span>(
   <span class='no'>STARLicensedStaffAssignmentV1ID</span>,
+  <span class='kw'>LengthOfPeriod</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PeriodsPerWeek</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>STARLicensedStaffEmploymentV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateSTARAssignmentCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateSTARAssignmentCodeMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -123,9 +126,6 @@
   <span class='kw'>StateSTARGradeLevelMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateSTARModeOfTeachingMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateSTARModeOfTeachingMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PeriodsPerWeek</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LengthOfPeriod</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TotalNumberOfPupils</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -139,6 +139,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -117,19 +117,19 @@
     <pre class="usage"><span class='fu'>modifyTempCalendar</span>(
   <span class='no'>TempCalendarID</span>,
   <span class='kw'>AffectedPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OriginalStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OriginalEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OriginalStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ProcessAction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +142,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

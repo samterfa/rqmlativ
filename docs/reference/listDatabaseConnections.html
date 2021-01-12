@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>listDatabaseConnections</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SessionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MostRecentSessionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConnectTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NetTransport</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ProtocolType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AuthScheme</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumReads</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumWrites</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LastRead</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LastWrite</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NetPacketSize</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ClientNetAddress</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ClientTcpPort</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ConnectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ConnectTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LastRead</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LastWrite</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LocalNetAddress</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LocalTcpPort</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConnectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ParentConnectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MostRecentSessionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MostRecentSqlHandle</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NetPacketSize</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NetTransport</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumReads</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumWrites</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ParentConnectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProtocolType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SessionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -172,6 +172,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

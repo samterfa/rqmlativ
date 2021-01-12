@@ -116,16 +116,16 @@
 
     <pre class="usage"><span class='fu'>listCoursePrerequisiteCurriculumCourseStudentCourseRequests</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseIDFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseIDRequired</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CoursePrerequisiteCurriculumCourseStudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PrerequisiteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumIDFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumIDRequired</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseIDFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseIDRequired</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PrerequisiteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -164,6 +164,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

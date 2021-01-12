@@ -115,16 +115,16 @@
     </div>
 
     <pre class="usage"><span class='fu'>createAcademicStandardDefault</span>(
-  <span class='kw'>Level</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Key</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ParentGuid</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsHighFrequencyWord</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LetterAndSoundType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LetterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AcademicStandardDefaultIDParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AcademicStandardGradeRangeDefaultID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsHighFrequencyWord</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Key</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Language</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LetterAndSoundType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LetterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Level</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ParentGuid</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -137,6 +137,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

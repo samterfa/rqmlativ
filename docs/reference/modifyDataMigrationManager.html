@@ -36,8 +36,7 @@
 
 
 <meta property="og:title" content="Modify a DataMigrationManager — modifyDataMigrationManager" />
-<meta property="og:description" content="This function modifies a DataMigrationManager
-This function modifies a DataMigrationManager" />
+<meta property="og:description" content="This function modifies a DataMigrationManager" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -113,31 +112,16 @@ This function modifies a DataMigrationManager" />
 
     <div class="ref-description">
     <p>This function modifies a DataMigrationManager</p>
-<p>This function modifies a DataMigrationManager</p>
     </div>
 
     <pre class="usage"><span class='fu'>modifyDataMigrationManager</span>(
   <span class='no'>DataMigrationManagerID</span>,
-  <span class='kw'>ProcessedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MigrationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProcessType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Label</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SecondaryType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MediaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>modifyDataMigrationManager</span>(
-  <span class='no'>DataMigrationManagerID</span>,
-  <span class='kw'>ProcessedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MigrationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProcessedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ProcessType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Label</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SecondaryType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MediaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -150,6 +134,10 @@ This function modifies a DataMigrationManager" />
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>
@@ -168,8 +156,6 @@ This function modifies a DataMigrationManager" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>The modified DataMigrationManager
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>The modified DataMigrationManager
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

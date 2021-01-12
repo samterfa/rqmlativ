@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>getMonitorSummaryByTeacher</span>(
   <span class='no'>MonitorSummaryByTeacherID</span>,
-  <span class='kw'>LastUpdatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffMeetCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ActiveStudentCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NonGradedAssignmentCountNoStudentAssignmentsForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NonGradedAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradedAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NoCountAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MissingAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScoreClarifierAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FutureAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FutureAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradedAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LastAccessedGradebookTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LastAssignmentScoredDueDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LastScoredAssignmentTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LastUpdatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MissingAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NoCountAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NonGradedAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NonGradedAssignmentCountNoStudentAssignmentsForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScoreClarifierAssignmentCountForTerm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StaffMeetCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -157,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

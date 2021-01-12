@@ -116,28 +116,28 @@
 
     <pre class="usage"><span class='fu'>getNameProcedure</span>(
   <span class='no'>NameProcedureID</span>,
-  <span class='kw'>ProcedureID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AttachmentCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CanCreateOccurrenceAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CanCreateScheduleAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistributionType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ProcedureInstruction</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReceivedPhysicianDocumentation</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReceivedParentReleaseForm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GreatestProcedureOccurrenceDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GreatestProcedureScheduleEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsActiveAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsVoid</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcedureID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcedureInstruction</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReceivedParentReleaseForm</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReceivedPhysicianDocumentation</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDVoidedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>VoidedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistributionType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsActiveAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CanCreateOccurrenceAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GreatestProcedureOccurrenceDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AttachmentCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CanCreateScheduleAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GreatestProcedureScheduleEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -159,6 +159,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

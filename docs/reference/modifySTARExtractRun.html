@@ -116,10 +116,10 @@
 
     <pre class="usage"><span class='fu'>modifySTARExtractRun</span>(
   <span class='no'>STARExtractRunID</span>,
+  <span class='kw'>DistrictNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployerID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FiscalYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SnapshotDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateDistrictTypeCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateDistrictTypeCodeMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Version</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -135,6 +135,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

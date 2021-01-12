@@ -116,23 +116,23 @@
 
     <pre class="usage"><span class='fu'>getLineItem</span>(
   <span class='no'>LineItemID</span>,
-  <span class='kw'>AssignmentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Title</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AssignDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ClassSourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AssignmentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CategorySourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ClassSourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DateLastModified</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradingPeriodSourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ResultValueMin</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OneRosterID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ResultValueMax</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ResultValueMin</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>SourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OneRosterID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DateLastModified</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Title</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>VendorSourceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -154,6 +154,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

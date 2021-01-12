@@ -767,7 +767,7 @@ generateObjectFunctions <- function(modules = skyModules, deleteAllFiles = T){
 
 generatePackageDownSite <- function(){
   
-  functionCategories <- rqmlativ::skyModules$ModuleShortName %>% sort()
+  functionCategories <- rqmlativ:::skyModules$ModuleShortName %>% sort()
   
   pkgdownYaml <- 
     "url: https://samterfa.github.io/rqmlativ/

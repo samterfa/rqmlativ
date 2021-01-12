@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>listStudentAttendances</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalendarDayID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CommentsExistForStudentAttendance</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DaysAbsent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DaysExcused</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DaysOther</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DaysUnexcused</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HideRecordMA</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentAttendanceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CalendarDayID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DaysExcused</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DaysUnexcused</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DaysOther</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>TardyCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DaysAbsent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CommentsExistForStudentAttendance</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HideRecordMA</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -172,6 +172,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

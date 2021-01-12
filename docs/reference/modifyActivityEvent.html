@@ -116,20 +116,21 @@
 
     <pre class="usage"><span class='fu'>modifyActivityEvent</span>(
   <span class='no'>ActivityEventID</span>,
+  <span class='kw'>ActivityEventIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ActivityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EventTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Summary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ContactType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Cost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayOnDistrictCalendar</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EventTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NameIDContact</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Summary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>VisibleTo</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ContactType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayOnDistrictCalendar</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +143,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

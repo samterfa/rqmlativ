@@ -116,13 +116,13 @@
 
     <pre class="usage"><span class='fu'>listDentalScreeningSecuredNotes</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DentalScreeningSecuredNoteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DentalScreeningID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DentalScreeningSecuredNoteID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -161,6 +161,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>getNameAlias</span>(
   <span class='no'>NameAliasID</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsBusiness</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NameTitleID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NameSuffixID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsLegalName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsMaidenName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EffectiveDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FullNameFL</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FullNameLF</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsBusiness</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsLegalName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsMaidenName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsSingleLegalName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameSuffixID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameTitleID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -155,6 +155,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,28 +116,28 @@
 
     <pre class="usage"><span class='fu'>getNameProcedureSchedule</span>(
   <span class='no'>NameProcedureScheduleID</span>,
-  <span class='kw'>NameProcedureID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScheduledStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NameIDPerformedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UseProcedureInstructionOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ProcedureInstructionOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasEndedAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IncludePartialDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsVoid</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LastCompletedOccurrenceDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameIDPerformedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameProcedureID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcedureInstructionOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RepeatsBiWeekly</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScheduledStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UseProcedureInstructionOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDVoidedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>VoidedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasEndedAsOfDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LastCompletedOccurrenceDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RepeatsBiWeekly</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IncludePartialDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -159,6 +159,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

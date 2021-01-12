@@ -115,19 +115,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>createStudentGradeBucketAcademicStandard</span>(
-  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AcademicStandardID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeMarkID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Percent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculatedPoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EarnedPoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PossiblePoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsAdminOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeMarkID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeMarkIDOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeMarkOverrideComment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsAdminOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Percent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PercentAdjustment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PercentAdjustmentComment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculatedPoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PossiblePoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -140,6 +140,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

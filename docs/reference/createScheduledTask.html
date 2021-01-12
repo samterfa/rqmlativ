@@ -115,28 +115,28 @@
     </div>
 
     <pre class="usage"><span class='fu'>createScheduledTask</span>(
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardStartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Frequency</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Sunday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Monday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Tuesday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Wednesday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Thursday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Friday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Saturday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WeekOfTheMonth</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DayOfTheMonth</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Frequency</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Friday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsProductionOnly</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WorkflowID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Repeats</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RepeatInterval</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RepeatUntil</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsSelfGeneratedFromWorkflow</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Monday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RepeatInterval</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Repeats</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RepeatUntil</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Saturday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardStartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Sunday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Thursday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Tuesday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Wednesday</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WeekOfTheMonth</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WorkflowID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

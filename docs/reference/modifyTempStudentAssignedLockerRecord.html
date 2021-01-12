@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>modifyTempStudentAssignedLockerRecord</span>(
   <span class='no'>TempStudentAssignedLockerRecordID</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LockerID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Gender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Age</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Grade</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Building</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LockerArea</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LockerNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Combination</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Gender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Grade</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsStudentAccessUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LockerArea</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LockerID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LockerNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +142,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

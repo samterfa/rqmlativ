@@ -116,21 +116,21 @@
 
     <pre class="usage"><span class='fu'>modifyUsernameStructure</span>(
   <span class='no'>UsernameStructureID</span>,
-  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsEmployeeUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsEmployeeEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsStudentUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGuardianUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsStudentEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsStaffUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MinimumLength</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CharacterLimitGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GroupTruncationOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PartType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsEmployeeEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsEmployeeUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGuardianUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsStaffUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsStudentEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsStudentUser</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LimitCharacterNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LimitCharacterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Text</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CharacterLimitGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MinimumLength</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MinimumTiebreakerLength</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PartType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Text</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -143,6 +143,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

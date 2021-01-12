@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>createACAYearEmployeeCoveredIndividualV1</span>(
   <span class='kw'>ACAYearEmployeeV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CoveredIndividualNamePrinted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CoveredIndividualFirstNameElectronicFile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CoveredIndividualLastNameElectronicFile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CoveredIndividualMiddleNameElectronicFile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CoveredIndividualNamePrinted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CoveredIndividualSuffixElectronicFile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredJanuary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredFebruary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredMarch</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsCoveredApril</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredMay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredJune</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredJuly</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsCoveredAugust</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredSeptember</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredOctober</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCoveredNovember</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsCoveredDecember</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredFebruary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredJanuary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredJuly</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredJune</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredMarch</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredMay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredNovember</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredOctober</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCoveredSeptember</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

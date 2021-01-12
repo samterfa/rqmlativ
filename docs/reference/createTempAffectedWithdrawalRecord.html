@@ -115,31 +115,33 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempAffectedWithdrawalRecord</span>(
+  <span class='kw'>Action</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ActionMessage</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AffectedPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDRequestedBy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Section</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EarlyExitReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EarlyExitReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasGrades</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasFutureGrades</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasFutureAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasFutureGrades</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasGrades</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPartiallyPaidFees</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ActionMessage</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MostFutureGradeStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RecordType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Action</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsFutureEntryWithdrawal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasTransactionPreventingStudentSectionDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ParentPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsFutureEntryWithdrawal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsNoShowDeleteNoOtherEnrollmentInTheDistrict</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MostFutureGradeStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDRequestedBy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ParentPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RecordType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Section</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -152,6 +154,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

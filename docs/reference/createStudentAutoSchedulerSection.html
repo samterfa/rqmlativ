@@ -115,25 +115,25 @@
     </div>
 
     <pre class="usage"><span class='fu'>createStudentAutoSchedulerSection</span>(
-  <span class='kw'>StudentAutoSchedulerCourseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalScheduled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayPeriodCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DayRotationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MinimumStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MaximumStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OptimalStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalNumberScheduledThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowStudentsWithoutCategoryToBeAssigned</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DayRotationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayPeriodCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MaximumStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MinimumStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OptimalStudentCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PeriodDaySummary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PrimaryMeetBuildingCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PrimaryMeetRoomNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PrimaryMeetStaffNameLFM</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SchedulingCategories</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SchedulingTeams</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PeriodDaySummary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentAutoSchedulerCourseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalNumberScheduledThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalScheduled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +146,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

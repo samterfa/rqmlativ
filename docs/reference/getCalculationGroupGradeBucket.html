@@ -116,34 +116,38 @@
 
     <pre class="usage"><span class='fu'>getCalculationGroupGradeBucket</span>(
   <span class='no'>CalculationGroupGradeBucketID</span>,
-  <span class='kw'>CalculationGroupID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AllowCalculationTypeOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AllowWeightOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CalculationType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CalculationGroupGradeBucketIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RoundBucketPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CalculationGroupID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CalculationType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EffectiveCalculationTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradeMarkScoringType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAHistoricRecord</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasAcademicStandards</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasAcademicStandardWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasCategoryWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasGradeBucketWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasSubjectWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasAcademicStandardWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WeightPercentTotal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>InnerCalculationGroupGradeBucketsCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EffectiveCalculationTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfCategories</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasSubjects</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasAcademicStandards</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasSubjectWeighting</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasValidSpecificCategorySetup</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasValidWeightSum</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IncludeForBucketGroup</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>InnerCalculationGroupGradeBucketsCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>InUseBySections</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAHistoricRecord</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsMissingStudentGradeBucketAcademicStandards</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsMissingStudentGradeBucketSubjects</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MostUsedWeightForBucketGroup</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfCategories</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RoundBucketPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WeightPercentTotal</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -165,6 +169,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

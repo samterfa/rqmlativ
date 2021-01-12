@@ -115,31 +115,31 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTRASubmissionPayrollDetailV1</span>(
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeDeductionAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TRANumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployerDeductionAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PaymentDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PayPeriodBeginDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PayPeriodEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Salary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateRetirementAssociationTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRACurrentPositionMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRACurrentPositionMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Salary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeDeductionAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployerDeductionAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAExemptStatusMNCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAExemptStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTransactionTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTransactionTypeMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRAPaymentTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRAPaymentTypeMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TRAFiscalYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PayPeriodBeginDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PayPeriodEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PaymentDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRAPayrollFrequencyMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTRAPayrollFrequencyMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateRetirementAssociationTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TRAFiscalYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TRANumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TRASubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TRASubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAExemptStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAExemptStatusMNCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -152,6 +152,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

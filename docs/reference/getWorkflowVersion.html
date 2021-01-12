@@ -116,33 +116,35 @@
 
     <pre class="usage"><span class='fu'>getWorkflowVersion</span>(
   <span class='no'>WorkflowVersionID</span>,
-  <span class='kw'>SkywardHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WorkflowID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Notes</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Variables</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScreenAttribute</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Portal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Parameters</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RefreshScreen</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Scope</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AliasAction</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AliasModule</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AliasObject</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AliasAction</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FullAlias</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NavigationGroups</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSkywardWorkflowVersion</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCurrentWorkflowVersion</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasWorkflowInstances</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>VariablesForClient</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DataObjectDefaultSaveFlags</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DataObjectPropertyDefaults</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ExpirationDurationCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ExpirationDurationCustomDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FullAlias</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasWorkflowInstances</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsCurrentWorkflowVersion</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSkywardWorkflowVersion</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NavigationGroups</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Notes</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Parameters</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Portal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RefreshScreen</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Scope</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScreenAttribute</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SkywardHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Variables</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>VariablesForClient</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WorkflowID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -164,6 +166,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

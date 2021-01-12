@@ -117,17 +117,17 @@
     <pre class="usage"><span class='fu'>getBellSchedulingPeriod</span>(
   <span class='no'>BellSchedulingPeriodID</span>,
   <span class='kw'>BellScheduleID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BellSchedulingPeriodIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EndTimeWithOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LengthInMinutes</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>SchedulingPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BellSchedulingPeriodIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LengthInMinutes</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StartTimeWithOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndTimeWithOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

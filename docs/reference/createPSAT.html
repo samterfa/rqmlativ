@@ -115,27 +115,27 @@
     </div>
 
     <pre class="usage"><span class='fu'>createPSAT</span>(
-  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestForm</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CriticalReadingScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CriticalReadingNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CriticalReadingStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MathScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MathNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MathStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WritingSkillsScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WritingSkillsNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WritingSkillsStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CollegeReadinessBenchmark</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReadingTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WritingAndLanguageTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MathTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AnalysisInScienceScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AnalysisInHistoryScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AnalysisInScienceScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CollegeReadinessBenchmarkCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CriticalReadingNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CriticalReadingScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CriticalReadingStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EvidenceBasedReadingAndWritingSectionScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MathNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MathScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MathSectionScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MathStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MathTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReadingTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestFormCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WritingAndLanguageTestScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WritingSkillsNationalPercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WritingSkillsScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WritingSkillsStatePercentile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

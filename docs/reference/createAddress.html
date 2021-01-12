@@ -115,28 +115,28 @@
     </div>
 
     <pre class="usage"><span class='fu'>createAddress</span>(
-  <span class='kw'>StreetNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StreetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SecondaryUnitNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AddressSecondaryUnitID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AddressLine2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ZipID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ZipCodeAddOn</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AddressRangeNumericStreetNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AddressSecondaryUnitID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AddressType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CountyID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FreeformAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GeoID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InternationalAddress1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InternationalAddress2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InternationalAddress3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InternationalAddress4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>POBox</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FreeformAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AddressType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Latitude</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Longitude</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AddressRangeNumericStreetNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CountyID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GeoID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsLoadedLatitudeLongitude</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Latitude</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LatitudeLongitudeConfidence</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Longitude</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>POBox</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SecondaryUnitNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StreetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StreetNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ZipCodeAddOn</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ZipID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

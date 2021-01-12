@@ -116,27 +116,27 @@
 
     <pre class="usage"><span class='fu'>getTempFailedStudentSectionTransaction</span>(
   <span class='no'>TempFailedStudentSectionTransactionID</span>,
-  <span class='kw'>TempStudentSectionTransactionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentNameLFM</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Course</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSectionTransactionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TempStudentCourseRequestToReactivateID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TempStudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionLengthSubsetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EarlyExitReasonID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NameIDRequestedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityIDCountsAs</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HideNewStudentButton</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NameIDRequestedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionLengthSubsetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentNameLFM</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSectionTransactionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempStudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempStudentCourseRequestToReactivateID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempStudentSectionTransactionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -158,6 +158,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

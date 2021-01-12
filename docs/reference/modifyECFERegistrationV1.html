@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>modifyECFERegistrationV1</span>(
   <span class='no'>ECFERegistrationV1ID</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ECFEProgramRegistrationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SiteNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateECFEProgramNameMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProgramName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateECFEProgramModelMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProgramModel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProgramRegistrationDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CountOfClasses</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HoursAttended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DaysAttended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DaysAbsent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateECFEFeeStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FeeStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateECFEIEPStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IEPStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DaysAttended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ECFEProgramRegistrationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ECFESubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ECFESubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FeeStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HoursAttended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IEPStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProgramModel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProgramName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProgramRegistrationDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SiteNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateECFEFeeStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateECFEIEPStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateECFEProgramModelMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateECFEProgramNameMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,28 +116,28 @@
 
     <pre class="usage"><span class='fu'>getDemographicsTempCertification</span>(
   <span class='no'>DemographicsTempCertificationID</span>,
-  <span class='kw'>TempCertificationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CertificationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FullNameLFM</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CertificationTypeCodeDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>InstitutionName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateDisplayName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CertificationNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IssueDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ExpirationDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasErrors</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ErrorCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CertificationTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CertificationTypeCodeDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CertificationTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ErrorCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ExpirationDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FullNameLFM</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasErrors</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>InstitutionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>InstitutionName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IssueDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LineNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CertificationTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CertificationTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>InstitutionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateDisplayName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StateID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LineNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempCertificationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -159,6 +159,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

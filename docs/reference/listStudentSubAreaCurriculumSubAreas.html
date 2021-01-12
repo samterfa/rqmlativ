@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>listStudentSubAreaCurriculumSubAreas</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSubAreaCurriculumSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CurriculumSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntryMethod</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AppliedOrder</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CompletedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>InProgressCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FutureCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AttemptedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalNonAttemptedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAutomatic</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CompletedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CurriculumSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntryMethod</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FutureCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>InProgressCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAutomatic</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>PlannedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSubAreaCurriculumSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSubAreaID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalNonAttemptedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -172,6 +172,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

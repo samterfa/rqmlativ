@@ -115,35 +115,36 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempAffectedStudentAttendancePeriodRecord</span>(
+  <span class='kw'>Action</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AffectedPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentAttendanceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AttendanceCategory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AttendancePeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AttendanceTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AttendanceReasonCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AttendanceReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AttendanceTypeCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AttendanceTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CalendarDayID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CECEAttendancePeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CECEAttendanceReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CECEAttendanceTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Date</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DayRotationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PeriodCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Action</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewStudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldStudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewStudentSectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldStudentSectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Entity</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AttendanceCategory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FailureReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AttendanceTypeCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AttendanceReasonCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsForCECEAttendancePeriod</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CECEAttendanceTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CECEAttendanceReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CECEAttendancePeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewStudentSectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewStudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldStudentSectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldStudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PeriodCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ProcessFromCECEEntity</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentAttendanceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -156,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

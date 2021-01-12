@@ -115,30 +115,30 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTRASubmissionDemographicDetailV1</span>(
+  <span class='kw'>AddressID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>City</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DateOfBirth</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EffectiveDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AddressID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StreetLine1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StreetLine2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>City</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>State</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Zip</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TRANumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DateOfBirth</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EffectiveDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAExemptStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAExemptStatusMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAEligibilityMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAEligibilityMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateTRAStatusMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ExcludeFromExport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GenderCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>State</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAEligibilityMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAEligibilityMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAExemptStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAExemptStatusMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateTRAStatusMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StreetLine1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StreetLine2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TRANumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TRASubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TRASubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Zip</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -151,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

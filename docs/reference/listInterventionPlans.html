@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>listInterventionPlans</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InterventionPlanID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TierID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OutcomeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GoalFreeform</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AreaOfConcernID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ObjectiveID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartingGoal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MeasurementID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartingGoalDisplay</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TargetGoal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TargetGoalDisplay</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentInterventionReferralID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CurrentUserHasPermission</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AttachmentCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReviewDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CurrentUserHasPermission</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GoalFreeform</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>InterventionPlanID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeasurementID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ObjectiveID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OutcomeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>QualitativeScaleMappingIDStarting</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>QualitativeScaleMappingIDTarget</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReviewDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartingGoal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartingGoalDisplay</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentInterventionReferralID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TargetGoal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TargetGoalDisplay</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TierID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>WatchlistID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
@@ -179,6 +179,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

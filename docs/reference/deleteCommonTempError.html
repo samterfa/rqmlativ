@@ -36,8 +36,7 @@
 
 
 <meta property="og:title" content="Delete a CommonTempError — deleteCommonTempError" />
-<meta property="og:description" content="This function deletes a CommonTempError
-This function deletes a CommonTempError" />
+<meta property="og:description" content="This function deletes a CommonTempError" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -113,19 +112,9 @@ This function deletes a CommonTempError" />
 
     <div class="ref-description">
     <p>This function deletes a CommonTempError</p>
-<p>This function deletes a CommonTempError</p>
     </div>
 
     <pre class="usage"><span class='fu'>deleteCommonTempError</span>(
-  <span class='no'>CommonTempErrorID</span>,
-  <span class='kw'>ignoreWarnings</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>deleteCommonTempError</span>(
   <span class='no'>CommonTempErrorID</span>,
   <span class='kw'>ignoreWarnings</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
@@ -146,6 +135,10 @@ This function deletes a CommonTempError" />
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
+    </tr>
+    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -158,8 +151,6 @@ This function deletes a CommonTempError" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>The CommonTempErrorID of the deleted CommonTempError.
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>The CommonTempErrorID of the deleted CommonTempError.
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

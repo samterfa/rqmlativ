@@ -115,22 +115,22 @@
     </div>
 
     <pre class="usage"><span class='fu'>createDisciplineIncidentDashboardV1</span>(
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentIdentifier</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EdFiIncidentLocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentLocationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EdFiReporterDescriptionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReporterDescriptionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReporterName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BehaviorCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BehaviorShortDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StaffUniqueID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DashboardRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EdFiIncidentLocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EdFiReporterDescriptionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentIdentifier</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentLocationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReporterDescriptionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReporterName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StaffUniqueID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -143,6 +143,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

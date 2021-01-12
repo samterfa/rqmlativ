@@ -116,36 +116,36 @@
 
     <pre class="usage"><span class='fu'>modifyAssignment</span>(
   <span class='no'>AssignmentID</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CategoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AssignedDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MaxScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Weight</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ScoreDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AssignmentSyncKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDeleted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsOnlineAssignment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Instructions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefaultPointsPerQuestion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RandomizeQuestions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AutoScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowCorrectAnswers</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AcademicStandardID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AnswerRevealTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AssessmentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AcademicStandardID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AssignedDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AssignmentIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AssignmentIDParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AssignmentSyncKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AutoScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CategoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefaultPointsPerQuestion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HideScoreUntilTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Instructions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDeleted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsOnlineAssignment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MaxScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RandomizeQuestions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ScoreDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SendNotificationWhenAnswersRevealed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SendNotificationWhenAssignmentReadyToTake</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowCorrectAnswers</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SubjectID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UseGradeMarkScoring</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SendNotificationWhenAssignmentReadyToTake</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SendNotificationWhenAnswersRevealed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HideScoreUntilTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AssignmentIDParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AssignmentIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Weight</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -158,6 +158,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

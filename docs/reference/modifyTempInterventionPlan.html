@@ -116,23 +116,23 @@
 
     <pre class="usage"><span class='fu'>modifyTempInterventionPlan</span>(
   <span class='no'>TempInterventionPlanID</span>,
-  <span class='kw'>StudentNameLFM</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AreaOfConcernDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Duration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ErrorCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Exceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InterventionPlanStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TierDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsSelected</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MeetingTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ObjectiveDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OutcomeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Exceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Threshold</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Duration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MeetingTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartingGoal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>QualitativeScaleMappingIDStarting</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TargetGoal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>QualitativeScaleMappingIDTarget</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsSelected</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ErrorCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartingGoal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNameLFM</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TargetGoal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Threshold</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TierDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -145,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

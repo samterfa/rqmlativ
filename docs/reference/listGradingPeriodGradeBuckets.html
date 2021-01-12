@@ -116,29 +116,29 @@
 
     <pre class="usage"><span class='fu'>listGradingPeriodGradeBuckets</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradingPeriodIDStart</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradingPeriodIDEnd</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FactorBasedGPACountAs</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsUpToDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradingPeriodGradeBucketIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UseMaxExtraCredit</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MaxExtraCredit</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfGradeBucketsToWeight</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradeBucketLabelWithDates</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradingPeriodEndDateAddSnapshotGraceDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAHistoricRecord</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasGradeBucketTypeCategories</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradingPeriodGradeBucketExistsInSpecifcEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateETranscriptSessionTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodGradeBucketIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodIDEnd</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodIDStart</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasGradeBucketTypeCategories</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAHistoricRecord</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsGradeBucketForETranscript</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsUpToDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MaxExtraCredit</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfGradeBucketsToWeight</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateETranscriptSessionTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UseMaxExtraCredit</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -177,6 +177,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

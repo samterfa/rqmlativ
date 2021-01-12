@@ -115,26 +115,26 @@
     </div>
 
     <pre class="usage"><span class='fu'>createIncident</span>(
+  <span class='kw'>ActionIDRecommended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BuildingID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DamageCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DateTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IncidentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DateTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsSuppressed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BuildingID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DamageCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ActionIDRecommended</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReferredByType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReferredByNameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReferredByFreeformName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateDIRSTimeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportedToLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NumberOfNonEnrolledOffenders</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NumberOfNonEnrolledVictims</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsSuppressed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReferredByFreeformName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReferredByNameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReferredByType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportedToLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateDIRSTimeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -147,6 +147,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

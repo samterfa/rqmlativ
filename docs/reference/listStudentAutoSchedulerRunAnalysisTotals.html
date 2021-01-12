@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>listStudentAutoSchedulerRunAnalysisTotals</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentAutoSchedulerRunAnalysisTotalID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentsWithConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ConflictedStudentCourseRequestPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ConflictPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalConflictedStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalScheduledStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EndTimeAnalysis</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScheduledStudentCourseRequestPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartTimeAnalysis</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentAutoSchedulerRunAnalysisTotalID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentCourseRequestsConflictedThisRun</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentCourseRequestsProcessedThisRun</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentCourseRequestsScheduledThisRun</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConflictedStudentCourseRequestPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScheduledStudentCourseRequestPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartTimeAnalysis</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EndTimeAnalysis</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentsWithConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentsWithOneConflict</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentsWithTwoConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentsWithThreeOrMoreConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentsWithTwoConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>TotalAlternateStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalConflictedStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalScheduledStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalStudentCourseRequests</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -178,6 +178,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

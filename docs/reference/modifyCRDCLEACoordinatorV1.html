@@ -116,28 +116,28 @@
 
     <pre class="usage"><span class='fu'>modifyCRDCLEACoordinatorV1</span>(
   <span class='no'>CRDCLEACoordinatorV1ID</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictSchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDSex</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SexFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SexLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SexPhone</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SexEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDRace</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RaceFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RaceLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RacePhone</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RaceEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDDisability</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisabilityEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisabilityFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisabilityLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisabilityPhone</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisabilityEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictSchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasDisability</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasGender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasRace</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasDisability</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDDisability</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDRace</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDSex</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RaceEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RaceFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RaceLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RacePhone</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SexEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SexFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SexLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SexPhone</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -150,6 +150,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

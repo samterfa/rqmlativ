@@ -71,6 +71,49 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#rqmlativ" class="anchor"></a>rqmlativ</h1></div>
 <p>This repo provides an SDK for Skyward’s QMLATIV generic API.</p>
+<div id="install" class="section level2">
+<h2 class="hasAnchor">
+<a href="#install" class="anchor"></a>Install</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>remotes<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/remotes/man/install_github.html">install_github</a></span>(<span class="st">"samterfa/rqmlativ"</span>)</span></code></pre></div>
+</div>
+<div id="getting-started" class="section level2">
+<h2 class="hasAnchor">
+<a href="#getting-started" class="anchor"></a>Getting Started</h2>
+<p>Follow Skyward’s instructions for creating a Qmlativ API user <a href="https://help.skyward.com/Documentation/000006Administrative_Access_-_System_Administration/000002API/000002Creating_API_User_Access_Records">here</a>. Select “Generic” for the API Type, and OAuth 2.0 as the authentication type.</p>
+</div>
+<div id="usage" class="section level2">
+<h2 class="hasAnchor">
+<a href="#usage" class="anchor"></a>Usage</h2>
+<p>Begin by setting relevant environmental variables based on the credentials created above.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw"><a href="https://rdrr.io/r/base/Sys.setenv.html">Sys.setenv</a></span>(<span class="dt">SkywardConsumerKey =</span> {YourConsumerKey})</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw"><a href="https://rdrr.io/r/base/Sys.setenv.html">Sys.setenv</a></span>(<span class="dt">SkywardConsumerSecret =</span> {YourConsumerSecret})</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw"><a href="https://rdrr.io/r/base/Sys.setenv.html">Sys.setenv</a></span>(<span class="dt">SkywardBaseUrl =</span> {YourBaseUrl})</span></code></pre></div>
+<p>Or, even better, place the above in a .Renviron in your working directory so that they are automatically loaded when using rqmlativ.</p>
+<p>Your base url is likely your Skyward URL but ending in API instead of STS.</p>
+<p>Then make a call!</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(rqmlativ)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co">#&gt; </span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">#&gt; Attaching package: 'rqmlativ'</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co">#&gt; The following objects are masked from 'package:methods':</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co">#&gt; </span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co">#&gt;     getClass, getGroup</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co">#&gt; The following object is masked from 'package:base':</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a><span class="co">#&gt; </span></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co">#&gt;     getElement</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a></span>
+<span id="cb3-11"><a href="#cb3-11"></a><span class="kw"><a href="reference/listEntities.html">listEntities</a></span>(<span class="dt">Name =</span> T)</span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="co">#&gt; Adding .tokenCache/rqmlativToken to .gitignore</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="co">#&gt;                              Name</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="co">#&gt; 1               Minnehaha Academy</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a><span class="co">#&gt; 2  Minnehaha Academy Upper School</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a><span class="co">#&gt; 3  Minnehaha Academy Lower School</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a><span class="co">#&gt; 4 Minnehaha Academy Middle School</span></span></code></pre></div>
+</div>
+<div id="resources" class="section level2">
+<h2 class="hasAnchor">
+<a href="#resources" class="anchor"></a>Resources</h2>
+<p>Function documentation for this package is available at <a href="https://samterfa.github.io/rqmlativ/reference/index.html" class="uri">https://samterfa.github.io/rqmlativ/reference/index.html</a>.</p>
+</div>
 </div>
   </div>
 

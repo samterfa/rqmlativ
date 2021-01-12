@@ -116,54 +116,54 @@
 
     <pre class="usage"><span class='fu'>listStudentCourseRequests</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityIDRequestedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseEntityOfferedToID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAlternate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AlternateRank</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentCourseRequestIDAlternateFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RequestStatus</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CountsAgainstRequestLimit</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseConflict</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseEntityOfferedToID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseIsNotDroppedManualOrTransfer</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseNotScheduled</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseNotScheduledAndIsRequestedFromViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseRequested</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseScheduled</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseConflict</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseScheduledAndInProgress</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseScheduledAndIsBeforeOrInProgress</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RequestSource</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchedulingMethod</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionLengthSubsetSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionLengthSubsetCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionLengthSubsetDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CountsAgainstRequestLimit</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EarnedCreditsRequested</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EarnedCreditsPossibleAnticipated</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PrerequisiteMet</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseScheduledAndAllTransactionsCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RequestedFromViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DisplayToViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseNotScheduledAndIsRequestedFromViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-
-    <span class='kw'>CourseScheduledAndIsRequestedFromOfferingEntityAndAllTransactionsCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseScheduledAndCountsTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ViewingFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RequestedFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-
-    <span class='kw'>CourseScheduledAndIsBeforeOrInProgressAndNotHasAtleastOneTransactionNotCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseScheduledAndInProgressAndIsEffectiveToViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
 
     <span class='kw'>CourseScheduledAndAllTransactionsCountTowardsViewingEntityAndCourseIsNotDropOrTransfer</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseScheduledAndCountsTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseScheduledAndInProgress</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseScheduledAndInProgressAndIsEffectiveToViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CourseScheduledAndIsBeforeOrInProgress</span> <span class='kw'>=</span> <span class='no'>F</span>,
+
+    <span class='kw'>CourseScheduledAndIsBeforeOrInProgressAndNotHasAtleastOneTransactionNotCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+
+    <span class='kw'>CourseScheduledAndIsRequestedFromOfferingEntityAndAllTransactionsCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
 
     <span class='kw'>CourseScheduledAndRequestedFromViewingEntityAndAllTransactionsCountTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
 
     <span class='kw'>CrsIsNotDrpOrTransferAndNotScheduledOrCrsScheduledAndRequestedFromViewingEntityAndAllTransactionsCntTowardsViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CourseIsNotDroppedManualOrTransfer</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DisplayToViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCreditsPossibleAnticipated</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCreditsRequested</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityIDRequestedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAlternate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PrerequisiteMet</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RequestedFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RequestedFromViewingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RequestSource</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RequestStatus</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchedulingMethod</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionLengthSubsetCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionLengthSubsetDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionLengthSubsetSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentCourseRequestIDAlternateFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ViewingFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -202,6 +202,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

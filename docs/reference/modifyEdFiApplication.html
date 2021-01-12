@@ -116,19 +116,35 @@
 
     <pre class="usage"><span class='fu'>modifyEdFiApplication</span>(
   <span class='no'>EdFiApplicationID</span>,
+  <span class='kw'>AddressIDESC</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AddressIDLEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NumericYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EarnedCreditsMethodIDOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EducationServiceCenterId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FaxNumberESC</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FaxNumberLEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GPABucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GPAMethodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeSendOption</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsEnabled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Key</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LiveURI</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LocalEducationAgencyId</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LogDurationTimes</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameOfInstitutionESC</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameOfInstitutionLEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Namespace</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NumericYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PhoneNumberESC</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PhoneNumberLEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ProcessEvents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ReportingType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>RetainMessageQueueRecordsFor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LiveURI</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SandboxURI</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GPAMethodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GPABucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EarnedCreditsMethodIDOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeSendOption</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateOrganizationIdESC</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateOrganizationIdLEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseDistrictData</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -141,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

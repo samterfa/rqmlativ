@@ -115,29 +115,29 @@
     </div>
 
     <pre class="usage"><span class='fu'>createIncidentOffenseName</span>(
-  <span class='kw'>IncidentOffenseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncidentOffenseNameType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FreeformName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InvolvementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StaffIDDisciplineOfficer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Statement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PerceivedMotivationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OffenseLevelID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateVictimTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateVictimCostMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InjuryOccured</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WasSeriousBodilyInjury</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportedToLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateOffenderActivityMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsPhysicalAssault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsPhysicalAssaultState</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OffenderArrestedByLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisciplineThresholdID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MultipleVictimCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EstimatedVictimsEnrolled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EstimatedVictimsNotEnrolled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FreeformName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentOffenseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentOffenseNameType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InjuryOccured</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InvolvementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsPhysicalAssault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsPhysicalAssaultState</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MultipleVictimCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OffenderArrestedByLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OffenseLevelID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PerceivedMotivationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportedToLawEnforcement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StaffIDDisciplineOfficer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Statement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateOffenderActivityMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateVictimCostMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateVictimTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WasSeriousBodilyInjury</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -150,6 +150,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

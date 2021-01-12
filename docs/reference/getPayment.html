@@ -116,27 +116,27 @@
 
     <pre class="usage"><span class='fu'>getPayment</span>(
   <span class='no'>PaymentID</span>,
-  <span class='kw'>PayorID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LineID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PaymentTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TenderType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CheckNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BaseCurrencyAmount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReceiptNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PaymentIDOriginal</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AccountingUpdateID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PaymentAmountWithAdjustments</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BaseCurrencyAmount</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CheckNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LineCloseoutID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LineID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NameIDPaidBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReconciledAfterSelectedBankRec</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PaymentAmountWithAdjustments</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PaymentIDOriginal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PaymentTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PayorID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ReadOnlyOnBankRec</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LineCloseoutID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReceiptNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReconciledAfterSelectedBankRec</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TenderType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -158,6 +158,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

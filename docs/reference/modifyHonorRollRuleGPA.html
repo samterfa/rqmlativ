@@ -116,16 +116,16 @@
 
     <pre class="usage"><span class='fu'>modifyHonorRollRuleGPA</span>(
   <span class='no'>HonorRollRuleGPAID</span>,
-  <span class='kw'>HonorRollRunLevelRuleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GPABucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GPAMethodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MinimumGPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MaximumGPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HonorRollRuleGPAIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GPAType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HonorRollRuleGPAIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HonorRollRunLevelRuleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MaximumGPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MinimumGPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -138,6 +138,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

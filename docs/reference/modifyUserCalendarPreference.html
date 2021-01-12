@@ -116,29 +116,29 @@
 
     <pre class="usage"><span class='fu'>modifyUserCalendarPreference</span>(
   <span class='no'>UserCalendarPreferenceID</span>,
-  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalendarType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SelectedView</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowDistrictActivityEvents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowCalendarEvents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowWeekends</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowMyTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowAllMyEmployeesTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowMyDirectEmployeesTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowBirthdays</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictActivityEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalendarEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowTransactionsISubbedFor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowTransactionsIHadASubFor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ApprovedTimeOffEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UnapprovedTimeOffEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TransactionsISubbedForEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TransactionsIHadASubForEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowAllocatedTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BirthdayEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PayDayEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowCalendarComments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CalendarCommentsBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalendarEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalendarType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictActivityEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PayDayEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SelectedView</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowAllMyEmployeesTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowAllocatedTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowBirthdays</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowCalendarComments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowCalendarEvents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowDistrictActivityEvents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowMyDirectEmployeesTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowMyTimeOff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowTransactionsIHadASubFor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowTransactionsISubbedFor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowWeekends</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TransactionsIHadASubForEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TransactionsISubbedForEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UnapprovedTimeOffEventBackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -151,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

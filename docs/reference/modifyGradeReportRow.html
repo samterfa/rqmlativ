@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>modifyGradeReportRow</span>(
   <span class='no'>GradeReportRowID</span>,
+  <span class='kw'>AttemptedCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ClassPeriod</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseSubjectDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseTypeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Department</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EarnedCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeReportAcademicSessionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeReportAcademicSessionSortNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeReportRowIDParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RowType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthSubsetCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthSubsetDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Sort1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Sort2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Sort3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Sort4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RowType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SortNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ClassPeriod</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EarnedCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalPossibleCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseTypeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Department</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseSubjectDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthSubsetCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthSubsetDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StaffName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeReportRowIDParent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeReportAcademicSessionSortNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AttemptedCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BackgroundColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TextColor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalPossibleCredit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -152,6 +152,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

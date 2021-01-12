@@ -116,27 +116,27 @@
 
     <pre class="usage"><span class='fu'>modifyAttachmentType</span>(
   <span class='no'>AttachmentTypeID</span>,
-  <span class='kw'>ObjectID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CustomizationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IncludeWithEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ObjectID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInActivityAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInActivityAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInAdministrativeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInAdministrativeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInEmployeeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInEmployeeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInFamilyAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInFamilyAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInNewStudentEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInNewStudentEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ShowInTeacherAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardShowInTeacherAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ShowInStudentServices</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ShowInTeacherAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInActivityAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInAdministrativeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInEmployeeAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInFamilyAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInNewStudentEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInStudentAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SkywardShowInStudentServices</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardShowInTeacherAccess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

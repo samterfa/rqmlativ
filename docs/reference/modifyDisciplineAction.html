@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>modifyDisciplineAction</span>(
   <span class='no'>ActionID</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ActionIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ActionTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DurationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CreateAttendanceForActionDetail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DefaultDuration</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DefaultLocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SuppressCreationOfActionDetails</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CreateAttendanceForActionDetail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ActionIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DurationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FederalDisciplineCategoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateActionTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ActionTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>RestraintSeclusion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateActionTypeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SuppressCreationOfActionDetails</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TransferToAlternativeSchool</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -143,6 +143,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

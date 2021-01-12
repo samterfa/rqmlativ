@@ -116,9 +116,9 @@
 
     <pre class="usage"><span class='fu'>listPreschool1perStudents</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Preschool1perStudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OnlineFormStatusID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>OnlineFormID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OnlineFormStatusID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Preschool1perStudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step1Element1</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step1Element2</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step2Element3</span> <span class='kw'>=</span> <span class='no'>F</span>,
@@ -127,9 +127,9 @@
   <span class='kw'>Step2Element7</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step2Element8</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step2Element9</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Step3Element12</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step3Element4</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Step3Element8</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Step3Element12</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -168,6 +168,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

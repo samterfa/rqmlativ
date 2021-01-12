@@ -115,15 +115,15 @@
     </div>
 
     <pre class="usage"><span class='fu'>createCalculationGroupGradeBucket</span>(
-  <span class='kw'>CalculationGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowCalculationTypeOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowWeightOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CalculationGroupGradeBucketIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RoundBucketPercent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeMarkScoringType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculationGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeMarkScoringType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RoundBucketPercent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -136,6 +136,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>getMeetDisplayPeriod</span>(
   <span class='no'>MeetDisplayPeriodID</span>,
-  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DisplayPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HideMeetDisplayPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LockDisplayPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScheduledBySectionScheduler</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MeetDisplayPeriodIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ViewingFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MeetDisplayPeriodStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DisplayPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HideMeetDisplayPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LockDisplayPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MeetDisplayPeriodEndTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeetDisplayPeriodIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeetDisplayPeriodStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScheduledBySectionScheduler</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ViewingFromOfferingEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -151,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

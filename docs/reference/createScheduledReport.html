@@ -115,26 +115,27 @@
     </div>
 
     <pre class="usage"><span class='fu'>createScheduledReport</span>(
-  <span class='kw'>ReportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardReportSystemVersion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ScheduledTaskID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AppendDateTimeFormat</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AutomateFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AutoUpdate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DaysToSaveReport</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DefinitionUpdatedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EncodingType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ExportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MediaIDCrystalRPT</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MessageMasterID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NotifyByEmail</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NotifyByMessageCenter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ExportFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AutomateFileName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OverwriteExistingFile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DefinitionUpdatedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ReportFileExtensionOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MediaIDCrystalRPT</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AutoUpdate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EncodingType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ScheduledTaskID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardReportSystemVersion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -148,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

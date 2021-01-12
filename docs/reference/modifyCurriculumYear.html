@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>modifyCurriculumYear</span>(
   <span class='no'>CurriculumYearID</span>,
-  <span class='kw'>StateCourseCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateStandardAddressedCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateSubjectAreaCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGraduationRequirement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsEndOfCourse</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CurriculumID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurriculumYearIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DistrictGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportToFitnessGram</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FederalAdvancedPlacementCourseTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FederalSubjectTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsAdultBasicEducation</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsEndOfCourse</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsFederalDistanceEducation</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsFederalDualEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FederalSubjectTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FederalAdvancedPlacementCourseTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CurriculumYearIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateSTARAssignmentCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateEarlyEducationLocationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsStateProgram</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsFederalProgram</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsAdultBasicEducation</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGraduationRequirement</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsStateProgram</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportToFitnessGram</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateCourseCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateEarlyEducationLocationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateStandardAddressedCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateSTARAssignmentCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateSubjectAreaCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

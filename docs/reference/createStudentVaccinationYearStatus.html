@@ -115,23 +115,23 @@
     </div>
 
     <pre class="usage"><span class='fu'>createStudentVaccinationYearStatus</span>(
-  <span class='kw'>StudentVaccinationYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ValidDoseDates</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InvalidDoseDates</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllDoseDates</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>VaccinationYearComplianceScheduleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentVaccinationWaiverID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentChildhoodIllnessID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ComplianceScheduleDetailID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsOutOfCompliance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InvalidDoseDates</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsConditional</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsProvisional</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReasonOutOfCompliance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReasonConditional</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsInComplianceByVaccines</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsOutOfCompliance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsProvisional</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReasonConditional</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReasonOutOfCompliance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentChildhoodIllnessID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentVaccinationWaiverID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentVaccinationYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>VaccinationYearComplianceScheduleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ValidDoseDates</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -144,6 +144,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>getFilter</span>(
   <span class='no'>FilterID</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DataModule</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DataObject</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FilterDataAdvancedCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FilterDataColumnCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsReusable</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FiscalYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SkywardID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SkywardHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FriendlyFilter</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FilterIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FiscalYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FriendlyFilter</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsReusable</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SkywardHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SkywardID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -157,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

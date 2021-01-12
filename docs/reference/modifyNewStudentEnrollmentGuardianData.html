@@ -116,29 +116,29 @@
 
     <pre class="usage"><span class='fu'>modifyNewStudentEnrollmentGuardianData</span>(
   <span class='no'>NewStudentEnrollmentGuardianDataID</span>,
-  <span class='kw'>FamilyGuardianID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameSuffixID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GenderCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RelationshipID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AddGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowStudentPickup</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DriversLicenseNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Color</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CreateNewGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DeleteGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DriversLicenseNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FamilyGuardianID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GenderCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCustodialGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LicensePlateNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MakeModel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameSuffixID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameVehicleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OnScreenID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CreateNewGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AddGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameVehicleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RelationshipID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>VehicleID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Year</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MakeModel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Color</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LicensePlateNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>VIN</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCustodialGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Year</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -151,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

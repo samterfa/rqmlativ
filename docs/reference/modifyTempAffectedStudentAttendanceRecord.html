@@ -117,30 +117,30 @@
     <pre class="usage"><span class='fu'>modifyTempAffectedStudentAttendanceRecord</span>(
   <span class='no'>TempAffectedStudentAttendanceRecordID</span>,
   <span class='kw'>AffectedPrimaryKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldDaysAbsent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewDaysAbsent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldDaysExcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewDaysExcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldDaysUnexcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewDaysUnexcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldDaysOther</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewDaysOther</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldTardyCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewTardyCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CalendarDayID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PreviousGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldStudentAttendancePeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewStudentAttendancePeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DayRotationCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FailureReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FailedStudentAttendancePeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FailureReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewDaysAbsent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewDaysExcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewDaysOther</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewDaysUnexcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewStudentAttendancePeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewTardyCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldDaysAbsent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldDaysExcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldDaysOther</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldDaysUnexcused</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldStudentAttendancePeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldTardyCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PreviousGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -153,6 +153,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

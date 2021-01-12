@@ -115,14 +115,14 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempDependent</span>(
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsExistingRecord</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnScreenCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DependentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsExistingRecord</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnScreenCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>RelationshipID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
@@ -137,6 +137,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

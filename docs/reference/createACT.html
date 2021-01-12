@@ -115,19 +115,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>createACT</span>(
-  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CombinedEnglishWritingScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CompositeScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ELAScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EnglishScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MathScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProgressTowardCareerReadinessIndicatorCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ReadingScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ScienceScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompositeScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CombinedEnglishWritingScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STEMScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentTestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UnderstandingComplexTextIndicatorCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>WritingScaleScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>WritingSubjectScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ELAScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>STEMScore</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UnderstandingComplexTextIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProgressTowardCareerReadinessIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -140,6 +140,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

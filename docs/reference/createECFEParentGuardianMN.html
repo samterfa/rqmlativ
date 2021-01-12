@@ -115,19 +115,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>createECFEParentGuardianMN</span>(
+  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ECFEProgramRegistrationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameEntryType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FreeFormFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FreeFormLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateECFERegisteringPersonMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HouseholdIncome</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsReceivingInterpreterAssistance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameEntryType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NumberOfPeopleInHousehold</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateECFEClassroomParticipationMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateECFEEducationBackgroundMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateECFEEmploymentStatusMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HouseholdIncome</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NumberOfPeopleInHousehold</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateECFERegisteringPersonMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -140,6 +140,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

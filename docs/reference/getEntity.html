@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>getEntity</span>(
   <span class='no'>EntityID</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearIDCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsDistrictWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSystemWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowDualEnrollment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CampusID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CodeName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CampusID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ExternalLinkEntityCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalPlanEntityYears</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictCodeEntityCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EdFiSchoolID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EnforceAddressRangeDefaults</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityCodeOrCombinedCodesFollettExport</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityGroupCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReportToState</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityCodeOrCombinedCodesFollettExport</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictCodeEntityCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EnforceAddressRangeDefaults</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCurrentlySelected</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ExternalLinkEntityCount</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IlluminateSiteTypeOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EdFiSchoolID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowDualEnrollment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsCurrentlySelected</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsDistrictWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSystemWide</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReportToState</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearIDCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalPlanEntityYears</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -161,6 +161,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

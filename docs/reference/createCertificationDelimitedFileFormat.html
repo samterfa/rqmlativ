@@ -115,26 +115,26 @@
     </div>
 
     <pre class="usage"><span class='fu'>createCertificationDelimitedFileFormat</span>(
-  <span class='kw'>CertificationThirdPartyFormatID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NumberOfHeaderRows</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DelimiterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DelimiterCharacter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CertificationTypeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InstitutionNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CertificationNumberColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IssueDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ExpirationDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CertificationLevelColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CertificationSubjectColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HighlyQualifiedColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CertificationCompetencyColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CertificationDetailIssueDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CertificationDetailExpirationDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationDetailIssueDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationLevelColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationNumberColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationSubjectColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationThirdPartyFormatID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CertificationTypeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CommentColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LowCertificationGradeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DelimiterCharacter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DelimiterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ExpirationDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HighCertificationGradeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HighlyQualifiedColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InstitutionNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IssueDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LowCertificationGradeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NumberOfHeaderRows</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -147,6 +147,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

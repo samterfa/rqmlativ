@@ -116,33 +116,33 @@
 
     <pre class="usage"><span class='fu'>getStudentGradeDashboardV1</span>(
   <span class='no'>StudentGradeDashboardV1ID</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LetterGradeEarned</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericGradeEarned</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ClassPeriodName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DashboardRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DiagnosticStatement</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EdFiGradeTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EdFiPerformanceBaseTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PerformanceBaseCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentUniqueID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LocalCourseCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EdFiTermTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TermCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ClassPeriodName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Location</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EdFiGradingPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EdFiPerformanceBaseTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EdFiTermTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradingPeriodCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DashboardRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>KeyHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LetterGradeEarned</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LocalCourseCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Location</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumericGradeEarned</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PerformanceBaseCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentUniqueID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TermCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UpdateHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -164,6 +164,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

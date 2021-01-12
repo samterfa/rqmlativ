@@ -116,33 +116,33 @@
 
     <pre class="usage"><span class='fu'>listUnemploymentCompensationEmployerV1s</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UnemploymentCompensationEmployerV1ID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EmployerID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EmployerName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>FederalEIN</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasErrors</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>InterestDue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PenaltyDue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PreviousOverpayment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PreviousUnderpayment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TaxRate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TaxableWageBase</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>KeyHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfEmployees1stMonth</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfEmployees2ndMonth</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfEmployees3rdMonth</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalGrossWages</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalTaxableWages</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PenaltyDue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PreviousOverpayment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PreviousUnderpayment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaxableWageBase</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaxRate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>TotalEmployerContributions</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalGrossWages</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalNumberOfEmployees</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>TotalPaymentDue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TotalTaxableWages</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UnemploymentCompensationEmployerV1ID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UnemploymentCompensationSubmissionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UnemploymentCompensationSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasErrors</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>KeyHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UpdateHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TotalNumberOfEmployees</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -181,6 +181,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

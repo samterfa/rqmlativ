@@ -116,31 +116,30 @@
 
     <pre class="usage"><span class='fu'>getAttendanceReportRunHistory</span>(
   <span class='no'>AttendanceReportRunHistoryID</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RunDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ParameterData</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ParameterDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FilterType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AttachmentDisplayName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CachedEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CachedFiscalYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CachedSchoolYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CountType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityIDList</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FilterType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FiscalYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GracePeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CountType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReportRunInfoID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ParameterData</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ParameterDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>PostToFASA</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AttachmentDisplayName</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>PrintAttendanceLetterForWindowedEnvelope</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FiscalYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CachedFiscalYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReportRunInfoID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RunDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityIDList</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearNumericYearOrCurrent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CachedSchoolYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CachedEntity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -162,6 +161,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

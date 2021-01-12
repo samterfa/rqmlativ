@@ -115,27 +115,27 @@
     </div>
 
     <pre class="usage"><span class='fu'>createMARSSSchoolFileFallV1</span>(
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MARSSSubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MARSSSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DistrictType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntitySchoolID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateDistrictMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateDistrictTypeCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DistrictType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeLevelID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeLevelCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeLevelID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeReferenceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InstructionalDays</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCharter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>KindergartenIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MARSSSubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MARSSSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MinutesInSchoolDay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateDistrictMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateDistrictTypeCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StateKindergartenScheduleIndicatorCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StateTitleISchoolIndicatorCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TitleIIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StateKindergartenScheduleIndicatorCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>KindergartenIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InstructionalDays</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MinutesInSchoolDay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCharter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

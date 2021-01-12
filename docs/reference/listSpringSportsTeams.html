@@ -116,11 +116,11 @@
 
     <pre class="usage"><span class='fu'>listSpringSportsTeams</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SpringSportsTeamID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SpringSportID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Lettered</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Captain</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Lettered</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SpringSportID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SpringSportsTeamID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
@@ -160,6 +160,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

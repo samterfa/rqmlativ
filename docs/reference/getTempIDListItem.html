@@ -36,8 +36,7 @@
 
 
 <meta property="og:title" content="Get a TempIDListItem — getTempIDListItem" />
-<meta property="og:description" content="This function returns a dataframe or json object of a TempIDListItem
-This function returns a dataframe or json object of a TempIDListItem" />
+<meta property="og:description" content="This function returns a dataframe or json object of a TempIDListItem" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -113,30 +112,15 @@ This function returns a dataframe or json object of a TempIDListItem" />
 
     <div class="ref-description">
     <p>This function returns a dataframe or json object of a TempIDListItem</p>
-<p>This function returns a dataframe or json object of a TempIDListItem</p>
     </div>
 
     <pre class="usage"><span class='fu'>getTempIDListItem</span>(
   <span class='no'>TempIDListItemID</span>,
-  <span class='kw'>ID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
-  <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
-  <span class='kw'>returnResponse</span> <span class='kw'>=</span> <span class='no'>F</span>
-)
-
-<span class='fu'>getTempIDListItem</span>(
-  <span class='no'>TempIDListItemID</span>,
   <span class='kw'>ID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -160,6 +144,10 @@ This function returns a dataframe or json object of a TempIDListItem" />
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
     </tr>
     <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
+    </tr>
+    <tr>
       <th>flatten</th>
       <td><p>Whether to flatten result into a dataframe or return the json object. Default is TRUE (flatten to dataframe).</p></td>
     </tr>
@@ -176,8 +164,6 @@ This function returns a dataframe or json object of a TempIDListItem" />
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A dataframe or of TempIDListItem
-<a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
-<p>A dataframe or of TempIDListItem
 <a href='https://help.skyward.com/'>Skyward's Knowledge Hub</a></p>
 
   </div>

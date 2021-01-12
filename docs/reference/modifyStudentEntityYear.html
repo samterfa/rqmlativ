@@ -116,31 +116,31 @@
 
     <pre class="usage"><span class='fu'>modifyStudentEntityYear</span>(
   <span class='no'>StudentEntityYearID</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ChromebookDocumentsReturned</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurrentPercentEnrolled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StaffIDAdvisor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HomeroomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDefaultEntity</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchedulingTeamID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StaffIDDisciplineOfficer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntryWithdrawalIDLatest</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ExcludeFromHonorRoll</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ExcludeFromRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntryWithdrawalIDLatest</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SignedAcceptableUsePolicy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ChromebookDocumentsReturned</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HandbookSigned</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UILFeeReceived</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OptOutOfMedia</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsTransportationRequested</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsCrossEntityCourseEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IncludeAsProspectiveRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Grade</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CurrentPercentEnrolled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HandbookSigned</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HomeroomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncludeAsProspectiveRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsCrossEntityCourseEnrollment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDefaultEntity</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsTransportationRequested</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OptOutOfMedia</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchedulingTeamID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SchoolIDPathExpectedSchool</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SignedAcceptableUsePolicy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StaffIDAdvisor</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StaffIDDisciplineOfficer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UILFeeReceived</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -153,6 +153,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

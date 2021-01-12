@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>modifyTaskInstance</span>(
   <span class='no'>TaskInstanceID</span>,
-  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>WorkflowInstanceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>QueueTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StopTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Application</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Hostname</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ThreadName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>QueueDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ProcessID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UserIDPerformer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LastActivity</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ProcessID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>QueueDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>QueueTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StopTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ThreadName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UserIDPerformer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>WorkflowInstanceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +142,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

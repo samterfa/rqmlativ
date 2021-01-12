@@ -116,23 +116,23 @@
 
     <pre class="usage"><span class='fu'>modifyTempTransportation</span>(
   <span class='no'>TempTransportationID</span>,
-  <span class='kw'>HasExceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Exceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>School</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TransportationCategory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ArrivalTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Bus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BusRoute</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Driver</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BusStop</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BusStopAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Days</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Driver</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Exceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasExceptions</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>School</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StopType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ArrivalTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentAddress</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TransportationCategory</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -145,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

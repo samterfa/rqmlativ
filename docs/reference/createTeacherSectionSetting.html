@@ -115,29 +115,29 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTeacherSectionSetting</span>(
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ClassGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ManualDateEntryStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ManualDateEntryEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentsToDisplay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNameDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentGradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayMissingAssignment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayUnscoredPastDueAssignments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayGradebookAverages</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayAssignmentAttendanceIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentGradingPeriodCommentIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculationGroupGradeBucketIDLocked</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BrowseViewID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HideLockedColumns</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UseCustomClassRosterSort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HideAssignmentCategoryColors</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentGroups</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayStudentGroupColors</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculationGroupGradeBucketIDLocked</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ClassGroupID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayAssignmentAttendanceIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayAssignmentStudentGroupColors</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayGradebookAverages</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayMissingAssignment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentGradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentGradingPeriodCommentIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentGroupColors</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentGroups</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayStudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayUnscoredPastDueAssignments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HideAssignmentCategoryColors</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HideLockedColumns</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ManualDateEntryEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ManualDateEntryStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNameDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentsToDisplay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseCustomClassRosterSort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UserIDOwner</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -150,6 +150,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

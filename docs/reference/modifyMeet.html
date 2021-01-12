@@ -116,23 +116,23 @@
 
     <pre class="usage"><span class='fu'>modifyMeet</span>(
   <span class='no'>MeetID</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OverridePeriodStartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OverridePeriodEndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LockAllMeetDisplayPeriodsFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MeetIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalendarIDStaff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayPeriodRotationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LockAllMeetDayRotationsFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LockAllMeetDisplayPeriodsFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LockAllStaffMeetsFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LockRoomFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LockAllMeetDayRotationsFromSectionScheduler</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalendarIDStaff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MeetIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OverridePeriodEndTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OverridePeriodStartTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -145,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -115,19 +115,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>createStaffMeetSetting</span>(
-  <span class='kw'>StaffMeetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayHistoricalAttendanceOnDesktop</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayHistoricalAttendanceOnMobile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BrowseViewID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayAttendanceTotalsOnDesktop</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayAttendanceTotalsOnMobile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BrowseViewID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HideLockedColumns</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UseCustomClassRosterSort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentNameDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayCourseDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayHistoricalAttendanceOnDesktop</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayHistoricalAttendanceOnMobile</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayMethodOfInstruction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayStudentGradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayStudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayCourseDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayMethodOfInstruction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HideLockedColumns</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StaffMeetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentNameDisplayType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseCustomClassRosterSort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -140,6 +140,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

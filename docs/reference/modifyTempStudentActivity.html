@@ -117,23 +117,27 @@
     <pre class="usage"><span class='fu'>modifyTempStudentActivity</span>(
   <span class='no'>TempStudentActivityID</span>,
   <span class='kw'>ActivityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Age</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ErrorNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullNameLFM</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GenderCodeAndGender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsSelected</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ParticipationEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ParticipationStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentActivityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentActivityIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Age</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeLevel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ParticipationStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ParticipationEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullNameLFM</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GenderCodeAndGender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ErrorNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TempActivityRecordID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +150,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

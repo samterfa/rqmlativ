@@ -117,10 +117,9 @@
     <pre class="usage"><span class='fu'>modifyGradeReportStudentTestType</span>(
   <span class='no'>GradeReportStudentTestTypeID</span>,
   <span class='kw'>GradeReportStudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestVersion</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SortNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestColumnHeader10</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -129,7 +128,10 @@
   <span class='kw'>TestColumnHeader7</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader8</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumnHeader9</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestColumnHeader10</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestVersionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestVersionName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +144,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,10 +116,11 @@
 
     <pre class="usage"><span class='fu'>modifyGradeReportStudentTestRow</span>(
   <span class='no'>GradeReportStudentTestRowID</span>,
-  <span class='kw'>GradeReportStudentTestTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DateTaken</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeReportStudentTestTypeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SortNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TestColumn10</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -128,7 +129,6 @@
   <span class='kw'>TestColumn7</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn8</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TestColumn9</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TestColumn10</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -141,6 +141,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

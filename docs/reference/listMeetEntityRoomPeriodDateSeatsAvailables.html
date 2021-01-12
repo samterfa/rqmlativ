@@ -116,29 +116,29 @@
 
     <pre class="usage"><span class='fu'>listMeetEntityRoomPeriodDateSeatsAvailables</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DisplayPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityIDCourse</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityIDFor</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityIDViewingCalculated</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityIDViewingMeetSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsOfferedMeet</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RoomIDMeet</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RoomIDMeetOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UseRoomOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MaxSeats</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MaxSeatsMeet</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MaxSeatsMeetOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MaxSeats</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MeetSummaryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityIDViewingMeetSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CalendarID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DisplayPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchedulingPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RoomID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RoomIDMeet</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RoomIDMeetOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>RoomSeatsAvailable</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchedulingPeriodID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UseRoomOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -177,6 +177,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>getNewFeature</span>(
   <span class='no'>NewFeatureID</span>,
-  <span class='kw'>RMSID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReleasedVersionMajor</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReleasedVersionMinor</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReleasedVersionBuild</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReleasedVersionRevision</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Duration</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PRNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Summary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Tagline</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Portal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>VideoURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DocumentationURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PDCURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReleaseNotesURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SystemVersionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Duration</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsNew</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Modules</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Modules</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PDCURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Portal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PRNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReleasedVersionBuild</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReleasedVersionMajor</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReleasedVersionMinor</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReleasedVersionRevision</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReleaseNotesURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RMSID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Summary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SystemVersionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Tagline</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>VideoURL</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -161,6 +161,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

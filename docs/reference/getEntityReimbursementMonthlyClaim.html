@@ -116,22 +116,22 @@
 
     <pre class="usage"><span class='fu'>getEntityReimbursementMonthlyClaim</span>(
   <span class='no'>EntityReimbursementMonthlyClaimID</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumericDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ApprovedCountFree</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ApprovedCountReduced</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MealType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumericDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>PaidEligible</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ParticipationFree</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ParticipationReduced</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ParticipationPaid</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ParticipationReduced</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ReimbursementMonthID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MealType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ServedCountFree</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ServedCountReduced</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ServedCountPaid</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ServedCountTotal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ServedCountOther</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ServedCountCEP</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ServedCountFree</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ServedCountOther</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ServedCountPaid</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ServedCountReduced</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ServedCountTotal</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -153,6 +153,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

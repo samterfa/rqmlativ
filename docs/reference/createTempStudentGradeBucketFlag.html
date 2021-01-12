@@ -115,25 +115,25 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempStudentGradeBucketFlag</span>(
-  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeBucketFlagID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradeBucketFlagCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSectionDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseSectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ExceptionReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeBucketFlagCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradeBucketFlagID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeBucketLabel</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeMarkCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsException</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ExceptionReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsError</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsError</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsException</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsManual</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentGradeBucketFlagIDToDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SchoolYearDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SelectedToProcess</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentGradeBucketFlagIDToDelete</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSectionDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +146,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -116,17 +116,17 @@
 
     <pre class="usage"><span class='fu'>modifyUserImportResult</span>(
   <span class='no'>UserImportResultID</span>,
-  <span class='kw'>UserImportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LineNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Username</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsStaff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GroupName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UserChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GroupMembershipChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GroupName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsStaff</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LineNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StaffChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UserChangeType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UserImportID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Username</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -139,6 +139,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

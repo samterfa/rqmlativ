@@ -116,29 +116,29 @@
 
     <pre class="usage"><span class='fu'>getTask</span>(
   <span class='no'>TaskID</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NavigationGroup</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TaskButtonCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowNextCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowNext</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowPreviousCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowPrevious</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AllowCancelCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AllowCancel</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSkywardTask</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ScreenXML</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RemoveValidationContainerForUITask</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WorkflowVersionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowCancelCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowNext</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowNextCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowPrevious</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AllowPreviousCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DisableScreenValidationForUITask</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ExpirationDurationOverrideCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ExpirationDurationOverrideCustomDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSkywardTask</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NavigationGroup</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RemoveValidationContainerForUITask</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ScreenXML</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaskButtonCondition</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WorkflowVersionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -160,6 +160,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

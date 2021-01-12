@@ -116,17 +116,17 @@
 
     <pre class="usage"><span class='fu'>modifyEndorsementRequirementDefault</span>(
   <span class='no'>EndorsementRequirementDefaultID</span>,
-  <span class='kw'>EndorsementOptionDefaultID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OverallCreditsRequired</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AdvancedCreditsRequired</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MustFulfillAllCurriculumClusters</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MinimumClusterLimit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UseMaximumClusterLimit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndorsementOptionDefaultID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>MaximumClusterLimit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MinimumClusterLimit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MustFulfillAllCurriculumClusters</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OrderNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RequirementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OverallCreditsRequired</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>RequirementAssessmentType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RequirementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseMaximumClusterLimit</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -139,6 +139,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

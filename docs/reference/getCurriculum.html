@@ -117,31 +117,31 @@
     <pre class="usage"><span class='fu'>getCurriculum</span>(
   <span class='no'>CurriculumID</span>,
   <span class='kw'>Code</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DistrictGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CodeDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfActiveCurrentOrFutureCourses</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CurriculumSubAreaExistsForSubAreaWithoutStudent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumSubAreaExistsForStudentAndSubArea</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PrerequisiteCurriculumExistsForPrerequisite</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasPrerequisites</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasPrerequisiteCurriculums</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfAttachedSubjects</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CurriculumSubAreaExistsForSubAreaWithoutStudent</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CurriculumSubjectSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeLevelSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradReqRankGPAIgnoreDuplicateCheck</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradReqSubjectTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasPrerequisiteCurriculums</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasPrerequisites</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAllowedToBeSelectedInCareerPlan</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsFederalDistanceEducation</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsFederalDualEnrollment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeLevelSummary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EarnedCredits</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAllowedToBeSelectedInCareerPlan</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradReqSubjectTypeID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradReqRankGPAIgnoreDuplicateCheck</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MaximumCompletionsForCredit</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfActiveCurrentOrFutureCourses</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfAttachedSubjects</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PrerequisiteCurriculumExistsForPrerequisite</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -163,6 +163,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

@@ -117,26 +117,26 @@
     <pre class="usage"><span class='fu'>getGradingConfigEntityGroupYear</span>(
   <span class='no'>GradingConfigEntityGroupYearID</span>,
   <span class='kw'>ConfigEntityGroupYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ConfigEntityGroupYearIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CurrentCalculation</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EarnedCreditsMethodIDDefault</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FreeFormCommentMaxLength</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradebookLockMessage</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeLevelIDCohort</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LockGradebookAssignmentsAfterDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LockGradebookCalculation</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LockGradebookStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>LockGradeBuckets</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>RetainGradesNumberOfDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UseAddOnGPA</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UseFactorBasedAddOn</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FreeFormCommentMaxLength</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>RetainGradesNumberOfDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CurrentCalculation</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ConfigEntityGroupYearIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LockGradebookCalculation</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LockGradebookAssignmentsAfterDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LockGradebookStartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradebookLockMessage</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>LockGradeBuckets</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeLevelIDCohort</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EarnedCreditsMethodIDDefault</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -158,6 +158,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

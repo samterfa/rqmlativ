@@ -115,26 +115,26 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempFailedGradingPeriod</span>(
-  <span class='kw'>TempGradingPeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradingPeriodSetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradingPeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradingPeriodSetCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Number</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OriginalStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OriginalEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsUpdated</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradingPeriodSetCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradingPeriodSetID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsUpdated</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Note</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Number</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OriginalEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OriginalStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ProcessAction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SectionLengthEndDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TempGradingPeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -147,6 +147,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

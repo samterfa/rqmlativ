@@ -115,16 +115,16 @@
     </div>
 
     <pre class="usage"><span class='fu'>createSTARException</span>(
-  <span class='kw'>STARExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>STAREmployeeV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>STARLicensedStaffEmploymentV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>STARLicensedStaffAssignmentV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>STARNonLicensedStaffV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Source</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsFatal</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Message</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PreserveException</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Source</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STAREmployeeV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STARExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STARLicensedStaffAssignmentV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STARLicensedStaffEmploymentV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>STARNonLicensedStaffV1ID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Type</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -137,6 +137,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

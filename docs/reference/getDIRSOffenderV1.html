@@ -116,30 +116,30 @@
 
     <pre class="usage"><span class='fu'>getDIRSOffenderV1</span>(
   <span class='no'>DIRSOffenderV1ID</span>,
-  <span class='kw'>IncidentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ExternalIncidentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MARSSNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateOffenderActivityMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OffenderActivityCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OffenderActivityTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IncidentOffenseNameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WasRefferredToLawEnforcement</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WasUnderCurrentSuspension</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WasUsedAsDangerousWeaponState</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WasUsedAsDangerousWeaponFederal</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DIRSSubmissionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DIRSSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ExternalIncidentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasErrors</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IncidentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IncidentOffenseNameID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>KeyHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MARSSNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OffenderActivityCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OffenderActivityTypeCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateOffenderActivityMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UpdateHash</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>WasArrestedByLawEnforcement</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WasRefferredToLawEnforcement</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WasUnderCurrentSuspension</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WasUsedAsDangerousWeaponFederal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WasUsedAsDangerousWeaponState</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -161,6 +161,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

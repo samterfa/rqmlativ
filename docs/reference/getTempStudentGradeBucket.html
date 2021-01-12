@@ -116,31 +116,31 @@
 
     <pre class="usage"><span class='fu'>getTempStudentGradeBucket</span>(
   <span class='no'>TempStudentGradeBucketID</span>,
-  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeMarkID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PercentWithAdjustment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeMarkIDOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeMarkIDReverse</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OldCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NewCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentSectionName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OverallStatus</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeBucketCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OverallPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsTransferBucket</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CompleteByTeacherCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DoNotPost</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeBucketCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeMarkID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeMarkIDOverride</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeMarkIDReverse</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradingPeriodGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsTransferBucket</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsTransferCourse</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CompleteByTeacherCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NewCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OldCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OverallPercent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OverallStatus</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PercentWithAdjustment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentGradeBucketID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentSectionName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -162,6 +162,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

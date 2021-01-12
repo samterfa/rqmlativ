@@ -115,21 +115,21 @@
     </div>
 
     <pre class="usage"><span class='fu'>createPERAExclusionEmployeeV1</span>(
-  <span class='kw'>PERAExclusionExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AnnualSalary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>JobTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastHireDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastPayPeriodSalary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleInitial</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OriginalHireDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PERAExclusionExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatePERAExclusionCodeMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatePERAExclusionCodeMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatePERAExclusionPayCycleMNID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatePERAExclusionPayCycleMNValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleInitial</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OriginalHireDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastHireDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AnnualSalary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastPayPeriodSalary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>JobTitle</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatusAtYearEnd</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -143,6 +143,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

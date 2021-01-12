@@ -116,22 +116,22 @@
 
     <pre class="usage"><span class='fu'>getGradeReference</span>(
   <span class='no'>GradeReferenceID</span>,
-  <span class='kw'>GradeLevelID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DistrictGroupKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MinutesPresentHalfDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MinutesPresentFullDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeLevelCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradeLevelID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradeReferenceIDClonedFrom</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradeReferenceIDClonedTo</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateGradeLevel</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GradeReferenceMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>GradYear</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MinutesPresentFullDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MinutesPresentHalfDay</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateGradeLevel</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StateSTARGradeLevelMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>GradeLevelCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -153,6 +153,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

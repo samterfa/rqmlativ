@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>modifyTempRollUnpaidCustomerFee</span>(
   <span class='no'>TempRollUnpaidCustomerFeeID</span>,
-  <span class='kw'>UnappliedAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AmountDue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ExceptionReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EffectiveDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SourceCustomerFeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CreateCustomerEntityYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CustomerID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CustomerName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CreateCustomerEntityYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RollType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Comment</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SourceFeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DueDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EffectiveDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ExceptionReason</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FeeIDTransferFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SourceFeeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RollType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SourceCustomerFeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SourceFeeAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TargetEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SourceFeeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SourceFeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TargetEntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TargetEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UnappliedAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +146,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

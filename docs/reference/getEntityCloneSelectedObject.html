@@ -116,22 +116,25 @@
 
     <pre class="usage"><span class='fu'>getEntityCloneSelectedObject</span>(
   <span class='no'>EntityCloneSelectedObjectID</span>,
+  <span class='kw'>AddUpdateDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CloneOrder</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DeleteDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Dependencies</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>EntityCloneRunID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ObjectID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ExportDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsAdding</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsUpdating</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsDeleting</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfRecordsExported</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsUpdating</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfRecordsAdded</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NumberOfRecordsUpdated</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfRecordsDeleted</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NumberOfRecordsErrored</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfRecordsExported</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NumberOfRecordsUpdated</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ObjectID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CloneOrder</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Dependencies</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -153,6 +156,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

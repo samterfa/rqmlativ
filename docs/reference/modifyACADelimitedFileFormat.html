@@ -117,21 +117,22 @@
     <pre class="usage"><span class='fu'>modifyACADelimitedFileFormat</span>(
   <span class='no'>ACADelimitedFileFormatID</span>,
   <span class='kw'>ACAThirdPartyFormatID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NumberOfHeaderRows</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DelimiterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DelimiterCharacter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeIdentifierColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OfferOfCoverageCodeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeRequiredContributionColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SafeHarborColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployerOfferedSelfInsuredCoverageColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReportEmployeeAsCoveredIndividualColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SSNColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BirthDateColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CommentColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DelimiterCharacter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DelimiterType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeIdentifierColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeRequiredContributionColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployerOfferedSelfInsuredCoverageColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleNameColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NumberOfHeaderRows</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OfferOfCoverageCodeColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PlanStartMonthOverrideColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReportEmployeeAsCoveredIndividualColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SafeHarborColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SSNColumnNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -144,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

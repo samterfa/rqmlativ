@@ -116,19 +116,19 @@
 
     <pre class="usage"><span class='fu'>modifyTempStudentCommentBucket</span>(
   <span class='no'>TempStudentCommentBucketID</span>,
-  <span class='kw'>StudentCommentBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CommentBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradingPeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewCommentCodeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CommentBucketName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NewCommentCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CurrentCommentCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradingPeriodDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GradingPeriodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewCommentCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NewCommentCodeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentCommentBucketID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentSectionDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GradingPeriodDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>WorkflowAction</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -142,6 +142,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

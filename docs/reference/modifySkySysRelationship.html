@@ -116,24 +116,24 @@
 
     <pre class="usage"><span class='fu'>modifySkySysRelationship</span>(
   <span class='no'>RelationshipID</span>,
-  <span class='kw'>PendingDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CurrentDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PendingName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CurrentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RelationshipIDRelated</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PendingConditionXML</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CurrentConditionXML</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ObjectIDPrimary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ObjectIDForeignPending</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ObjectIDForeignCurrent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FieldIDForeignKeyPending</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FieldIDForeignKeyCurrent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PendingType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CurrentType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PendingDeleteBehavior</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CurrentDeleteBehavior</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurrentDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurrentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurrentType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CustomizationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FieldIDForeignKeyCurrent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FieldIDForeignKeyPending</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ObjectIDForeignCurrent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ObjectIDForeignPending</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ObjectIDPrimary</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PendingConditionXML</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PendingDeleteBehavior</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PendingDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PendingName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PendingType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RelationshipIDRelated</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +146,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

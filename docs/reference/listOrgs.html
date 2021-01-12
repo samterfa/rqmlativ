@@ -116,19 +116,19 @@
 
     <pre class="usage"><span class='fu'>listOrgs</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OrgID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DepartmentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Identifier</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Parent</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Children</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SubType</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OneRosterID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DateLastModified</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DepartmentID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Identifier</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Name</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OneRosterID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OrgID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Parent</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SourcedID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SubType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -167,6 +167,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

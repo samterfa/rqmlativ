@@ -116,22 +116,22 @@
 
     <pre class="usage"><span class='fu'>modifyTempFailedStudentSubAreaCurriculumSubArea</span>(
   <span class='no'>TempFailedStudentSubAreaCurriculumSubAreaID</span>,
-  <span class='kw'>CurriculumSubAreaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentSubAreaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AreaSubAreaDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ActionType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AppliedOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AreaSubAreaDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AttemptedCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CompletedCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompletedCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CurriculumSubAreaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>FutureCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InProgressCredits</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Note</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ActionType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentCourseRequestID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSubAreaID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -144,6 +144,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

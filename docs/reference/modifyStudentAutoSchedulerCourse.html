@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>modifyStudentAutoSchedulerCourse</span>(
   <span class='no'>StudentAutoSchedulerCourseID</span>,
-  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalScheduled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CategoryCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CourseEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseEntityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CourseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseLengthCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>CourseSubjectCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchedulingTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchedulingPriorityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsRequired</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchedulingTeamModeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DepartmentCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalNumberScheduledThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsActive</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsRequired</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchedulingPriorityCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchedulingTeamModeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchedulingTypeCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentAutoSchedulerRunAnalysisID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TotalAlternateRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CategoryCode</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalConflicts</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalNumberScheduledThisRun</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalRequests</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalScheduled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -148,6 +148,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

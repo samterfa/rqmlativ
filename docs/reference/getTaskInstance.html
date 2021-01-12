@@ -116,32 +116,32 @@
 
     <pre class="usage"><span class='fu'>getTaskInstance</span>(
   <span class='no'>TaskInstanceID</span>,
-  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WorkflowInstanceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>QueueCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>QueueTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>QueuedDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StatusCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StopTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ProcessDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Variables</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>PreviousWarningHashes</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>TaskActionXml</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Application</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Hostname</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ThreadName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>QueueDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ProcessID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDPerformer</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDImpersonator</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Hostname</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>LastActivity</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>PreviousWarningHashes</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcessDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ProcessID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Queue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>QueueCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>QueuedDuration</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>QueueDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>QueueTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StartTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StatusCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StopTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaskActionXml</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TaskID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ThreadName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDImpersonator</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDPerformer</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Variables</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WorkflowInstanceID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -163,6 +163,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

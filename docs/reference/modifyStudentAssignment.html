@@ -116,22 +116,22 @@
 
     <pre class="usage"><span class='fu'>modifyStudentAssignment</span>(
   <span class='no'>StudentAssignmentID</span>,
-  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AssignmentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ScoreClarifierID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Score</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculatedPoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Comments</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsMissing</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGraded</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NoCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDropped</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SubmissionStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SubmissionTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GradeMarkID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDropped</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGraded</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsMissing</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NoCount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OnlineAssignmentNotificationSent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>OnlineAssignmentReviewNotificationSent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculatedPoints</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Score</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ScoreClarifierID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentSectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SubmissionStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SubmissionTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>TimeLastScored</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -145,6 +145,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

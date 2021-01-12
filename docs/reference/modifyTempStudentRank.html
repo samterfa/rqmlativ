@@ -116,22 +116,22 @@
 
     <pre class="usage"><span class='fu'>modifyTempStudentRank</span>(
   <span class='no'>TempStudentRankID</span>,
-  <span class='kw'>StudentRankID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CohortNumericYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GraduationRequirementYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsManualRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsProspectiveRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NoRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>RankMethodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearIDCohort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentGrade</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GPA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NoRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>RankMethodID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>StudentGrade</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsProspectiveRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UseOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsManualRank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearIDCohort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CohortNumericYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>StudentRankID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentRankSort</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GraduationRequirementYear</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TotalStudents</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UseOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -144,6 +144,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

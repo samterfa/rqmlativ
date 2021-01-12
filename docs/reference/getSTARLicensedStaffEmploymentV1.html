@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>getSTARLicensedStaffEmploymentV1</span>(
   <span class='no'>STARLicensedStaffEmploymentV1ID</span>,
+  <span class='kw'>ContractDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ContractSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>OutOfDistrictAssignment</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ReportedContractSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>STAREmployeeV1ID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateSTARNewLicensedStaffMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateSTARNewLicensedStaffMNValue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateSTARInactiveTransferTerminationMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StateSTARInactiveTransferTerminationMNValue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>STAREmploymentType</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StateSTARHighestEducationLevelMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>StateSTARHighestEducationLevelMNValue</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ContractSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ReportedContractSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ContractDays</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>YearsOfExperienceSuperintendent</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>YearsOfExperiencePrincipal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateSTARInactiveTransferTerminationMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateSTARInactiveTransferTerminationMNValue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateSTARNewLicensedStaffMNID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StateSTARNewLicensedStaffMNValue</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>YearsOfExperienceClassroomTeacher</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>YearsOfExperienceOther</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>OutOfDistrictAssignment</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>STAREmploymentType</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>YearsOfExperiencePrincipal</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>YearsOfExperienceSuperintendent</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -157,6 +157,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

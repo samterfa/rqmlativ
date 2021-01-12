@@ -116,32 +116,32 @@
 
     <pre class="usage"><span class='fu'>getCRDCSchoolCharacteristicV1</span>(
   <span class='no'>CRDCSchoolCharacteristicV1ID</span>,
-  <span class='kw'>FederalAlternativeSchoolDetailID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AlternativeSchoolFocus</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FederalAlternativeSchoolDetailID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>FederalNCESSchoolID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasPreschoolNonIDEAAge3</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasPreschoolNonIDEAAge4</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasPreschoolNonIDEAAge5</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasUngradedElementary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasUngradedMiddleSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasUngradedHighSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSpecialEducation</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsMagnet</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsCharter</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAlternative</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsEntireSchoolMagnet</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasUngradedElementaryMiddleSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasUngradedMiddleSchoolHighSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasUngradedElementaryMiddleSchoolHighSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasUngradedHighSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasUngradedMiddleSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasUngradedMiddleSchoolHighSchool</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAlternative</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsAlternativeAcademic</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsAlternativeDiscipline</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsAlternativeAcademicDiscipline</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsAlternativeDiscipline</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsCharter</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsEntireSchoolMagnet</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsMagnet</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSpecialEducation</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>FederalNCESSchoolID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -163,6 +163,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

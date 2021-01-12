@@ -115,16 +115,16 @@
     </div>
 
     <pre class="usage"><span class='fu'>createPERAIncludedPayTransaction</span>(
-  <span class='kw'>PERAExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CheckDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PayrollStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MemberAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EligibleEarnings</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployerAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompensatedHours</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OvertimePay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AdjustmentIndicator</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CheckDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CompensatedHours</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EligibleEarnings</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployerAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MemberAmount</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OvertimePay</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PayrollStartDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PERAExtractRunID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PERAPaymentTypeCodeValue</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -138,6 +138,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

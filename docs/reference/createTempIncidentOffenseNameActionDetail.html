@@ -115,26 +115,26 @@
     </div>
 
     <pre class="usage"><span class='fu'>createTempIncidentOffenseNameActionDetail</span>(
-  <span class='kw'>IncidentOffenseNameActionDetailID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InvolvementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OffenseCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsPrimaryOffense</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ActionCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CreateAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DurationServed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DurationToServe</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DurationType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CreateAttendance</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FullName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IncidentOffenseNameActionDetailID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InvolvementType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsAlternate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsPrimaryOffense</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>LocationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PartialDayPeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OldStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NewStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TempIncidentOffenseNameActionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OffenseCodeDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OldStatus</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PartialDayPeriods</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ScheduledTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DurationServed</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StaffIDFollowUpOfficer</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsGuardianNotified</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TempIncidentOffenseNameActionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -147,6 +147,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

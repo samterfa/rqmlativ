@@ -115,25 +115,25 @@
     </div>
 
     <pre class="usage"><span class='fu'>createUnemploymentCompensationOtherStateEmployeeV1</span>(
-  <span class='kw'>TaxStateID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UnemploymentCompensationSubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>UnemploymentCompensationSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>BuildingID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Worksite</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PaidFor12thDayOfMonth1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PaidFor12thDayOfMonth2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PaidFor12thDayOfMonth3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AccumulatedDeductionsReducingTaxableWagesForPriorQuarters</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AccumulatedGrossWagesForPriorQuarters</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>QuarterlyDeductionsReducingTaxableWages</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>BuildingID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EmployeeID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GrossWagesMonth1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GrossWagesMonth2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>GrossWagesMonth3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PaidFor12thDayOfMonth1</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PaidFor12thDayOfMonth2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PaidFor12thDayOfMonth3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>QuarterlyDeductionsReducingTaxableWages</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SocialSecurityNumber</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>TaxStateID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UnemploymentCompensationSubmissionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>UnemploymentCompensationSubmissionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Worksite</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -146,6 +146,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

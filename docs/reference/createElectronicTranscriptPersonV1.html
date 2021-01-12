@@ -115,20 +115,20 @@
     </div>
 
     <pre class="usage"><span class='fu'>createElectronicTranscriptPersonV1</span>(
-  <span class='kw'>SchoolAssignedPersonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BirthDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameSuffix</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GuardianFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>GuardianLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Gender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ElectronicTranscriptRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>FirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Gender</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GuardianFirstName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>GuardianLastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LastName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>MiddleName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameIDGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>NameSuffix</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolAssignedPersonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StudentID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>NameIDGuardian</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -141,6 +141,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

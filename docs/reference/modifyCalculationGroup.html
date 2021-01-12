@@ -116,27 +116,29 @@
 
     <pre class="usage"><span class='fu'>modifyCalculationGroup</span>(
   <span class='no'>CalculationGroupID</span>,
-  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Filter</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowCategoryOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDefaultGroup</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CalculationGroupIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>LimitTeacherOverridesToCategoriesInGroup</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowAcademicStandards</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowAcademicStandardWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowAssignmentAveragePercentTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowAssignmentPointsTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowCategoryOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowCategoryWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowDecayingAverageTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowGradeBucketWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowTotalPointsAndGradeBucketWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowNotGradedTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowSubjectiveTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowSubjects</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>AllowSubjectWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowAcademicStandardWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowDecayingAverageTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>AllowTotalPointsAndGradeBucketWeightingTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CalculationGroupIDClonedFrom</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DecayingAveragePercent</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AllowAssignmentAveragePercentTeacherOverride</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityGroupKey</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>EntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDefaultGroup</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>LimitTeacherOverridesToCategoriesInGroup</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Rank</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SchoolYearID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Status</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +151,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

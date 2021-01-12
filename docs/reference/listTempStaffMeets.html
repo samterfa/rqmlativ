@@ -116,35 +116,35 @@
 
     <pre class="usage"><span class='fu'>listTempStaffMeets</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TempStaffMeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffMeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>Conflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CourseDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EffectiveStartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>EffectiveEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsSubstitute</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StaffFullNameFML</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NewEffectiveStartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NewEffectiveEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsLongTermSubstitute</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EffectiveEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EffectiveStartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasAttendanceAccess</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HasConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>HasGradebookAccess</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>IsChecked</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NewStaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsLongTermSubstitute</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsPrimary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsSubstitute</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NewEffectiveEndDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NewEffectiveStartDate</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>NewStaffFullNameFML</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WorkflowAction</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NewStaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Note</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>Conflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HasConflicts</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionCode</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>SectionID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StaffFullNameFML</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StaffID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StaffMeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempStaffMeetID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WorkflowAction</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -183,6 +183,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

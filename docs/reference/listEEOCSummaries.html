@@ -116,26 +116,26 @@
 
     <pre class="usage"><span class='fu'>listEEOCSummaries</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>EEOCExtractRunID</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>IsEEO4</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CategoryNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CategoryDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CategoryAnnualSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HispanicOrLatinoMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>HispanicOrLatinoFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WhiteMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>WhiteFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BlackOrAfricanAmericanMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>BlackOrAfricanAmericanFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AsianMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AsianFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NativeHawaiianOrPacificIslanderMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>NativeHawaiianOrPacificIslanderFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AmericanIndianOrAlaskanNativeMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AmericanIndianOrAlaskanNativeFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>MultipleRacesMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AmericanIndianOrAlaskanNativeMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AsianFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AsianMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BlackOrAfricanAmericanFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>BlackOrAfricanAmericanMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CategoryAnnualSalary</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CategoryDescription</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CategoryNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>EEOCExtractRunID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HispanicOrLatinoFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>HispanicOrLatinoMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>IsEEO4</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>MultipleRacesFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>MultipleRacesMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NativeHawaiianOrPacificIslanderFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>NativeHawaiianOrPacificIslanderMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>TotalColumn</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WhiteFemale</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>WhiteMale</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -174,6 +174,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

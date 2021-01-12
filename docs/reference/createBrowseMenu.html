@@ -115,28 +115,28 @@
     </div>
 
     <pre class="usage"><span class='fu'>createBrowseMenu</span>(
+  <span class='kw'>AppendDataObjectNameToDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>BrowseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Target</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardTarget</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Module</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Object</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Screen</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>PrimaryKeyBindSource</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayInBrowse</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DisplayInDetails</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DisplayOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardDisplayOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>Description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsRowMenu</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>SkywardIsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsEnabled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>AppendDataObjectNameToDisplayName</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>Image</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>ImageText</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayInDetails</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DisplayInBrowse</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IncludeInRowMoreMenu</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsEnabled</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsRowMenu</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Module</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Object</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>PrimaryKeyBindSource</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Screen</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardDescription</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardDisplayOrder</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardIsDefault</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>SkywardTarget</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>Target</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -149,6 +149,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

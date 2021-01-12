@@ -115,19 +115,19 @@
     </div>
 
     <pre class="usage"><span class='fu'>createOnlineFormStatus</span>(
+  <span class='kw'>ApprovalRevoked</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CompletedByAdmin</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DenialDateTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>DenialMessage</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsOutsideAddressRanges</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>IsOutsideAddressRangeSchoolPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>NameID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>OnlineFormEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SecondaryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>StatusType</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>SubmittedDateTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DenialMessage</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>DenialDateTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompletedByAdmin</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UserIDApprover</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UserIDSubmittedBy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ApprovalRevoked</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>OnlineFormEntityID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsOutsideAddressRanges</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>IsOutsideAddressRangeSchoolPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -140,6 +140,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

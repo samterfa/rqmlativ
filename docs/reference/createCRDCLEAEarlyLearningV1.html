@@ -115,32 +115,32 @@
     </div>
 
     <pre class="usage"><span class='fu'>createCRDCLEAEarlyLearningV1</span>(
+  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>DistrictID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasEarlyChildhood</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasEarlyChildhoodNonIDEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasKindergarten</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasKindergartenFullDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasKindergartenFullDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasKindergartenPartDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasKindergartenPartDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschool</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolFullDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolAllChildren</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschoolFullDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolPartDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolPartDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolFullDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolIDEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolLowIncome</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschoolNonIDEAAge3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschoolNonIDEAAge4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschoolNonIDEAAge5</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolAllChildren</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolIDEA</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolPartDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HasPreschoolPartDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HasPreschoolTitleI</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasPreschoolLowIncome</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasKindergarten</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasKindergartenFullDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasKindergartenFullDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasKindergartenPartDayFree</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HasKindergartenPartDayCost</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PreschoolChildrenServedAge2</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PreschoolChildrenServedAge3</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PreschoolChildrenServedAge4</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>PreschoolChildrenServedAge5</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CivilRightsDataCollectionID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CivilRightsDataCollectionRunHistoryID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -153,6 +153,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>

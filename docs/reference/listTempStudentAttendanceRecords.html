@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>listTempStudentAttendanceRecords</span>(
   <span class='kw'>searchConditionsList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>TempStudentAttendanceRecordID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>AffectedPrimaryKey</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>AttendanceTakenByPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>Date</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DayOfTheWeek</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>DayRotationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>DayRotation</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>DayRotationID</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>GuardianNotified</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>AttendanceTakenByPeriod</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>CreatedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
-  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>ModifiedTime</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentName</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>StudentNumber</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>TempStudentAttendanceRecordID</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDCreatedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
+  <span class='kw'>UserIDModifiedBy</span> <span class='kw'>=</span> <span class='no'>F</span>,
   <span class='kw'>fieldPaths</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>searchConditionsGroupType</span> <span class='kw'>=</span> <span class='st'>"And"</span>,
   <span class='kw'>searchSortFieldNamesList</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -168,6 +168,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>page</th>

@@ -116,20 +116,20 @@
 
     <pre class="usage"><span class='fu'>modifyInjuryOccurrenceReferral</span>(
   <span class='no'>InjuryOccurrenceReferralID</span>,
-  <span class='kw'>ReferralDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>HealthProfessionalIDReferredTo</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>CompletionDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>HealthProfessionalIDReferredBy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InjuryOccurrenceReferralReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>HealthProfessionalIDReferredTo</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InjuryOccurrenceGuardianNotificationID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InjuryOccurrenceGuardianResponseID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>ReferralCompleted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>CompletionDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>InjuryOccurrenceReferralResultID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>InjuryOccurrenceID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InjuryOccurrenceReferralReasonID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>InjuryOccurrenceReferralResultID</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>IsVoid</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReferralCompleted</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>ReferralDate</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>UserIDVoidedBy</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>VoidedTime</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>VoidNote</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>entityId</span> <span class='kw'>=</span> <span class='fl'>1</span>,
   <span class='kw'>query</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>flatten</span> <span class='kw'>=</span> <span class='no'>T</span>,
@@ -142,6 +142,10 @@
     <tr>
       <th>entityId</th>
       <td><p>The id of the entity (school). Run <code><a href='listEntities.html'>listEntities</a></code> for a list of entities. Defaults to 1 (district).</p></td>
+    </tr>
+    <tr>
+      <th>query</th>
+      <td><p>Queries to be added to the request. Ex. list(SchoolYearID = 1). Defaults to NULL.</p></td>
     </tr>
     <tr>
       <th>flatten</th>
